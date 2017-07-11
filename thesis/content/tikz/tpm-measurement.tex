@@ -1,0 +1,44 @@
+\newcommand{\sha}[1]{
+  \node [rectangle split, rectangle split parts=4, rectangle split horizontal, node contents={a \nodepart{two} b}] (#1) {};
+}
+
+\begin{tikzpicture}[
+  nodes={draw},
+  sha/.style={rectangle split, rectangle split horizontal},
+  sha4/.style={sha, rectangle split parts=4, node contents={hash( \nodepart{four})}},
+  sha3/.style={sha, rectangle split parts=3, node contents={hash( \nodepart{three})}},
+  arrow/.style={draw, -latex'},
+  mr/.style={fill=orangebg}
+]
+
+	% boot loader
+	\node (sha bl) at (2,-1.5) [sha3] {};
+	\node (bl) [above=of sha bl.two north] {Boot loader};
+	\node (sha mr bl) at (0,-3) [sha4, mr] {};
+	\node (0) [above=of sha mr bl.two north, yshift=2cm, mr] {0 (zero)};
+	\path [arrow] (0) -- (sha mr bl.two north);
+	\path [arrow] (bl) -- (sha bl.two north);
+	\path [arrow] (bl) -- (sha bl.two north);
+	\path [arrow] (sha bl) -- (sha mr bl.three north);
+	
+	% kernel
+	\node (sha k) at (4,-3.5) [sha3] {};
+	\node (k) [above=of sha k.two north] {Kernel};
+	\node (sha mr k) at (2,-5) [sha4, mr] {};
+	\path [arrow] (k) -- (sha k.two north);
+	\path [arrow] (sha mr bl) -- (sha mr k.two north);
+	\path [arrow] (sha k) -- (sha mr k.three north);
+	
+	% dots
+	\node (dots) at (3.5,-6.25) [draw=none] {\ldots};
+	\path [arrow] (sha mr k) -- (dots);
+	
+	% app
+	\node (sha app) at (7,-6.5) [sha3] {};
+	\node (app) [above=of sha app.two north] {Application};
+	\node (sha mr app) at (5,-8) [sha4, mr] {};
+	\path [arrow] (app) -- (sha app.two north);
+	\path [arrow] (dots) -- (sha mr app.two north);
+	\path [arrow] (sha app) -- (sha mr app.three north);
+
+\end{tikzpicture}

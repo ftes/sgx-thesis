@@ -1,0 +1,38 @@
+\begin{tikzpicture}[
+	state/.style={draw, ellipse, text width=1.5cm, minimum height=1cm, align=center},
+	arrow/.style={-latex'},
+	heading/.style={font=\bfseries},
+	label/.style={text width=3cm, align=center}
+]
+% enclave state
+\node[heading] at (5,-2) {a) Enclave state diagram};
+
+\node[state] (v1) at (0,0) {non-\\existent};
+\node[state] (v2) at (5,0) {loading};
+\node[state] (v3) at (10,0) {initialized};
+
+\draw[arrow]  (v1) edge node[above, label] {create enclave} (v2);
+\draw[arrow]  (v2) edge node[above, label] {init enclave} (v3);
+\draw[arrow]  (v2) edge[loop, looseness=5] node[above, label] {load page} (v2);
+\draw[arrow]  (v3) edge[loop, looseness=5] node[above, label] {enter enclave} (v3);
+\draw[arrow]  (v3) edge[bend left=15] node[below, label] {delete enclave} (v1);
+
+\node[state] (v1a) at (0,-5) {free};
+\node[state] (v2a) at (5,-5) {initialized};
+\node[state] (v3a) at (10,-5) {running};
+
+% thread state
+\node[heading] at (5,-7.5) {b) Enclave thread state diagram};
+
+\draw[arrow]  (v1a) edge[bend left]  node[above, label] {load thread} (v2a);
+\draw[arrow]  (v1a) edge             node[above, label] {create thread} (v2a);
+\draw[arrow]  (v2a) edge[bend left] node[below, label] {delete thread} (v1a);
+
+\draw[arrow]  (v3a) edge[bend right]  node[above, label] {exit enclave} (v2a);
+\draw[arrow]  (v2a) edge             node[above, label] {enter enclave} (v3a);
+\draw[arrow]  (v3a) edge[bend left] node[below, label] {asynchronous enclave exit (AEX)} (v2a);
+
+\draw[arrow]  (v3a) edge[loop, looseness=5] node[above, label] {resume thread} (v3a);
+
+\draw[dotted]  (-1.5,-2.5) -- (11.5,-2.5);
+\end{tikzpicture}

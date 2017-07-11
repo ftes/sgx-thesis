@@ -1,0 +1,44 @@
+\begin{tikzpicture}[
+    tight fit/.style={inner sep=0pt, outer sep=0pt},
+    block/.style={rectangle, draw, align=center, rounded corners},
+    line/.style={draw, -latex'},
+    legend/.style={nodes={anchor=base}, column sep=5pt, row sep=5pt, yshift=-2cm, anchor=north},
+    legend heading/.style={gray},
+    heading/.style={minimum height=0.2cm},
+    edge label/.style={midway, above, minimum width=0},
+    myperson/.style={minimum size=40pt, person},
+    computer/.style={draw, dotted}
+]
+
+% base matrix
+\matrix (first) [every node/.style={text width=4cm, minimum height=1.5cm, align=center}, row sep=0.2cm, column sep=0.2cm]
+{
+\node (A1) {}; & \node (A2) {}; & \node (A3) {}; \\
+\node (B1) {}; & \node (B2) {}; & \node (B3) {}; \\
+\node (C1) {}; & \node (C2) {}; & \node (C3) {}; \\
+\node (D1) {}; & \node (D2) {}; & \node (D3) {}; \\
+};
+
+% nodes
+% text in fit nodes is not vertically centered - use an additional node
+\node (order) at (B3) {order-preserving ($\geq$)};
+\node (det) at (C3) {deterministic ($==$)};
+\node[draw, fit=(A1) (A2) (A3), tight fit, fill=redbg]   (fully)    {}; \node (fully text)    at (fully) {fully homomorphic};
+\node[fit=(B1) (C1), tight fit,]                         (paillier) {}; \node (paillier text) at (paillier) {Paillier \cite{Paillier1999} ($+$)};
+\node[fit=(B2) (C2), tight fit]                          (elgamal)  {}; \node (elgamal text)  at (elgamal) {ElGamal \cite{ElGamal1985} ($\times$)};
+\node[draw, fit=(D1) (D2) (D3), tight fit, fill=greenbg] (non det)  {}; \node (non det text)  at (non det) {non-deterministic ($\emptyset$)};
+\begin{scope}[on background layer]
+\node[draw, fit=(paillier) (elgamal), tight fit, fill=orangebg] (partially) {};
+\node[draw, fit=(B3) (C3), tight fit, fill=greenbg] {};
+\end{scope}
+\node[anchor=north west] at (partially.north west) {partially homomorphic};
+
+% paths
+\path[line] (non det text)  -- (paillier text);
+\path[line] (non det text)  -- (elgamal text);
+\path[line] (non det text)  -- (det);
+\path[line] (det)      -- (order);
+\path[line] (paillier text) -- (fully text);
+\path[line] (elgamal text)  -- (fully text);
+\path[line, dashed] (order)    -- (fully text);
+\end{tikzpicture}

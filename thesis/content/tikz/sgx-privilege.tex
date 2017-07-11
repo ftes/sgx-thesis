@@ -1,0 +1,47 @@
+\begin{tikzpicture}[
+	block/.style={text width=3.5cm, draw, align=center, minimum height=0.5cm},
+	gray/.style={color=gray},
+	description/.style={font=\small}
+]
+
+% non root
+\node[block] at (0,-0.6) {Application};
+\node[block, fill=greenbg] at (0,0.1) {SGX Enclave};
+\node at (-3,-0.25) {Ring 3};
+\draw  (-4,0.5) rectangle (2,-1.5) {};
+
+\draw  (-4,-1) rectangle (2,-1.5);
+\draw  (-4,-2) rectangle (2,-1.5);
+\node[gray] at (-3,-1.25) {Ring 2};
+\node[gray] at (-3,-1.75) {Ring 1};
+
+\node[block] at (0,-2.5) {Operating System};
+\draw  (-4,-2) rectangle (2,-3);
+\node at (-3,-2.5) {Ring 0};
+
+\node[left] at (-4.5,-1.25) {VMX non-root};
+% root
+\draw (-4,-3) rectangle (2,-3.5);
+\draw (-4,-3.5) rectangle (2,-4);
+\draw (-4,-4) rectangle (2,-4.5);
+\node[gray] at (-3,-3.25) {Ring 3};
+\node[gray] at (-3,-3.75) {Ring 2};
+\node[gray] at (-3,-4.25) {Ring 1};
+
+\node[block] at (0,-5) {Hypervisor};
+\draw  (-4,-3) rectangle (2,-5.5);
+\node at (-3,-5) {Ring 0};
+
+\node[left] at (-4.5,-4.25) {VMX root};
+\draw[dashed] (-7.5,-3) -- (3,-3);
+
+% smm
+\node at (-1,-5.75) {BIOS};
+\draw  (-4,-5.5) rectangle (2,-6);
+\node[left] at (-4.5,-5.75) {SMM};
+\draw[dashed] (-7.5,-5.5) -- (3,-5.5);
+
+% description
+\node[description] at (3.5,-6) {more privileged};
+\node[description] at (3.5,0.5) {less privileged};
+\end{tikzpicture}

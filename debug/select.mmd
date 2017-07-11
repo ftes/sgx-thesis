@@ -1,0 +1,23 @@
+sequenceDiagram
+    %% setup (createFunc)
+
+    Console-->>+shell.c#main(): SELECT * FROM tbl;
+    shell.c#main()-->>+shell.c#process_input(): ShellState *p, ...
+    Note over shell.c#main(), shell.c#process_input(): struct ShellState { *sqlite3 ... }
+
+    shell.c#process_input()-->>+shell.c#runOneSqlLine(): ShellState *p, char *zSql, ...
+    Note over shell.c#process_input(), shell.c#runOneSqlLine(): zSql = SELECT * FROM tbl;
+
+    shell.c#runOneSqlLine()-->>+shell.c#shell_exec(): sqlite3 *db, char *zSql, xCallback, ...
+    Note over shell.c#runOneSqlLine(), shell.c#shell_exec(): xCallback: invoked for each row of query result (prints output)
+
+    shell.c#shell_exec()-->>+prepare.c#sqlite3_prepare_v2(): sqlite3 *db, char *zSql, ... sqlite3_stmt **ppStmt, ...
+    Note over shell.c#shell_exec(), prepare.c#sqlite3_prepare_v2(): ppStmt: OUT: A pointer to the prepared statement
+
+    prepare.c#sqlite3_prepare_v2()-->>+prepare.c#sqlite3LockAndPrepare(): sqlite3 *db, char *zSql, ... Vdbe *pOld, sqlite3_stmt **ppStmt, ...
+    Note over prepare.c#sqlite3_prepare_v2(), prepare.c#sqlite3LockAndPrepare(): pOld: VM being reprepared
+
+    prepare.c#sqlite3LockAndPrepare()-->>+mutex.c#sqlite3_mutex_enter: sqlite3_mutex *p
+    Note over prepare.c#sqlite3LockAndPrepare(), mutex.c#sqlite3_mutex_enter: p: db->mutex
+
+    shell.c#main()-->>-Console: return

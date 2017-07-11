@@ -1,0 +1,43 @@
+% node distance: vertical and horizontal
+\begin{tikzpicture}[
+    node distance=0.5cm and 4cm, auto,
+    nodes={{minimum height=0.7cm, text width=2cm}},
+    block/.style={rectangle, draw, align=center, rounded corners},
+    line/.style={draw, -latex'},
+    legend/.style={nodes={anchor=base}, column sep=5pt, row sep=5pt, yshift=-2cm, anchor=north},
+    legend heading/.style={gray},
+    heading/.style={minimum height=0.2cm},
+    edge label/.style={midway, above, minimum width=0},
+    myperson/.style={minimum size=40pt, person},
+    computer/.style={draw, dotted},
+    secure/.style={fill=greenbg},
+    insecure/.style={fill=redbg}
+]
+    % Place nodes
+    \node [                  block          ] (input)   {1. input};
+    \node [right=of input,   block, secure  ] (store1)  {3. store}; 
+    \node [below=of store1,  block, insecure] (process) {4. process};
+    \node [below=of process, block, secure  ] (store2)  {5. store};
+    \node [left=of store2,   block          ] (output)  {7. output};
+    \node [above=of input,   heading        ] (client)  {Client};
+    \node [above=of store1,  heading        ] (server)  {Server};
+   
+    % Draw edges
+    \path [line] (input)   -- (store1) node [edge label, secure] {2. transmit};
+    \path [line] (store1)  -- (process);
+    \path [line] (process) -- (store2);
+    \path [line] (store2)  -- (output) node [edge label, secure] {6. transmit};
+   
+    % Fit cluster edges
+    \node [computer, inner sep=10pt, fit=(input) (output) (client)] (client fit) {};
+    \node [computer, inner sep=10pt, fit=(store1) (process) (store2) (server)] (server fit) {};
+   
+    % Legend
+    %\matrix[legend] (legend) at (current bounding box.south) {
+    %    \node[secure,   align=center] {considered solved\\(encryption)}; &
+    %    \node[insecure, align=center] {considered unsolved\\(focus of this thesis)}; \\
+    %};
+   
+    % Cluster headings
+    %\node[heading, legend heading] at (legend.north) {Legend};
+\end{tikzpicture}

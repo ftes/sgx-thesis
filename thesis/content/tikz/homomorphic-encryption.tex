@@ -1,0 +1,53 @@
+\begin{tikzpicture}[
+    auto,
+    node distance=40pt and 50pt,
+    nodes={{minimum height=0.6cm}},
+    block/.style={rectangle, draw, align=center, rounded corners},
+    line/.style={draw, -latex'},
+    legend/.style={nodes={anchor=base}, column sep=5pt, row sep=5pt, yshift=-2cm, anchor=north},
+    legend heading/.style={gray},
+    heading/.style={minimum height=0.2cm},
+    edge label/.style={midway, above, minimum width=0},
+    myperson/.style={minimum size=40pt, person},
+    computer/.style={draw, dotted},
+    number/.style={block, text width=1.5em, minimum size=1em, outer sep=3pt},
+    indirect/.style={draw=gray, dashed, gray}
+]
+    % Place nodes
+    \node [number]                (five) {5};
+    \node [number, right=of five] (four) {4};
+    \node at ($(five)!0.5!(four)$) (center) {};
+
+    \node [number, right=of four, xshift=20pt] (five enc) {19};
+    \node [number, right=of five enc] (four enc) {13};
+    \node at ($(five enc)!0.5!(four enc)$) (center enc) {};
+
+    \node [number, below=of center, indirect] (plus) {$+$};
+    \node [number, below=of center enc] (plus enc) {$\bigoplus$};
+    \node [number, below=of plus enc] (sum enc) {6};
+    \node [number] at (center |- sum enc) (sum) {9};
+  
+    % Fit cluster edges
+    \node [computer, inner sep=10pt, fit=(five) (four) (sum)] (plaintext) {};
+    \node [computer, inner sep=10pt, fit=(five enc) (four enc) (sum enc)] (encrypted) {};
+
+    % Headings
+    \node [heading, anchor=south] at (plaintext.north) {Plaintext};
+    \node [heading, anchor=south] at (encrypted.north) {Encrypted};
+
+    % Draw people
+    \node[myperson, below=of plaintext, yshift=30pt] (data owner) {Data Owner};
+    \node[myperson, evil, below=of encrypted, yshift=30pt] (remote owner) {Processing Provider};
+
+    % Draw edges
+    %\draw [decoration={brace, raise=5pt}, decorate] ($(four.north east)+(0,2pt)$) -- ($(four.south east)+(0,-2pt)$) node [pos=0.5, outer sep=3pt] (brace) {};
+    \path [line, indirect] (five) -- (plus);
+    \path [line, indirect] (four) -- (plus);
+    \path [line, indirect] (plus) -- (sum);
+    \path [line] (five enc) -- (plus enc);
+    \path [line] (four enc) -- (plus enc);
+    \path [line] (plus enc) -- (sum enc);
+    \path [line] (four) -- (five enc) node [edge label] {encrypt};
+    \path [line] (sum enc) -- (sum) node [edge label] {decrypt};
+\end{tikzpicture}
+

@@ -1,0 +1,65 @@
+% arara: pdflatex
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Welcome to Overleaf --- just edit your LaTeX on the left,
+% and we'll compile it for you on the right. If you give
+% someone the link to this page, they can edit at the same
+% time. See the help menu above for more info. Enjoy!
+%
+% Note: you can export the pdf to see the result at full
+% resolution.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass{article}
+
+\usepackage[latin1]{inputenc}
+\usepackage{tikz}
+\usetikzlibrary{shapes,arrows,fit,positioning,matrix, backgrounds}
+\usepackage{tikzpeople}
+
+%%%<
+\usepackage{verbatim}
+\usepackage[active,tightpage]{preview}
+\PreviewEnvironment{tikzpicture}
+\setlength\PreviewBorder{5pt}%
+%%%>
+
+
+\begin{document}
+\pagestyle{empty}
+
+\begin{tikzpicture}[
+  block/.style={draw, text width=3cm, align=center, minimum height=1cm},
+  bounding/.style={draw, dashed},
+]
+  % top
+  \node[block]
+    (normal app) {Generic application};
+  \node[block, right=of normal app]
+    (client)     {Security client};
+  \node[block, right=3cm of client]
+    (service)    {Security service};
+  \node[block, right=of service]
+    (secure app) {Standalone application};
+
+  % middle
+  \node[block, below=of normal app]
+    (normal scheduler) {Scheduler};
+  \node[block] at (normal scheduler -| client)
+    (driver) {TrustZone driver};
+  \node[block] at (normal scheduler -| service)
+    (ipc) {Inter-world IPC manager};
+  \node[block] at (normal scheduler -| secure app)
+    (secure scheduler) {Scheduler};
+  \node[bounding, fit=(normal scheduler) (driver)]
+    {Kernel};
+
+  % bottom
+  \node[block, below=of ipc]
+    (monitor) {Monitor};
+\end{tikzpicture}
+
+\include{diagram_content}
+
+\end{document}

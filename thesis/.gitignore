@@ -1,0 +1,18 @@
+# Generated files
+body.tex
+
+# Latex tmp files
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.lof
+*.log
+*.lot
+*.out
+*.run.xml
+*.toc
+*-blx.bib
+
+# generated pdf
+thesis.pdf

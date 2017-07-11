@@ -1,0 +1,19 @@
+\begin{tikzpicture}[
+	block/.style={draw, text width=3.5cm, align=center, inner sep=0, minimum height=0.5cm}
+]
+
+\node[block, text width=4cm] at (-0.5,1.5) {Operating System};
+
+\node at (-0.5,0.75) {Enclave};
+\node[block] at (-0.5,0) {Entry Table};
+\node[block] at (-0.5,-0.75) {Stack};
+\node[block] at (-0.5,-1.5) {Heap};
+\node[block] at (-0.5,-2.25) {Code};
+\begin{scope}[on background layer]
+\draw[fill=greenbg]  (-2.5,1) rectangle (1.5,-2.75);
+\end{scope}
+
+\node[block, text width=4cm] at (-0.5,-3.25) {App Stack};
+\node[block, text width=4cm] at (-0.5,-4) {App Heap};
+\node[block, text width=4cm] at (-0.5,-4.75) {App Code};
+\end{tikzpicture}

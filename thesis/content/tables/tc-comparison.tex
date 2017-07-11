@@ -1,0 +1,33 @@
+\newcommand{\rot}[1]{\makebox[1em][l]{\rotatebox{45}{#1}}}
+\newcommand{\h}[1]{\textbf{\rot{#1}}}
+
+\newcommand{\cmark}{\ding{51}}
+
+\begin{tabular}{lcllllllccc}
+
+\toprule
+\multicolumn{3}{c}{\textbf{General}}                &   & \multicolumn{3}{c}{\textbf{Classification}}                                       &   & \multicolumn{3}{c}{\textbf{Features}}                     \\
+\cmidrule(lr){1-3}                                      \cmidrule(lr){5-7}                                                                      \cmidrule(lr){9-11}
+\textbf{Name}   & \h{Reference}         & \h{Year}  &   & \h{TEE Level\tnote{a}}    & \h{Software TCB\tnote{b}} & \h{Hardware TCB\tnote{c}} &   & \h{Attestation}   & \h{Data Sealing}  & \h{Parallelism}   \\ \midrule
+Sanctum         & \cite{Costan}         & 2015      &   & a                         & a                         & custom CPU                &   & \cmark            &                   & \cmark            \\ 
+Intel SGX       & \cite{McKeen2013}     & 2015      &   & a                         & a                         & SGX                       &   & \cmark            & \cmark            & \cmark            \\ 
+TLR             & \cite{Santos2014}     & 2014      &   & a                         & c                         & TrustZone                 &   &                   & \cmark            & \cmark            \\ 
+Oasis           & \cite{Owusu2013}      & 2013      &   & a                         & a                         & custom CPU                &   & \cmark            & \cmark            & \cmark            \\ 
+Fides           & \cite{Strackx2012}    & 2012      &   & a                         & d                         & TPM, Virt.                &   & (\cmark)          &                   & \cmark            \\ 
+TrustVisor      & \cite{McCune2010}     & 2010      &   & a                         & (d)                       & TPM, Virt.                &   & \cmark            & \cmark            & \cmark            \\ 
+Flicker         & \cite{McCune2008}     & 2008      &   & a                         & a                         & TPM                       &   & \cmark            & \cmark            &                   \\ \midrule
+Windows IUM     &                       & 2016      &   & b                         & d                         & Virt.                     &   &                   &                   & \cmark            \\ 
+Haven           & \cite{Baumann2014}    & 2014      &   & b                         & c                         & SGX                       &   & \cmark            & \cmark            & \cmark            \\ 
+MiniBox         & \cite{Li2014}         & 2014      &   & b                         & d                         & TPM, Virt.                &   & \cmark            & \cmark            & \cmark            \\ 
+InkTag          & \cite{Hofmann2013}    & 2013      &   & b                         & d                         & Virt.                     &   & (\cmark)          & \cmark            & \cmark            \\ 
+Overshadow      & \cite{Chen2008}       & 2008      &   & b                         & d                         &                           &   &                   &                   & \cmark            \\ \midrule
+CloudVisor      & \cite{Zhang2011}      & 2011      &   & c                         & d                         & TPM, Virt.                &   & (\cmark)          &                   & \cmark            \\ 
+Nova            & \cite{Steinberg2010}  & 2010      &   & c                         & d                         & Virt.                     &   &                   &                   & \cmark            \\ 
+NoHype          & \cite{Keller2010}     & 2010      &   & c                         & c                         & custom CPU                &   &                   &                   & (\cmark)          \\ 
+vTPM            & \cite{Perez2006}      & 2006      &   & c                         & d                         & TPM, Virt.                &   & \cmark            & \cmark            & \cmark            \\ 
+Terra           & \cite{Garfinkel2003}  & 2003      &   & c                         & d                         & TPM, Virt.                &   & \cmark            & \cmark            & \cmark            \\ 
+ARM TrustZone   & \cite{trustzone}      & 2003      &   & c                         & c                         & TrustZone                 &   &                   &                   & \cmark            \\ \midrule
+TPM             & \cite{tcg:tpm2-arch}  & 2002      &   & d, e                      & d, e                      & TPM                       &   & \cmark            & \cmark            & \cmark            \\ 
+
+\bottomrule
+\end{tabular}

@@ -1,0 +1,10 @@
+<project name="secure programs" ID="150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7" version="docear 1.0">
+<folder type="library" name="Library">
+<link type="literature_annotations" name="Literature &amp; Annotations" path="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/_data/150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/default_files/literature_and_annotations.mm"/>
+<link type="file" name="Temp" path="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/_data/150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/default_files/temp.mm" system="true"/>
+<link type="file" name="Trash" path="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/_data/150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/default_files/trash.mm" system="true"/>
+</folder>
+<folder type="physical" name="My drafts" path="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/_data/150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/My%20Drafts"/>
+<folder type="literature_repository" name="Literature repository" system="true"/>
+<link type="references" name="References" path="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/_data/150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/default_files/My Thesis.bib" system="true"/>
+</project>

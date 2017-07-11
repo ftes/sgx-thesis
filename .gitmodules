@@ -1,0 +1,10 @@
+[submodule "thesis/mm2latex"]
+	path = thesis/mm2latex
+	url = git@github.com:/ftes/mm2latex
+	branch = feature/autoref
+[submodule "kissdb-sgx"]
+	path = kissdb-sgx
+	url = git@github.com:/ftes/kissdb-sgx
+[submodule "literature_repository"]
+	path = literature_repository
+	url = git@github.com:/ftes/sgx2017-literature

@@ -1,0 +1,57 @@
+% makebox for over-wide figure   
+\makebox[\linewidth]{
+\begin{tikzpicture}[
+  node distance=15pt and 170pt, auto,
+  nodes={{minimum width=3.5cm, minimum height=0.6cm}},
+  trim right=(manufacturer.east),
+  trim left=(data owner fit.west),
+  block/.style={rectangle, draw, align=center, rounded corners},
+  line/.style={draw, -latex'},
+  legend/.style={nodes={anchor=base}, column sep=5pt, row sep=5pt, yshift=-2cm, anchor=north},
+  legend heading/.style={gray},
+  heading/.style={minimum height=0.2cm},
+  edge label/.style={midway, above, minimum width=0},
+  myperson/.style={minimum size=40pt, person},
+  computer/.style={draw, dotted},
+  new/.style={font=\bfseries}
+]
+  % Place nodes
+  \node [block, draw=none] (remote computer) {Remote Computer};
+  \node [block, draw=none, new, below=of remote computer] (trusted hardware)  {Trusted Hardware};
+  \node [block, below=of trusted hardware] (untrusted software)  {Untrusted Software};
+  \node [block, draw=none, below=of untrusted software] (container)  {Trusted Execution\\Environment};
+  \node [block, below=of container] (code) {Private Code};
+  \node [block, below=of code] (data) {Private Data};
+
+  \node [block, left=of code] (setup) {Setup};
+  \node [block, below=of setup] (verification) {Verification};
+  \node [block, draw=none, above=of setup] (dispatcher) {Computation Dispatcher};
+  \node [block, draw=none] at (remote computer -| setup) (data owner) {Data Owner's Computer};
+ 
+  % Fit cluster edges
+  \node [draw, inner sep=10pt, fit=(dispatcher) (setup) (verification)] (dispatcher fit) {};
+  \node [computer, inner sep=10pt, fit=(dispatcher fit) (data owner)] (data owner fit) {};
+  \begin{scope}[on background layer]
+    \node [draw, inner sep=10pt, fit=(container) (code) (data), fill=greenbg] (container fit) {};
+  \end{scope}
+  \node [draw, inner sep=10pt, fit=(container fit) (untrusted software) (trusted hardware)] (trusted hardware fit) {};
+  \node [computer, inner sep=10pt, fit=(trusted hardware fit) (remote computer)] (remote computer fit) {};
+
+  % Draw people
+  \node[myperson, below=of data owner fit, yshift=-30pt] (data owner person) {Data Owner};
+  \node[myperson, evil] (remote computer owner person) at (data owner person -| remote computer fit) {Infrastructure Owner};
+  \node[myperson, good] at ($(data owner person)!0.5!(remote computer owner person)$) (software provider) {Software Provider};
+  \node[myperson, good, right=of remote computer owner person, xshift=-100pt, new] (manufacturer) {Manufacturer};
+
+  % Draw edges
+  \path [line] (dispatcher fit.20) -- (container fit.west |- dispatcher fit.20) node [edge label] {Setup Computation};
+  \path [line] (container fit.180) -- (dispatcher fit.east |- container fit.180) node [edge label] {Receive Encrypted Results};
+  \path [line] ($(data owner person.north)+(0,\personOffset)$) -- (data owner fit) node [edge label, left] {Trusts, Owns};
+  \path [line] ($(remote computer owner person.north)+(0,\personOffset)$) -- (remote computer fit) node [edge label, right] {Manages};
+  \path [line] ($(manufacturer.north)+(0,\haloOffset)$) |- (trusted hardware fit) node [edge label, new] {Builds};
+  \path [line] ($(software provider.north)+(0,\haloOffset)$) |- (dispatcher fit.330) node [edge label] {Authors};
+  \path [line] ($(software provider.north)+(0,\haloOffset)$) |- (dispatcher fit.330 -| container fit.west) node [edge label] {};
+  \path [line] (data owner person) -- (software provider) node [edge label] {Trusts};
+  \path [line] ($(data owner person.south)+(0,-0.5)$) -- +(0,-1.0) -- ($(manufacturer.south)+(0,-1.5)$) node [edge label, new] {Trusts} -- ($(manufacturer.south)+(0,-0.5)$);
+\end{tikzpicture}
+}
