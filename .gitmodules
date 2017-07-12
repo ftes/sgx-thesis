@@ -8,3 +8,9 @@
 [submodule "literature_repository"]
 	path = literature_repository
 	url = git@github.com:/ftes/sgx2017-literature
+[submodule "sgx-lib-consumer"]
+	path = sgx-lib-consumer
+	url = git@github.com:/ftes/sgx-lib-consumer
+[submodule "sgx-lib"]
+	path = sgx-lib
+	url = git@github.com:/ftes/sgx-lib

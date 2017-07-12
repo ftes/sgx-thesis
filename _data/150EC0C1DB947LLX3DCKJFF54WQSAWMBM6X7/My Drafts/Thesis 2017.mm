@@ -2,7 +2,7 @@
 <!--To view this file, download Docear - The Academic Literature Suite from http://www.docear.org -->
 <attribute_registry SHOW_ATTRIBUTES="hide"/>
 <node TEXT="Thesis 2017" FOLDED="false" ID="ID_308776938" CREATED="1488476421728" MODIFIED="1499261402227">
-<hook NAME="AutomaticEdgeColor" COUNTER="10"/>
+<hook NAME="AutomaticEdgeColor" COUNTER="2"/>
 <hook NAME="MapStyle" zoom="1.064">
     <properties show_icon_for_attributes="true" show_note_icons="true"/>
 
@@ -88,7 +88,7 @@
 <node TEXT="- logische Schritte&#xa;- einheitliches Abstraktionslevel in Gliederung&#xa;- einfache, pr&#xe4;zise Sprache (keine F&#xfc;llw&#xf6;rter, kurze S&#xe4;tze)&#xa;- 60-80 Textseiten (exkl. Extras)" STYLE_REF="drop" POSITION="left" ID="ID_1890082914" CREATED="1492081026206" MODIFIED="1495606095643" MOVED="1495604974144">
 <edge COLOR="#007c7c"/>
 </node>
-<node TEXT="Introduction" LOCALIZED_STYLE_REF="default" POSITION="left" ID="ID_1883383221" CREATED="1487267793613" MODIFIED="1496135435936" MOVED="1488547630569">
+<node TEXT="Introduction" LOCALIZED_STYLE_REF="default" FOLDED="true" POSITION="left" ID="ID_1883383221" CREATED="1487267793613" MODIFIED="1496135435936" MOVED="1488547630569">
 <icon BUILTIN="button_cancel"/>
 <edge COLOR="#00ff00"/>
 <node TEXT="- Darstellung des Themas der Arbeit (Hinf&#xfc;hrung, wieso ist das Thema relevant)&#xa;- Auflistung der Fragestellungen&#xa;- einzelne Aspekte des Problems herausgearbeitet&#xa;- knapper &#xdc;berblick: Schritte der Problembehandlung&#xa;- Abgrenzung des Themas (was wird ausgeklammert)&#xa;- Aufbau der Arbeit (Begr&#xfc;ndung der Gliederung)" STYLE_REF="drop" ID="ID_584239331" CREATED="1492080918941" MODIFIED="1492616648866" MOVED="1492080932228"/>
@@ -132,7 +132,7 @@
 <node TEXT="comparison of trusted computing solutions" ID="ID_1710565397" CREATED="1499779394508" MODIFIED="1499779400285"/>
 <node TEXT="guide to SGX" ID="ID_1482128103" CREATED="1499779400380" MODIFIED="1499779402437"/>
 </node>
-<node TEXT="Content" STYLE_REF="paragraphs_drop_self" ID="ID_697114612" CREATED="1495013498189" MODIFIED="1495013508003">
+<node TEXT="Content" STYLE_REF="paragraphs_drop_self" FOLDED="true" ID="ID_697114612" CREATED="1495013498189" MODIFIED="1495013508003">
 <node TEXT="protect from privilege escalation" ID="ID_173367700" CREATED="1499261009649" MODIFIED="1499261042866"/>
 <node TEXT="select a trusted computing solution (ready to use, small TCB, attestation)" ID="ID_1396932272" CREATED="1499672702140" MODIFIED="1499672815440"/>
 <node TEXT="assumption: can modify application" ID="ID_1426216513" CREATED="1499672741853" MODIFIED="1499672748104"/>
@@ -151,7 +151,7 @@
 <node TEXT="The sources of this thesis are available at \url{https://github.com/ftes/sgx-thesis}." ID="ID_1636604444" CREATED="1499788139356" MODIFIED="1499789557370"/>
 </node>
 </node>
-<node TEXT="Background" LOCALIZED_STYLE_REF="default" POSITION="left" ID="ID_941070001" CREATED="1488476882926" MODIFIED="1499264027738" MOVED="1488547633482">
+<node TEXT="Background" LOCALIZED_STYLE_REF="default" FOLDED="true" POSITION="left" ID="ID_941070001" CREATED="1488476882926" MODIFIED="1499264027738" MOVED="1488547633482">
 <edge COLOR="#ff00ff"/>
 <node TEXT="- zentrale Begriffe definieren und einordnen&#xa;- nicht Lexikon-Definition, lieber problemorientierte Definition&#xa;- Diskussion unterschiedlicher Definitionsans&#xe4;tze kann hilfreich sein" STYLE_REF="drop" ID="ID_231337527" CREATED="1492080945485" MODIFIED="1492616799822" MOVED="1492616692193"/>
 <node TEXT="- gute Referenzen statt viel wiederholen" STYLE_REF="drop" ID="ID_975081732" CREATED="1492616800232" MODIFIED="1492616818386"/>
@@ -1054,6 +1054,7 @@
 <attribute NAME="key" VALUE="GlobalPlatform"/>
 <attribute NAME="year" VALUE="2017"/>
 <attribute NAME="title" VALUE="TEE System Architecture"/>
+<attribute NAME="authors" VALUE="{GlobalPlatform Inc.}"/>
 <pdf_annotation type="PDF_FILE" object_id="0" document_hash="C136319456CBAC743D9E1C19C131BE1E0EA1CF2A0E470E0DC1CC19A3BBD29FD">
     <pdf_title>TEE System Architecture</pdf_title>
 </pdf_annotation>
@@ -1161,6 +1162,7 @@
 <attribute NAME="key" VALUE="GlobalPlatform"/>
 <attribute NAME="year" VALUE="2017"/>
 <attribute NAME="title" VALUE="TEE System Architecture"/>
+<attribute NAME="authors" VALUE="{GlobalPlatform Inc.}"/>
 <pdf_annotation type="PDF_FILE" object_id="0" document_hash="C136319456CBAC743D9E1C19C131BE1E0EA1CF2A0E470E0DC1CC19A3BBD29FD">
     <pdf_title>TEE System Architecture</pdf_title>
 </pdf_annotation>
@@ -1186,7 +1188,7 @@
 </node>
 </node>
 </node>
-<node TEXT="Commercial" FOLDED="true" ID="ID_1886048225" CREATED="1497276280777" MODIFIED="1499677034738">
+<node TEXT="Commercial" ID="ID_1886048225" CREATED="1497276280777" MODIFIED="1499677034738">
 <node TEXT="mindmap" STYLE_REF="drop" FOLDED="true" ID="ID_1943302489" CREATED="1499258754737" MODIFIED="1499258762187">
 <node TEXT="TrustZone" STYLE_REF="drop" FOLDED="true" ID="ID_1512820074" CREATED="1495543887981" MODIFIED="1499258737417" MOVED="1499258766096">
 <node TEXT="two worlds" FOLDED="true" ID="ID_948633106" CREATED="1452524222409" MODIFIED="1453896883385" MOVED="1497277082505">
@@ -2088,7 +2090,7 @@
 <node TEXT="\item The TCB is far larger than the security critical parts of the application that should be hardened. It includes the boot loader, monitor, secure kernel and all other applications running in the secure world." ID="ID_1738797352" CREATED="1499238318145" MODIFIED="1499240632749"/>
 <node TEXT="\end{itemize}" ID="ID_1374620071" CREATED="1499238150024" MODIFIED="1499238161581"/>
 </node>
-<node TEXT="\item[2015: Intel SGX\footnotemark]" FOLDED="true" ID="ID_1054190841" CREATED="1497276073566" MODIFIED="1499263178756">
+<node TEXT="\item[2015: Intel Software Guard Extensions (SGX)\footnotemark]" FOLDED="true" ID="ID_1054190841" CREATED="1497276073566" MODIFIED="1499843145361">
 <icon BUILTIN="button_ok"/>
 <node TEXT="\footnotetext{\url{https://software.intel.com/en-us/sgx}}" ID="ID_229356089" CREATED="1497458331496" MODIFIED="1497458334774" MOVED="1498657204378"/>
 <node TEXT="is an instruction set extension with which protected memory regions, called enclaves, can be set up." ID="ID_61266204" CREATED="1498741989380" MODIFIED="1498746953253"/>
@@ -4232,7 +4234,8 @@
 <edge COLOR="#007c00"/>
 <attribute NAME="label" VALUE="chapter:sgx" OBJECT="java.net.URI|chapter:sgx"/>
 <node TEXT="mindmap" STYLE_REF="drop" FOLDED="true" ID="ID_568950088" CREATED="1495056010089" MODIFIED="1495056022163" MOVED="1499677177765">
-<node TEXT="overview" STYLE_REF="LastHeading" FOLDED="true" ID="ID_480937243" CREATED="1488477282196" MODIFIED="1489493180794" MOVED="1495056027745">
+<node TEXT="done" FOLDED="true" ID="ID_773475631" CREATED="1499841409136" MODIFIED="1499841410087">
+<node TEXT="overview" STYLE_REF="LastHeading" ID="ID_480937243" CREATED="1488477282196" MODIFIED="1489493180794" MOVED="1499841411035">
 <node TEXT="Intel SGX Explained" FOLDED="true" ID="ID_1065359042" CREATED="1488547079227" MODIFIED="1494240007325" MOVED="1488547087583">
 <node TEXT="SGX Explained.pdf" ID="ID_1822459803" CREATED="1454413031766" MODIFIED="1454413752127" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/SGX%20Explained.pdf" MOVED="1455195150767">
 <pdf_annotation type="PDF_FILE" object_id="0" document_hash="6247F24926CEBCBDD607A743A7A36C17F76C70D179FFDDC5BE417C9354C5B">
@@ -4355,7 +4358,7 @@
 </node>
 <node TEXT="versions" ID="ID_429853010" CREATED="1453288205871" MODIFIED="1453883874316" MOVED="1453288428678"/>
 </node>
-<node TEXT="details" STYLE_REF="LastHeading" FOLDED="true" ID="ID_1212409427" CREATED="1453289823931" MODIFIED="1489493180797" MOVED="1495056027750">
+<node TEXT="details" STYLE_REF="LastHeading" FOLDED="true" ID="ID_1212409427" CREATED="1453289823931" MODIFIED="1489493180797" MOVED="1499841417810">
 <node TEXT="additional memory access checks" FOLDED="true" ID="ID_621008367" CREATED="1454412637120" MODIFIED="1454412644416" MOVED="1454412667605">
 <node TEXT="regular virtual memory and page tables still in place" ID="ID_631647097" CREATED="1454412645408" MODIFIED="1454412664578"/>
 <node TEXT="SGX leaves all page tables under the control of the host operating system and implements a new, independent memory protection mechanism. A memory access will fail if it is disallowed under either of the two mechanisms" ID="ID_207767052" CREATED="1454412262109" MODIFIED="1454412347433" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/Controlled%20Channel%20Attacks.pdf" MOVED="1454412512011">
@@ -4391,7 +4394,7 @@
 </pdf_annotation>
 <attribute NAME="year" VALUE="2014"/>
 <attribute NAME="title" VALUE="Intel Software Guards Extensions Programming Reference"/>
-<attribute NAME="authors" VALUE="Intel Corporation"/>
+<attribute NAME="authors" VALUE="Intel"/>
 </node>
 <node TEXT=" cost-effective mechanism of creating cryptographically protected volatile storage using platform DRAM" ID="ID_1665409227" CREATED="1453116543740" MODIFIED="1453883874410" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/SGX%20programming%20reference.pdf">
 <pdf_annotation type="HIGHLIGHTED_TEXT" page="40" object_id="70296796818745153" object_number="13666" document_hash="82A0D77BB3D8893A886C2C88DF2654F625BC127CB86347752D86E9B2BD368">
@@ -4399,7 +4402,7 @@
 </pdf_annotation>
 <attribute NAME="year" VALUE="2014"/>
 <attribute NAME="title" VALUE="Intel Software Guards Extensions Programming Reference"/>
-<attribute NAME="authors" VALUE="Intel Corporation"/>
+<attribute NAME="authors" VALUE="Intel"/>
 </node>
 </node>
 </node>
@@ -4567,27 +4570,11 @@
 </node>
 </node>
 </node>
-<node TEXT="performance" STYLE_REF="LastHeading" ID="ID_1631535374" CREATED="1488544304147" MODIFIED="1489493180799" MOVED="1495056027756"/>
-<node TEXT="problems" STYLE_REF="LastHeading" ID="ID_630916322" CREATED="1487266452641" MODIFIED="1489493180801" MOVED="1495056027761"/>
-<node TEXT="noteworthy applications" STYLE_REF="LastHeading" ID="ID_3217876" CREATED="1487266503410" MODIFIED="1489493180789" MOVED="1495056027769"/>
-<node ID="ID_1890847057" CREATED="1498744942085" MODIFIED="1498744953555"><richcontent TYPE="NODE">
-
-<html>
-  <head>
-    
-  </head>
-  <body>
-    <p>
-      <b>hardware basics, software on top</b>
-    </p>
-  </body>
-</html>
-</richcontent>
 </node>
 </node>
 <node TEXT="Introduction" STYLE_REF="paragraphs_drop_self" FOLDED="true" ID="ID_354985430" CREATED="1495056005873" MODIFIED="1499694130206" MOVED="1499677177776">
 <icon BUILTIN="button_ok"/>
-<node TEXT="This chapter describes Intel SGX in more detail. Costan et al. provide an exhaustive, in-depth description and analysis of SGX which is referred to as additional reading material." ID="ID_870693712" CREATED="1499682029788" MODIFIED="1499757163580" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/SGX%20Explained.pdf">
+<node TEXT="This chapter describes Intel Software Guard Extensions (SGX) in more detail. Costan et al. provide an exhaustive, in-depth description and analysis of SGX which is referred to as additional reading material." ID="ID_870693712" CREATED="1499682029788" MODIFIED="1499843163893" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/SGX%20Explained.pdf">
 <attribute NAME="key" VALUE="sgx-explained"/>
 <attribute NAME="journal" VALUE="IACR Cryptology ePrint Archive"/>
 <attribute NAME="year" VALUE="2016"/>
@@ -4603,8 +4590,8 @@
 <node TEXT="Overview" LOCALIZED_STYLE_REF="default" FOLDED="true" ID="ID_1052911477" CREATED="1495056059522" MODIFIED="1499776800629" MOVED="1499677177784">
 <icon BUILTIN="button_ok"/>
 <node TEXT="mindmap" STYLE_REF="drop" FOLDED="true" ID="ID_563834243" CREATED="1495543887981" MODIFIED="1495543899209" MOVED="1495543900065">
-<node TEXT="idea" FOLDED="true" ID="ID_1434317928" CREATED="1455195034851" MODIFIED="1455195036956" MOVED="1499683606100">
-<node TEXT="small TCB" FOLDED="true" ID="ID_352504679" CREATED="1454417572095" MODIFIED="1454417575630">
+<node TEXT="done" ID="ID_1968553160" CREATED="1499841439551" MODIFIED="1499841440551" MOVED="1499841440977">
+<node TEXT="small TCB" FOLDED="true" ID="ID_352504679" CREATED="1454417572095" MODIFIED="1454417575630" MOVED="1499841560907">
 <node TEXT="SGX does not trust any layer in the computer&#x2019;s software stack (firmware, hypervisor, OS)" ID="ID_1702467449" CREATED="1454413032286" MODIFIED="1488817479572" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/SGX%20Explained.pdf" MOVED="1455093599634">
 <pdf_annotation type="HIGHLIGHTED_TEXT" page="56" object_id="7068046763469486050" object_number="1020" document_hash="6247F24926CEBCBDD607A743A7A36C17F76C70D179FFDDC5BE417C9354C5B">
     <pdf_title>Intel SGX Explained</pdf_title>
@@ -4636,10 +4623,42 @@
 <attribute NAME="journal" VALUE="IACR Cryptology ePrint Archive"/>
 </node>
 </node>
-<node TEXT="privileged Intel enclaves" FOLDED="true" ID="ID_1601631140" CREATED="1455093829957" MODIFIED="1455093835823">
-<node TEXT="signed w/ key hardcoded into SGX microcode" FOLDED="true" ID="ID_406698609" CREATED="1455093857222" MODIFIED="1455093868735">
-<node TEXT="signed using an Intel private key whose corresponding public key is hard-coded into the SGX microcode" ID="ID_1034985428" CREATED="1454413032064" MODIFIED="1454413692753" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/SGX%20Explained.pdf" MOVED="1455093871385">
-<pdf_annotation type="HIGHLIGHTED_TEXT" page="56" object_id="7761804451866253731" object_number="1025" document_hash="6247F24926CEBCBDD607A743A7A36C17F76C70D179FFDDC5BE417C9354C5B">
+<node TEXT="cooperative model: untrusted OS manages resources (especially memory)" FOLDED="true" ID="ID_854871795" CREATED="1455093996037" MODIFIED="1455094030910" MOVED="1499841560908">
+<node TEXT="SGX design expects the system software to allocate the EPC pages to enclaves. However, as the system software is not trusted, SGX processors check the correctness of the system software&#x2019;s allocation decisions" ID="ID_1950641" CREATED="1454413032827" MODIFIED="1454413693700" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/SGX%20Explained.pdf" MOVED="1455094046518">
+<pdf_annotation type="HIGHLIGHTED_TEXT" page="58" object_id="1677981630314931950" object_number="1054" document_hash="6247F24926CEBCBDD607A743A7A36C17F76C70D179FFDDC5BE417C9354C5B">
+    <pdf_title>Intel SGX Explained</pdf_title>
+</pdf_annotation>
+<attribute NAME="key" VALUE="sgx-explained"/>
+<attribute NAME="year" VALUE="2016"/>
+<attribute NAME="title" VALUE="Intel SGX Explained."/>
+<attribute NAME="authors" VALUE="Costan, Victor and Devadas, Srinivas"/>
+<attribute NAME="journal" VALUE="IACR Cryptology ePrint Archive"/>
+</node>
+<node TEXT="SGX microcode checks correctness" ID="ID_883173178" CREATED="1455094053133" MODIFIED="1455094063246">
+<node TEXT="if the system software attempts to allocate the same EPC page to two enclaves, the SGX instruction used to perform the allocation will fail" ID="ID_335220110" CREATED="1454413032149" MODIFIED="1454413693834" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/SGX%20Explained.pdf" MOVED="1455094076358">
+<pdf_annotation type="HIGHLIGHTED_TEXT" page="58" object_id="8881698709876170358" object_number="1055" document_hash="6247F24926CEBCBDD607A743A7A36C17F76C70D179FFDDC5BE417C9354C5B">
+    <pdf_title>Intel SGX Explained</pdf_title>
+</pdf_annotation>
+<attribute NAME="key" VALUE="sgx-explained"/>
+<attribute NAME="year" VALUE="2016"/>
+<attribute NAME="title" VALUE="Intel SGX Explained."/>
+<attribute NAME="authors" VALUE="Costan, Victor and Devadas, Srinivas"/>
+<attribute NAME="journal" VALUE="IACR Cryptology ePrint Archive"/>
+</node>
+<node TEXT="data structures" FOLDED="true" ID="ID_1155978975" CREATED="1455094121998" MODIFIED="1455094125687">
+<node TEXT="EPCM: inverted page map -&gt; page owned by enclave ? allow : reject" FOLDED="true" ID="ID_703219282" CREATED="1455093629294" MODIFIED="1455093735431" MOVED="1455094127605">
+<node TEXT="EPCM is an array with one entry per EPC page" ID="ID_272719556" CREATED="1454413032569" MODIFIED="1454413693959" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/SGX%20Explained.pdf" MOVED="1455094088622">
+<pdf_annotation type="HIGHLIGHTED_TEXT" page="58" object_id="1858187661900559549" object_number="1056" document_hash="6247F24926CEBCBDD607A743A7A36C17F76C70D179FFDDC5BE417C9354C5B">
+    <pdf_title>Intel SGX Explained</pdf_title>
+</pdf_annotation>
+<attribute NAME="key" VALUE="sgx-explained"/>
+<attribute NAME="year" VALUE="2016"/>
+<attribute NAME="title" VALUE="Intel SGX Explained."/>
+<attribute NAME="authors" VALUE="Costan, Victor and Devadas, Srinivas"/>
+<attribute NAME="journal" VALUE="IACR Cryptology ePrint Archive"/>
+</node>
+<node TEXT="containers&#x2019; security is preserved by a TLB miss handler that relies on an inverted page map (the EPCM) to reject address translations for memory that does not belong to the current container" ID="ID_122068088" CREATED="1454413032448" MODIFIED="1454413692328" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/SGX%20Explained.pdf" MOVED="1455093743247">
+<pdf_annotation type="HIGHLIGHTED_TEXT" page="56" object_id="5830232227356008896" object_number="1023" document_hash="6247F24926CEBCBDD607A743A7A36C17F76C70D179FFDDC5BE417C9354C5B">
     <pdf_title>Intel SGX Explained</pdf_title>
 </pdf_annotation>
 <attribute NAME="key" VALUE="sgx-explained"/>
@@ -4649,9 +4668,8 @@
 <attribute NAME="journal" VALUE="IACR Cryptology ePrint Archive"/>
 </node>
 </node>
-<node TEXT="access to CPUs hardware keys enforced by launch enclave" FOLDED="true" ID="ID_1492793536" CREATED="1455093846878" MODIFIED="1455095283342" MOVED="1455095295887">
-<node TEXT="privileged containers that receive direct access to the SGX processor&#x2019;s hardware keys" ID="ID_856178759" CREATED="1454413032306" MODIFIED="1454413692619" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/SGX%20Explained.pdf" MOVED="1455093854978">
-<pdf_annotation type="HIGHLIGHTED_TEXT" page="56" object_id="4882402738836443919" object_number="1024" document_hash="6247F24926CEBCBDD607A743A7A36C17F76C70D179FFDDC5BE417C9354C5B">
+<node TEXT="per-enclave metadata in a SGX Enclave Control Structure (SECS)" FOLDED="true" ID="ID_1527226692" CREATED="1454413032574" MODIFIED="1454413694205" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/SGX%20Explained.pdf" MOVED="1455094134878">
+<pdf_annotation type="HIGHLIGHTED_TEXT" page="59" object_id="8997434789195458847" object_number="1062" document_hash="6247F24926CEBCBDD607A743A7A36C17F76C70D179FFDDC5BE417C9354C5B">
     <pdf_title>Intel SGX Explained</pdf_title>
 </pdf_annotation>
 <attribute NAME="key" VALUE="sgx-explained"/>
@@ -4659,189 +4677,8 @@
 <attribute NAME="title" VALUE="Intel SGX Explained."/>
 <attribute NAME="authors" VALUE="Costan, Victor and Devadas, Srinivas"/>
 <attribute NAME="journal" VALUE="IACR Cryptology ePrint Archive"/>
-</node>
-<node TEXT="SGX implementation contained in a CPU&#x2019;s hardware does not directly enforce the enclave attribute checks that decide which enclaves can access the CPU secrets used for software attestation" ID="ID_481103068" CREATED="1454413032048" MODIFIED="1454413700551" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/SGX%20Explained.pdf" MOVED="1455095288180">
-<pdf_annotation type="HIGHLIGHTED_TEXT" page="82" object_id="748662506427272258" object_number="1411" document_hash="6247F24926CEBCBDD607A743A7A36C17F76C70D179FFDDC5BE417C9354C5B">
-    <pdf_title>Intel SGX Explained</pdf_title>
-</pdf_annotation>
-<attribute NAME="key" VALUE="sgx-explained"/>
-<attribute NAME="year" VALUE="2016"/>
-<attribute NAME="title" VALUE="Intel SGX Explained."/>
-<attribute NAME="authors" VALUE="Costan, Victor and Devadas, Srinivas"/>
-<attribute NAME="journal" VALUE="IACR Cryptology ePrint Archive"/>
-</node>
-<node TEXT="instead enforced by the Launch Enclave, which is an enclave issued by Intel that gets to approve every other enclave before it is initialized by EINIT" ID="ID_587330149" CREATED="1454413032462" MODIFIED="1454413700644" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/SGX%20Explained.pdf" MOVED="1455095288187">
-<pdf_annotation type="HIGHLIGHTED_TEXT" page="82" object_id="2078276456916854921" object_number="1412" document_hash="6247F24926CEBCBDD607A743A7A36C17F76C70D179FFDDC5BE417C9354C5B">
-    <pdf_title>Intel SGX Explained</pdf_title>
-</pdf_annotation>
-<attribute NAME="key" VALUE="sgx-explained"/>
-<attribute NAME="year" VALUE="2016"/>
-<attribute NAME="title" VALUE="Intel SGX Explained."/>
-<attribute NAME="authors" VALUE="Costan, Victor and Devadas, Srinivas"/>
-<attribute NAME="journal" VALUE="IACR Cryptology ePrint Archive"/>
-</node>
-<node TEXT="relies on the LE to reject initialization requests that set privileged attributes such as PROVISIONKEY on unauthorized enclaves" ID="ID_503472144" CREATED="1454413032470" MODIFIED="1454413703865" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/SGX%20Explained.pdf" MOVED="1455192584175">
-<pdf_annotation type="HIGHLIGHTED_TEXT" page="87" object_id="534226553202357813" object_number="1497" document_hash="6247F24926CEBCBDD607A743A7A36C17F76C70D179FFDDC5BE417C9354C5B">
-    <pdf_title>Intel SGX Explained</pdf_title>
-</pdf_annotation>
-<attribute NAME="key" VALUE="sgx-explained"/>
-<attribute NAME="year" VALUE="2016"/>
-<attribute NAME="title" VALUE="Intel SGX Explained."/>
-<attribute NAME="authors" VALUE="Costan, Victor and Devadas, Srinivas"/>
-<attribute NAME="journal" VALUE="IACR Cryptology ePrint Archive"/>
-</node>
-</node>
-<node TEXT="quoting enclave" FOLDED="true" ID="ID_1080756844" CREATED="1455094233774" MODIFIED="1455094240166">
-<node TEXT="attestation signature too complex for hardware implementation" FOLDED="true" ID="ID_869572115" CREATED="1455095309480" MODIFIED="1455095331493">
-<node TEXT="cryptographic primitive used in SGX&#x2019;s attestation signature is too complex to be implemented in hardware, so the signing process is performed by a privileged Quoting Enclave, which is issued by Intel, and can access the SGX attestation key" ID="ID_1041692312" CREATED="1454413032360" MODIFIED="1454413700093" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/SGX%20Explained.pdf" MOVED="1455095340764">
-<pdf_annotation type="HIGHLIGHTED_TEXT" page="82" object_id="2064300441484539948" object_number="1406" document_hash="6247F24926CEBCBDD607A743A7A36C17F76C70D179FFDDC5BE417C9354C5B">
-    <pdf_title>Intel SGX Explained</pdf_title>
-</pdf_annotation>
-<attribute NAME="key" VALUE="sgx-explained"/>
-<attribute NAME="year" VALUE="2016"/>
-<attribute NAME="title" VALUE="Intel SGX Explained."/>
-<attribute NAME="authors" VALUE="Costan, Victor and Devadas, Srinivas"/>
-<attribute NAME="journal" VALUE="IACR Cryptology ePrint Archive"/>
-</node>
-</node>
-<node TEXT="can access attestation key" FOLDED="true" ID="ID_1867191016" CREATED="1455095332012" MODIFIED="1455095337670">
-<node TEXT="Quoting Enclave then obtains the Provisioning Seal Key from EGETKEY and uses it to decrypt the Attestation Key" ID="ID_1394853833" CREATED="1454413032681" MODIFIED="1454413701534" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/SGX%20Explained.pdf">
-<pdf_annotation type="HIGHLIGHTED_TEXT" page="85" object_id="1867860624445870442" object_number="1459" document_hash="6247F24926CEBCBDD607A743A7A36C17F76C70D179FFDDC5BE417C9354C5B">
-    <pdf_title>Intel SGX Explained</pdf_title>
-</pdf_annotation>
-<attribute NAME="key" VALUE="sgx-explained"/>
-<attribute NAME="year" VALUE="2016"/>
-<attribute NAME="title" VALUE="Intel SGX Explained."/>
-<attribute NAME="authors" VALUE="Costan, Victor and Devadas, Srinivas"/>
-<attribute NAME="journal" VALUE="IACR Cryptology ePrint Archive"/>
-</node>
-<node TEXT="uses the Attestation Key to sign the information in the local attestation report, producing an Attestation Signature" ID="ID_281009906" CREATED="1454413031976" MODIFIED="1454413701623" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/SGX%20Explained.pdf">
-<pdf_annotation type="HIGHLIGHTED_TEXT" page="85" object_id="6336438181204430616" object_number="1460" document_hash="6247F24926CEBCBDD607A743A7A36C17F76C70D179FFDDC5BE417C9354C5B">
-    <pdf_title>Intel SGX Explained</pdf_title>
-</pdf_annotation>
-<attribute NAME="key" VALUE="sgx-explained"/>
-<attribute NAME="year" VALUE="2016"/>
-<attribute NAME="title" VALUE="Intel SGX Explained."/>
-<attribute NAME="authors" VALUE="Costan, Victor and Devadas, Srinivas"/>
-<attribute NAME="journal" VALUE="IACR Cryptology ePrint Archive"/>
-</node>
-</node>
-<node TEXT="name &#x201c;Quoting Enclave&#x201d; was chosen as a reference to the TPM " ID="ID_757453977" CREATED="1454413031804" MODIFIED="1454413701835" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/SGX%20Explained.pdf">
-<pdf_annotation type="HIGHLIGHTED_TEXT" page="85" object_id="65449597944362984" object_number="1461" document_hash="6247F24926CEBCBDD607A743A7A36C17F76C70D179FFDDC5BE417C9354C5B">
-    <pdf_title>Intel SGX Explained</pdf_title>
-</pdf_annotation>
-<attribute NAME="key" VALUE="sgx-explained"/>
-<attribute NAME="year" VALUE="2016"/>
-<attribute NAME="title" VALUE="Intel SGX Explained."/>
-<attribute NAME="authors" VALUE="Costan, Victor and Devadas, Srinivas"/>
-<attribute NAME="journal" VALUE="IACR Cryptology ePrint Archive"/>
-</node>
-</node>
-<node TEXT="launch enclave" FOLDED="true" ID="ID_308161079" CREATED="1455094240518" MODIFIED="1499262954316">
-<node TEXT="LE enforces software licensing" FOLDED="true" ID="ID_1964214793" CREATED="1454413032388" MODIFIED="1454413703246" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/SGX%20Explained.pdf" MOVED="1455191279266">
-<pdf_annotation type="COMMENT" page="85" object_id="7892787097260202499" object_number="1470" document_hash="6247F24926CEBCBDD607A743A7A36C17F76C70D179FFDDC5BE417C9354C5B">
-    <pdf_title>Intel SGX Explained</pdf_title>
-</pdf_annotation>
-<attribute NAME="key" VALUE="sgx-explained"/>
-<attribute NAME="year" VALUE="2016"/>
-<attribute NAME="title" VALUE="Intel SGX Explained."/>
-<attribute NAME="authors" VALUE="Costan, Victor and Devadas, Srinivas"/>
-<attribute NAME="journal" VALUE="IACR Cryptology ePrint Archive"/>
-<node TEXT="Launch Enclave is intended to be an enclave licensing mechanism that allows Intel to force itself as an intermediary in the distribution of all enclave software" ID="ID_995444795" CREATED="1454413032579" MODIFIED="1454413704357" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/SGX%20Explained.pdf" MOVED="1455191097245">
-<pdf_annotation type="HIGHLIGHTED_TEXT" page="87" object_id="7947901423862906836" object_number="1501" document_hash="6247F24926CEBCBDD607A743A7A36C17F76C70D179FFDDC5BE417C9354C5B">
-    <pdf_title>Intel SGX Explained</pdf_title>
-</pdf_annotation>
-<attribute NAME="key" VALUE="sgx-explained"/>
-<attribute NAME="year" VALUE="2016"/>
-<attribute NAME="title" VALUE="Intel SGX Explained."/>
-<attribute NAME="authors" VALUE="Costan, Victor and Devadas, Srinivas"/>
-<attribute NAME="journal" VALUE="IACR Cryptology ePrint Archive"/>
-</node>
-<node TEXT="software security equivalent to the Net Neutrality debates" ID="ID_934945590" CREATED="1454413032059" MODIFIED="1454413704807" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/SGX%20Explained.pdf">
-<pdf_annotation type="HIGHLIGHTED_TEXT" page="87" object_id="9123013829748261465" object_number="1506" document_hash="6247F24926CEBCBDD607A743A7A36C17F76C70D179FFDDC5BE417C9354C5B">
-    <pdf_title>Intel SGX Explained</pdf_title>
-</pdf_annotation>
-<attribute NAME="key" VALUE="sgx-explained"/>
-<attribute NAME="year" VALUE="2016"/>
-<attribute NAME="title" VALUE="Intel SGX Explained."/>
-<attribute NAME="authors" VALUE="Costan, Victor and Devadas, Srinivas"/>
-<attribute NAME="journal" VALUE="IACR Cryptology ePrint Archive"/>
-</node>
-</node>
-<node TEXT="generates EINIT token (launch token) for non-Intel enclaves" FOLDED="true" ID="ID_931349576" CREATED="1455094277830" MODIFIED="1455094294631" MOVED="1455094301253">
-<node TEXT="LE is a privileged enclave provided by Intel, and is a prerequisite for the use of enclaves authored by parties other than Intel" ID="ID_625773395" CREATED="1454413031813" MODIFIED="1454413695265" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/SGX%20Explained.pdf" MOVED="1455094298606">
-<pdf_annotation type="HIGHLIGHTED_TEXT" page="64" object_id="2307843199097166417" object_number="1139" document_hash="6247F24926CEBCBDD607A743A7A36C17F76C70D179FFDDC5BE417C9354C5B">
-    <pdf_title>Intel SGX Explained</pdf_title>
-</pdf_annotation>
-<attribute NAME="key" VALUE="sgx-explained"/>
-<attribute NAME="year" VALUE="2016"/>
-<attribute NAME="title" VALUE="Intel SGX Explained."/>
-<attribute NAME="authors" VALUE="Costan, Victor and Devadas, Srinivas"/>
-<attribute NAME="journal" VALUE="IACR Cryptology ePrint Archive"/>
-</node>
-<node TEXT="system software must use a Launch Enclave (LE) to obtain an EINIT Token Structure, via an under-documented process" ID="ID_657928843" CREATED="1454413032382" MODIFIED="1454413695395" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/SGX%20Explained.pdf" MOVED="1455094300096">
-<pdf_annotation type="HIGHLIGHTED_TEXT" page="64" object_id="5497367981103059360" object_number="1140" document_hash="6247F24926CEBCBDD607A743A7A36C17F76C70D179FFDDC5BE417C9354C5B">
-    <pdf_title>Intel SGX Explained</pdf_title>
-</pdf_annotation>
-<attribute NAME="key" VALUE="sgx-explained"/>
-<attribute NAME="year" VALUE="2016"/>
-<attribute NAME="title" VALUE="Intel SGX Explained."/>
-<attribute NAME="authors" VALUE="Costan, Victor and Devadas, Srinivas"/>
-<attribute NAME="journal" VALUE="IACR Cryptology ePrint Archive"/>
-</node>
-<node TEXT=" LE approves an enclave by issuing an EINIT Token" FOLDED="true" ID="ID_314035555" CREATED="1454413032207" MODIFIED="1454413703344" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/SGX%20Explained.pdf" MOVED="1455191158720">
-<pdf_annotation type="HIGHLIGHTED_TEXT" page="86" object_id="9101394759872664946" object_number="1484" document_hash="6247F24926CEBCBDD607A743A7A36C17F76C70D179FFDDC5BE417C9354C5B">
-    <pdf_title>Intel SGX Explained</pdf_title>
-</pdf_annotation>
-<attribute NAME="key" VALUE="sgx-explained"/>
-<attribute NAME="year" VALUE="2016"/>
-<attribute NAME="title" VALUE="Intel SGX Explained."/>
-<attribute NAME="authors" VALUE="Costan, Victor and Devadas, Srinivas"/>
-<attribute NAME="journal" VALUE="IACR Cryptology ePrint Archive"/>
-<node TEXT="EGETKEY instruction only derives the Launch Key for enclaves that have the LAUNCHKEY attribute set to true" ID="ID_455783725" CREATED="1454413032443" MODIFIED="1454413703533" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/SGX%20Explained.pdf" MOVED="1455190959319">
-<pdf_annotation type="HIGHLIGHTED_TEXT" page="86" object_id="2824049171301945542" object_number="1486" document_hash="6247F24926CEBCBDD607A743A7A36C17F76C70D179FFDDC5BE417C9354C5B">
-    <pdf_title>Intel SGX Explained</pdf_title>
-</pdf_annotation>
-<attribute NAME="key" VALUE="sgx-explained"/>
-<attribute NAME="year" VALUE="2016"/>
-<attribute NAME="title" VALUE="Intel SGX Explained."/>
-<attribute NAME="authors" VALUE="Costan, Victor and Devadas, Srinivas"/>
-<attribute NAME="journal" VALUE="IACR Cryptology ePrint Archive"/>
-</node>
-</node>
-</node>
-<node TEXT="no EINIT token needed (signed w/ key hardcoded into SGX microcode)" ID="ID_1155502407" CREATED="1455094247222" MODIFIED="1455094268878"/>
-<node TEXT="hen/egg problem: launch LE without launch key? solved w/ signature matching hard-coded key" FOLDED="true" ID="ID_1224870636" CREATED="1455191287249" MODIFIED="1455191359979">
-<node TEXT="LE is cryptographically signed with a special Intel key that is hard-coded into the SGX implementation, and that causes EINIT to initialize the LE without checking for a valid EINIT Token Structure" ID="ID_1985300971" CREATED="1454413032560" MODIFIED="1455191324339" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/SGX%20Explained.pdf" MOVED="1455191390705">
-<pdf_annotation type="HIGHLIGHTED_TEXT" page="64" object_id="7626124295370136712" object_number="1141" document_hash="6247F24926CEBCBDD607A743A7A36C17F76C70D179FFDDC5BE417C9354C5B">
-    <pdf_title>Intel SGX Explained</pdf_title>
-</pdf_annotation>
-<attribute NAME="key" VALUE="sgx-explained"/>
-<attribute NAME="year" VALUE="2016"/>
-<attribute NAME="title" VALUE="Intel SGX Explained."/>
-<attribute NAME="authors" VALUE="Costan, Victor and Devadas, Srinivas"/>
-<attribute NAME="journal" VALUE="IACR Cryptology ePrint Archive"/>
-</node>
-<node TEXT="EINIT accepts an EINITTOKEN whose VALID bit is set to zero, if the enclave&#x2019;s MRSIGNER equals a hard-coded value that corresponds to an Intel public key" FOLDED="true" ID="ID_445820671" CREATED="1454413032437" MODIFIED="1455191081962" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/SGX%20Explained.pdf" MOVED="1455191397998">
-<pdf_annotation type="HIGHLIGHTED_TEXT" page="87" object_id="7103478216600343944" object_number="1500" document_hash="6247F24926CEBCBDD607A743A7A36C17F76C70D179FFDDC5BE417C9354C5B">
-    <pdf_title>Intel SGX Explained</pdf_title>
-</pdf_annotation>
-<attribute NAME="key" VALUE="sgx-explained"/>
-<attribute NAME="year" VALUE="2016"/>
-<attribute NAME="title" VALUE="Intel SGX Explained."/>
-<attribute NAME="authors" VALUE="Costan, Victor and Devadas, Srinivas"/>
-<attribute NAME="journal" VALUE="IACR Cryptology ePrint Archive"/>
-<node TEXT="LE cannot vet itself, as there will be no LE available when the LE itself needs to be initialized. Therefore, the Launch Key access restrictions are implemented in hardware" FOLDED="true" ID="ID_923604141" CREATED="1454413032493" MODIFIED="1454413703993" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/SGX%20Explained.pdf" MOVED="1455191088656">
-<pdf_annotation type="HIGHLIGHTED_TEXT" page="87" object_id="1295384182758901307" object_number="1498" document_hash="6247F24926CEBCBDD607A743A7A36C17F76C70D179FFDDC5BE417C9354C5B">
-    <pdf_title>Intel SGX Explained</pdf_title>
-</pdf_annotation>
-<attribute NAME="key" VALUE="sgx-explained"/>
-<attribute NAME="year" VALUE="2016"/>
-<attribute NAME="title" VALUE="Intel SGX Explained."/>
-<attribute NAME="authors" VALUE="Costan, Victor and Devadas, Srinivas"/>
-<attribute NAME="journal" VALUE="IACR Cryptology ePrint Archive"/>
-<node TEXT="does not change SGX&#x2019;s security properties because Intel is already a trusted party" ID="ID_902135274" CREATED="1454413032431" MODIFIED="1454413704109" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/SGX%20Explained.pdf" MOVED="1455191073075">
-<pdf_annotation type="HIGHLIGHTED_TEXT" page="87" object_id="5237865647916312265" object_number="1499" document_hash="6247F24926CEBCBDD607A743A7A36C17F76C70D179FFDDC5BE417C9354C5B">
+<node TEXT="exclusively used by the CPU&#x2019;s SGX implementation" ID="ID_975113083" CREATED="1454413032013" MODIFIED="1454413694342" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/SGX%20Explained.pdf" MOVED="1455094116148">
+<pdf_annotation type="HIGHLIGHTED_TEXT" page="59" object_id="3461863973639008322" object_number="1063" document_hash="6247F24926CEBCBDD607A743A7A36C17F76C70D179FFDDC5BE417C9354C5B">
     <pdf_title>Intel SGX Explained</pdf_title>
 </pdf_annotation>
 <attribute NAME="key" VALUE="sgx-explained"/>
@@ -4854,9 +4691,20 @@
 </node>
 </node>
 </node>
-<node TEXT="no information leakage allowed!" FOLDED="true" ID="ID_497103127" CREATED="1455192482264" MODIFIED="1455192536089">
-<node TEXT="large amount of pressure on Intel&#x2019;s software developers, as they must attempt to implement the EPID signing scheme used by software attestation without leaking any information" ID="ID_890918552" CREATED="1454413032188" MODIFIED="1454413707719" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/SGX%20Explained.pdf" MOVED="1455192492296">
-<pdf_annotation type="HIGHLIGHTED_TEXT" page="106" object_id="6062852170316293549" object_number="1873" document_hash="6247F24926CEBCBDD607A743A7A36C17F76C70D179FFDDC5BE417C9354C5B">
+<node TEXT="sealing data" FOLDED="true" ID="ID_460861554" CREATED="1455094968877" MODIFIED="1455094971558" MOVED="1499841560913">
+<node TEXT="seal data either to enclave measurement, or to author pubkey (for migration)" ID="ID_1419625304" CREATED="1454413032250" MODIFIED="1454413699566" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/SGX%20Explained.pdf">
+<pdf_annotation type="COMMENT" page="81" object_id="8976407436214296582" object_number="1385" document_hash="6247F24926CEBCBDD607A743A7A36C17F76C70D179FFDDC5BE417C9354C5B">
+    <pdf_title>Intel SGX Explained</pdf_title>
+</pdf_annotation>
+<attribute NAME="key" VALUE="sgx-explained"/>
+<attribute NAME="year" VALUE="2016"/>
+<attribute NAME="title" VALUE="Intel SGX Explained."/>
+<attribute NAME="authors" VALUE="Costan, Victor and Devadas, Srinivas"/>
+<attribute NAME="journal" VALUE="IACR Cryptology ePrint Archive"/>
+</node>
+<node TEXT="migration between different SW versions possible" FOLDED="true" ID="ID_411364622" CREATED="1455094977636" MODIFIED="1455094991790">
+<node TEXT="migrate secrets between the container that has the old version" ID="ID_1155768183" CREATED="1454413032255" MODIFIED="1454413698077" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/SGX%20Explained.pdf">
+<pdf_annotation type="HIGHLIGHTED_TEXT" page="77" object_id="3975280502106414908" object_number="1319" document_hash="6247F24926CEBCBDD607A743A7A36C17F76C70D179FFDDC5BE417C9354C5B">
     <pdf_title>Intel SGX Explained</pdf_title>
 </pdf_annotation>
 <attribute NAME="key" VALUE="sgx-explained"/>
@@ -4867,7 +4715,185 @@
 </node>
 </node>
 </node>
-<node TEXT="special keys" FOLDED="true" ID="ID_419026463" CREATED="1455095351988" MODIFIED="1455095359045">
+<node TEXT="privilege levels" FOLDED="true" ID="ID_556690015" CREATED="1494240014974" MODIFIED="1494240018300" MOVED="1499841566491">
+<node TEXT="The privilege levels in the x86 architecture, and the&#xa;software that typically runs at each security level." ID="ID_1300304826" CREATED="1493383749318" MODIFIED="1493386674478" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/SGX%20Explained.pdf" MOVED="1494240021073">
+<hook URI="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/_data/150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/default_files/x86%20privilege%20levels%20sgx.png" SIZE="0.94043887" NAME="ExternalObject"/>
+<attribute NAME="key" VALUE="sgx-explained"/>
+<attribute NAME="year" VALUE="2016"/>
+<attribute NAME="title" VALUE="Intel SGX Explained."/>
+<attribute NAME="authors" VALUE="Costan, Victor and Devadas, Srinivas"/>
+<attribute NAME="image" VALUE="x86 privilege levels sgx"/>
+<attribute NAME="journal" VALUE="IACR Cryptology ePrint Archive"/>
+<pdf_annotation type="PDF_FILE" object_id="0" document_hash="6247F24926CEBCBDD607A743A7A36C17F76C70D179FFDDC5BE417C9354C5B">
+    <pdf_title>Intel SGX Explained</pdf_title>
+</pdf_annotation>
+</node>
+</node>
+<node TEXT="secured against SMM code" FOLDED="true" ID="ID_742989147" CREATED="1455093942822" MODIFIED="1455093949902" MOVED="1499841571057">
+<node TEXT="enclaves&#x2019; code and data is stored in Processor Reserved Memory (PRM), which is a subset of DRAM that cannot be directly accessed by other software, including system software and SMM code" ID="ID_631814678" CREATED="1454413032343" MODIFIED="1454413693167" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/SGX%20Explained.pdf" MOVED="1455093955848">
+<pdf_annotation type="HIGHLIGHTED_TEXT" page="58" object_id="4908685988711847829" object_number="1048" document_hash="6247F24926CEBCBDD607A743A7A36C17F76C70D179FFDDC5BE417C9354C5B">
+    <pdf_title>Intel SGX Explained</pdf_title>
+</pdf_annotation>
+<attribute NAME="key" VALUE="sgx-explained"/>
+<attribute NAME="year" VALUE="2016"/>
+<attribute NAME="title" VALUE="Intel SGX Explained."/>
+<attribute NAME="authors" VALUE="Costan, Victor and Devadas, Srinivas"/>
+<attribute NAME="journal" VALUE="IACR Cryptology ePrint Archive"/>
+</node>
+</node>
+<node TEXT="secured against DMA" FOLDED="true" ID="ID_435972924" CREATED="1455093963133" MODIFIED="1455093966639" MOVED="1499841573697">
+<node TEXT="reject DMA transfers targeting the PRM" ID="ID_1772975373" CREATED="1454413031964" MODIFIED="1454413693300" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/SGX%20Explained.pdf" MOVED="1455093969858">
+<pdf_annotation type="HIGHLIGHTED_TEXT" page="58" object_id="8662084455139658314" object_number="1049" document_hash="6247F24926CEBCBDD607A743A7A36C17F76C70D179FFDDC5BE417C9354C5B">
+    <pdf_title>Intel SGX Explained</pdf_title>
+</pdf_annotation>
+<attribute NAME="key" VALUE="sgx-explained"/>
+<attribute NAME="year" VALUE="2016"/>
+<attribute NAME="title" VALUE="Intel SGX Explained."/>
+<attribute NAME="authors" VALUE="Costan, Victor and Devadas, Srinivas"/>
+<attribute NAME="journal" VALUE="IACR Cryptology ePrint Archive"/>
+</node>
+</node>
+<node TEXT="MEE" FOLDED="true" ID="ID_192195304" CREATED="1455191742739" MODIFIED="1455191744211" MOVED="1499841579416">
+<node TEXT="CPU&#x2019;s uncore receives a new module, the Memory Encryption Engine" ID="ID_673095435" CREATED="1454413032230" MODIFIED="1454413705163" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/SGX%20Explained.pdf" MOVED="1455191745953">
+<pdf_annotation type="HIGHLIGHTED_TEXT" page="88" object_id="999941010944365625" object_number="1543" document_hash="6247F24926CEBCBDD607A743A7A36C17F76C70D179FFDDC5BE417C9354C5B">
+    <pdf_title>Intel SGX Explained</pdf_title>
+</pdf_annotation>
+<attribute NAME="key" VALUE="sgx-explained"/>
+<attribute NAME="year" VALUE="2016"/>
+<attribute NAME="title" VALUE="Intel SGX Explained."/>
+<attribute NAME="authors" VALUE="Costan, Victor and Devadas, Srinivas"/>
+<attribute NAME="journal" VALUE="IACR Cryptology ePrint Archive"/>
+</node>
+<node TEXT="the Memory Controller detects [the] address belongs to the MEE region, and routes transaction to MEE" ID="ID_1944276484" CREATED="1454413032486" MODIFIED="1454413705343" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/SGX%20Explained.pdf" MOVED="1455191747535">
+<pdf_annotation type="HIGHLIGHTED_TEXT" page="88" object_id="6407575779599916714" object_number="1546" document_hash="6247F24926CEBCBDD607A743A7A36C17F76C70D179FFDDC5BE417C9354C5B">
+    <pdf_title>Intel SGX Explained</pdf_title>
+</pdf_annotation>
+<attribute NAME="key" VALUE="sgx-explained"/>
+<attribute NAME="year" VALUE="2016"/>
+<attribute NAME="title" VALUE="Intel SGX Explained."/>
+<attribute NAME="authors" VALUE="Costan, Victor and Devadas, Srinivas"/>
+<attribute NAME="journal" VALUE="IACR Cryptology ePrint Archive"/>
+</node>
+<node TEXT="patents state that the MEE also protects the Quick-Path Interconnect" FOLDED="true" ID="ID_97319803" CREATED="1454413032798" MODIFIED="1454413705415" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/SGX%20Explained.pdf" MOVED="1455191768980">
+<pdf_annotation type="HIGHLIGHTED_TEXT" page="89" object_id="7968644101445656287" object_number="1568" document_hash="6247F24926CEBCBDD607A743A7A36C17F76C70D179FFDDC5BE417C9354C5B">
+    <pdf_title>Intel SGX Explained</pdf_title>
+</pdf_annotation>
+<attribute NAME="key" VALUE="sgx-explained"/>
+<attribute NAME="year" VALUE="2016"/>
+<attribute NAME="title" VALUE="Intel SGX Explained."/>
+<attribute NAME="authors" VALUE="Costan, Victor and Devadas, Srinivas"/>
+<attribute NAME="journal" VALUE="IACR Cryptology ePrint Archive"/>
+<node TEXT="between CPUs (not cores)" ID="ID_416699978" CREATED="1455192153134" MODIFIED="1455192159215"/>
+</node>
+<node TEXT="MEE sits in the processor&#x2019;s memory controller, which is at the edge of the on-chip memory hierarchy, below the caches" ID="ID_150601142" CREATED="1454413032276" MODIFIED="1454413705486" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/SGX%20Explained.pdf" MOVED="1455191798096">
+<pdf_annotation type="HIGHLIGHTED_TEXT" page="89" object_id="72102214903338354" object_number="1569" document_hash="6247F24926CEBCBDD607A743A7A36C17F76C70D179FFDDC5BE417C9354C5B">
+    <pdf_title>Intel SGX Explained</pdf_title>
+</pdf_annotation>
+<attribute NAME="key" VALUE="sgx-explained"/>
+<attribute NAME="year" VALUE="2016"/>
+<attribute NAME="title" VALUE="Intel SGX Explained."/>
+<attribute NAME="authors" VALUE="Costan, Victor and Devadas, Srinivas"/>
+<attribute NAME="journal" VALUE="IACR Cryptology ePrint Archive"/>
+</node>
+<node TEXT="MEE cannot protect an enclave&#x2019;s memory from software attacks" ID="ID_1318553207" CREATED="1454413032610" MODIFIED="1454413705558" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/SGX%20Explained.pdf" MOVED="1455191802686">
+<pdf_annotation type="HIGHLIGHTED_TEXT" page="89" object_id="8096537463623836835" object_number="1570" document_hash="6247F24926CEBCBDD607A743A7A36C17F76C70D179FFDDC5BE417C9354C5B">
+    <pdf_title>Intel SGX Explained</pdf_title>
+</pdf_annotation>
+<attribute NAME="key" VALUE="sgx-explained"/>
+<attribute NAME="year" VALUE="2016"/>
+<attribute NAME="title" VALUE="Intel SGX Explained."/>
+<attribute NAME="authors" VALUE="Costan, Victor and Devadas, Srinivas"/>
+<attribute NAME="journal" VALUE="IACR Cryptology ePrint Archive"/>
+</node>
+</node>
+<node TEXT="enclave life cycle" FOLDED="true" ID="ID_1468169135" CREATED="1494240023034" MODIFIED="1494240028020" MOVED="1499841581527">
+<node TEXT="The SGX enclave life cycle management instructions&#xa;and state transition diagram." ID="ID_545154813" CREATED="1494240042378" MODIFIED="1494240070980" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/SGX%20Explained.pdf">
+<hook URI="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/_data/150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/default_files/sgx%20enclave%20life%20cycle.png" SIZE="0.75093865" NAME="ExternalObject"/>
+<attribute NAME="image" VALUE="sgx enclave life cycle"/>
+<attribute NAME="key" VALUE="sgx-explained"/>
+<attribute NAME="year" VALUE="2016"/>
+<attribute NAME="title" VALUE="Intel SGX Explained."/>
+<attribute NAME="authors" VALUE="Costan, Victor and Devadas, Srinivas"/>
+<attribute NAME="journal" VALUE="IACR Cryptology ePrint Archive"/>
+<pdf_annotation type="PDF_FILE" object_id="0" document_hash="6247F24926CEBCBDD607A743A7A36C17F76C70D179FFDDC5BE417C9354C5B">
+    <pdf_title>Intel SGX Explained</pdf_title>
+</pdf_annotation>
+</node>
+</node>
+<node TEXT="software and hardware" ID="ID_1272878575" CREATED="1499683709345" MODIFIED="1499683715593" MOVED="1499841595547">
+<node TEXT="implemented in microcode (except MEE)" FOLDED="true" ID="ID_862740000" CREATED="1454421023621" MODIFIED="1455093244992" MOVED="1499683736569">
+<node TEXT="CPU Microcode" FOLDED="true" ID="ID_1782808172" CREATED="1454413032880" MODIFIED="1454413689633" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/SGX%20Explained.pdf" MOVED="1454421087924">
+<pdf_annotation type="HIGHLIGHTED_TEXT" page="28" object_id="7311203694903694810" object_number="639" document_hash="6247F24926CEBCBDD607A743A7A36C17F76C70D179FFDDC5BE417C9354C5B">
+    <pdf_title>Intel SGX Explained</pdf_title>
+</pdf_annotation>
+<attribute NAME="key" VALUE="sgx-explained"/>
+<attribute NAME="year" VALUE="2016"/>
+<attribute NAME="title" VALUE="Intel SGX Explained."/>
+<attribute NAME="authors" VALUE="Costan, Victor and Devadas, Srinivas"/>
+<attribute NAME="journal" VALUE="IACR Cryptology ePrint Archive"/>
+<node TEXT="Some instructions are used infrequently, and some instructions are very complex, which makes it impractical for an execution core to handle all the instructions in hardware. Intel CPUs use a microcode table to break down rare and complex instructions into sequences of simpler instructions" ID="ID_1924244399" CREATED="1454413031891" MODIFIED="1454413689390" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/SGX%20Explained.pdf" MOVED="1454421089541">
+<pdf_annotation type="HIGHLIGHTED_TEXT" page="28" object_id="1130911761069025565" object_number="638" document_hash="6247F24926CEBCBDD607A743A7A36C17F76C70D179FFDDC5BE417C9354C5B">
+    <pdf_title>Intel SGX Explained</pdf_title>
+</pdf_annotation>
+<attribute NAME="key" VALUE="sgx-explained"/>
+<attribute NAME="year" VALUE="2016"/>
+<attribute NAME="title" VALUE="Intel SGX Explained."/>
+<attribute NAME="authors" VALUE="Costan, Victor and Devadas, Srinivas"/>
+<attribute NAME="journal" VALUE="IACR Cryptology ePrint Archive"/>
+</node>
+</node>
+<node TEXT="Intel patents SGX disclose that SGX is entirely implemented in microcode, except for the memory encryption engine" ID="ID_1705395880" CREATED="1454413032420" MODIFIED="1454421068207" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/SGX%20Explained.pdf" MOVED="1454421094127">
+<pdf_annotation type="HIGHLIGHTED_TEXT" page="28" object_id="6037471430610981534" object_number="640" document_hash="6247F24926CEBCBDD607A743A7A36C17F76C70D179FFDDC5BE417C9354C5B">
+    <pdf_title>Intel SGX Explained</pdf_title>
+</pdf_annotation>
+<attribute NAME="key" VALUE="sgx-explained"/>
+<attribute NAME="year" VALUE="2016"/>
+<attribute NAME="title" VALUE="Intel SGX Explained."/>
+<attribute NAME="authors" VALUE="Costan, Victor and Devadas, Srinivas"/>
+<attribute NAME="journal" VALUE="IACR Cryptology ePrint Archive"/>
+</node>
+</node>
+</node>
+<node TEXT="version 1 and 2" FOLDED="true" ID="ID_1826024830" CREATED="1499683807018" MODIFIED="1499683808722" MOVED="1499841599465">
+<node TEXT="v1" ID="ID_1422015142" CREATED="1453288207959" MODIFIED="1453883874321">
+<node TEXT="static enclave size" ID="ID_632270509" CREATED="1453288209399" MODIFIED="1453883874326"/>
+<node TEXT="instructions for EPC page swapping" ID="ID_1632654099" CREATED="1453288218111" MODIFIED="1453883874332"/>
+</node>
+<node TEXT="v2" ID="ID_1190880963" CREATED="1453288226799" MODIFIED="1497344280938">
+<node TEXT="dynamic enclave size: EAUG page allocation" FOLDED="true" ID="ID_1594629001" CREATED="1453288228431" MODIFIED="1453883874342">
+<node TEXT="Allocate page to an existing enclave" ID="ID_773890196" CREATED="1453288380131" MODIFIED="1453883874347" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/SGX%20programming%20reference.pdf">
+<pdf_annotation type="HIGHLIGHTED_TEXT" page="16" object_id="2806214367518345996" object_number="13530" document_hash="82A0D77BB3D8893A886C2C88DF2654F625BC127CB86347752D86E9B2BD368">
+    <pdf_title>Intel&#xae; Software Guard Extensions Programming Reference</pdf_title>
+</pdf_annotation>
+<attribute NAME="year" VALUE="2014"/>
+<attribute NAME="title" VALUE="Intel Software Guards Extensions Programming Reference"/>
+<attribute NAME="authors" VALUE="Intel"/>
+</node>
+</node>
+<node TEXT="add new threads at runtime" FOLDED="true" ID="ID_997140278" CREATED="1453288305744" MODIFIED="1453883874352">
+<node TEXT="Make page TCS" ID="ID_624037119" CREATED="1453288380084" MODIFIED="1453883874357" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/SGX%20programming%20reference.pdf">
+<pdf_annotation type="HIGHLIGHTED_TEXT" page="16" object_id="5471916342614024886" object_number="13529" document_hash="82A0D77BB3D8893A886C2C88DF2654F625BC127CB86347752D86E9B2BD368">
+    <pdf_title>Intel&#xae; Software Guard Extensions Programming Reference</pdf_title>
+</pdf_annotation>
+<attribute NAME="year" VALUE="2014"/>
+<attribute NAME="title" VALUE="Intel Software Guards Extensions Programming Reference"/>
+<attribute NAME="authors" VALUE="Intel"/>
+</node>
+</node>
+<node TEXT="no HW yet" ID="ID_86042430" CREATED="1453359116291" MODIFIED="1453883874362"/>
+</node>
+</node>
+</node>
+<node TEXT="manageability engine: monotonic counters, trusted time" FOLDED="true" ID="ID_614081914" CREATED="1453473362281" MODIFIED="1453883874415" MOVED="1499841617319">
+<node TEXT="manageability engine (in chipset) provides monotonic counters, trusted time etc." ID="ID_739459131" CREATED="1453481510733" MODIFIED="1453883874421" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/SGX%20SDK%20Guide.pdf">
+<pdf_annotation type="COMMENT" page="8" object_id="8691915318542793680" object_number="5927" document_hash="1824E5805C4B7F3BD8F2F8C65C3E36ED39DE0D2FD4F9448A4A2E6EA70CD3E8">
+    <pdf_title>Intel&#xae; Software Guard Extensions Evaluation SDK</pdf_title>
+</pdf_annotation>
+<attribute NAME="title" VALUE="Intel SGX Evaluation SDK User&apos;s Guide for Windows OS"/>
+<attribute NAME="authors" VALUE="Intel"/>
+</node>
+</node>
+<node TEXT="special keys" ID="ID_419026463" CREATED="1455095351988" MODIFIED="1455095359045" MOVED="1499841531070">
 <node TEXT="provisioning key: in fuses, obtain attestation key" FOLDED="true" ID="ID_189289685" CREATED="1455190411146" MODIFIED="1455190545804">
 <node TEXT="Provisioning Key can be accessed via EGETKEY by enclaves whose PROVISIONKEY attribute is set to true" ID="ID_1729178971" CREATED="1454413032854" MODIFIED="1454413701161" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/SGX%20Explained.pdf">
 <pdf_annotation type="HIGHLIGHTED_TEXT" page="85" object_id="7724341895517302201" object_number="1456" document_hash="6247F24926CEBCBDD607A743A7A36C17F76C70D179FFDDC5BE417C9354C5B">
@@ -4989,279 +5015,11 @@
 </node>
 </node>
 </node>
-<node TEXT="cooperative model: untrusted OS manages resources (especially memory)" FOLDED="true" ID="ID_854871795" CREATED="1455093996037" MODIFIED="1455094030910">
-<node TEXT="SGX design expects the system software to allocate the EPC pages to enclaves. However, as the system software is not trusted, SGX processors check the correctness of the system software&#x2019;s allocation decisions" ID="ID_1950641" CREATED="1454413032827" MODIFIED="1454413693700" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/SGX%20Explained.pdf" MOVED="1455094046518">
-<pdf_annotation type="HIGHLIGHTED_TEXT" page="58" object_id="1677981630314931950" object_number="1054" document_hash="6247F24926CEBCBDD607A743A7A36C17F76C70D179FFDDC5BE417C9354C5B">
-    <pdf_title>Intel SGX Explained</pdf_title>
-</pdf_annotation>
-<attribute NAME="key" VALUE="sgx-explained"/>
-<attribute NAME="year" VALUE="2016"/>
-<attribute NAME="title" VALUE="Intel SGX Explained."/>
-<attribute NAME="authors" VALUE="Costan, Victor and Devadas, Srinivas"/>
-<attribute NAME="journal" VALUE="IACR Cryptology ePrint Archive"/>
 </node>
-<node TEXT="SGX microcode checks correctness" FOLDED="true" ID="ID_883173178" CREATED="1455094053133" MODIFIED="1455094063246">
-<node TEXT="if the system software attempts to allocate the same EPC page to two enclaves, the SGX instruction used to perform the allocation will fail" ID="ID_335220110" CREATED="1454413032149" MODIFIED="1454413693834" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/SGX%20Explained.pdf" MOVED="1455094076358">
-<pdf_annotation type="HIGHLIGHTED_TEXT" page="58" object_id="8881698709876170358" object_number="1055" document_hash="6247F24926CEBCBDD607A743A7A36C17F76C70D179FFDDC5BE417C9354C5B">
-    <pdf_title>Intel SGX Explained</pdf_title>
-</pdf_annotation>
-<attribute NAME="key" VALUE="sgx-explained"/>
-<attribute NAME="year" VALUE="2016"/>
-<attribute NAME="title" VALUE="Intel SGX Explained."/>
-<attribute NAME="authors" VALUE="Costan, Victor and Devadas, Srinivas"/>
-<attribute NAME="journal" VALUE="IACR Cryptology ePrint Archive"/>
-</node>
-<node TEXT="data structures" FOLDED="true" ID="ID_1155978975" CREATED="1455094121998" MODIFIED="1455094125687">
-<node TEXT="EPCM: inverted page map -&gt; page owned by enclave ? allow : reject" FOLDED="true" ID="ID_703219282" CREATED="1455093629294" MODIFIED="1455093735431" MOVED="1455094127605">
-<node TEXT="EPCM is an array with one entry per EPC page" ID="ID_272719556" CREATED="1454413032569" MODIFIED="1454413693959" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/SGX%20Explained.pdf" MOVED="1455094088622">
-<pdf_annotation type="HIGHLIGHTED_TEXT" page="58" object_id="1858187661900559549" object_number="1056" document_hash="6247F24926CEBCBDD607A743A7A36C17F76C70D179FFDDC5BE417C9354C5B">
-    <pdf_title>Intel SGX Explained</pdf_title>
-</pdf_annotation>
-<attribute NAME="key" VALUE="sgx-explained"/>
-<attribute NAME="year" VALUE="2016"/>
-<attribute NAME="title" VALUE="Intel SGX Explained."/>
-<attribute NAME="authors" VALUE="Costan, Victor and Devadas, Srinivas"/>
-<attribute NAME="journal" VALUE="IACR Cryptology ePrint Archive"/>
-</node>
-<node TEXT="containers&#x2019; security is preserved by a TLB miss handler that relies on an inverted page map (the EPCM) to reject address translations for memory that does not belong to the current container" ID="ID_122068088" CREATED="1454413032448" MODIFIED="1454413692328" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/SGX%20Explained.pdf" MOVED="1455093743247">
-<pdf_annotation type="HIGHLIGHTED_TEXT" page="56" object_id="5830232227356008896" object_number="1023" document_hash="6247F24926CEBCBDD607A743A7A36C17F76C70D179FFDDC5BE417C9354C5B">
-    <pdf_title>Intel SGX Explained</pdf_title>
-</pdf_annotation>
-<attribute NAME="key" VALUE="sgx-explained"/>
-<attribute NAME="year" VALUE="2016"/>
-<attribute NAME="title" VALUE="Intel SGX Explained."/>
-<attribute NAME="authors" VALUE="Costan, Victor and Devadas, Srinivas"/>
-<attribute NAME="journal" VALUE="IACR Cryptology ePrint Archive"/>
-</node>
-</node>
-<node TEXT="per-enclave metadata in a SGX Enclave Control Structure (SECS)" FOLDED="true" ID="ID_1527226692" CREATED="1454413032574" MODIFIED="1454413694205" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/SGX%20Explained.pdf" MOVED="1455094134878">
-<pdf_annotation type="HIGHLIGHTED_TEXT" page="59" object_id="8997434789195458847" object_number="1062" document_hash="6247F24926CEBCBDD607A743A7A36C17F76C70D179FFDDC5BE417C9354C5B">
-    <pdf_title>Intel SGX Explained</pdf_title>
-</pdf_annotation>
-<attribute NAME="key" VALUE="sgx-explained"/>
-<attribute NAME="year" VALUE="2016"/>
-<attribute NAME="title" VALUE="Intel SGX Explained."/>
-<attribute NAME="authors" VALUE="Costan, Victor and Devadas, Srinivas"/>
-<attribute NAME="journal" VALUE="IACR Cryptology ePrint Archive"/>
-<node TEXT="exclusively used by the CPU&#x2019;s SGX implementation" ID="ID_975113083" CREATED="1454413032013" MODIFIED="1454413694342" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/SGX%20Explained.pdf" MOVED="1455094116148">
-<pdf_annotation type="HIGHLIGHTED_TEXT" page="59" object_id="3461863973639008322" object_number="1063" document_hash="6247F24926CEBCBDD607A743A7A36C17F76C70D179FFDDC5BE417C9354C5B">
-    <pdf_title>Intel SGX Explained</pdf_title>
-</pdf_annotation>
-<attribute NAME="key" VALUE="sgx-explained"/>
-<attribute NAME="year" VALUE="2016"/>
-<attribute NAME="title" VALUE="Intel SGX Explained."/>
-<attribute NAME="authors" VALUE="Costan, Victor and Devadas, Srinivas"/>
-<attribute NAME="journal" VALUE="IACR Cryptology ePrint Archive"/>
-</node>
-</node>
-</node>
-</node>
-</node>
-<node TEXT="sealing data" FOLDED="true" ID="ID_460861554" CREATED="1455094968877" MODIFIED="1455094971558">
-<node TEXT="seal data either to enclave measurement, or to author pubkey (for migration)" ID="ID_1419625304" CREATED="1454413032250" MODIFIED="1454413699566" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/SGX%20Explained.pdf">
-<pdf_annotation type="COMMENT" page="81" object_id="8976407436214296582" object_number="1385" document_hash="6247F24926CEBCBDD607A743A7A36C17F76C70D179FFDDC5BE417C9354C5B">
-    <pdf_title>Intel SGX Explained</pdf_title>
-</pdf_annotation>
-<attribute NAME="key" VALUE="sgx-explained"/>
-<attribute NAME="year" VALUE="2016"/>
-<attribute NAME="title" VALUE="Intel SGX Explained."/>
-<attribute NAME="authors" VALUE="Costan, Victor and Devadas, Srinivas"/>
-<attribute NAME="journal" VALUE="IACR Cryptology ePrint Archive"/>
-</node>
-<node TEXT="migration between different SW versions possible" FOLDED="true" ID="ID_411364622" CREATED="1455094977636" MODIFIED="1455094991790">
-<node TEXT="migrate secrets between the container that has the old version" ID="ID_1155768183" CREATED="1454413032255" MODIFIED="1454413698077" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/SGX%20Explained.pdf">
-<pdf_annotation type="HIGHLIGHTED_TEXT" page="77" object_id="3975280502106414908" object_number="1319" document_hash="6247F24926CEBCBDD607A743A7A36C17F76C70D179FFDDC5BE417C9354C5B">
-    <pdf_title>Intel SGX Explained</pdf_title>
-</pdf_annotation>
-<attribute NAME="key" VALUE="sgx-explained"/>
-<attribute NAME="year" VALUE="2016"/>
-<attribute NAME="title" VALUE="Intel SGX Explained."/>
-<attribute NAME="authors" VALUE="Costan, Victor and Devadas, Srinivas"/>
-<attribute NAME="journal" VALUE="IACR Cryptology ePrint Archive"/>
-</node>
-</node>
-</node>
-</node>
-<node TEXT="privilege levels" FOLDED="true" ID="ID_556690015" CREATED="1494240014974" MODIFIED="1494240018300" MOVED="1499683617187">
-<node TEXT="The privilege levels in the x86 architecture, and the&#xa;software that typically runs at each security level." ID="ID_1300304826" CREATED="1493383749318" MODIFIED="1493386674478" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/SGX%20Explained.pdf" MOVED="1494240021073">
-<hook URI="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/_data/150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/default_files/x86%20privilege%20levels%20sgx.png" SIZE="0.94043887" NAME="ExternalObject"/>
-<attribute NAME="key" VALUE="sgx-explained"/>
-<attribute NAME="year" VALUE="2016"/>
-<attribute NAME="title" VALUE="Intel SGX Explained."/>
-<attribute NAME="authors" VALUE="Costan, Victor and Devadas, Srinivas"/>
-<attribute NAME="image" VALUE="x86 privilege levels sgx"/>
-<attribute NAME="journal" VALUE="IACR Cryptology ePrint Archive"/>
-<pdf_annotation type="PDF_FILE" object_id="0" document_hash="6247F24926CEBCBDD607A743A7A36C17F76C70D179FFDDC5BE417C9354C5B">
-    <pdf_title>Intel SGX Explained</pdf_title>
-</pdf_annotation>
-</node>
-</node>
-<node TEXT="secured against SMM code" FOLDED="true" ID="ID_742989147" CREATED="1455093942822" MODIFIED="1455093949902" MOVED="1499683665997">
-<node TEXT="enclaves&#x2019; code and data is stored in Processor Reserved Memory (PRM), which is a subset of DRAM that cannot be directly accessed by other software, including system software and SMM code" ID="ID_631814678" CREATED="1454413032343" MODIFIED="1454413693167" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/SGX%20Explained.pdf" MOVED="1455093955848">
-<pdf_annotation type="HIGHLIGHTED_TEXT" page="58" object_id="4908685988711847829" object_number="1048" document_hash="6247F24926CEBCBDD607A743A7A36C17F76C70D179FFDDC5BE417C9354C5B">
-    <pdf_title>Intel SGX Explained</pdf_title>
-</pdf_annotation>
-<attribute NAME="key" VALUE="sgx-explained"/>
-<attribute NAME="year" VALUE="2016"/>
-<attribute NAME="title" VALUE="Intel SGX Explained."/>
-<attribute NAME="authors" VALUE="Costan, Victor and Devadas, Srinivas"/>
-<attribute NAME="journal" VALUE="IACR Cryptology ePrint Archive"/>
-</node>
-</node>
-<node TEXT="secured against DMA" FOLDED="true" ID="ID_435972924" CREATED="1455093963133" MODIFIED="1455093966639" MOVED="1499683666005">
-<node TEXT="reject DMA transfers targeting the PRM" ID="ID_1772975373" CREATED="1454413031964" MODIFIED="1454413693300" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/SGX%20Explained.pdf" MOVED="1455093969858">
-<pdf_annotation type="HIGHLIGHTED_TEXT" page="58" object_id="8662084455139658314" object_number="1049" document_hash="6247F24926CEBCBDD607A743A7A36C17F76C70D179FFDDC5BE417C9354C5B">
-    <pdf_title>Intel SGX Explained</pdf_title>
-</pdf_annotation>
-<attribute NAME="key" VALUE="sgx-explained"/>
-<attribute NAME="year" VALUE="2016"/>
-<attribute NAME="title" VALUE="Intel SGX Explained."/>
-<attribute NAME="authors" VALUE="Costan, Victor and Devadas, Srinivas"/>
-<attribute NAME="journal" VALUE="IACR Cryptology ePrint Archive"/>
-</node>
-</node>
-<node TEXT="MEE" FOLDED="true" ID="ID_192195304" CREATED="1455191742739" MODIFIED="1455191744211" MOVED="1499683666013">
-<node TEXT="CPU&#x2019;s uncore receives a new module, the Memory Encryption Engine" ID="ID_673095435" CREATED="1454413032230" MODIFIED="1454413705163" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/SGX%20Explained.pdf" MOVED="1455191745953">
-<pdf_annotation type="HIGHLIGHTED_TEXT" page="88" object_id="999941010944365625" object_number="1543" document_hash="6247F24926CEBCBDD607A743A7A36C17F76C70D179FFDDC5BE417C9354C5B">
-    <pdf_title>Intel SGX Explained</pdf_title>
-</pdf_annotation>
-<attribute NAME="key" VALUE="sgx-explained"/>
-<attribute NAME="year" VALUE="2016"/>
-<attribute NAME="title" VALUE="Intel SGX Explained."/>
-<attribute NAME="authors" VALUE="Costan, Victor and Devadas, Srinivas"/>
-<attribute NAME="journal" VALUE="IACR Cryptology ePrint Archive"/>
-</node>
-<node TEXT="the Memory Controller detects [the] address belongs to the MEE region, and routes transaction to MEE" ID="ID_1944276484" CREATED="1454413032486" MODIFIED="1454413705343" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/SGX%20Explained.pdf" MOVED="1455191747535">
-<pdf_annotation type="HIGHLIGHTED_TEXT" page="88" object_id="6407575779599916714" object_number="1546" document_hash="6247F24926CEBCBDD607A743A7A36C17F76C70D179FFDDC5BE417C9354C5B">
-    <pdf_title>Intel SGX Explained</pdf_title>
-</pdf_annotation>
-<attribute NAME="key" VALUE="sgx-explained"/>
-<attribute NAME="year" VALUE="2016"/>
-<attribute NAME="title" VALUE="Intel SGX Explained."/>
-<attribute NAME="authors" VALUE="Costan, Victor and Devadas, Srinivas"/>
-<attribute NAME="journal" VALUE="IACR Cryptology ePrint Archive"/>
-</node>
-<node TEXT="patents state that the MEE also protects the Quick-Path Interconnect" FOLDED="true" ID="ID_97319803" CREATED="1454413032798" MODIFIED="1454413705415" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/SGX%20Explained.pdf" MOVED="1455191768980">
-<pdf_annotation type="HIGHLIGHTED_TEXT" page="89" object_id="7968644101445656287" object_number="1568" document_hash="6247F24926CEBCBDD607A743A7A36C17F76C70D179FFDDC5BE417C9354C5B">
-    <pdf_title>Intel SGX Explained</pdf_title>
-</pdf_annotation>
-<attribute NAME="key" VALUE="sgx-explained"/>
-<attribute NAME="year" VALUE="2016"/>
-<attribute NAME="title" VALUE="Intel SGX Explained."/>
-<attribute NAME="authors" VALUE="Costan, Victor and Devadas, Srinivas"/>
-<attribute NAME="journal" VALUE="IACR Cryptology ePrint Archive"/>
-<node TEXT="between CPUs (not cores)" ID="ID_416699978" CREATED="1455192153134" MODIFIED="1455192159215"/>
-</node>
-<node TEXT="MEE sits in the processor&#x2019;s memory controller, which is at the edge of the on-chip memory hierarchy, below the caches" ID="ID_150601142" CREATED="1454413032276" MODIFIED="1454413705486" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/SGX%20Explained.pdf" MOVED="1455191798096">
-<pdf_annotation type="HIGHLIGHTED_TEXT" page="89" object_id="72102214903338354" object_number="1569" document_hash="6247F24926CEBCBDD607A743A7A36C17F76C70D179FFDDC5BE417C9354C5B">
-    <pdf_title>Intel SGX Explained</pdf_title>
-</pdf_annotation>
-<attribute NAME="key" VALUE="sgx-explained"/>
-<attribute NAME="year" VALUE="2016"/>
-<attribute NAME="title" VALUE="Intel SGX Explained."/>
-<attribute NAME="authors" VALUE="Costan, Victor and Devadas, Srinivas"/>
-<attribute NAME="journal" VALUE="IACR Cryptology ePrint Archive"/>
-</node>
-<node TEXT="MEE cannot protect an enclave&#x2019;s memory from software attacks" ID="ID_1318553207" CREATED="1454413032610" MODIFIED="1454413705558" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/SGX%20Explained.pdf" MOVED="1455191802686">
-<pdf_annotation type="HIGHLIGHTED_TEXT" page="89" object_id="8096537463623836835" object_number="1570" document_hash="6247F24926CEBCBDD607A743A7A36C17F76C70D179FFDDC5BE417C9354C5B">
-    <pdf_title>Intel SGX Explained</pdf_title>
-</pdf_annotation>
-<attribute NAME="key" VALUE="sgx-explained"/>
-<attribute NAME="year" VALUE="2016"/>
-<attribute NAME="title" VALUE="Intel SGX Explained."/>
-<attribute NAME="authors" VALUE="Costan, Victor and Devadas, Srinivas"/>
-<attribute NAME="journal" VALUE="IACR Cryptology ePrint Archive"/>
-</node>
-</node>
-<node TEXT="enclave life cycle" FOLDED="true" ID="ID_1468169135" CREATED="1494240023034" MODIFIED="1494240028020" MOVED="1499683803815">
-<node TEXT="The SGX enclave life cycle management instructions&#xa;and state transition diagram." ID="ID_545154813" CREATED="1494240042378" MODIFIED="1494240070980" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/SGX%20Explained.pdf">
-<hook URI="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/_data/150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/default_files/sgx%20enclave%20life%20cycle.png" SIZE="0.75093865" NAME="ExternalObject"/>
-<attribute NAME="image" VALUE="sgx enclave life cycle"/>
-<attribute NAME="key" VALUE="sgx-explained"/>
-<attribute NAME="year" VALUE="2016"/>
-<attribute NAME="title" VALUE="Intel SGX Explained."/>
-<attribute NAME="authors" VALUE="Costan, Victor and Devadas, Srinivas"/>
-<attribute NAME="journal" VALUE="IACR Cryptology ePrint Archive"/>
-<pdf_annotation type="PDF_FILE" object_id="0" document_hash="6247F24926CEBCBDD607A743A7A36C17F76C70D179FFDDC5BE417C9354C5B">
-    <pdf_title>Intel SGX Explained</pdf_title>
-</pdf_annotation>
-</node>
-</node>
-<node TEXT="software and hardware" FOLDED="true" ID="ID_1272878575" CREATED="1499683709345" MODIFIED="1499683715593">
-<node TEXT="manageability engine: monotonic counters, trusted time" FOLDED="true" ID="ID_614081914" CREATED="1453473362281" MODIFIED="1453883874415" MOVED="1499683735112">
-<node TEXT="manageability engine (in chipset) provides monotonic counters, trusted time etc." ID="ID_739459131" CREATED="1453481510733" MODIFIED="1453883874421" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/SGX%20SDK%20Guide.pdf">
-<pdf_annotation type="COMMENT" page="8" object_id="8691915318542793680" object_number="5927" document_hash="1824E5805C4B7F3BD8F2F8C65C3E36ED39DE0D2FD4F9448A4A2E6EA70CD3E8">
-    <pdf_title>Intel&#xae; Software Guard Extensions Evaluation SDK</pdf_title>
-</pdf_annotation>
-</node>
-</node>
-<node TEXT="implemented in microcode (except MEE)" FOLDED="true" ID="ID_862740000" CREATED="1454421023621" MODIFIED="1455093244992" MOVED="1499683736569">
-<node TEXT="CPU Microcode" FOLDED="true" ID="ID_1782808172" CREATED="1454413032880" MODIFIED="1454413689633" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/SGX%20Explained.pdf" MOVED="1454421087924">
-<pdf_annotation type="HIGHLIGHTED_TEXT" page="28" object_id="7311203694903694810" object_number="639" document_hash="6247F24926CEBCBDD607A743A7A36C17F76C70D179FFDDC5BE417C9354C5B">
-    <pdf_title>Intel SGX Explained</pdf_title>
-</pdf_annotation>
-<attribute NAME="key" VALUE="sgx-explained"/>
-<attribute NAME="year" VALUE="2016"/>
-<attribute NAME="title" VALUE="Intel SGX Explained."/>
-<attribute NAME="authors" VALUE="Costan, Victor and Devadas, Srinivas"/>
-<attribute NAME="journal" VALUE="IACR Cryptology ePrint Archive"/>
-<node TEXT="Some instructions are used infrequently, and some instructions are very complex, which makes it impractical for an execution core to handle all the instructions in hardware. Intel CPUs use a microcode table to break down rare and complex instructions into sequences of simpler instructions" ID="ID_1924244399" CREATED="1454413031891" MODIFIED="1454413689390" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/SGX%20Explained.pdf" MOVED="1454421089541">
-<pdf_annotation type="HIGHLIGHTED_TEXT" page="28" object_id="1130911761069025565" object_number="638" document_hash="6247F24926CEBCBDD607A743A7A36C17F76C70D179FFDDC5BE417C9354C5B">
-    <pdf_title>Intel SGX Explained</pdf_title>
-</pdf_annotation>
-<attribute NAME="key" VALUE="sgx-explained"/>
-<attribute NAME="year" VALUE="2016"/>
-<attribute NAME="title" VALUE="Intel SGX Explained."/>
-<attribute NAME="authors" VALUE="Costan, Victor and Devadas, Srinivas"/>
-<attribute NAME="journal" VALUE="IACR Cryptology ePrint Archive"/>
-</node>
-</node>
-<node TEXT="Intel patents SGX disclose that SGX is entirely implemented in microcode, except for the memory encryption engine" ID="ID_1705395880" CREATED="1454413032420" MODIFIED="1454421068207" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/SGX%20Explained.pdf" MOVED="1454421094127">
-<pdf_annotation type="HIGHLIGHTED_TEXT" page="28" object_id="6037471430610981534" object_number="640" document_hash="6247F24926CEBCBDD607A743A7A36C17F76C70D179FFDDC5BE417C9354C5B">
-    <pdf_title>Intel SGX Explained</pdf_title>
-</pdf_annotation>
-<attribute NAME="key" VALUE="sgx-explained"/>
-<attribute NAME="year" VALUE="2016"/>
-<attribute NAME="title" VALUE="Intel SGX Explained."/>
-<attribute NAME="authors" VALUE="Costan, Victor and Devadas, Srinivas"/>
-<attribute NAME="journal" VALUE="IACR Cryptology ePrint Archive"/>
-</node>
-</node>
-</node>
-<node TEXT="version 1 and 2" FOLDED="true" ID="ID_1826024830" CREATED="1499683807018" MODIFIED="1499683808722">
-<node TEXT="v1" FOLDED="true" ID="ID_1422015142" CREATED="1453288207959" MODIFIED="1453883874321">
-<node TEXT="static enclave size" ID="ID_632270509" CREATED="1453288209399" MODIFIED="1453883874326"/>
-<node TEXT="instructions for EPC page swapping" ID="ID_1632654099" CREATED="1453288218111" MODIFIED="1453883874332"/>
-</node>
-<node TEXT="v2" FOLDED="true" ID="ID_1190880963" CREATED="1453288226799" MODIFIED="1497344280938">
-<node TEXT="dynamic enclave size: EAUG page allocation" FOLDED="true" ID="ID_1594629001" CREATED="1453288228431" MODIFIED="1453883874342">
-<node TEXT="Allocate page to an existing enclave" ID="ID_773890196" CREATED="1453288380131" MODIFIED="1453883874347" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/SGX%20programming%20reference.pdf">
-<pdf_annotation type="HIGHLIGHTED_TEXT" page="16" object_id="2806214367518345996" object_number="13530" document_hash="82A0D77BB3D8893A886C2C88DF2654F625BC127CB86347752D86E9B2BD368">
-    <pdf_title>Intel&#xae; Software Guard Extensions Programming Reference</pdf_title>
-</pdf_annotation>
-<attribute NAME="year" VALUE="2014"/>
-<attribute NAME="title" VALUE="Intel Software Guards Extensions Programming Reference"/>
-<attribute NAME="authors" VALUE="Intel Corporation"/>
-</node>
-</node>
-<node TEXT="add new threads at runtime" FOLDED="true" ID="ID_997140278" CREATED="1453288305744" MODIFIED="1453883874352">
-<node TEXT="Make page TCS" ID="ID_624037119" CREATED="1453288380084" MODIFIED="1453883874357" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/SGX%20programming%20reference.pdf">
-<pdf_annotation type="HIGHLIGHTED_TEXT" page="16" object_id="5471916342614024886" object_number="13529" document_hash="82A0D77BB3D8893A886C2C88DF2654F625BC127CB86347752D86E9B2BD368">
-    <pdf_title>Intel&#xae; Software Guard Extensions Programming Reference</pdf_title>
-</pdf_annotation>
-<attribute NAME="year" VALUE="2014"/>
-<attribute NAME="title" VALUE="Intel Software Guards Extensions Programming Reference"/>
-<attribute NAME="authors" VALUE="Intel Corporation"/>
-</node>
-</node>
-<node TEXT="no HW yet" ID="ID_86042430" CREATED="1453359116291" MODIFIED="1453883874362"/>
-</node>
-</node>
-</node>
-<node TEXT="Content" STYLE_REF="paragraphs_drop_self" ID="ID_1302438548" CREATED="1495543885991" MODIFIED="1495543895304">
+<node TEXT="Content" STYLE_REF="paragraphs_drop_self" FOLDED="true" ID="ID_1302438548" CREATED="1495543885991" MODIFIED="1495543895304">
 <node TEXT="Intel SGX is a trusted computing solution. It is fully contained within the CPU and is exposed as an instruction set." ID="ID_1548132428" CREATED="1499757265043" MODIFIED="1499760681452" MOVED="1499757265864"/>
 <node TEXT="As described in \autoref{chapter:tc-solutions}, SGX protects individual software modules in so-called ``enclaves&apos;&apos;." ID="ID_884480539" CREATED="1499757371819" MODIFIED="1499757433843"/>
-<node TEXT="Compared to other solutions, the TCB is small. It includes only the protected module and the CPU." ID="ID_1231030834" CREATED="1499757434068" MODIFIED="1499757480179"/>
+<node TEXT="Compared to other solutions, the TCB is small. It includes only the protected module and the CPU.\footnote{The TCB also includes Intel&apos;s architectural enclaves.}" ID="ID_1231030834" CREATED="1499757434068" MODIFIED="1499856627795"/>
 <node TEXT="SGX allows remote parties to verify the state of an enclave (attestation). It provides additional features, such as data sealing, on top." ID="ID_529967846" CREATED="1499757483796" MODIFIED="1499760707076"/>
 <node TEXT="" ID="ID_1465645538" CREATED="1499782007173" MODIFIED="1499782007173"/>
 <node TEXT="The operating system, system management code and other parts of the application do not have to be trusted." ID="ID_1978585841" CREATED="1499683967289" MODIFIED="1499765789117"/>
@@ -5322,6 +5080,16 @@
 <node TEXT="An interesting aspect of SGX is that it relies on the untrusted operating system to perform its regular management tasks such as scheduling and memory allocation." ID="ID_96634994" CREATED="1499700770878" MODIFIED="1499757756534"/>
 <node TEXT="This includes the steps for setting up an enclave." ID="ID_307359552" CREATED="1499774637212" MODIFIED="1499775582848" MOVED="1499775693117"/>
 <node TEXT="Enclave attestation would expose any attempts by a malicious operating system to load a tainted enclave." ID="ID_483221956" CREATED="1499775733653" MODIFIED="1499775792021"/>
+<node TEXT="Costan et al. put it like this: ``SGX design expects the system software to allocate the EPC pages to enclaves. However, as the system software is not trusted, SGX processors check the correctness of the system software&#x2019;s allocation decisions.&apos;&apos;" ID="ID_729915388" CREATED="1499841482871" MODIFIED="1499841508099" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/SGX%20Explained.pdf">
+<attribute NAME="key" VALUE="sgx-explained"/>
+<attribute NAME="journal" VALUE="IACR Cryptology ePrint Archive"/>
+<attribute NAME="year" VALUE="2016"/>
+<attribute NAME="title" VALUE="Intel SGX Explained."/>
+<attribute NAME="authors" VALUE="Costan, Victor and Devadas, Srinivas"/>
+<pdf_annotation type="PDF_FILE" object_id="0" document_hash="6247F24926CEBCBDD607A743A7A36C17F76C70D179FFDDC5BE417C9354C5B">
+    <pdf_title>Intel SGX Explained</pdf_title>
+</pdf_annotation>
+</node>
 <node TEXT="\autoref{figure:sgx-enclave-life-cycle} shows the enclave life cycle." ID="ID_1080928863" CREATED="1499775644877" MODIFIED="1499775680524"/>
 <node TEXT="\input{content/tikz/sgx-enclave-life-cycle}" STYLE_REF="latex" FOLDED="true" ID="ID_538890645" CREATED="1499774665227" MODIFIED="1499776150136" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/SGX%20Explained.pdf">
 <attribute NAME="image" VALUE=""/>
@@ -5378,13 +5146,21 @@
 <node TEXT="These enclaves increase the size of the software TCB." ID="ID_1503953122" CREATED="1499775910820" MODIFIED="1499775943072"/>
 <node TEXT="They are also the main source for criticism of SGX as explained in \autoref{section:sgx-criticism}." ID="ID_419053144" CREATED="1499775943216" MODIFIED="1499776203751"/>
 <node TEXT="" ID="ID_1342419911" CREATED="1499701251135" MODIFIED="1499757783771"/>
-<node TEXT="Code running in an enclave may not execute system calls. Any input/output must be handled by an untrusted wrapper." ID="ID_950941319" CREATED="1499782008180" MODIFIED="1499782936569" MOVED="1499782243649" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/SGX%20programming%20reference.pdf">
+<node TEXT="Code running in an enclave may not execute certain calls. These can only be handled by the untrusted wrapper." ID="ID_950941319" CREATED="1499782008180" MODIFIED="1499846850354" MOVED="1499782243649" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/SGX%20programming%20reference.pdf">
 <attribute NAME="key" VALUE="b"/>
 <attribute NAME="year" VALUE="2014"/>
 <attribute NAME="title" VALUE="Intel Software Guards Extensions Programming Reference"/>
-<attribute NAME="authors" VALUE="Intel Corporation"/>
+<attribute NAME="authors" VALUE="Intel"/>
 <pdf_annotation type="PDF_FILE" object_id="0" document_hash="82A0D77BB3D8893A886C2C88DF2654F625BC127CB86347752D86E9B2BD368">
     <pdf_title>Intel&#xae; Software Guard Extensions Programming Reference</pdf_title>
+</pdf_annotation>
+</node>
+<node TEXT="Among them are instructions which may cause a \textit{VMEXIT}\footnote{CPUID, GETSEC, RDPMC, RDTSC, RDTSCP, SGDT, SIDT, SLDT, STR, VMCALL, VMFUNC}, input/output instructions\footnote{IN, INS/INSB/INSW/INSD, OUT, OUTS/OUTSB/OUTSW/OUTSD} and instructions which require a change in privilege levels (e.g. system calls).\footnote{Far call, Far jump, Far ret, INT n/INTO, IRET, LDS/LES/LFS/LGS/LSS, MOV to&#xa;DS/ES/SS/FS/GS, POP DS/ES/SS/FS/GS, SYSCALL, SYSENTER}" ID="ID_909354065" CREATED="1499846855887" MODIFIED="1499847179408" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/SGX%20Developer%20Guide%20Linux.pdf">
+<attribute NAME="key" VALUE="sgx-dev"/>
+<attribute NAME="title" VALUE="Intel SGX Developer Guide"/>
+<attribute NAME="authors" VALUE="Intel"/>
+<pdf_annotation type="PDF_FILE" object_id="0" document_hash="95BCE493563A8534B9FB48B98ACCFA96185B4B27710EDA131D698F52B3794">
+    <pdf_title>Intel&#xae; Software Guard Extensions</pdf_title>
 </pdf_annotation>
 </node>
 <node TEXT="It is still possible to securely communicate with enclaves using a key exchanged during the attestation process." ID="ID_798355081" CREATED="1499782035220" MODIFIED="1499782312477" MOVED="1499782243638"/>
@@ -5403,18 +5179,76 @@
 <node TEXT="SGX capable CPUs are available since the end of 2015.\footnote{\url{https://github.com/ayeks/SGX-hardware}}." ID="ID_1264019871" CREATED="1499693826665" MODIFIED="1499693869078"/>
 </node>
 </node>
-<node TEXT="Enclave Development" ID="ID_816398624" CREATED="1499693570309" MODIFIED="1499778430604" MOVED="1499777011960">
-<icon BUILTIN="button_cancel"/>
+<node TEXT="Enclave Development" FOLDED="true" ID="ID_816398624" CREATED="1499693570309" MODIFIED="1499849786487" MOVED="1499777011960">
+<icon BUILTIN="button_ok"/>
 <attribute NAME="label" VALUE="section:sgx-usage" OBJECT="java.net.URI|section:sgx-usage"/>
-<node TEXT="mindmap" STYLE_REF="drop" ID="ID_407748345" CREATED="1499777017556" MODIFIED="1499777026225">
-<node TEXT="SDK" ID="ID_48501600" CREATED="1499777037556" MODIFIED="1499777040012" MOVED="1499777040511"/>
-<node TEXT="edl example" ID="ID_1514520901" CREATED="1499684174883" MODIFIED="1499777036973" MOVED="1499777034224"/>
+<node TEXT="mindmap" STYLE_REF="drop" ID="ID_407748345" CREATED="1499777017556" MODIFIED="1499777026225"/>
+<node TEXT="content" STYLE_REF="paragraphs_drop_self" FOLDED="true" ID="ID_919204644" CREATED="1499777020221" MODIFIED="1499777030073">
+<node TEXT="Intel offers a Software Development Kit (SDK) for authoring enclaves and integrating them into an application." ID="ID_137499231" CREATED="1499840764560" MODIFIED="1499840976976" MOVED="1499840971471"/>
+<node TEXT="The SDK is available for both Windows\footnote{\url{https://software.intel.com/en-us/sgx-sdk}} and Linux\footnote{\url{https://github.com/01org/linux-sgx}, open source under the very liberal BSD license.}" ID="ID_1174967909" CREATED="1499840977110" MODIFIED="1499841007592"/>
+<node TEXT="The SDK provides the following features:" ID="ID_1005935849" CREATED="1499841056702" MODIFIED="1499851305026" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/SGX%20SDK%20Guide.pdf">
+<attribute NAME="key" VALUE="sgx-windows"/>
+<attribute NAME="title" VALUE="Intel SGX Evaluation SDK User&apos;s Guide for Windows OS"/>
+<attribute NAME="authors" VALUE="Intel"/>
+<pdf_annotation type="PDF_FILE" object_id="0" document_hash="1824E5805C4B7F3BD8F2F8C65C3E36ED39DE0D2FD4F9448A4A2E6EA70CD3E8">
+    <pdf_title>Intel&#xae; Software Guard Extensions Evaluation SDK</pdf_title>
+</pdf_annotation>
 </node>
-<node TEXT="content" STYLE_REF="paragraphs_drop_self" ID="ID_919204644" CREATED="1499777020221" MODIFIED="1499777030073">
-<node TEXT="\lstinputlisting[label=listing:edl,caption=SGX SDK EDL,style=edl]{../kissdb-sgx/kissdb_t/kissdb.edl}" ID="ID_326599406" CREATED="1499784565468" MODIFIED="1499785460502"/>
+<node TEXT="" ID="ID_1648726889" CREATED="1499851312264" MODIFIED="1499851318583" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/SGX%20Developer%20Guide%20Linux.pdf">
+<attribute NAME="key" VALUE="sgx-dev"/>
+<attribute NAME="title" VALUE="Intel SGX Developer Guide"/>
+<attribute NAME="authors" VALUE="Intel"/>
+<pdf_annotation type="PDF_FILE" object_id="0" document_hash="95BCE493563A8534B9FB48B98ACCFA96185B4B27710EDA131D698F52B3794">
+    <pdf_title>Intel&#xae; Software Guard Extensions</pdf_title>
+</pdf_annotation>
+</node>
+<node TEXT="\begin{description}" ID="ID_1382376973" CREATED="1499841073631" MODIFIED="1499841329336"/>
+<node TEXT="\item[C and C++:] These are the only programming languages supported by the SDK." ID="ID_983565268" CREATED="1499841278968" MODIFIED="1499841308560" MOVED="1499841309047"/>
+<node TEXT="\item[Interface definition:] An enclave&apos;s interface is defined in the Enclave Definition Language (EDL). This is described in more detail later on." ID="ID_378071151" CREATED="1499841157134" MODIFIED="1499851235759" MOVED="1499841231604"/>
+<node TEXT="\item[Debugging:] This is actually a SGX hardware feature. An enclave in debug mode is not protected by the CPU." ID="ID_362995137" CREATED="1499843018776" MODIFIED="1499843067168"/>
+<node TEXT="\item[Simulation mode:] In the absence of SGX hardware, the hardware is simulated for development purposes." ID="ID_72514973" CREATED="1499841082246" MODIFIED="1499841141767"/>
+<node TEXT="\item[Trusted library:] Helper functions for enclave development. This includes a subset of the standard libc (e.g. without file input/output), random number generation, cryptographic primitives, key exchange and data sealing." ID="ID_1393938905" CREATED="1499843198550" MODIFIED="1499851265384"/>
+<node TEXT="\item[Complete authoring chain:] Enclaves can be compiled and signed so that they could be loaded in production use. See \autoref{section:sgx-criticism} for the restrictions that apply." ID="ID_237639086" CREATED="1499841142038" MODIFIED="1499843002559"/>
+<node TEXT="\end{description}" ID="ID_934385781" CREATED="1499841078919" MODIFIED="1499841335191"/>
+<node TEXT="An example EDL interface definition is shown in \autoref{listing:edl}." ID="ID_614448952" CREATED="1499847738896" MODIFIED="1499847762089"/>
+<node TEXT="It is divided into a trusted (E-call) and untrusted (O-call) section." ID="ID_1379790192" CREATED="1499839870782" MODIFIED="1499839923488" MOVED="1499849150332"/>
+<node TEXT="Based on this interface, the SDK generates proxy functions. For all \textit{trusted} functions (E-calls) proxies are generated for the untrusted wrapper. For all \textit{untrusted} functions (O-calls), proxies are generated for the enclave." ID="ID_1582039127" CREATED="1499847826767" MODIFIED="1499847930490"/>
+<node TEXT="" ID="ID_1734248851" CREATED="1499850064831" MODIFIED="1499850064831"/>
+<node TEXT="The proxy code is necessary for parameter marshalling." ID="ID_930140065" CREATED="1499848777343" MODIFIED="1499848791289"/>
+<node TEXT="The function signature includes additional annotations for the parameters." ID="ID_1680143487" CREATED="1499847934064" MODIFIED="1499847962921"/>
+<node TEXT="The annotations show the direction of data flow (\textit{in, out, user\_{}check})." ID="ID_1178777303" CREATED="1499847963574" MODIFIED="1499848719647" MOVED="1499848713006"/>
+<node TEXT="If \textit{in} (and/or \textit{out}) are specified, the proxy code will copy the parameter by value before calling the function (and/or afterwards). A pass-by-reference can be achieved with \textit{user\_{}check}." ID="ID_77293385" CREATED="1499848118799" MODIFIED="1499849900345"/>
+<node TEXT="Pass-by-value is recommended for security reasons. The enclave cannot rely on untrusted memory to be stable. However, copying and checking parameters adds overhead. This is discussed in \autoref{section:sgx-perf}." ID="ID_1962499209" CREATED="1499849924975" MODIFIED="1499850023393" MOVED="1499850040929"/>
+<node TEXT="% Listing" STYLE_REF="latex" ID="ID_1687639604" CREATED="1499839536528" MODIFIED="1499839579388" MOVED="1499849187966">
+<node TEXT="\lstinputlisting[label=listing:edl,caption={" STYLE_REF="latex" ID="ID_326599406" CREATED="1499784565468" MODIFIED="1499840341049" MOVED="1499839552465"/>
+<node TEXT="\textbf{enclave.edl} -- Enclave Definition Language (EDL) example file." ID="ID_1712028152" CREATED="1499839473993" MODIFIED="1499839846929" MOVED="1499839552480"/>
+<node TEXT="EDL is used by the Intel SGX SDK to specify an enclaves interface on the function level." ID="ID_689768123" CREATED="1499839826054" MODIFIED="1499839901664" MOVED="1499840160834"/>
+<node TEXT="The enclave&apos;s entry table is generated based on the EDL file." ID="ID_1488600472" CREATED="1499851396479" MODIFIED="1499851415097"/>
+<node TEXT="The example is taken from the demo consumer of the author&apos;s SGX helper library: \url{https://github.com/ftes/sgx-lib-consumer/blob/master/enclave/enclave.edl}" ID="ID_704042173" CREATED="1499840615648" MODIFIED="1499840684761"/>
+<node TEXT="},style=edl]{../sgx-lib-consumer/enclave/enclave.edl}" STYLE_REF="latex" ID="ID_1937257396" CREATED="1499839481526" MODIFIED="1499840345307" MOVED="1499839552490"/>
+</node>
+<node TEXT="" ID="ID_907699512" CREATED="1499849110318" MODIFIED="1499849110318"/>
+<node TEXT="The proxy needs to know how much data to copy for pointer arguments. This is handled by the annotations \textit{size, sizefunc} and \textit{count}. The first two define the size of an individual element statically or dynamically. The number of elements can be defined with \textit{count} either statically as a number or dynamically by referencing a different scalar parameter." ID="ID_1101116303" CREATED="1499848566136" MODIFIED="1499851476017" MOVED="1499848723870"/>
+<node TEXT="For a full reference of EDL, see \cite{sgx-windows}." ID="ID_294430690" CREATED="1499848065368" MODIFIED="1499848103736" MOVED="1499848838690"/>
+<node TEXT="" ID="ID_608088478" CREATED="1499848814015" MODIFIED="1499848814015"/>
+<node TEXT="The \textbf{from \ldots import} in \autoref{listing:edl} also shows how EDL files can be composed. In this case, library helper functions are included." ID="ID_1465748199" CREATED="1499840282958" MODIFIED="1499849440769" MOVED="1499847793113"/>
+<node TEXT="This is also the method of choice for adding remote attestation and key exchange to an enclave.\footnote{\url{https://github.com/01org/linux-sgx/blob/1115c195cd60d5ab2b80c12d07e21663e5aa8030/SampleCode/RemoteAttestation/isv_enclave/isv_enclave.edl}}" ID="ID_1804743643" CREATED="1499848891367" MODIFIED="1499849007905"/>
+<node TEXT="The helper library in question assists in prototyping SGX enclaves and is described in \autoref{chapter:sgx-lib}." ID="ID_597042526" CREATED="1499849441447" MODIFIED="1499849443183"/>
+<node TEXT="" ID="ID_108268537" CREATED="1499847762479" MODIFIED="1499847762479"/>
+<node TEXT="In addition to the architectural enclaves (attestation etc.), Intel also provides some helper enclaves as part of the Platform Software (PSW)." ID="ID_1056979156" CREATED="1499849464224" MODIFIED="1499849498320"/>
+<node TEXT="These enclaves expose functionality such as monotonic counters and trusted time." ID="ID_1018912990" CREATED="1499844983688" MODIFIED="1499849527905" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/SGX%20SDK%20Guide.pdf">
+<attribute NAME="key" VALUE="sgx-windows"/>
+<attribute NAME="title" VALUE="Intel SGX Evaluation SDK User&apos;s Guide for Windows OS"/>
+<attribute NAME="authors" VALUE="Intel"/>
+<pdf_annotation type="PDF_FILE" object_id="0" document_hash="1824E5805C4B7F3BD8F2F8C65C3E36ED39DE0D2FD4F9448A4A2E6EA70CD3E8">
+    <pdf_title>Intel&#xae; Software Guard Extensions Evaluation SDK</pdf_title>
+</pdf_annotation>
+</node>
+<node TEXT="They can be accessed via trusted library functions included in the SDK." ID="ID_296716001" CREATED="1499849528655" MODIFIED="1499849541185"/>
+<node TEXT="These enclaves rely on the Manageability Engine (ME), which is a part of Intel CPUs, to provide these features.\footnote{\url{https://software.intel.com/en-us/forums/intel-software-guard-extensions-intel-sgx/topic/607330&#xa;}}" ID="ID_1422515691" CREATED="1499849541455" MODIFIED="1499851537618"/>
 </node>
 </node>
-<node TEXT="Performance" LOCALIZED_STYLE_REF="default" ID="ID_388809349" CREATED="1495056067547" MODIFIED="1499783517181" MOVED="1499694113531">
+<node TEXT="Performance" LOCALIZED_STYLE_REF="default" FOLDED="true" ID="ID_388809349" CREATED="1495056067547" MODIFIED="1499783517181" MOVED="1499694113531">
 <icon BUILTIN="button_ok"/>
 <attribute NAME="label" VALUE="section:sgx-perf" OBJECT="java.net.URI|section:sgx-perf"/>
 <node TEXT="mindmap" STYLE_REF="drop" FOLDED="true" ID="ID_1081313395" CREATED="1495543887981" MODIFIED="1495543899209" MOVED="1495543900065">
@@ -5438,7 +5272,7 @@
 </node>
 </node>
 </node>
-<node TEXT="Content" STYLE_REF="paragraphs_drop_self" ID="ID_1404181635" CREATED="1495543885991" MODIFIED="1495543895304">
+<node TEXT="Content" STYLE_REF="paragraphs_drop_self" FOLDED="true" ID="ID_1404181635" CREATED="1495543885991" MODIFIED="1495543895304">
 <node TEXT="In principle, the CPU&apos;s full processing speed is available in SGX enclaves. This is an advantage over solutions with external secure elements." ID="ID_1639328080" CREATED="1499779635228" MODIFIED="1499780618814"/>
 <node TEXT="However, several factors have a observable performance impact on enclave performance." ID="ID_935750308" CREATED="1499779666124" MODIFIED="1499780627660"/>
 <node TEXT="Isolation is achieved by protecting an enclave&apos;s memory." ID="ID_88365959" CREATED="1499779682100" MODIFIED="1499779693863"/>
@@ -5457,7 +5291,7 @@
 </pdf_annotation>
 </node>
 <node TEXT="Random reads and writes highlight the actual performance impact." ID="ID_1830401881" CREATED="1499781142253" MODIFIED="1499781287132"/>
-<node TEXT="Two major factors impacting access times can be identified in the diagram." ID="ID_334642516" CREATED="1499781287804" MODIFIED="1499781338184" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/Scone.pdf">
+<node TEXT="Two major factors impacting access times can be identified in the diagram.\footnote{\cite{sgx-dev} also lists these as performance bottlenecks.}" ID="ID_334642516" CREATED="1499781287804" MODIFIED="1499847139335" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/Scone.pdf">
 <attribute NAME="key" VALUE="Arnautov2016"/>
 <attribute NAME="year" VALUE="2016"/>
 <attribute NAME="title" VALUE="SCONE: Secure linux containers with Intel SGX"/>
@@ -5492,7 +5326,7 @@
 <attribute NAME="key" VALUE="b"/>
 <attribute NAME="year" VALUE="2014"/>
 <attribute NAME="title" VALUE="Intel Software Guards Extensions Programming Reference"/>
-<attribute NAME="authors" VALUE="Intel Corporation"/>
+<attribute NAME="authors" VALUE="Intel"/>
 <pdf_annotation type="PDF_FILE" object_id="0" document_hash="82A0D77BB3D8893A886C2C88DF2654F625BC127CB86347752D86E9B2BD368">
     <pdf_title>Intel&#xae; Software Guard Extensions Programming Reference</pdf_title>
 </pdf_annotation>
@@ -5512,18 +5346,17 @@
 <node TEXT="However, the Intel SDK can apparently not be used to build this complex kind of interaction." ID="ID_501911684" CREATED="1499783316253" MODIFIED="1499783346173"/>
 </node>
 </node>
-<node TEXT="Known Criticism" LOCALIZED_STYLE_REF="default" FOLDED="true" ID="ID_806492894" CREATED="1495056086762" MODIFIED="1499701263794" MOVED="1499694114337">
-<icon BUILTIN="button_cancel"/>
+<node TEXT="Known Criticism" LOCALIZED_STYLE_REF="default" ID="ID_806492894" CREATED="1495056086762" MODIFIED="1499860154106" MOVED="1499694114337">
+<icon BUILTIN="button_ok"/>
 <attribute NAME="label" VALUE="section:sgx-criticism" OBJECT="java.net.URI|section:sgx-criticism"/>
 <node TEXT="mindmap" STYLE_REF="drop" FOLDED="true" ID="ID_358637021" CREATED="1495543887981" MODIFIED="1495543899209" MOVED="1495543900065">
-<node TEXT="security assumptions" ID="ID_564339166" CREATED="1487266477538" MODIFIED="1488547002562">
+<node TEXT="done" FOLDED="true" ID="ID_1766362665" CREATED="1499857415752" MODIFIED="1499857416632">
+<node TEXT="Intel&apos;s role in controlling software" ID="ID_1136540818" CREATED="1487266491506" MODIFIED="1488547009554" MOVED="1499857422302">
 <attribute NAME="LastHeading" VALUE=""/>
 </node>
-<node TEXT="known security issues" FOLDED="true" ID="ID_1563892769" CREATED="1487266485850" MODIFIED="1488547006352">
-<attribute NAME="LastHeading" VALUE=""/>
-<node TEXT="attacks on privileged enclaves" FOLDED="true" ID="ID_1119071196" CREATED="1455093890837" MODIFIED="1455093896542" MOVED="1488477329157">
-<node TEXT="cache attacks on the Quoting Enclave, which computes attestation signatures, would provide an attack with a processor&#x2019;s EPID signing key and completely compromise SGX" ID="ID_822534002" CREATED="1454413032121" MODIFIED="1454413692898" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/SGX%20Explained.pdf" MOVED="1455093898833">
-<pdf_annotation type="HIGHLIGHTED_TEXT" page="57" object_id="1261257957716443046" object_number="1034" document_hash="6247F24926CEBCBDD607A743A7A36C17F76C70D179FFDDC5BE417C9354C5B">
+<node TEXT="launch enclave: licensing component" ID="ID_1567476710" CREATED="1455191484834" MODIFIED="1455191495604" MOVED="1499857424973">
+<node TEXT="software security equivalent to the Net Neutrality debates" ID="ID_512245727" CREATED="1454413032059" MODIFIED="1454413704807" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/SGX%20Explained.pdf">
+<pdf_annotation type="HIGHLIGHTED_TEXT" page="87" object_id="9123013829748261465" object_number="1506" document_hash="6247F24926CEBCBDD607A743A7A36C17F76C70D179FFDDC5BE417C9354C5B">
     <pdf_title>Intel SGX Explained</pdf_title>
 </pdf_annotation>
 <attribute NAME="key" VALUE="sgx-explained"/>
@@ -5533,357 +5366,33 @@
 <attribute NAME="journal" VALUE="IACR Cryptology ePrint Archive"/>
 </node>
 </node>
-<node TEXT="Physical Attacks" FOLDED="true" ID="ID_243133610" CREATED="1454413032220" MODIFIED="1454413706558" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/SGX%20Explained.pdf" MOVED="1488477329164">
-<pdf_annotation type="HIGHLIGHTED_TEXT" page="100" object_id="6590141332804477678" object_number="1735" document_hash="6247F24926CEBCBDD607A743A7A36C17F76C70D179FFDDC5BE417C9354C5B">
-    <pdf_title>Intel SGX Explained</pdf_title>
+<node TEXT="no I/O support" FOLDED="true" ID="ID_1560950971" CREATED="1454321586649" MODIFIED="1454321591263" MOVED="1499857428651">
+<node TEXT="SGX does not offer I/O support; all interrupts are handled by the untrusted code" ID="ID_1342072739" CREATED="1453986050083" MODIFIED="1453986050083" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/fTPM%20-%20Firmware%20based%20TPM%202.0%20Implementation.pdf" MOVED="1454321595571">
+<pdf_annotation type="HIGHLIGHTED_TEXT" page="16" object_id="2803125117272191009" object_number="435" document_hash="69C6A682C37B542677FF2221CE848BC82AC67A6A33D0764AB0E1B8F83A5FA3">
+    <pdf_title>fTPM: A Firmware-based TPM 2.0 Implementation</pdf_title>
 </pdf_annotation>
-<attribute NAME="key" VALUE="sgx-explained"/>
-<attribute NAME="year" VALUE="2016"/>
-<attribute NAME="title" VALUE="Intel SGX Explained."/>
-<attribute NAME="authors" VALUE="Costan, Victor and Devadas, Srinivas"/>
-<attribute NAME="journal" VALUE="IACR Cryptology ePrint Archive"/>
-<node TEXT="enclave contents travels without any cryptographic protection on the uncore&#x2019;s ring bus" ID="ID_505984073" CREATED="1454413031883" MODIFIED="1454413706647" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/SGX%20Explained.pdf" MOVED="1455192080141">
-<pdf_annotation type="HIGHLIGHTED_TEXT" page="100" object_id="1398426510046852479" object_number="1736" document_hash="6247F24926CEBCBDD607A743A7A36C17F76C70D179FFDDC5BE417C9354C5B">
-    <pdf_title>Intel SGX Explained</pdf_title>
-</pdf_annotation>
-<attribute NAME="key" VALUE="sgx-explained"/>
-<attribute NAME="year" VALUE="2016"/>
-<attribute NAME="title" VALUE="Intel SGX Explained."/>
-<attribute NAME="authors" VALUE="Costan, Victor and Devadas, Srinivas"/>
-<attribute NAME="journal" VALUE="IACR Cryptology ePrint Archive"/>
-</node>
-<node TEXT="particularly concerned about the Generic Debug eXternal Connection (GDXC) which collects and filters the data transferred by the uncore&#x2019;s ring bus" ID="ID_589528919" CREATED="1454413032240" MODIFIED="1488817509298" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/SGX%20Explained.pdf" MOVED="1455192270179">
-<pdf_annotation type="HIGHLIGHTED_TEXT" page="100" object_id="4099836645959207336" object_number="1733" document_hash="6247F24926CEBCBDD607A743A7A36C17F76C70D179FFDDC5BE417C9354C5B">
-    <pdf_title>Intel SGX Explained</pdf_title>
-</pdf_annotation>
-<attribute NAME="key" VALUE="sgx-explained"/>
-<attribute NAME="year" VALUE="2016"/>
-<attribute NAME="title" VALUE="Intel SGX Explained."/>
-<attribute NAME="authors" VALUE="Costan, Victor and Devadas, Srinivas"/>
-<attribute NAME="journal" VALUE="IACR Cryptology ePrint Archive"/>
-</node>
-<node TEXT="concerned about the possibility of an attack that taps the SMBus to reach into the Intel ME" FOLDED="true" ID="ID_343747273" CREATED="1454413032453" MODIFIED="1454413706827" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/SGX%20Explained.pdf" MOVED="1455192297816">
-<pdf_annotation type="HIGHLIGHTED_TEXT" page="101" object_id="7518248541986411189" object_number="1762" document_hash="6247F24926CEBCBDD607A743A7A36C17F76C70D179FFDDC5BE417C9354C5B">
-    <pdf_title>Intel SGX Explained</pdf_title>
-</pdf_annotation>
-<attribute NAME="key" VALUE="sgx-explained"/>
-<attribute NAME="year" VALUE="2016"/>
-<attribute NAME="title" VALUE="Intel SGX Explained."/>
-<attribute NAME="authors" VALUE="Costan, Victor and Devadas, Srinivas"/>
-<attribute NAME="journal" VALUE="IACR Cryptology ePrint Archive"/>
-<node TEXT="ME might play a role in SGX&#x2019;s software attestation process" ID="ID_656115342" CREATED="1454413032803" MODIFIED="1454413706771" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/SGX%20Explained.pdf" MOVED="1455192303839">
-<pdf_annotation type="HIGHLIGHTED_TEXT" page="101" object_id="1669388149828443634" object_number="1761" document_hash="6247F24926CEBCBDD607A743A7A36C17F76C70D179FFDDC5BE417C9354C5B">
-    <pdf_title>Intel SGX Explained</pdf_title>
-</pdf_annotation>
-<attribute NAME="key" VALUE="sgx-explained"/>
-<attribute NAME="year" VALUE="2016"/>
-<attribute NAME="title" VALUE="Intel SGX Explained."/>
-<attribute NAME="authors" VALUE="Costan, Victor and Devadas, Srinivas"/>
-<attribute NAME="journal" VALUE="IACR Cryptology ePrint Archive"/>
-</node>
-<node TEXT="most scary attack vector afforded by an ME takeover appears to be direct DRAM access, and SGX already assumes that the DRAM is untrusted" ID="ID_1527098388" CREATED="1454413032822" MODIFIED="1454413707545" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/SGX%20Explained.pdf">
-<pdf_annotation type="HIGHLIGHTED_TEXT" page="104" object_id="379782618224522328" object_number="1846" document_hash="6247F24926CEBCBDD607A743A7A36C17F76C70D179FFDDC5BE417C9354C5B">
-    <pdf_title>Intel SGX Explained</pdf_title>
-</pdf_annotation>
-<attribute NAME="key" VALUE="sgx-explained"/>
-<attribute NAME="year" VALUE="2016"/>
-<attribute NAME="title" VALUE="Intel SGX Explained."/>
-<attribute NAME="authors" VALUE="Costan, Victor and Devadas, Srinivas"/>
-<attribute NAME="journal" VALUE="IACR Cryptology ePrint Archive"/>
-</node>
-<node TEXT="ME on all recent chipsets" FOLDED="true" ID="ID_520901126" CREATED="1454420899516" MODIFIED="1454421009517" MOVED="1454421098564">
-<node TEXT="Intel&#x2019;s Management Engine (ME) is an embedded computer" ID="ID_532554574" CREATED="1454413032476" MODIFIED="1454413688907" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/SGX%20Explained.pdf" MOVED="1454420933013">
-<pdf_annotation type="HIGHLIGHTED_TEXT" page="16" object_id="6877138193282201505" object_number="478" document_hash="6247F24926CEBCBDD607A743A7A36C17F76C70D179FFDDC5BE417C9354C5B">
-    <pdf_title>Intel SGX Explained</pdf_title>
-</pdf_annotation>
-<attribute NAME="key" VALUE="sgx-explained"/>
-<attribute NAME="year" VALUE="2016"/>
-<attribute NAME="title" VALUE="Intel SGX Explained."/>
-<attribute NAME="authors" VALUE="Costan, Victor and Devadas, Srinivas"/>
-<attribute NAME="journal" VALUE="IACR Cryptology ePrint Archive"/>
-</node>
-<node TEXT="PCH is also known as the chipset" FOLDED="true" ID="ID_239235973" CREATED="1454413032266" MODIFIED="1454413688612" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/SGX%20Explained.pdf" MOVED="1454420933066">
-<pdf_annotation type="HIGHLIGHTED_TEXT" page="15" object_id="8328881897654399605" object_number="465" document_hash="6247F24926CEBCBDD607A743A7A36C17F76C70D179FFDDC5BE417C9354C5B">
-    <pdf_title>Intel SGX Explained</pdf_title>
-</pdf_annotation>
-<attribute NAME="key" VALUE="sgx-explained"/>
-<attribute NAME="year" VALUE="2016"/>
-<attribute NAME="title" VALUE="Intel SGX Explained."/>
-<attribute NAME="authors" VALUE="Costan, Victor and Devadas, Srinivas"/>
-<attribute NAME="journal" VALUE="IACR Cryptology ePrint Archive"/>
-<node TEXT="Platform Controller Hub (PCH) houses (relatively) low-speed I/O controllers driving the slower buses in the system, like SATA" ID="ID_81437436" CREATED="1454413032260" MODIFIED="1454413688346" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/SGX%20Explained.pdf">
-<pdf_annotation type="HIGHLIGHTED_TEXT" page="15" object_id="3087352545132796392" object_number="464" document_hash="6247F24926CEBCBDD607A743A7A36C17F76C70D179FFDDC5BE417C9354C5B">
-    <pdf_title>Intel SGX Explained</pdf_title>
-</pdf_annotation>
-<attribute NAME="key" VALUE="sgx-explained"/>
-<attribute NAME="year" VALUE="2016"/>
-<attribute NAME="title" VALUE="Intel SGX Explained."/>
-<attribute NAME="authors" VALUE="Costan, Victor and Devadas, Srinivas"/>
-<attribute NAME="journal" VALUE="IACR Cryptology ePrint Archive"/>
+<attribute NAME="key" VALUE="Raj2015"/>
+<attribute NAME="year" VALUE="2015"/>
+<attribute NAME="title" VALUE="fTPM: A Firmware-based TPM 2.0 Implementation"/>
+<attribute NAME="authors" VALUE="Raj, Himanshu and Saroiu, Stefan and Wolman, Alec and Aigner, Ronald and Cox, Jeremiah and England, Paul and Fenner, Chris and Kinshumann, Kinshuman and Loeser, Jork and Mattoon, Dennis and others"/>
 </node>
 </node>
-<node TEXT="all of Intel&#x2019;s recent PCHs contain an ME" ID="ID_123880935" CREATED="1454413031785" MODIFIED="1454413689178" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/SGX%20Explained.pdf" MOVED="1454420933113">
-<pdf_annotation type="HIGHLIGHTED_TEXT" page="16" object_id="9193532824892471672" object_number="479" document_hash="6247F24926CEBCBDD607A743A7A36C17F76C70D179FFDDC5BE417C9354C5B">
-    <pdf_title>Intel SGX Explained</pdf_title>
-</pdf_annotation>
-<attribute NAME="key" VALUE="sgx-explained"/>
-<attribute NAME="year" VALUE="2016"/>
-<attribute NAME="title" VALUE="Intel SGX Explained."/>
-<attribute NAME="authors" VALUE="Costan, Victor and Devadas, Srinivas"/>
-<attribute NAME="journal" VALUE="IACR Cryptology ePrint Archive"/>
+<node TEXT="current HW" FOLDED="true" ID="ID_1107311794" CREATED="1453359137097" MODIFIED="1453883874691" MOVED="1499857432245">
+<node TEXT="only SGXv1" ID="ID_588590047" CREATED="1453359140033" MODIFIED="1453883874696"/>
+</node>
+<node TEXT="no syscalls in enclave" FOLDED="true" ID="ID_1007243761" CREATED="1453193113498" MODIFIED="1453883874680" MOVED="1499857434515">
+<node TEXT="untrusted wrapper library" ID="ID_275046226" CREATED="1453288445971" MODIFIED="1453883874685"/>
+</node>
+<node TEXT="fundamental" ID="ID_1638868982" CREATED="1453285255578" MODIFIED="1453883874489" MOVED="1499857436766">
+<node TEXT="EPC size fixed on startup" ID="ID_136077658" CREATED="1453284958805" MODIFIED="1453883874494" MOVED="1453285263620">
+<node TEXT="current hardware: ~90MB EPC" FOLDED="true" ID="ID_1474661556" CREATED="1453371539187" MODIFIED="1453883874499">
+<node TEXT="128MB PRM ./. MEE metadata" ID="ID_700887180" CREATED="1453371590219" MODIFIED="1453883874504"/>
+<node TEXT="https://software.intel.com/en-us/forums/intel-isa-extensions/topic/607004\#comment-1856841" ID="ID_364423983" CREATED="1453283203810" MODIFIED="1488478664345" LINK="https://software.intel.com/en-us/forums/intel-isa-extensions/topic/607004#comment-1856841" MOVED="1453371604811"/>
 </node>
 </node>
 </node>
-<node TEXT="imaging attack on fuses" FOLDED="true" ID="ID_1055192674" CREATED="1455192317191" MODIFIED="1455192321375">
-<node TEXT="Deriving the root keys from the PUF would be more resilient to chip imaging attacks" ID="ID_446802140" CREATED="1454413032742" MODIFIED="1454413706888" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/SGX%20Explained.pdf" MOVED="1455192323030">
-<pdf_annotation type="HIGHLIGHTED_TEXT" page="101" object_id="1611860747649282420" object_number="1763" document_hash="6247F24926CEBCBDD607A743A7A36C17F76C70D179FFDDC5BE417C9354C5B">
-    <pdf_title>Intel SGX Explained</pdf_title>
-</pdf_annotation>
-<attribute NAME="key" VALUE="sgx-explained"/>
-<attribute NAME="year" VALUE="2016"/>
-<attribute NAME="title" VALUE="Intel SGX Explained."/>
-<attribute NAME="authors" VALUE="Costan, Victor and Devadas, Srinivas"/>
-<attribute NAME="journal" VALUE="IACR Cryptology ePrint Archive"/>
-</node>
-</node>
-</node>
-<node TEXT="software attacks" FOLDED="true" ID="ID_1223498359" CREATED="1455192265303" MODIFIED="1455192267927" MOVED="1488477329176">
-<node TEXT="cache timing" FOLDED="true" ID="ID_1206455267" CREATED="1455192277023" MODIFIED="1455192278987">
-<node TEXT="SGX is vulnerable to cache timing attacks that can be carried out completely in software" ID="ID_1545447031" CREATED="1454413032774" MODIFIED="1454413706714" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/SGX%20Explained.pdf" MOVED="1455192281933">
-<pdf_annotation type="HIGHLIGHTED_TEXT" page="101" object_id="5161174183645536571" object_number="1760" document_hash="6247F24926CEBCBDD607A743A7A36C17F76C70D179FFDDC5BE417C9354C5B">
-    <pdf_title>Intel SGX Explained</pdf_title>
-</pdf_annotation>
-<attribute NAME="key" VALUE="sgx-explained"/>
-<attribute NAME="year" VALUE="2016"/>
-<attribute NAME="title" VALUE="Intel SGX Explained."/>
-<attribute NAME="authors" VALUE="Costan, Victor and Devadas, Srinivas"/>
-<attribute NAME="journal" VALUE="IACR Cryptology ePrint Archive"/>
-</node>
-</node>
-<node TEXT="execution timing via hyper-threading" FOLDED="true" ID="ID_824528729" CREATED="1455192365072" MODIFIED="1455192378896">
-<node TEXT="SGX does not prevent hyper-threading" FOLDED="true" ID="ID_706069221" CREATED="1454413032197" MODIFIED="1454413707195" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/SGX%20Explained.pdf" MOVED="1455192381375">
-<pdf_annotation type="HIGHLIGHTED_TEXT" page="102" object_id="4143392971296318300" object_number="1797" document_hash="6247F24926CEBCBDD607A743A7A36C17F76C70D179FFDDC5BE417C9354C5B">
-    <pdf_title>Intel SGX Explained</pdf_title>
-</pdf_annotation>
-<attribute NAME="key" VALUE="sgx-explained"/>
-<attribute NAME="year" VALUE="2016"/>
-<attribute NAME="title" VALUE="Intel SGX Explained."/>
-<attribute NAME="authors" VALUE="Costan, Victor and Devadas, Srinivas"/>
-<attribute NAME="journal" VALUE="IACR Cryptology ePrint Archive"/>
-<node TEXT="victim enclave on an LP that shares the core with an LP executing a snooping thread" ID="ID_1584093810" CREATED="1454413032111" MODIFIED="1454413707248" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/SGX%20Explained.pdf" MOVED="1455192354646">
-<pdf_annotation type="HIGHLIGHTED_TEXT" page="102" object_id="7814429027931777204" object_number="1798" document_hash="6247F24926CEBCBDD607A743A7A36C17F76C70D179FFDDC5BE417C9354C5B">
-    <pdf_title>Intel SGX Explained</pdf_title>
-</pdf_annotation>
-<attribute NAME="key" VALUE="sgx-explained"/>
-<attribute NAME="year" VALUE="2016"/>
-<attribute NAME="title" VALUE="Intel SGX Explained."/>
-<attribute NAME="authors" VALUE="Costan, Victor and Devadas, Srinivas"/>
-<attribute NAME="journal" VALUE="IACR Cryptology ePrint Archive"/>
-</node>
-<node TEXT="processor&#x2019;s high-resolution performance counter [145], in conjunction with microarchitectural knowledge of the CPU&#x2019;s execution units and out-of-order scheduler, to learn the instructions executed by the victim enclave, as well as its memory access patterns" ID="ID_410164299" CREATED="1454413032281" MODIFIED="1454413707287" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/SGX%20Explained.pdf" MOVED="1455192358998">
-<pdf_annotation type="HIGHLIGHTED_TEXT" page="102" object_id="8412171171686680338" object_number="1799" document_hash="6247F24926CEBCBDD607A743A7A36C17F76C70D179FFDDC5BE417C9354C5B">
-    <pdf_title>Intel SGX Explained</pdf_title>
-</pdf_annotation>
-<attribute NAME="key" VALUE="sgx-explained"/>
-<attribute NAME="year" VALUE="2016"/>
-<attribute NAME="title" VALUE="Intel SGX Explained."/>
-<attribute NAME="authors" VALUE="Costan, Victor and Devadas, Srinivas"/>
-<attribute NAME="journal" VALUE="IACR Cryptology ePrint Archive"/>
-</node>
-</node>
-<node TEXT="require cloud computing providers to disable hyper-threading when offering SGX. The SGX enclave measurement would have to be extended to include the computer&#x2019;s hyper-threading configuration" ID="ID_1531523427" CREATED="1454413032534" MODIFIED="1488817517660" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/SGX%20Explained.pdf" MOVED="1455192390309">
-<pdf_annotation type="HIGHLIGHTED_TEXT" page="102" object_id="2481535205471034450" object_number="1800" document_hash="6247F24926CEBCBDD607A743A7A36C17F76C70D179FFDDC5BE417C9354C5B">
-    <pdf_title>Intel SGX Explained</pdf_title>
-</pdf_annotation>
-<attribute NAME="key" VALUE="sgx-explained"/>
-<attribute NAME="year" VALUE="2016"/>
-<attribute NAME="title" VALUE="Intel SGX Explained."/>
-<attribute NAME="authors" VALUE="Costan, Victor and Devadas, Srinivas"/>
-<attribute NAME="journal" VALUE="IACR Cryptology ePrint Archive"/>
-</node>
-</node>
-<node TEXT="SGX does not protect against software side-channel attacks that rely on performance counters" ID="ID_1681682884" CREATED="1454413032366" MODIFIED="1454413707450" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/SGX%20Explained.pdf" MOVED="1455192421557">
-<pdf_annotation type="HIGHLIGHTED_TEXT" page="104" object_id="6626253886484302199" object_number="1844" document_hash="6247F24926CEBCBDD607A743A7A36C17F76C70D179FFDDC5BE417C9354C5B">
-    <pdf_title>Intel SGX Explained</pdf_title>
-</pdf_annotation>
-<attribute NAME="key" VALUE="sgx-explained"/>
-<attribute NAME="year" VALUE="2016"/>
-<attribute NAME="title" VALUE="Intel SGX Explained."/>
-<attribute NAME="authors" VALUE="Costan, Victor and Devadas, Srinivas"/>
-<attribute NAME="journal" VALUE="IACR Cryptology ePrint Archive"/>
-</node>
-<node TEXT="synchronization bugs: exploit enclaves" FOLDED="true" ID="ID_475990213" CREATED="1488546323480" MODIFIED="1488546332145">
-<node TEXT="previously considered harmless synchroni-&#xa;sation bugs can turn into severe security vulnerabilities when using SGX" ID="ID_1369287857" CREATED="1488546299238" MODIFIED="1488546299239" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/AsyncShock.pdf" MOVED="1488546334598">
-<pdf_annotation type="HIGHLIGHTED_TEXT" page="1" object_id="8223557355915428722" object_number="27" document_hash="8C49C373D9F470D8D7B6D9A4D6499B72E282F2A8CC8215DC503EEDC0B5153">
-    <pdf_title>AsyncShock: Exploiting Synchronisation Bugs in Intel SGX Enclaves</pdf_title>
-</pdf_annotation>
-<attribute NAME="year" VALUE="2016"/>
-<attribute NAME="title" VALUE="Asyncshock: Exploiting synchronisation bugs in intel sgx enclaves"/>
-<attribute NAME="authors" VALUE="Weichbrodt, Nico and Kurmus, Anil and Pietzuch, Peter and Kapitza, R{\&quot;u}diger"/>
-</node>
-<node TEXT="hijack its control flow or bypass&#xa;access control" ID="ID_353095452" CREATED="1488546299253" MODIFIED="1488817357904" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/AsyncShock.pdf" MOVED="1488546334609">
-<pdf_annotation type="HIGHLIGHTED_TEXT" page="1" object_id="8955161694448185072" object_number="28" document_hash="8C49C373D9F470D8D7B6D9A4D6499B72E282F2A8CC8215DC503EEDC0B5153">
-    <pdf_title>AsyncShock: Exploiting Synchronisation Bugs in Intel SGX Enclaves</pdf_title>
-</pdf_annotation>
-<attribute NAME="year" VALUE="2016"/>
-<attribute NAME="title" VALUE="Asyncshock: Exploiting synchronisation bugs in intel sgx enclaves"/>
-<attribute NAME="authors" VALUE="Weichbrodt, Nico and Kurmus, Anil and Pietzuch, Peter and Kapitza, R{\&quot;u}diger"/>
-</node>
-<node TEXT="use sync. bugs to exploit enclave (control flow, extract secrets)" ID="ID_568203276" CREATED="1488546299268" MODIFIED="1488546299269" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/AsyncShock.pdf" MOVED="1488546334620">
-<pdf_annotation type="COMMENT" page="1" object_id="3229414596970339038" object_number="29" document_hash="8C49C373D9F470D8D7B6D9A4D6499B72E282F2A8CC8215DC503EEDC0B5153">
-    <pdf_title>AsyncShock: Exploiting Synchronisation Bugs in Intel SGX Enclaves</pdf_title>
-</pdf_annotation>
-<attribute NAME="year" VALUE="2016"/>
-<attribute NAME="title" VALUE="Asyncshock: Exploiting synchronisation bugs in intel sgx enclaves"/>
-<attribute NAME="authors" VALUE="Weichbrodt, Nico and Kurmus, Anil and Pietzuch, Peter and Kapitza, R{\&quot;u}diger"/>
-</node>
-<node TEXT="threat for intel: misuse approved enclaves" ID="ID_1096664558" CREATED="1488546299282" MODIFIED="1488546299283" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/AsyncShock.pdf" MOVED="1488546334630">
-<pdf_annotation type="COMMENT" page="1" object_id="9205083976579722712" object_number="31" document_hash="8C49C373D9F470D8D7B6D9A4D6499B72E282F2A8CC8215DC503EEDC0B5153">
-    <pdf_title>AsyncShock: Exploiting Synchronisation Bugs in Intel SGX Enclaves</pdf_title>
-</pdf_annotation>
-<attribute NAME="year" VALUE="2016"/>
-<attribute NAME="title" VALUE="Asyncshock: Exploiting synchronisation bugs in intel sgx enclaves"/>
-<attribute NAME="authors" VALUE="Weichbrodt, Nico and Kurmus, Anil and Pietzuch, Peter and Kapitza, R{\&quot;u}diger"/>
-</node>
-<node TEXT="Intel only licenses the creation of SGX production enclaves after ex-&#xa;amination of the software development practices of the licensee" ID="ID_1796874129" CREATED="1488546299296" MODIFIED="1488546299296" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/AsyncShock.pdf" MOVED="1488546334642">
-<pdf_annotation type="HIGHLIGHTED_TEXT" page="2" object_id="4648036835311398760" object_number="35" document_hash="8C49C373D9F470D8D7B6D9A4D6499B72E282F2A8CC8215DC503EEDC0B5153">
-    <pdf_title>AsyncShock: Exploiting Synchronisation Bugs in Intel SGX Enclaves</pdf_title>
-</pdf_annotation>
-<attribute NAME="year" VALUE="2016"/>
-<attribute NAME="title" VALUE="Asyncshock: Exploiting synchronisation bugs in intel sgx enclaves"/>
-<attribute NAME="authors" VALUE="Weichbrodt, Nico and Kurmus, Anil and Pietzuch, Peter and Kapitza, R{\&quot;u}diger"/>
-</node>
-</node>
-</node>
-</node>
-<node TEXT="Intel&apos;s role in controlling software" ID="ID_1136540818" CREATED="1487266491506" MODIFIED="1488547009554">
-<attribute NAME="LastHeading" VALUE=""/>
-</node>
-<node TEXT="Intel&apos;s architectural enclaves" FOLDED="true" ID="ID_1251274701" CREATED="1488477354877" MODIFIED="1488547053064" MOVED="1488477369083">
-<attribute NAME="LastHeading" VALUE=""/>
-<node TEXT="anti virus" FOLDED="true" ID="ID_471834671" CREATED="1455192626721" MODIFIED="1455192628899" MOVED="1488477365904">
-<node TEXT="scenario" FOLDED="true" ID="ID_107227351" CREATED="1455192638417" MODIFIED="1455192643315">
-<node TEXT="attack would create an enclave and initialize it with a generic loader that looks innocent to an AV. The loader inside the enclave would obtain an encrypted malicious payload" ID="ID_75838921" CREATED="1454413032143" MODIFIED="1454413707868" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/SGX%20Explained.pdf" MOVED="1455192645105">
-<pdf_annotation type="HIGHLIGHTED_TEXT" page="107" object_id="790194062930503526" object_number="1886" document_hash="6247F24926CEBCBDD607A743A7A36C17F76C70D179FFDDC5BE417C9354C5B">
-    <pdf_title>Intel SGX Explained</pdf_title>
-</pdf_annotation>
-<attribute NAME="key" VALUE="sgx-explained"/>
-<attribute NAME="year" VALUE="2016"/>
-<attribute NAME="title" VALUE="Intel SGX Explained."/>
-<attribute NAME="authors" VALUE="Costan, Victor and Devadas, Srinivas"/>
-<attribute NAME="journal" VALUE="IACR Cryptology ePrint Archive"/>
-</node>
-</node>
-<node TEXT="enclaves not accessible by AV software" FOLDED="true" ID="ID_1541732673" CREATED="1455192646561" MODIFIED="1455192653017">
-<node TEXT="Enclaves are isolated from all the other software on the computer, including any AV software" ID="ID_1143445519" CREATED="1454413032377" MODIFIED="1454413707845" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/SGX%20Explained.pdf" MOVED="1455192655513">
-<pdf_annotation type="HIGHLIGHTED_TEXT" page="107" object_id="4485142989984584472" object_number="1885" document_hash="6247F24926CEBCBDD607A743A7A36C17F76C70D179FFDDC5BE417C9354C5B">
-    <pdf_title>Intel SGX Explained</pdf_title>
-</pdf_annotation>
-<attribute NAME="key" VALUE="sgx-explained"/>
-<attribute NAME="year" VALUE="2016"/>
-<attribute NAME="title" VALUE="Intel SGX Explained."/>
-<attribute NAME="authors" VALUE="Costan, Victor and Devadas, Srinivas"/>
-<attribute NAME="journal" VALUE="IACR Cryptology ePrint Archive"/>
-</node>
-</node>
-<node TEXT="different, but not impossible to police" FOLDED="true" ID="ID_119304030" CREATED="1455192763963" MODIFIED="1455192771299">
-<node TEXT="enclave isolation mechanism is fundamentally incompatible with the approach employed by today&#x2019;s AV solutions. Fortunately, it is possible (though non-trivial) to develop more intelligent AV software for enclave software" ID="ID_1060068163" CREATED="1454413032028" MODIFIED="1454413707971" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/SGX%20Explained.pdf" MOVED="1455192772756">
-<pdf_annotation type="HIGHLIGHTED_TEXT" page="107" object_id="7185000183108839243" object_number="1892" document_hash="6247F24926CEBCBDD607A743A7A36C17F76C70D179FFDDC5BE417C9354C5B">
-    <pdf_title>Intel SGX Explained</pdf_title>
-</pdf_annotation>
-<attribute NAME="key" VALUE="sgx-explained"/>
-<attribute NAME="year" VALUE="2016"/>
-<attribute NAME="title" VALUE="Intel SGX Explained."/>
-<attribute NAME="authors" VALUE="Costan, Victor and Devadas, Srinivas"/>
-<attribute NAME="journal" VALUE="IACR Cryptology ePrint Archive"/>
-</node>
-<node TEXT="but: no I/O without system services -&gt; monitor this instead" FOLDED="true" ID="ID_184530989" CREATED="1455192660666" MODIFIED="1455192673499">
-<node TEXT="Enclave code always executes at the lowest privilege mode (ring 3 / user mode), so it cannot perform any I/O without invoking the services of system software" ID="ID_1224987053" CREATED="1454413032156" MODIFIED="1454413707891" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/SGX%20Explained.pdf" MOVED="1455192675020">
-<pdf_annotation type="HIGHLIGHTED_TEXT" page="107" object_id="7641953852334914733" object_number="1887" document_hash="6247F24926CEBCBDD607A743A7A36C17F76C70D179FFDDC5BE417C9354C5B">
-    <pdf_title>Intel SGX Explained</pdf_title>
-</pdf_annotation>
-<attribute NAME="key" VALUE="sgx-explained"/>
-<attribute NAME="year" VALUE="2016"/>
-<attribute NAME="title" VALUE="Intel SGX Explained."/>
-<attribute NAME="authors" VALUE="Costan, Victor and Devadas, Srinivas"/>
-<attribute NAME="journal" VALUE="IACR Cryptology ePrint Archive"/>
-</node>
-<node TEXT="enclave software cannot perform any malicious action without the complicity of system software" ID="ID_539562708" CREATED="1454413031823" MODIFIED="1454413707914" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/SGX%20Explained.pdf" MOVED="1455192677267">
-<pdf_annotation type="HIGHLIGHTED_TEXT" page="107" object_id="6476693949872483658" object_number="1888" document_hash="6247F24926CEBCBDD607A743A7A36C17F76C70D179FFDDC5BE417C9354C5B">
-    <pdf_title>Intel SGX Explained</pdf_title>
-</pdf_annotation>
-<attribute NAME="key" VALUE="sgx-explained"/>
-<attribute NAME="year" VALUE="2016"/>
-<attribute NAME="title" VALUE="Intel SGX Explained."/>
-<attribute NAME="authors" VALUE="Costan, Victor and Devadas, Srinivas"/>
-<attribute NAME="journal" VALUE="IACR Cryptology ePrint Archive"/>
-</node>
-<node TEXT="enclaves can be policed effectively by intelligent AV software that records and filters the I/O performed by software, and detects malicious software according to the actions that it performs, rather than according to bit patterns in its code." ID="ID_359196413" CREATED="1454413031876" MODIFIED="1488817525467" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/SGX%20Explained.pdf" MOVED="1455192681643">
-<pdf_annotation type="HIGHLIGHTED_TEXT" page="107" object_id="8503004312707789767" object_number="1889" document_hash="6247F24926CEBCBDD607A743A7A36C17F76C70D179FFDDC5BE417C9354C5B">
-    <pdf_title>Intel SGX Explained</pdf_title>
-</pdf_annotation>
-<attribute NAME="key" VALUE="sgx-explained"/>
-<attribute NAME="year" VALUE="2016"/>
-<attribute NAME="title" VALUE="Intel SGX Explained."/>
-<attribute NAME="authors" VALUE="Costan, Victor and Devadas, Srinivas"/>
-<attribute NAME="journal" VALUE="IACR Cryptology ePrint Archive"/>
-</node>
-</node>
-<node TEXT="do not load enclave that loads additional code if it does not use in-enclave AV library" FOLDED="true" ID="ID_1290336042" CREATED="1455192696714" MODIFIED="1455192752251">
-<node TEXT="AntiVirus: 1. protect by observing enclave&apos;s I/O 2. refuse to load enclaves that dynamically load code (static analysis) if they do not also use in-enclave AV library to check that code" ID="ID_1117145728" CREATED="1454413032540" MODIFIED="1454413707953" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/SGX%20Explained.pdf" MOVED="1455192753774">
-<pdf_annotation type="COMMENT" page="107" object_id="4982410055659900879" object_number="1890" document_hash="6247F24926CEBCBDD607A743A7A36C17F76C70D179FFDDC5BE417C9354C5B">
-    <pdf_title>Intel SGX Explained</pdf_title>
-</pdf_annotation>
-<attribute NAME="key" VALUE="sgx-explained"/>
-<attribute NAME="year" VALUE="2016"/>
-<attribute NAME="title" VALUE="Intel SGX Explained."/>
-<attribute NAME="authors" VALUE="Costan, Victor and Devadas, Srinivas"/>
-<attribute NAME="journal" VALUE="IACR Cryptology ePrint Archive"/>
-</node>
-</node>
-</node>
-</node>
-<node TEXT="Intel could backdoor w/o being detected" FOLDED="true" ID="ID_1960615141" CREATED="1455196610840" MODIFIED="1455196621898" MOVED="1488477365909">
-<node TEXT="ease&#xa0;of backdooring&#xa0;this&#xa0;technology&#xa0;by&#xa0;Intel&#xa0;itself" FOLDED="true" ID="ID_1957143728" CREATED="1455196422626" MODIFIED="1455196459119" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/Thoughts%20on%20Intel&apos;s%20upcoming%20Software%20Guard%20Extensions%20(Part%202).pdf" MOVED="1455196623952">
-<pdf_annotation type="HIGHLIGHTED_TEXT" page="7" object_id="5776083156442897494" object_number="35" document_hash="1B6181B652F53EFEF992825E4D648969A9E3D19B13841156E4CD4E805749">
-    <pdf_title>The&#xa0;Invisible&#xa0;Things</pdf_title>
-</pdf_annotation>
-<attribute NAME="key" VALUE="sgx:thoughts"/>
-<attribute NAME="title" VALUE="Thoughts&#xa0;on&#xa0;Intel&apos;s&#xa0;upcoming&#xa0;Software&#xa0;Guard&#xa0;Extensions&#xa0;(Part&#xa0;2)"/>
-<attribute NAME="authors" VALUE="Joanna&#xa0;Rutkowska"/>
-<attribute NAME="year" VALUE="2013"/>
-<node TEXT="all&#xa0;they&#xa0;need&#xa0;to&#xa0;do&#xa0;is&#xa0;to&#xa0;give&#xa0;away&#xa0;the&#xa0;private&#xa0;signing&#xa0;keys&#xa0;used&#xa0;by&#xa0;SGX&#xa0;for&#xa0;remote attestation" FOLDED="true" ID="ID_927196651" CREATED="1455196422632" MODIFIED="1455196459061" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/Thoughts%20on%20Intel&apos;s%20upcoming%20Software%20Guard%20Extensions%20(Part%202).pdf" MOVED="1455196552342">
-<pdf_annotation type="HIGHLIGHTED_TEXT" page="7" object_id="6909369081100078276" object_number="36" document_hash="1B6181B652F53EFEF992825E4D648969A9E3D19B13841156E4CD4E805749">
-    <pdf_title>The&#xa0;Invisible&#xa0;Things</pdf_title>
-</pdf_annotation>
-<attribute NAME="key" VALUE="sgx:thoughts"/>
-<attribute NAME="title" VALUE="Thoughts&#xa0;on&#xa0;Intel&apos;s&#xa0;upcoming&#xa0;Software&#xa0;Guard&#xa0;Extensions&#xa0;(Part&#xa0;2)"/>
-<attribute NAME="authors" VALUE="Joanna&#xa0;Rutkowska"/>
-<attribute NAME="year" VALUE="2013"/>
-<node TEXT="for&#xa0;SGX&#xa0;there&#xa0;is&#xa0;additional&#xa0;Root&#xa0;of Trust&#xa0;which&#xa0;is&#xa0;used&#xa0;for&#xa0;remote&#xa0;attestation,&#xa0;and&#xa0;this&#xa0;is&#xa0;the&#xa0;private&#xa0;key(s)&#xa0;used&#xa0;for&#xa0;signing&#xa0;the&#xa0;Quote Messages" ID="ID_565648996" CREATED="1455196422604" MODIFIED="1455196538859" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/Thoughts%20on%20Intel&apos;s%20upcoming%20Software%20Guard%20Extensions%20(Part%202).pdf" MOVED="1455196555801">
-<pdf_annotation type="HIGHLIGHTED_TEXT" page="5" object_id="1027705741890748219" object_number="22" document_hash="1B6181B652F53EFEF992825E4D648969A9E3D19B13841156E4CD4E805749">
-    <pdf_title>The&#xa0;Invisible&#xa0;Things</pdf_title>
-</pdf_annotation>
-<attribute NAME="key" VALUE="sgx:thoughts"/>
-<attribute NAME="title" VALUE="Thoughts&#xa0;on&#xa0;Intel&apos;s&#xa0;upcoming&#xa0;Software&#xa0;Guard&#xa0;Extensions&#xa0;(Part&#xa0;2)"/>
-<attribute NAME="authors" VALUE="Joanna&#xa0;Rutkowska"/>
-<attribute NAME="year" VALUE="2013"/>
-</node>
-</node>
-<node TEXT="adversary&#xa0;can&#xa0;now&#xa0;emulate&#xa0;their execution&#xa0;step&#xa0;by&#xa0;step&#xa0;under&#xa0;a&#xa0;debugger&#xa0;and&#xa0;still&#xa0;pass&#xa0;the&#xa0;remote&#xa0;attestation" ID="ID_1713633351" CREATED="1455196422610" MODIFIED="1455196459067" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/Thoughts%20on%20Intel&apos;s%20upcoming%20Software%20Guard%20Extensions%20(Part%202).pdf" MOVED="1455196557450">
-<pdf_annotation type="HIGHLIGHTED_TEXT" page="5" object_id="8166428269507483072" object_number="23" document_hash="1B6181B652F53EFEF992825E4D648969A9E3D19B13841156E4CD4E805749">
-    <pdf_title>The&#xa0;Invisible&#xa0;Things</pdf_title>
-</pdf_annotation>
-<attribute NAME="key" VALUE="sgx:thoughts"/>
-<attribute NAME="title" VALUE="Thoughts&#xa0;on&#xa0;Intel&apos;s&#xa0;upcoming&#xa0;Software&#xa0;Guard&#xa0;Extensions&#xa0;(Part&#xa0;2)"/>
-<attribute NAME="authors" VALUE="Joanna&#xa0;Rutkowska"/>
-<attribute NAME="year" VALUE="2013"/>
-</node>
-</node>
-</node>
-</node>
-<node TEXT="enclave size" FOLDED="true" ID="ID_1634961056" CREATED="1453219260873" MODIFIED="1453883874473" MOVED="1499694220033">
-<node TEXT="Haven" FOLDED="true" ID="ID_1140210821" CREATED="1453219728245" MODIFIED="1453883874478">
+<node TEXT="enclave size" ID="ID_1634961056" CREATED="1453219260873" MODIFIED="1453883874473" MOVED="1499857439889">
+<node TEXT="Haven" ID="ID_1140210821" CREATED="1453219728245" MODIFIED="1453883874478">
 <node TEXT="enclaves occupy 64GB of address space" ID="ID_1164408540" CREATED="1453220020818" MODIFIED="1453883874484" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/Microsoft%20Haven.pdf">
 <pdf_annotation type="HIGHLIGHTED_TEXT" page="8" object_id="8037803546779757294" object_number="192" document_hash="F73BC6AC9A9DC3F7B51411327AC88B18AD75C688219B86BAC4CD6A446F99EDD">
     <pdf_title>Shielding Applications from an Untrusted Cloud with Haven</pdf_title>
@@ -5895,15 +5404,7 @@
 </node>
 </node>
 </node>
-<node TEXT="fundamental" FOLDED="true" ID="ID_1638868982" CREATED="1453285255578" MODIFIED="1453883874489" MOVED="1499694220040">
-<node TEXT="EPC size fixed on startup" FOLDED="true" ID="ID_136077658" CREATED="1453284958805" MODIFIED="1453883874494" MOVED="1453285263620">
-<node TEXT="current hardware: ~90MB EPC" FOLDED="true" ID="ID_1474661556" CREATED="1453371539187" MODIFIED="1453883874499">
-<node TEXT="128MB PRM ./. MEE metadata" ID="ID_700887180" CREATED="1453371590219" MODIFIED="1453883874504"/>
-<node TEXT="https://software.intel.com/en-us/forums/intel-isa-extensions/topic/607004\#comment-1856841" ID="ID_364423983" CREATED="1453283203810" MODIFIED="1488478664345" LINK="https://software.intel.com/en-us/forums/intel-isa-extensions/topic/607004#comment-1856841" MOVED="1453371604811"/>
-</node>
-</node>
-</node>
-<node TEXT="current OS/SDK support" FOLDED="true" ID="ID_488219193" CREATED="1453285336736" MODIFIED="1453883874514" MOVED="1499694220046">
+<node TEXT="current OS/SDK support" ID="ID_488219193" CREATED="1453285336736" MODIFIED="1453883874514" MOVED="1499857443888">
 <node TEXT="no EPC page swapping" ID="ID_1736941440" CREATED="1453289712681" MODIFIED="1453883874520"/>
 <node TEXT="only SGXv1" FOLDED="true" ID="ID_199732505" CREATED="1453289719354" MODIFIED="1453883874525">
 <node TEXT="static enclave size" ID="ID_16722197" CREATED="1453285310585" MODIFIED="1453883874530" MOVED="1453289731634"/>
@@ -5952,115 +5453,7 @@
 </node>
 </node>
 </node>
-<node TEXT="no syscalls in enclave" FOLDED="true" ID="ID_1007243761" CREATED="1453193113498" MODIFIED="1453883874680" MOVED="1499694220052">
-<node TEXT="untrusted wrapper library" ID="ID_275046226" CREATED="1453288445971" MODIFIED="1453883874685"/>
-</node>
-<node TEXT="current HW" FOLDED="true" ID="ID_1107311794" CREATED="1453359137097" MODIFIED="1453883874691" MOVED="1499694220058">
-<node TEXT="only SGXv1" ID="ID_588590047" CREATED="1453359140033" MODIFIED="1453883874696"/>
-</node>
-<node TEXT="no I/O support" FOLDED="true" ID="ID_1560950971" CREATED="1454321586649" MODIFIED="1454321591263" MOVED="1499694220064">
-<node TEXT="SGX does not offer I/O support; all interrupts are handled by the untrusted code" ID="ID_1342072739" CREATED="1453986050083" MODIFIED="1453986050083" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/fTPM%20-%20Firmware%20based%20TPM%202.0%20Implementation.pdf" MOVED="1454321595571">
-<pdf_annotation type="HIGHLIGHTED_TEXT" page="16" object_id="2803125117272191009" object_number="435" document_hash="69C6A682C37B542677FF2221CE848BC82AC67A6A33D0764AB0E1B8F83A5FA3">
-    <pdf_title>fTPM: A Firmware-based TPM 2.0 Implementation</pdf_title>
-</pdf_annotation>
-<attribute NAME="key" VALUE="Raj2015"/>
-<attribute NAME="year" VALUE="2015"/>
-<attribute NAME="title" VALUE="fTPM: A Firmware-based TPM 2.0 Implementation"/>
-<attribute NAME="authors" VALUE="Raj, Himanshu and Saroiu, Stefan and Wolman, Alec and Aigner, Ronald and Cox, Jeremiah and England, Paul and Fenner, Chris and Kinshumann, Kinshuman and Loeser, Jork and Mattoon, Dennis and others"/>
-</node>
-</node>
-<node TEXT="side channel attacks (untrusted OS does resource mgmt)" FOLDED="true" ID="ID_1059390684" CREATED="1454321681038" MODIFIED="1454321690983" MOVED="1499694220070">
-<node TEXT="side channel attacks on SGX not mitigated" ID="ID_662811179" CREATED="1453986050148" MODIFIED="1453986050148" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/fTPM%20-%20Firmware%20based%20TPM%202.0%20Implementation.pdf">
-<pdf_annotation type="COMMENT" page="16" object_id="5799013789651382319" object_number="443" document_hash="69C6A682C37B542677FF2221CE848BC82AC67A6A33D0764AB0E1B8F83A5FA3">
-    <pdf_title>fTPM: A Firmware-based TPM 2.0 Implementation</pdf_title>
-</pdf_annotation>
-<attribute NAME="key" VALUE="Raj2015"/>
-<attribute NAME="year" VALUE="2015"/>
-<attribute NAME="title" VALUE="fTPM: A Firmware-based TPM 2.0 Implementation"/>
-<attribute NAME="authors" VALUE="Raj, Himanshu and Saroiu, Stefan and Wolman, Alec and Aigner, Ronald and Cox, Jeremiah and England, Paul and Fenner, Chris and Kinshumann, Kinshuman and Loeser, Jork and Mattoon, Dennis and others"/>
-</node>
-<node TEXT="OS can manage resources, incl. page tables" FOLDED="true" ID="ID_1700788914" CREATED="1454412484730" MODIFIED="1454412494075" MOVED="1454412514216">
-<node TEXT="untrusted OS is left with servicing resource management tasks. This opens up a large surface for side-channel attacks" ID="ID_428709565" CREATED="1453986050017" MODIFIED="1454412263050" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/fTPM%20-%20Firmware%20based%20TPM%202.0%20Implementation.pdf" MOVED="1454412496734">
-<pdf_annotation type="HIGHLIGHTED_TEXT" page="16" object_id="6518431403223644081" object_number="442" document_hash="69C6A682C37B542677FF2221CE848BC82AC67A6A33D0764AB0E1B8F83A5FA3">
-    <pdf_title>fTPM: A Firmware-based TPM 2.0 Implementation</pdf_title>
-</pdf_annotation>
-<attribute NAME="year" VALUE="2015"/>
-<attribute NAME="title" VALUE="fTPM: A Firmware-based TPM 2.0 Implementation"/>
-<attribute NAME="authors" VALUE="Raj, Himanshu and Saroiu, Stefan and Wolman, Alec and Aigner, Ronald and Cox, Jeremiah and England, Paul and Fenner, Chris and Kinshumann, Kinshuman and Loeser, Jork and Mattoon, Dennis and others"/>
-<attribute NAME="key" VALUE="Raj2015"/>
-</node>
-<node TEXT="orderly EPC paging requires cooperation (EBLOCK, EWB) - but this does not prevent OS from altering page tables" ID="ID_1373629266" CREATED="1454412262219" MODIFIED="1454412347498" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/Controlled%20Channel%20Attacks.pdf" MOVED="1454412507387">
-<pdf_annotation type="COMMENT" page="9" object_id="8847196854528255279" object_number="154" document_hash="4F541EE6D78D9DD1D078D96D72131D776A3BB9DDB56BE19DA547DFC65C4210F8">
-    <pdf_title>Controlled-Channel Attacks: Deterministic Side Channels for Untrusted Operating Systems</pdf_title>
-</pdf_annotation>
-<attribute NAME="key" VALUE="Xu2015"/>
-<attribute NAME="year" VALUE="2015"/>
-<attribute NAME="title" VALUE="Controlled-Channel Attacks: Deterministic Side Channels for Untrusted Operating Systems"/>
-<attribute NAME="authors" VALUE="Yuanzhong Xu and Weidong Cui and Marcus Peinado"/>
-</node>
-</node>
-<node TEXT="no-noise channel uses page faults due to memory accesses by the application" ID="ID_82133696" CREATED="1454256211083" MODIFIED="1454408837462" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/Controlled%20Channel%20Attacks.pdf">
-<pdf_annotation type="HIGHLIGHTED_TEXT" page="2" object_id="7353950851385835671" object_number="74" document_hash="4F541EE6D78D9DD1D078D96D72131D776A3BB9DDB56BE19DA547DFC65C4210F8">
-    <pdf_title>Controlled-Channel Attacks: Deterministic Side Channels for Untrusted Operating Systems</pdf_title>
-</pdf_annotation>
-<attribute NAME="key" VALUE="Xu2015"/>
-<attribute NAME="year" VALUE="2015"/>
-<attribute NAME="title" VALUE="Controlled-Channel Attacks: Deterministic Side Channels for Untrusted Operating Systems"/>
-<attribute NAME="authors" VALUE="Yuanzhong Xu and Weidong Cui and Marcus Peinado"/>
-</node>
-<node TEXT="obstacle to our attacks lies in the fact that we can observe memory accesses only at the granularity of 4 KB pages" ID="ID_715403198" CREATED="1454256211299" MODIFIED="1454408837502" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/Controlled%20Channel%20Attacks.pdf">
-<pdf_annotation type="HIGHLIGHTED_TEXT" page="2" object_id="7295615484583655802" object_number="76" document_hash="4F541EE6D78D9DD1D078D96D72131D776A3BB9DDB56BE19DA547DFC65C4210F8">
-    <pdf_title>Controlled-Channel Attacks: Deterministic Side Channels for Untrusted Operating Systems</pdf_title>
-</pdf_annotation>
-<attribute NAME="key" VALUE="Xu2015"/>
-<attribute NAME="year" VALUE="2015"/>
-<attribute NAME="title" VALUE="Controlled-Channel Attacks: Deterministic Side Channels for Untrusted Operating Systems"/>
-<attribute NAME="authors" VALUE="Yuanzhong Xu and Weidong Cui and Marcus Peinado"/>
-</node>
-<node TEXT="key idea for inferring a particular function invocation or data access is to identify page-fault sequences that are unique to the function (or data) access" ID="ID_1387755248" CREATED="1454256211399" MODIFIED="1454408837543" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/Controlled%20Channel%20Attacks.pdf">
-<pdf_annotation type="HIGHLIGHTED_TEXT" page="4" object_id="1395298574232569795" object_number="99" document_hash="4F541EE6D78D9DD1D078D96D72131D776A3BB9DDB56BE19DA547DFC65C4210F8">
-    <pdf_title>Controlled-Channel Attacks: Deterministic Side Channels for Untrusted Operating Systems</pdf_title>
-</pdf_annotation>
-<attribute NAME="key" VALUE="Xu2015"/>
-<attribute NAME="year" VALUE="2015"/>
-<attribute NAME="title" VALUE="Controlled-Channel Attacks: Deterministic Side Channels for Untrusted Operating Systems"/>
-<attribute NAME="authors" VALUE="Yuanzhong Xu and Weidong Cui and Marcus Peinado"/>
-</node>
-<node TEXT="attack against Haven succeeds, b/c SGX is not designed for legacy apps (enclave code is expected to be security sensitive, i.e. mitigate side channels)" ID="ID_1502383995" CREATED="1454256211315" MODIFIED="1454408837579" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/Controlled%20Channel%20Attacks.pdf">
-<pdf_annotation type="COMMENT" page="9" object_id="2121874893359401324" object_number="145" document_hash="4F541EE6D78D9DD1D078D96D72131D776A3BB9DDB56BE19DA547DFC65C4210F8">
-    <pdf_title>Controlled-Channel Attacks: Deterministic Side Channels for Untrusted Operating Systems</pdf_title>
-</pdf_annotation>
-<attribute NAME="key" VALUE="Xu2015"/>
-<attribute NAME="year" VALUE="2015"/>
-<attribute NAME="title" VALUE="Controlled-Channel Attacks: Deterministic Side Channels for Untrusted Operating Systems"/>
-<attribute NAME="authors" VALUE="Yuanzhong Xu and Weidong Cui and Marcus Peinado"/>
-</node>
-</node>
-<node TEXT="Iago attacks" FOLDED="true" ID="ID_1714551629" CREATED="1453713592999" MODIFIED="1453883874452" MOVED="1499694220077">
-<node TEXT="malicious OS: crafted syscall output" ID="ID_1946414843" CREATED="1453713596878" MODIFIED="1453883874457"/>
-<node TEXT="enclave program must verify/sanity check the return values and output parameters of system calls" ID="ID_320130850" CREATED="1453713439830" MODIFIED="1453883874462" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/SGX%20for%20Network%20Apps.pdf">
-<pdf_annotation type="HIGHLIGHTED_TEXT" page="6" object_id="6850745564728366112" object_number="164" document_hash="BCD74C2C88E9442E75B93F5CF968C2347FB2F2BAA594F3948A4A25B7B4BB4E5">
-    <pdf_title>A First Step Towards Leveraging Commodity Trusted Execution Environments for Network Applications</pdf_title>
-</pdf_annotation>
-<attribute NAME="year" VALUE="2015"/>
-<attribute NAME="title" VALUE="A First Step Towards Leveraging Commodity Trusted Execution Environments for Network Applications"/>
-<attribute NAME="authors" VALUE="Kim, Seongmin and Shin, Youjung and Ha, Jaehyung and Kim, Taesoo and Han, Dongsu"/>
-</node>
-</node>
-<node TEXT="launch enclave: licensing component" FOLDED="true" ID="ID_1567476710" CREATED="1455191484834" MODIFIED="1455191495604" MOVED="1499694220082">
-<node TEXT="software security equivalent to the Net Neutrality debates" ID="ID_512245727" CREATED="1454413032059" MODIFIED="1454413704807" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/SGX%20Explained.pdf">
-<pdf_annotation type="HIGHLIGHTED_TEXT" page="87" object_id="9123013829748261465" object_number="1506" document_hash="6247F24926CEBCBDD607A743A7A36C17F76C70D179FFDDC5BE417C9354C5B">
-    <pdf_title>Intel SGX Explained</pdf_title>
-</pdf_annotation>
-<attribute NAME="key" VALUE="sgx-explained"/>
-<attribute NAME="year" VALUE="2016"/>
-<attribute NAME="title" VALUE="Intel SGX Explained."/>
-<attribute NAME="authors" VALUE="Costan, Victor and Devadas, Srinivas"/>
-<attribute NAME="journal" VALUE="IACR Cryptology ePrint Archive"/>
-</node>
-</node>
-<node TEXT="attacks" FOLDED="true" ID="ID_1547962045" CREATED="1499759385964" MODIFIED="1499759387036">
-<node TEXT="Controlled Channel Attacks.pdf" FOLDED="true" ID="ID_689363758" CREATED="1454256210983" MODIFIED="1454256545397" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/Controlled%20Channel%20Attacks.pdf" MOVED="1454256538372">
+<node TEXT="Controlled Channel Attacks.pdf" FOLDED="true" ID="ID_689363758" CREATED="1454256210983" MODIFIED="1454256545397" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/Controlled%20Channel%20Attacks.pdf" MOVED="1499857904984">
 <pdf_annotation type="PDF_FILE" object_id="0" document_hash="4F541EE6D78D9DD1D078D96D72131D776A3BB9DDB56BE19DA547DFC65C4210F8">
     <pdf_title>Controlled-Channel Attacks: Deterministic Side Channels for Untrusted Operating Systems</pdf_title>
 </pdf_annotation>
@@ -6320,7 +5713,7 @@
 <attribute NAME="year" VALUE="2015"/>
 </node>
 </node>
-<node TEXT="Controlled Channel Attacks slides.pdf" FOLDED="true" ID="ID_66260370" CREATED="1454256210265" MODIFIED="1454256696938" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/Controlled%20Channel%20Attacks%20slides.pdf">
+<node TEXT="Controlled Channel Attacks slides.pdf" FOLDED="true" ID="ID_66260370" CREATED="1454256210265" MODIFIED="1454256696938" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/Controlled%20Channel%20Attacks%20slides.pdf" MOVED="1499857904997">
 <pdf_annotation type="PDF_FILE" object_id="0" document_hash="3776636887E434F8976010D926EF2D4F5AE3DFD7EF42FA9F51BF751B76642">
     <pdf_title>Controlled-Channel Attacks:</pdf_title>
 </pdf_annotation>
@@ -6385,7 +5778,7 @@
 <attribute NAME="authors" VALUE="Xu, Yuanzhong and Cui, Weidong and Peinado, Marcus"/>
 </node>
 </node>
-<node TEXT="Page Fault Side Channel Solution.pdf" FOLDED="true" ID="ID_742446502" CREATED="1464687363347" MODIFIED="1464687363347" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/Page%20Fault%20Side%20Channel%20Solution.pdf">
+<node TEXT="Page Fault Side Channel Solution.pdf" FOLDED="true" ID="ID_742446502" CREATED="1464687363347" MODIFIED="1464687363347" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/Page%20Fault%20Side%20Channel%20Solution.pdf" MOVED="1499858013292">
 <pdf_annotation type="PDF_FILE" object_id="0" document_hash="A1CEBFF878A665D1A3572CEE812C3E085D1A064B5D7FCFAFE78118095377B">
     <pdf_title>Preventing Page Faults from Telling Your Secrets</pdf_title>
 </pdf_annotation>
@@ -6538,7 +5931,17 @@
 <attribute NAME="authors" VALUE="Shinde, Shweta and Chua, Zheng Leong and Narayanan, Viswesh and Saxena, Prateek"/>
 </node>
 </node>
-<node TEXT="AsyncShock.pdf" FOLDED="true" ID="ID_131703601" CREATED="1488486502160" MODIFIED="1488486502161" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/AsyncShock.pdf">
+<node TEXT="Malware Guard Extension.pdf" ID="ID_1549931258" CREATED="1499759265618" MODIFIED="1499759314867" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/Malware%20Guard%20Extension.pdf" MOVED="1499858823181">
+<pdf_annotation type="PDF_FILE" object_id="0" document_hash="8D5B869449E4283A5092AD669C1A5F0CB343490A2A0A08926855FD6BB5317C">
+    <pdf_title>Malware Guard Extension: Using SGX to Conceal Cache Attacks (Extended Version)</pdf_title>
+</pdf_annotation>
+<attribute NAME="key" VALUE="schwarz2017malware"/>
+<attribute NAME="title" VALUE="Malware guard extension: Using SGX to conceal cache attacks"/>
+<attribute NAME="authors" VALUE="Schwarz, Michael and Weiser, Samuel and Gruss, Daniel and Maurice, Cl{\&apos;e}mentine and Mangard, Stefan"/>
+<attribute NAME="journal" VALUE="arXiv preprint arXiv:1702.08719"/>
+<attribute NAME="year" VALUE="2017"/>
+</node>
+<node TEXT="AsyncShock.pdf" ID="ID_131703601" CREATED="1488486502160" MODIFIED="1488486502161" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/AsyncShock.pdf" MOVED="1499859227058">
 <pdf_annotation type="PDF_FILE" object_id="0" document_hash="8C49C373D9F470D8D7B6D9A4D6499B72E282F2A8CC8215DC503EEDC0B5153">
     <pdf_title>AsyncShock: Exploiting Synchronisation Bugs in Intel SGX Enclaves</pdf_title>
 </pdf_annotation>
@@ -6553,6 +5956,7 @@
 <attribute NAME="year" VALUE="2016"/>
 <attribute NAME="title" VALUE="Asyncshock: Exploiting synchronisation bugs in intel sgx enclaves"/>
 <attribute NAME="authors" VALUE="Weichbrodt, Nico and Kurmus, Anil and Pietzuch, Peter and Kapitza, R{\&quot;u}diger"/>
+<attribute NAME="key" VALUE="Weichbrodt2016"/>
 </node>
 <node TEXT="hijack its control flow or bypass&#xa;access control" ID="ID_1247523784" CREATED="1488546299253" MODIFIED="1488546299253" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/AsyncShock.pdf">
 <pdf_annotation type="HIGHLIGHTED_TEXT" page="1" object_id="8955161694448185072" object_number="28" document_hash="8C49C373D9F470D8D7B6D9A4D6499B72E282F2A8CC8215DC503EEDC0B5153">
@@ -6561,6 +5965,7 @@
 <attribute NAME="year" VALUE="2016"/>
 <attribute NAME="title" VALUE="Asyncshock: Exploiting synchronisation bugs in intel sgx enclaves"/>
 <attribute NAME="authors" VALUE="Weichbrodt, Nico and Kurmus, Anil and Pietzuch, Peter and Kapitza, R{\&quot;u}diger"/>
+<attribute NAME="key" VALUE="Weichbrodt2016"/>
 </node>
 <node TEXT="use sync. bugs to exploit enclave (control flow, extract secrets)" ID="ID_542844540" CREATED="1488546299268" MODIFIED="1488546299269" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/AsyncShock.pdf">
 <pdf_annotation type="COMMENT" page="1" object_id="3229414596970339038" object_number="29" document_hash="8C49C373D9F470D8D7B6D9A4D6499B72E282F2A8CC8215DC503EEDC0B5153">
@@ -6569,6 +5974,7 @@
 <attribute NAME="year" VALUE="2016"/>
 <attribute NAME="title" VALUE="Asyncshock: Exploiting synchronisation bugs in intel sgx enclaves"/>
 <attribute NAME="authors" VALUE="Weichbrodt, Nico and Kurmus, Anil and Pietzuch, Peter and Kapitza, R{\&quot;u}diger"/>
+<attribute NAME="key" VALUE="Weichbrodt2016"/>
 </node>
 <node TEXT="threat for intel: misuse approved enclaves" ID="ID_42918066" CREATED="1488546299282" MODIFIED="1488546299283" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/AsyncShock.pdf">
 <pdf_annotation type="COMMENT" page="1" object_id="9205083976579722712" object_number="31" document_hash="8C49C373D9F470D8D7B6D9A4D6499B72E282F2A8CC8215DC503EEDC0B5153">
@@ -6577,6 +5983,7 @@
 <attribute NAME="year" VALUE="2016"/>
 <attribute NAME="title" VALUE="Asyncshock: Exploiting synchronisation bugs in intel sgx enclaves"/>
 <attribute NAME="authors" VALUE="Weichbrodt, Nico and Kurmus, Anil and Pietzuch, Peter and Kapitza, R{\&quot;u}diger"/>
+<attribute NAME="key" VALUE="Weichbrodt2016"/>
 </node>
 <node TEXT="Intel only licenses the creation of SGX production enclaves after examination of the software development practices of the licensee" ID="ID_748418270" CREATED="1488546299296" MODIFIED="1488546299296" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/AsyncShock.pdf">
 <pdf_annotation type="HIGHLIGHTED_TEXT" page="2" object_id="4648036835311398760" object_number="35" document_hash="8C49C373D9F470D8D7B6D9A4D6499B72E282F2A8CC8215DC503EEDC0B5153">
@@ -6585,24 +5992,833 @@
 <attribute NAME="year" VALUE="2016"/>
 <attribute NAME="title" VALUE="Asyncshock: Exploiting synchronisation bugs in intel sgx enclaves"/>
 <attribute NAME="authors" VALUE="Weichbrodt, Nico and Kurmus, Anil and Pietzuch, Peter and Kapitza, R{\&quot;u}diger"/>
+<attribute NAME="key" VALUE="Weichbrodt2016"/>
 </node>
 </node>
-<node TEXT="Malware Guard Extension.pdf" ID="ID_1549931258" CREATED="1499759265618" MODIFIED="1499759314867" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/Malware%20Guard%20Extension.pdf" MOVED="1499759271414">
+<node TEXT="privileged Intel enclaves" ID="ID_1601631140" CREATED="1455093829957" MODIFIED="1455093835823" MOVED="1499859777582">
+<node TEXT="signed w/ key hardcoded into SGX microcode" FOLDED="true" ID="ID_406698609" CREATED="1455093857222" MODIFIED="1455093868735">
+<node TEXT="signed using an Intel private key whose corresponding public key is hard-coded into the SGX microcode" ID="ID_1034985428" CREATED="1454413032064" MODIFIED="1454413692753" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/SGX%20Explained.pdf" MOVED="1455093871385">
+<pdf_annotation type="HIGHLIGHTED_TEXT" page="56" object_id="7761804451866253731" object_number="1025" document_hash="6247F24926CEBCBDD607A743A7A36C17F76C70D179FFDDC5BE417C9354C5B">
+    <pdf_title>Intel SGX Explained</pdf_title>
+</pdf_annotation>
+<attribute NAME="key" VALUE="sgx-explained"/>
+<attribute NAME="year" VALUE="2016"/>
+<attribute NAME="title" VALUE="Intel SGX Explained."/>
+<attribute NAME="authors" VALUE="Costan, Victor and Devadas, Srinivas"/>
+<attribute NAME="journal" VALUE="IACR Cryptology ePrint Archive"/>
+</node>
+</node>
+<node TEXT="access to CPUs hardware keys enforced by launch enclave" FOLDED="true" ID="ID_1492793536" CREATED="1455093846878" MODIFIED="1455095283342" MOVED="1455095295887">
+<node TEXT="privileged containers that receive direct access to the SGX processor&#x2019;s hardware keys" ID="ID_856178759" CREATED="1454413032306" MODIFIED="1454413692619" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/SGX%20Explained.pdf" MOVED="1455093854978">
+<pdf_annotation type="HIGHLIGHTED_TEXT" page="56" object_id="4882402738836443919" object_number="1024" document_hash="6247F24926CEBCBDD607A743A7A36C17F76C70D179FFDDC5BE417C9354C5B">
+    <pdf_title>Intel SGX Explained</pdf_title>
+</pdf_annotation>
+<attribute NAME="key" VALUE="sgx-explained"/>
+<attribute NAME="year" VALUE="2016"/>
+<attribute NAME="title" VALUE="Intel SGX Explained."/>
+<attribute NAME="authors" VALUE="Costan, Victor and Devadas, Srinivas"/>
+<attribute NAME="journal" VALUE="IACR Cryptology ePrint Archive"/>
+</node>
+<node TEXT="SGX implementation contained in a CPU&#x2019;s hardware does not directly enforce the enclave attribute checks that decide which enclaves can access the CPU secrets used for software attestation" ID="ID_481103068" CREATED="1454413032048" MODIFIED="1454413700551" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/SGX%20Explained.pdf" MOVED="1455095288180">
+<pdf_annotation type="HIGHLIGHTED_TEXT" page="82" object_id="748662506427272258" object_number="1411" document_hash="6247F24926CEBCBDD607A743A7A36C17F76C70D179FFDDC5BE417C9354C5B">
+    <pdf_title>Intel SGX Explained</pdf_title>
+</pdf_annotation>
+<attribute NAME="key" VALUE="sgx-explained"/>
+<attribute NAME="year" VALUE="2016"/>
+<attribute NAME="title" VALUE="Intel SGX Explained."/>
+<attribute NAME="authors" VALUE="Costan, Victor and Devadas, Srinivas"/>
+<attribute NAME="journal" VALUE="IACR Cryptology ePrint Archive"/>
+</node>
+<node TEXT="instead enforced by the Launch Enclave, which is an enclave issued by Intel that gets to approve every other enclave before it is initialized by EINIT" ID="ID_587330149" CREATED="1454413032462" MODIFIED="1454413700644" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/SGX%20Explained.pdf" MOVED="1455095288187">
+<pdf_annotation type="HIGHLIGHTED_TEXT" page="82" object_id="2078276456916854921" object_number="1412" document_hash="6247F24926CEBCBDD607A743A7A36C17F76C70D179FFDDC5BE417C9354C5B">
+    <pdf_title>Intel SGX Explained</pdf_title>
+</pdf_annotation>
+<attribute NAME="key" VALUE="sgx-explained"/>
+<attribute NAME="year" VALUE="2016"/>
+<attribute NAME="title" VALUE="Intel SGX Explained."/>
+<attribute NAME="authors" VALUE="Costan, Victor and Devadas, Srinivas"/>
+<attribute NAME="journal" VALUE="IACR Cryptology ePrint Archive"/>
+</node>
+<node TEXT="relies on the LE to reject initialization requests that set privileged attributes such as PROVISIONKEY on unauthorized enclaves" ID="ID_503472144" CREATED="1454413032470" MODIFIED="1454413703865" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/SGX%20Explained.pdf" MOVED="1455192584175">
+<pdf_annotation type="HIGHLIGHTED_TEXT" page="87" object_id="534226553202357813" object_number="1497" document_hash="6247F24926CEBCBDD607A743A7A36C17F76C70D179FFDDC5BE417C9354C5B">
+    <pdf_title>Intel SGX Explained</pdf_title>
+</pdf_annotation>
+<attribute NAME="key" VALUE="sgx-explained"/>
+<attribute NAME="year" VALUE="2016"/>
+<attribute NAME="title" VALUE="Intel SGX Explained."/>
+<attribute NAME="authors" VALUE="Costan, Victor and Devadas, Srinivas"/>
+<attribute NAME="journal" VALUE="IACR Cryptology ePrint Archive"/>
+</node>
+</node>
+<node TEXT="quoting enclave" ID="ID_1080756844" CREATED="1455094233774" MODIFIED="1455094240166">
+<node TEXT="attestation signature too complex for hardware implementation" ID="ID_869572115" CREATED="1455095309480" MODIFIED="1455095331493">
+<node TEXT="cryptographic primitive used in SGX&#x2019;s attestation signature is too complex to be implemented in hardware, so the signing process is performed by a privileged Quoting Enclave, which is issued by Intel, and can access the SGX attestation key" ID="ID_1041692312" CREATED="1454413032360" MODIFIED="1454413700093" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/SGX%20Explained.pdf" MOVED="1455095340764">
+<pdf_annotation type="HIGHLIGHTED_TEXT" page="82" object_id="2064300441484539948" object_number="1406" document_hash="6247F24926CEBCBDD607A743A7A36C17F76C70D179FFDDC5BE417C9354C5B">
+    <pdf_title>Intel SGX Explained</pdf_title>
+</pdf_annotation>
+<attribute NAME="key" VALUE="sgx-explained"/>
+<attribute NAME="year" VALUE="2016"/>
+<attribute NAME="title" VALUE="Intel SGX Explained."/>
+<attribute NAME="authors" VALUE="Costan, Victor and Devadas, Srinivas"/>
+<attribute NAME="journal" VALUE="IACR Cryptology ePrint Archive"/>
+</node>
+</node>
+<node TEXT="can access attestation key" ID="ID_1867191016" CREATED="1455095332012" MODIFIED="1455095337670">
+<node TEXT="Quoting Enclave then obtains the Provisioning Seal Key from EGETKEY and uses it to decrypt the Attestation Key" ID="ID_1394853833" CREATED="1454413032681" MODIFIED="1454413701534" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/SGX%20Explained.pdf">
+<pdf_annotation type="HIGHLIGHTED_TEXT" page="85" object_id="1867860624445870442" object_number="1459" document_hash="6247F24926CEBCBDD607A743A7A36C17F76C70D179FFDDC5BE417C9354C5B">
+    <pdf_title>Intel SGX Explained</pdf_title>
+</pdf_annotation>
+<attribute NAME="key" VALUE="sgx-explained"/>
+<attribute NAME="year" VALUE="2016"/>
+<attribute NAME="title" VALUE="Intel SGX Explained."/>
+<attribute NAME="authors" VALUE="Costan, Victor and Devadas, Srinivas"/>
+<attribute NAME="journal" VALUE="IACR Cryptology ePrint Archive"/>
+</node>
+<node TEXT="uses the Attestation Key to sign the information in the local attestation report, producing an Attestation Signature" ID="ID_281009906" CREATED="1454413031976" MODIFIED="1454413701623" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/SGX%20Explained.pdf">
+<pdf_annotation type="HIGHLIGHTED_TEXT" page="85" object_id="6336438181204430616" object_number="1460" document_hash="6247F24926CEBCBDD607A743A7A36C17F76C70D179FFDDC5BE417C9354C5B">
+    <pdf_title>Intel SGX Explained</pdf_title>
+</pdf_annotation>
+<attribute NAME="key" VALUE="sgx-explained"/>
+<attribute NAME="year" VALUE="2016"/>
+<attribute NAME="title" VALUE="Intel SGX Explained."/>
+<attribute NAME="authors" VALUE="Costan, Victor and Devadas, Srinivas"/>
+<attribute NAME="journal" VALUE="IACR Cryptology ePrint Archive"/>
+</node>
+</node>
+<node TEXT="name &#x201c;Quoting Enclave&#x201d; was chosen as a reference to the TPM " ID="ID_757453977" CREATED="1454413031804" MODIFIED="1454413701835" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/SGX%20Explained.pdf">
+<pdf_annotation type="HIGHLIGHTED_TEXT" page="85" object_id="65449597944362984" object_number="1461" document_hash="6247F24926CEBCBDD607A743A7A36C17F76C70D179FFDDC5BE417C9354C5B">
+    <pdf_title>Intel SGX Explained</pdf_title>
+</pdf_annotation>
+<attribute NAME="key" VALUE="sgx-explained"/>
+<attribute NAME="year" VALUE="2016"/>
+<attribute NAME="title" VALUE="Intel SGX Explained."/>
+<attribute NAME="authors" VALUE="Costan, Victor and Devadas, Srinivas"/>
+<attribute NAME="journal" VALUE="IACR Cryptology ePrint Archive"/>
+</node>
+</node>
+<node TEXT="launch enclave" ID="ID_308161079" CREATED="1455094240518" MODIFIED="1499262954316">
+<node TEXT="LE enforces software licensing" FOLDED="true" ID="ID_1964214793" CREATED="1454413032388" MODIFIED="1454413703246" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/SGX%20Explained.pdf" MOVED="1455191279266">
+<pdf_annotation type="COMMENT" page="85" object_id="7892787097260202499" object_number="1470" document_hash="6247F24926CEBCBDD607A743A7A36C17F76C70D179FFDDC5BE417C9354C5B">
+    <pdf_title>Intel SGX Explained</pdf_title>
+</pdf_annotation>
+<attribute NAME="key" VALUE="sgx-explained"/>
+<attribute NAME="year" VALUE="2016"/>
+<attribute NAME="title" VALUE="Intel SGX Explained."/>
+<attribute NAME="authors" VALUE="Costan, Victor and Devadas, Srinivas"/>
+<attribute NAME="journal" VALUE="IACR Cryptology ePrint Archive"/>
+<node TEXT="Launch Enclave is intended to be an enclave licensing mechanism that allows Intel to force itself as an intermediary in the distribution of all enclave software" ID="ID_995444795" CREATED="1454413032579" MODIFIED="1454413704357" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/SGX%20Explained.pdf" MOVED="1455191097245">
+<pdf_annotation type="HIGHLIGHTED_TEXT" page="87" object_id="7947901423862906836" object_number="1501" document_hash="6247F24926CEBCBDD607A743A7A36C17F76C70D179FFDDC5BE417C9354C5B">
+    <pdf_title>Intel SGX Explained</pdf_title>
+</pdf_annotation>
+<attribute NAME="key" VALUE="sgx-explained"/>
+<attribute NAME="year" VALUE="2016"/>
+<attribute NAME="title" VALUE="Intel SGX Explained."/>
+<attribute NAME="authors" VALUE="Costan, Victor and Devadas, Srinivas"/>
+<attribute NAME="journal" VALUE="IACR Cryptology ePrint Archive"/>
+</node>
+<node TEXT="software security equivalent to the Net Neutrality debates" ID="ID_934945590" CREATED="1454413032059" MODIFIED="1454413704807" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/SGX%20Explained.pdf">
+<pdf_annotation type="HIGHLIGHTED_TEXT" page="87" object_id="9123013829748261465" object_number="1506" document_hash="6247F24926CEBCBDD607A743A7A36C17F76C70D179FFDDC5BE417C9354C5B">
+    <pdf_title>Intel SGX Explained</pdf_title>
+</pdf_annotation>
+<attribute NAME="key" VALUE="sgx-explained"/>
+<attribute NAME="year" VALUE="2016"/>
+<attribute NAME="title" VALUE="Intel SGX Explained."/>
+<attribute NAME="authors" VALUE="Costan, Victor and Devadas, Srinivas"/>
+<attribute NAME="journal" VALUE="IACR Cryptology ePrint Archive"/>
+</node>
+</node>
+<node TEXT="generates EINIT token (launch token) for non-Intel enclaves" FOLDED="true" ID="ID_931349576" CREATED="1455094277830" MODIFIED="1455094294631" MOVED="1455094301253">
+<node TEXT="LE is a privileged enclave provided by Intel, and is a prerequisite for the use of enclaves authored by parties other than Intel" ID="ID_625773395" CREATED="1454413031813" MODIFIED="1454413695265" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/SGX%20Explained.pdf" MOVED="1455094298606">
+<pdf_annotation type="HIGHLIGHTED_TEXT" page="64" object_id="2307843199097166417" object_number="1139" document_hash="6247F24926CEBCBDD607A743A7A36C17F76C70D179FFDDC5BE417C9354C5B">
+    <pdf_title>Intel SGX Explained</pdf_title>
+</pdf_annotation>
+<attribute NAME="key" VALUE="sgx-explained"/>
+<attribute NAME="year" VALUE="2016"/>
+<attribute NAME="title" VALUE="Intel SGX Explained."/>
+<attribute NAME="authors" VALUE="Costan, Victor and Devadas, Srinivas"/>
+<attribute NAME="journal" VALUE="IACR Cryptology ePrint Archive"/>
+</node>
+<node TEXT="system software must use a Launch Enclave (LE) to obtain an EINIT Token Structure, via an under-documented process" ID="ID_657928843" CREATED="1454413032382" MODIFIED="1454413695395" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/SGX%20Explained.pdf" MOVED="1455094300096">
+<pdf_annotation type="HIGHLIGHTED_TEXT" page="64" object_id="5497367981103059360" object_number="1140" document_hash="6247F24926CEBCBDD607A743A7A36C17F76C70D179FFDDC5BE417C9354C5B">
+    <pdf_title>Intel SGX Explained</pdf_title>
+</pdf_annotation>
+<attribute NAME="key" VALUE="sgx-explained"/>
+<attribute NAME="year" VALUE="2016"/>
+<attribute NAME="title" VALUE="Intel SGX Explained."/>
+<attribute NAME="authors" VALUE="Costan, Victor and Devadas, Srinivas"/>
+<attribute NAME="journal" VALUE="IACR Cryptology ePrint Archive"/>
+</node>
+<node TEXT=" LE approves an enclave by issuing an EINIT Token" FOLDED="true" ID="ID_314035555" CREATED="1454413032207" MODIFIED="1454413703344" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/SGX%20Explained.pdf" MOVED="1455191158720">
+<pdf_annotation type="HIGHLIGHTED_TEXT" page="86" object_id="9101394759872664946" object_number="1484" document_hash="6247F24926CEBCBDD607A743A7A36C17F76C70D179FFDDC5BE417C9354C5B">
+    <pdf_title>Intel SGX Explained</pdf_title>
+</pdf_annotation>
+<attribute NAME="key" VALUE="sgx-explained"/>
+<attribute NAME="year" VALUE="2016"/>
+<attribute NAME="title" VALUE="Intel SGX Explained."/>
+<attribute NAME="authors" VALUE="Costan, Victor and Devadas, Srinivas"/>
+<attribute NAME="journal" VALUE="IACR Cryptology ePrint Archive"/>
+<node TEXT="EGETKEY instruction only derives the Launch Key for enclaves that have the LAUNCHKEY attribute set to true" ID="ID_455783725" CREATED="1454413032443" MODIFIED="1454413703533" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/SGX%20Explained.pdf" MOVED="1455190959319">
+<pdf_annotation type="HIGHLIGHTED_TEXT" page="86" object_id="2824049171301945542" object_number="1486" document_hash="6247F24926CEBCBDD607A743A7A36C17F76C70D179FFDDC5BE417C9354C5B">
+    <pdf_title>Intel SGX Explained</pdf_title>
+</pdf_annotation>
+<attribute NAME="key" VALUE="sgx-explained"/>
+<attribute NAME="year" VALUE="2016"/>
+<attribute NAME="title" VALUE="Intel SGX Explained."/>
+<attribute NAME="authors" VALUE="Costan, Victor and Devadas, Srinivas"/>
+<attribute NAME="journal" VALUE="IACR Cryptology ePrint Archive"/>
+</node>
+</node>
+</node>
+<node TEXT="no EINIT token needed (signed w/ key hardcoded into SGX microcode)" ID="ID_1155502407" CREATED="1455094247222" MODIFIED="1455094268878"/>
+<node TEXT="hen/egg problem: launch LE without launch key? solved w/ signature matching hard-coded key" FOLDED="true" ID="ID_1224870636" CREATED="1455191287249" MODIFIED="1455191359979">
+<node TEXT="LE is cryptographically signed with a special Intel key that is hard-coded into the SGX implementation, and that causes EINIT to initialize the LE without checking for a valid EINIT Token Structure" ID="ID_1985300971" CREATED="1454413032560" MODIFIED="1455191324339" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/SGX%20Explained.pdf" MOVED="1455191390705">
+<pdf_annotation type="HIGHLIGHTED_TEXT" page="64" object_id="7626124295370136712" object_number="1141" document_hash="6247F24926CEBCBDD607A743A7A36C17F76C70D179FFDDC5BE417C9354C5B">
+    <pdf_title>Intel SGX Explained</pdf_title>
+</pdf_annotation>
+<attribute NAME="key" VALUE="sgx-explained"/>
+<attribute NAME="year" VALUE="2016"/>
+<attribute NAME="title" VALUE="Intel SGX Explained."/>
+<attribute NAME="authors" VALUE="Costan, Victor and Devadas, Srinivas"/>
+<attribute NAME="journal" VALUE="IACR Cryptology ePrint Archive"/>
+</node>
+<node TEXT="EINIT accepts an EINITTOKEN whose VALID bit is set to zero, if the enclave&#x2019;s MRSIGNER equals a hard-coded value that corresponds to an Intel public key" FOLDED="true" ID="ID_445820671" CREATED="1454413032437" MODIFIED="1455191081962" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/SGX%20Explained.pdf" MOVED="1455191397998">
+<pdf_annotation type="HIGHLIGHTED_TEXT" page="87" object_id="7103478216600343944" object_number="1500" document_hash="6247F24926CEBCBDD607A743A7A36C17F76C70D179FFDDC5BE417C9354C5B">
+    <pdf_title>Intel SGX Explained</pdf_title>
+</pdf_annotation>
+<attribute NAME="key" VALUE="sgx-explained"/>
+<attribute NAME="year" VALUE="2016"/>
+<attribute NAME="title" VALUE="Intel SGX Explained."/>
+<attribute NAME="authors" VALUE="Costan, Victor and Devadas, Srinivas"/>
+<attribute NAME="journal" VALUE="IACR Cryptology ePrint Archive"/>
+<node TEXT="LE cannot vet itself, as there will be no LE available when the LE itself needs to be initialized. Therefore, the Launch Key access restrictions are implemented in hardware" FOLDED="true" ID="ID_923604141" CREATED="1454413032493" MODIFIED="1454413703993" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/SGX%20Explained.pdf" MOVED="1455191088656">
+<pdf_annotation type="HIGHLIGHTED_TEXT" page="87" object_id="1295384182758901307" object_number="1498" document_hash="6247F24926CEBCBDD607A743A7A36C17F76C70D179FFDDC5BE417C9354C5B">
+    <pdf_title>Intel SGX Explained</pdf_title>
+</pdf_annotation>
+<attribute NAME="key" VALUE="sgx-explained"/>
+<attribute NAME="year" VALUE="2016"/>
+<attribute NAME="title" VALUE="Intel SGX Explained."/>
+<attribute NAME="authors" VALUE="Costan, Victor and Devadas, Srinivas"/>
+<attribute NAME="journal" VALUE="IACR Cryptology ePrint Archive"/>
+<node TEXT="does not change SGX&#x2019;s security properties because Intel is already a trusted party" ID="ID_902135274" CREATED="1454413032431" MODIFIED="1454413704109" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/SGX%20Explained.pdf" MOVED="1455191073075">
+<pdf_annotation type="HIGHLIGHTED_TEXT" page="87" object_id="5237865647916312265" object_number="1499" document_hash="6247F24926CEBCBDD607A743A7A36C17F76C70D179FFDDC5BE417C9354C5B">
+    <pdf_title>Intel SGX Explained</pdf_title>
+</pdf_annotation>
+<attribute NAME="key" VALUE="sgx-explained"/>
+<attribute NAME="year" VALUE="2016"/>
+<attribute NAME="title" VALUE="Intel SGX Explained."/>
+<attribute NAME="authors" VALUE="Costan, Victor and Devadas, Srinivas"/>
+<attribute NAME="journal" VALUE="IACR Cryptology ePrint Archive"/>
+</node>
+</node>
+</node>
+</node>
+</node>
+<node TEXT="no information leakage allowed!" FOLDED="true" ID="ID_497103127" CREATED="1455192482264" MODIFIED="1455192536089">
+<node TEXT="large amount of pressure on Intel&#x2019;s software developers, as they must attempt to implement the EPID signing scheme used by software attestation without leaking any information" ID="ID_890918552" CREATED="1454413032188" MODIFIED="1454413707719" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/SGX%20Explained.pdf" MOVED="1455192492296">
+<pdf_annotation type="HIGHLIGHTED_TEXT" page="106" object_id="6062852170316293549" object_number="1873" document_hash="6247F24926CEBCBDD607A743A7A36C17F76C70D179FFDDC5BE417C9354C5B">
+    <pdf_title>Intel SGX Explained</pdf_title>
+</pdf_annotation>
+<attribute NAME="key" VALUE="sgx-explained"/>
+<attribute NAME="year" VALUE="2016"/>
+<attribute NAME="title" VALUE="Intel SGX Explained."/>
+<attribute NAME="authors" VALUE="Costan, Victor and Devadas, Srinivas"/>
+<attribute NAME="journal" VALUE="IACR Cryptology ePrint Archive"/>
+</node>
+</node>
+</node>
+<node TEXT="execution timing via hyper-threading" ID="ID_824528729" CREATED="1455192365072" MODIFIED="1455192378896" MOVED="1499859943842">
+<node TEXT="SGX does not prevent hyper-threading" ID="ID_706069221" CREATED="1454413032197" MODIFIED="1454413707195" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/SGX%20Explained.pdf" MOVED="1455192381375">
+<pdf_annotation type="HIGHLIGHTED_TEXT" page="102" object_id="4143392971296318300" object_number="1797" document_hash="6247F24926CEBCBDD607A743A7A36C17F76C70D179FFDDC5BE417C9354C5B">
+    <pdf_title>Intel SGX Explained</pdf_title>
+</pdf_annotation>
+<attribute NAME="key" VALUE="sgx-explained"/>
+<attribute NAME="year" VALUE="2016"/>
+<attribute NAME="title" VALUE="Intel SGX Explained."/>
+<attribute NAME="authors" VALUE="Costan, Victor and Devadas, Srinivas"/>
+<attribute NAME="journal" VALUE="IACR Cryptology ePrint Archive"/>
+<node TEXT="victim enclave on an LP that shares the core with an LP executing a snooping thread" ID="ID_1584093810" CREATED="1454413032111" MODIFIED="1454413707248" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/SGX%20Explained.pdf" MOVED="1455192354646">
+<pdf_annotation type="HIGHLIGHTED_TEXT" page="102" object_id="7814429027931777204" object_number="1798" document_hash="6247F24926CEBCBDD607A743A7A36C17F76C70D179FFDDC5BE417C9354C5B">
+    <pdf_title>Intel SGX Explained</pdf_title>
+</pdf_annotation>
+<attribute NAME="key" VALUE="sgx-explained"/>
+<attribute NAME="year" VALUE="2016"/>
+<attribute NAME="title" VALUE="Intel SGX Explained."/>
+<attribute NAME="authors" VALUE="Costan, Victor and Devadas, Srinivas"/>
+<attribute NAME="journal" VALUE="IACR Cryptology ePrint Archive"/>
+</node>
+<node TEXT="processor&#x2019;s high-resolution performance counter [145], in conjunction with microarchitectural knowledge of the CPU&#x2019;s execution units and out-of-order scheduler, to learn the instructions executed by the victim enclave, as well as its memory access patterns" ID="ID_410164299" CREATED="1454413032281" MODIFIED="1454413707287" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/SGX%20Explained.pdf" MOVED="1455192358998">
+<pdf_annotation type="HIGHLIGHTED_TEXT" page="102" object_id="8412171171686680338" object_number="1799" document_hash="6247F24926CEBCBDD607A743A7A36C17F76C70D179FFDDC5BE417C9354C5B">
+    <pdf_title>Intel SGX Explained</pdf_title>
+</pdf_annotation>
+<attribute NAME="key" VALUE="sgx-explained"/>
+<attribute NAME="year" VALUE="2016"/>
+<attribute NAME="title" VALUE="Intel SGX Explained."/>
+<attribute NAME="authors" VALUE="Costan, Victor and Devadas, Srinivas"/>
+<attribute NAME="journal" VALUE="IACR Cryptology ePrint Archive"/>
+</node>
+</node>
+<node TEXT="require cloud computing providers to disable hyper-threading when offering SGX. The SGX enclave measurement would have to be extended to include the computer&#x2019;s hyper-threading configuration" ID="ID_1531523427" CREATED="1454413032534" MODIFIED="1488817517660" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/SGX%20Explained.pdf" MOVED="1455192390309">
+<pdf_annotation type="HIGHLIGHTED_TEXT" page="102" object_id="2481535205471034450" object_number="1800" document_hash="6247F24926CEBCBDD607A743A7A36C17F76C70D179FFDDC5BE417C9354C5B">
+    <pdf_title>Intel SGX Explained</pdf_title>
+</pdf_annotation>
+<attribute NAME="key" VALUE="sgx-explained"/>
+<attribute NAME="year" VALUE="2016"/>
+<attribute NAME="title" VALUE="Intel SGX Explained."/>
+<attribute NAME="authors" VALUE="Costan, Victor and Devadas, Srinivas"/>
+<attribute NAME="journal" VALUE="IACR Cryptology ePrint Archive"/>
+</node>
+</node>
+<node TEXT="cache timing" ID="ID_1206455267" CREATED="1455192277023" MODIFIED="1455192278987" MOVED="1499859946599">
+<node TEXT="SGX is vulnerable to cache timing attacks that can be carried out completely in software" ID="ID_1545447031" CREATED="1454413032774" MODIFIED="1454413706714" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/SGX%20Explained.pdf" MOVED="1455192281933">
+<pdf_annotation type="HIGHLIGHTED_TEXT" page="101" object_id="5161174183645536571" object_number="1760" document_hash="6247F24926CEBCBDD607A743A7A36C17F76C70D179FFDDC5BE417C9354C5B">
+    <pdf_title>Intel SGX Explained</pdf_title>
+</pdf_annotation>
+<attribute NAME="key" VALUE="sgx-explained"/>
+<attribute NAME="year" VALUE="2016"/>
+<attribute NAME="title" VALUE="Intel SGX Explained."/>
+<attribute NAME="authors" VALUE="Costan, Victor and Devadas, Srinivas"/>
+<attribute NAME="journal" VALUE="IACR Cryptology ePrint Archive"/>
+</node>
+</node>
+<node TEXT="synchronization bugs: exploit enclaves" FOLDED="true" ID="ID_475990213" CREATED="1488546323480" MODIFIED="1488546332145" MOVED="1499859949245">
+<node TEXT="previously considered harmless synchroni-&#xa;sation bugs can turn into severe security vulnerabilities when using SGX" ID="ID_1369287857" CREATED="1488546299238" MODIFIED="1488546299239" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/AsyncShock.pdf" MOVED="1488546334598">
+<pdf_annotation type="HIGHLIGHTED_TEXT" page="1" object_id="8223557355915428722" object_number="27" document_hash="8C49C373D9F470D8D7B6D9A4D6499B72E282F2A8CC8215DC503EEDC0B5153">
+    <pdf_title>AsyncShock: Exploiting Synchronisation Bugs in Intel SGX Enclaves</pdf_title>
+</pdf_annotation>
+<attribute NAME="year" VALUE="2016"/>
+<attribute NAME="title" VALUE="Asyncshock: Exploiting synchronisation bugs in intel sgx enclaves"/>
+<attribute NAME="authors" VALUE="Weichbrodt, Nico and Kurmus, Anil and Pietzuch, Peter and Kapitza, R{\&quot;u}diger"/>
+</node>
+<node TEXT="hijack its control flow or bypass&#xa;access control" ID="ID_353095452" CREATED="1488546299253" MODIFIED="1488817357904" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/AsyncShock.pdf" MOVED="1488546334609">
+<pdf_annotation type="HIGHLIGHTED_TEXT" page="1" object_id="8955161694448185072" object_number="28" document_hash="8C49C373D9F470D8D7B6D9A4D6499B72E282F2A8CC8215DC503EEDC0B5153">
+    <pdf_title>AsyncShock: Exploiting Synchronisation Bugs in Intel SGX Enclaves</pdf_title>
+</pdf_annotation>
+<attribute NAME="year" VALUE="2016"/>
+<attribute NAME="title" VALUE="Asyncshock: Exploiting synchronisation bugs in intel sgx enclaves"/>
+<attribute NAME="authors" VALUE="Weichbrodt, Nico and Kurmus, Anil and Pietzuch, Peter and Kapitza, R{\&quot;u}diger"/>
+</node>
+<node TEXT="use sync. bugs to exploit enclave (control flow, extract secrets)" ID="ID_568203276" CREATED="1488546299268" MODIFIED="1488546299269" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/AsyncShock.pdf" MOVED="1488546334620">
+<pdf_annotation type="COMMENT" page="1" object_id="3229414596970339038" object_number="29" document_hash="8C49C373D9F470D8D7B6D9A4D6499B72E282F2A8CC8215DC503EEDC0B5153">
+    <pdf_title>AsyncShock: Exploiting Synchronisation Bugs in Intel SGX Enclaves</pdf_title>
+</pdf_annotation>
+<attribute NAME="year" VALUE="2016"/>
+<attribute NAME="title" VALUE="Asyncshock: Exploiting synchronisation bugs in intel sgx enclaves"/>
+<attribute NAME="authors" VALUE="Weichbrodt, Nico and Kurmus, Anil and Pietzuch, Peter and Kapitza, R{\&quot;u}diger"/>
+</node>
+<node TEXT="threat for intel: misuse approved enclaves" ID="ID_1096664558" CREATED="1488546299282" MODIFIED="1488546299283" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/AsyncShock.pdf" MOVED="1488546334630">
+<pdf_annotation type="COMMENT" page="1" object_id="9205083976579722712" object_number="31" document_hash="8C49C373D9F470D8D7B6D9A4D6499B72E282F2A8CC8215DC503EEDC0B5153">
+    <pdf_title>AsyncShock: Exploiting Synchronisation Bugs in Intel SGX Enclaves</pdf_title>
+</pdf_annotation>
+<attribute NAME="year" VALUE="2016"/>
+<attribute NAME="title" VALUE="Asyncshock: Exploiting synchronisation bugs in intel sgx enclaves"/>
+<attribute NAME="authors" VALUE="Weichbrodt, Nico and Kurmus, Anil and Pietzuch, Peter and Kapitza, R{\&quot;u}diger"/>
+</node>
+<node TEXT="Intel only licenses the creation of SGX production enclaves after ex-&#xa;amination of the software development practices of the licensee" ID="ID_1796874129" CREATED="1488546299296" MODIFIED="1488546299296" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/AsyncShock.pdf" MOVED="1488546334642">
+<pdf_annotation type="HIGHLIGHTED_TEXT" page="2" object_id="4648036835311398760" object_number="35" document_hash="8C49C373D9F470D8D7B6D9A4D6499B72E282F2A8CC8215DC503EEDC0B5153">
+    <pdf_title>AsyncShock: Exploiting Synchronisation Bugs in Intel SGX Enclaves</pdf_title>
+</pdf_annotation>
+<attribute NAME="year" VALUE="2016"/>
+<attribute NAME="title" VALUE="Asyncshock: Exploiting synchronisation bugs in intel sgx enclaves"/>
+<attribute NAME="authors" VALUE="Weichbrodt, Nico and Kurmus, Anil and Pietzuch, Peter and Kapitza, R{\&quot;u}diger"/>
+</node>
+</node>
+<node TEXT="Iago attacks" FOLDED="true" ID="ID_1714551629" CREATED="1453713592999" MODIFIED="1453883874452" MOVED="1499859961416">
+<node TEXT="malicious OS: crafted syscall output" ID="ID_1946414843" CREATED="1453713596878" MODIFIED="1453883874457"/>
+<node TEXT="enclave program must verify/sanity check the return values and output parameters of system calls" ID="ID_320130850" CREATED="1453713439830" MODIFIED="1453883874462" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/SGX%20for%20Network%20Apps.pdf">
+<pdf_annotation type="HIGHLIGHTED_TEXT" page="6" object_id="6850745564728366112" object_number="164" document_hash="BCD74C2C88E9442E75B93F5CF968C2347FB2F2BAA594F3948A4A25B7B4BB4E5">
+    <pdf_title>A First Step Towards Leveraging Commodity Trusted Execution Environments for Network Applications</pdf_title>
+</pdf_annotation>
+<attribute NAME="year" VALUE="2015"/>
+<attribute NAME="title" VALUE="A First Step Towards Leveraging Commodity Trusted Execution Environments for Network Applications"/>
+<attribute NAME="authors" VALUE="Kim, Seongmin and Shin, Youjung and Ha, Jaehyung and Kim, Taesoo and Han, Dongsu"/>
+<attribute NAME="key" VALUE="Kim2015"/>
+</node>
+</node>
+<node TEXT="security assumptions" ID="ID_564339166" CREATED="1487266477538" MODIFIED="1488547002562" MOVED="1499859962581">
+<attribute NAME="LastHeading" VALUE=""/>
+</node>
+<node TEXT="known security issues" ID="ID_1563892769" CREATED="1487266485850" MODIFIED="1488547006352" MOVED="1499859965031">
+<attribute NAME="LastHeading" VALUE=""/>
+<node TEXT="attacks on privileged enclaves" ID="ID_1119071196" CREATED="1455093890837" MODIFIED="1455093896542" MOVED="1488477329157">
+<node TEXT="cache attacks on the Quoting Enclave, which computes attestation signatures, would provide an attack with a processor&#x2019;s EPID signing key and completely compromise SGX" ID="ID_822534002" CREATED="1454413032121" MODIFIED="1454413692898" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/SGX%20Explained.pdf" MOVED="1455093898833">
+<pdf_annotation type="HIGHLIGHTED_TEXT" page="57" object_id="1261257957716443046" object_number="1034" document_hash="6247F24926CEBCBDD607A743A7A36C17F76C70D179FFDDC5BE417C9354C5B">
+    <pdf_title>Intel SGX Explained</pdf_title>
+</pdf_annotation>
+<attribute NAME="key" VALUE="sgx-explained"/>
+<attribute NAME="year" VALUE="2016"/>
+<attribute NAME="title" VALUE="Intel SGX Explained."/>
+<attribute NAME="authors" VALUE="Costan, Victor and Devadas, Srinivas"/>
+<attribute NAME="journal" VALUE="IACR Cryptology ePrint Archive"/>
+</node>
+</node>
+<node TEXT="Physical Attacks" FOLDED="true" ID="ID_243133610" CREATED="1454413032220" MODIFIED="1454413706558" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/SGX%20Explained.pdf" MOVED="1488477329164">
+<pdf_annotation type="HIGHLIGHTED_TEXT" page="100" object_id="6590141332804477678" object_number="1735" document_hash="6247F24926CEBCBDD607A743A7A36C17F76C70D179FFDDC5BE417C9354C5B">
+    <pdf_title>Intel SGX Explained</pdf_title>
+</pdf_annotation>
+<attribute NAME="key" VALUE="sgx-explained"/>
+<attribute NAME="year" VALUE="2016"/>
+<attribute NAME="title" VALUE="Intel SGX Explained."/>
+<attribute NAME="authors" VALUE="Costan, Victor and Devadas, Srinivas"/>
+<attribute NAME="journal" VALUE="IACR Cryptology ePrint Archive"/>
+<node TEXT="enclave contents travels without any cryptographic protection on the uncore&#x2019;s ring bus" ID="ID_505984073" CREATED="1454413031883" MODIFIED="1454413706647" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/SGX%20Explained.pdf" MOVED="1455192080141">
+<pdf_annotation type="HIGHLIGHTED_TEXT" page="100" object_id="1398426510046852479" object_number="1736" document_hash="6247F24926CEBCBDD607A743A7A36C17F76C70D179FFDDC5BE417C9354C5B">
+    <pdf_title>Intel SGX Explained</pdf_title>
+</pdf_annotation>
+<attribute NAME="key" VALUE="sgx-explained"/>
+<attribute NAME="year" VALUE="2016"/>
+<attribute NAME="title" VALUE="Intel SGX Explained."/>
+<attribute NAME="authors" VALUE="Costan, Victor and Devadas, Srinivas"/>
+<attribute NAME="journal" VALUE="IACR Cryptology ePrint Archive"/>
+</node>
+<node TEXT="particularly concerned about the Generic Debug eXternal Connection (GDXC) which collects and filters the data transferred by the uncore&#x2019;s ring bus" ID="ID_589528919" CREATED="1454413032240" MODIFIED="1488817509298" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/SGX%20Explained.pdf" MOVED="1455192270179">
+<pdf_annotation type="HIGHLIGHTED_TEXT" page="100" object_id="4099836645959207336" object_number="1733" document_hash="6247F24926CEBCBDD607A743A7A36C17F76C70D179FFDDC5BE417C9354C5B">
+    <pdf_title>Intel SGX Explained</pdf_title>
+</pdf_annotation>
+<attribute NAME="key" VALUE="sgx-explained"/>
+<attribute NAME="year" VALUE="2016"/>
+<attribute NAME="title" VALUE="Intel SGX Explained."/>
+<attribute NAME="authors" VALUE="Costan, Victor and Devadas, Srinivas"/>
+<attribute NAME="journal" VALUE="IACR Cryptology ePrint Archive"/>
+</node>
+<node TEXT="concerned about the possibility of an attack that taps the SMBus to reach into the Intel ME" FOLDED="true" ID="ID_343747273" CREATED="1454413032453" MODIFIED="1454413706827" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/SGX%20Explained.pdf" MOVED="1455192297816">
+<pdf_annotation type="HIGHLIGHTED_TEXT" page="101" object_id="7518248541986411189" object_number="1762" document_hash="6247F24926CEBCBDD607A743A7A36C17F76C70D179FFDDC5BE417C9354C5B">
+    <pdf_title>Intel SGX Explained</pdf_title>
+</pdf_annotation>
+<attribute NAME="key" VALUE="sgx-explained"/>
+<attribute NAME="year" VALUE="2016"/>
+<attribute NAME="title" VALUE="Intel SGX Explained."/>
+<attribute NAME="authors" VALUE="Costan, Victor and Devadas, Srinivas"/>
+<attribute NAME="journal" VALUE="IACR Cryptology ePrint Archive"/>
+<node TEXT="ME might play a role in SGX&#x2019;s software attestation process" ID="ID_656115342" CREATED="1454413032803" MODIFIED="1454413706771" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/SGX%20Explained.pdf" MOVED="1455192303839">
+<pdf_annotation type="HIGHLIGHTED_TEXT" page="101" object_id="1669388149828443634" object_number="1761" document_hash="6247F24926CEBCBDD607A743A7A36C17F76C70D179FFDDC5BE417C9354C5B">
+    <pdf_title>Intel SGX Explained</pdf_title>
+</pdf_annotation>
+<attribute NAME="key" VALUE="sgx-explained"/>
+<attribute NAME="year" VALUE="2016"/>
+<attribute NAME="title" VALUE="Intel SGX Explained."/>
+<attribute NAME="authors" VALUE="Costan, Victor and Devadas, Srinivas"/>
+<attribute NAME="journal" VALUE="IACR Cryptology ePrint Archive"/>
+</node>
+<node TEXT="most scary attack vector afforded by an ME takeover appears to be direct DRAM access, and SGX already assumes that the DRAM is untrusted" ID="ID_1527098388" CREATED="1454413032822" MODIFIED="1454413707545" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/SGX%20Explained.pdf">
+<pdf_annotation type="HIGHLIGHTED_TEXT" page="104" object_id="379782618224522328" object_number="1846" document_hash="6247F24926CEBCBDD607A743A7A36C17F76C70D179FFDDC5BE417C9354C5B">
+    <pdf_title>Intel SGX Explained</pdf_title>
+</pdf_annotation>
+<attribute NAME="key" VALUE="sgx-explained"/>
+<attribute NAME="year" VALUE="2016"/>
+<attribute NAME="title" VALUE="Intel SGX Explained."/>
+<attribute NAME="authors" VALUE="Costan, Victor and Devadas, Srinivas"/>
+<attribute NAME="journal" VALUE="IACR Cryptology ePrint Archive"/>
+</node>
+<node TEXT="ME on all recent chipsets" FOLDED="true" ID="ID_520901126" CREATED="1454420899516" MODIFIED="1454421009517" MOVED="1454421098564">
+<node TEXT="Intel&#x2019;s Management Engine (ME) is an embedded computer" ID="ID_532554574" CREATED="1454413032476" MODIFIED="1454413688907" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/SGX%20Explained.pdf" MOVED="1454420933013">
+<pdf_annotation type="HIGHLIGHTED_TEXT" page="16" object_id="6877138193282201505" object_number="478" document_hash="6247F24926CEBCBDD607A743A7A36C17F76C70D179FFDDC5BE417C9354C5B">
+    <pdf_title>Intel SGX Explained</pdf_title>
+</pdf_annotation>
+<attribute NAME="key" VALUE="sgx-explained"/>
+<attribute NAME="year" VALUE="2016"/>
+<attribute NAME="title" VALUE="Intel SGX Explained."/>
+<attribute NAME="authors" VALUE="Costan, Victor and Devadas, Srinivas"/>
+<attribute NAME="journal" VALUE="IACR Cryptology ePrint Archive"/>
+</node>
+<node TEXT="PCH is also known as the chipset" FOLDED="true" ID="ID_239235973" CREATED="1454413032266" MODIFIED="1454413688612" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/SGX%20Explained.pdf" MOVED="1454420933066">
+<pdf_annotation type="HIGHLIGHTED_TEXT" page="15" object_id="8328881897654399605" object_number="465" document_hash="6247F24926CEBCBDD607A743A7A36C17F76C70D179FFDDC5BE417C9354C5B">
+    <pdf_title>Intel SGX Explained</pdf_title>
+</pdf_annotation>
+<attribute NAME="key" VALUE="sgx-explained"/>
+<attribute NAME="year" VALUE="2016"/>
+<attribute NAME="title" VALUE="Intel SGX Explained."/>
+<attribute NAME="authors" VALUE="Costan, Victor and Devadas, Srinivas"/>
+<attribute NAME="journal" VALUE="IACR Cryptology ePrint Archive"/>
+<node TEXT="Platform Controller Hub (PCH) houses (relatively) low-speed I/O controllers driving the slower buses in the system, like SATA" ID="ID_81437436" CREATED="1454413032260" MODIFIED="1454413688346" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/SGX%20Explained.pdf">
+<pdf_annotation type="HIGHLIGHTED_TEXT" page="15" object_id="3087352545132796392" object_number="464" document_hash="6247F24926CEBCBDD607A743A7A36C17F76C70D179FFDDC5BE417C9354C5B">
+    <pdf_title>Intel SGX Explained</pdf_title>
+</pdf_annotation>
+<attribute NAME="key" VALUE="sgx-explained"/>
+<attribute NAME="year" VALUE="2016"/>
+<attribute NAME="title" VALUE="Intel SGX Explained."/>
+<attribute NAME="authors" VALUE="Costan, Victor and Devadas, Srinivas"/>
+<attribute NAME="journal" VALUE="IACR Cryptology ePrint Archive"/>
+</node>
+</node>
+<node TEXT="all of Intel&#x2019;s recent PCHs contain an ME" ID="ID_123880935" CREATED="1454413031785" MODIFIED="1454413689178" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/SGX%20Explained.pdf" MOVED="1454420933113">
+<pdf_annotation type="HIGHLIGHTED_TEXT" page="16" object_id="9193532824892471672" object_number="479" document_hash="6247F24926CEBCBDD607A743A7A36C17F76C70D179FFDDC5BE417C9354C5B">
+    <pdf_title>Intel SGX Explained</pdf_title>
+</pdf_annotation>
+<attribute NAME="key" VALUE="sgx-explained"/>
+<attribute NAME="year" VALUE="2016"/>
+<attribute NAME="title" VALUE="Intel SGX Explained."/>
+<attribute NAME="authors" VALUE="Costan, Victor and Devadas, Srinivas"/>
+<attribute NAME="journal" VALUE="IACR Cryptology ePrint Archive"/>
+</node>
+</node>
+</node>
+<node TEXT="imaging attack on fuses" FOLDED="true" ID="ID_1055192674" CREATED="1455192317191" MODIFIED="1455192321375">
+<node TEXT="Deriving the root keys from the PUF would be more resilient to chip imaging attacks" ID="ID_446802140" CREATED="1454413032742" MODIFIED="1454413706888" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/SGX%20Explained.pdf" MOVED="1455192323030">
+<pdf_annotation type="HIGHLIGHTED_TEXT" page="101" object_id="1611860747649282420" object_number="1763" document_hash="6247F24926CEBCBDD607A743A7A36C17F76C70D179FFDDC5BE417C9354C5B">
+    <pdf_title>Intel SGX Explained</pdf_title>
+</pdf_annotation>
+<attribute NAME="key" VALUE="sgx-explained"/>
+<attribute NAME="year" VALUE="2016"/>
+<attribute NAME="title" VALUE="Intel SGX Explained."/>
+<attribute NAME="authors" VALUE="Costan, Victor and Devadas, Srinivas"/>
+<attribute NAME="journal" VALUE="IACR Cryptology ePrint Archive"/>
+</node>
+</node>
+</node>
+<node TEXT="software attacks" ID="ID_1223498359" CREATED="1455192265303" MODIFIED="1455192267927" MOVED="1488477329176">
+<node TEXT="SGX does not protect against software side-channel attacks that rely on performance counters" ID="ID_1681682884" CREATED="1454413032366" MODIFIED="1454413707450" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/SGX%20Explained.pdf" MOVED="1455192421557">
+<pdf_annotation type="HIGHLIGHTED_TEXT" page="104" object_id="6626253886484302199" object_number="1844" document_hash="6247F24926CEBCBDD607A743A7A36C17F76C70D179FFDDC5BE417C9354C5B">
+    <pdf_title>Intel SGX Explained</pdf_title>
+</pdf_annotation>
+<attribute NAME="key" VALUE="sgx-explained"/>
+<attribute NAME="year" VALUE="2016"/>
+<attribute NAME="title" VALUE="Intel SGX Explained."/>
+<attribute NAME="authors" VALUE="Costan, Victor and Devadas, Srinivas"/>
+<attribute NAME="journal" VALUE="IACR Cryptology ePrint Archive"/>
+</node>
+</node>
+</node>
+<node TEXT="Intel&apos;s architectural enclaves" ID="ID_1251274701" CREATED="1488477354877" MODIFIED="1488547053064" MOVED="1499859971946">
+<attribute NAME="LastHeading" VALUE=""/>
+<node TEXT="anti virus" ID="ID_471834671" CREATED="1455192626721" MODIFIED="1455192628899" MOVED="1488477365904">
+<node TEXT="scenario" FOLDED="true" ID="ID_107227351" CREATED="1455192638417" MODIFIED="1455192643315">
+<node TEXT="attack would create an enclave and initialize it with a generic loader that looks innocent to an AV. The loader inside the enclave would obtain an encrypted malicious payload" ID="ID_75838921" CREATED="1454413032143" MODIFIED="1454413707868" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/SGX%20Explained.pdf" MOVED="1455192645105">
+<pdf_annotation type="HIGHLIGHTED_TEXT" page="107" object_id="790194062930503526" object_number="1886" document_hash="6247F24926CEBCBDD607A743A7A36C17F76C70D179FFDDC5BE417C9354C5B">
+    <pdf_title>Intel SGX Explained</pdf_title>
+</pdf_annotation>
+<attribute NAME="key" VALUE="sgx-explained"/>
+<attribute NAME="year" VALUE="2016"/>
+<attribute NAME="title" VALUE="Intel SGX Explained."/>
+<attribute NAME="authors" VALUE="Costan, Victor and Devadas, Srinivas"/>
+<attribute NAME="journal" VALUE="IACR Cryptology ePrint Archive"/>
+</node>
+</node>
+<node TEXT="enclaves not accessible by AV software" FOLDED="true" ID="ID_1541732673" CREATED="1455192646561" MODIFIED="1455192653017">
+<node TEXT="Enclaves are isolated from all the other software on the computer, including any AV software" ID="ID_1143445519" CREATED="1454413032377" MODIFIED="1454413707845" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/SGX%20Explained.pdf" MOVED="1455192655513">
+<pdf_annotation type="HIGHLIGHTED_TEXT" page="107" object_id="4485142989984584472" object_number="1885" document_hash="6247F24926CEBCBDD607A743A7A36C17F76C70D179FFDDC5BE417C9354C5B">
+    <pdf_title>Intel SGX Explained</pdf_title>
+</pdf_annotation>
+<attribute NAME="key" VALUE="sgx-explained"/>
+<attribute NAME="year" VALUE="2016"/>
+<attribute NAME="title" VALUE="Intel SGX Explained."/>
+<attribute NAME="authors" VALUE="Costan, Victor and Devadas, Srinivas"/>
+<attribute NAME="journal" VALUE="IACR Cryptology ePrint Archive"/>
+</node>
+</node>
+<node TEXT="different, but not impossible to police" ID="ID_119304030" CREATED="1455192763963" MODIFIED="1455192771299">
+<node TEXT="enclave isolation mechanism is fundamentally incompatible with the approach employed by today&#x2019;s AV solutions. Fortunately, it is possible (though non-trivial) to develop more intelligent AV software for enclave software" ID="ID_1060068163" CREATED="1454413032028" MODIFIED="1454413707971" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/SGX%20Explained.pdf" MOVED="1455192772756">
+<pdf_annotation type="HIGHLIGHTED_TEXT" page="107" object_id="7185000183108839243" object_number="1892" document_hash="6247F24926CEBCBDD607A743A7A36C17F76C70D179FFDDC5BE417C9354C5B">
+    <pdf_title>Intel SGX Explained</pdf_title>
+</pdf_annotation>
+<attribute NAME="key" VALUE="sgx-explained"/>
+<attribute NAME="year" VALUE="2016"/>
+<attribute NAME="title" VALUE="Intel SGX Explained."/>
+<attribute NAME="authors" VALUE="Costan, Victor and Devadas, Srinivas"/>
+<attribute NAME="journal" VALUE="IACR Cryptology ePrint Archive"/>
+</node>
+<node TEXT="but: no I/O without system services -&gt; monitor this instead" FOLDED="true" ID="ID_184530989" CREATED="1455192660666" MODIFIED="1455192673499">
+<node TEXT="Enclave code always executes at the lowest privilege mode (ring 3 / user mode), so it cannot perform any I/O without invoking the services of system software" ID="ID_1224987053" CREATED="1454413032156" MODIFIED="1454413707891" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/SGX%20Explained.pdf" MOVED="1455192675020">
+<pdf_annotation type="HIGHLIGHTED_TEXT" page="107" object_id="7641953852334914733" object_number="1887" document_hash="6247F24926CEBCBDD607A743A7A36C17F76C70D179FFDDC5BE417C9354C5B">
+    <pdf_title>Intel SGX Explained</pdf_title>
+</pdf_annotation>
+<attribute NAME="key" VALUE="sgx-explained"/>
+<attribute NAME="year" VALUE="2016"/>
+<attribute NAME="title" VALUE="Intel SGX Explained."/>
+<attribute NAME="authors" VALUE="Costan, Victor and Devadas, Srinivas"/>
+<attribute NAME="journal" VALUE="IACR Cryptology ePrint Archive"/>
+</node>
+<node TEXT="enclave software cannot perform any malicious action without the complicity of system software" ID="ID_539562708" CREATED="1454413031823" MODIFIED="1454413707914" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/SGX%20Explained.pdf" MOVED="1455192677267">
+<pdf_annotation type="HIGHLIGHTED_TEXT" page="107" object_id="6476693949872483658" object_number="1888" document_hash="6247F24926CEBCBDD607A743A7A36C17F76C70D179FFDDC5BE417C9354C5B">
+    <pdf_title>Intel SGX Explained</pdf_title>
+</pdf_annotation>
+<attribute NAME="key" VALUE="sgx-explained"/>
+<attribute NAME="year" VALUE="2016"/>
+<attribute NAME="title" VALUE="Intel SGX Explained."/>
+<attribute NAME="authors" VALUE="Costan, Victor and Devadas, Srinivas"/>
+<attribute NAME="journal" VALUE="IACR Cryptology ePrint Archive"/>
+</node>
+<node TEXT="enclaves can be policed effectively by intelligent AV software that records and filters the I/O performed by software, and detects malicious software according to the actions that it performs, rather than according to bit patterns in its code." ID="ID_359196413" CREATED="1454413031876" MODIFIED="1488817525467" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/SGX%20Explained.pdf" MOVED="1455192681643">
+<pdf_annotation type="HIGHLIGHTED_TEXT" page="107" object_id="8503004312707789767" object_number="1889" document_hash="6247F24926CEBCBDD607A743A7A36C17F76C70D179FFDDC5BE417C9354C5B">
+    <pdf_title>Intel SGX Explained</pdf_title>
+</pdf_annotation>
+<attribute NAME="key" VALUE="sgx-explained"/>
+<attribute NAME="year" VALUE="2016"/>
+<attribute NAME="title" VALUE="Intel SGX Explained."/>
+<attribute NAME="authors" VALUE="Costan, Victor and Devadas, Srinivas"/>
+<attribute NAME="journal" VALUE="IACR Cryptology ePrint Archive"/>
+</node>
+</node>
+<node TEXT="do not load enclave that loads additional code if it does not use in-enclave AV library" FOLDED="true" ID="ID_1290336042" CREATED="1455192696714" MODIFIED="1455192752251">
+<node TEXT="AntiVirus: 1. protect by observing enclave&apos;s I/O 2. refuse to load enclaves that dynamically load code (static analysis) if they do not also use in-enclave AV library to check that code" ID="ID_1117145728" CREATED="1454413032540" MODIFIED="1454413707953" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/SGX%20Explained.pdf" MOVED="1455192753774">
+<pdf_annotation type="COMMENT" page="107" object_id="4982410055659900879" object_number="1890" document_hash="6247F24926CEBCBDD607A743A7A36C17F76C70D179FFDDC5BE417C9354C5B">
+    <pdf_title>Intel SGX Explained</pdf_title>
+</pdf_annotation>
+<attribute NAME="key" VALUE="sgx-explained"/>
+<attribute NAME="year" VALUE="2016"/>
+<attribute NAME="title" VALUE="Intel SGX Explained."/>
+<attribute NAME="authors" VALUE="Costan, Victor and Devadas, Srinivas"/>
+<attribute NAME="journal" VALUE="IACR Cryptology ePrint Archive"/>
+</node>
+</node>
+</node>
+</node>
+<node TEXT="Intel could backdoor w/o being detected" ID="ID_1960615141" CREATED="1455196610840" MODIFIED="1455196621898" MOVED="1488477365909">
+<node TEXT="ease&#xa0;of backdooring&#xa0;this&#xa0;technology&#xa0;by&#xa0;Intel&#xa0;itself" ID="ID_1957143728" CREATED="1455196422626" MODIFIED="1455196459119" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/Thoughts%20on%20Intel&apos;s%20upcoming%20Software%20Guard%20Extensions%20(Part%202).pdf" MOVED="1455196623952">
+<pdf_annotation type="HIGHLIGHTED_TEXT" page="7" object_id="5776083156442897494" object_number="35" document_hash="1B6181B652F53EFEF992825E4D648969A9E3D19B13841156E4CD4E805749">
+    <pdf_title>The&#xa0;Invisible&#xa0;Things</pdf_title>
+</pdf_annotation>
+<attribute NAME="key" VALUE="sgx:thoughts"/>
+<attribute NAME="title" VALUE="Thoughts&#xa0;on&#xa0;Intel&apos;s&#xa0;upcoming&#xa0;Software&#xa0;Guard&#xa0;Extensions&#xa0;(Part&#xa0;2)"/>
+<attribute NAME="authors" VALUE="Joanna&#xa0;Rutkowska"/>
+<attribute NAME="year" VALUE="2013"/>
+<node TEXT="all&#xa0;they&#xa0;need&#xa0;to&#xa0;do&#xa0;is&#xa0;to&#xa0;give&#xa0;away&#xa0;the&#xa0;private&#xa0;signing&#xa0;keys&#xa0;used&#xa0;by&#xa0;SGX&#xa0;for&#xa0;remote attestation" FOLDED="true" ID="ID_927196651" CREATED="1455196422632" MODIFIED="1455196459061" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/Thoughts%20on%20Intel&apos;s%20upcoming%20Software%20Guard%20Extensions%20(Part%202).pdf" MOVED="1455196552342">
+<pdf_annotation type="HIGHLIGHTED_TEXT" page="7" object_id="6909369081100078276" object_number="36" document_hash="1B6181B652F53EFEF992825E4D648969A9E3D19B13841156E4CD4E805749">
+    <pdf_title>The&#xa0;Invisible&#xa0;Things</pdf_title>
+</pdf_annotation>
+<attribute NAME="key" VALUE="sgx:thoughts"/>
+<attribute NAME="title" VALUE="Thoughts&#xa0;on&#xa0;Intel&apos;s&#xa0;upcoming&#xa0;Software&#xa0;Guard&#xa0;Extensions&#xa0;(Part&#xa0;2)"/>
+<attribute NAME="authors" VALUE="Joanna&#xa0;Rutkowska"/>
+<attribute NAME="year" VALUE="2013"/>
+<node TEXT="for&#xa0;SGX&#xa0;there&#xa0;is&#xa0;additional&#xa0;Root&#xa0;of Trust&#xa0;which&#xa0;is&#xa0;used&#xa0;for&#xa0;remote&#xa0;attestation,&#xa0;and&#xa0;this&#xa0;is&#xa0;the&#xa0;private&#xa0;key(s)&#xa0;used&#xa0;for&#xa0;signing&#xa0;the&#xa0;Quote Messages" ID="ID_565648996" CREATED="1455196422604" MODIFIED="1455196538859" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/Thoughts%20on%20Intel&apos;s%20upcoming%20Software%20Guard%20Extensions%20(Part%202).pdf" MOVED="1455196555801">
+<pdf_annotation type="HIGHLIGHTED_TEXT" page="5" object_id="1027705741890748219" object_number="22" document_hash="1B6181B652F53EFEF992825E4D648969A9E3D19B13841156E4CD4E805749">
+    <pdf_title>The&#xa0;Invisible&#xa0;Things</pdf_title>
+</pdf_annotation>
+<attribute NAME="key" VALUE="sgx:thoughts"/>
+<attribute NAME="title" VALUE="Thoughts&#xa0;on&#xa0;Intel&apos;s&#xa0;upcoming&#xa0;Software&#xa0;Guard&#xa0;Extensions&#xa0;(Part&#xa0;2)"/>
+<attribute NAME="authors" VALUE="Joanna&#xa0;Rutkowska"/>
+<attribute NAME="year" VALUE="2013"/>
+</node>
+</node>
+<node TEXT="adversary&#xa0;can&#xa0;now&#xa0;emulate&#xa0;their execution&#xa0;step&#xa0;by&#xa0;step&#xa0;under&#xa0;a&#xa0;debugger&#xa0;and&#xa0;still&#xa0;pass&#xa0;the&#xa0;remote&#xa0;attestation" ID="ID_1713633351" CREATED="1455196422610" MODIFIED="1455196459067" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/Thoughts%20on%20Intel&apos;s%20upcoming%20Software%20Guard%20Extensions%20(Part%202).pdf" MOVED="1455196557450">
+<pdf_annotation type="HIGHLIGHTED_TEXT" page="5" object_id="8166428269507483072" object_number="23" document_hash="1B6181B652F53EFEF992825E4D648969A9E3D19B13841156E4CD4E805749">
+    <pdf_title>The&#xa0;Invisible&#xa0;Things</pdf_title>
+</pdf_annotation>
+<attribute NAME="key" VALUE="sgx:thoughts"/>
+<attribute NAME="title" VALUE="Thoughts&#xa0;on&#xa0;Intel&apos;s&#xa0;upcoming&#xa0;Software&#xa0;Guard&#xa0;Extensions&#xa0;(Part&#xa0;2)"/>
+<attribute NAME="authors" VALUE="Joanna&#xa0;Rutkowska"/>
+<attribute NAME="year" VALUE="2013"/>
+</node>
+</node>
+</node>
+</node>
+<node TEXT="side channel attacks (untrusted OS does resource mgmt)" ID="ID_1059390684" CREATED="1454321681038" MODIFIED="1454321690983" MOVED="1499859971962">
+<node TEXT="side channel attacks on SGX not mitigated" ID="ID_662811179" CREATED="1453986050148" MODIFIED="1453986050148" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/fTPM%20-%20Firmware%20based%20TPM%202.0%20Implementation.pdf">
+<pdf_annotation type="COMMENT" page="16" object_id="5799013789651382319" object_number="443" document_hash="69C6A682C37B542677FF2221CE848BC82AC67A6A33D0764AB0E1B8F83A5FA3">
+    <pdf_title>fTPM: A Firmware-based TPM 2.0 Implementation</pdf_title>
+</pdf_annotation>
+<attribute NAME="key" VALUE="Raj2015"/>
+<attribute NAME="year" VALUE="2015"/>
+<attribute NAME="title" VALUE="fTPM: A Firmware-based TPM 2.0 Implementation"/>
+<attribute NAME="authors" VALUE="Raj, Himanshu and Saroiu, Stefan and Wolman, Alec and Aigner, Ronald and Cox, Jeremiah and England, Paul and Fenner, Chris and Kinshumann, Kinshuman and Loeser, Jork and Mattoon, Dennis and others"/>
+</node>
+<node TEXT="OS can manage resources, incl. page tables" FOLDED="true" ID="ID_1700788914" CREATED="1454412484730" MODIFIED="1454412494075" MOVED="1454412514216">
+<node TEXT="untrusted OS is left with servicing resource management tasks. This opens up a large surface for side-channel attacks" ID="ID_428709565" CREATED="1453986050017" MODIFIED="1454412263050" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/fTPM%20-%20Firmware%20based%20TPM%202.0%20Implementation.pdf" MOVED="1454412496734">
+<pdf_annotation type="HIGHLIGHTED_TEXT" page="16" object_id="6518431403223644081" object_number="442" document_hash="69C6A682C37B542677FF2221CE848BC82AC67A6A33D0764AB0E1B8F83A5FA3">
+    <pdf_title>fTPM: A Firmware-based TPM 2.0 Implementation</pdf_title>
+</pdf_annotation>
+<attribute NAME="year" VALUE="2015"/>
+<attribute NAME="title" VALUE="fTPM: A Firmware-based TPM 2.0 Implementation"/>
+<attribute NAME="authors" VALUE="Raj, Himanshu and Saroiu, Stefan and Wolman, Alec and Aigner, Ronald and Cox, Jeremiah and England, Paul and Fenner, Chris and Kinshumann, Kinshuman and Loeser, Jork and Mattoon, Dennis and others"/>
+<attribute NAME="key" VALUE="Raj2015"/>
+</node>
+<node TEXT="orderly EPC paging requires cooperation (EBLOCK, EWB) - but this does not prevent OS from altering page tables" ID="ID_1373629266" CREATED="1454412262219" MODIFIED="1454412347498" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/Controlled%20Channel%20Attacks.pdf" MOVED="1454412507387">
+<pdf_annotation type="COMMENT" page="9" object_id="8847196854528255279" object_number="154" document_hash="4F541EE6D78D9DD1D078D96D72131D776A3BB9DDB56BE19DA547DFC65C4210F8">
+    <pdf_title>Controlled-Channel Attacks: Deterministic Side Channels for Untrusted Operating Systems</pdf_title>
+</pdf_annotation>
+<attribute NAME="key" VALUE="Xu2015"/>
+<attribute NAME="year" VALUE="2015"/>
+<attribute NAME="title" VALUE="Controlled-Channel Attacks: Deterministic Side Channels for Untrusted Operating Systems"/>
+<attribute NAME="authors" VALUE="Yuanzhong Xu and Weidong Cui and Marcus Peinado"/>
+</node>
+</node>
+<node TEXT="no-noise channel uses page faults due to memory accesses by the application" ID="ID_82133696" CREATED="1454256211083" MODIFIED="1454408837462" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/Controlled%20Channel%20Attacks.pdf">
+<pdf_annotation type="HIGHLIGHTED_TEXT" page="2" object_id="7353950851385835671" object_number="74" document_hash="4F541EE6D78D9DD1D078D96D72131D776A3BB9DDB56BE19DA547DFC65C4210F8">
+    <pdf_title>Controlled-Channel Attacks: Deterministic Side Channels for Untrusted Operating Systems</pdf_title>
+</pdf_annotation>
+<attribute NAME="key" VALUE="Xu2015"/>
+<attribute NAME="year" VALUE="2015"/>
+<attribute NAME="title" VALUE="Controlled-Channel Attacks: Deterministic Side Channels for Untrusted Operating Systems"/>
+<attribute NAME="authors" VALUE="Yuanzhong Xu and Weidong Cui and Marcus Peinado"/>
+</node>
+<node TEXT="obstacle to our attacks lies in the fact that we can observe memory accesses only at the granularity of 4 KB pages" ID="ID_715403198" CREATED="1454256211299" MODIFIED="1454408837502" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/Controlled%20Channel%20Attacks.pdf">
+<pdf_annotation type="HIGHLIGHTED_TEXT" page="2" object_id="7295615484583655802" object_number="76" document_hash="4F541EE6D78D9DD1D078D96D72131D776A3BB9DDB56BE19DA547DFC65C4210F8">
+    <pdf_title>Controlled-Channel Attacks: Deterministic Side Channels for Untrusted Operating Systems</pdf_title>
+</pdf_annotation>
+<attribute NAME="key" VALUE="Xu2015"/>
+<attribute NAME="year" VALUE="2015"/>
+<attribute NAME="title" VALUE="Controlled-Channel Attacks: Deterministic Side Channels for Untrusted Operating Systems"/>
+<attribute NAME="authors" VALUE="Yuanzhong Xu and Weidong Cui and Marcus Peinado"/>
+</node>
+<node TEXT="key idea for inferring a particular function invocation or data access is to identify page-fault sequences that are unique to the function (or data) access" ID="ID_1387755248" CREATED="1454256211399" MODIFIED="1454408837543" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/Controlled%20Channel%20Attacks.pdf">
+<pdf_annotation type="HIGHLIGHTED_TEXT" page="4" object_id="1395298574232569795" object_number="99" document_hash="4F541EE6D78D9DD1D078D96D72131D776A3BB9DDB56BE19DA547DFC65C4210F8">
+    <pdf_title>Controlled-Channel Attacks: Deterministic Side Channels for Untrusted Operating Systems</pdf_title>
+</pdf_annotation>
+<attribute NAME="key" VALUE="Xu2015"/>
+<attribute NAME="year" VALUE="2015"/>
+<attribute NAME="title" VALUE="Controlled-Channel Attacks: Deterministic Side Channels for Untrusted Operating Systems"/>
+<attribute NAME="authors" VALUE="Yuanzhong Xu and Weidong Cui and Marcus Peinado"/>
+</node>
+<node TEXT="attack against Haven succeeds, b/c SGX is not designed for legacy apps (enclave code is expected to be security sensitive, i.e. mitigate side channels)" ID="ID_1502383995" CREATED="1454256211315" MODIFIED="1454408837579" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/Controlled%20Channel%20Attacks.pdf">
+<pdf_annotation type="COMMENT" page="9" object_id="2121874893359401324" object_number="145" document_hash="4F541EE6D78D9DD1D078D96D72131D776A3BB9DDB56BE19DA547DFC65C4210F8">
+    <pdf_title>Controlled-Channel Attacks: Deterministic Side Channels for Untrusted Operating Systems</pdf_title>
+</pdf_annotation>
+<attribute NAME="key" VALUE="Xu2015"/>
+<attribute NAME="year" VALUE="2015"/>
+<attribute NAME="title" VALUE="Controlled-Channel Attacks: Deterministic Side Channels for Untrusted Operating Systems"/>
+<attribute NAME="authors" VALUE="Yuanzhong Xu and Weidong Cui and Marcus Peinado"/>
+</node>
+</node>
+</node>
+</node>
+<node TEXT="Content" STYLE_REF="paragraphs_drop_self" ID="ID_857510889" CREATED="1495543885991" MODIFIED="1495543895304">
+<node TEXT="Intel SGX is a technically exciting solution for trusted computing." ID="ID_1751677516" CREATED="1499852045303" MODIFIED="1499852071248"/>
+<node TEXT="Related to SGX, criticism has been voiced on multiple levels." ID="ID_1329458344" CREATED="1499852071383" MODIFIED="1499852104543"/>
+<node TEXT="It ranges from critique of trusted computing in general, debatable SGX design decisions up to security bugs." ID="ID_49832717" CREATED="1499852104871" MODIFIED="1499852193976"/>
+<node TEXT="\begin{description}" ID="ID_1676577849" CREATED="1499852203063" MODIFIED="1499852211537"/>
+<node TEXT="\item[Trusted computing in general:]" FOLDED="true" ID="ID_1171380944" CREATED="1499852217255" MODIFIED="1499853189833">
+<node TEXT="The release of a commercially available solution for trusted computing has re-triggered an existing debate. Intel SGX protects enclaves from any access by the operating system and hardware owner." ID="ID_1042141723" CREATED="1499853190095" MODIFIED="1499853191474" MOVED="1499857393098"/>
+<node TEXT="" ID="ID_1478425188" CREATED="1499852601711" MODIFIED="1499852601711" MOVED="1499857393104"/>
+<node TEXT="Depending on the standpoint this may be a desirable feature or an intrusion into personal rights." ID="ID_996020323" CREATED="1499852299431" MODIFIED="1499853023067" MOVED="1499857393111"/>
+<node TEXT="When deploying an application to the cloud, it may be desirable for the software vendor to keep certain data secret from the infrastructure provider and other tenants." ID="ID_1818979325" CREATED="1499852389183" MODIFIED="1499852981588" MOVED="1499857393118"/>
+<node TEXT="When developing a blu-ray player (see \autoref{section:sgx-apps}), it may be desirable for the blu-ray industry to keep decryption keys secret and guarantee that digital rights are not infringed." ID="ID_606336711" CREATED="1499852418279" MODIFIED="1499852984539" MOVED="1499857393124"/>
+<node TEXT="When executing an application as an end user or infrastructure provider, it may be desirable to be in full control of the application." ID="ID_130834011" CREATED="1499852482655" MODIFIED="1499852986759" MOVED="1499857393130"/>
+<node TEXT="" ID="ID_90577722" CREATED="1499852603487" MODIFIED="1499852603487" MOVED="1499857393135"/>
+<node TEXT="SGX turns the tables: the software vendor can -- to a certain degree -- take control of the hardware without interference of the hardware owner." ID="ID_1498236698" CREATED="1499852604487" MODIFIED="1499853065993" MOVED="1499857393141"/>
+<node TEXT="This gives cause to debates of ownership." ID="ID_290775852" CREATED="1499852639887" MODIFIED="1499852663808" MOVED="1499857393146"/>
+</node>
+<node TEXT="\item[Malware in enclaves:]" FOLDED="true" ID="ID_1718158893" CREATED="1499858691807" MODIFIED="1499858698640">
+<node TEXT="Enclaves are protected from the operating system and hardware owner. This can also be a disadvantage from a security standpoint. Malware protected in an enclave is an often stated example." ID="ID_1912630411" CREATED="1499852664023" MODIFIED="1499858771874" MOVED="1499858721621"/>
+<node TEXT="Two factors are in place that should prevent this." ID="ID_1621688747" CREATED="1499858772759" MODIFIED="1499858786097"/>
+<node TEXT="Firstly, enclaves cannot perform any input/output, so part of the malware would have to live in an (observable) unprotected wrapper.\cite{sgx-explained}[ch. 6.8]" ID="ID_161645023" CREATED="1499852928527" MODIFIED="1499852930226" MOVED="1499858721625"/>
+<node TEXT="Secondly, Intel has to white label enclave software so that it will be loaded by an Intel CPU. This is again a cause of criticism." ID="ID_351871068" CREATED="1499852871815" MODIFIED="1499852958274" MOVED="1499858721629"/>
+<node TEXT="" ID="ID_1260349053" CREATED="1499859025360" MODIFIED="1499859025360"/>
+<node TEXT="Intel only white labels the identity of an enclave -- its initial measurement. Because enclave code may be self-modifying it is possible to dynamically load encrypted malicious code into an enclave. This is a viable attack vector if an exploit is found for a white labelled enclave, into which malware could then be loaded." ID="ID_1914733350" CREATED="1499858557049" MODIFIED="1499859096666" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/Malware%20Guard%20Extension.pdf" MOVED="1499858721634">
+<attribute NAME="key" VALUE="schwarz2017malware"/>
+<attribute NAME="journal" VALUE="arXiv preprint arXiv:1702.08719"/>
+<attribute NAME="year" VALUE="2017"/>
+<attribute NAME="title" VALUE="Malware guard extension: Using SGX to conceal cache attacks"/>
+<attribute NAME="authors" VALUE="Schwarz, Michael and Weiser, Samuel and Gruss, Daniel and Maurice, Cl{\&apos;e}mentine and Mangard, Stefan"/>
 <pdf_annotation type="PDF_FILE" object_id="0" document_hash="8D5B869449E4283A5092AD669C1A5F0CB343490A2A0A08926855FD6BB5317C">
     <pdf_title>Malware Guard Extension: Using SGX to Conceal Cache Attacks (Extended Version)</pdf_title>
 </pdf_annotation>
+</node>
+<node TEXT="AsyncShock is a tool that can help exploit enclave bugs. It targets synchronisation bugs in enclaves. Using such a bug AsyncShock helps to extract secrets or modify the control flow in that enclave. Enclaves approved by Intel could then be misused." ID="ID_1238669801" CREATED="1499858916976" MODIFIED="1499859057235" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/AsyncShock.pdf">
+<attribute NAME="key" VALUE="Weichbrodt2016"/>
+<attribute NAME="year" VALUE="2016"/>
+<attribute NAME="title" VALUE="Asyncshock: Exploiting synchronisation bugs in intel sgx enclaves"/>
+<attribute NAME="authors" VALUE="Weichbrodt, Nico and Kurmus, Anil and Pietzuch, Peter and Kapitza, R{\&quot;u}diger"/>
+<pdf_annotation type="PDF_FILE" object_id="0" document_hash="8C49C373D9F470D8D7B6D9A4D6499B72E282F2A8CC8215DC503EEDC0B5153">
+    <pdf_title>AsyncShock: Exploiting Synchronisation Bugs in Intel SGX Enclaves</pdf_title>
+</pdf_annotation>
+</node>
+</node>
+<node TEXT="\item[Side-channel attacks:]" FOLDED="true" ID="ID_140344652" CREATED="1499857374895" MODIFIED="1499859314704" MOVED="1499859293600">
+<node TEXT="The following attacks have been successfully identified. The first two have been successfully carried out." ID="ID_1298323933" CREATED="1499857621848" MODIFIED="1499860239785"/>
+<node TEXT="\begin{itemize}" ID="ID_1098508864" CREATED="1499857746384" MODIFIED="1499857749984"/>
+<node TEXT="\item Memory access pattern analysis of well-known libraries in an enclave. This is done with the help of the operating system, which simulates page faults to detect memory access. As a result, images processed by a library within an enclave were re-constructed. Oblivious RAM techniques and address space layout randomisation are proposed as counter-measures." ID="ID_784348582" CREATED="1499857754368" MODIFIED="1499860302529" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/Controlled%20Channel%20Attacks.pdf">
+<attribute NAME="key" VALUE="Xu2015"/>
+<attribute NAME="year" VALUE="2015"/>
+<attribute NAME="title" VALUE="Controlled-Channel Attacks: Deterministic Side Channels for Untrusted Operating Systems"/>
+<attribute NAME="authors" VALUE="Yuanzhong Xu and Weidong Cui and Marcus Peinado"/>
+<pdf_annotation type="PDF_FILE" object_id="0" document_hash="4F541EE6D78D9DD1D078D96D72131D776A3BB9DDB56BE19DA547DFC65C4210F8">
+    <pdf_title>Controlled-Channel Attacks: Deterministic Side Channels for Untrusted Operating Systems</pdf_title>
+</pdf_annotation>
+</node>
+<node TEXT="\item Cache Prime+Probe attack on co-located enclaves. Based on knowledge of instruction execution times, the authors could measure memory access times from within an enclave and deduce cached values. With this technique an RSA key was extracted from another enclave running a standard RSA implementation. The authors propose several countermeasures. This attack highlights the problem of having protected malware inside an SGX enclave." ID="ID_1818357587" CREATED="1499857771416" MODIFIED="1499860316058" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/Malware%20Guard%20Extension.pdf">
 <attribute NAME="key" VALUE="schwarz2017malware"/>
-<attribute NAME="title" VALUE="Malware guard extension: Using SGX to conceal cache attacks"/>
-<attribute NAME="authors" VALUE="Schwarz, Michael and Weiser, Samuel and Gruss, Daniel and Maurice, Cl{\&apos;e}mentine and Mangard, Stefan"/>
 <attribute NAME="journal" VALUE="arXiv preprint arXiv:1702.08719"/>
 <attribute NAME="year" VALUE="2017"/>
+<attribute NAME="title" VALUE="Malware guard extension: Using SGX to conceal cache attacks"/>
+<attribute NAME="authors" VALUE="Schwarz, Michael and Weiser, Samuel and Gruss, Daniel and Maurice, Cl{\&apos;e}mentine and Mangard, Stefan"/>
+<pdf_annotation type="PDF_FILE" object_id="0" document_hash="8D5B869449E4283A5092AD669C1A5F0CB343490A2A0A08926855FD6BB5317C">
+    <pdf_title>Malware Guard Extension: Using SGX to Conceal Cache Attacks (Extended Version)</pdf_title>
+</pdf_annotation>
+</node>
+<node TEXT="\item Hyper-threading execution timing. SGX does not prevent the use of hyper-threading. If an enclave shares a logical processor with a snooping thread that thread could find out what instructions the enclave is executing as well as its memory access patterns. The authors propose to disable hyper-threading. Also the hyper-threading status should be included in the enclave measurement so that it can be attested." ID="ID_1173647836" CREATED="1499859795328" MODIFIED="1499860123395" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/SGX%20Explained.pdf">
+<attribute NAME="key" VALUE="sgx-explained"/>
+<attribute NAME="journal" VALUE="IACR Cryptology ePrint Archive"/>
+<attribute NAME="year" VALUE="2016"/>
+<attribute NAME="title" VALUE="Intel SGX Explained."/>
+<attribute NAME="authors" VALUE="Costan, Victor and Devadas, Srinivas"/>
+<pdf_annotation type="PDF_FILE" object_id="0" document_hash="6247F24926CEBCBDD607A743A7A36C17F76C70D179FFDDC5BE417C9354C5B">
+    <pdf_title>Intel SGX Explained</pdf_title>
+</pdf_annotation>
+</node>
+<node TEXT="\end{itemize}" ID="ID_960745123" CREATED="1499857750111" MODIFIED="1499857758809"/>
+</node>
+<node TEXT="\textbf{Result of a side-channel attack on SGX.} By analysing the memory access pattern of an enclave running \textit{libjpeg} certain features of the input image could be reconstructed. Reprinted from" FOLDED="true" ID="ID_172988213" CREATED="1499860517824" MODIFIED="1499860988074" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/Controlled%20Channel%20Attacks.pdf">
+<attribute NAME="image_row" VALUE=""/>
+<attribute NAME="key" VALUE="Xu2015"/>
+<attribute NAME="year" VALUE="2015"/>
+<attribute NAME="title" VALUE="Controlled-Channel Attacks: Deterministic Side Channels for Untrusted Operating Systems"/>
+<attribute NAME="authors" VALUE="Yuanzhong Xu and Weidong Cui and Marcus Peinado"/>
+<pdf_annotation type="PDF_FILE" object_id="0" document_hash="4F541EE6D78D9DD1D078D96D72131D776A3BB9DDB56BE19DA547DFC65C4210F8">
+    <pdf_title>Controlled-Channel Attacks: Deterministic Side Channels for Untrusted Operating Systems</pdf_title>
+</pdf_annotation>
+<node TEXT="original" ID="ID_508330768" CREATED="1499860527344" MODIFIED="1499860970746">
+<attribute NAME="image" VALUE="sgx page fault 1"/>
+<attribute NAME="image_width" VALUE="0.4\textwidth"/>
+<hook URI="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/thesis/content/images/sgx%20page%20fault%201.png" SIZE="1.0" NAME="ExternalObject"/>
+</node>
+<node TEXT="recovered" ID="ID_105623928" CREATED="1499860531713" MODIFIED="1499860968024">
+<attribute NAME="image" VALUE="sgx page fault 2"/>
+<attribute NAME="image_width" VALUE="0.4\textwidth"/>
+<hook URI="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/thesis/content/images/sgx%20page%20fault%202.png" SIZE="1.0" NAME="ExternalObject"/>
 </node>
 </node>
+<node TEXT="\item[Vulnerability of architectural enclaves:]" FOLDED="true" ID="ID_782196997" CREATED="1499859260512" MODIFIED="1499859271505">
+<node TEXT="SGX mainly consists of hardware: CPU microcode and memory encryption engine." ID="ID_1187633218" CREATED="1499856651631" MODIFIED="1499856694537" MOVED="1499859279263"/>
+<node TEXT="To make it feature-complete and usable, Intel adds some architectural enclaves (launch enclave, quoting enclave) and platform software (PSW)." ID="ID_306094396" CREATED="1499856694719" MODIFIED="1499857018179" MOVED="1499859279275"/>
+<node TEXT="This keeps the hardware TCB small at the cost of a larger software TCB." ID="ID_119641221" CREATED="1499856734264" MODIFIED="1499859344056" MOVED="1499859279284"/>
+<node TEXT="The quoting enclave access the CPU&apos;s attestation key." ID="ID_321415880" CREATED="1499859377088" MODIFIED="1499859465062"/>
+<node TEXT="A bug in the quoting enclave could expose that attestation key." ID="ID_1321164653" CREATED="1499859466088" MODIFIED="1499859483505"/>
+<node TEXT="Intel&apos;s EPID group signature scheme allows revocation of individual keys. But a quoting enclave bug would potentially expose the attestation keys of all SGX CPUs until a patched quoting enclave is deployed." ID="ID_1629332890" CREATED="1499859483663" MODIFIED="1499859654802" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/intel%20epid.pdf">
+<attribute NAME="key" VALUE="c"/>
+<attribute NAME="year" VALUE="2016"/>
+<attribute NAME="title" VALUE="Intel Software Guard Extensions: EPID Provisioning and Attestation Services"/>
+<attribute NAME="authors" VALUE="Simon Johnson and Vinnie Scarlata and Carlos Rozas and Ernie Brickell and Frank Mckeen"/>
+<pdf_annotation type="PDF_FILE" object_id="0" document_hash="D727245BB6BFE240574D1AB894B76CF5F75EB41E6E44DA35497DAA5673DAAA61">
+    <pdf_title>Intel&#xae; Software Guard Extensions: EPID Provisioning and Attestation Services</pdf_title>
+</pdf_annotation>
 </node>
-<node TEXT="Content" STYLE_REF="paragraphs_drop_self" ID="ID_857510889" CREATED="1495543885991" MODIFIED="1495543895304"/>
+<node TEXT="Intel is thus under constant pressure to keep it&apos;s architectural enclaves secured against any new attacks." ID="ID_1159889792" CREATED="1499859602992" MODIFIED="1499859636858"/>
+<node TEXT="An exploit for an architectural enclave would also allow malware to be loaded into a protected enclave as described earlier." ID="ID_1914496271" CREATED="1499859673704" MODIFIED="1499859701912"/>
 </node>
-<node TEXT="Applications" LOCALIZED_STYLE_REF="default" FOLDED="true" ID="ID_54364136" CREATED="1495056099163" MODIFIED="1495605981929" MOVED="1499677177805">
+<node TEXT="\item[Intel controls enclave launch:]" FOLDED="true" ID="ID_27203074" CREATED="1499853074719" MODIFIED="1499857361824">
+<node TEXT="Enclave launching, like attestation, is also implemented in software in an architectural enclave." ID="ID_149498049" CREATED="1499859710272" MODIFIED="1499859751896" MOVED="1499859710828"/>
+<node TEXT="This lets Intel control which enclaves may be launched." ID="ID_1496527821" CREATED="1499856932984" MODIFIED="1499859756209" MOVED="1499857397912"/>
+<node TEXT="An enclave can be loaded either if it is authored by Intel (e.g. the launch enclave) or if the launch enclave grants the launch." ID="ID_1663962426" CREATED="1499853183871" MODIFIED="1499856990224" MOVED="1499857397920"/>
+<node TEXT="Based on Intel&apos;s patents for SGX, Costan et al. surmise that ``the Launch Enclave is intended to be an enclave licensing mechanism that allows Intel to force itself as an intermediary in the distribution of all enclave software&apos;&apos;." ID="ID_520209509" CREATED="1499853340183" MODIFIED="1499853394024" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/SGX%20Explained.pdf" MOVED="1499857397927">
+<attribute NAME="key" VALUE="sgx-explained"/>
+<attribute NAME="journal" VALUE="IACR Cryptology ePrint Archive"/>
+<attribute NAME="year" VALUE="2016"/>
+<attribute NAME="title" VALUE="Intel SGX Explained."/>
+<attribute NAME="authors" VALUE="Costan, Victor and Devadas, Srinivas"/>
+<pdf_annotation type="PDF_FILE" object_id="0" document_hash="6247F24926CEBCBDD607A743A7A36C17F76C70D179FFDDC5BE417C9354C5B">
+    <pdf_title>Intel SGX Explained</pdf_title>
+</pdf_annotation>
+</node>
+<node TEXT="" ID="ID_516221404" CREATED="1499857001303" MODIFIED="1499857001303" MOVED="1499857397932"/>
+<node TEXT="This allows Intel to prevent malicious software from being loaded." ID="ID_6860923" CREATED="1499853397640" MODIFIED="1499853411322" MOVED="1499857397938"/>
+<node TEXT="This also allows Intel to control which software is loaded in general." ID="ID_1791148432" CREATED="1499853411455" MODIFIED="1499857271305" MOVED="1499857397943"/>
+<node TEXT="The benefits for Intel from a business standpoint are obvious." ID="ID_1766310969" CREATED="1499853427887" MODIFIED="1499853505921" MOVED="1499857397949"/>
+<node TEXT="This level of control over an end-users hardware can be seen as ``software security equivalent to the Net Neutrality debates&apos;&apos;." ID="ID_1069483865" CREATED="1499853443207" MODIFIED="1499857290299" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/SGX%20Explained.pdf" MOVED="1499857397954">
+<attribute NAME="key" VALUE="sgx-explained"/>
+<attribute NAME="journal" VALUE="IACR Cryptology ePrint Archive"/>
+<attribute NAME="year" VALUE="2016"/>
+<attribute NAME="title" VALUE="Intel SGX Explained."/>
+<attribute NAME="authors" VALUE="Costan, Victor and Devadas, Srinivas"/>
+<pdf_annotation type="PDF_FILE" object_id="0" document_hash="6247F24926CEBCBDD607A743A7A36C17F76C70D179FFDDC5BE417C9354C5B">
+    <pdf_title>Intel SGX Explained</pdf_title>
+</pdf_annotation>
+</node>
+</node>
+<node TEXT="\end{description}" ID="ID_1258675258" CREATED="1499852211663" MODIFIED="1499852216480"/>
+</node>
+</node>
+<node TEXT="Applications" LOCALIZED_STYLE_REF="default" ID="ID_54364136" CREATED="1495056099163" MODIFIED="1499852587728" MOVED="1499677177805">
 <icon BUILTIN="button_cancel"/>
+<attribute NAME="label" VALUE="section:sgx-apps" OBJECT="java.net.URI|section:sgx-apps"/>
 <node TEXT="mindmap" STYLE_REF="drop" ID="ID_683607288" CREATED="1495543887981" MODIFIED="1495543899209" MOVED="1495543900065">
 <node TEXT="password manager" FOLDED="true" ID="ID_1516569567" CREATED="1488543545015" MODIFIED="1488543546888" MOVED="1488543547957">
 <node TEXT="SGX Password Manager.pdf" FOLDED="true" ID="ID_681809639" CREATED="1464687317980" MODIFIED="1464687317980" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/SGX%20Password%20Manager.pdf">
@@ -6674,7 +6890,7 @@
 </node>
 <node TEXT="Content" STYLE_REF="paragraphs_drop_self" ID="ID_144019763" CREATED="1495543885991" MODIFIED="1495543895304"/>
 </node>
-<node TEXT="Conclusion" FOLDED="true" ID="ID_95827774" CREATED="1495605990114" MODIFIED="1499778437188" MOVED="1499677177811">
+<node TEXT="Conclusion" ID="ID_95827774" CREATED="1495605990114" MODIFIED="1499778437188" MOVED="1499677177811">
 <icon BUILTIN="button_cancel"/>
 <node TEXT="mindmap" STYLE_REF="drop" ID="ID_904359524" CREATED="1495543887981" MODIFIED="1495543899209" MOVED="1495543900065"/>
 <node TEXT="Content" STYLE_REF="paragraphs_drop_self" ID="ID_1945155415" CREATED="1495543885991" MODIFIED="1495543895304"/>
@@ -7297,28 +7513,14 @@
 <node TEXT="Content" STYLE_REF="paragraphs_drop_self" ID="ID_1430142372" CREATED="1495543885991" MODIFIED="1495543895304"/>
 </node>
 </node>
-<node TEXT="Case Studies" LOCALIZED_STYLE_REF="default" FOLDED="true" POSITION="left" ID="ID_1694829803" CREATED="1495056334495" MODIFIED="1496135435969">
+<node TEXT="Intel SGX Helper Library" POSITION="left" ID="ID_985966487" CREATED="1499849260039" MODIFIED="1499849372472">
 <icon BUILTIN="button_cancel"/>
-<edge COLOR="#00ffff"/>
-<node TEXT="mindmap" STYLE_REF="drop" FOLDED="true" ID="ID_1003668344" CREATED="1495056637021" MODIFIED="1495056641461" MOVED="1495056639228">
-<node TEXT="scenario" STYLE_REF="LastHeading" FOLDED="true" ID="ID_1659885195" CREATED="1488874854903" MODIFIED="1489493201863" MOVED="1495056643340">
-<node TEXT="hosted database" ID="ID_5357256" CREATED="1488874863376" MODIFIED="1488874867748"/>
-<node TEXT="semi-trusted provider" ID="ID_1114771820" CREATED="1488874873016" MODIFIED="1488874885798" MOVED="1488874902254"/>
-<node TEXT="perform processing on encrypted data" ID="ID_1161943438" CREATED="1488874868149" MODIFIED="1488874872782"/>
-<node TEXT="receive encrypted results" ID="ID_1261663640" CREATED="1488874893127" MODIFIED="1488874900788"/>
-<node TEXT="protect against" FOLDED="true" ID="ID_876285329" CREATED="1488874903586" MODIFIED="1488874911580">
-<node TEXT="provider" ID="ID_781556091" CREATED="1488874912722" MODIFIED="1488874914759"/>
-<node TEXT="other tenants" ID="ID_1576382623" CREATED="1488874916121" MODIFIED="1488874919278"/>
+<edge COLOR="#7c7c00"/>
+<attribute NAME="label" VALUE="chapter:sgx-lib" OBJECT="java.net.URI|chapter:sgx-lib"/>
 </node>
-</node>
-</node>
-<node TEXT="Introduction" STYLE_REF="paragraphs_drop_self" FOLDED="true" ID="ID_1305807963" CREATED="1495056503993" MODIFIED="1495606117047" MOVED="1495056507122">
+<node TEXT="KissDB Case Study" LOCALIZED_STYLE_REF="default" FOLDED="true" POSITION="left" ID="ID_1828467557" CREATED="1487266728477" MODIFIED="1499849274431" MOVED="1499849267642">
 <icon BUILTIN="button_cancel"/>
-<node TEXT="\todo{scenario, why databases}" ID="ID_742761690" CREATED="1495056512794" MODIFIED="1495056522692"/>
-<node TEXT="\todo{step-wise approach: KissDB, SQLite}" ID="ID_828430207" CREATED="1495056524578" MODIFIED="1499765826284"/>
-</node>
-<node TEXT="KissDB" LOCALIZED_STYLE_REF="default" FOLDED="true" ID="ID_1828467557" CREATED="1487266728477" MODIFIED="1495606117050" MOVED="1495056340940">
-<icon BUILTIN="button_cancel"/>
+<edge COLOR="#ff0000"/>
 <node TEXT="mindmap" STYLE_REF="drop" FOLDED="true" ID="ID_1225266071" CREATED="1495056387537" MODIFIED="1495056428681" MOVED="1495606044858">
 <font SIZE="10"/>
 <node TEXT="how are SGX primitives used" ID="ID_1857650861" CREATED="1487266740758" MODIFIED="1487266745422" MOVED="1495056395063"/>
@@ -7379,6 +7581,20 @@
 </node>
 </node>
 </node>
+<node TEXT="Introduction" ID="ID_1929202403" CREATED="1499849307743" MODIFIED="1499849311815">
+<node TEXT="mindmap" STYLE_REF="drop" ID="ID_908096557" CREATED="1499849312503" MODIFIED="1499849329352">
+<node TEXT="why databases" ID="ID_650366938" CREATED="1499849316263" MODIFIED="1499849318616">
+<node TEXT="hosted database" ID="ID_5357256" CREATED="1488874863376" MODIFIED="1488874867748" MOVED="1499849322127"/>
+<node TEXT="semi-trusted provider" ID="ID_1114771820" CREATED="1488874873016" MODIFIED="1488874885798" MOVED="1499849322130"/>
+<node TEXT="perform processing on encrypted data" ID="ID_1161943438" CREATED="1488874868149" MODIFIED="1488874872782" MOVED="1499849322135"/>
+<node TEXT="receive encrypted results" ID="ID_1261663640" CREATED="1488874893127" MODIFIED="1488874900788" MOVED="1499849322139"/>
+<node TEXT="protect against" FOLDED="true" ID="ID_876285329" CREATED="1488874903586" MODIFIED="1488874911580" MOVED="1499849322144">
+<node TEXT="provider" ID="ID_781556091" CREATED="1488874912722" MODIFIED="1488874914759"/>
+<node TEXT="other tenants" ID="ID_1576382623" CREATED="1488874916121" MODIFIED="1488874919278"/>
+</node>
+</node>
+</node>
+</node>
 <node TEXT="Security Objectives" LOCALIZED_STYLE_REF="default" FOLDED="true" ID="ID_446058686" CREATED="1489652109451" MODIFIED="1495606029119" MOVED="1495056347122">
 <icon BUILTIN="button_cancel"/>
 <node TEXT="mindmap" STYLE_REF="drop" ID="ID_1314275276" CREATED="1495543887981" MODIFIED="1495543899209" MOVED="1495543900065"/>
@@ -7405,10 +7621,11 @@
 <node TEXT="Content" STYLE_REF="paragraphs_drop_self" ID="ID_1327466363" CREATED="1495543885991" MODIFIED="1495543895304"/>
 </node>
 </node>
-<node TEXT="SQLite" LOCALIZED_STYLE_REF="default" FOLDED="true" ID="ID_650094352" CREATED="1487266723741" MODIFIED="1495606117045" MOVED="1495056340956">
+<node TEXT="SQLite Case Study" LOCALIZED_STYLE_REF="default" POSITION="left" ID="ID_650094352" CREATED="1487266723741" MODIFIED="1499849278543" MOVED="1499849269320">
 <icon BUILTIN="button_cancel"/>
+<edge COLOR="#0000ff"/>
 <node TEXT="use chapter summaries" STYLE_REF="drop" ID="ID_1019464221" CREATED="1489606031650" MODIFIED="1489606057294" MOVED="1489606046735"/>
-<node TEXT="mindmap" STYLE_REF="drop" FOLDED="true" ID="ID_1016892487" CREATED="1495056722285" MODIFIED="1495056727902">
+<node TEXT="mindmap" STYLE_REF="drop" ID="ID_1016892487" CREATED="1495056722285" MODIFIED="1495056727902">
 <node TEXT="architecture" LOCALIZED_STYLE_REF="default" FOLDED="true" ID="ID_579244616" CREATED="1487266776070" MODIFIED="1495606090871" MOVED="1495056734692">
 <node TEXT="sqlite.png" ID="ID_291756350" CREATED="1489583049669" MODIFIED="1489606391963" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/SQLite%20Database%20System%20Design%20and%20Implementation.pdf" MOVED="1489583090710">
 <hook URI="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/_data/150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/default_files/sqlite.png" SIZE="0.6688963" NAME="ExternalObject"/>
@@ -7741,9 +7958,7 @@
 <node TEXT="page cache" FOLDED="true" ID="ID_1314122761" CREATED="1489584158608" MODIFIED="1489584160336">
 <node TEXT="inside or outside enclave" ID="ID_695569022" CREATED="1489584160832" MODIFIED="1489584164816"/>
 <node TEXT="encrypted or unencrypted" ID="ID_1155404408" CREATED="1489584165000" MODIFIED="1489584168288"/>
-<node TEXT="decision: max. size of enclave, access times" ID="ID_1232745016" CREATED="1489584171488" MODIFIED="1489584207323">
-<arrowlink SHAPE="CUBIC_CURVE" COLOR="#000000" WIDTH="2" TRANSPARENCY="80" FONT_SIZE="9" FONT_FAMILY="SansSerif" DESTINATION="ID_1631535374" STARTINCLINATION="1007;0;" ENDINCLINATION="1007;0;" STARTARROW="NONE" ENDARROW="DEFAULT"/>
-</node>
+<node TEXT="decision: max. size of enclave, access times" ID="ID_1232745016" CREATED="1489584171488" MODIFIED="1489584207323"/>
 </node>
 </node>
 </node>
@@ -7834,6 +8049,16 @@
 </node>
 <node TEXT="isolation guarantees" ID="ID_1672944214" CREATED="1489604388996" MODIFIED="1489604395725"/>
 </node>
+<node TEXT="in SGX SDK" ID="ID_1020064220" CREATED="1499843925191" MODIFIED="1499843928464">
+<node TEXT="monotonic counters in integrity protected external SQLite DB" ID="ID_1612766592" CREATED="1499843930359" MODIFIED="1499843940976">
+<node TEXT="https://github.com/01org/linux-sgx/blob/1115c195cd60d5ab2b80c12d07e21663e5aa8030/psw/ae/pse/pse_op/monotonic_counter_database_sqlite_rpdb.cpp" ID="ID_1881613481" CREATED="1499843928844" MODIFIED="1499843928844" LINK="https://github.com/01org/linux-sgx/blob/1115c195cd60d5ab2b80c12d07e21663e5aa8030/psw/ae/pse/pse_op/monotonic_counter_database_sqlite_rpdb.cpp" MOVED="1499843942160"/>
+<node TEXT="// Read the current RPDATA from CSME to check whether the cached vm db is not of date." ID="ID_425623720" CREATED="1499844369663" MODIFIED="1499844370911"/>
+<node TEXT="https://github.com/01org/linux-sgx/search?q=sqlite" ID="ID_207757479" CREATED="1499843973655" MODIFIED="1499843974529"/>
+<node TEXT="multiplexes hardware MC provided by manageability engine" ID="ID_1054830750" CREATED="1499844325584" MODIFIED="1499844334216"/>
+<node TEXT="hash tree" ID="ID_1697699307" CREATED="1499844542703" MODIFIED="1499844544247"/>
+<node TEXT="platform software" ID="ID_1129608501" CREATED="1499844631231" MODIFIED="1499844635039"/>
+</node>
+</node>
 </node>
 <node TEXT="Architecture" LOCALIZED_STYLE_REF="default" FOLDED="true" ID="ID_1929909970" CREATED="1495056659260" MODIFIED="1495606109913">
 <icon BUILTIN="button_cancel"/>
@@ -7861,8 +8086,7 @@
 <node TEXT="Content" STYLE_REF="paragraphs_drop_self" ID="ID_436734461" CREATED="1495543885991" MODIFIED="1495543895304"/>
 </node>
 </node>
-</node>
-<node TEXT="Evaluation" LOCALIZED_STYLE_REF="default" FOLDED="true" POSITION="left" ID="ID_1795238683" CREATED="1488545273313" MODIFIED="1496135435976" MOVED="1488822767733">
+<node TEXT="Evaluation" STYLE_REF="drop" FOLDED="true" POSITION="left" ID="ID_1795238683" CREATED="1488545273313" MODIFIED="1499849349213" MOVED="1488822767733">
 <icon BUILTIN="button_cancel"/>
 <edge COLOR="#ff0000"/>
 <node TEXT="mindmap" STYLE_REF="drop" FOLDED="true" ID="ID_753567492" CREATED="1495056824288" MODIFIED="1495056829776" MOVED="1495056827521">

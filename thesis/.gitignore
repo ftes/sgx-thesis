@@ -16,3 +16,6 @@ body.tex
 
 # generated pdf
 thesis.pdf
+
+# tmp files
+*.bak

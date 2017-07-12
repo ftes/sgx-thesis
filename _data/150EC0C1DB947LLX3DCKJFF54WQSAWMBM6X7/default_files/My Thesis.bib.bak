@@ -127,13 +127,13 @@
   timestamp = {2016.03.05}
 }
 
-@OTHER{trustzone:tee,
+@ONLINE{trustzone:tee,
   author = {ARM},
-  file = {:../../../literature_repository/Trustzone Development of TEE and Secure Monitor Code.pdf:PDF},
   title = {Development of TEE and Secure Monitor Code},
+  year = {2016},
   url = {http://www.arm.com/products/processors/technologies/trustzone/tee-smc.php},
   urldate = {2016-01-27},
-  year = {2016}
+  file = {:../../../literature_repository/Trustzone Development of TEE and Secure Monitor Code.pdf:PDF}
 }
 
 @TECHREPORT{trustzone:globalplatform,
@@ -502,16 +502,6 @@
   publisher = {RFC Editor}
 }
 
-@MANUAL{b,
-  author = {Intel Corporation},
-  title = {Intel Software Guards Extensions Programming Reference},
-  year = {2014},
-  date = {October 2014},
-  version = {329298-002US},
-  url = {https://software.intel.com/sites/default/files/managed/48/88/329298-002.pdf},
-  file = {:/home/fteschke/sgx2017/literature_repository/SGX programming reference.pdf:PDF}
-}
-
 @ARTICLE{sgx-explained,
   author = {Costan, Victor and Devadas, Srinivas},
   title = {Intel SGX Explained.},
@@ -690,6 +680,17 @@
   timestamp = {2016.01.27}
 }
 
+@TECHREPORT{GlobalPlatform,
+  author = {{GlobalPlatform Inc.}},
+  title = {TEE System Architecture},
+  year = {2017},
+  date = {January 2017},
+  version = {1.1},
+  url = {https://www.globalplatform.org/specificationsdevice.asp},
+  abstract = {1.1},
+  file = {:/home/fteschke/sgx2017/literature_repository/TEE System Architecture.pdf:PDF}
+}
+
 @ARTICLE{Gueron,
   author = {Gueron, Shay},
   title = {A Memory Encryption Engine Suitable for General Purpose Processors.},
@@ -778,6 +779,22 @@
   publisher = {ACM}
 }
 
+@MANUAL{Corporation,
+  author = {Intel},
+  title = {Intel SGX Evaluation SDK User's Guide for Windows OS},
+  version = {1.1},
+  url = {https://software.intel.com/sites/default/files/managed/b1/ae/Intel-SGX-SDK-Developer-Guide-for-Windows-OS.pdf},
+  file = {:/home/fteschke/sgx2017/literature_repository/SGX SDK Guide.pdf:PDF}
+}
+
+@MANUAL{sgx-dev,
+  author = {Intel},
+  title = {Intel SGX Developer Guide},
+  url = {https://01.org/intel-software-guard-extensions/documentation/intel-sgx-developer-guide},
+  abstract = {Intel(R) Software Guard Extensions (Intel(R) SGX)},
+  file = {:/home/fteschke/sgx2017/literature_repository/SGX Developer Guide Linux.pdf:PDF}
+}
+
 @OTHER{sawtooth,
   author = {Intel},
   file = {:../../../literature_repository/Intel Ledger Docs Architecture.pdf:PDF},
@@ -797,6 +814,16 @@
   url = {http://www.intel.com/content/dam/www/public/us/en/documents/manuals/64-ia-32-architectures-optimization-manual.pdf},
   file = {:../../../literature_repository\\Intel SDM.pdf:PDF},
   timestamp = {2016.02.02}
+}
+
+@MANUAL{b,
+  author = {Intel},
+  title = {Intel Software Guards Extensions Programming Reference},
+  year = {2014},
+  date = {October 2014},
+  version = {329298-002US},
+  url = {https://software.intel.com/sites/default/files/managed/48/88/329298-002.pdf},
+  file = {:/home/fteschke/sgx2017/literature_repository/SGX programming reference.pdf:PDF}
 }
 
 @TECHREPORT{intel:trust-in-cloud,
@@ -1762,16 +1789,5 @@
   pages = {203--216},
   doi = {10.1145/2043556.2043576},
   file = {:../../../literature_repository/CloudVisor - Retrofitting VM protection in Multi Tenant Clouds using Nested Virtualization.pdf:PDF}
-}
-
-@TECHREPORT{GlobalPlatform,
-  title = {TEE System Architecture},
-  institution = {GlobalPlatform, Inc.},
-  year = {2017},
-  date = {January 2017},
-  version = {1.1},
-  url = {https://www.globalplatform.org/specificationsdevice.asp},
-  abstract = {1.1},
-  file = {:/home/fteschke/sgx2017/literature_repository/TEE System Architecture.pdf:PDF}
 }
 
