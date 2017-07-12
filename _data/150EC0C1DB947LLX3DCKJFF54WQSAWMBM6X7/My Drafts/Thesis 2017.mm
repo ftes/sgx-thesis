@@ -6986,7 +6986,7 @@
 <node TEXT="SGX can be used to harden existing applications, which is the topic of this thesis." ID="ID_277356659" CREATED="1499865978737" MODIFIED="1499866002042"/>
 <node TEXT="Secure ZooKeeper uses enclaves to protect the data managed by ZooKeeper." ID="ID_1700491540" CREATED="1499866204441" MODIFIED="1499866319369"/>
 <node TEXT="When the data is stored outside of the enclave, e.g. on disk, it is encrypted." ID="ID_204377492" CREATED="1499866319704" MODIFIED="1499866352786"/>
-<node TEXT="The java native interface (JNI) is used to bind the Java implementation of ZooKeeper to the enclaves." ID="ID_808626981" CREATED="1499866225872" MODIFIED="1499866391579" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/SecureKeeper.pdf">
+<node TEXT="The Java native interface (JNI) is used to bind the Java implementation of ZooKeeper to the enclaves." ID="ID_808626981" CREATED="1499866225872" MODIFIED="1499867570322" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/SecureKeeper.pdf">
 <attribute NAME="key" VALUE="Brenner2016"/>
 <attribute NAME="year" VALUE="2016"/>
 <attribute NAME="title" VALUE="SecureKeeper: Confidential ZooKeeper using Intel SGX"/>
@@ -7016,10 +7016,19 @@
 <node TEXT="\end{description}" ID="ID_1340304870" CREATED="1499861383528" MODIFIED="1499861388448"/>
 </node>
 </node>
-<node TEXT="Conclusion" ID="ID_95827774" CREATED="1495605990114" MODIFIED="1499778437188" MOVED="1499677177811">
-<icon BUILTIN="button_cancel"/>
+<node TEXT="Conclusion" FOLDED="true" ID="ID_95827774" CREATED="1495605990114" MODIFIED="1499867329005" MOVED="1499677177811">
+<icon BUILTIN="button_ok"/>
 <node TEXT="mindmap" STYLE_REF="drop" ID="ID_904359524" CREATED="1495543887981" MODIFIED="1495543899209" MOVED="1495543900065"/>
-<node TEXT="Content" STYLE_REF="paragraphs_drop_self" ID="ID_1945155415" CREATED="1495543885991" MODIFIED="1495543895304"/>
+<node TEXT="Content" STYLE_REF="paragraphs_drop_self" FOLDED="true" ID="ID_1945155415" CREATED="1495543885991" MODIFIED="1495543895304">
+<node TEXT="SGX is the first trusted computing solution that is likely to see widespread adoption." ID="ID_1283663236" CREATED="1499867053792" MODIFIED="1499867083409" MOVED="1499867296172"/>
+<node TEXT="It is shipped with many current Intel desktop processors\footnote{\url{https://github.com/ayeks/SGX-hardware}}." ID="ID_1220353350" CREATED="1499867084024" MODIFIED="1499867152490"/>
+<node TEXT="SGX has potential use-cases for both end-consumer devices and cloud infrastructure." ID="ID_1092135395" CREATED="1499867160127" MODIFIED="1499867175993"/>
+<node TEXT="Its main advantage when compared to other solutions is the achievable processing speed. SGX provides module-level TEEs and has an small overall TCB." ID="ID_744293523" CREATED="1499867176176" MODIFIED="1499867499803" MOVED="1499867448281"/>
+<node TEXT="" ID="ID_1539836736" CREATED="1499867504808" MODIFIED="1499867504808"/>
+<node TEXT="There are many potential security issues and weighty criticism regarding Intel&apos;s design decisions and the influence Intel thus has over end-user hardware." ID="ID_856863719" CREATED="1499867231665" MODIFIED="1499867524523" MOVED="1499867301276"/>
+<node TEXT="Only time can tell how well SGX as a technology will be received and whether it can live up to its expectations." ID="ID_1859137509" CREATED="1499867274640" MODIFIED="1499867361165" MOVED="1499867302611"/>
+<node TEXT="The continued security of the architectural enclaves seems to be a crucial factor." ID="ID_773096886" CREATED="1499867361559" MODIFIED="1499867389841"/>
+</node>
 </node>
 </node>
 <node TEXT="Related Work" LOCALIZED_STYLE_REF="default" POSITION="left" ID="ID_123293925" CREATED="1487267824221" MODIFIED="1496135435963" MOVED="1492616823153">
