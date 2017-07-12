@@ -1,4 +1,4 @@
-personal_ws-1.1 en 123 
+personal_ws-1.1 en 137 
 runtime
 NoHype
 hypercalls
@@ -15,6 +15,8 @@ blu
 TCB
 Arasu
 PSW
+JNI
+PoET
 EPID
 LDS
 readonly
@@ -28,6 +30,7 @@ BSI
 Devadas
 LFS
 edl
+MapReduce
 FS
 recrypt
 RSA
@@ -46,13 +49,17 @@ MIEE
 parallelised
 SPM
 UHD
+Cyberlink's
 Yao's
 TLR
 cryptographically
 HAPs
+Sawtooth
+validator
 DoS
 PowerDVD
 RDTSC
+DRM
 ECREATE
 Fides
 TrustZone's
@@ -61,6 +68,7 @@ STR
 TPM
 EPC
 GlobalPlatform
+attestable
 SVM
 CPUID
 SGX's
@@ -68,10 +76,12 @@ untrusted
 TrustVisor
 MMU
 LSS
+VC
 Virt
 runtimes
 libc
 un
+crypto
 EGETREPORT
 MOV
 VM
@@ -80,11 +90,14 @@ sandboxing
 trustlets
 VMCALL
 EINIT
+Hadoop
 SLDT
 VMM
+ZooKeeper
 cryptographic
 hypervisor
 VMs
+Primecoin
 InkTag
 ERESUME
 decrypted
@@ -96,6 +109,7 @@ OUTSB
 SYSENTER
 INSD
 OUTSD
+Cyberlink
 TrustZone
 RDPMC
 homomorphic

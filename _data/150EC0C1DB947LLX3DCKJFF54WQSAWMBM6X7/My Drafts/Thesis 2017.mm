@@ -537,7 +537,7 @@
 <node TEXT="and not yet fast enough for general purpose computing" ID="ID_1322776109" CREATED="1487265921610" MODIFIED="1487266027196" MOVED="1488475916646"/>
 </node>
 </node>
-<node TEXT="Introduction" STYLE_REF="paragraphs_drop_self" FOLDED="true" ID="ID_821555939" CREATED="1495031921641" MODIFIED="1496928026498" MOVED="1495031923168">
+<node TEXT="Introduction" STYLE_REF="paragraphs_drop_self" ID="ID_821555939" CREATED="1495031921641" MODIFIED="1496928026498" MOVED="1495031923168">
 <icon BUILTIN="button_ok"/>
 <node TEXT="There are several different ways in which cryptographic principles can be used to implement the concept of a secure container." ID="ID_544485861" CREATED="1495030228538" MODIFIED="1495030293686" MOVED="1495031930156"/>
 <node TEXT="\begin{description}" LOCALIZED_STYLE_REF="default" ID="ID_958111314" CREATED="1492069069527" MODIFIED="1492617214994" MOVED="1495031930168"/>
@@ -5257,18 +5257,27 @@
 <pdf_annotation type="COMMENT" page="1" object_id="6057177719962871582" object_number="54" document_hash="E66D7113365571E239A4C6E7749466D7EC9A6341E8F877D2CE8A48E9DC75">
     <pdf_title>SecureKeeper: Confidential ZooKeeper using Intel SGX</pdf_title>
 </pdf_annotation>
+<attribute NAME="year" VALUE="2016"/>
+<attribute NAME="title" VALUE="SecureKeeper: Confidential ZooKeeper using Intel SGX"/>
+<attribute NAME="authors" VALUE="Brenner, Stefan and Wulf, Colin and Goltzsche, David and Weichbrodt, Nico and Lorenz, Matthias and Fetzer, Christof and Pietzuch, Peter and Kapitza, R{\&quot;u}diger"/>
 </node>
 <node TEXT="Figure 3: Performance impact of enclave memory size on&#xa;random reads and writes " FOLDED="true" ID="ID_1733541159" CREATED="1488544188167" MODIFIED="1488544188167" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/SecureKeeper.pdf" MOVED="1499691821373">
 <pdf_annotation type="HIGHLIGHTED_TEXT" page="4" object_id="2327942215386919637" object_number="119" document_hash="E66D7113365571E239A4C6E7749466D7EC9A6341E8F877D2CE8A48E9DC75">
     <pdf_title>SecureKeeper: Confidential ZooKeeper using Intel SGX</pdf_title>
 </pdf_annotation>
-<node TEXT="sgx memory performance.png" ID="ID_605526240" CREATED="1488544200616" MODIFIED="1488544263661">
+<attribute NAME="year" VALUE="2016"/>
+<attribute NAME="title" VALUE="SecureKeeper: Confidential ZooKeeper using Intel SGX"/>
+<attribute NAME="authors" VALUE="Brenner, Stefan and Wulf, Colin and Goltzsche, David and Weichbrodt, Nico and Lorenz, Matthias and Fetzer, Christof and Pietzuch, Peter and Kapitza, R{\&quot;u}diger"/>
+<node TEXT="sgx memory performance.png" ID="ID_605526240" CREATED="1488544200616" MODIFIED="1499866391577" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/SecureKeeper.pdf">
 <hook URI="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/_data/150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/default_files/sgx%20memory%20performance.png" SIZE="1.0" NAME="ExternalObject"/>
 <attribute NAME="image" VALUE="sgx memory performance"/>
 <attribute NAME="key" VALUE="Brenner2016"/>
 <attribute NAME="year" VALUE="2016"/>
 <attribute NAME="title" VALUE="SecureKeeper: Confidential ZooKeeper using Intel SGX"/>
 <attribute NAME="authors" VALUE="Brenner, Stefan and Wulf, Colin and Goltzsche, David and Weichbrodt, Nico and Lorenz, Matthias and Fetzer, Christof and Pietzuch, Peter and Kapitza, R{\&quot;u}diger"/>
+<pdf_annotation type="PDF_FILE" object_id="0" document_hash="E66D7113365571E239A4C6E7749466D7EC9A6341E8F877D2CE8A48E9DC75">
+    <pdf_title>SecureKeeper: Confidential ZooKeeper using Intel SGX</pdf_title>
+</pdf_annotation>
 </node>
 </node>
 </node>
@@ -5346,7 +5355,7 @@
 <node TEXT="However, the Intel SDK can apparently not be used to build this complex kind of interaction." ID="ID_501911684" CREATED="1499783316253" MODIFIED="1499783346173"/>
 </node>
 </node>
-<node TEXT="Known Criticism" LOCALIZED_STYLE_REF="default" ID="ID_806492894" CREATED="1495056086762" MODIFIED="1499860154106" MOVED="1499694114337">
+<node TEXT="Known Criticism" LOCALIZED_STYLE_REF="default" FOLDED="true" ID="ID_806492894" CREATED="1495056086762" MODIFIED="1499860154106" MOVED="1499694114337">
 <icon BUILTIN="button_ok"/>
 <attribute NAME="label" VALUE="section:sgx-criticism" OBJECT="java.net.URI|section:sgx-criticism"/>
 <node TEXT="mindmap" STYLE_REF="drop" FOLDED="true" ID="ID_358637021" CREATED="1495543887981" MODIFIED="1495543899209" MOVED="1495543900065">
@@ -6670,7 +6679,7 @@
 </node>
 </node>
 </node>
-<node TEXT="Content" STYLE_REF="paragraphs_drop_self" ID="ID_857510889" CREATED="1495543885991" MODIFIED="1495543895304">
+<node TEXT="Content" STYLE_REF="paragraphs_drop_self" FOLDED="true" ID="ID_857510889" CREATED="1495543885991" MODIFIED="1495543895304">
 <node TEXT="Intel SGX is a technically exciting solution for trusted computing." ID="ID_1751677516" CREATED="1499852045303" MODIFIED="1499852071248"/>
 <node TEXT="Related to SGX, criticism has been voiced on multiple levels." ID="ID_1329458344" CREATED="1499852071383" MODIFIED="1499852104543"/>
 <node TEXT="It ranges from critique of trusted computing in general, debatable SGX design decisions up to security bugs." ID="ID_49832717" CREATED="1499852104871" MODIFIED="1499852193976"/>
@@ -6816,23 +6825,12 @@
 <node TEXT="\end{description}" ID="ID_1258675258" CREATED="1499852211663" MODIFIED="1499852216480"/>
 </node>
 </node>
-<node TEXT="Applications" LOCALIZED_STYLE_REF="default" ID="ID_54364136" CREATED="1495056099163" MODIFIED="1499852587728" MOVED="1499677177805">
-<icon BUILTIN="button_cancel"/>
+<node TEXT="Applications" LOCALIZED_STYLE_REF="default" FOLDED="true" ID="ID_54364136" CREATED="1495056099163" MODIFIED="1499867010729" MOVED="1499677177805">
+<icon BUILTIN="button_ok"/>
 <attribute NAME="label" VALUE="section:sgx-apps" OBJECT="java.net.URI|section:sgx-apps"/>
-<node TEXT="mindmap" STYLE_REF="drop" ID="ID_683607288" CREATED="1495543887981" MODIFIED="1495543899209" MOVED="1495543900065">
-<node TEXT="password manager" FOLDED="true" ID="ID_1516569567" CREATED="1488543545015" MODIFIED="1488543546888" MOVED="1488543547957">
-<node TEXT="SGX Password Manager.pdf" FOLDED="true" ID="ID_681809639" CREATED="1464687317980" MODIFIED="1464687317980" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/SGX%20Password%20Manager.pdf">
-<pdf_annotation type="PDF_FILE" object_id="0" document_hash="C1D82F198761DD52FC7EBB11156FE837DAB578914CB4C92F8D52C97184B">
-    <pdf_title>Hardening Password Managers with Intel &#xae; Software Guard Extensions</pdf_title>
-</pdf_annotation>
-<node TEXT="intel TrueKey: password manager&#xd;&#xa;- uses SGX where available (seal data, protect keys in memory)" ID="ID_538084548" CREATED="1464687317995" MODIFIED="1464687317995" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/SGX%20Password%20Manager.pdf">
-<pdf_annotation type="COMMENT" page="1" object_id="2030341658519307032" object_number="14" document_hash="C1D82F198761DD52FC7EBB11156FE837DAB578914CB4C92F8D52C97184B">
-    <pdf_title>Hardening Password Managers with Intel &#xae; Software Guard Extensions</pdf_title>
-</pdf_annotation>
-</node>
-</node>
-</node>
-<node TEXT="Intel ledger proof of time" FOLDED="true" ID="ID_1854911849" CREATED="1488543584264" MODIFIED="1488543588241">
+<node TEXT="mindmap" STYLE_REF="drop" FOLDED="true" ID="ID_683607288" CREATED="1495543887981" MODIFIED="1495543899209" MOVED="1495543900065">
+<node TEXT="done" FOLDED="true" ID="ID_1848504123" CREATED="1499865212417" MODIFIED="1499865213416">
+<node TEXT="Intel ledger proof of time" FOLDED="true" ID="ID_1854911849" CREATED="1488543584264" MODIFIED="1488543588241" MOVED="1499865217071">
 <node TEXT="Instead of a Proof-of-Work competition amongst nodes, Sawtooth&#xa;Lake implements a Proof-of-Elapsed-Time (PoET) algorithm for distributed consensus.&#xa;PoET relies upon a trusted execution environment, Intel&#x2019;s Software Guard Extensions&#xa;(SGX), to generate fair, verifiable random wait timers and signed certificates of timer&#xa;expiration. This mechanism substantially reduces the computation and energy cost of&#xa;ensuring fair distributed consensus" ID="ID_683953419" CREATED="1464687363431" MODIFIED="1488817602324" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/Intel%20Ledger%20Docs%20Architecture.pdf" MOVED="1488543591795">
 <pdf_annotation type="HIGHLIGHTED_TEXT" page="3" object_id="4400201816714276869" object_number="22" document_hash="822CA8DC4111DF9713C98026FB4DF959BB94C9492D65E80D8EB759A90F9323A">
     <pdf_title>Architecture Overview</pdf_title>
@@ -6852,7 +6850,19 @@
 <attribute NAME="authors" VALUE="Intel"/>
 </node>
 </node>
-<node TEXT="multi party computation" FOLDED="true" ID="ID_638985313" CREATED="1487266652636" MODIFIED="1487266656093">
+<node TEXT="password manager" FOLDED="true" ID="ID_1516569567" CREATED="1488543545015" MODIFIED="1488543546888" MOVED="1499865219719">
+<node TEXT="SGX Password Manager.pdf" ID="ID_681809639" CREATED="1464687317980" MODIFIED="1464687317980" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/SGX%20Password%20Manager.pdf">
+<pdf_annotation type="PDF_FILE" object_id="0" document_hash="C1D82F198761DD52FC7EBB11156FE837DAB578914CB4C92F8D52C97184B">
+    <pdf_title>Hardening Password Managers with Intel &#xae; Software Guard Extensions</pdf_title>
+</pdf_annotation>
+<node TEXT="intel TrueKey: password manager&#xd;&#xa;- uses SGX where available (seal data, protect keys in memory)" ID="ID_538084548" CREATED="1464687317995" MODIFIED="1464687317995" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/SGX%20Password%20Manager.pdf">
+<pdf_annotation type="COMMENT" page="1" object_id="2030341658519307032" object_number="14" document_hash="C1D82F198761DD52FC7EBB11156FE837DAB578914CB4C92F8D52C97184B">
+    <pdf_title>Hardening Password Managers with Intel &#xae; Software Guard Extensions</pdf_title>
+</pdf_annotation>
+</node>
+</node>
+</node>
+<node TEXT="multi party computation" FOLDED="true" ID="ID_638985313" CREATED="1487266652636" MODIFIED="1487266656093" MOVED="1499865448229">
 <node TEXT="parties&#xa0;agree&#xa0;on&#xa0;a&#xa0;piece&#xa0;of&#xa0;software&#xa0;executing&#xa0;the&#xa0;computation" ID="ID_1792814200" CREATED="1453287866744" MODIFIED="1453883867763" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/MPC%20with%20SGX.pdf" MOVED="1488543293525">
 <pdf_annotation type="HIGHLIGHTED_TEXT" page="1" object_id="2815277902639551755" object_number="13" document_hash="411B7519491E0A97A5CC59E31C6FE947D6027A1CC9DA53572F7F8C4614C9BA">
     <pdf_title>Intel&#xa0;SGX:&#xa0;The&#xa0;Death&#xa0;of&#xa0;MPC?</pdf_title>
@@ -6874,21 +6884,137 @@
 </pdf_annotation>
 </node>
 </node>
-<node TEXT="Haven" ID="ID_971724397" CREATED="1499683859104" MODIFIED="1499683862307"/>
-<node TEXT="VC3" ID="ID_1833314866" CREATED="1499683862464" MODIFIED="1499683865532"/>
-<node TEXT="SCONE" ID="ID_94359009" CREATED="1499683885000" MODIFIED="1499776897066" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/Scone.pdf">
-<attribute NAME="key" VALUE="Arnautov2016"/>
+<node TEXT="Secure Zookeeper" FOLDED="true" ID="ID_595822160" CREATED="1499683886986" MODIFIED="1499683892486" MOVED="1499866454250">
+<node TEXT="tailored enclaves for Zookeeper" ID="ID_804969013" CREATED="1488544188110" MODIFIED="1488544188111" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/SecureKeeper.pdf" MOVED="1499862638391">
+<pdf_annotation type="COMMENT" page="1" object_id="7167287578242888723" object_number="52" document_hash="E66D7113365571E239A4C6E7749466D7EC9A6341E8F877D2CE8A48E9DC75">
+    <pdf_title>SecureKeeper: Confidential ZooKeeper using Intel SGX</pdf_title>
+</pdf_annotation>
+<attribute NAME="key" VALUE="Brenner2016"/>
 <attribute NAME="year" VALUE="2016"/>
-<attribute NAME="title" VALUE="SCONE: Secure linux containers with Intel SGX"/>
-<attribute NAME="authors" VALUE="Arnautov, Sergei and Trach, Bohdan and Gregor, Franz and Knauth, Thomas and Martin, Andre and Priebe, Christian and Lind, Joshua and Muthukumaran, Divya and O&#x2019;Keeffe, Daniel and Stillwell, Mark L and others"/>
-<pdf_annotation type="PDF_FILE" object_id="0" document_hash="3A2B26F7CD779BEBA81FEC65DCC6B13B145925A3EB10F0C4E0DF7275FE1">
-    <pdf_title>SCONE: Secure Linux Containers with Intel SGX</pdf_title>
+<attribute NAME="title" VALUE="SecureKeeper: Confidential ZooKeeper using Intel SGX"/>
+<attribute NAME="authors" VALUE="Brenner, Stefan and Wulf, Colin and Goltzsche, David and Weichbrodt, Nico and Lorenz, Matthias and Fetzer, Christof and Pietzuch, Peter and Kapitza, R{\&quot;u}diger"/>
+</node>
+<node TEXT="only handles data (no processing)" ID="ID_1518860309" CREATED="1488874564636" MODIFIED="1488874586481" MOVED="1499862638398"/>
+<node TEXT="memory kept outside enclave (performance)" ID="ID_870715808" CREATED="1488874593314" MODIFIED="1488874613780" MOVED="1499862638403"/>
+</node>
+<node TEXT="PowerDVD UHD blu-ray\url{http://de.cyberlink.com/support/faq-content.do?id=19147}" ID="ID_1294386516" CREATED="1499759005592" MODIFIED="1499766147253" LINK="http://de.cyberlink.com/support/faq-content.do?id=19147" MOVED="1499866456182">
+<attribute NAME="key" VALUE="powerdvd"/>
+<attribute NAME="title" VALUE="Was sind die Mindestsystemvoraussetzungen f&#xfc;r die Ultra HD Blu-ray-Filmwiedergabe?"/>
+<attribute NAME="authors" VALUE="Cyberlink"/>
+</node>
+<node TEXT="VC3" FOLDED="true" ID="ID_1833314866" CREATED="1499683862464" MODIFIED="1499683865532" MOVED="1499867001770">
+<node TEXT="Fig. 3: High-level concept of a VC3 enhanced MapReduce job: code and data&#xa;are always kept encrypted when outside the processor chip." LOCALIZED_STYLE_REF="default" ID="ID_1618836695" CREATED="1488543358125" MODIFIED="1489493631083" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/Microsoft%20VC3%20Trustworthy%20Data%20Analytics%20in%20the%20Cloud%20using%20SGX.pdf" MOVED="1499862665239">
+<pdf_annotation type="HIGHLIGHTED_TEXT" page="4" object_id="3130307985882187719" object_number="129" document_hash="777E5AB174B4C1E73D0378D17578084C1D45629308414E9EC83EC77EEFCBE1">
+    <pdf_title>: Trustworthy Data Analytics in the Cloud using SGX</pdf_title>
+</pdf_annotation>
+<attribute NAME="key" VALUE="Schuster2015"/>
+<attribute NAME="year" VALUE="2015"/>
+<attribute NAME="title" VALUE="VC3: Trustworthy data analytics in the cloud using SGX"/>
+<attribute NAME="authors" VALUE="Schuster, Felix and Costa, Manuel and Fournet, C{\&apos;e}dric and Gkantsidis, Christos and Peinado, Marcus and Mainar-Ruiz, Gloria and Russinovich, Mark"/>
+<node TEXT="vc3.png" ID="ID_1761474331" CREATED="1488543369886" MODIFIED="1488543391792" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/Microsoft%20VC3%20Trustworthy%20Data%20Analytics%20in%20the%20Cloud%20using%20SGX.pdf">
+<hook URI="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/_data/150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/default_files/vc3.png" SIZE="1.0" NAME="ExternalObject"/>
+<attribute NAME="key" VALUE="Schuster2015"/>
+<attribute NAME="year" VALUE="2015"/>
+<attribute NAME="title" VALUE="VC3: Trustworthy data analytics in the cloud using SGX"/>
+<attribute NAME="authors" VALUE="Schuster, Felix and Costa, Manuel and Fournet, C{\&apos;e}dric and Gkantsidis, Christos and Peinado, Marcus and Mainar-Ruiz, Gloria and Russinovich, Mark"/>
+<attribute NAME="image" VALUE="vc3"/>
+<pdf_annotation type="PDF_FILE" object_id="0" document_hash="777E5AB174B4C1E73D0378D17578084C1D45629308414E9EC83EC77EEFCBE1">
+    <pdf_title>: Trustworthy Data Analytics in the Cloud using SGX</pdf_title>
 </pdf_annotation>
 </node>
-<node TEXT="Secure Zookeeper" ID="ID_595822160" CREATED="1499683886986" MODIFIED="1499683892486"/>
-<node TEXT="PowerDVD UHD blu-ray\url{http://de.cyberlink.com/support/faq-content.do?id=19147}" ID="ID_1294386516" CREATED="1499759005592" MODIFIED="1499766147253" LINK="http://de.cyberlink.com/support/faq-content.do?id=19147" MOVED="1499766149198"/>
 </node>
-<node TEXT="Content" STYLE_REF="paragraphs_drop_self" ID="ID_144019763" CREATED="1495543885991" MODIFIED="1495543895304"/>
+<node TEXT="1. send nodes enclave code&#xa;&#xa;2. enclave sends quotes with encrypted symmetric key&#xa;&#xa;3. user verifies and sends encrypted keys (job credentials)&#xa;&#xa;4. enclave decrypts and runs private code" ID="ID_1091922998" CREATED="1453467919079" MODIFIED="1453883867122" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/Microsoft%20VC3%20Trustworthy%20Data%20Analytics%20in%20the%20Cloud%20using%20SGX.pdf">
+<pdf_annotation type="COMMENT" page="6" object_id="682993061916065250" object_number="153" document_hash="777E5AB174B4C1E73D0378D17578084C1D45629308414E9EC83EC77EEFCBE1">
+    <pdf_title>: Trustworthy Data Analytics in the Cloud using SGX</pdf_title>
+</pdf_annotation>
+<attribute NAME="year" VALUE="2015"/>
+<attribute NAME="title" VALUE="VC3: Trustworthy data analytics in the cloud using SGX"/>
+<attribute NAME="authors" VALUE="Schuster, Felix and Costa, Manuel and Fournet, C{\&apos;e}dric and Gkantsidis, Christos and Peinado, Marcus and Mainar-Ruiz, Gloria and Russinovich, Mark"/>
+<attribute NAME="key" VALUE="Schuster2015"/>
+</node>
+</node>
+</node>
+</node>
+<node TEXT="Content" STYLE_REF="paragraphs_drop_self" FOLDED="true" ID="ID_144019763" CREATED="1495543885991" MODIFIED="1495543895304">
+<node TEXT="Leaving the (well-founded) criticism behind, SGX has the potential to be the foundation for innovative applications." ID="ID_1994267622" CREATED="1499861281216" MODIFIED="1499861582536" MOVED="1499861575201"/>
+<node TEXT="This section highlights some interesting SGX-based applications from research." ID="ID_492049202" CREATED="1499861350208" MODIFIED="1499861597169"/>
+<node TEXT="It does not describe such applications that themselves can be considered frameworks or infrastructure layers for securing other applications such as SCONE or Haven. These are discussed in \autoref{section:sgx-hardening}." ID="ID_110180016" CREATED="1499861447056" MODIFIED="1499861503994"/>
+<node TEXT="\begin{description}" ID="ID_1142331261" CREATED="1499861368848" MODIFIED="1499861383360"/>
+<node TEXT="\item[Proof of elapsed time:]" FOLDED="true" ID="ID_1448411725" CREATED="1499861391888" MODIFIED="1499863241178">
+<node TEXT="Bitcoin is the prototypical ledger-based crypto-currency." ID="ID_878352987" CREATED="1499862694848" MODIFIED="1499863275137" MOVED="1499865273234"/>
+<node TEXT="Its security revolves around the notion of proof-of-work." ID="ID_1836284802" CREATED="1499862713168" MODIFIED="1499862725137" MOVED="1499865273245"/>
+<node TEXT="As long as the assumption holds that the majority of processing power in the Bitcoin network belongs to honest users, the majority of the network eventually behaves as expected." ID="ID_1051235374" CREATED="1499862725239" MODIFIED="1499862849524" MOVED="1499865273253">
+<attribute NAME="key" VALUE="nakamoto2008bitcoin"/>
+<attribute NAME="year" VALUE="2008"/>
+<attribute NAME="title" VALUE="Bitcoin: A peer-to-peer electronic cash system"/>
+<attribute NAME="authors" VALUE="Nakamoto, Satoshi"/>
+</node>
+<node TEXT="" ID="ID_130502226" CREATED="1499862851911" MODIFIED="1499862851911" MOVED="1499865273258"/>
+<node TEXT="The proof-of-work to be brought forward in Bitcoin is the solution of a hash puzzle. Participants (miners) must hash a fixed input combined with an input of their choice so that the resulting hash satisfies a certain criteria." ID="ID_148196853" CREATED="1499862857226" MODIFIED="1499863903236" MOVED="1499865273265"/>
+<node TEXT="The first miner to find a solution to the puzzle wins." ID="ID_203871180" CREATED="1499862968103" MODIFIED="1499862996128" MOVED="1499865273270"/>
+<node TEXT="Competing in the network requires investment of processing power and thus money." ID="ID_8052086" CREATED="1499862996640" MODIFIED="1499863058792" MOVED="1499865273274"/>
+<node TEXT="" ID="ID_972083232" CREATED="1499863256192" MODIFIED="1499863256192" MOVED="1499865273278"/>
+<node TEXT="The downside is that this processing power is invested in finding a solution to a random puzzle. This solution has no inherent value outside of Bitcoin." ID="ID_331211373" CREATED="1499863059168" MODIFIED="1499863973201" MOVED="1499865273283"/>
+<node TEXT="Alternative crypto-currencies such as Primecoin use puzzles with solutions that have an inherent value, such as finding new prime numbers." ID="ID_1916667021" CREATED="1499863097816" MODIFIED="1499864006108" MOVED="1499865273287">
+<attribute NAME="key" VALUE="king2013primecoin"/>
+<attribute NAME="journal" VALUE="July 7th"/>
+<attribute NAME="year" VALUE="2013"/>
+<attribute NAME="title" VALUE="Primecoin: Cryptocurrency with prime number proof-of-work"/>
+<attribute NAME="authors" VALUE="King, Sunny"/>
+</node>
+<node TEXT="" ID="ID_1121572685" CREATED="1499863372112" MODIFIED="1499863372112" MOVED="1499865273291"/>
+<node TEXT="A different approach based on SGX enclaves is proposed in Intel&apos;s Sawtooth\footnote{\url{https://intelledger.github.io}} project." ID="ID_1210248514" CREATED="1499863375873" MODIFIED="1499863832752" MOVED="1499865273295"/>
+<node TEXT="Sawtooth introduces proof-of-elapsed-time (PoET) as an alternative to proof-of-work." ID="ID_1984325994" CREATED="1499863538353" MODIFIED="1499863589658" MOVED="1499865273299"/>
+<node TEXT="Essentially, Intel CPUs are used as an attestable source of true random numbers. If this number is viewed as a wait time, the participant to generate the lowest wait time wins." ID="ID_359563617" CREATED="1499864100816" MODIFIED="1499864194310" LINK="https://intelledger.github.io/introduction.html#proof-of-elapsed-time-poet" MOVED="1499865273303">
+<attribute NAME="key" VALUE="Intel"/>
+<attribute NAME="title" VALUE="Intel Sawtooth"/>
+<attribute NAME="authors" VALUE="Intel"/>
+</node>
+</node>
+<node TEXT="\item[Digital rights management (DRM):]" FOLDED="true" ID="ID_951757571" CREATED="1499865454984" MODIFIED="1499865776027">
+<node TEXT="The current version of Cyberlink&apos;s PowerDVD requires SGX hardware for playback of ultra high definition (UHD) blu-rays." ID="ID_1044376464" CREATED="1499865483457" MODIFIED="1499865718419" LINK="http://de.cyberlink.com/support/faq-content.do?id=19147" MOVED="1499865761901">
+<attribute NAME="key" VALUE="powerdvd"/>
+<attribute NAME="title" VALUE="Was sind die Mindestsystemvoraussetzungen f&#xfc;r die Ultra HD Blu-ray-Filmwiedergabe?"/>
+<attribute NAME="authors" VALUE="Cyberlink"/>
+</node>
+<node TEXT="This is an example of how SGX can be used on consumer devices rather than cloud infrastructure." ID="ID_1177830256" CREATED="1499865760000" MODIFIED="1499865761185" MOVED="1499865780600"/>
+<node TEXT="Cyberlink does not explain what SGX is used for. It is likely that an enclave handles the decryption of the blu-rays content." ID="ID_1342908426" CREATED="1499865787673" MODIFIED="1499865835938"/>
+<node TEXT="The decryption key would then only provided to attested enclaves by the Cyberlink server." ID="ID_294479514" CREATED="1499865836135" MODIFIED="1499865947051"/>
+</node>
+<node TEXT="\item[Secure ZooKeeper:]" FOLDED="true" ID="ID_1198544376" CREATED="1499861414848" MODIFIED="1499866176633">
+<node TEXT="ZooKeeper\footnote{\url{https://zookeeper.apache.org/}} is a key-value store used to provide configuration, naming, synchronisation etc. in distributed applications (e.g. micro-service architectures)." ID="ID_1070130646" CREATED="1499866036473" MODIFIED="1499866412297" MOVED="1499866287483"/>
+<node TEXT="SGX can be used to harden existing applications, which is the topic of this thesis." ID="ID_277356659" CREATED="1499865978737" MODIFIED="1499866002042"/>
+<node TEXT="Secure ZooKeeper uses enclaves to protect the data managed by ZooKeeper." ID="ID_1700491540" CREATED="1499866204441" MODIFIED="1499866319369"/>
+<node TEXT="When the data is stored outside of the enclave, e.g. on disk, it is encrypted." ID="ID_204377492" CREATED="1499866319704" MODIFIED="1499866352786"/>
+<node TEXT="The java native interface (JNI) is used to bind the Java implementation of ZooKeeper to the enclaves." ID="ID_808626981" CREATED="1499866225872" MODIFIED="1499866391579" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/SecureKeeper.pdf">
+<attribute NAME="key" VALUE="Brenner2016"/>
+<attribute NAME="year" VALUE="2016"/>
+<attribute NAME="title" VALUE="SecureKeeper: Confidential ZooKeeper using Intel SGX"/>
+<attribute NAME="authors" VALUE="Brenner, Stefan and Wulf, Colin and Goltzsche, David and Weichbrodt, Nico and Lorenz, Matthias and Fetzer, Christof and Pietzuch, Peter and Kapitza, R{\&quot;u}diger"/>
+<pdf_annotation type="PDF_FILE" object_id="0" document_hash="E66D7113365571E239A4C6E7749466D7EC9A6341E8F877D2CE8A48E9DC75">
+    <pdf_title>SecureKeeper: Confidential ZooKeeper using Intel SGX</pdf_title>
+</pdf_annotation>
+</node>
+<node TEXT="Secure ZooKeeper is revisited in \autoref{section:sgx-hardening}." ID="ID_1539402063" CREATED="1499866002184" MODIFIED="1499866172642"/>
+</node>
+<node TEXT="\item[Secure Hadoop map-reduce:]" FOLDED="true" ID="ID_1200794013" CREATED="1499862671568" MODIFIED="1499863784920">
+<node TEXT="VC3 is a prototype of Microsoft Research that ``runs distributed MapReduce computations in the cloud while keeping their code and data secret.&apos;&apos;" ID="ID_1876953859" CREATED="1499866534680" MODIFIED="1499866882698"/>
+<node TEXT="Hadoop is used as the underlying map-reduce engine." ID="ID_956606489" CREATED="1499866577320" MODIFIED="1499866899459"/>
+<node TEXT="The map and reduce jobs run within enclaves." ID="ID_1313741719" CREATED="1499866599993" MODIFIED="1499866925209"/>
+<node TEXT="All other software components such as Hadoop or the operating system are kept outside of the TCB." ID="ID_1560260688" CREATED="1499866617224" MODIFIED="1499866661746"/>
+<node TEXT="Enclave code, input data and the results remain encrypted when outside of enclaves." ID="ID_1156084768" CREATED="1499866764704" MODIFIED="1499866936985"/>
+<node TEXT="VC3 achieves full Hadoop compatibility by performing all setup steps ``in-band&apos;&apos; as map-reduce jobs: distributing enclave code, performing attestation, and distributing data decryption keys." ID="ID_322840088" CREATED="1499866666857" MODIFIED="1499866975145" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/Microsoft%20VC3%20Trustworthy%20Data%20Analytics%20in%20the%20Cloud%20using%20SGX.pdf">
+<attribute NAME="key" VALUE="Schuster2015"/>
+<attribute NAME="year" VALUE="2015"/>
+<attribute NAME="title" VALUE="VC3: Trustworthy data analytics in the cloud using SGX"/>
+<attribute NAME="authors" VALUE="Schuster, Felix and Costa, Manuel and Fournet, C{\&apos;e}dric and Gkantsidis, Christos and Peinado, Marcus and Mainar-Ruiz, Gloria and Russinovich, Mark"/>
+<pdf_annotation type="PDF_FILE" object_id="0" document_hash="777E5AB174B4C1E73D0378D17578084C1D45629308414E9EC83EC77EEFCBE1">
+    <pdf_title>: Trustworthy Data Analytics in the Cloud using SGX</pdf_title>
+</pdf_annotation>
+</node>
+</node>
+<node TEXT="\end{description}" ID="ID_1340304870" CREATED="1499861383528" MODIFIED="1499861388448"/>
+</node>
 </node>
 <node TEXT="Conclusion" ID="ID_95827774" CREATED="1495605990114" MODIFIED="1499778437188" MOVED="1499677177811">
 <icon BUILTIN="button_cancel"/>
@@ -6896,7 +7022,7 @@
 <node TEXT="Content" STYLE_REF="paragraphs_drop_self" ID="ID_1945155415" CREATED="1495543885991" MODIFIED="1495543895304"/>
 </node>
 </node>
-<node TEXT="Related Work" LOCALIZED_STYLE_REF="default" FOLDED="true" POSITION="left" ID="ID_123293925" CREATED="1487267824221" MODIFIED="1496135435963" MOVED="1492616823153">
+<node TEXT="Related Work" LOCALIZED_STYLE_REF="default" POSITION="left" ID="ID_123293925" CREATED="1487267824221" MODIFIED="1496135435963" MOVED="1492616823153">
 <icon BUILTIN="button_cancel"/>
 <edge COLOR="#00ffff"/>
 <node TEXT="- gute Referenzen statt viel wiederholen&#xa;- &#xdc;berblick &#xfc;ber die in der Literatur vorhandenen Methoden bzw. L&#xf6;sungsans&#xe4;tze&#xa;- aktuelle Stand der Technik&#xa;- verwandte Arbeiten" STYLE_REF="drop" ID="ID_300266952" CREATED="1492080972697" MODIFIED="1495605859460" MOVED="1492080980228"/>
@@ -7399,16 +7525,19 @@
 <pdf_annotation type="COMMENT" page="1" object_id="6057177719962871582" object_number="54" document_hash="E66D7113365571E239A4C6E7749466D7EC9A6341E8F877D2CE8A48E9DC75">
     <pdf_title>SecureKeeper: Confidential ZooKeeper using Intel SGX</pdf_title>
 </pdf_annotation>
+<attribute NAME="year" VALUE="2016"/>
+<attribute NAME="title" VALUE="SecureKeeper: Confidential ZooKeeper using Intel SGX"/>
+<attribute NAME="authors" VALUE="Brenner, Stefan and Wulf, Colin and Goltzsche, David and Weichbrodt, Nico and Lorenz, Matthias and Fetzer, Christof and Pietzuch, Peter and Kapitza, R{\&quot;u}diger"/>
 </node>
 </node>
 </node>
 </node>
 <node TEXT="Content" STYLE_REF="paragraphs_drop_self" ID="ID_1208569650" CREATED="1495543885991" MODIFIED="1495543895304"/>
 </node>
-<node TEXT="Hardening Applications with Intel SGX" LOCALIZED_STYLE_REF="default" FOLDED="true" ID="ID_930530989" CREATED="1488545417979" MODIFIED="1499447917070">
+<node TEXT="Hardening Applications with Intel SGX" LOCALIZED_STYLE_REF="default" ID="ID_930530989" CREATED="1488545417979" MODIFIED="1499447917070">
 <icon BUILTIN="button_cancel"/>
 <attribute NAME="label" VALUE="section:sgx-hardening" OBJECT="java.net.URI|section:sgx-hardening"/>
-<node TEXT="mindmap" STYLE_REF="drop" FOLDED="true" ID="ID_1005870991" CREATED="1495543887981" MODIFIED="1495543899209" MOVED="1495543900065">
+<node TEXT="mindmap" STYLE_REF="drop" ID="ID_1005870991" CREATED="1495543887981" MODIFIED="1495543899209" MOVED="1495543900065">
 <node TEXT="Securing Applications with Software Partitioning" FOLDED="true" ID="ID_1440656226" CREATED="1489491281587" MODIFIED="1489491289496" MOVED="1495605840795">
 <node TEXT="Securing Applications with Software Partitioning.pdf" STYLE_REF="NoHeading" ID="ID_307591628" CREATED="1488486502310" MODIFIED="1489493573298" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/Securing%20Applications%20with%20Software%20Partitioning.pdf" MOVED="1489491291663">
 <pdf_annotation type="PDF_FILE" object_id="0" document_hash="A3B1CC8671AEAC66B477274258B280C4FF61D5CE5FFFF2874DC5872C475">
@@ -7466,28 +7595,7 @@
 </node>
 <node TEXT="difference to my thesis" LOCALIZED_STYLE_REF="default" ID="ID_1529989859" CREATED="1488545551221" MODIFIED="1495605838350" MOVED="1489491296856"/>
 </node>
-<node TEXT="microsoft VC3 (map-reduce)" LOCALIZED_STYLE_REF="default" FOLDED="true" ID="ID_1883225310" CREATED="1487266552803" MODIFIED="1495605830455" MOVED="1495605840803">
-<node TEXT="Fig. 3: High-level concept of a VC3 enhanced MapReduce job: code and data&#xa;are always kept encrypted when outside the processor chip." LOCALIZED_STYLE_REF="default" FOLDED="true" ID="ID_1618836695" CREATED="1488543358125" MODIFIED="1489493631083" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/Microsoft%20VC3%20Trustworthy%20Data%20Analytics%20in%20the%20Cloud%20using%20SGX.pdf">
-<pdf_annotation type="HIGHLIGHTED_TEXT" page="4" object_id="3130307985882187719" object_number="129" document_hash="777E5AB174B4C1E73D0378D17578084C1D45629308414E9EC83EC77EEFCBE1">
-    <pdf_title>: Trustworthy Data Analytics in the Cloud using SGX</pdf_title>
-</pdf_annotation>
-<attribute NAME="key" VALUE="Schuster2015"/>
-<attribute NAME="year" VALUE="2015"/>
-<attribute NAME="title" VALUE="VC3: Trustworthy data analytics in the cloud using SGX"/>
-<attribute NAME="authors" VALUE="Schuster, Felix and Costa, Manuel and Fournet, C{\&apos;e}dric and Gkantsidis, Christos and Peinado, Marcus and Mainar-Ruiz, Gloria and Russinovich, Mark"/>
-<node TEXT="vc3.png" ID="ID_1761474331" CREATED="1488543369886" MODIFIED="1488543391792" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/Microsoft%20VC3%20Trustworthy%20Data%20Analytics%20in%20the%20Cloud%20using%20SGX.pdf">
-<hook URI="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/_data/150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/default_files/vc3.png" SIZE="1.0" NAME="ExternalObject"/>
-<attribute NAME="key" VALUE="Schuster2015"/>
-<attribute NAME="year" VALUE="2015"/>
-<attribute NAME="title" VALUE="VC3: Trustworthy data analytics in the cloud using SGX"/>
-<attribute NAME="authors" VALUE="Schuster, Felix and Costa, Manuel and Fournet, C{\&apos;e}dric and Gkantsidis, Christos and Peinado, Marcus and Mainar-Ruiz, Gloria and Russinovich, Mark"/>
-<attribute NAME="image" VALUE="vc3"/>
-<pdf_annotation type="PDF_FILE" object_id="0" document_hash="777E5AB174B4C1E73D0378D17578084C1D45629308414E9EC83EC77EEFCBE1">
-    <pdf_title>: Trustworthy Data Analytics in the Cloud using SGX</pdf_title>
-</pdf_annotation>
-</node>
-</node>
-</node>
+<node TEXT="microsoft VC3 (map-reduce)" LOCALIZED_STYLE_REF="default" ID="ID_1883225310" CREATED="1487266552803" MODIFIED="1495605830455" MOVED="1495605840803"/>
 <node TEXT="SCONE (secure linux containers)" LOCALIZED_STYLE_REF="default" FOLDED="true" ID="ID_1775593159" CREATED="1487268278732" MODIFIED="1495605830469" MOVED="1495605840808">
 <node TEXT="Scone.pdf" ID="ID_1571416570" CREATED="1488486502344" MODIFIED="1488486502345" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/Scone.pdf">
 <pdf_annotation type="PDF_FILE" object_id="0" document_hash="3A2B26F7CD779BEBA81FEC65DCC6B13B145925A3EB10F0C4E0DF7275FE1">
@@ -7499,16 +7607,9 @@
 <attribute NAME="authors" VALUE="Arnautov, Sergei and Trach, Bohdan and Gregor, Franz and Knauth, Thomas and Martin, Andre and Priebe, Christian and Lind, Joshua and Muthukumaran, Divya and O&#x2019;Keeffe, Daniel and Stillwell, Mark L and others"/>
 </node>
 </node>
-<node TEXT="secure keeper (zookeeper)" LOCALIZED_STYLE_REF="default" FOLDED="true" ID="ID_1276964759" CREATED="1487266695741" MODIFIED="1495605830479" MOVED="1495605840819">
-<node TEXT="tailored enclaves for Zookeeper" ID="ID_804969013" CREATED="1488544188110" MODIFIED="1488544188111" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/SecureKeeper.pdf">
-<pdf_annotation type="COMMENT" page="1" object_id="7167287578242888723" object_number="52" document_hash="E66D7113365571E239A4C6E7749466D7EC9A6341E8F877D2CE8A48E9DC75">
-    <pdf_title>SecureKeeper: Confidential ZooKeeper using Intel SGX</pdf_title>
-</pdf_annotation>
-</node>
-<node TEXT="only handles data (no processing)" ID="ID_1518860309" CREATED="1488874564636" MODIFIED="1488874586481"/>
-<node TEXT="memory kept outside enclave (performance)" ID="ID_870715808" CREATED="1488874593314" MODIFIED="1488874613780"/>
-</node>
-<node TEXT="Haven" ID="ID_902538612" CREATED="1499450123845" MODIFIED="1499450125677"/>
+<node TEXT="Haven" ID="ID_902538612" CREATED="1499450123845" MODIFIED="1499862653384"/>
+<node TEXT="SecureKeeper" ID="ID_1918473973" CREATED="1499862654471" MODIFIED="1499862657288"/>
+<node TEXT="VC3" ID="ID_1761020311" CREATED="1499862657504" MODIFIED="1499862658420"/>
 </node>
 <node TEXT="Content" STYLE_REF="paragraphs_drop_self" ID="ID_1430142372" CREATED="1495543885991" MODIFIED="1495543895304"/>
 </node>
@@ -7621,7 +7722,7 @@
 <node TEXT="Content" STYLE_REF="paragraphs_drop_self" ID="ID_1327466363" CREATED="1495543885991" MODIFIED="1495543895304"/>
 </node>
 </node>
-<node TEXT="SQLite Case Study" LOCALIZED_STYLE_REF="default" POSITION="left" ID="ID_650094352" CREATED="1487266723741" MODIFIED="1499849278543" MOVED="1499849269320">
+<node TEXT="SQLite Case Study" LOCALIZED_STYLE_REF="default" FOLDED="true" POSITION="left" ID="ID_650094352" CREATED="1487266723741" MODIFIED="1499849278543" MOVED="1499849269320">
 <icon BUILTIN="button_cancel"/>
 <edge COLOR="#0000ff"/>
 <node TEXT="use chapter summaries" STYLE_REF="drop" ID="ID_1019464221" CREATED="1489606031650" MODIFIED="1489606057294" MOVED="1489606046735"/>
