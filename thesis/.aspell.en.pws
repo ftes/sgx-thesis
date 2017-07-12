@@ -1,4 +1,4 @@
-personal_ws-1.1 en 138 
+personal_ws-1.1 en 140 
 runtime
 NoHype
 hypercalls
@@ -62,11 +62,12 @@ PowerDVD
 RDTSC
 DRM
 ECREATE
+TrustedDB
 Fides
 TrustZone's
 modularised
-STR
 TPM
+STR
 EPC
 GlobalPlatform
 attestable
@@ -90,6 +91,7 @@ onwards
 sandboxing
 trustlets
 VMCALL
+Uninvestigated
 EINIT
 Hadoop
 SLDT

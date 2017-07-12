@@ -1,0 +1,22 @@
+%\begingroup
+
+\setlength{\tabcolsep}{10pt} % Default value: 6pt
+\renewcommand{\arraystretch}{1.5} % Default value: 1
+
+\begin{tabular}{p{0cm}l|l!{\color{white}\vrule width 10pt}l!{\color{white}\vrule width 10pt}l}
+
+\toprule
+
+\multicolumn{1}{c}{}                                & \multicolumn{1}{c}{}  & \multicolumn{3}{c}{Homomorphism of encryption scheme}                                                                                 \\
+\multicolumn{1}{c}{}                                &                       & \textbf{None}                                                 & \textbf{Partial}                  & \textbf{Full}                     \\
+                                                    \cmidrule(){2-5}                                                                                                                        
+\multirow{5}{*}{\rotatebox{90}{Secure location}}    & \textbf{None}         &                                                               & CryptDB\cite{Popa2011}            & \cellcolor{greenbg}\textit{open}  \\
+                                                    & \textbf{Client}       & Arx\cite{Poddar2016}                                          & Monomi\cite{Tu2013}               &                                   \\
+                                                    & \textbf{Co-processor} &                                                               & TrustedDB\cite{trusteddb}         &                                   \\
+                                                    & \textbf{FPGA}         &                                                               & Cipherbase\cite{Arasu2013}        &                                   \\
+                                                    & \textbf{SGX Enclave}  & \cellcolor{greenbg}\textit{this thesis}                       & \cellcolor{greenbg}\textit{open}  &                                   \\
+
+\bottomrule
+\end{tabular}
+
+%\endgroup

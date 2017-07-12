@@ -1188,7 +1188,7 @@
 </node>
 </node>
 </node>
-<node TEXT="Commercial" ID="ID_1886048225" CREATED="1497276280777" MODIFIED="1499677034738">
+<node TEXT="Commercial" FOLDED="true" ID="ID_1886048225" CREATED="1497276280777" MODIFIED="1499677034738">
 <node TEXT="mindmap" STYLE_REF="drop" FOLDED="true" ID="ID_1943302489" CREATED="1499258754737" MODIFIED="1499258762187">
 <node TEXT="TrustZone" STYLE_REF="drop" FOLDED="true" ID="ID_1512820074" CREATED="1495543887981" MODIFIED="1499258737417" MOVED="1499258766096">
 <node TEXT="two worlds" FOLDED="true" ID="ID_948633106" CREATED="1452524222409" MODIFIED="1453896883385" MOVED="1497277082505">
@@ -1971,7 +1971,7 @@
 </node>
 </node>
 </node>
-<node TEXT="Content" STYLE_REF="paragraphs_drop_self" ID="ID_676363115" CREATED="1497340837672" MODIFIED="1499259072931" MOVED="1497340841141">
+<node TEXT="Content" STYLE_REF="paragraphs_drop_self" FOLDED="true" ID="ID_676363115" CREATED="1497340837672" MODIFIED="1499259072931" MOVED="1497340841141">
 <node TEXT="The following list of commercial trusted computing solutions gives a good overview of how the field has evolved in the past 15 years." ID="ID_642511098" CREATED="1497276509926" MODIFIED="1499235687891"/>
 <node TEXT="The list is not exhaustive. Instead, the chosen solutions represent noteworthy archetypes.\footnote{The most noticeable omission from this list are all kinds of cryptographic co-processors that aim to provide significant computational resources apart from the main CPUs. Any operation in excess of cryptographic primitives such as key generation and digital signatures is considered significant.} For a more extensive list, see \cite{tee_mobile_devices}." ID="ID_727374297" CREATED="1498747209748" MODIFIED="1499765051674"/>
 <node TEXT="\begin{description}" ID="ID_838567667" CREATED="1497276021838" MODIFIED="1497276038289"/>
@@ -4051,7 +4051,7 @@
 </node>
 </node>
 </node>
-<node TEXT="Comparison" LOCALIZED_STYLE_REF="default" FOLDED="true" ID="ID_995120664" CREATED="1495055799005" MODIFIED="1499672849857">
+<node TEXT="Comparison" LOCALIZED_STYLE_REF="default" ID="ID_995120664" CREATED="1495055799005" MODIFIED="1499672849857">
 <icon BUILTIN="button_ok"/>
 <node TEXT="mindmap" STYLE_REF="drop" FOLDED="true" ID="ID_362739599" CREATED="1495543887981" MODIFIED="1495543899209" MOVED="1495543900065">
 <node TEXT="criteria" FOLDED="true" ID="ID_237312689" CREATED="1488475358073" MODIFIED="1488542691949" MOVED="1497276680403">
@@ -4230,7 +4230,7 @@
 </node>
 </node>
 </node>
-<node TEXT="Intel SGX" POSITION="left" ID="ID_1888222908" CREATED="1499677051779" MODIFIED="1499677189499">
+<node TEXT="Intel SGX" FOLDED="true" POSITION="left" ID="ID_1888222908" CREATED="1499677051779" MODIFIED="1499677189499">
 <edge COLOR="#007c00"/>
 <attribute NAME="label" VALUE="chapter:sgx" OBJECT="java.net.URI|chapter:sgx"/>
 <node TEXT="mindmap" STYLE_REF="drop" FOLDED="true" ID="ID_568950088" CREATED="1495056010089" MODIFIED="1495056022163" MOVED="1499677177765">
@@ -7035,10 +7035,20 @@
 <icon BUILTIN="button_cancel"/>
 <edge COLOR="#00ffff"/>
 <node TEXT="- gute Referenzen statt viel wiederholen&#xa;- &#xdc;berblick &#xfc;ber die in der Literatur vorhandenen Methoden bzw. L&#xf6;sungsans&#xe4;tze&#xa;- aktuelle Stand der Technik&#xa;- verwandte Arbeiten" STYLE_REF="drop" ID="ID_300266952" CREATED="1492080972697" MODIFIED="1495605859460" MOVED="1492080980228"/>
-<node TEXT="Secure Databases" LOCALIZED_STYLE_REF="default" FOLDED="true" ID="ID_1295642147" CREATED="1488477479255" MODIFIED="1499766320420">
+<node TEXT="Introduction" STYLE_REF="paragraphs_drop_self" FOLDED="true" ID="ID_150393477" CREATED="1499869249672" MODIFIED="1499869658154" MOVED="1499869252488">
+<icon BUILTIN="button_ok"/>
+<node TEXT="Diverse solutions for hardening applications have been evaluated in existing research." ID="ID_1120123601" CREATED="1499869262561" MODIFIED="1499869689772"/>
+<node TEXT="Different avenues exist to approach the problem of hardening applications." ID="ID_1831239377" CREATED="1499869320720" MODIFIED="1499869341009"/>
+<node TEXT="Trusted computing is one alternative, cryptography -- depending on the application -- another." ID="ID_1505185644" CREATED="1499869341265" MODIFIED="1499869442457"/>
+<node TEXT="" ID="ID_1945680667" CREATED="1499869661672" MODIFIED="1499869661672"/>
+<node TEXT="This chapter first presents related research on secure databases. This section describes new application architectures and the use of cryptographic principles." ID="ID_994786687" CREATED="1499869442608" MODIFIED="1499869509274"/>
+<node TEXT="Secondly, research on partitioning strategies is listed. New applications can be designed according to these principles. Legacy applications can be refactored according to them." ID="ID_760707360" CREATED="1499869510568" MODIFIED="1499869735577"/>
+<node TEXT="The chapter concludes with research most related to this thesis: application hardening using Intel SGX." ID="ID_1005330540" CREATED="1499869620744" MODIFIED="1499869769242"/>
+</node>
+<node TEXT="Secure Databases" LOCALIZED_STYLE_REF="default" ID="ID_1295642147" CREATED="1488477479255" MODIFIED="1499766320420">
 <icon BUILTIN="button_cancel"/>
 <attribute NAME="label" VALUE="section:secure-db" OBJECT="java.net.URI|section:secure-db"/>
-<node TEXT="mindmap" STYLE_REF="drop" FOLDED="true" ID="ID_1843665722" CREATED="1495543887981" MODIFIED="1495543899209" MOVED="1495543900065">
+<node TEXT="mindmap" STYLE_REF="drop" ID="ID_1843665722" CREATED="1495543887981" MODIFIED="1495543899209" MOVED="1495543900065">
 <node TEXT="as one possible application of secure data processing" STYLE_REF="NoHeading" ID="ID_1698087762" CREATED="1488565649417" MODIFIED="1489493131748" MOVED="1495605789307"/>
 <node TEXT="CryptDB" LOCALIZED_STYLE_REF="default" FOLDED="true" ID="ID_725694989" CREATED="1455795148662" MODIFIED="1495057102237" MOVED="1495605789309">
 <node TEXT="efficient SQL-aware encryption schemes" ID="ID_770203765" CREATED="1455794915174" MODIFIED="1488817474010" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/CryptDB.pdf" MOVED="1455795549308">
@@ -7432,7 +7442,7 @@
 <attribute NAME="authors" VALUE="Poddar, Rishabh and Boelter, Tobias and Popa, Raluca Ada"/>
 </node>
 </node>
-<node TEXT="Comparison" LOCALIZED_STYLE_REF="default" FOLDED="true" ID="ID_1377676252" CREATED="1455795384694" MODIFIED="1495057102267" MOVED="1495605789327">
+<node TEXT="Comparison" LOCALIZED_STYLE_REF="default" ID="ID_1377676252" CREATED="1455795384694" MODIFIED="1495057102267" MOVED="1495605789327">
 <node TEXT="table!" FOLDED="true" ID="ID_1367291892" CREATED="1488565800483" MODIFIED="1488565802020" MOVED="1488565802435">
 <node TEXT="trusted hardware" ID="ID_684560465" CREATED="1488888557168" MODIFIED="1488888560344"/>
 <node TEXT="encryption scheme" ID="ID_718691897" CREATED="1488888560469" MODIFIED="1488888563465"/>
@@ -7447,7 +7457,7 @@
 <node TEXT="operations must be pre-defined" ID="ID_468447894" CREATED="1488889173779" MODIFIED="1488889178441"/>
 </node>
 </node>
-<node TEXT="figure: trusted module for DBMS design space" FOLDED="true" ID="ID_369513968" CREATED="1455794914618" MODIFIED="1455794914618" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/Encrypted%20Database%20good%20FHE%20PHE%20overview.pdf">
+<node TEXT="figure: trusted module for DBMS design space" ID="ID_369513968" CREATED="1455794914618" MODIFIED="1455794914618" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/Encrypted%20Database%20good%20FHE%20PHE%20overview.pdf">
 <pdf_annotation type="COMMENT" page="90" object_id="5799388100623044411" object_number="520" document_hash="A99F7310249BD6991DEEAB6A4547EBE8F8E506FF909E1664DFEC1E19ED34A">
     <pdf_title>Querying Encrypted Data</pdf_title>
 </pdf_annotation>
@@ -7460,7 +7470,7 @@
 <attribute NAME="image" VALUE="secure dbms design space"/>
 </node>
 </node>
-<node TEXT="figure: DBMS architecture comparison" FOLDED="true" ID="ID_1997977896" CREATED="1455794914602" MODIFIED="1455795374119" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/Encrypted%20Database%20good%20FHE%20PHE%20overview.pdf">
+<node TEXT="figure: DBMS architecture comparison" ID="ID_1997977896" CREATED="1455794914602" MODIFIED="1455795374119" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/Encrypted%20Database%20good%20FHE%20PHE%20overview.pdf">
 <pdf_annotation type="COMMENT" page="74" object_id="3501524024930807710" object_number="466" document_hash="A99F7310249BD6991DEEAB6A4547EBE8F8E506FF909E1664DFEC1E19ED34A">
     <pdf_title>Querying Encrypted Data</pdf_title>
 </pdf_annotation>
@@ -7473,7 +7483,7 @@
 <attribute NAME="image" VALUE="secure dbms comparison"/>
 </node>
 </node>
-<node TEXT="figure: DBMS solution landscape overview" FOLDED="true" ID="ID_1405626104" CREATED="1455794914278" MODIFIED="1455795354024" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/Encrypted%20Database%20good%20FHE%20PHE%20overview.pdf">
+<node TEXT="figure: DBMS solution landscape overview" ID="ID_1405626104" CREATED="1455794914278" MODIFIED="1455795354024" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/Encrypted%20Database%20good%20FHE%20PHE%20overview.pdf">
 <pdf_annotation type="COMMENT" page="24" object_id="2579607635664464779" object_number="357" document_hash="A99F7310249BD6991DEEAB6A4547EBE8F8E506FF909E1664DFEC1E19ED34A">
     <pdf_title>Querying Encrypted Data</pdf_title>
 </pdf_annotation>
@@ -7498,11 +7508,25 @@
 </node>
 </node>
 </node>
-<node TEXT="Content" STYLE_REF="paragraphs_drop_self" ID="ID_1816243504" CREATED="1495543885991" MODIFIED="1495543895304"/>
+<node TEXT="Content" STYLE_REF="paragraphs_drop_self" ID="ID_1816243504" CREATED="1495543885991" MODIFIED="1495543895304">
+<node TEXT="\begin{table}" STYLE_REF="latex" ID="ID_932156625" CREATED="1499345864257" MODIFIED="1499435567168" MOVED="1499359331393"/>
+<node TEXT="\centering" STYLE_REF="latex" ID="ID_716591169" CREATED="1499420357862" MODIFIED="1499874699473" MOVED="1499435873582"/>
+<node TEXT="\input{content/tables/secure-db}" STYLE_REF="latex" ID="ID_111135350" CREATED="1499264498353" MODIFIED="1499870804793" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/thesis/content/tables/secure-db.tex" MOVED="1499359331398"/>
+<node TEXT="\caption{" STYLE_REF="latex" ID="ID_674109090" CREATED="1499345897352" MODIFIED="1499345909529" MOVED="1499359331404">
+<node TEXT="\textbf{Design space for secure databases.}" ID="ID_1890259832" CREATED="1499359019074" MODIFIED="1499874748377" MOVED="1499437274826"/>
+<node TEXT="Two dimensions are used for classification: secure location and homomorphic encryption. E.g. \textit{TrustedDB} uses a co-processor and partially homomorphic encryption." ID="ID_975475106" CREATED="1499874748697" MODIFIED="1499874840393"/>
+<node TEXT="Uninvestigated areas of the design space which seem promising are shaded green." ID="ID_6827707" CREATED="1499874840945" MODIFIED="1499874867897"/>
+<node TEXT="The area of the design space that this thesis investigates is labelled ``this thesis&apos;&apos;." ID="ID_501269911" CREATED="1499874868056" MODIFIED="1499875099019"/>
+<node TEXT="Based on \cite{querying-encrypted-data-tutorial}" ID="ID_1452673010" CREATED="1499874948265" MODIFIED="1499874978913"/>
+<node TEXT="}" STYLE_REF="latex" ID="ID_1475366080" CREATED="1499345900665" MODIFIED="1499345909532" MOVED="1499435837748"/>
 </node>
-<node TEXT="Approaches to securing Legacy Code" LOCALIZED_STYLE_REF="default" FOLDED="true" ID="ID_1261256917" CREATED="1487268101522" MODIFIED="1495605848077" MOVED="1492616238079">
+<node TEXT="\label{table:secure-db}" STYLE_REF="latex" ID="ID_505580662" CREATED="1499437819564" MODIFIED="1499870492729" MOVED="1499437825213"/>
+<node TEXT="\end{table}" STYLE_REF="latex" ID="ID_956771736" CREATED="1499345867505" MODIFIED="1499345909535" MOVED="1499359331432"/>
+</node>
+</node>
+<node TEXT="Partitioning Strategies for Hardening" LOCALIZED_STYLE_REF="default" ID="ID_1261256917" CREATED="1487268101522" MODIFIED="1499869581929" MOVED="1492616238079">
 <icon BUILTIN="button_cancel"/>
-<node TEXT="mindmap" STYLE_REF="drop" FOLDED="true" ID="ID_1548819257" CREATED="1495543887981" MODIFIED="1495543899209" MOVED="1495543900065">
+<node TEXT="mindmap" STYLE_REF="drop" ID="ID_1548819257" CREATED="1495543887981" MODIFIED="1495543899209" MOVED="1495543900065">
 <node TEXT="secure entire VM/container" ID="ID_230919820" CREATED="1487267463672" MODIFIED="1487268288324" MOVED="1495605809516"/>
 <node TEXT="4 schemes&#xa;1. whole app&#xa;2. all secrets (software mose enforce isolation)&#xa;3. separate secret&#xa;4. hybrid: reduce number of enclaves" ID="ID_748181700" CREATED="1488545402876" MODIFIED="1488545402877" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/Securing%20Applications%20with%20Software%20Partitioning.pdf" MOVED="1495605805572">
 <pdf_annotation type="COMMENT" page="8" object_id="8940923739839718101" object_number="41" document_hash="A3B1CC8671AEAC66B477274258B280C4FF61D5CE5FFFF2874DC5872C475">
