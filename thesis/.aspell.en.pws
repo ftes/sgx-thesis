@@ -1,4 +1,4 @@
-personal_ws-1.1 en 154 
+personal_ws-1.1 en 157 
 runtime
 NoHype
 hypercalls
@@ -47,6 +47,7 @@ DMA
 SMM
 SoC
 Arx's
+proxying
 LLC
 Monomi's
 libjpeg
@@ -92,6 +93,7 @@ un
 crypto
 EGETREPORT
 MOV
+OpenSSL
 VM
 onwards
 sandboxing
@@ -121,6 +123,7 @@ OUTSB
 SYSENTER
 INSD
 Skyhigh
+SecureKeeper
 OUTSD
 Cyberlink
 Yao

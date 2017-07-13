@@ -1,7 +1,7 @@
-<map version="docear 1.1" project="150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7" project_last_home="file:/home/fteschke/sgx2017/" dcr_id="1488476421761_38dk6g1wx834fy6mbu0yod5x7">
+<map version="docear 1.1" dcr_id="1488476421761_38dk6g1wx834fy6mbu0yod5x7" project="150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7" project_last_home="file:/home/fteschke/sgx2017/">
 <!--To view this file, download Docear - The Academic Literature Suite from http://www.docear.org -->
 <attribute_registry SHOW_ATTRIBUTES="hide"/>
-<node TEXT="Thesis 2017" FOLDED="false" ID="ID_308776938" CREATED="1488476421728" MODIFIED="1499261402227">
+<node TEXT="Thesis 2017" FOLDED="false" ID="ID_308776938" CREATED="1488476421728" MODIFIED="1499948606097">
 <hook NAME="AutomaticEdgeColor" COUNTER="2"/>
 <hook NAME="MapStyle" zoom="1.064">
     <properties show_icon_for_attributes="true" show_note_icons="true"/>
@@ -238,7 +238,7 @@
 <node TEXT="Implementations of trusted computing are described and compared in \autoref{chapter:tc-solutions}." ID="ID_684830290" CREATED="1499677377801" MODIFIED="1499677548489"/>
 <node TEXT="Intel SGX -- a particular commercial solution for trusted computing -- is described in more detail in \autoref{chapter:sgx}." LOCALIZED_STYLE_REF="default" ID="ID_733461445" CREATED="1492069185039" MODIFIED="1499677504565" MOVED="1499677487386"/>
 </node>
-<node TEXT="Cryptography" LOCALIZED_STYLE_REF="default" FOLDED="true" ID="ID_265480959" CREATED="1487267831110" MODIFIED="1497274485566" MOVED="1495605123175">
+<node TEXT="Cryptography" LOCALIZED_STYLE_REF="default" ID="ID_265480959" CREATED="1487267831110" MODIFIED="1497274485566" MOVED="1495605123175">
 <attribute NAME="label" VALUE="crypto"/>
 <node TEXT="mindmap" STYLE_REF="drop" FOLDED="true" ID="ID_423356336" CREATED="1495031932426" MODIFIED="1495031936910">
 <node TEXT="approaches" FOLDED="true" ID="ID_1649054570" CREATED="1488475772133" MODIFIED="1488475774478" MOVED="1495032007273">
@@ -536,58 +536,7 @@
 </node>
 <node TEXT="and not yet fast enough for general purpose computing" ID="ID_1322776109" CREATED="1487265921610" MODIFIED="1487266027196" MOVED="1488475916646"/>
 </node>
-</node>
-<node TEXT="Introduction" STYLE_REF="paragraphs_drop_self" ID="ID_821555939" CREATED="1495031921641" MODIFIED="1496928026498" MOVED="1495031923168">
-<icon BUILTIN="button_ok"/>
-<node TEXT="There are several different ways in which cryptographic principles can be used to implement the concept of a secure container." ID="ID_544485861" CREATED="1495030228538" MODIFIED="1495030293686" MOVED="1495031930156"/>
-<node TEXT="\begin{description}" LOCALIZED_STYLE_REF="default" ID="ID_958111314" CREATED="1492069069527" MODIFIED="1492617214994" MOVED="1495031930168"/>
-<node TEXT="\item[Multi party computing]" ID="ID_1564094585" CREATED="1495541708380" MODIFIED="1495541711049"/>
-<node TEXT="Several parties jointly compute a function to which every party provides some input. The input of each party is not revealed to any of the other parties. One early implementation is Yao&apos;s garbled circuits." ID="ID_1507598191" CREATED="1495030347551" MODIFIED="1495541714631" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/SGX%20for%20efficient%20Two%20Party%20Computation.pdf" MOVED="1495031930175">
-<attribute NAME="key" VALUE="Gupta"/>
-<attribute NAME="year" VALUE="2016"/>
-<attribute NAME="title" VALUE="Using Intel Software Guard Extensions for Efficient Two-Party Secure Function Evaluation"/>
-<attribute NAME="authors" VALUE="Gupta, Debayan and Mood, Benjamin and Feigenbaum, Joan and Butler, Kevin and Traynor, Patrick"/>
-<pdf_annotation type="PDF_FILE" object_id="0" document_hash="814F2497FDC68742D5F7B633ABF49192F0C28CC928AB7B33DC228BD16E9">
-    <pdf_title>Using Intel Software Guard Extensions for Ecient Two-Party Secure Function Evaluation</pdf_title>
-</pdf_annotation>
-</node>
-<node TEXT="For secure remote computation, we could assume two parties, where only the data owner provides an input and only the infrastructure owner executes the function." ID="ID_1818312817" CREATED="1495030973594" MODIFIED="1495543704763" MOVED="1495031930183"/>
-<node TEXT="However, the function output is in plain text which is not desirable for secure remote computation in general." ID="ID_647862117" CREATED="1495031116524" MODIFIED="1499764183668" MOVED="1495031930191"/>
-<node TEXT="\item[Verifiable computing]" ID="ID_1000386877" CREATED="1495541721026" MODIFIED="1495541722884"/>
-<node TEXT="This is a first step in the direction of secure remote computing. It ensures the integrity but not the confidentiality of the computation (similar to a cryptographic signature)." ID="ID_14679414" CREATED="1495031325019" MODIFIED="1495543730252" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/../../../fredrik/dev/sgx2017/literature_repository/Non-Interactive%20Verifiable%20Computation.pdf" MOVED="1495031930198">
-<attribute NAME="key" VALUE="Gennaro2010"/>
-<attribute NAME="year" VALUE="2010"/>
-<attribute NAME="title" VALUE="Non-interactive verifiable computing: Outsourcing computation to untrusted workers"/>
-<attribute NAME="authors" VALUE="Gennaro, Rosario and Gentry, Craig and Parno, Bryan"/>
-</node>
-<node TEXT="" ID="ID_750258261" CREATED="1495031634478" MODIFIED="1495031985900" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/../../../../literature_repository/Verena%20integrity%20for%20web%20apps.pdf" MOVED="1495031989011">
-<attribute NAME="key" VALUE="Karapanos"/>
-<attribute NAME="title" VALUE="Verena: End-to-end integrity protection for web applications"/>
-<attribute NAME="authors" VALUE="Karapanos, Nikolaos and Filios, Alexandros and Popa, Raluca Ada and Capkun, Srdjan"/>
-<attribute NAME="year" VALUE="2016"/>
-</node>
-<node TEXT="" ID="ID_1551175568" CREATED="1495031685680" MODIFIED="1495543759204" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/Hybrid%20Architecture%20for%20Interactive%20Verifiable%20Computation.pdf" MOVED="1495031989018">
-<attribute NAME="key" VALUE="Vu2013"/>
-<attribute NAME="year" VALUE="2013"/>
-<attribute NAME="title" VALUE="A hybrid architecture for interactive verifiable computation"/>
-<attribute NAME="authors" VALUE="Vu, Victor and Setty, Srujay and Blumberg, Andrew J and Walfish, Michael"/>
-<pdf_annotation type="PDF_FILE" object_id="0" document_hash="CD75E769ABBFEA402B539DFC8975429BC17D85C54A8528F5EB1BBC83669C">
-    <pdf_title>A hybrid architecture for interactive verifiable computation</pdf_title>
-</pdf_annotation>
-</node>
-<node TEXT="\item[Homomorphic Encryption]" ID="ID_1769833687" CREATED="1495031967093" MODIFIED="1495542999044" MOVED="1495031983176"/>
-<node TEXT="Such encryption schemes define calculation operations on encrypted data. The operands and result of these calculations remain encrypted so they could be performed by an untrusted third party." ID="ID_1952238538" CREATED="1495543096548" MODIFIED="1495543842886"/>
-<node TEXT="Homomorphic encryption schemes and their usefulness for secure remote computing are explained in more detail in \autoref{section:homomorphic-encryption}." ID="ID_586952145" CREATED="1495543126248" MODIFIED="1495543241306"/>
-<node TEXT="\item[Encrypted CPU]" ID="ID_1403278513" CREATED="1495031945083" MODIFIED="1495031965157"/>
-<node TEXT="Given a (fully) homomorphic encryption scheme it is possible to execute entire encrypted programs. This is possible in a fully oblivious fashion where both the instruction flow and memory access (code and data) remain hidden." ID="ID_601974181" CREATED="1495543199937" MODIFIED="1499623185712"/>
-<node TEXT="Both obliviousness and the current fully homomorphic encryption schemes incur such large performance penalties that they are not yet practically useful for more complex programs." ID="ID_312856627" CREATED="1495543414619" MODIFIED="1495543415414"/>
-<node TEXT="More details are given in \autoref{section:encrypted-cpu}." ID="ID_249466965" CREATED="1495543416380" MODIFIED="1495543426935"/>
-<node TEXT="\end{description}" LOCALIZED_STYLE_REF="default" ID="ID_408605672" CREATED="1492075985752" MODIFIED="1492617215028" MOVED="1495031930217"/>
-</node>
-<node TEXT="Homomorphic Encryption" LOCALIZED_STYLE_REF="default" FOLDED="true" ID="ID_499374671" CREATED="1495541976860" MODIFIED="1497272924423">
-<icon BUILTIN="button_ok"/>
-<attribute NAME="label" VALUE="section:homomorphic-encryption" OBJECT="java.net.URI|section:homomorphic-encryption"/>
-<node TEXT="mindmap" STYLE_REF="drop" FOLDED="true" ID="ID_850602006" CREATED="1495542105068" MODIFIED="1495542115773" MOVED="1495542108038">
+<node TEXT="homomorphic enc" STYLE_REF="drop" ID="ID_850602006" CREATED="1495542105068" MODIFIED="1499942301458" MOVED="1499942304268">
 <node TEXT="encryption schemes" FOLDED="true" ID="ID_674817752" CREATED="1488476627522" MODIFIED="1488476630059" MOVED="1495542117916">
 <node TEXT="figure: encryption schemes overview" FOLDED="true" ID="ID_590210021" CREATED="1453116530410" MODIFIED="1453883865983" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/Encrypted%20Database%20good%20FHE%20PHE%20overview.pdf">
 <pdf_annotation type="COMMENT" page="43" object_id="5238762382595240535" object_number="375" document_hash="A99F7310249BD6991DEEAB6A4547EBE8F8E506FF909E1664DFEC1E19ED34A">
@@ -717,65 +666,7 @@
 </node>
 </node>
 </node>
-<node TEXT="Content" STYLE_REF="paragraphs_drop_self" FOLDED="true" ID="ID_331491875" CREATED="1495542092918" MODIFIED="1495542098125">
-<node TEXT="\autoref{figure:homomorphic-encryption} explains the principle of homomorphic encryption with an example. While partially homomorphic schemes define only one operation (e.g. either addition or multiplication), fully homomorphic schemes define both." ID="ID_1116118751" CREATED="1495611406921" MODIFIED="1499623223561"/>
-<node TEXT="\input{content/tikz/homomorphic-encryption}" STYLE_REF="latex" FOLDED="true" ID="ID_1989105116" CREATED="1495546568624" MODIFIED="1499091747380" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/thesis/content/tikz/homomorphic-encryption.tex" MOVED="1499086057094">
-<attribute NAME="image" VALUE=""/>
-<attribute NAME="label" VALUE="figure:homomorphic-encryption" OBJECT="java.net.URI|figure:homomorphic-encryption"/>
-<attribute NAME="year" VALUE="2013"/>
-<attribute NAME="title" VALUE="Querying Encrypted Data (Tutorial)"/>
-<attribute NAME="authors" VALUE="Arasu, Arvind and Eguro, Ken and Kaushik, Raghav and Ramamurthy, Ravi"/>
-<node TEXT="\textbf{Homomorphic encryption example.}" ID="ID_610399076" CREATED="1499090859799" MODIFIED="1499444834926"/>
-<node TEXT="A homomorphic encryption scheme defines operations on encrypted data. The decrypted result of the encrypted addition ($\bigoplus$) gives the same result as performing a plain text addition ($+$). Using this scheme an untrusted \textit{processing provider} can perform calculations without learning anything about the plain text." ID="ID_1072580727" CREATED="1499444835082" MODIFIED="1499764202134"/>
-</node>
-<node TEXT="Gentry et al. successfully constructed the first fully homomorphic scheme in 2009." ID="ID_233387469" CREATED="1495611587308" MODIFIED="1499764305206" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/Gentry%20Homomorphic%20Encryption.pdf">
-<attribute NAME="key" VALUE="Gentry2009"/>
-<attribute NAME="year" VALUE="2009"/>
-<attribute NAME="title" VALUE="Fully homomorphic encryption using ideal lattices."/>
-<attribute NAME="authors" VALUE="Gentry, Craig and others"/>
-<pdf_annotation type="PDF_FILE" object_id="0" document_hash="CEBAF1BB5BAC60408827D88A46FAA92EC9188EBEA892D31BE4A357821F6C2E">
-    <pdf_title>Fully Homomorphic Encryption Using Ideal Lattices</pdf_title>
-</pdf_annotation>
-</node>
-<node TEXT="\autoref{figure:encryption-schemes} shows the relationship between different encryption schemes and the operations they support. These schemes are revisited in \autoref{section:secure-db}, which also shows how they can be practically put to use." ID="ID_129969722" CREATED="1495611645959" MODIFIED="1499679136021"/>
-<node TEXT="\input{content/tikz/encryption-schemes}" STYLE_REF="latex" FOLDED="true" ID="ID_452615921" CREATED="1496309999068" MODIFIED="1499091749849" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/thesis/content/tikz/encryption-schemes.tex" MOVED="1499086097031">
-<attribute NAME="image" VALUE=""/>
-<attribute NAME="label" VALUE="figure:encryption-schemes" OBJECT="java.net.URI|figure:encryption-schemes"/>
-<attribute NAME="key" VALUE="querying-encrypted-data-tutorial"/>
-<attribute NAME="year" VALUE="2013"/>
-<attribute NAME="title" VALUE="Querying Encrypted Data (Tutorial)"/>
-<attribute NAME="authors" VALUE="Arasu, Arvind and Eguro, Ken and Kaushik, Raghav and Ramamurthy, Ravi"/>
-<node TEXT="\textbf{Encryption schemes and their relationships.}" ID="ID_489936542" CREATED="1499090871903" MODIFIED="1499444848118"/>
-<node TEXT="The shading indicates computational efficiency (red: impractical, orange: expensive, green: practical). Arrows indicate subsumption of functionality. Fully homomorphic schemes for example provide both $+$ and $\times$ operations (and by extension -- e.g. an encrypted CPU -- also comparison operations)." ID="ID_1527882742" CREATED="1499444848261" MODIFIED="1499764328879"/>
-<node TEXT="Reprinted from" ID="ID_467588759" CREATED="1499444852134" MODIFIED="1499444852134" MOVED="1499444854908"/>
-</node>
-<node TEXT="State of the art fully homomorphic schemes still suffer from an intractably high overhead. Partially homomorphic schemes on the other hand have already been applied to databases." ID="ID_1599544022" CREATED="1496317349564" MODIFIED="1496317641943"/>
-<node TEXT="" ID="ID_185886964" CREATED="1496317693286" MODIFIED="1496317709632" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/Microsoft%20Haven.pdf">
-<attribute NAME="key" VALUE="Baumann2014"/>
-<attribute NAME="year" VALUE="2014"/>
-<attribute NAME="title" VALUE="Shielding applications from an untrusted cloud with haven"/>
-<attribute NAME="authors" VALUE="Baumann, Andrew and Peinado, Marcus and Hunt, Galen"/>
-<pdf_annotation type="PDF_FILE" object_id="0" document_hash="F73BC6AC9A9DC3F7B51411327AC88B18AD75C688219B86BAC4CD6A446F99EDD">
-    <pdf_title>Shielding Applications from an Untrusted Cloud with Haven</pdf_title>
-</pdf_annotation>
-</node>
-<node TEXT="" ID="ID_666530113" CREATED="1496317710164" MODIFIED="1496317717332" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/Encrypted%20Database%20good%20FHE%20PHE%20overview.pdf">
-<attribute NAME="key" VALUE="querying-encrypted-data-tutorial"/>
-<attribute NAME="year" VALUE="2013"/>
-<attribute NAME="title" VALUE="Querying Encrypted Data (Tutorial)"/>
-<attribute NAME="authors" VALUE="Arasu, Arvind and Eguro, Ken and Kaushik, Raghav and Ramamurthy, Ravi"/>
-<pdf_annotation type="PDF_FILE" object_id="0" document_hash="A99F7310249BD6991DEEAB6A4547EBE8F8E506FF909E1664DFEC1E19ED34A">
-    <pdf_title>Querying Encrypted Data</pdf_title>
-</pdf_annotation>
-</node>
-<node TEXT="" ID="ID_210271783" CREATED="1495611378626" MODIFIED="1496317724213"/>
-<node TEXT="Encryption schemes in themselves also do not help verify what computation took place. Combining encryption with verifiable computation approaches or software attestation may provide a solution." ID="ID_717622838" CREATED="1496317724836" MODIFIED="1499447867191"/>
-</node>
-</node>
-<node TEXT="Encrypted CPU" LOCALIZED_STYLE_REF="default" FOLDED="true" ID="ID_1925936219" CREATED="1495543430452" MODIFIED="1497274421567">
-<icon BUILTIN="button_ok"/>
-<attribute NAME="label" VALUE="section:encrypted-cpu" OBJECT="java.net.URI|section:encrypted-cpu"/>
-<node TEXT="mindmap" STYLE_REF="drop" FOLDED="true" ID="ID_293416149" CREATED="1495543560573" MODIFIED="1495543566533">
+<node TEXT="encrypted CPU" STYLE_REF="drop" FOLDED="true" ID="ID_293416149" CREATED="1495543560573" MODIFIED="1499942322313" MOVED="1499942324405">
 <node TEXT="How practical is homomorphically encrypted program execution? an implementation and performance evaluation" ID="ID_1171982778" CREATED="1456837510573" MODIFIED="1457385150968" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/Secret%20Program%20Execution%20Performance%20Evaluation.pdf" MOVED="1495543568392">
 <pdf_annotation type="PDF_FILE" object_id="0" document_hash="A62CE564B99F9D189E87C9DE773CC113C56D8C7EA138134D997CED625AD1EE">
     <pdf_title>How Practical is Homomorphically Encrypted Program Execution? An Implementation and Performance Evaluation</pdf_title>
@@ -895,8 +786,107 @@
 </node>
 </node>
 </node>
-<node TEXT="Content" STYLE_REF="paragraphs_drop_self" FOLDED="true" ID="ID_119752747" CREATED="1495543569443" MODIFIED="1495543573746">
-<node TEXT="The encrypted CPU works very much the same as a regular CPU, as can be seen in \autoref{figure:encrypted-cpu}. A regular CPU operates on bits using logical gates. The encrypted CPU operates on encrypted bits. Each bit is represented by cipher value of $n$ bits size so that there are $2^{n-1}$ possible representations for $0$ and $1$ respectively. Logical gates are emulated using the fully homomorphic operations on these cipher values (addition and multiplication)." ID="ID_1020198095" CREATED="1497253846341" MODIFIED="1497254653099" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/Secret%20Program%20Execution%20in%20the%20Cloud%20Applying%20Homomorphic%20Encryption.pdf">
+</node>
+<node TEXT="Content" STYLE_REF="paragraphs_drop_self" ID="ID_821555939" CREATED="1495031921641" MODIFIED="1499942306834" MOVED="1495031923168">
+<icon BUILTIN="button_ok"/>
+<node TEXT="There are several different ways in which cryptographic principles can be used to implement the concept of a secure container." ID="ID_544485861" CREATED="1495030228538" MODIFIED="1495030293686" MOVED="1495031930156"/>
+<node TEXT="\begin{description}" LOCALIZED_STYLE_REF="default" ID="ID_958111314" CREATED="1492069069527" MODIFIED="1492617214994" MOVED="1495031930168"/>
+<node TEXT="\item[Multi party computing]" FOLDED="true" ID="ID_1564094585" CREATED="1495541708380" MODIFIED="1495541711049">
+<node TEXT="Several parties jointly compute a function to which every party provides some input. The input of each party is not revealed to any of the other parties. One early implementation is Yao&apos;s garbled circuits." ID="ID_1507598191" CREATED="1495030347551" MODIFIED="1495541714631" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/SGX%20for%20efficient%20Two%20Party%20Computation.pdf" MOVED="1499942285310">
+<attribute NAME="key" VALUE="Gupta"/>
+<attribute NAME="year" VALUE="2016"/>
+<attribute NAME="title" VALUE="Using Intel Software Guard Extensions for Efficient Two-Party Secure Function Evaluation"/>
+<attribute NAME="authors" VALUE="Gupta, Debayan and Mood, Benjamin and Feigenbaum, Joan and Butler, Kevin and Traynor, Patrick"/>
+<pdf_annotation type="PDF_FILE" object_id="0" document_hash="814F2497FDC68742D5F7B633ABF49192F0C28CC928AB7B33DC228BD16E9">
+    <pdf_title>Using Intel Software Guard Extensions for Ecient Two-Party Secure Function Evaluation</pdf_title>
+</pdf_annotation>
+</node>
+<node TEXT="For secure remote computation, we could assume two parties, where only the data owner provides an input and only the infrastructure owner executes the function." ID="ID_1818312817" CREATED="1495030973594" MODIFIED="1495543704763" MOVED="1499942285311"/>
+<node TEXT="However, the function output is in plain text which is not desirable for secure remote computation in general." ID="ID_647862117" CREATED="1495031116524" MODIFIED="1499764183668" MOVED="1499942285315"/>
+</node>
+<node TEXT="\item[Verifiable computing]" FOLDED="true" ID="ID_1000386877" CREATED="1495541721026" MODIFIED="1495541722884">
+<node TEXT="This is a first step in the direction of secure remote computing. It ensures the integrity but not the confidentiality of the computation (similar to a cryptographic signature)." ID="ID_14679414" CREATED="1495031325019" MODIFIED="1495543730252" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/../../../fredrik/dev/sgx2017/literature_repository/Non-Interactive%20Verifiable%20Computation.pdf" MOVED="1499942283335">
+<attribute NAME="key" VALUE="Gennaro2010"/>
+<attribute NAME="year" VALUE="2010"/>
+<attribute NAME="title" VALUE="Non-interactive verifiable computing: Outsourcing computation to untrusted workers"/>
+<attribute NAME="authors" VALUE="Gennaro, Rosario and Gentry, Craig and Parno, Bryan"/>
+</node>
+<node TEXT="" ID="ID_750258261" CREATED="1495031634478" MODIFIED="1495031985900" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/../../../../literature_repository/Verena%20integrity%20for%20web%20apps.pdf" MOVED="1499942283346">
+<attribute NAME="key" VALUE="Karapanos"/>
+<attribute NAME="title" VALUE="Verena: End-to-end integrity protection for web applications"/>
+<attribute NAME="authors" VALUE="Karapanos, Nikolaos and Filios, Alexandros and Popa, Raluca Ada and Capkun, Srdjan"/>
+<attribute NAME="year" VALUE="2016"/>
+</node>
+<node TEXT="" ID="ID_1551175568" CREATED="1495031685680" MODIFIED="1495543759204" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/Hybrid%20Architecture%20for%20Interactive%20Verifiable%20Computation.pdf" MOVED="1499942283357">
+<attribute NAME="key" VALUE="Vu2013"/>
+<attribute NAME="year" VALUE="2013"/>
+<attribute NAME="title" VALUE="A hybrid architecture for interactive verifiable computation"/>
+<attribute NAME="authors" VALUE="Vu, Victor and Setty, Srujay and Blumberg, Andrew J and Walfish, Michael"/>
+<pdf_annotation type="PDF_FILE" object_id="0" document_hash="CD75E769ABBFEA402B539DFC8975429BC17D85C54A8528F5EB1BBC83669C">
+    <pdf_title>A hybrid architecture for interactive verifiable computation</pdf_title>
+</pdf_annotation>
+</node>
+</node>
+<node TEXT="\item[Homomorphic Encryption]" FOLDED="true" ID="ID_1769833687" CREATED="1495031967093" MODIFIED="1495542999044" MOVED="1495031983176">
+<node TEXT="Such encryption schemes define calculation operations on encrypted data. The operands and result of these calculations remain encrypted so they could be performed by an untrusted third party." ID="ID_1952238538" CREATED="1495543096548" MODIFIED="1495543842886" MOVED="1499942270142"/>
+<node TEXT="\autoref{figure:homomorphic-encryption} explains the principle of homomorphic encryption with an example. While partially homomorphic schemes define only one operation (e.g. either addition or multiplication), fully homomorphic schemes define both." ID="ID_1116118751" CREATED="1495611406921" MODIFIED="1499623223561" MOVED="1499942276698"/>
+<node TEXT="\input{content/tikz/homomorphic-encryption}" STYLE_REF="latex" FOLDED="true" ID="ID_1989105116" CREATED="1495546568624" MODIFIED="1499091747380" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/thesis/content/tikz/homomorphic-encryption.tex" MOVED="1499942276702">
+<attribute NAME="image" VALUE=""/>
+<attribute NAME="label" VALUE="figure:homomorphic-encryption" OBJECT="java.net.URI|figure:homomorphic-encryption"/>
+<attribute NAME="year" VALUE="2013"/>
+<attribute NAME="title" VALUE="Querying Encrypted Data (Tutorial)"/>
+<attribute NAME="authors" VALUE="Arasu, Arvind and Eguro, Ken and Kaushik, Raghav and Ramamurthy, Ravi"/>
+<node TEXT="\textbf{Homomorphic encryption example.}" ID="ID_610399076" CREATED="1499090859799" MODIFIED="1499444834926"/>
+<node TEXT="A homomorphic encryption scheme defines operations on encrypted data. The decrypted result of the encrypted addition ($\bigoplus$) gives the same result as performing a plain text addition ($+$). Using this scheme an untrusted \textit{processing provider} can perform calculations without learning anything about the plain text." ID="ID_1072580727" CREATED="1499444835082" MODIFIED="1499764202134"/>
+</node>
+<node TEXT="Gentry et al. successfully constructed the first fully homomorphic scheme in 2009." ID="ID_233387469" CREATED="1495611587308" MODIFIED="1499764305206" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/Gentry%20Homomorphic%20Encryption.pdf" MOVED="1499942276708">
+<attribute NAME="key" VALUE="Gentry2009"/>
+<attribute NAME="year" VALUE="2009"/>
+<attribute NAME="title" VALUE="Fully homomorphic encryption using ideal lattices."/>
+<attribute NAME="authors" VALUE="Gentry, Craig and others"/>
+<pdf_annotation type="PDF_FILE" object_id="0" document_hash="CEBAF1BB5BAC60408827D88A46FAA92EC9188EBEA892D31BE4A357821F6C2E">
+    <pdf_title>Fully Homomorphic Encryption Using Ideal Lattices</pdf_title>
+</pdf_annotation>
+</node>
+<node TEXT="\autoref{figure:encryption-schemes} shows the relationship between different encryption schemes and the operations they support. These schemes are revisited in \autoref{section:secure-db}, which also shows how they can be practically put to use." ID="ID_129969722" CREATED="1495611645959" MODIFIED="1499679136021" MOVED="1499942276714"/>
+<node TEXT="\input{content/tikz/encryption-schemes}" STYLE_REF="latex" FOLDED="true" ID="ID_452615921" CREATED="1496309999068" MODIFIED="1499091749849" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/thesis/content/tikz/encryption-schemes.tex" MOVED="1499942276718">
+<attribute NAME="image" VALUE=""/>
+<attribute NAME="label" VALUE="figure:encryption-schemes" OBJECT="java.net.URI|figure:encryption-schemes"/>
+<attribute NAME="key" VALUE="querying-encrypted-data-tutorial"/>
+<attribute NAME="year" VALUE="2013"/>
+<attribute NAME="title" VALUE="Querying Encrypted Data (Tutorial)"/>
+<attribute NAME="authors" VALUE="Arasu, Arvind and Eguro, Ken and Kaushik, Raghav and Ramamurthy, Ravi"/>
+<node TEXT="\textbf{Encryption schemes and their relationships.}" ID="ID_489936542" CREATED="1499090871903" MODIFIED="1499444848118"/>
+<node TEXT="The shading indicates computational efficiency (red: impractical, orange: expensive, green: practical). Arrows indicate subsumption of functionality. Fully homomorphic schemes for example provide both $+$ and $\times$ operations (and by extension -- e.g. an encrypted CPU -- also comparison operations)." ID="ID_1527882742" CREATED="1499444848261" MODIFIED="1499764328879"/>
+<node TEXT="Reprinted from" ID="ID_467588759" CREATED="1499444852134" MODIFIED="1499444852134" MOVED="1499444854908"/>
+</node>
+<node TEXT="State of the art fully homomorphic schemes still suffer from an intractably high overhead. Partially homomorphic schemes on the other hand have already been applied to databases." ID="ID_1599544022" CREATED="1496317349564" MODIFIED="1496317641943" MOVED="1499942276721"/>
+<node TEXT="" ID="ID_185886964" CREATED="1496317693286" MODIFIED="1496317709632" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/Microsoft%20Haven.pdf" MOVED="1499942276725">
+<attribute NAME="key" VALUE="Baumann2014"/>
+<attribute NAME="year" VALUE="2014"/>
+<attribute NAME="title" VALUE="Shielding applications from an untrusted cloud with haven"/>
+<attribute NAME="authors" VALUE="Baumann, Andrew and Peinado, Marcus and Hunt, Galen"/>
+<pdf_annotation type="PDF_FILE" object_id="0" document_hash="F73BC6AC9A9DC3F7B51411327AC88B18AD75C688219B86BAC4CD6A446F99EDD">
+    <pdf_title>Shielding Applications from an Untrusted Cloud with Haven</pdf_title>
+</pdf_annotation>
+</node>
+<node TEXT="" ID="ID_666530113" CREATED="1496317710164" MODIFIED="1496317717332" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/Encrypted%20Database%20good%20FHE%20PHE%20overview.pdf" MOVED="1499942276728">
+<attribute NAME="key" VALUE="querying-encrypted-data-tutorial"/>
+<attribute NAME="year" VALUE="2013"/>
+<attribute NAME="title" VALUE="Querying Encrypted Data (Tutorial)"/>
+<attribute NAME="authors" VALUE="Arasu, Arvind and Eguro, Ken and Kaushik, Raghav and Ramamurthy, Ravi"/>
+<pdf_annotation type="PDF_FILE" object_id="0" document_hash="A99F7310249BD6991DEEAB6A4547EBE8F8E506FF909E1664DFEC1E19ED34A">
+    <pdf_title>Querying Encrypted Data</pdf_title>
+</pdf_annotation>
+</node>
+<node TEXT="" ID="ID_210271783" CREATED="1495611378626" MODIFIED="1496317724213" MOVED="1499942276731"/>
+<node TEXT="Encryption schemes in themselves also do not help verify what computation took place. Combining encryption with verifiable computation approaches or software attestation may provide a solution." ID="ID_717622838" CREATED="1496317724836" MODIFIED="1499447867191" MOVED="1499942276735"/>
+</node>
+<node TEXT="\item[Encrypted CPU]" FOLDED="true" ID="ID_1403278513" CREATED="1495031945083" MODIFIED="1495031965157">
+<node TEXT="Given a (fully) homomorphic encryption scheme it is possible to execute entire encrypted programs. This is possible in a fully oblivious fashion where both the instruction flow and memory access (code and data) remain hidden." ID="ID_601974181" CREATED="1495543199937" MODIFIED="1499623185712" MOVED="1499942287570"/>
+<node TEXT="Both obliviousness and the current fully homomorphic encryption schemes incur such large performance penalties that they are not yet practically useful for more complex programs." ID="ID_312856627" CREATED="1495543414619" MODIFIED="1495543415414" MOVED="1499942287573"/>
+<node TEXT="" ID="ID_404536768" CREATED="1499942348457" MODIFIED="1499942348457"/>
+<node TEXT="The encrypted CPU works very much the same as a regular CPU, as can be seen in \autoref{figure:encrypted-cpu}. A regular CPU operates on bits using logical gates. The encrypted CPU operates on encrypted bits. Each bit is represented by cipher value of $n$ bits size so that there are $2^{n-1}$ possible representations for $0$ and $1$ respectively. Logical gates are emulated using the fully homomorphic operations on these cipher values (addition and multiplication)." ID="ID_1020198095" CREATED="1497253846341" MODIFIED="1497254653099" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/Secret%20Program%20Execution%20in%20the%20Cloud%20Applying%20Homomorphic%20Encryption.pdf" MOVED="1499942353089">
 <attribute NAME="key" VALUE="Brenner2011"/>
 <attribute NAME="year" VALUE="2011"/>
 <attribute NAME="title" VALUE="Secret program execution in the cloud applying homomorphic encryption"/>
@@ -905,7 +895,7 @@
     <pdf_title>Secret Program Execution in the Cloud Applying Homomorphic Encryption</pdf_title>
 </pdf_annotation>
 </node>
-<node TEXT="\textbf{Encrypted CPU schematic.} This is a classic von-Neumann architecture where the memory holds both the instructions and data. Bits are represented as encrypted numbers. Reprinted from" ID="ID_901443426" CREATED="1496927457043" MODIFIED="1499444877221" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/Secret%20Program%20Execution%20better.pdf" MOVED="1497273910046">
+<node TEXT="\textbf{Encrypted CPU schematic.} This is a classic von-Neumann architecture where the memory holds both the instructions and data. Bits are represented as encrypted numbers. Reprinted from" ID="ID_901443426" CREATED="1496927457043" MODIFIED="1499444877221" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/Secret%20Program%20Execution%20better.pdf" MOVED="1499942353095">
 <attribute NAME="image" VALUE="encrypted cpu"/>
 <attribute NAME="key" VALUE="Brenner2011a"/>
 <attribute NAME="year" VALUE="2011"/>
@@ -918,10 +908,10 @@
 </pdf_annotation>
 <hook URI="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/_data/150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/default_files/encrypted%20cpu.svg" SIZE="1.0" NAME="ExternalObject"/>
 </node>
-<node TEXT="Both code and data reside in the encrypted memory. This means that code and data remain secret at all times." ID="ID_1323926141" CREATED="1497272723589" MODIFIED="1497272775855"/>
-<node TEXT="" ID="ID_1721282092" CREATED="1497254676276" MODIFIED="1497254676276"/>
-<node TEXT="The circuit evaluation provides \textit{obliviousness} as the entire circuit must always be solved. For example, on memory accesses each cell is reassigned -- either with its new value on a write, or an equivalent representation of its old bit value." ID="ID_818872921" CREATED="1497254119108" MODIFIED="1497254387829"/>
-<node TEXT="This obliviousness is an important security factor and a performance pitfall at the same time. Memory access patterns and program flow are kept secret. This however also means that access times grow with the memory size. The authors state that ``compact programs and data are the key to tolerable runtimes&apos;&apos;." ID="ID_1325928179" CREATED="1497254388356" MODIFIED="1497254686779" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/Secret%20Program%20Execution%20Performance%20Evaluation.pdf">
+<node TEXT="Both code and data reside in the encrypted memory. This means that code and data remain secret at all times." ID="ID_1323926141" CREATED="1497272723589" MODIFIED="1497272775855" MOVED="1499942353100"/>
+<node TEXT="" ID="ID_1721282092" CREATED="1497254676276" MODIFIED="1497254676276" MOVED="1499942353104"/>
+<node TEXT="The circuit evaluation provides \textit{obliviousness} as the entire circuit must always be solved. For example, on memory accesses each cell is reassigned -- either with its new value on a write, or an equivalent representation of its old bit value." ID="ID_818872921" CREATED="1497254119108" MODIFIED="1497254387829" MOVED="1499942353108"/>
+<node TEXT="This obliviousness is an important security factor and a performance pitfall at the same time. Memory access patterns and program flow are kept secret. This however also means that access times grow with the memory size. The authors state that ``compact programs and data are the key to tolerable runtimes&apos;&apos;." ID="ID_1325928179" CREATED="1497254388356" MODIFIED="1497254686779" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/Secret%20Program%20Execution%20Performance%20Evaluation.pdf" MOVED="1499942353113">
 <attribute NAME="key" VALUE="Brenner2012"/>
 <attribute NAME="year" VALUE="2012"/>
 <attribute NAME="title" VALUE="How practical is homomorphically encrypted program execution? an implementation and performance evaluation"/>
@@ -930,11 +920,11 @@
     <pdf_title>How Practical is Homomorphically Encrypted Program Execution? An Implementation and Performance Evaluation</pdf_title>
 </pdf_annotation>
 </node>
-<node TEXT="" ID="ID_934223111" CREATED="1497254816478" MODIFIED="1497254816478"/>
-<node TEXT="A hardware implementation of the encrypted CPU has not yet been attempted due to various challenges such as super-wide buses and the recrypt procedure necessitated by the encryption scheme." ID="ID_1008727172" CREATED="1497271507317" MODIFIED="1499764374920"/>
-<node TEXT="A software implementation highlights the performance problems. Without encryption, a CPU cycle is simulated in $3 ms$. With encryption this value increases to $166 s$." ID="ID_1078829631" CREATED="1497271514645" MODIFIED="1497274087896"/>
-<node TEXT="\footnote{This is the measurement for the highest value of the security parameter $lambda$. Unfortunately, neither Brenner et al. nor Smart et al. \cite{Smart2010} give further details on how the security parameter relate to a comparable security level. The BSI advises a security level of $120 bit$ from the year 2022 onwards: \url{https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/Publikationen/TechnischeRichtlinien/TR02102/BSI-TR-02102.pdf}.}" ID="ID_1789113343" CREATED="1497254924260" MODIFIED="1499764428176"/>
-<node TEXT="Both values are obtained for $256$ memory rows -- at $13 bit$ per row this gives roughly $0.4 kB$ of memory.\footnote{A memory word contains $8 bit$ of data and a $5 bit$ command.\cite{Brenner2011}. This design decision reduces the number of costly memory access cycles.}" LOCALIZED_STYLE_REF="default" ID="ID_1799557031" CREATED="1497271400094" MODIFIED="1497274049494" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/Secret%20Program%20Execution%20Performance%20Evaluation.pdf">
+<node TEXT="" ID="ID_934223111" CREATED="1497254816478" MODIFIED="1497254816478" MOVED="1499942353116"/>
+<node TEXT="A hardware implementation of the encrypted CPU has not yet been attempted due to various challenges such as super-wide buses and the recrypt procedure necessitated by the encryption scheme." ID="ID_1008727172" CREATED="1497271507317" MODIFIED="1499764374920" MOVED="1499942353120"/>
+<node TEXT="A software implementation highlights the performance problems. Without encryption, a CPU cycle is simulated in $3 ms$. With encryption this value increases to $166 s$." ID="ID_1078829631" CREATED="1497271514645" MODIFIED="1497274087896" MOVED="1499942353124"/>
+<node TEXT="\footnote{This is the measurement for the highest value of the security parameter $lambda$. Unfortunately, neither Brenner et al. nor Smart et al. \cite{Smart2010} give further details on how the security parameter relate to a comparable security level. The BSI advises a security level of $120 bit$ from the year 2022 onwards: \url{https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/Publikationen/TechnischeRichtlinien/TR02102/BSI-TR-02102.pdf}.}" ID="ID_1789113343" CREATED="1497254924260" MODIFIED="1499764428176" MOVED="1499942353128"/>
+<node TEXT="Both values are obtained for $256$ memory rows -- at $13 bit$ per row this gives roughly $0.4 kB$ of memory.\footnote{A memory word contains $8 bit$ of data and a $5 bit$ command.\cite{Brenner2011}. This design decision reduces the number of costly memory access cycles.}" LOCALIZED_STYLE_REF="default" ID="ID_1799557031" CREATED="1497271400094" MODIFIED="1497274049494" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/Secret%20Program%20Execution%20Performance%20Evaluation.pdf" MOVED="1499942353132">
 <attribute NAME="key" VALUE="Brenner2012"/>
 <attribute NAME="year" VALUE="2012"/>
 <attribute NAME="title" VALUE="How practical is homomorphically encrypted program execution? an implementation and performance evaluation"/>
@@ -944,62 +934,14 @@
 </pdf_annotation>
 </node>
 </node>
-</node>
-<node TEXT="Conclusion" LOCALIZED_STYLE_REF="default" FOLDED="true" ID="ID_1939499389" CREATED="1495543870276" MODIFIED="1497274426880">
-<icon BUILTIN="button_ok"/>
-<node TEXT="mindmap" STYLE_REF="drop" FOLDED="true" ID="ID_529220936" CREATED="1495543887981" MODIFIED="1495543899209" MOVED="1495543920756">
-<node TEXT="not the holy grail" FOLDED="true" ID="ID_878660458" CREATED="1495032012735" MODIFIED="1495032023868" MOVED="1495543923696">
-<node TEXT="locked into encryption key domain" FOLDED="true" ID="ID_856039825" CREATED="1456836347127" MODIFIED="1488475931816">
-<node ID="ID_1487406861" CREATED="1456836364360" MODIFIED="1456836384479"><richcontent TYPE="NODE">
-
-<html>
-  <head>
-    
-  </head>
-  <body>
-    <p>
-      interaction/communication <font color="#ff0000">not possible</font>&#160;w/o decrypting results
-    </p>
-  </body>
-</html>
-</richcontent>
-</node>
-<node TEXT="client interaction needed" FOLDED="true" ID="ID_1012444455" CREATED="1456836389099" MODIFIED="1456836392318">
-<node TEXT="how does this scale?" ID="ID_314246928" CREATED="1456836392788" MODIFIED="1456836399379"/>
-<node TEXT="cannot fully outsource to cloud" ID="ID_393701967" CREATED="1456836399723" MODIFIED="1456836422468"/>
-</node>
-</node>
-<node TEXT="fundamental problem" FOLDED="true" ID="ID_1347076560" CREATED="1487265984091" MODIFIED="1487265996140" MOVED="1488475916639">
-<node TEXT="On the Impossibility of Cryptography Alone for Privacy-Preserving Cloud Computing." FOLDED="true" ID="ID_1819634086" CREATED="1456757913506" MODIFIED="1457385150960" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/Impossibility%20of%20Crypto%20alone%20for%20Privacy%20Preserving%20Cloud.pdf">
-<pdf_annotation type="PDF_FILE" object_id="0" document_hash="1335C6CF12BF39C6FB626335E38E86ABC3DB6FFC4719BAA8446A1E16533D72">
-    <pdf_title>On the Impossibility of Cryptography Alone for Privacy-Preserving Cloud Computing</pdf_title>
-</pdf_annotation>
-<attribute NAME="key" VALUE="VanDijk2010"/>
-<attribute NAME="year" VALUE="2010"/>
-<attribute NAME="title" VALUE="On the Impossibility of Cryptography Alone for Privacy-Preserving Cloud Computing"/>
-<attribute NAME="authors" VALUE="Marten van Dijk and Ari Juels"/>
-<node TEXT="2010, 177 citations" ID="ID_971032698" CREATED="1459418996809" MODIFIED="1459418996809" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/Impossibility%20of%20Crypto%20alone%20for%20Privacy%20Preserving%20Cloud.pdf" MOVED="1459420206493">
-<pdf_annotation type="COMMENT" page="1" object_id="6958629989399554567" object_number="13" document_hash="1335C6CF12BF39C6FB626335E38E86ABC3DB6FFC4719BAA8446A1E16533D72">
-    <pdf_title>On the Impossibility of Cryptography Alone for Privacy-Preserving Cloud Computing</pdf_title>
-</pdf_annotation>
-<attribute NAME="year" VALUE="2010"/>
-<attribute NAME="title" VALUE="On the Impossibility of Cryptography Alone for Privacy-Preserving Cloud Computing"/>
-<attribute NAME="authors" VALUE="Marten van Dijk and Ari Juels"/>
-</node>
-<node TEXT="problem: data locked into one encryption domain" ID="ID_995425624" CREATED="1459420267685" MODIFIED="1459420278577"/>
-<node TEXT="data from different sources (encrypted under different keys) cannot be combined" ID="ID_1131827347" CREATED="1459420283972" MODIFIED="1459420298052"/>
-</node>
-</node>
-</node>
-</node>
-<node TEXT="Content" STYLE_REF="paragraphs_drop_self" FOLDED="true" ID="ID_1956735872" CREATED="1495543885991" MODIFIED="1495543895304" MOVED="1495543920765">
-<node TEXT="Fully homomorphic encryption adds another tool to a cryptographer&apos;s toolbox: The ability to compute on encrypted data. The concept of an encrypted CPU builds on top of this primitive. It shows how a encrypted program with branching can be executed on encrypted data." ID="ID_1875507588" CREATED="1497272486645" MODIFIED="1497272823313"/>
-<node TEXT="" ID="ID_1729499891" CREATED="1497272838942" MODIFIED="1497272838942"/>
-<node TEXT="The performance of fully homomorphic schemes is still far from being practically applicable. Through the oblivious full-circuit evaluation of the encrypted CPU this issue is amplified. However, improvements are possible on several avenues:" ID="ID_607327069" CREATED="1497272835605" MODIFIED="1497273046447"/>
-<node TEXT="New, more efficient fully homomorphic schemes may be devised. The existing schemes can be optimised both in their algorithm and in their implementation (e.g. parallelised). Hardware implementation of the encryption, and especially the encrypted CPU also has large potential benefits." ID="ID_262947221" CREATED="1497273046925" MODIFIED="1499764547376"/>
-<node TEXT="" ID="ID_165990018" CREATED="1497273291094" MODIFIED="1497273291094"/>
-<node TEXT="Yet even a sufficiently efficient encrypted CPU could not solve secure remote computation once and for all. Firstly the computation is restricted to a single client. Without decrypting the results (in a trusted location) no communication and interaction between clients is possible. Secondly the problem of attestation is not solved by this approach." ID="ID_295590508" CREATED="1497273292309" MODIFIED="1497273886255"/>
-</node>
+<node TEXT="\end{description}" LOCALIZED_STYLE_REF="default" ID="ID_408605672" CREATED="1492075985752" MODIFIED="1492617215028" MOVED="1495031930217"/>
+<node TEXT="" ID="ID_1700558716" CREATED="1499942371010" MODIFIED="1499942371010"/>
+<node TEXT="Fully homomorphic encryption adds another tool to a cryptographer&apos;s toolbox: The ability to compute on encrypted data. The concept of an encrypted CPU builds on top of this primitive. It shows how a encrypted program with branching can be executed on encrypted data." ID="ID_1875507588" CREATED="1497272486645" MODIFIED="1497272823313" MOVED="1499942377159"/>
+<node TEXT="" ID="ID_1729499891" CREATED="1497272838942" MODIFIED="1497272838942" MOVED="1499942377175"/>
+<node TEXT="The performance of fully homomorphic schemes is still far from being practically applicable. Through the oblivious full-circuit evaluation of the encrypted CPU this issue is amplified. However, improvements are possible on several avenues:" ID="ID_607327069" CREATED="1497272835605" MODIFIED="1497273046447" MOVED="1499942377180"/>
+<node TEXT="New, more efficient fully homomorphic schemes may be devised. The existing schemes can be optimised both in their algorithm and in their implementation (e.g. parallelised). Hardware implementation of the encryption, and especially the encrypted CPU also has large potential benefits." ID="ID_262947221" CREATED="1497273046925" MODIFIED="1499764547376" MOVED="1499942377184"/>
+<node TEXT="" ID="ID_165990018" CREATED="1497273291094" MODIFIED="1497273291094" MOVED="1499942377188"/>
+<node TEXT="Yet even a sufficiently efficient encrypted CPU could not solve secure remote computation once and for all. Firstly the computation is restricted to a single client. Without decrypting the results (in a trusted location) no communication and interaction between clients is possible. Secondly the problem of attestation is not solved by this approach." ID="ID_295590508" CREATED="1497273292309" MODIFIED="1497273886255" MOVED="1499942377192"/>
 </node>
 </node>
 <node TEXT="Trusted Computing" FOLDED="true" ID="ID_360935729" CREATED="1457521101585" MODIFIED="1499677317446" MOVED="1492616999550">
@@ -3297,7 +3239,8 @@
 <node TEXT="\end{description}" ID="ID_294304177" CREATED="1499360945675" MODIFIED="1499360949989" MOVED="1499361472084"/>
 </node>
 </node>
-<node TEXT="Application Isolation" LOCALIZED_STYLE_REF="default" FOLDED="true" ID="ID_94612974" CREATED="1499361443307" MODIFIED="1499449749341">
+<node TEXT="Application Isolation" LOCALIZED_STYLE_REF="default" FOLDED="true" ID="ID_94612974" CREATED="1499361443307" MODIFIED="1499942721787">
+<attribute NAME="label" VALUE="section:tc-apps" OBJECT="java.net.URI|section:tc-apps"/>
 <node TEXT="Content" STYLE_REF="paragraphs_drop_self" FOLDED="true" ID="ID_1516222958" CREATED="1499361452756" MODIFIED="1499628475052">
 <node TEXT="\begin{description}" ID="ID_82011801" CREATED="1499360938829" MODIFIED="1499360945232" MOVED="1499361472047"/>
 <node TEXT="\item[Microsoft Haven\cite{Baumann2014}]" FOLDED="true" ID="ID_353301403" CREATED="1488541969609" MODIFIED="1499450388480" MOVED="1499361735027">
@@ -3367,7 +3310,15 @@
 <node TEXT="" ID="ID_268992095" CREATED="1499449787246" MODIFIED="1499449787246"/>
 <node TEXT="An additional shield module within the enclave mediates between the library operating system and the outside world (untrusted runtime)." ID="ID_1475060210" CREATED="1499446380845" MODIFIED="1499446419359"/>
 <node TEXT="Any system call by the application is passed through the library operating system, secured by the shield module, and only then passed on through the untrusted runtime on to the untrusted operating system. The layers are depicted in \autoref{figure:haven}." ID="ID_1924838776" CREATED="1499446455420" MODIFIED="1499449821576"/>
-<node TEXT="This approach is re-visited in \autoref{section:sgx-hardening} in the context of SCONE." ID="ID_1989885067" CREATED="1499447789205" MODIFIED="1499447957926" MOVED="1499449450108"/>
+<node TEXT="This approach is re-visited in \autoref{section:sgx-hardening} in the context of SCONE." ID="ID_1989885067" CREATED="1499447789205" MODIFIED="1499943775643" MOVED="1499449450108" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/Scone.pdf">
+<attribute NAME="key" VALUE="Arnautov2016"/>
+<attribute NAME="year" VALUE="2016"/>
+<attribute NAME="title" VALUE="SCONE: Secure linux containers with Intel SGX"/>
+<attribute NAME="authors" VALUE="Arnautov, Sergei and Trach, Bohdan and Gregor, Franz and Knauth, Thomas and Martin, Andre and Priebe, Christian and Lind, Joshua and Muthukumaran, Divya and O&#x2019;Keeffe, Daniel and Stillwell, Mark L and others"/>
+<pdf_annotation type="PDF_FILE" object_id="0" document_hash="3A2B26F7CD779BEBA81FEC65DCC6B13B145925A3EB10F0C4E0DF7275FE1">
+    <pdf_title>SCONE: Secure Linux Containers with Intel SGX</pdf_title>
+</pdf_annotation>
+</node>
 <node TEXT="\input{content/tikz/haven}" STYLE_REF="latex" FOLDED="true" ID="ID_1468585962" CREATED="1499449409934" MODIFIED="1499450328384" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/Microsoft%20Haven.pdf">
 <attribute NAME="label" VALUE="figure:haven" OBJECT="java.net.URI|figure:haven"/>
 <attribute NAME="image" VALUE=""/>
@@ -4051,7 +4002,7 @@
 </node>
 </node>
 </node>
-<node TEXT="Comparison" LOCALIZED_STYLE_REF="default" ID="ID_995120664" CREATED="1495055799005" MODIFIED="1499672849857">
+<node TEXT="Comparison" LOCALIZED_STYLE_REF="default" FOLDED="true" ID="ID_995120664" CREATED="1495055799005" MODIFIED="1499672849857">
 <icon BUILTIN="button_ok"/>
 <node TEXT="mindmap" STYLE_REF="drop" FOLDED="true" ID="ID_362739599" CREATED="1495543887981" MODIFIED="1495543899209" MOVED="1495543900065">
 <node TEXT="criteria" FOLDED="true" ID="ID_237312689" CREATED="1488475358073" MODIFIED="1488542691949" MOVED="1497276680403">
@@ -6984,7 +6935,7 @@
 <node TEXT="\item[Secure ZooKeeper:]" FOLDED="true" ID="ID_1198544376" CREATED="1499861414848" MODIFIED="1499866176633">
 <node TEXT="ZooKeeper\footnote{\url{https://zookeeper.apache.org/}} is a key-value store used to provide configuration, naming, synchronisation etc. in distributed applications (e.g. micro-service architectures)." ID="ID_1070130646" CREATED="1499866036473" MODIFIED="1499866412297" MOVED="1499866287483"/>
 <node TEXT="SGX can be used to harden existing applications, which is the topic of this thesis." ID="ID_277356659" CREATED="1499865978737" MODIFIED="1499866002042"/>
-<node TEXT="Secure ZooKeeper uses enclaves to protect the data managed by ZooKeeper." ID="ID_1700491540" CREATED="1499866204441" MODIFIED="1499866319369"/>
+<node TEXT="SecureKeeper uses enclaves to protect the data managed by ZooKeeper." ID="ID_1700491540" CREATED="1499866204441" MODIFIED="1499945519690"/>
 <node TEXT="When the data is stored outside of the enclave, e.g. on disk, it is encrypted." ID="ID_204377492" CREATED="1499866319704" MODIFIED="1499866352786"/>
 <node TEXT="The Java native interface (JNI) is used to bind the Java implementation of ZooKeeper to the enclaves." ID="ID_808626981" CREATED="1499866225872" MODIFIED="1499867570322" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/SecureKeeper.pdf">
 <attribute NAME="key" VALUE="Brenner2016"/>
@@ -6995,7 +6946,6 @@
     <pdf_title>SecureKeeper: Confidential ZooKeeper using Intel SGX</pdf_title>
 </pdf_annotation>
 </node>
-<node TEXT="Secure ZooKeeper is revisited in \autoref{section:sgx-hardening}." ID="ID_1539402063" CREATED="1499866002184" MODIFIED="1499866172642"/>
 </node>
 <node TEXT="\item[Secure Hadoop map-reduce:]" FOLDED="true" ID="ID_1200794013" CREATED="1499862671568" MODIFIED="1499863784920">
 <node TEXT="VC3 is a prototype of Microsoft Research that ``runs distributed MapReduce computations in the cloud while keeping their code and data secret.&apos;&apos;" ID="ID_1876953859" CREATED="1499866534680" MODIFIED="1499866882698"/>
@@ -7031,12 +6981,14 @@
 </node>
 </node>
 </node>
-<node TEXT="Related Work" LOCALIZED_STYLE_REF="default" POSITION="left" ID="ID_123293925" CREATED="1487267824221" MODIFIED="1496135435963" MOVED="1492616823153">
-<icon BUILTIN="button_cancel"/>
+<node TEXT="Related Work" LOCALIZED_STYLE_REF="default" POSITION="left" ID="ID_123293925" CREATED="1487267824221" MODIFIED="1499948603857" MOVED="1492616823153">
 <edge COLOR="#00ffff"/>
 <node TEXT="- gute Referenzen statt viel wiederholen&#xa;- &#xdc;berblick &#xfc;ber die in der Literatur vorhandenen Methoden bzw. L&#xf6;sungsans&#xe4;tze&#xa;- aktuelle Stand der Technik&#xa;- verwandte Arbeiten" STYLE_REF="drop" ID="ID_300266952" CREATED="1492080972697" MODIFIED="1495605859460" MOVED="1492080980228"/>
-<node TEXT="Introduction" STYLE_REF="paragraphs_drop_self" FOLDED="true" ID="ID_150393477" CREATED="1499869249672" MODIFIED="1499869658154" MOVED="1499869252488">
+<node TEXT="Introduction" STYLE_REF="paragraphs_drop_self" ID="ID_150393477" CREATED="1499869249672" MODIFIED="1499869658154" MOVED="1499869252488">
 <icon BUILTIN="button_ok"/>
+<node TEXT="The previous chapters already introduced a variety of related work." ID="ID_555387243" CREATED="1499949108674" MODIFIED="1499949274911" MOVED="1499949110796"/>
+<node TEXT="This chapter presents research more directly related to this thesis (e.g. with a similar problem definition)." ID="ID_883710146" CREATED="1499949122417" MODIFIED="1499949209564"/>
+<node TEXT="" ID="ID_271034496" CREATED="1499949153267" MODIFIED="1499949153267"/>
 <node TEXT="Diverse solutions for hardening applications have been evaluated in existing research." ID="ID_1120123601" CREATED="1499869262561" MODIFIED="1499869689772"/>
 <node TEXT="Different avenues exist to approach the problem of hardening applications." ID="ID_1831239377" CREATED="1499869320720" MODIFIED="1499869341009"/>
 <node TEXT="Trusted computing is one alternative, cryptography -- depending on the application -- another." ID="ID_1505185644" CREATED="1499869341265" MODIFIED="1499869442457"/>
@@ -7612,11 +7564,20 @@
 <node TEXT="\end{description}" ID="ID_422481189" CREATED="1499928935905" MODIFIED="1499928940336"/>
 </node>
 </node>
-<node TEXT="Hardening Applications with Intel SGX" LOCALIZED_STYLE_REF="default" ID="ID_930530989" CREATED="1488545417979" MODIFIED="1499935169651">
-<icon BUILTIN="button_cancel"/>
+<node TEXT="Hardening Applications with Intel SGX" LOCALIZED_STYLE_REF="default" FOLDED="true" ID="ID_930530989" CREATED="1488545417979" MODIFIED="1499948597701">
+<icon BUILTIN="button_ok"/>
 <attribute NAME="label" VALUE="section:sgx-hardening" OBJECT="java.net.URI|section:sgx-hardening"/>
-<node TEXT="mindmap" STYLE_REF="drop" ID="ID_1005870991" CREATED="1495543887981" MODIFIED="1495543899209" MOVED="1495543900065">
-<node TEXT="Securing Applications with Software Partitioning" FOLDED="true" ID="ID_1440656226" CREATED="1489491281587" MODIFIED="1489491289496" MOVED="1495605840795">
+<node TEXT="mindmap" STYLE_REF="drop" FOLDED="true" ID="ID_1005870991" CREATED="1495543887981" MODIFIED="1495543899209" MOVED="1495543900065">
+<node TEXT="done" FOLDED="true" ID="ID_779068632" CREATED="1499945293217" MODIFIED="1499945294194">
+<node TEXT="partitioning" ID="ID_902457359" CREATED="1499935883081" MODIFIED="1499935885441" MOVED="1499945309029">
+<node TEXT="microsoft VC3 (map-reduce)" LOCALIZED_STYLE_REF="default" ID="ID_1883225310" CREATED="1487266552803" MODIFIED="1495605830455" MOVED="1499935891493"/>
+<node TEXT="Haven" ID="ID_902538612" CREATED="1499450123845" MODIFIED="1499862653384" MOVED="1499935900415"/>
+<node TEXT="SecureKeeper" ID="ID_1918473973" CREATED="1499862654471" MODIFIED="1499862657288" MOVED="1499935902960"/>
+<node TEXT="secure entire application" ID="ID_1284399242" CREATED="1487267469801" MODIFIED="1487267474490" MOVED="1499935917685">
+<node TEXT="providing a &quot;secure&quot; libc" ID="ID_1547998145" CREATED="1487267501681" MODIFIED="1487267532427" MOVED="1487267617169"/>
+<node TEXT="cf. scone" ID="ID_1201759184" CREATED="1488547833150" MODIFIED="1488547841719"/>
+</node>
+<node TEXT="Securing Applications with Software Partitioning" ID="ID_1440656226" CREATED="1489491281587" MODIFIED="1489491289496" MOVED="1499935886265">
 <node TEXT="Securing Applications with Software Partitioning.pdf" STYLE_REF="NoHeading" ID="ID_307591628" CREATED="1488486502310" MODIFIED="1489493573298" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/Securing%20Applications%20with%20Software%20Partitioning.pdf" MOVED="1489491291663">
 <pdf_annotation type="PDF_FILE" object_id="0" document_hash="A3B1CC8671AEAC66B477274258B280C4FF61D5CE5FFFF2874DC5872C475">
     <pdf_title>{}</pdf_title>
@@ -7627,8 +7588,8 @@
 <attribute NAME="authors" VALUE="Atamli-Reineh, Ahmad and Martin, Andrew"/>
 <attribute NAME="NoHeading" VALUE=""/>
 </node>
-<node TEXT="summary" LOCALIZED_STYLE_REF="default" FOLDED="true" ID="ID_454103794" CREATED="1488545604974" MODIFIED="1495605838341" MOVED="1489491296843">
-<node TEXT="case study" FOLDED="true" ID="ID_381146663" CREATED="1488545563077" MODIFIED="1488545565614" MOVED="1488545614576">
+<node TEXT="summary" LOCALIZED_STYLE_REF="default" ID="ID_454103794" CREATED="1488545604974" MODIFIED="1495605838341" MOVED="1489491296843">
+<node TEXT="case study" ID="ID_381146663" CREATED="1488545563077" MODIFIED="1488545565614" MOVED="1488545614576">
 <node TEXT="parti-&#xa;tioned OpenSSL" ID="ID_295024638" CREATED="1488545402839" MODIFIED="1488545402839" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/Securing%20Applications%20with%20Software%20Partitioning.pdf" MOVED="1488545568166">
 <pdf_annotation type="HIGHLIGHTED_TEXT" page="1" object_id="349020511784308994" object_number="25" document_hash="A3B1CC8671AEAC66B477274258B280C4FF61D5CE5FFFF2874DC5872C475">
     <pdf_title>{}</pdf_title>
@@ -7639,7 +7600,7 @@
 <attribute NAME="authors" VALUE="Atamli-Reineh, Ahmad and Martin, Andrew"/>
 </node>
 </node>
-<node TEXT="four partitioning schemes" FOLDED="true" ID="ID_1427182314" CREATED="1488545582605" MODIFIED="1488545588382" MOVED="1488545614579">
+<node TEXT="four partitioning schemes" ID="ID_1427182314" CREATED="1488545582605" MODIFIED="1488545588382" MOVED="1488545614579">
 <node TEXT="4 schemes&#xa;1. whole app&#xa;2. all secrets (software mose enforce isolation)&#xa;3. separate secret&#xa;4. hybrid: reduce number of enclaves" ID="ID_1338117167" CREATED="1488545402876" MODIFIED="1488545402877" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/Securing%20Applications%20with%20Software%20Partitioning.pdf" MOVED="1488545593688">
 <pdf_annotation type="COMMENT" page="8" object_id="8940923739839718101" object_number="41" document_hash="A3B1CC8671AEAC66B477274258B280C4FF61D5CE5FFFF2874DC5872C475">
     <pdf_title>{}</pdf_title>
@@ -7650,7 +7611,7 @@
 <attribute NAME="authors" VALUE="Atamli-Reineh, Ahmad and Martin, Andrew"/>
 </node>
 </node>
-<node TEXT="findings" FOLDED="true" ID="ID_1520340763" CREATED="1488545572997" MODIFIED="1488545574894" MOVED="1488545614587">
+<node TEXT="findings" ID="ID_1520340763" CREATED="1488545572997" MODIFIED="1488545574894" MOVED="1488545614587">
 <node TEXT="hardware should isolate&#xa;(-) flicker, trustvisor&#xa;(-) large enclave with mixed data" ID="ID_1454819169" CREATED="1488545402801" MODIFIED="1488545402801" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/Securing%20Applications%20with%20Software%20Partitioning.pdf" MOVED="1488545576967">
 <pdf_annotation type="COMMENT" page="1" object_id="6515552156099297898" object_number="23" document_hash="A3B1CC8671AEAC66B477274258B280C4FF61D5CE5FFFF2874DC5872C475">
     <pdf_title>{}</pdf_title>
@@ -7673,37 +7634,7 @@
 </node>
 <node TEXT="difference to my thesis" LOCALIZED_STYLE_REF="default" ID="ID_1529989859" CREATED="1488545551221" MODIFIED="1495605838350" MOVED="1489491296856"/>
 </node>
-<node TEXT="microsoft VC3 (map-reduce)" LOCALIZED_STYLE_REF="default" ID="ID_1883225310" CREATED="1487266552803" MODIFIED="1495605830455" MOVED="1495605840803"/>
-<node TEXT="SCONE (secure linux containers)" LOCALIZED_STYLE_REF="default" FOLDED="true" ID="ID_1775593159" CREATED="1487268278732" MODIFIED="1495605830469" MOVED="1495605840808">
-<node TEXT="Scone.pdf" ID="ID_1571416570" CREATED="1488486502344" MODIFIED="1488486502345" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/Scone.pdf">
-<pdf_annotation type="PDF_FILE" object_id="0" document_hash="3A2B26F7CD779BEBA81FEC65DCC6B13B145925A3EB10F0C4E0DF7275FE1">
-    <pdf_title>SCONE: Secure Linux Containers with Intel SGX</pdf_title>
-</pdf_annotation>
-<attribute NAME="key" VALUE="Arnautov2016"/>
-<attribute NAME="year" VALUE="2016"/>
-<attribute NAME="title" VALUE="SCONE: Secure linux containers with Intel SGX"/>
-<attribute NAME="authors" VALUE="Arnautov, Sergei and Trach, Bohdan and Gregor, Franz and Knauth, Thomas and Martin, Andre and Priebe, Christian and Lind, Joshua and Muthukumaran, Divya and O&#x2019;Keeffe, Daniel and Stillwell, Mark L and others"/>
-</node>
-</node>
-<node TEXT="Haven" ID="ID_902538612" CREATED="1499450123845" MODIFIED="1499862653384"/>
-<node TEXT="SecureKeeper" ID="ID_1918473973" CREATED="1499862654471" MODIFIED="1499862657288"/>
-<node TEXT="VC3" ID="ID_1761020311" CREATED="1499862657504" MODIFIED="1499862658420"/>
-<node TEXT="secure entire VM/container" ID="ID_230919820" CREATED="1487267463672" MODIFIED="1487268288324" MOVED="1499935015896"/>
-<node TEXT="4 schemes&#xa;1. whole app&#xa;2. all secrets (software mose enforce isolation)&#xa;3. separate secret&#xa;4. hybrid: reduce number of enclaves" ID="ID_748181700" CREATED="1488545402876" MODIFIED="1488545402877" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/Securing%20Applications%20with%20Software%20Partitioning.pdf" MOVED="1499935015900">
-<pdf_annotation type="COMMENT" page="8" object_id="8940923739839718101" object_number="41" document_hash="A3B1CC8671AEAC66B477274258B280C4FF61D5CE5FFFF2874DC5872C475">
-    <pdf_title>{}</pdf_title>
-</pdf_annotation>
-<attribute NAME="key" VALUE="atamli2015securing"/>
-<attribute NAME="year" VALUE="2015"/>
-<attribute NAME="title" VALUE="Securing application with software partitioning: A case study using SGX"/>
-<attribute NAME="authors" VALUE="Atamli-Reineh, Ahmad and Martin, Andrew"/>
-</node>
-<node TEXT="secure entire application" ID="ID_1284399242" CREATED="1487267469801" MODIFIED="1487267474490" MOVED="1499935015903">
-<node TEXT="providing a &quot;secure&quot; libc" ID="ID_1547998145" CREATED="1487267501681" MODIFIED="1487267532427" MOVED="1487267617169"/>
-<node TEXT="cf. scone" ID="ID_1201759184" CREATED="1488547833150" MODIFIED="1488547841719"/>
-</node>
-<node TEXT="extract security critical parts of application" ID="ID_256624036" CREATED="1487267474768" MODIFIED="1487267486274" MOVED="1499935015905"/>
-<node TEXT="pro/contra of these approaches" ID="ID_1635807393" CREATED="1487267607059" MODIFIED="1487267612428" MOVED="1499935015909">
+<node TEXT="pro/contra of these approaches" ID="ID_1635807393" CREATED="1487267607059" MODIFIED="1487267612428" MOVED="1499935924800">
 <node TEXT="in general" ID="ID_1947982371" CREATED="1488565489407" MODIFIED="1488565491655">
 <node TEXT="tradeoff in number of enclaves: complexity (vuln.) vs. separate secrets" ID="ID_372445663" CREATED="1488545402895" MODIFIED="1488545402895" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/Securing%20Applications%20with%20Software%20Partitioning.pdf" MOVED="1488565500642">
 <pdf_annotation type="COMMENT" page="10" object_id="6018217346021865409" object_number="47" document_hash="A3B1CC8671AEAC66B477274258B280C4FF61D5CE5FFFF2874DC5872C475">
@@ -7712,6 +7643,7 @@
 <attribute NAME="year" VALUE="2015"/>
 <attribute NAME="title" VALUE="Securing application with software partitioning: A case study using SGX"/>
 <attribute NAME="authors" VALUE="Atamli-Reineh, Ahmad and Martin, Andrew"/>
+<attribute NAME="key" VALUE="atamli2015securing"/>
 </node>
 </node>
 <node TEXT="for SGX in specific" ID="ID_1283699273" CREATED="1488565491871" MODIFIED="1488565496696">
@@ -7722,17 +7654,108 @@
 <attribute NAME="year" VALUE="2016"/>
 <attribute NAME="title" VALUE="SecureKeeper: Confidential ZooKeeper using Intel SGX"/>
 <attribute NAME="authors" VALUE="Brenner, Stefan and Wulf, Colin and Goltzsche, David and Weichbrodt, Nico and Lorenz, Matthias and Fetzer, Christof and Pietzuch, Peter and Kapitza, R{\&quot;u}diger"/>
+<attribute NAME="key" VALUE="Brenner2016"/>
 </node>
 </node>
 </node>
 </node>
-<node TEXT="Content" STYLE_REF="paragraphs_drop_self" ID="ID_1430142372" CREATED="1495543885991" MODIFIED="1495543895304"/>
 </node>
 </node>
-<node TEXT="Intel SGX Helper Library" POSITION="left" ID="ID_985966487" CREATED="1499849260039" MODIFIED="1499849372472">
+<node TEXT="Introduction" STYLE_REF="paragraphs_drop_self" FOLDED="true" ID="ID_1430142372" CREATED="1495543885991" MODIFIED="1499939727802">
+<node TEXT="This section presents related work on hardening applications using Intel SGX as a trusted computing solution." ID="ID_795492685" CREATED="1499935640505" MODIFIED="1499942420249"/>
+<node TEXT="First, application-specific approaches are listed. Next, general approaches are described." ID="ID_843125457" CREATED="1499941830537" MODIFIED="1499941909962"/>
+<node TEXT="The section concludes with a summary of the lessons learnt from this research." ID="ID_1682307076" CREATED="1499941857650" MODIFIED="1499941899345"/>
+<node TEXT="" ID="ID_1175589573" CREATED="1499939887089" MODIFIED="1499939887089"/>
+<node TEXT="Application-specific research focuses on hardening a specific application with SGX." ID="ID_850970450" CREATED="1499941939361" MODIFIED="1499941958338"/>
+<node TEXT="The application in question may remain unmodified or be refactored." ID="ID_1741592427" CREATED="1499941964817" MODIFIED="1499941978825"/>
+<node TEXT="The approaches used in these papers can be abstracted and re-used to a certain degree:" ID="ID_847972034" CREATED="1499941978961" MODIFIED="1499942984914"/>
+<node TEXT="\begin{description}" ID="ID_1664874304" CREATED="1499936470473" MODIFIED="1499939001711" MOVED="1499939847464"/>
+<node TEXT="\item[Verifiable Confidential Cloud Computing (VC3)\cite{Schuster2015}]" FOLDED="true" ID="ID_1304842913" CREATED="1499939008769" MODIFIED="1499942080610" MOVED="1499939847468">
+<node TEXT="was already described in \autoref{section:sgx-apps}." ID="ID_1185628438" CREATED="1499939030049" MODIFIED="1499942608034"/>
+<node TEXT="Secure map-reduce jobs are executed in enclaves on an unmodified Hadoop." ID="ID_1823018069" CREATED="1499942111994" MODIFIED="1499942113074"/>
+<node TEXT="This solution is special because Hadoop takes programs (jobs) as input. It is sufficient to protect these jobs." ID="ID_854444196" CREATED="1499939261177" MODIFIED="1499939304865"/>
+<node TEXT="The Hadoop engine runs outside of the enclave." ID="ID_252101904" CREATED="1499939237425" MODIFIED="1499939257507" MOVED="1499939338821"/>
+<node TEXT="VC3 manages to protect against a malicious Hadoop engine by protecting the integrity of the overall result using only the map-reduce jobs." ID="ID_206695222" CREATED="1499939305025" MODIFIED="1499939344826"/>
+<node TEXT="" ID="ID_1489033062" CREATED="1499939454706" MODIFIED="1499939454706"/>
+<node TEXT="Though a highly interesting approach, this technique is not applicable in general." ID="ID_90782568" CREATED="1499939359561" MODIFIED="1499939422346"/>
+<node TEXT="For the use-case of DBMS, UDFs could potentially be executed in enclaves like jobs in Hadoop." ID="ID_441442629" CREATED="1499939381416" MODIFIED="1499939439394"/>
+</node>
+<node TEXT="\item[SecureKeeper\cite{Brenner2016}]" FOLDED="true" ID="ID_848289283" CREATED="1499939197754" MODIFIED="1499945476603" MOVED="1499939847472">
+<node TEXT="was also presented in \autoref{section:sgx-apps}." ID="ID_536070" CREATED="1499939206785" MODIFIED="1499939217817"/>
+<node TEXT="The approach followed in the paper is more generally applicable." ID="ID_1832244015" CREATED="1499942121385" MODIFIED="1499942122001"/>
+<node TEXT="ZooKeeper data is protected within in enclaves. To this end, parts of the ZooKeeper functionality are refactored." ID="ID_1230630126" CREATED="1499939217977" MODIFIED="1499939583298"/>
+<node TEXT="The authors favour a \textit{tailored enclave} over an \textit{application enclave}." ID="ID_286232957" CREATED="1499945556177" MODIFIED="1499947456457"/>
+<node TEXT="The authors analyse memory access speeds in SGX and give recommendations on memory management in enclaves." ID="ID_623865893" CREATED="1499939583441" MODIFIED="1499939953218"/>
+<node TEXT="These are identical to SCONE, which shares many of its authors with SecureKeeper." ID="ID_401918155" CREATED="1499945429250" MODIFIED="1499947459770"/>
+</node>
+<node TEXT="\end{description}" ID="ID_867871996" CREATED="1499936476065" MODIFIED="1499939005113" MOVED="1499939847476"/>
+<node TEXT="" ID="ID_976315430" CREATED="1499939895777" MODIFIED="1499939895777"/>
+<node TEXT="General approaches deal with reusable approaches for isolating applications with SGX:" ID="ID_1464987409" CREATED="1499939916736" MODIFIED="1499942990050"/>
+<node TEXT="\begin{description}" ID="ID_1646955230" CREATED="1499936470473" MODIFIED="1499942200065" MOVED="1499939913510"/>
+<node TEXT="\item[Haven\cite{Baumann2014}]" FOLDED="true" ID="ID_43502325" CREATED="1499942620177" MODIFIED="1499942655371">
+<node TEXT="was already described in \autoref{section:tc-apps} as a trusted computing solution for application-level isolation." ID="ID_1905749425" CREATED="1499942669625" MODIFIED="1499942701050"/>
+<node TEXT="Haven isolates unmodified legacy applications in an enclave." ID="ID_1294210855" CREATED="1499942728794" MODIFIED="1499942758897"/>
+<node TEXT="A library operating system is also included in the enclave to minimise the exploitable interface between the enclave and the untrusted world." ID="ID_122260906" CREATED="1499942760561" MODIFIED="1499943559401"/>
+</node>
+<node TEXT="\item[SCONE\cite{Arnautov2016}]" FOLDED="true" ID="ID_1135472723" CREATED="1499942863713" MODIFIED="1499942880802">
+<node TEXT="connects SGX and Docker\footnote{\url{https://www.docker.com}} containers." ID="ID_1276523119" CREATED="1499943001626" MODIFIED="1499943085825"/>
+<node TEXT="Alternative enclave designs are evaluated as shown in \autoref{figure:scone-interface}." ID="ID_1410436082" CREATED="1499943068521" MODIFIED="1499947759147"/>
+<node TEXT="Option a) is Haven&apos;s approach of including a library operating system in the TCB." ID="ID_1158697090" CREATED="1499945766730" MODIFIED="1499947823421" MOVED="1499947785313"/>
+<node TEXT="This keeps the interface between enclave and untrusted system extremely narrow (comparable to the interface between VM and hypervisor), but inflates the TCB." ID="ID_215474195" CREATED="1499947777402" MODIFIED="1499947896998" MOVED="1499947878330"/>
+<node TEXT="Option b) minimises the size of the TCB. The C library implementation lives outside of the enclave. This results in a large interface at the level of the C library interface." ID="ID_663705999" CREATED="1499947823923" MODIFIED="1499948030642"/>
+<node TEXT="Option c) is the middle ground. The C library is lives inside the enclave, resulting in an enclave interface at the level of system calls." ID="ID_130835678" CREATED="1499947920442" MODIFIED="1499947954589"/>
+<node TEXT="The authors choose option c), the middle ground, for their container implementation." ID="ID_1517662441" CREATED="1499947957658" MODIFIED="1499947976787" MOVED="1499948097771"/>
+<node TEXT="\input{content/tikz/scone-interface}" STYLE_REF="latex" FOLDED="true" ID="ID_1331053812" CREATED="1499947340521" MODIFIED="1499947766190" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/thesis/content/tikz/scone-interface.tex">
+<attribute NAME="image" VALUE=""/>
+<attribute NAME="label" VALUE="figure:scone-interface" OBJECT="java.net.URI|figure:scone-interface"/>
+<attribute NAME="key" VALUE="Arnautov2016"/>
+<attribute NAME="year" VALUE="2016"/>
+<attribute NAME="title" VALUE="SCONE: Secure linux containers with Intel SGX"/>
+<attribute NAME="authors" VALUE="Arnautov, Sergei and Trach, Bohdan and Gregor, Franz and Knauth, Thomas and Martin, Andre and Priebe, Christian and Lind, Joshua and Muthukumaran, Divya and O&#x2019;Keeffe, Daniel and Stillwell, Mark L and others"/>
+<node TEXT="\textbf{Enclave design alternatives.}" ID="ID_169153882" CREATED="1499947550369" MODIFIED="1499947580292" MOVED="1499947561198"/>
+<node TEXT="The TCB contained by an enclave is shaded green. The components below that are untrusted." ID="ID_1450360729" CREATED="1499948212073" MODIFIED="1499948235548"/>
+<node TEXT="The options are: a) Library operating system inside the enclave." ID="ID_1795355298" CREATED="1499947596875" MODIFIED="1499947682210"/>
+<node TEXT="b) Minimal enclave size with an external C library." ID="ID_473716305" CREATED="1499947682450" MODIFIED="1499948274890"/>
+<node TEXT="c) Untrusted system calls with an internal C library." ID="ID_760948667" CREATED="1499947686905" MODIFIED="1499948281308"/>
+<node TEXT="Depending on the code included in the enclave, the TCB size and interface size vary." ID="ID_493933912" CREATED="1499947581074" MODIFIED="1499948057819"/>
+<node TEXT="Reprinted from" ID="ID_1210155889" CREATED="1499947390978" MODIFIED="1499947393362"/>
+</node>
+<node TEXT="" ID="ID_1572761121" CREATED="1499943442913" MODIFIED="1499943442913"/>
+<node TEXT="The performance of Intel&apos;s SDK is evaluated with regards to proxying system calls from inside the enclave to the host operating system." ID="ID_428472259" CREATED="1499943140307" MODIFIED="1499948039924"/>
+<node TEXT="As it proves to be insufficient for handling many parallel system calls, the SDK is not used but replaced with a worker thread pool in the untrusted wrapper." ID="ID_962749451" CREATED="1499943161761" MODIFIED="1499943222233"/>
+<node TEXT="The performance is evaluated based on different unmodified legacy applications." ID="ID_1049539361" CREATED="1499943237361" MODIFIED="1499943337554"/>
+<node TEXT="To measure the performance of the ``file shield&apos;&apos; (data sealing), SQLite is run in an enclave." ID="ID_1694785054" CREATED="1499943357313" MODIFIED="1499943422714"/>
+<node TEXT="" ID="ID_1936971496" CREATED="1499943612137" MODIFIED="1499943612137"/>
+<node TEXT="SCONE also evaluates how the process of authoring, provisioning and executing Docker images can be secured using attestation." ID="ID_302956960" CREATED="1499943613417" MODIFIED="1499943644081"/>
+</node>
+<node TEXT="\item[Software Partitioning case study\cite{atamli2015securing}]" FOLDED="true" ID="ID_1866621600" CREATED="1499943860674" MODIFIED="1499943861883">
+<node TEXT="evaluates different approaches to partitioning OpenSSL into enclaves." ID="ID_889806073" CREATED="1499944620154" MODIFIED="1499944656986"/>
+<node TEXT="Different partitioning schemes are identified, the most important of which are:" ID="ID_1492497964" CREATED="1499944657377" MODIFIED="1499944765987"/>
+<node TEXT="\begin{enumerate}" ID="ID_1557877705" CREATED="1499944675658" MODIFIED="1499944680459"/>
+<node TEXT="\item Separate enclaves by functionality. The enclave code must enforce isolation between different data sets within one enclave (e.g. between tenants)." ID="ID_1393496068" CREATED="1499944700097" MODIFIED="1499945203133"/>
+<node TEXT="\item Separate enclaves by data set (e.g. tenant). Related data lives in a single enclave which contains all functionality related to that data." ID="ID_113647933" CREATED="1499944832425" MODIFIED="1499945244950"/>
+<node TEXT="\end{enumerate}" ID="ID_372710258" CREATED="1499944681977" MODIFIED="1499944686538"/>
+<node TEXT="The two options can be combined. If non are used, the entire application lives in a single enclave (similar to Haven). If both are combined, there is an enclave per functionality per data set. Exploiting a single enclave reveals a minimal amount of data." ID="ID_1825195394" CREATED="1499944957625" MODIFIED="1499945255596"/>
+<node TEXT="However, higher decomposition requires more complex interaction." ID="ID_1925137523" CREATED="1499945017873" MODIFIED="1499945039978"/>
+<node TEXT="This may lead to new security issues." ID="ID_1376225601" CREATED="1499945040137" MODIFIED="1499945044850"/>
+<node TEXT="" ID="ID_1829244702" CREATED="1499945068265" MODIFIED="1499945068265"/>
+<node TEXT="The effect of separating enclaves by data set is questionable." ID="ID_348412267" CREATED="1499945069033" MODIFIED="1499945139290"/>
+<node TEXT="If an exploit is found for an enclave, it can likely be applied to the enclaves of all tenants." ID="ID_640876370" CREATED="1499945108233" MODIFIED="1499945130058"/>
+</node>
+<node TEXT="\end{description}" ID="ID_1705591114" CREATED="1499936476065" MODIFIED="1499942205266" MOVED="1499939913476"/>
+<node TEXT="" ID="ID_1511103398" CREATED="1499939891353" MODIFIED="1499939930968"/>
+<node TEXT="The design alternatives that this related work identifies are referred to in the following chapters." ID="ID_1722696953" CREATED="1499948492203" MODIFIED="1499948526940"/>
+</node>
+</node>
+</node>
+<node TEXT="Intel SGX Helper Library" FOLDED="true" POSITION="left" ID="ID_985966487" CREATED="1499849260039" MODIFIED="1499849372472">
 <icon BUILTIN="button_cancel"/>
 <edge COLOR="#7c7c00"/>
 <attribute NAME="label" VALUE="chapter:sgx-lib" OBJECT="java.net.URI|chapter:sgx-lib"/>
+<node TEXT="mindmap" STYLE_REF="drop" FOLDED="true" ID="ID_763558813" CREATED="1499948126457" MODIFIED="1499948300224">
+<node TEXT="compare to related work classification" ID="ID_1364077470" CREATED="1499948129338" MODIFIED="1499948136706"/>
+<node TEXT="shim C lib" ID="ID_830429589" CREATED="1499948137034" MODIFIED="1499948142066"/>
+</node>
 </node>
 <node TEXT="KissDB Case Study" LOCALIZED_STYLE_REF="default" FOLDED="true" POSITION="left" ID="ID_1828467557" CREATED="1487266728477" MODIFIED="1499929289683" MOVED="1499849267642">
 <icon BUILTIN="button_cancel"/>
@@ -7798,8 +7821,8 @@
 </node>
 </node>
 </node>
-<node TEXT="Introduction" ID="ID_1929202403" CREATED="1499849307743" MODIFIED="1499849311815">
-<node TEXT="mindmap" STYLE_REF="drop" ID="ID_908096557" CREATED="1499849312503" MODIFIED="1499849329352">
+<node TEXT="Introduction" FOLDED="true" ID="ID_1929202403" CREATED="1499849307743" MODIFIED="1499849311815">
+<node TEXT="mindmap" STYLE_REF="drop" FOLDED="true" ID="ID_908096557" CREATED="1499849312503" MODIFIED="1499849329352">
 <node TEXT="why databases" ID="ID_650366938" CREATED="1499849316263" MODIFIED="1499849318616">
 <node TEXT="hosted database" ID="ID_5357256" CREATED="1488874863376" MODIFIED="1488874867748" MOVED="1499849322127"/>
 <node TEXT="semi-trusted provider" ID="ID_1114771820" CREATED="1488874873016" MODIFIED="1488874885798" MOVED="1499849322130"/>
@@ -7813,6 +7836,7 @@
 <node TEXT="point in hardened db design space" ID="ID_168788322" CREATED="1499928900545" MODIFIED="1499928907515">
 <node TEXT="With the use of SGX enclaves data remains encrypted while at rest, and is encrypted inside enclaves for processing." ID="ID_910400351" CREATED="1499928477152" MODIFIED="1499928515473" MOVED="1499928910153"/>
 </node>
+<node TEXT="enclave size (related work classification)" ID="ID_382443605" CREATED="1499948150585" MODIFIED="1499948158636"/>
 </node>
 </node>
 <node TEXT="Security Objectives" LOCALIZED_STYLE_REF="default" FOLDED="true" ID="ID_446058686" CREATED="1489652109451" MODIFIED="1495606029119" MOVED="1495056347122">
