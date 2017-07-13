@@ -6981,7 +6981,7 @@
 </node>
 </node>
 </node>
-<node TEXT="Related Work" LOCALIZED_STYLE_REF="default" POSITION="left" ID="ID_123293925" CREATED="1487267824221" MODIFIED="1499948603857" MOVED="1492616823153">
+<node TEXT="Related Work" LOCALIZED_STYLE_REF="default" FOLDED="true" POSITION="left" ID="ID_123293925" CREATED="1487267824221" MODIFIED="1499948603857" MOVED="1492616823153">
 <edge COLOR="#00ffff"/>
 <node TEXT="- gute Referenzen statt viel wiederholen&#xa;- &#xdc;berblick &#xfc;ber die in der Literatur vorhandenen Methoden bzw. L&#xf6;sungsans&#xe4;tze&#xa;- aktuelle Stand der Technik&#xa;- verwandte Arbeiten" STYLE_REF="drop" ID="ID_300266952" CREATED="1492080972697" MODIFIED="1495605859460" MOVED="1492080980228"/>
 <node TEXT="Introduction" STYLE_REF="paragraphs_drop_self" ID="ID_150393477" CREATED="1499869249672" MODIFIED="1499869658154" MOVED="1499869252488">
@@ -7748,13 +7748,44 @@
 </node>
 </node>
 </node>
-<node TEXT="Intel SGX Helper Library" FOLDED="true" POSITION="left" ID="ID_985966487" CREATED="1499849260039" MODIFIED="1499849372472">
+<node TEXT="Intel SGX Helper Library" POSITION="left" ID="ID_985966487" CREATED="1499849260039" MODIFIED="1499849372472">
 <icon BUILTIN="button_cancel"/>
 <edge COLOR="#7c7c00"/>
 <attribute NAME="label" VALUE="chapter:sgx-lib" OBJECT="java.net.URI|chapter:sgx-lib"/>
-<node TEXT="mindmap" STYLE_REF="drop" FOLDED="true" ID="ID_763558813" CREATED="1499948126457" MODIFIED="1499948300224">
-<node TEXT="compare to related work classification" ID="ID_1364077470" CREATED="1499948129338" MODIFIED="1499948136706"/>
-<node TEXT="shim C lib" ID="ID_830429589" CREATED="1499948137034" MODIFIED="1499948142066"/>
+<node TEXT="Introduction" STYLE_REF="paragraphs_drop_self" ID="ID_330418409" CREATED="1499949613579" MODIFIED="1499949729987">
+<node TEXT="wrapper functions and helper scripts for the Windows SDK" ID="ID_1623222776" CREATED="1499949677890" MODIFIED="1499949693661" MOVED="1499949678408"/>
+<node TEXT="Helper lib\footnote{\url{https://github.com/ftes/sgx-lib}}" ID="ID_868490178" CREATED="1499949624993" MODIFIED="1499949632490"/>
+<node TEXT="Demo consumer\footnote{\url{https://github.com/ftes/sgx-lib-consumer}}" ID="ID_1523691323" CREATED="1499949632625" MODIFIED="1499949646804"/>
+<node TEXT="used in KissDB" ID="ID_459156134" CREATED="1499949646946" MODIFIED="1499949651547"/>
+<node TEXT="implemented first half of 2016, before SDK for Linux was available" ID="ID_424683204" CREATED="1499949651955" MODIFIED="1499949896987"/>
+</node>
+<node TEXT="Concept" ID="ID_244065427" CREATED="1499949714113" MODIFIED="1499949722570">
+<node TEXT="mindmap" STYLE_REF="drop" ID="ID_449150039" CREATED="1499949964250" MODIFIED="1499949974134" MOVED="1499949967033">
+<node TEXT="two modules: untrusted and trusted" ID="ID_1280487602" CREATED="1499949975627" MODIFIED="1499949982986"/>
+<node TEXT="scripts for generating libc proxies (option b) of SCONE shim libc)" ID="ID_1057550675" CREATED="1499949983162" MODIFIED="1499950019451"/>
+</node>
+<node TEXT="Content" STYLE_REF="paragraphs_drop_self" ID="ID_49903427" CREATED="1499949942114" MODIFIED="1499949947326"/>
+</node>
+<node TEXT="Usage" ID="ID_354717207" CREATED="1499949722794" MODIFIED="1499949725307">
+<node TEXT="Content" STYLE_REF="paragraphs_drop_self" ID="ID_633298057" CREATED="1499949949058" MODIFIED="1499949954703">
+<node TEXT="table: library interface (macros, functions, scripts)" ID="ID_370687101" CREATED="1499950176434" MODIFIED="1499950193594" MOVED="1499950194138"/>
+<node TEXT="Details on \url{https://github.com/ftes/sgx-lib}" ID="ID_1315454188" CREATED="1499949745434" MODIFIED="1499949751210" MOVED="1499949959211"/>
+<node TEXT="Configuration" ID="ID_510746497" CREATED="1499949755249" MODIFIED="1499949758843" MOVED="1499949959221"/>
+<node TEXT="\begin{description}" ID="ID_1077418022" CREATED="1499949816195" MODIFIED="1499949819474" MOVED="1499949959234"/>
+<node TEXT="\item[Insecure input/output operations:]" ID="ID_1293763359" CREATED="1499949759458" MODIFIED="1499949846773" MOVED="1499949959245">
+<node TEXT=" set macro \texttt{SGX\_{}INSECURE\_{}IO\_{}OPERATIONS}" ID="ID_334271564" CREATED="1499949848739" MODIFIED="1499950079222" MOVED="1499949849934"/>
+<node TEXT="During development, insecure I/O operations can be used. These allow data to leave the enclave as plain text. When including legacy code, this allows legacy compatible behaviour, without security guarantees." ID="ID_335007542" CREATED="1499949841624" MODIFIED="1499949889770"/>
+<node TEXT="Without this macro, writes and reads to standard and file streams are sealed (or encrypted). Replay protection IS NOT added." ID="ID_97073736" CREATED="1499949841624" MODIFIED="1499949841624"/>
+</node>
+<node TEXT="\item[Secure input/output operations:]" ID="ID_1000977304" CREATED="1499950097505" MODIFIED="1499950110194">
+<node TEXT="Use either" ID="ID_456618846" CREATED="1499950110806" MODIFIED="1499950110806"/>
+<node TEXT="seal/unseal or" ID="ID_1781779015" CREATED="1499950110806" MODIFIED="1499950110806"/>
+<node TEXT="encrypt/decrypt" ID="ID_831118545" CREATED="1499950110807" MODIFIED="1499950110807"/>
+<node TEXT="as the underlying encryption primitive. (1) is the default, (2) is enabled by setting the \texttt{SGX\_{}SECURE\_{}IO\_{}OPERATIONS\_{}KEY} macro." ID="ID_20929376" CREATED="1499950110807" MODIFIED="1499950466248"/>
+<node TEXT="(2) requires a symmetric encryption key, which can be set using \texttt{set\_{}secure\_{}io\_{}key()}. This key is used to en/decrypt all subsequent I/O operations, until it is overwritten by another call to \texttt{set\_{}secure\_{}io\_{}key()}." ID="ID_724561196" CREATED="1499950110807" MODIFIED="1499950171274"/>
+</node>
+<node TEXT="\end{description}" ID="ID_817985606" CREATED="1499949804810" MODIFIED="1499949825066" MOVED="1499949959252"/>
+</node>
 </node>
 </node>
 <node TEXT="KissDB Case Study" LOCALIZED_STYLE_REF="default" FOLDED="true" POSITION="left" ID="ID_1828467557" CREATED="1487266728477" MODIFIED="1499929289683" MOVED="1499849267642">
@@ -7848,11 +7879,6 @@
 <icon BUILTIN="button_cancel"/>
 <node TEXT="mindmap" STYLE_REF="drop" ID="ID_1634677217" CREATED="1495543887981" MODIFIED="1495543899209" MOVED="1495543900065"/>
 <node TEXT="Content" STYLE_REF="paragraphs_drop_self" ID="ID_862119655" CREATED="1495543885991" MODIFIED="1495543895304"/>
-</node>
-<node TEXT="Intel SGX Helper Library" LOCALIZED_STYLE_REF="default" FOLDED="true" ID="ID_335784211" CREATED="1495056578323" MODIFIED="1495606029130">
-<icon BUILTIN="button_cancel"/>
-<node TEXT="mindmap" STYLE_REF="drop" ID="ID_464423346" CREATED="1495543887981" MODIFIED="1495543899209" MOVED="1495543900065"/>
-<node TEXT="Content" STYLE_REF="paragraphs_drop_self" ID="ID_93545075" CREATED="1495543885991" MODIFIED="1495543895304"/>
 </node>
 <node TEXT="Hardening KissDB" LOCALIZED_STYLE_REF="default" FOLDED="true" ID="ID_355880413" CREATED="1495056587955" MODIFIED="1495606029137">
 <icon BUILTIN="button_cancel"/>
@@ -8405,18 +8431,10 @@
 <node TEXT="future work" ID="ID_1074533750" CREATED="1499766172307" MODIFIED="1499766174284"/>
 </node>
 </node>
-<node TEXT="Appendix" STYLE_REF="drop" FOLDED="true" POSITION="left" ID="ID_1278383992" CREATED="1489748055346" MODIFIED="1492616946949">
+<node TEXT="Appendix" STYLE_REF="drop" POSITION="left" ID="ID_1278383992" CREATED="1489748055346" MODIFIED="1492616946949">
 <edge COLOR="#00007c"/>
-<node TEXT="SGX SDK Linux 1.8" FOLDED="true" ID="ID_1177079680" CREATED="1489748061856" MODIFIED="1489748066569">
-<node TEXT="source /home/fredrik/dev/sgx-sdk-1.8/sgxsdk/environment" ID="ID_1284132396" CREATED="1489748068871" MODIFIED="1489748068871"/>
-<node TEXT="eclipse plugin" FOLDED="true" ID="ID_546052700" CREATED="1489765086860" MODIFIED="1489765089776">
-<node TEXT="eclipse mars issue Ubuntu 16.04" FOLDED="true" ID="ID_1772646934" CREATED="1489765090317" MODIFIED="1489765095671">
-<node TEXT="\url{https://bugs.eclipse.org/bugs/show_bug.cgi?id=492318\#c3}" ID="ID_1117556781" CREATED="1489765095999" MODIFIED="1489772246774" LINK="https://bugs.eclipse.org/bugs/show_bug.cgi?id=492318#c3"/>
-<node TEXT="set SWT\_GTK3=0" ID="ID_1988515281" CREATED="1489765102485" MODIFIED="1489765111316"/>
-</node>
-</node>
-</node>
 <node TEXT="thanks to: tikzpeople" ID="ID_267530477" CREATED="1495020720099" MODIFIED="1495020724435"/>
+<node TEXT="thanks to: max" ID="ID_1591643310" CREATED="1499950597345" MODIFIED="1499950600114"/>
 </node>
 <node TEXT="template" STYLE_REF="drop" FOLDED="true" POSITION="right" ID="ID_605286234" CREATED="1495543907903" MODIFIED="1495543914521">
 <edge COLOR="#00ffff"/>
