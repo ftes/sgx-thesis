@@ -7045,342 +7045,13 @@
 <node TEXT="Secondly, research on partitioning strategies is listed. New applications can be designed according to these principles. Legacy applications can be refactored according to them." ID="ID_760707360" CREATED="1499869510568" MODIFIED="1499869735577"/>
 <node TEXT="The chapter concludes with research most related to this thesis: application hardening using Intel SGX." ID="ID_1005330540" CREATED="1499869620744" MODIFIED="1499869769242"/>
 </node>
-<node TEXT="Secure Databases" LOCALIZED_STYLE_REF="default" ID="ID_1295642147" CREATED="1488477479255" MODIFIED="1499766320420">
-<icon BUILTIN="button_cancel"/>
+<node TEXT="Hardened Databases" LOCALIZED_STYLE_REF="default" FOLDED="true" ID="ID_1295642147" CREATED="1488477479255" MODIFIED="1499934364968">
+<icon BUILTIN="button_ok"/>
 <attribute NAME="label" VALUE="section:secure-db" OBJECT="java.net.URI|section:secure-db"/>
-<node TEXT="mindmap" STYLE_REF="drop" ID="ID_1843665722" CREATED="1495543887981" MODIFIED="1495543899209" MOVED="1495543900065">
-<node TEXT="as one possible application of secure data processing" STYLE_REF="NoHeading" ID="ID_1698087762" CREATED="1488565649417" MODIFIED="1489493131748" MOVED="1495605789307"/>
-<node TEXT="CryptDB" LOCALIZED_STYLE_REF="default" FOLDED="true" ID="ID_725694989" CREATED="1455795148662" MODIFIED="1495057102237" MOVED="1495605789309">
-<node TEXT="efficient SQL-aware encryption schemes" ID="ID_770203765" CREATED="1455794915174" MODIFIED="1488817474010" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/CryptDB.pdf" MOVED="1455795549308">
-<pdf_annotation type="HIGHLIGHTED_TEXT" page="1" object_id="5848976392560115417" object_number="53" document_hash="BA9232188AF4CF8614DF4A4E9A7D0657C5ECF9C815777F3ECB3E76F9EA25F9">
-    <pdf_title>CryptDB: Protecting Confidentiality with Encrypted Query Processing</pdf_title>
-</pdf_annotation>
-<attribute NAME="year" VALUE="2011"/>
-<attribute NAME="title" VALUE="CryptDB: protecting confidentiality with encrypted query processing"/>
-<attribute NAME="authors" VALUE="Popa, Raluca Ada and Redfield, Catherine and Zeldovich, Nickolai and Balakrishnan, Hari"/>
-</node>
-<node TEXT="use best encryption for expected queries" ID="ID_43324201" CREATED="1455795575652" MODIFIED="1455795591653" MOVED="1455795592604"/>
-<node TEXT="figure: cryptDB architecture" FOLDED="true" ID="ID_1657052174" CREATED="1455794914730" MODIFIED="1455794914730" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/Encrypted%20Database%20good%20FHE%20PHE%20overview.pdf" MOVED="1455795153046">
-<pdf_annotation type="COMMENT" page="54" object_id="8617842465630172661" object_number="413" document_hash="A99F7310249BD6991DEEAB6A4547EBE8F8E506FF909E1664DFEC1E19ED34A">
-    <pdf_title>Querying Encrypted Data</pdf_title>
-</pdf_annotation>
-<attribute NAME="year" VALUE="2013"/>
-<attribute NAME="title" VALUE="Querying Encrypted Data (Tutorial)"/>
-<attribute NAME="authors" VALUE="Arasu, Arvind and Eguro, Ken and Kaushik, Raghav and Ramamurthy, Ravi"/>
-<node TEXT="cryptdb architecture.png" ID="ID_1748195478" CREATED="1455794955879" MODIFIED="1488479344669">
-<hook URI="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/_data/150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/default_files/cryptdb%20architecture.png" SIZE="0.88235295" NAME="ExternalObject"/>
-<attribute NAME="image" VALUE="cryptdb architecture"/>
-</node>
-<node TEXT="Web proxy rewrites queries, decrypts result" ID="ID_760563343" CREATED="1455794914636" MODIFIED="1455794914636" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/Encrypted%20Database%20good%20FHE%20PHE%20overview.pdf" MOVED="1455795551742">
-<pdf_annotation type="HIGHLIGHTED_TEXT" page="54" object_id="6760156027412177832" object_number="412" document_hash="A99F7310249BD6991DEEAB6A4547EBE8F8E506FF909E1664DFEC1E19ED34A">
-    <pdf_title>Querying Encrypted Data</pdf_title>
-</pdf_annotation>
-<attribute NAME="year" VALUE="2013"/>
-<attribute NAME="title" VALUE="Querying Encrypted Data (Tutorial)"/>
-<attribute NAME="authors" VALUE="Arasu, Arvind and Eguro, Ken and Kaushik, Raghav and Ramamurthy, Ravi"/>
-</node>
-</node>
-<node TEXT="figure: onion encryption layers" FOLDED="true" ID="ID_1179455262" CREATED="1455794915222" MODIFIED="1455794915222" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/CryptDB.pdf" MOVED="1455795546948">
-<pdf_annotation type="COMMENT" page="5" object_id="4740218768992032111" object_number="132" document_hash="BA9232188AF4CF8614DF4A4E9A7D0657C5ECF9C815777F3ECB3E76F9EA25F9">
-    <pdf_title>CryptDB: Protecting Confidentiality with Encrypted Query Processing</pdf_title>
-</pdf_annotation>
-<attribute NAME="year" VALUE="2011"/>
-<attribute NAME="title" VALUE="CryptDB: protecting confidentiality with encrypted query processing"/>
-<attribute NAME="authors" VALUE="Popa, Raluca Ada and Redfield, Catherine and Zeldovich, Nickolai and Balakrishnan, Hari"/>
-<node TEXT="cryptdb onion enc.png" ID="ID_1598870152" CREATED="1455795534458" MODIFIED="1488479356873">
-<hook URI="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/_data/150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/default_files/cryptdb%20onion%20enc.png" SIZE="1.0" NAME="ExternalObject"/>
-<attribute NAME="image" VALUE="cryptdb onion enc"/>
-</node>
-</node>
-<node TEXT="downside" FOLDED="true" ID="ID_1073541760" CREATED="1455795757850" MODIFIED="1455795759844">
-<node TEXT="does not support full SQL query range, incurs overhead" ID="ID_120923084" CREATED="1455794915156" MODIFIED="1455795753308" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/Monomi%20Queries%20on%20Encrypted%20Data.pdf" MOVED="1455795761770">
-<pdf_annotation type="COMMENT" page="2" object_id="43748455637441560" object_number="27" document_hash="D18191B422157D363726DEC9D847E594EF0EEF14E5088B2D67FDAEACB5B6A15">
-    <pdf_title>Processing Analytical Queries over Encrypted Data</pdf_title>
-</pdf_annotation>
-<attribute NAME="year" VALUE="2013"/>
-<attribute NAME="title" VALUE="Processing analytical queries over encrypted data"/>
-<attribute NAME="authors" VALUE="Tu, Stephen and Kaashoek, M Frans and Madden, Samuel and Zeldovich, Nickolai"/>
-</node>
-</node>
-</node>
-<node TEXT="Monomi" LOCALIZED_STYLE_REF="default" FOLDED="true" ID="ID_1746268136" CREATED="1455795447013" MODIFIED="1495057102243" MOVED="1495605789310">
-<node TEXT="builds on CryptDB&#x2019;s design of using specialized encryption schemes" FOLDED="true" ID="ID_1122287501" CREATED="1455794915138" MODIFIED="1492076456563" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/Monomi%20Queries%20on%20Encrypted%20Data.pdf" MOVED="1455795769182">
-<pdf_annotation type="HIGHLIGHTED_TEXT" page="2" object_id="4094945936579004360" object_number="26" document_hash="D18191B422157D363726DEC9D847E594EF0EEF14E5088B2D67FDAEACB5B6A15">
-    <pdf_title>Processing Analytical Queries over Encrypted Data</pdf_title>
-</pdf_annotation>
-<attribute NAME="key" VALUE="Tu2013"/>
-<attribute NAME="year" VALUE="2013"/>
-<attribute NAME="title" VALUE="Processing analytical queries over encrypted data"/>
-<attribute NAME="authors" VALUE="Tu, Stephen and Kaashoek, M Frans and Madden, Samuel and Zeldovich, Nickolai"/>
-<node TEXT="Use P.H.E to push more computation to DBMS" ID="ID_1971937759" CREATED="1455795682895" MODIFIED="1455795682895" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/Encrypted%20Database%20good%20FHE%20PHE%20overview.pdf" MOVED="1455795790299">
-<pdf_annotation type="HIGHLIGHTED_TEXT" page="63" object_id="4613375995290613202" object_number="443" document_hash="A99F7310249BD6991DEEAB6A4547EBE8F8E506FF909E1664DFEC1E19ED34A">
-    <pdf_title>Querying Encrypted Data</pdf_title>
-</pdf_annotation>
-<attribute NAME="year" VALUE="2013"/>
-<attribute NAME="title" VALUE="Querying Encrypted Data (Tutorial)"/>
-<attribute NAME="authors" VALUE="Arasu, Arvind and Eguro, Ken and Kaushik, Raghav and Ramamurthy, Ravi"/>
-</node>
-<node TEXT="encrypting the entire database and running queries over the encrypted data" ID="ID_643620526" CREATED="1455794915084" MODIFIED="1455794915085" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/Monomi%20Queries%20on%20Encrypted%20Data.pdf" MOVED="1455795798778">
-<pdf_annotation type="HIGHLIGHTED_TEXT" page="1" object_id="5345832730301728021" object_number="21" document_hash="D18191B422157D363726DEC9D847E594EF0EEF14E5088B2D67FDAEACB5B6A15">
-    <pdf_title>Processing Analytical Queries over Encrypted Data</pdf_title>
-</pdf_annotation>
-<attribute NAME="key" VALUE="Tu2013"/>
-<attribute NAME="year" VALUE="2013"/>
-<attribute NAME="title" VALUE="Processing analytical queries over encrypted data"/>
-<attribute NAME="authors" VALUE="Tu, Stephen and Kaashoek, M Frans and Madden, Samuel and Zeldovich, Nickolai"/>
-</node>
-</node>
-<node TEXT="split client/server query execution" FOLDED="true" ID="ID_457672805" CREATED="1455794915102" MODIFIED="1492076463379" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/Monomi%20Queries%20on%20Encrypted%20Data.pdf" MOVED="1455795776448">
-<arrowlink SHAPE="CUBIC_CURVE" COLOR="#000000" WIDTH="2" TRANSPARENCY="80" FONT_SIZE="9" FONT_FAMILY="SansSerif" DESTINATION="ID_1192822768" STARTINCLINATION="786;0;" ENDINCLINATION="786;0;" STARTARROW="NONE" ENDARROW="DEFAULT"/>
-<pdf_annotation type="HIGHLIGHTED_TEXT" page="1" object_id="7084364936911646630" object_number="22" document_hash="D18191B422157D363726DEC9D847E594EF0EEF14E5088B2D67FDAEACB5B6A15">
-    <pdf_title>Processing Analytical Queries over Encrypted Data</pdf_title>
-</pdf_annotation>
-<attribute NAME="key" VALUE="Tu2013"/>
-<attribute NAME="year" VALUE="2013"/>
-<attribute NAME="title" VALUE="Processing analytical queries over encrypted data"/>
-<attribute NAME="authors" VALUE="Tu, Stephen and Kaashoek, M Frans and Madden, Samuel and Zeldovich, Nickolai"/>
-<node TEXT="executes as much of the query as is practical over encrypted data on the server, and executes the remaining components by shipping encrypted data to a trusted client, which decrypts data and processes queries normally" ID="ID_608934" CREATED="1455794915120" MODIFIED="1492076456552" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/Monomi%20Queries%20on%20Encrypted%20Data.pdf" MOVED="1455795773971">
-<pdf_annotation type="HIGHLIGHTED_TEXT" page="1" object_id="7676321850227414709" object_number="23" document_hash="D18191B422157D363726DEC9D847E594EF0EEF14E5088B2D67FDAEACB5B6A15">
-    <pdf_title>Processing Analytical Queries over Encrypted Data</pdf_title>
-</pdf_annotation>
-<attribute NAME="key" VALUE="Tu2013"/>
-<attribute NAME="year" VALUE="2013"/>
-<attribute NAME="title" VALUE="Processing analytical queries over encrypted data"/>
-<attribute NAME="authors" VALUE="Tu, Stephen and Kaashoek, M Frans and Madden, Samuel and Zeldovich, Nickolai"/>
-</node>
-</node>
-<node TEXT="figure: monomi architecture" FOLDED="true" ID="ID_1615108033" CREATED="1455795682881" MODIFIED="1492076456558" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/Encrypted%20Database%20good%20FHE%20PHE%20overview.pdf">
-<pdf_annotation type="COMMENT" page="63" object_id="5990604722242031562" object_number="441" document_hash="A99F7310249BD6991DEEAB6A4547EBE8F8E506FF909E1664DFEC1E19ED34A">
-    <pdf_title>Querying Encrypted Data</pdf_title>
-</pdf_annotation>
-<attribute NAME="year" VALUE="2013"/>
-<attribute NAME="title" VALUE="Querying Encrypted Data (Tutorial)"/>
-<attribute NAME="authors" VALUE="Arasu, Arvind and Eguro, Ken and Kaushik, Raghav and Ramamurthy, Ravi"/>
-<node TEXT="monomi architecture.png" ID="ID_647917680" CREATED="1455795712649" MODIFIED="1492076456555">
-<hook URI="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/_data/150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/default_files/monomi%20architecture.png" SIZE="0.81855386" NAME="ExternalObject"/>
-<attribute NAME="image" VALUE="monomi architecture"/>
-</node>
-</node>
-<node TEXT="optimization" FOLDED="true" ID="ID_1142882453" CREATED="1455795802395" MODIFIED="1455795806115">
-<node TEXT="Pre-computation for complex queries" ID="ID_981236271" CREATED="1455795682803" MODIFIED="1455795682807" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/Encrypted%20Database%20good%20FHE%20PHE%20overview.pdf" MOVED="1455795808008">
-<pdf_annotation type="HIGHLIGHTED_TEXT" page="64" object_id="2202341982131033891" object_number="447" document_hash="A99F7310249BD6991DEEAB6A4547EBE8F8E506FF909E1664DFEC1E19ED34A">
-    <pdf_title>Querying Encrypted Data</pdf_title>
-</pdf_annotation>
-<attribute NAME="year" VALUE="2013"/>
-<attribute NAME="title" VALUE="Querying Encrypted Data (Tutorial)"/>
-<attribute NAME="authors" VALUE="Arasu, Arvind and Eguro, Ken and Kaushik, Raghav and Ramamurthy, Ravi"/>
-</node>
-</node>
-</node>
-<node TEXT="TrustedDB" LOCALIZED_STYLE_REF="default" FOLDED="true" ID="ID_327045293" CREATED="1455795454045" MODIFIED="1495057102247" MOVED="1495605789311">
-<node TEXT="two full DB engines" ID="ID_1649197641" CREATED="1455794914194" MODIFIED="1492076456513" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/TrustedDB.pdf" MOVED="1455796216930">
-<pdf_annotation type="COMMENT" page="6" object_id="5705980014296298854" object_number="35" document_hash="1F3DA5C8EA7449DD2D598E054139EFCD8A3E1A6951C24CAF176BFA21A9D2B71">
-    <pdf_title>TrustedDB: A Trusted Hardware based Database with Privacy and Data Confidentiality</pdf_title>
-</pdf_annotation>
-<attribute NAME="journal" VALUE="IEEE Transactions on Knowledge and Data Engineering"/>
-<attribute NAME="year" VALUE="2014"/>
-<attribute NAME="title" VALUE="TrustedDB: A Trusted Hardware-Based Database with Privacy and Data Confidentiality"/>
-<attribute NAME="authors" VALUE="S. Bajaj and R. Sion"/>
-<attribute NAME="key" VALUE="6468039"/>
-</node>
-<node TEXT="secure coprocessor" FOLDED="true" ID="ID_98920998" CREATED="1455795963056" MODIFIED="1455795965762" MOVED="1455796212841">
-<node TEXT="server-hosted tamper-proof trusted hardware" ID="ID_821680750" CREATED="1455794914148" MODIFIED="1455794914148" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/TrustedDB.pdf" MOVED="1455795967352">
-<pdf_annotation type="HIGHLIGHTED_TEXT" page="1" object_id="2958297539943527158" object_number="17" document_hash="1F3DA5C8EA7449DD2D598E054139EFCD8A3E1A6951C24CAF176BFA21A9D2B71">
-    <pdf_title>TrustedDB: A Trusted Hardware based Database with Privacy and Data Confidentiality</pdf_title>
-</pdf_annotation>
-<attribute NAME="journal" VALUE="IEEE Transactions on Knowledge and Data Engineering"/>
-<attribute NAME="year" VALUE="2014"/>
-<attribute NAME="title" VALUE="TrustedDB: A Trusted Hardware-Based Database with Privacy and Data Confidentiality"/>
-<attribute NAME="authors" VALUE="S. Bajaj and R. Sion"/>
-<attribute NAME="key" VALUE="6468039"/>
-</node>
-<node TEXT="cheaper than crypto" FOLDED="true" ID="ID_575687575" CREATED="1455795972008" MODIFIED="1455795975513" MOVED="1455795976895">
-<node TEXT="figure: hardware-based is 1-5 orders of magnitude cheaper than cryptography" FOLDED="true" ID="ID_972193779" CREATED="1455794914169" MODIFIED="1455794914170" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/TrustedDB.pdf" MOVED="1455795978484">
-<pdf_annotation type="HIGHLIGHTED_TEXT" page="6" object_id="556785178463309039" object_number="33" document_hash="1F3DA5C8EA7449DD2D598E054139EFCD8A3E1A6951C24CAF176BFA21A9D2B71">
-    <pdf_title>TrustedDB: A Trusted Hardware based Database with Privacy and Data Confidentiality</pdf_title>
-</pdf_annotation>
-<attribute NAME="journal" VALUE="IEEE Transactions on Knowledge and Data Engineering"/>
-<attribute NAME="year" VALUE="2014"/>
-<attribute NAME="title" VALUE="TrustedDB: A Trusted Hardware-Based Database with Privacy and Data Confidentiality"/>
-<attribute NAME="authors" VALUE="S. Bajaj and R. Sion"/>
-<node TEXT="trusteddb cost compared to crypto.png" ID="ID_1968974026" CREATED="1455795896464" MODIFIED="1488479874040">
-<hook URI="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/_data/150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/default_files/trusteddb%20cost%20compared%20to%20crypto.png" SIZE="1.0" NAME="ExternalObject"/>
-<attribute NAME="image" VALUE="trusteddb cost compared to crypto"/>
-</node>
-</node>
-</node>
-<node TEXT="dynamic paging in secure coprocessor" FOLDED="true" ID="ID_1377222721" CREATED="1455795946681" MODIFIED="1455796184271" MOVED="1455796219326">
-<font SIZE="10"/>
-<node TEXT="entire database resides outside the SCPU, its size is not bound by SCPU memory limitations. Pages that need to be accessed by the SCPU-side query processing engine are pulled in on demand by the Paging Module" ID="ID_1035513788" CREATED="1455794914215" MODIFIED="1455796186583" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/TrustedDB.pdf" MOVED="1455795952977">
-<pdf_annotation type="HIGHLIGHTED_TEXT" page="7" object_id="1480097768816713239" object_number="41" document_hash="1F3DA5C8EA7449DD2D598E054139EFCD8A3E1A6951C24CAF176BFA21A9D2B71">
-    <pdf_title>TrustedDB: A Trusted Hardware based Database with Privacy and Data Confidentiality</pdf_title>
-</pdf_annotation>
-<font SIZE="10"/>
-<attribute NAME="journal" VALUE="IEEE Transactions on Knowledge and Data Engineering"/>
-<attribute NAME="year" VALUE="2014"/>
-<attribute NAME="title" VALUE="TrustedDB: A Trusted Hardware-Based Database with Privacy and Data Confidentiality"/>
-<attribute NAME="authors" VALUE="S. Bajaj and R. Sion"/>
-</node>
-</node>
-</node>
-<node TEXT="figure: trusteddb architecture" FOLDED="true" ID="ID_1453710204" CREATED="1455796092889" MODIFIED="1492076456511" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/Encrypted%20Database%20good%20FHE%20PHE%20overview.pdf">
-<pdf_annotation type="COMMENT" page="74" object_id="5559575231062795844" object_number="472" document_hash="A99F7310249BD6991DEEAB6A4547EBE8F8E506FF909E1664DFEC1E19ED34A">
-    <pdf_title>Querying Encrypted Data</pdf_title>
-</pdf_annotation>
-<attribute NAME="year" VALUE="2013"/>
-<attribute NAME="title" VALUE="Querying Encrypted Data (Tutorial)"/>
-<attribute NAME="authors" VALUE="Arasu, Arvind and Eguro, Ken and Kaushik, Raghav and Ramamurthy, Ravi"/>
-<node TEXT="trusteddb architecture.png" ID="ID_464876927" CREATED="1455796107385" MODIFIED="1488479381117">
-<hook URI="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/_data/150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/default_files/trusteddb%20architecture.png" SIZE="1.0" NAME="ExternalObject"/>
-<attribute NAME="image" VALUE="trusteddb architecture"/>
-</node>
-</node>
-<node TEXT="query plan is split" FOLDED="true" ID="ID_1192822768" CREATED="1455796235935" MODIFIED="1492076456509">
-<node TEXT="figure: query plans" FOLDED="true" ID="ID_106589790" CREATED="1455794914236" MODIFIED="1455795933594" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/TrustedDB.pdf" MOVED="1455796249512">
-<pdf_annotation type="HIGHLIGHTED_TEXT" page="8" object_id="6066264989816638580" object_number="46" document_hash="1F3DA5C8EA7449DD2D598E054139EFCD8A3E1A6951C24CAF176BFA21A9D2B71">
-    <pdf_title>TrustedDB: A Trusted Hardware based Database with Privacy and Data Confidentiality</pdf_title>
-</pdf_annotation>
-<attribute NAME="journal" VALUE="IEEE Transactions on Knowledge and Data Engineering"/>
-<attribute NAME="year" VALUE="2014"/>
-<attribute NAME="title" VALUE="TrustedDB: A Trusted Hardware-Based Database with Privacy and Data Confidentiality"/>
-<attribute NAME="authors" VALUE="S. Bajaj and R. Sion"/>
-<attribute NAME="key" VALUE="6468039"/>
-<node TEXT="trusteddb query plan.png" ID="ID_1939718093" CREATED="1455795928447" MODIFIED="1488479397542">
-<hook URI="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/_data/150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/default_files/trusteddb%20query%20plan.png" SIZE="1.0" NAME="ExternalObject"/>
-<attribute NAME="image" VALUE="trusteddb query plan"/>
-</node>
-</node>
-</node>
-</node>
-<node TEXT="Cipherbase" LOCALIZED_STYLE_REF="default" FOLDED="true" ID="ID_803773770" CREATED="1455795444462" MODIFIED="1495057102252" MOVED="1495605789312">
-<node TEXT="concept: subroutines (query processing) on FPGA (secure HW)" FOLDED="true" ID="ID_1419177700" CREATED="1455794914787" MODIFIED="1457179898595" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/Orthogonal%20Security%20With%20Cipherbase.pdf" MOVED="1455796634445">
-<pdf_annotation type="COMMENT" page="1" object_id="2093618582673050500" object_number="20" document_hash="25950546C513AD3F8773288F1146BB180F0F37A3F6748577F7BB0E09AB221E3">
-    <pdf_title>Orthogonal Security With Cipherbase</pdf_title>
-</pdf_annotation>
-<attribute NAME="key" VALUE="Arasu2013"/>
-<attribute NAME="year" VALUE="2013"/>
-<attribute NAME="title" VALUE="Orthogonal Security with Cipherbase"/>
-<attribute NAME="authors" VALUE="Arasu, Arvind and Blanas, Spyros and Eguro, Ken and Kaushik, Raghav and Kossmann, Donald and Ramamurthy, Ravishankar and Venkatesan, Ramarathnam"/>
-<node TEXT="FPGA implements stack machine" ID="ID_643837759" CREATED="1455796552268" MODIFIED="1455796556957"/>
-<node TEXT="trusted hardware" FOLDED="true" ID="ID_1174368620" CREATED="1455794914750" MODIFIED="1455794914751" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/Orthogonal%20Security%20With%20Cipherbase.pdf" MOVED="1455796560916">
-<pdf_annotation type="HIGHLIGHTED_TEXT" page="1" object_id="9174176585080944893" object_number="18" document_hash="25950546C513AD3F8773288F1146BB180F0F37A3F6748577F7BB0E09AB221E3">
-    <pdf_title>Orthogonal Security With Cipherbase</pdf_title>
-</pdf_annotation>
-<attribute NAME="key" VALUE="Arasu2013"/>
-<attribute NAME="year" VALUE="2013"/>
-<attribute NAME="title" VALUE="Orthogonal Security with Cipherbase"/>
-<attribute NAME="authors" VALUE="Arasu, Arvind and Blanas, Spyros and Eguro, Ken and Kaushik, Raghav and Kossmann, Donald and Ramamurthy, Ravishankar and Venkatesan, Ramarathnam"/>
-<node TEXT="FPGAs" ID="ID_1676513670" CREATED="1455794914769" MODIFIED="1455794914769" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/Orthogonal%20Security%20With%20Cipherbase.pdf" MOVED="1455796391726">
-<pdf_annotation type="HIGHLIGHTED_TEXT" page="1" object_id="8116564455353024332" object_number="19" document_hash="25950546C513AD3F8773288F1146BB180F0F37A3F6748577F7BB0E09AB221E3">
-    <pdf_title>Orthogonal Security With Cipherbase</pdf_title>
-</pdf_annotation>
-<attribute NAME="key" VALUE="Arasu2013"/>
-<attribute NAME="year" VALUE="2013"/>
-<attribute NAME="title" VALUE="Orthogonal Security with Cipherbase"/>
-<attribute NAME="authors" VALUE="Arasu, Arvind and Blanas, Spyros and Eguro, Ken and Kaushik, Raghav and Kossmann, Donald and Ramamurthy, Ravishankar and Venkatesan, Ramarathnam"/>
-</node>
-</node>
-</node>
-<node TEXT="client compiles (optimizes query) -&gt; b/c statistics needed (leakage otherwise)" FOLDED="true" ID="ID_1303258438" CREATED="1455794915028" MODIFIED="1457179898609" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/Orthogonal%20Security%20With%20Cipherbase.pdf" MOVED="1455796642489">
-<pdf_annotation type="HIGHLIGHTED_TEXT" page="9" object_id="8731363910308889835" object_number="48" document_hash="25950546C513AD3F8773288F1146BB180F0F37A3F6748577F7BB0E09AB221E3">
-    <pdf_title>Orthogonal Security With Cipherbase</pdf_title>
-</pdf_annotation>
-<attribute NAME="key" VALUE="Arasu2013"/>
-<attribute NAME="year" VALUE="2013"/>
-<attribute NAME="title" VALUE="Orthogonal Security with Cipherbase"/>
-<attribute NAME="authors" VALUE="Arasu, Arvind and Blanas, Spyros and Eguro, Ken and Kaushik, Raghav and Kossmann, Donald and Ramamurthy, Ravishankar and Venkatesan, Ramarathnam"/>
-<node TEXT="secure optimization and statistics" ID="ID_1453698610" CREATED="1455794914842" MODIFIED="1455796454526" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/Orthogonal%20Security%20With%20Cipherbase.pdf" MOVED="1455796456197">
-<pdf_annotation type="HIGHLIGHTED_TEXT" page="9" object_id="50529616601763611" object_number="47" document_hash="25950546C513AD3F8773288F1146BB180F0F37A3F6748577F7BB0E09AB221E3">
-    <pdf_title>Orthogonal Security With Cipherbase</pdf_title>
-</pdf_annotation>
-<attribute NAME="key" VALUE="Arasu2013"/>
-<attribute NAME="year" VALUE="2013"/>
-<attribute NAME="title" VALUE="Orthogonal Security with Cipherbase"/>
-<attribute NAME="authors" VALUE="Arasu, Arvind and Blanas, Spyros and Eguro, Ken and Kaushik, Raghav and Kossmann, Donald and Ramamurthy, Ravishankar and Venkatesan, Ramarathnam"/>
-</node>
-<node TEXT="query compiler" FOLDED="true" ID="ID_1997494603" CREATED="1455794914921" MODIFIED="1455796438399" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/Orthogonal%20Security%20With%20Cipherbase.pdf">
-<pdf_annotation type="HIGHLIGHTED_TEXT" page="9" object_id="552170849024704534" object_number="45" document_hash="25950546C513AD3F8773288F1146BB180F0F37A3F6748577F7BB0E09AB221E3">
-    <pdf_title>Orthogonal Security With Cipherbase</pdf_title>
-</pdf_annotation>
-<attribute NAME="key" VALUE="Arasu2013"/>
-<attribute NAME="year" VALUE="2013"/>
-<attribute NAME="title" VALUE="Orthogonal Security with Cipherbase"/>
-<attribute NAME="authors" VALUE="Arasu, Arvind and Blanas, Spyros and Eguro, Ken and Kaushik, Raghav and Kossmann, Donald and Ramamurthy, Ravishankar and Venkatesan, Ramarathnam"/>
-<node TEXT="three main phases: (a) parsing, (b) (cost-based) optimization, and (c) code generation" ID="ID_968724664" CREATED="1455794914941" MODIFIED="1455794914941" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/Orthogonal%20Security%20With%20Cipherbase.pdf" MOVED="1455796440317">
-<pdf_annotation type="HIGHLIGHTED_TEXT" page="9" object_id="7345609436975217489" object_number="46" document_hash="25950546C513AD3F8773288F1146BB180F0F37A3F6748577F7BB0E09AB221E3">
-    <pdf_title>Orthogonal Security With Cipherbase</pdf_title>
-</pdf_annotation>
-<attribute NAME="key" VALUE="Arasu2013"/>
-<attribute NAME="year" VALUE="2013"/>
-<attribute NAME="title" VALUE="Orthogonal Security with Cipherbase"/>
-<attribute NAME="authors" VALUE="Arasu, Arvind and Blanas, Spyros and Eguro, Ken and Kaushik, Raghav and Kossmann, Donald and Ramamurthy, Ravishankar and Venkatesan, Ramarathnam"/>
-</node>
-</node>
-<node TEXT="extends ODBC driver at the client and the query processor" ID="ID_1305696791" CREATED="1455794914881" MODIFIED="1455796571316" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/Orthogonal%20Security%20With%20Cipherbase.pdf" MOVED="1455796603491">
-<pdf_annotation type="HIGHLIGHTED_TEXT" page="3" object_id="4961968905881832076" object_number="27" document_hash="25950546C513AD3F8773288F1146BB180F0F37A3F6748577F7BB0E09AB221E3">
-    <pdf_title>Orthogonal Security With Cipherbase</pdf_title>
-</pdf_annotation>
-<attribute NAME="key" VALUE="Arasu2013"/>
-<attribute NAME="year" VALUE="2013"/>
-<attribute NAME="title" VALUE="Orthogonal Security with Cipherbase"/>
-<attribute NAME="authors" VALUE="Arasu, Arvind and Blanas, Spyros and Eguro, Ken and Kaushik, Raghav and Kossmann, Donald and Ramamurthy, Ravishankar and Venkatesan, Ramarathnam"/>
-</node>
-</node>
-<node TEXT="figure: cipherbase architecture" FOLDED="true" ID="ID_419639448" CREATED="1455796092925" MODIFIED="1455796092925" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/Encrypted%20Database%20good%20FHE%20PHE%20overview.pdf">
-<pdf_annotation type="COMMENT" page="74" object_id="2437906099272480867" object_number="474" document_hash="A99F7310249BD6991DEEAB6A4547EBE8F8E506FF909E1664DFEC1E19ED34A">
-    <pdf_title>Querying Encrypted Data</pdf_title>
-</pdf_annotation>
-<attribute NAME="year" VALUE="2013"/>
-<attribute NAME="title" VALUE="Querying Encrypted Data (Tutorial)"/>
-<attribute NAME="authors" VALUE="Arasu, Arvind and Eguro, Ken and Kaushik, Raghav and Ramamurthy, Ravi"/>
-<node TEXT="cipherbase architecture.png" ID="ID_680573037" CREATED="1455796120313" MODIFIED="1488479407160">
-<hook URI="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/_data/150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/default_files/cipherbase%20architecture.png" SIZE="1.0" NAME="ExternalObject"/>
-<attribute NAME="image" VALUE="cipherbase architecture"/>
-</node>
-</node>
-<node TEXT="split execution on server" FOLDED="true" ID="ID_783950808" CREATED="1455796476381" MODIFIED="1455796591725">
-<node TEXT="use enc schemes matching operation" FOLDED="true" ID="ID_638057242" CREATED="1455796491724" MODIFIED="1455796506181" MOVED="1455796510586">
-<node TEXT="If data is public or encrypted in a partially homomorphic way that matches the operation (e.g., order-preserving encryption), then the operation can be executed wholly by UM" ID="ID_1092726125" CREATED="1455794914863" MODIFIED="1455794914863" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/Orthogonal%20Security%20With%20Cipherbase.pdf" MOVED="1455796509381">
-<pdf_annotation type="HIGHLIGHTED_TEXT" page="10" object_id="5382019139302410767" object_number="55" document_hash="25950546C513AD3F8773288F1146BB180F0F37A3F6748577F7BB0E09AB221E3">
-    <pdf_title>Orthogonal Security With Cipherbase</pdf_title>
-</pdf_annotation>
-<attribute NAME="key" VALUE="Arasu2013"/>
-<attribute NAME="year" VALUE="2013"/>
-<attribute NAME="title" VALUE="Orthogonal Security with Cipherbase"/>
-<attribute NAME="authors" VALUE="Arasu, Arvind and Blanas, Spyros and Eguro, Ken and Kaushik, Raghav and Kossmann, Donald and Ramamurthy, Ravishankar and Venkatesan, Ramarathnam"/>
-</node>
-</node>
-<node TEXT="Operators that involve encrypted data are executed on both the trusted (special-purpose) and untrusted (commodity) hardware" ID="ID_1309347677" CREATED="1455794914823" MODIFIED="1457179898599" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/Orthogonal%20Security%20With%20Cipherbase.pdf" MOVED="1455796481717">
-<pdf_annotation type="HIGHLIGHTED_TEXT" page="2" object_id="8202482091926394192" object_number="24" document_hash="25950546C513AD3F8773288F1146BB180F0F37A3F6748577F7BB0E09AB221E3">
-    <pdf_title>Orthogonal Security With Cipherbase</pdf_title>
-</pdf_annotation>
-<attribute NAME="key" VALUE="Arasu2013"/>
-<attribute NAME="year" VALUE="2013"/>
-<attribute NAME="title" VALUE="Orthogonal Security with Cipherbase"/>
-<attribute NAME="authors" VALUE="Arasu, Arvind and Blanas, Spyros and Eguro, Ken and Kaushik, Raghav and Kossmann, Donald and Ramamurthy, Ravishankar and Venkatesan, Ramarathnam"/>
-</node>
-<node TEXT="interpretation of a query plan involves shipping (encrypted) tuples from the UM to the TM and then decrypting, processing, and re-encrypting these tuples in the TM, before shipping the (encrypted) results back from the TM to the UM" FOLDED="true" ID="ID_812995182" CREATED="1455794914962" MODIFIED="1457179898590" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/Orthogonal%20Security%20With%20Cipherbase.pdf" MOVED="1455796598843">
-<pdf_annotation type="HIGHLIGHTED_TEXT" page="3" object_id="7417378388092278908" object_number="29" document_hash="25950546C513AD3F8773288F1146BB180F0F37A3F6748577F7BB0E09AB221E3">
-    <pdf_title>Orthogonal Security With Cipherbase</pdf_title>
-</pdf_annotation>
-<attribute NAME="key" VALUE="Arasu2013"/>
-<attribute NAME="year" VALUE="2013"/>
-<attribute NAME="title" VALUE="Orthogonal Security with Cipherbase"/>
-<attribute NAME="authors" VALUE="Arasu, Arvind and Blanas, Spyros and Eguro, Ken and Kaushik, Raghav and Kossmann, Donald and Ramamurthy, Ravishankar and Venkatesan, Ramarathnam"/>
-<font SIZE="10"/>
-<node TEXT="much easier with SGX" ID="ID_1254810612" CREATED="1455794914986" MODIFIED="1457179898614" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/Orthogonal%20Security%20With%20Cipherbase.pdf" MOVED="1455796611753">
-<pdf_annotation type="COMMENT" page="3" object_id="5406135234773966257" object_number="30" document_hash="25950546C513AD3F8773288F1146BB180F0F37A3F6748577F7BB0E09AB221E3">
-    <pdf_title>Orthogonal Security With Cipherbase</pdf_title>
-</pdf_annotation>
-<attribute NAME="key" VALUE="Arasu2013"/>
-<attribute NAME="year" VALUE="2013"/>
-<attribute NAME="title" VALUE="Orthogonal Security with Cipherbase"/>
-<attribute NAME="authors" VALUE="Arasu, Arvind and Blanas, Spyros and Eguro, Ken and Kaushik, Raghav and Kossmann, Donald and Ramamurthy, Ravishankar and Venkatesan, Ramarathnam"/>
-</node>
-</node>
-</node>
-</node>
-<node TEXT="Arx" LOCALIZED_STYLE_REF="default" FOLDED="true" ID="ID_1217184419" CREATED="1488546522755" MODIFIED="1495057102260" MOVED="1495605789313">
+<node TEXT="mindmap" STYLE_REF="drop" FOLDED="true" ID="ID_1843665722" CREATED="1495543887981" MODIFIED="1495543899209" MOVED="1495543900065">
+<node TEXT="done" FOLDED="true" ID="ID_313376731" CREATED="1499930222576" MODIFIED="1499930223753" MOVED="1499930233202">
+<node TEXT="as one possible application of secure data processing" STYLE_REF="NoHeading" ID="ID_1698087762" CREATED="1488565649417" MODIFIED="1489493131748" MOVED="1499930231135"/>
+<node TEXT="Arx" LOCALIZED_STYLE_REF="default" FOLDED="true" ID="ID_1217184419" CREATED="1488546522755" MODIFIED="1495057102260" MOVED="1499930231139">
 <node TEXT="Arx Encrypted DB AES with Data Structures.pdf" ID="ID_1926103185" CREATED="1488486502328" MODIFIED="1488486502328" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/Arx%20Encrypted%20DB%20AES%20with%20Data%20Structures.pdf" MOVED="1488546531649">
 <pdf_annotation type="PDF_FILE" object_id="0" document_hash="E52B36C24624762CD7DFB4D68443F795E958F109C3510646411D93EC2836CF7">
     <pdf_title>Arx: A Strongly Encrypted Database System</pdf_title>
@@ -7391,18 +7062,7 @@
 <attribute NAME="title" VALUE="Arx: A Strongly Encrypted Database System."/>
 <attribute NAME="authors" VALUE="Poddar, Rishabh and Boelter, Tobias and Popa, Raluca Ada"/>
 </node>
-<node TEXT="Instead of embedding the computation into special encryption schemes as in FHE and CryptDB, Arx embeds the computation into data structures, which it builds on top of traditional encryption schemes." FOLDED="true" ID="ID_1728356794" CREATED="1488888600997" MODIFIED="1488888601001" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/Arx%20Encrypted%20DB%20AES%20with%20Data%20Structures.pdf" MOVED="1488888693731">
-<pdf_annotation type="HIGHLIGHTED_TEXT" page="1" object_id="1858181352139731208" object_number="43" document_hash="E52B36C24624762CD7DFB4D68443F795E958F109C3510646411D93EC2836CF7">
-    <pdf_title>Arx: A Strongly Encrypted Database System</pdf_title>
-</pdf_annotation>
-<attribute NAME="key" VALUE="Poddar2016"/>
-<attribute NAME="journal" VALUE="IACR Cryptology ePrint Archive"/>
-<attribute NAME="year" VALUE="2016"/>
-<attribute NAME="title" VALUE="Arx: A Strongly Encrypted Database System."/>
-<attribute NAME="authors" VALUE="Poddar, Rishabh and Boelter, Tobias and Popa, Raluca Ada"/>
-<node TEXT="indices" ID="ID_1874792775" CREATED="1488888706775" MODIFIED="1488888708341"/>
-</node>
-<node TEXT="Figure 1: Arx&#x2019;s architecture" FOLDED="true" ID="ID_887397471" CREATED="1488888025615" MODIFIED="1488888025623" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/Arx%20Encrypted%20DB%20AES%20with%20Data%20Structures.pdf" MOVED="1488888696428">
+<node TEXT="Figure 1: Arx&#x2019;s architecture" ID="ID_887397471" CREATED="1488888025615" MODIFIED="1488888025623" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/Arx%20Encrypted%20DB%20AES%20with%20Data%20Structures.pdf" MOVED="1488888696428">
 <pdf_annotation type="HIGHLIGHTED_TEXT" page="3" object_id="4155127542254643020" object_number="92" document_hash="E52B36C24624762CD7DFB4D68443F795E958F109C3510646411D93EC2836CF7">
     <pdf_title>Arx: A Strongly Encrypted Database System</pdf_title>
 </pdf_annotation>
@@ -7417,10 +7077,10 @@
 </node>
 </node>
 <node TEXT="no trusted hardware" ID="ID_1245226287" CREATED="1488888244169" MODIFIED="1488888247197"/>
-<node TEXT="garbled circuits for confidential function evaluation on server" FOLDED="true" ID="ID_1921157430" CREATED="1488888749528" MODIFIED="1488888764836">
+<node TEXT="garbled circuits for confidential function evaluation on server" ID="ID_1921157430" CREATED="1488888749528" MODIFIED="1488888764836">
 <node TEXT="only for range check" ID="ID_1343035444" CREATED="1488888767140" MODIFIED="1488888777592"/>
 </node>
-<node TEXT="client proxy interaction required" FOLDED="true" ID="ID_1006907878" CREATED="1488888803303" MODIFIED="1488888840480">
+<node TEXT="client proxy interaction required" ID="ID_1006907878" CREATED="1488888803303" MODIFIED="1488888840480">
 <node TEXT="regenerate indices" ID="ID_635847562" CREATED="1488888811722" MODIFIED="1488888827921"/>
 <node TEXT="encrypt queries" ID="ID_932883451" CREATED="1488888841464" MODIFIED="1488888857939"/>
 </node>
@@ -7429,8 +7089,19 @@
 <node TEXT="sees side channels (timing, row access frequency etc.)" ID="ID_1635728222" CREATED="1488888306864" MODIFIED="1488888319868"/>
 </node>
 </node>
+<node TEXT="Instead of embedding the computation into special encryption schemes as in FHE and CryptDB, Arx embeds the computation into data structures, which it builds on top of traditional encryption schemes." FOLDED="true" ID="ID_1728356794" CREATED="1488888600997" MODIFIED="1488888601001" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/Arx%20Encrypted%20DB%20AES%20with%20Data%20Structures.pdf" MOVED="1499930240418">
+<pdf_annotation type="HIGHLIGHTED_TEXT" page="1" object_id="1858181352139731208" object_number="43" document_hash="E52B36C24624762CD7DFB4D68443F795E958F109C3510646411D93EC2836CF7">
+    <pdf_title>Arx: A Strongly Encrypted Database System</pdf_title>
+</pdf_annotation>
+<attribute NAME="key" VALUE="Poddar2016"/>
+<attribute NAME="journal" VALUE="IACR Cryptology ePrint Archive"/>
+<attribute NAME="year" VALUE="2016"/>
+<attribute NAME="title" VALUE="Arx: A Strongly Encrypted Database System."/>
+<attribute NAME="authors" VALUE="Poddar, Rishabh and Boelter, Tobias and Popa, Raluca Ada"/>
+<node TEXT="indices" ID="ID_1874792775" CREATED="1488888706775" MODIFIED="1488888708341"/>
 </node>
-<node TEXT="Commercial Software" LOCALIZED_STYLE_REF="default" FOLDED="true" ID="ID_955314056" CREATED="1488888333935" MODIFIED="1495057102264" MOVED="1495605789314">
+</node>
+<node TEXT="Commercial Software" LOCALIZED_STYLE_REF="default" FOLDED="true" ID="ID_955314056" CREATED="1488888333935" MODIFIED="1495057102264" MOVED="1499930231142">
 <node TEXT="Microsoft&#x2019;s Always Encrypted Service [47] currently deployed as part of SQL Server 2016, Skyhigh Networks [49], CipherCloud [48], Google&#x2019;s Encrypted Big Query [46], SAP&#x2019;s SEEED [29], Lincoln Labs [33], as well as startups such as IQCrypt [3]. Most of these services are NoSQL databases of various kinds showing that a certain class of encrypted computation suffices for many systems" ID="ID_927390353" CREATED="1488888637783" MODIFIED="1488889559592" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/Arx%20Encrypted%20DB%20AES%20with%20Data%20Structures.pdf">
 <pdf_annotation type="HIGHLIGHTED_TEXT" page="1" object_id="8976165904276112728" object_number="41" document_hash="E52B36C24624762CD7DFB4D68443F795E958F109C3510646411D93EC2836CF7">
     <pdf_title>Arx: A Strongly Encrypted Database System</pdf_title>
@@ -7442,7 +7113,7 @@
 <attribute NAME="authors" VALUE="Poddar, Rishabh and Boelter, Tobias and Popa, Raluca Ada"/>
 </node>
 </node>
-<node TEXT="Comparison" LOCALIZED_STYLE_REF="default" ID="ID_1377676252" CREATED="1455795384694" MODIFIED="1495057102267" MOVED="1495605789327">
+<node TEXT="Comparison" LOCALIZED_STYLE_REF="default" FOLDED="true" ID="ID_1377676252" CREATED="1455795384694" MODIFIED="1495057102267" MOVED="1499930231145">
 <node TEXT="table!" FOLDED="true" ID="ID_1367291892" CREATED="1488565800483" MODIFIED="1488565802020" MOVED="1488565802435">
 <node TEXT="trusted hardware" ID="ID_684560465" CREATED="1488888557168" MODIFIED="1488888560344"/>
 <node TEXT="encryption scheme" ID="ID_718691897" CREATED="1488888560469" MODIFIED="1488888563465"/>
@@ -7507,21 +7178,439 @@
 <attribute NAME="authors" VALUE="Poddar, Rishabh and Boelter, Tobias and Popa, Raluca Ada"/>
 </node>
 </node>
+<node TEXT="CryptDB" LOCALIZED_STYLE_REF="default" FOLDED="true" ID="ID_725694989" CREATED="1455795148662" MODIFIED="1495057102237" MOVED="1499931970888">
+<node TEXT="efficient SQL-aware encryption schemes" ID="ID_770203765" CREATED="1455794915174" MODIFIED="1488817474010" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/CryptDB.pdf" MOVED="1455795549308">
+<pdf_annotation type="HIGHLIGHTED_TEXT" page="1" object_id="5848976392560115417" object_number="53" document_hash="BA9232188AF4CF8614DF4A4E9A7D0657C5ECF9C815777F3ECB3E76F9EA25F9">
+    <pdf_title>CryptDB: Protecting Confidentiality with Encrypted Query Processing</pdf_title>
+</pdf_annotation>
+<attribute NAME="year" VALUE="2011"/>
+<attribute NAME="title" VALUE="CryptDB: protecting confidentiality with encrypted query processing"/>
+<attribute NAME="authors" VALUE="Popa, Raluca Ada and Redfield, Catherine and Zeldovich, Nickolai and Balakrishnan, Hari"/>
 </node>
-<node TEXT="Content" STYLE_REF="paragraphs_drop_self" ID="ID_1816243504" CREATED="1495543885991" MODIFIED="1495543895304">
+<node TEXT="use best encryption for expected queries" ID="ID_43324201" CREATED="1455795575652" MODIFIED="1455795591653" MOVED="1455795592604"/>
+<node TEXT="figure: cryptDB architecture" ID="ID_1657052174" CREATED="1455794914730" MODIFIED="1455794914730" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/Encrypted%20Database%20good%20FHE%20PHE%20overview.pdf" MOVED="1455795153046">
+<pdf_annotation type="COMMENT" page="54" object_id="8617842465630172661" object_number="413" document_hash="A99F7310249BD6991DEEAB6A4547EBE8F8E506FF909E1664DFEC1E19ED34A">
+    <pdf_title>Querying Encrypted Data</pdf_title>
+</pdf_annotation>
+<attribute NAME="year" VALUE="2013"/>
+<attribute NAME="title" VALUE="Querying Encrypted Data (Tutorial)"/>
+<attribute NAME="authors" VALUE="Arasu, Arvind and Eguro, Ken and Kaushik, Raghav and Ramamurthy, Ravi"/>
+<node TEXT="cryptdb architecture.png" ID="ID_1748195478" CREATED="1455794955879" MODIFIED="1488479344669">
+<hook URI="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/_data/150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/default_files/cryptdb%20architecture.png" SIZE="0.88235295" NAME="ExternalObject"/>
+<attribute NAME="image" VALUE="cryptdb architecture"/>
+</node>
+<node TEXT="Web proxy rewrites queries, decrypts result" ID="ID_760563343" CREATED="1455794914636" MODIFIED="1455794914636" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/Encrypted%20Database%20good%20FHE%20PHE%20overview.pdf" MOVED="1455795551742">
+<pdf_annotation type="HIGHLIGHTED_TEXT" page="54" object_id="6760156027412177832" object_number="412" document_hash="A99F7310249BD6991DEEAB6A4547EBE8F8E506FF909E1664DFEC1E19ED34A">
+    <pdf_title>Querying Encrypted Data</pdf_title>
+</pdf_annotation>
+<attribute NAME="year" VALUE="2013"/>
+<attribute NAME="title" VALUE="Querying Encrypted Data (Tutorial)"/>
+<attribute NAME="authors" VALUE="Arasu, Arvind and Eguro, Ken and Kaushik, Raghav and Ramamurthy, Ravi"/>
+</node>
+</node>
+<node TEXT="figure: onion encryption layers" ID="ID_1179455262" CREATED="1455794915222" MODIFIED="1455794915222" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/CryptDB.pdf" MOVED="1455795546948">
+<pdf_annotation type="COMMENT" page="5" object_id="4740218768992032111" object_number="132" document_hash="BA9232188AF4CF8614DF4A4E9A7D0657C5ECF9C815777F3ECB3E76F9EA25F9">
+    <pdf_title>CryptDB: Protecting Confidentiality with Encrypted Query Processing</pdf_title>
+</pdf_annotation>
+<attribute NAME="year" VALUE="2011"/>
+<attribute NAME="title" VALUE="CryptDB: protecting confidentiality with encrypted query processing"/>
+<attribute NAME="authors" VALUE="Popa, Raluca Ada and Redfield, Catherine and Zeldovich, Nickolai and Balakrishnan, Hari"/>
+<node TEXT="cryptdb onion enc.png" ID="ID_1598870152" CREATED="1455795534458" MODIFIED="1488479356873">
+<hook URI="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/_data/150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/default_files/cryptdb%20onion%20enc.png" SIZE="1.0" NAME="ExternalObject"/>
+<attribute NAME="image" VALUE="cryptdb onion enc"/>
+</node>
+</node>
+<node TEXT="downside" ID="ID_1073541760" CREATED="1455795757850" MODIFIED="1455795759844">
+<node TEXT="does not support full SQL query range, incurs overhead" ID="ID_120923084" CREATED="1455794915156" MODIFIED="1455795753308" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/Monomi%20Queries%20on%20Encrypted%20Data.pdf" MOVED="1455795761770">
+<pdf_annotation type="COMMENT" page="2" object_id="43748455637441560" object_number="27" document_hash="D18191B422157D363726DEC9D847E594EF0EEF14E5088B2D67FDAEACB5B6A15">
+    <pdf_title>Processing Analytical Queries over Encrypted Data</pdf_title>
+</pdf_annotation>
+<attribute NAME="year" VALUE="2013"/>
+<attribute NAME="title" VALUE="Processing analytical queries over encrypted data"/>
+<attribute NAME="authors" VALUE="Tu, Stephen and Kaashoek, M Frans and Madden, Samuel and Zeldovich, Nickolai"/>
+</node>
+</node>
+</node>
+<node TEXT="Monomi" LOCALIZED_STYLE_REF="default" FOLDED="true" ID="ID_1746268136" CREATED="1455795447013" MODIFIED="1495057102243" MOVED="1499933232804">
+<node TEXT="builds on CryptDB&#x2019;s design of using specialized encryption schemes" FOLDED="true" ID="ID_1122287501" CREATED="1455794915138" MODIFIED="1492076456563" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/Monomi%20Queries%20on%20Encrypted%20Data.pdf" MOVED="1455795769182">
+<pdf_annotation type="HIGHLIGHTED_TEXT" page="2" object_id="4094945936579004360" object_number="26" document_hash="D18191B422157D363726DEC9D847E594EF0EEF14E5088B2D67FDAEACB5B6A15">
+    <pdf_title>Processing Analytical Queries over Encrypted Data</pdf_title>
+</pdf_annotation>
+<attribute NAME="key" VALUE="Tu2013"/>
+<attribute NAME="year" VALUE="2013"/>
+<attribute NAME="title" VALUE="Processing analytical queries over encrypted data"/>
+<attribute NAME="authors" VALUE="Tu, Stephen and Kaashoek, M Frans and Madden, Samuel and Zeldovich, Nickolai"/>
+<node TEXT="Use P.H.E to push more computation to DBMS" ID="ID_1971937759" CREATED="1455795682895" MODIFIED="1455795682895" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/Encrypted%20Database%20good%20FHE%20PHE%20overview.pdf" MOVED="1455795790299">
+<pdf_annotation type="HIGHLIGHTED_TEXT" page="63" object_id="4613375995290613202" object_number="443" document_hash="A99F7310249BD6991DEEAB6A4547EBE8F8E506FF909E1664DFEC1E19ED34A">
+    <pdf_title>Querying Encrypted Data</pdf_title>
+</pdf_annotation>
+<attribute NAME="year" VALUE="2013"/>
+<attribute NAME="title" VALUE="Querying Encrypted Data (Tutorial)"/>
+<attribute NAME="authors" VALUE="Arasu, Arvind and Eguro, Ken and Kaushik, Raghav and Ramamurthy, Ravi"/>
+</node>
+<node TEXT="encrypting the entire database and running queries over the encrypted data" ID="ID_643620526" CREATED="1455794915084" MODIFIED="1455794915085" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/Monomi%20Queries%20on%20Encrypted%20Data.pdf" MOVED="1455795798778">
+<pdf_annotation type="HIGHLIGHTED_TEXT" page="1" object_id="5345832730301728021" object_number="21" document_hash="D18191B422157D363726DEC9D847E594EF0EEF14E5088B2D67FDAEACB5B6A15">
+    <pdf_title>Processing Analytical Queries over Encrypted Data</pdf_title>
+</pdf_annotation>
+<attribute NAME="key" VALUE="Tu2013"/>
+<attribute NAME="year" VALUE="2013"/>
+<attribute NAME="title" VALUE="Processing analytical queries over encrypted data"/>
+<attribute NAME="authors" VALUE="Tu, Stephen and Kaashoek, M Frans and Madden, Samuel and Zeldovich, Nickolai"/>
+</node>
+</node>
+<node TEXT="split client/server query execution" ID="ID_457672805" CREATED="1455794915102" MODIFIED="1492076463379" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/Monomi%20Queries%20on%20Encrypted%20Data.pdf" MOVED="1455795776448">
+<arrowlink SHAPE="CUBIC_CURVE" COLOR="#000000" WIDTH="2" TRANSPARENCY="80" FONT_SIZE="9" FONT_FAMILY="SansSerif" DESTINATION="ID_1192822768" STARTINCLINATION="786;0;" ENDINCLINATION="786;0;" STARTARROW="NONE" ENDARROW="DEFAULT"/>
+<pdf_annotation type="HIGHLIGHTED_TEXT" page="1" object_id="7084364936911646630" object_number="22" document_hash="D18191B422157D363726DEC9D847E594EF0EEF14E5088B2D67FDAEACB5B6A15">
+    <pdf_title>Processing Analytical Queries over Encrypted Data</pdf_title>
+</pdf_annotation>
+<attribute NAME="key" VALUE="Tu2013"/>
+<attribute NAME="year" VALUE="2013"/>
+<attribute NAME="title" VALUE="Processing analytical queries over encrypted data"/>
+<attribute NAME="authors" VALUE="Tu, Stephen and Kaashoek, M Frans and Madden, Samuel and Zeldovich, Nickolai"/>
+<node TEXT="executes as much of the query as is practical over encrypted data on the server, and executes the remaining components by shipping encrypted data to a trusted client, which decrypts data and processes queries normally" ID="ID_608934" CREATED="1455794915120" MODIFIED="1492076456552" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/Monomi%20Queries%20on%20Encrypted%20Data.pdf" MOVED="1455795773971">
+<pdf_annotation type="HIGHLIGHTED_TEXT" page="1" object_id="7676321850227414709" object_number="23" document_hash="D18191B422157D363726DEC9D847E594EF0EEF14E5088B2D67FDAEACB5B6A15">
+    <pdf_title>Processing Analytical Queries over Encrypted Data</pdf_title>
+</pdf_annotation>
+<attribute NAME="key" VALUE="Tu2013"/>
+<attribute NAME="year" VALUE="2013"/>
+<attribute NAME="title" VALUE="Processing analytical queries over encrypted data"/>
+<attribute NAME="authors" VALUE="Tu, Stephen and Kaashoek, M Frans and Madden, Samuel and Zeldovich, Nickolai"/>
+</node>
+</node>
+<node TEXT="figure: monomi architecture" ID="ID_1615108033" CREATED="1455795682881" MODIFIED="1492076456558" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/Encrypted%20Database%20good%20FHE%20PHE%20overview.pdf">
+<pdf_annotation type="COMMENT" page="63" object_id="5990604722242031562" object_number="441" document_hash="A99F7310249BD6991DEEAB6A4547EBE8F8E506FF909E1664DFEC1E19ED34A">
+    <pdf_title>Querying Encrypted Data</pdf_title>
+</pdf_annotation>
+<attribute NAME="year" VALUE="2013"/>
+<attribute NAME="title" VALUE="Querying Encrypted Data (Tutorial)"/>
+<attribute NAME="authors" VALUE="Arasu, Arvind and Eguro, Ken and Kaushik, Raghav and Ramamurthy, Ravi"/>
+<node TEXT="monomi architecture.png" ID="ID_647917680" CREATED="1455795712649" MODIFIED="1492076456555">
+<hook URI="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/_data/150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/default_files/monomi%20architecture.png" SIZE="0.81855386" NAME="ExternalObject"/>
+<attribute NAME="image" VALUE="monomi architecture"/>
+</node>
+</node>
+<node TEXT="optimization" ID="ID_1142882453" CREATED="1455795802395" MODIFIED="1455795806115">
+<node TEXT="Pre-computation for complex queries" ID="ID_981236271" CREATED="1455795682803" MODIFIED="1455795682807" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/Encrypted%20Database%20good%20FHE%20PHE%20overview.pdf" MOVED="1455795808008">
+<pdf_annotation type="HIGHLIGHTED_TEXT" page="64" object_id="2202341982131033891" object_number="447" document_hash="A99F7310249BD6991DEEAB6A4547EBE8F8E506FF909E1664DFEC1E19ED34A">
+    <pdf_title>Querying Encrypted Data</pdf_title>
+</pdf_annotation>
+<attribute NAME="year" VALUE="2013"/>
+<attribute NAME="title" VALUE="Querying Encrypted Data (Tutorial)"/>
+<attribute NAME="authors" VALUE="Arasu, Arvind and Eguro, Ken and Kaushik, Raghav and Ramamurthy, Ravi"/>
+</node>
+</node>
+</node>
+<node TEXT="TrustedDB" LOCALIZED_STYLE_REF="default" FOLDED="true" ID="ID_327045293" CREATED="1455795454045" MODIFIED="1495057102247" MOVED="1499934008451">
+<node TEXT="two full DB engines" ID="ID_1649197641" CREATED="1455794914194" MODIFIED="1492076456513" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/TrustedDB.pdf" MOVED="1455796216930">
+<pdf_annotation type="COMMENT" page="6" object_id="5705980014296298854" object_number="35" document_hash="1F3DA5C8EA7449DD2D598E054139EFCD8A3E1A6951C24CAF176BFA21A9D2B71">
+    <pdf_title>TrustedDB: A Trusted Hardware based Database with Privacy and Data Confidentiality</pdf_title>
+</pdf_annotation>
+<attribute NAME="journal" VALUE="IEEE Transactions on Knowledge and Data Engineering"/>
+<attribute NAME="year" VALUE="2014"/>
+<attribute NAME="title" VALUE="TrustedDB: A Trusted Hardware-Based Database with Privacy and Data Confidentiality"/>
+<attribute NAME="authors" VALUE="S. Bajaj and R. Sion"/>
+<attribute NAME="key" VALUE="6468039"/>
+</node>
+<node TEXT="secure coprocessor" ID="ID_98920998" CREATED="1455795963056" MODIFIED="1455795965762" MOVED="1455796212841">
+<node TEXT="server-hosted tamper-proof trusted hardware" ID="ID_821680750" CREATED="1455794914148" MODIFIED="1455794914148" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/TrustedDB.pdf" MOVED="1455795967352">
+<pdf_annotation type="HIGHLIGHTED_TEXT" page="1" object_id="2958297539943527158" object_number="17" document_hash="1F3DA5C8EA7449DD2D598E054139EFCD8A3E1A6951C24CAF176BFA21A9D2B71">
+    <pdf_title>TrustedDB: A Trusted Hardware based Database with Privacy and Data Confidentiality</pdf_title>
+</pdf_annotation>
+<attribute NAME="journal" VALUE="IEEE Transactions on Knowledge and Data Engineering"/>
+<attribute NAME="year" VALUE="2014"/>
+<attribute NAME="title" VALUE="TrustedDB: A Trusted Hardware-Based Database with Privacy and Data Confidentiality"/>
+<attribute NAME="authors" VALUE="S. Bajaj and R. Sion"/>
+<attribute NAME="key" VALUE="6468039"/>
+</node>
+<node TEXT="cheaper than crypto" ID="ID_575687575" CREATED="1455795972008" MODIFIED="1455795975513" MOVED="1455795976895">
+<node TEXT="figure: hardware-based is 1-5 orders of magnitude cheaper than cryptography" FOLDED="true" ID="ID_972193779" CREATED="1455794914169" MODIFIED="1455794914170" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/TrustedDB.pdf" MOVED="1455795978484">
+<pdf_annotation type="HIGHLIGHTED_TEXT" page="6" object_id="556785178463309039" object_number="33" document_hash="1F3DA5C8EA7449DD2D598E054139EFCD8A3E1A6951C24CAF176BFA21A9D2B71">
+    <pdf_title>TrustedDB: A Trusted Hardware based Database with Privacy and Data Confidentiality</pdf_title>
+</pdf_annotation>
+<attribute NAME="journal" VALUE="IEEE Transactions on Knowledge and Data Engineering"/>
+<attribute NAME="year" VALUE="2014"/>
+<attribute NAME="title" VALUE="TrustedDB: A Trusted Hardware-Based Database with Privacy and Data Confidentiality"/>
+<attribute NAME="authors" VALUE="S. Bajaj and R. Sion"/>
+<node TEXT="trusteddb cost compared to crypto.png" ID="ID_1968974026" CREATED="1455795896464" MODIFIED="1488479874040">
+<hook URI="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/_data/150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/default_files/trusteddb%20cost%20compared%20to%20crypto.png" SIZE="1.0" NAME="ExternalObject"/>
+<attribute NAME="image" VALUE="trusteddb cost compared to crypto"/>
+</node>
+</node>
+</node>
+<node TEXT="dynamic paging in secure coprocessor" ID="ID_1377222721" CREATED="1455795946681" MODIFIED="1455796184271" MOVED="1455796219326">
+<font SIZE="10"/>
+<node TEXT="entire database resides outside the SCPU, its size is not bound by SCPU memory limitations. Pages that need to be accessed by the SCPU-side query processing engine are pulled in on demand by the Paging Module" ID="ID_1035513788" CREATED="1455794914215" MODIFIED="1455796186583" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/TrustedDB.pdf" MOVED="1455795952977">
+<pdf_annotation type="HIGHLIGHTED_TEXT" page="7" object_id="1480097768816713239" object_number="41" document_hash="1F3DA5C8EA7449DD2D598E054139EFCD8A3E1A6951C24CAF176BFA21A9D2B71">
+    <pdf_title>TrustedDB: A Trusted Hardware based Database with Privacy and Data Confidentiality</pdf_title>
+</pdf_annotation>
+<font SIZE="10"/>
+<attribute NAME="journal" VALUE="IEEE Transactions on Knowledge and Data Engineering"/>
+<attribute NAME="year" VALUE="2014"/>
+<attribute NAME="title" VALUE="TrustedDB: A Trusted Hardware-Based Database with Privacy and Data Confidentiality"/>
+<attribute NAME="authors" VALUE="S. Bajaj and R. Sion"/>
+</node>
+</node>
+</node>
+<node TEXT="figure: trusteddb architecture" ID="ID_1453710204" CREATED="1455796092889" MODIFIED="1492076456511" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/Encrypted%20Database%20good%20FHE%20PHE%20overview.pdf">
+<pdf_annotation type="COMMENT" page="74" object_id="5559575231062795844" object_number="472" document_hash="A99F7310249BD6991DEEAB6A4547EBE8F8E506FF909E1664DFEC1E19ED34A">
+    <pdf_title>Querying Encrypted Data</pdf_title>
+</pdf_annotation>
+<attribute NAME="year" VALUE="2013"/>
+<attribute NAME="title" VALUE="Querying Encrypted Data (Tutorial)"/>
+<attribute NAME="authors" VALUE="Arasu, Arvind and Eguro, Ken and Kaushik, Raghav and Ramamurthy, Ravi"/>
+<node TEXT="trusteddb architecture.png" ID="ID_464876927" CREATED="1455796107385" MODIFIED="1488479381117">
+<hook URI="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/_data/150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/default_files/trusteddb%20architecture.png" SIZE="1.0" NAME="ExternalObject"/>
+<attribute NAME="image" VALUE="trusteddb architecture"/>
+</node>
+</node>
+<node TEXT="query plan is split" ID="ID_1192822768" CREATED="1455796235935" MODIFIED="1492076456509">
+<node TEXT="figure: query plans" ID="ID_106589790" CREATED="1455794914236" MODIFIED="1455795933594" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/TrustedDB.pdf" MOVED="1455796249512">
+<pdf_annotation type="HIGHLIGHTED_TEXT" page="8" object_id="6066264989816638580" object_number="46" document_hash="1F3DA5C8EA7449DD2D598E054139EFCD8A3E1A6951C24CAF176BFA21A9D2B71">
+    <pdf_title>TrustedDB: A Trusted Hardware based Database with Privacy and Data Confidentiality</pdf_title>
+</pdf_annotation>
+<attribute NAME="journal" VALUE="IEEE Transactions on Knowledge and Data Engineering"/>
+<attribute NAME="year" VALUE="2014"/>
+<attribute NAME="title" VALUE="TrustedDB: A Trusted Hardware-Based Database with Privacy and Data Confidentiality"/>
+<attribute NAME="authors" VALUE="S. Bajaj and R. Sion"/>
+<attribute NAME="key" VALUE="6468039"/>
+<node TEXT="trusteddb query plan.png" ID="ID_1939718093" CREATED="1455795928447" MODIFIED="1488479397542">
+<hook URI="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/_data/150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/default_files/trusteddb%20query%20plan.png" SIZE="1.0" NAME="ExternalObject"/>
+<attribute NAME="image" VALUE="trusteddb query plan"/>
+</node>
+</node>
+</node>
+</node>
+<node TEXT="Cipherbase" LOCALIZED_STYLE_REF="default" FOLDED="true" ID="ID_803773770" CREATED="1455795444462" MODIFIED="1495057102252" MOVED="1499934294792">
+<node TEXT="concept: subroutines (query processing) on FPGA (secure HW)" ID="ID_1419177700" CREATED="1455794914787" MODIFIED="1457179898595" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/Orthogonal%20Security%20With%20Cipherbase.pdf" MOVED="1455796634445">
+<pdf_annotation type="COMMENT" page="1" object_id="2093618582673050500" object_number="20" document_hash="25950546C513AD3F8773288F1146BB180F0F37A3F6748577F7BB0E09AB221E3">
+    <pdf_title>Orthogonal Security With Cipherbase</pdf_title>
+</pdf_annotation>
+<attribute NAME="key" VALUE="Arasu2013"/>
+<attribute NAME="year" VALUE="2013"/>
+<attribute NAME="title" VALUE="Orthogonal Security with Cipherbase"/>
+<attribute NAME="authors" VALUE="Arasu, Arvind and Blanas, Spyros and Eguro, Ken and Kaushik, Raghav and Kossmann, Donald and Ramamurthy, Ravishankar and Venkatesan, Ramarathnam"/>
+<node TEXT="FPGA implements stack machine" ID="ID_643837759" CREATED="1455796552268" MODIFIED="1455796556957"/>
+<node TEXT="trusted hardware" ID="ID_1174368620" CREATED="1455794914750" MODIFIED="1455794914751" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/Orthogonal%20Security%20With%20Cipherbase.pdf" MOVED="1455796560916">
+<pdf_annotation type="HIGHLIGHTED_TEXT" page="1" object_id="9174176585080944893" object_number="18" document_hash="25950546C513AD3F8773288F1146BB180F0F37A3F6748577F7BB0E09AB221E3">
+    <pdf_title>Orthogonal Security With Cipherbase</pdf_title>
+</pdf_annotation>
+<attribute NAME="key" VALUE="Arasu2013"/>
+<attribute NAME="year" VALUE="2013"/>
+<attribute NAME="title" VALUE="Orthogonal Security with Cipherbase"/>
+<attribute NAME="authors" VALUE="Arasu, Arvind and Blanas, Spyros and Eguro, Ken and Kaushik, Raghav and Kossmann, Donald and Ramamurthy, Ravishankar and Venkatesan, Ramarathnam"/>
+<node TEXT="FPGAs" ID="ID_1676513670" CREATED="1455794914769" MODIFIED="1455794914769" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/Orthogonal%20Security%20With%20Cipherbase.pdf" MOVED="1455796391726">
+<pdf_annotation type="HIGHLIGHTED_TEXT" page="1" object_id="8116564455353024332" object_number="19" document_hash="25950546C513AD3F8773288F1146BB180F0F37A3F6748577F7BB0E09AB221E3">
+    <pdf_title>Orthogonal Security With Cipherbase</pdf_title>
+</pdf_annotation>
+<attribute NAME="key" VALUE="Arasu2013"/>
+<attribute NAME="year" VALUE="2013"/>
+<attribute NAME="title" VALUE="Orthogonal Security with Cipherbase"/>
+<attribute NAME="authors" VALUE="Arasu, Arvind and Blanas, Spyros and Eguro, Ken and Kaushik, Raghav and Kossmann, Donald and Ramamurthy, Ravishankar and Venkatesan, Ramarathnam"/>
+</node>
+</node>
+</node>
+<node TEXT="client compiles (optimizes query) -&gt; b/c statistics needed (leakage otherwise)" ID="ID_1303258438" CREATED="1455794915028" MODIFIED="1457179898609" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/Orthogonal%20Security%20With%20Cipherbase.pdf" MOVED="1455796642489">
+<pdf_annotation type="HIGHLIGHTED_TEXT" page="9" object_id="8731363910308889835" object_number="48" document_hash="25950546C513AD3F8773288F1146BB180F0F37A3F6748577F7BB0E09AB221E3">
+    <pdf_title>Orthogonal Security With Cipherbase</pdf_title>
+</pdf_annotation>
+<attribute NAME="key" VALUE="Arasu2013"/>
+<attribute NAME="year" VALUE="2013"/>
+<attribute NAME="title" VALUE="Orthogonal Security with Cipherbase"/>
+<attribute NAME="authors" VALUE="Arasu, Arvind and Blanas, Spyros and Eguro, Ken and Kaushik, Raghav and Kossmann, Donald and Ramamurthy, Ravishankar and Venkatesan, Ramarathnam"/>
+<node TEXT="secure optimization and statistics" ID="ID_1453698610" CREATED="1455794914842" MODIFIED="1455796454526" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/Orthogonal%20Security%20With%20Cipherbase.pdf" MOVED="1455796456197">
+<pdf_annotation type="HIGHLIGHTED_TEXT" page="9" object_id="50529616601763611" object_number="47" document_hash="25950546C513AD3F8773288F1146BB180F0F37A3F6748577F7BB0E09AB221E3">
+    <pdf_title>Orthogonal Security With Cipherbase</pdf_title>
+</pdf_annotation>
+<attribute NAME="key" VALUE="Arasu2013"/>
+<attribute NAME="year" VALUE="2013"/>
+<attribute NAME="title" VALUE="Orthogonal Security with Cipherbase"/>
+<attribute NAME="authors" VALUE="Arasu, Arvind and Blanas, Spyros and Eguro, Ken and Kaushik, Raghav and Kossmann, Donald and Ramamurthy, Ravishankar and Venkatesan, Ramarathnam"/>
+</node>
+<node TEXT="query compiler" FOLDED="true" ID="ID_1997494603" CREATED="1455794914921" MODIFIED="1455796438399" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/Orthogonal%20Security%20With%20Cipherbase.pdf">
+<pdf_annotation type="HIGHLIGHTED_TEXT" page="9" object_id="552170849024704534" object_number="45" document_hash="25950546C513AD3F8773288F1146BB180F0F37A3F6748577F7BB0E09AB221E3">
+    <pdf_title>Orthogonal Security With Cipherbase</pdf_title>
+</pdf_annotation>
+<attribute NAME="key" VALUE="Arasu2013"/>
+<attribute NAME="year" VALUE="2013"/>
+<attribute NAME="title" VALUE="Orthogonal Security with Cipherbase"/>
+<attribute NAME="authors" VALUE="Arasu, Arvind and Blanas, Spyros and Eguro, Ken and Kaushik, Raghav and Kossmann, Donald and Ramamurthy, Ravishankar and Venkatesan, Ramarathnam"/>
+<node TEXT="three main phases: (a) parsing, (b) (cost-based) optimization, and (c) code generation" ID="ID_968724664" CREATED="1455794914941" MODIFIED="1455794914941" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/Orthogonal%20Security%20With%20Cipherbase.pdf" MOVED="1455796440317">
+<pdf_annotation type="HIGHLIGHTED_TEXT" page="9" object_id="7345609436975217489" object_number="46" document_hash="25950546C513AD3F8773288F1146BB180F0F37A3F6748577F7BB0E09AB221E3">
+    <pdf_title>Orthogonal Security With Cipherbase</pdf_title>
+</pdf_annotation>
+<attribute NAME="key" VALUE="Arasu2013"/>
+<attribute NAME="year" VALUE="2013"/>
+<attribute NAME="title" VALUE="Orthogonal Security with Cipherbase"/>
+<attribute NAME="authors" VALUE="Arasu, Arvind and Blanas, Spyros and Eguro, Ken and Kaushik, Raghav and Kossmann, Donald and Ramamurthy, Ravishankar and Venkatesan, Ramarathnam"/>
+</node>
+</node>
+<node TEXT="extends ODBC driver at the client and the query processor" ID="ID_1305696791" CREATED="1455794914881" MODIFIED="1455796571316" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/Orthogonal%20Security%20With%20Cipherbase.pdf" MOVED="1455796603491">
+<pdf_annotation type="HIGHLIGHTED_TEXT" page="3" object_id="4961968905881832076" object_number="27" document_hash="25950546C513AD3F8773288F1146BB180F0F37A3F6748577F7BB0E09AB221E3">
+    <pdf_title>Orthogonal Security With Cipherbase</pdf_title>
+</pdf_annotation>
+<attribute NAME="key" VALUE="Arasu2013"/>
+<attribute NAME="year" VALUE="2013"/>
+<attribute NAME="title" VALUE="Orthogonal Security with Cipherbase"/>
+<attribute NAME="authors" VALUE="Arasu, Arvind and Blanas, Spyros and Eguro, Ken and Kaushik, Raghav and Kossmann, Donald and Ramamurthy, Ravishankar and Venkatesan, Ramarathnam"/>
+</node>
+</node>
+<node TEXT="figure: cipherbase architecture" ID="ID_419639448" CREATED="1455796092925" MODIFIED="1455796092925" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/Encrypted%20Database%20good%20FHE%20PHE%20overview.pdf">
+<pdf_annotation type="COMMENT" page="74" object_id="2437906099272480867" object_number="474" document_hash="A99F7310249BD6991DEEAB6A4547EBE8F8E506FF909E1664DFEC1E19ED34A">
+    <pdf_title>Querying Encrypted Data</pdf_title>
+</pdf_annotation>
+<attribute NAME="year" VALUE="2013"/>
+<attribute NAME="title" VALUE="Querying Encrypted Data (Tutorial)"/>
+<attribute NAME="authors" VALUE="Arasu, Arvind and Eguro, Ken and Kaushik, Raghav and Ramamurthy, Ravi"/>
+<node TEXT="cipherbase architecture.png" ID="ID_680573037" CREATED="1455796120313" MODIFIED="1488479407160">
+<hook URI="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/_data/150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/default_files/cipherbase%20architecture.png" SIZE="1.0" NAME="ExternalObject"/>
+<attribute NAME="image" VALUE="cipherbase architecture"/>
+</node>
+</node>
+<node TEXT="split execution on server" FOLDED="true" ID="ID_783950808" CREATED="1455796476381" MODIFIED="1455796591725">
+<node TEXT="use enc schemes matching operation" FOLDED="true" ID="ID_638057242" CREATED="1455796491724" MODIFIED="1455796506181" MOVED="1455796510586">
+<node TEXT="If data is public or encrypted in a partially homomorphic way that matches the operation (e.g., order-preserving encryption), then the operation can be executed wholly by UM" ID="ID_1092726125" CREATED="1455794914863" MODIFIED="1455794914863" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/Orthogonal%20Security%20With%20Cipherbase.pdf" MOVED="1455796509381">
+<pdf_annotation type="HIGHLIGHTED_TEXT" page="10" object_id="5382019139302410767" object_number="55" document_hash="25950546C513AD3F8773288F1146BB180F0F37A3F6748577F7BB0E09AB221E3">
+    <pdf_title>Orthogonal Security With Cipherbase</pdf_title>
+</pdf_annotation>
+<attribute NAME="key" VALUE="Arasu2013"/>
+<attribute NAME="year" VALUE="2013"/>
+<attribute NAME="title" VALUE="Orthogonal Security with Cipherbase"/>
+<attribute NAME="authors" VALUE="Arasu, Arvind and Blanas, Spyros and Eguro, Ken and Kaushik, Raghav and Kossmann, Donald and Ramamurthy, Ravishankar and Venkatesan, Ramarathnam"/>
+</node>
+</node>
+<node TEXT="Operators that involve encrypted data are executed on both the trusted (special-purpose) and untrusted (commodity) hardware" ID="ID_1309347677" CREATED="1455794914823" MODIFIED="1457179898599" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/Orthogonal%20Security%20With%20Cipherbase.pdf" MOVED="1455796481717">
+<pdf_annotation type="HIGHLIGHTED_TEXT" page="2" object_id="8202482091926394192" object_number="24" document_hash="25950546C513AD3F8773288F1146BB180F0F37A3F6748577F7BB0E09AB221E3">
+    <pdf_title>Orthogonal Security With Cipherbase</pdf_title>
+</pdf_annotation>
+<attribute NAME="key" VALUE="Arasu2013"/>
+<attribute NAME="year" VALUE="2013"/>
+<attribute NAME="title" VALUE="Orthogonal Security with Cipherbase"/>
+<attribute NAME="authors" VALUE="Arasu, Arvind and Blanas, Spyros and Eguro, Ken and Kaushik, Raghav and Kossmann, Donald and Ramamurthy, Ravishankar and Venkatesan, Ramarathnam"/>
+</node>
+<node TEXT="interpretation of a query plan involves shipping (encrypted) tuples from the UM to the TM and then decrypting, processing, and re-encrypting these tuples in the TM, before shipping the (encrypted) results back from the TM to the UM" FOLDED="true" ID="ID_812995182" CREATED="1455794914962" MODIFIED="1457179898590" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/Orthogonal%20Security%20With%20Cipherbase.pdf" MOVED="1455796598843">
+<pdf_annotation type="HIGHLIGHTED_TEXT" page="3" object_id="7417378388092278908" object_number="29" document_hash="25950546C513AD3F8773288F1146BB180F0F37A3F6748577F7BB0E09AB221E3">
+    <pdf_title>Orthogonal Security With Cipherbase</pdf_title>
+</pdf_annotation>
+<attribute NAME="key" VALUE="Arasu2013"/>
+<attribute NAME="year" VALUE="2013"/>
+<attribute NAME="title" VALUE="Orthogonal Security with Cipherbase"/>
+<attribute NAME="authors" VALUE="Arasu, Arvind and Blanas, Spyros and Eguro, Ken and Kaushik, Raghav and Kossmann, Donald and Ramamurthy, Ravishankar and Venkatesan, Ramarathnam"/>
+<font SIZE="10"/>
+<node TEXT="much easier with SGX" ID="ID_1254810612" CREATED="1455794914986" MODIFIED="1457179898614" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/Orthogonal%20Security%20With%20Cipherbase.pdf" MOVED="1455796611753">
+<pdf_annotation type="COMMENT" page="3" object_id="5406135234773966257" object_number="30" document_hash="25950546C513AD3F8773288F1146BB180F0F37A3F6748577F7BB0E09AB221E3">
+    <pdf_title>Orthogonal Security With Cipherbase</pdf_title>
+</pdf_annotation>
+<attribute NAME="key" VALUE="Arasu2013"/>
+<attribute NAME="year" VALUE="2013"/>
+<attribute NAME="title" VALUE="Orthogonal Security with Cipherbase"/>
+<attribute NAME="authors" VALUE="Arasu, Arvind and Blanas, Spyros and Eguro, Ken and Kaushik, Raghav and Kossmann, Donald and Ramamurthy, Ravishankar and Venkatesan, Ramarathnam"/>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+<node TEXT="Content" STYLE_REF="paragraphs_drop_self" FOLDED="true" ID="ID_1816243504" CREATED="1495543885991" MODIFIED="1495543895304">
+<node TEXT="Database management software (DBMS) is standard software used by many applications." ID="ID_5831466" CREATED="1499928592512" MODIFIED="1499928726817" MOVED="1499928597790"/>
+<node TEXT="The data it operates on may be sensitive." ID="ID_1374032657" CREATED="1499928650465" MODIFIED="1499933055129"/>
+<node TEXT="The amount of data to process may also exceed viable enclave sizes." ID="ID_1026614233" CREATED="1499928662528" MODIFIED="1499933075169"/>
+<node TEXT="For these reasons, DBMS is deemed a good example that can be used in the case studies later on in this thesis." ID="ID_730883570" CREATED="1499928692520" MODIFIED="1499928764033"/>
+<node TEXT="" ID="ID_1877575846" CREATED="1499928764280" MODIFIED="1499928764280"/>
+<node TEXT="Database software can be hardened with application-specific encryption in addition to standard solutions to trusted computing such as Intel SGX." ID="ID_1516733401" CREATED="1499928775112" MODIFIED="1499933116492"/>
+<node TEXT="Such approaches from research are now presented.\footnote{Commercial solutions are not presented. Examples are ``Microsoft&#x2019;s Always Encrypted Service, currently deployed as part of SQL Server 2016, Skyhigh Networks, CipherCloud, Google&#x2019;s Encrypted Big Query, SAP&#x2019;s SEEED, Lincoln Labs.&apos;&apos;\cite{Poddar2016}}" ID="ID_1577896396" CREATED="1499928823018" MODIFIED="1499933156132"/>
+<node TEXT="Hardened databases can be classified by their use of a secure location and the level of encryption homomorphism they employ. \autoref{table:secure-db} shows the location of existing research prototypes in the design space spanned by these two dimensions." ID="ID_224045651" CREATED="1499928103256" MODIFIED="1499933249866" MOVED="1499928103803"/>
+<node TEXT="" ID="ID_1961271504" CREATED="1499928466408" MODIFIED="1499928466408"/>
 <node TEXT="\begin{table}" STYLE_REF="latex" ID="ID_932156625" CREATED="1499345864257" MODIFIED="1499435567168" MOVED="1499359331393"/>
 <node TEXT="\centering" STYLE_REF="latex" ID="ID_716591169" CREATED="1499420357862" MODIFIED="1499874699473" MOVED="1499435873582"/>
 <node TEXT="\input{content/tables/secure-db}" STYLE_REF="latex" ID="ID_111135350" CREATED="1499264498353" MODIFIED="1499870804793" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/thesis/content/tables/secure-db.tex" MOVED="1499359331398"/>
-<node TEXT="\caption{" STYLE_REF="latex" ID="ID_674109090" CREATED="1499345897352" MODIFIED="1499345909529" MOVED="1499359331404">
-<node TEXT="\textbf{Design space for secure databases.}" ID="ID_1890259832" CREATED="1499359019074" MODIFIED="1499874748377" MOVED="1499437274826"/>
+<node TEXT="\caption{" STYLE_REF="latex" FOLDED="true" ID="ID_674109090" CREATED="1499345897352" MODIFIED="1499345909529" MOVED="1499359331404">
+<node TEXT="\textbf{Design space of hardened databases.}" ID="ID_1890259832" CREATED="1499359019074" MODIFIED="1499928923849" MOVED="1499437274826"/>
 <node TEXT="Two dimensions are used for classification: secure location and homomorphic encryption. E.g. \textit{TrustedDB} uses a co-processor and partially homomorphic encryption." ID="ID_975475106" CREATED="1499874748697" MODIFIED="1499874840393"/>
-<node TEXT="Uninvestigated areas of the design space which seem promising are shaded green." ID="ID_6827707" CREATED="1499874840945" MODIFIED="1499874867897"/>
-<node TEXT="The area of the design space that this thesis investigates is labelled ``this thesis&apos;&apos;." ID="ID_501269911" CREATED="1499874868056" MODIFIED="1499875099019"/>
+<node TEXT="Not all areas of the design space have been investigated." ID="ID_1304337948" CREATED="1499927762777" MODIFIED="1499927775019"/>
+<node TEXT="Promising uninvestigated areas are shaded green." ID="ID_414835333" CREATED="1499927775480" MODIFIED="1499927830698"/>
+<node TEXT="This thesis explores secure databases using SGX enclaves and none-homomorphic encryption." ID="ID_668431524" CREATED="1499927857104" MODIFIED="1499927914403"/>
+<node TEXT="Adding partially homomorphic encryption could benefit performance. Certain queries could be executed outside of the enclave (without decrypting the data in the enclave)." ID="ID_1800743474" CREATED="1499927932625" MODIFIED="1499928005585"/>
+<node TEXT="Fully homomorphic encryption is still to inefficient but could enable complex queries an encrypted data." ID="ID_734875920" CREATED="1499928013816" MODIFIED="1499928051689"/>
 <node TEXT="Based on \cite{querying-encrypted-data-tutorial}" ID="ID_1452673010" CREATED="1499874948265" MODIFIED="1499874978913"/>
 <node TEXT="}" STYLE_REF="latex" ID="ID_1475366080" CREATED="1499345900665" MODIFIED="1499345909532" MOVED="1499435837748"/>
 </node>
 <node TEXT="\label{table:secure-db}" STYLE_REF="latex" ID="ID_505580662" CREATED="1499437819564" MODIFIED="1499870492729" MOVED="1499437825213"/>
 <node TEXT="\end{table}" STYLE_REF="latex" ID="ID_956771736" CREATED="1499345867505" MODIFIED="1499345909535" MOVED="1499359331432"/>
+<node TEXT="" ID="ID_1533522338" CREATED="1499929021417" MODIFIED="1499929021417"/>
+<node TEXT="The point in the design space that this thesis investigates is also indicated." ID="ID_791945182" CREATED="1499928422193" MODIFIED="1499928466138" MOVED="1499929015836"/>
+<node TEXT="The case studies in \autoref{chapter:kissdb} and \autoref{chapter:sqlite} further discuss this." ID="ID_248688756" CREATED="1499928515648" MODIFIED="1499928884811" MOVED="1499929015816"/>
+<node TEXT="The remainder of this section briefly elaborates on existing research." ID="ID_478832158" CREATED="1499928557161" MODIFIED="1499928590017" MOVED="1499929015812"/>
+<node TEXT="Excellent architecture diagrams for most of these solutions can be found in \cite{querying-encrypted-data-tutorial}." ID="ID_1905988012" CREATED="1499933302794" MODIFIED="1499933397510"/>
+<node TEXT="" ID="ID_892246232" CREATED="1499929039984" MODIFIED="1499929039984"/>
+<node TEXT="\begin{description}" ID="ID_646716782" CREATED="1499928931624" MODIFIED="1499928935729" MOVED="1499929026393"/>
+<node TEXT="\item[Arx\cite{Poddar2016}]" FOLDED="true" ID="ID_1305008836" CREATED="1499928942040" MODIFIED="1499929091864">
+<node TEXT="is the only DBMS in this list that does not perform some computation on encrypted data. It uses the trusted client&apos;s computer as a secure location." ID="ID_218675816" CREATED="1499929376400" MODIFIED="1499929584836"/>
+<node TEXT="``Instead of embedding the computation into special encryption schemes [...], Arx embeds the computation into data structures, which it builds on top of traditional encryption schemes.&apos;&apos;" ID="ID_1810283777" CREATED="1499929477520" MODIFIED="1499929497475"/>
+<node TEXT="" ID="ID_526607752" CREATED="1499929883912" MODIFIED="1499929883912"/>
+<node TEXT="Arx uses an unmodified DBMS as foundation." ID="ID_1501645944" CREATED="1499929605561" MODIFIED="1499929616857"/>
+<node TEXT="On both the trusted location (the client) and the untrusted DBMS server a proxy is added." ID="ID_181179976" CREATED="1499929617152" MODIFIED="1499929640649"/>
+<node TEXT="The client proxy rewrites queries and can decrypt results. Only it knows the decryption key." ID="ID_1628922594" CREATED="1499929643097" MODIFIED="1499929684617"/>
+<node TEXT="The client proxy is also has to re-generate indices after usage." ID="ID_1034338418" CREATED="1499929706498" MODIFIED="1499929731769"/>
+<node TEXT="" ID="ID_1222387381" CREATED="1499930167096" MODIFIED="1499930167096"/>
+<node TEXT="Arx can -- in a limited fashion -- also securely evaluate confidential functions on the server." ID="ID_758950797" CREATED="1499930076641" MODIFIED="1499930119009"/>
+<node TEXT="These functions must be expressed as garbled circuits, an implementation of two-party computation proposed by Yao." ID="ID_369324288" CREATED="1499929893097" MODIFIED="1499930152946" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/How%20to%20generate%20and%20exchange%20Secrets.pdf">
+<attribute NAME="key" VALUE="Yao1986"/>
+<attribute NAME="year" VALUE="1986"/>
+<attribute NAME="title" VALUE="How to generate and exchange secrets"/>
+<attribute NAME="authors" VALUE="Yao, Andrew Chi-Chih"/>
+<pdf_annotation type="PDF_FILE" object_id="0" document_hash="8ABAFCF98D3368AB727629F5365CE56B2BEFEC6E046EE9B755CF53A66F7AFFC">
+    <pdf_title>==</pdf_title>
+</pdf_annotation>
+</node>
+<node TEXT="Garbled circuits are used by Arx used for range checks on the untrusted server." ID="ID_606573027" CREATED="1499930060248" MODIFIED="1499930163825"/>
+<node TEXT="Arx&apos;s TCB consists of the client proxy, and potentially the entire software and hardware stack of the client if the proxy is not isolated." ID="ID_1089626477" CREATED="1499931843841" MODIFIED="1499933915258"/>
+</node>
+<node TEXT="\item[CryptDB\cite{Popa2011}]" FOLDED="true" ID="ID_78821" CREATED="1499928952664" MODIFIED="1499929106271">
+<node TEXT="uses ``efficient SQL-aware encryption schemes&apos;&apos;." ID="ID_1009585069" CREATED="1499930272921" MODIFIED="1499930282609"/>
+<node TEXT="The data must be encrypted by the trusted client." ID="ID_1835736177" CREATED="1499931119056" MODIFIED="1499931739148"/>
+<node TEXT="The client must anticipate the expected query types and encrypt the data with matching encryption schemes." ID="ID_623960988" CREATED="1499931739298" MODIFIED="1499931760434"/>
+<node TEXT="If unexpected query types are added later on, the client must re-encrypt parts of the data." ID="ID_1748715462" CREATED="1499931143361" MODIFIED="1499931171065"/>
+<node TEXT="CryptDB encrypts data with schemes that support DBMS operations such as equality checks, joining and searching." ID="ID_405779956" CREATED="1499931237289" MODIFIED="1499931414500" MOVED="1499931401328"/>
+<node TEXT="Such schemes have different characteristics: deterministic, order-preserving, partially homomorphic." ID="ID_1499466117" CREATED="1499931363832" MODIFIED="1499931387156" MOVED="1499931401335"/>
+<node TEXT="" ID="ID_1686011540" CREATED="1499931429321" MODIFIED="1499931429321"/>
+<node TEXT="CryptDB uses ``onion encryption&apos;&apos; as an optimisation. Encrypted values are again encrypted with a different scheme. This minimises the required interaction of the client." ID="ID_854726664" CREATED="1499931173465" MODIFIED="1499931465188"/>
+<node TEXT="If the server must perform a more complex query on a table (e.g. an equality join instead of just an equality select) the client provides a decryption key. With this key the server can peel off one more encryption layer of the onion. The encrypted value of the lower level is now encrypted with a scheme that supports the desired operation." ID="ID_376662786" CREATED="1499931465375" MODIFIED="1499931612362"/>
+<node TEXT="Encryption schemes cannot be layered in any combination. For example, a deterministic encryption cannot be layered on top a non-deterministic one. It would not produce deterministic encryption of the original plain text." ID="ID_788200096" CREATED="1499931612504" MODIFIED="1499931714865"/>
+<node TEXT="" ID="ID_872041655" CREATED="1499931789393" MODIFIED="1499931789393"/>
+<node TEXT="CryptDB is implemented with a custom client proxy and user defined functions (UDFs) in a regular DBMS." ID="ID_80856373" CREATED="1499931790984" MODIFIED="1499931826162"/>
+<node TEXT="CryptDB does not support the full SQL standard." ID="ID_48235228" CREATED="1499931956904" MODIFIED="1499932905153"/>
+<node TEXT="The TCB is comparable to Arx." ID="ID_974649717" CREATED="1499931826633" MODIFIED="1499933938011"/>
+</node>
+<node TEXT="\item[Monomi\cite{Tu2013}]" FOLDED="true" ID="ID_59341931" CREATED="1499928957937" MODIFIED="1499929113760">
+<node TEXT="``builds on CryptDB&#x2019;s design of using specialised encryption schemes.&apos;&apos;" ID="ID_1750364265" CREATED="1499932445818" MODIFIED="1499932910746"/>
+<node TEXT="In addition, Monomi splits the query execution into server and client parts." ID="ID_1050521028" CREATED="1499932476200" MODIFIED="1499932514177"/>
+<node TEXT="Monomi ``executes as much of the query as is practical over encrypted data on the server, and executes the remaining components by shipping encrypted data to a trusted client, which decrypts data and processes queries normally.&apos;&apos;" ID="ID_338326746" CREATED="1499932609529" MODIFIED="1499932626275"/>
+<node TEXT="" ID="ID_1430187500" CREATED="1499932627730" MODIFIED="1499932627730"/>
+<node TEXT="Compared to CryptDB, Monomi is more flexible. By including the client in query execution more complex queries are possible." ID="ID_1200129751" CREATED="1499932703298" MODIFIED="1499933006460"/>
+<node TEXT="However query execution on the client is contrary to the idea of outsourcing computation. It also can require transfer of larger amounts of intermediate data." ID="ID_1650114031" CREATED="1499932769409" MODIFIED="1499932835025"/>
+<node TEXT="As an optimisation, Monomi proposes to pre-compute results for complex queries." ID="ID_889187327" CREATED="1499932668728" MODIFIED="1499932692137"/>
+<node TEXT="Monomi&apos;s TCB is the comparable to Arx and CryptDB." ID="ID_1247041878" CREATED="1499932628944" MODIFIED="1499933952625"/>
+</node>
+<node TEXT="\item[TrustedDB\cite{trusteddb}]" FOLDED="true" ID="ID_1697603520" CREATED="1499928961408" MODIFIED="1499929120653">
+<node TEXT="is the first DBMS in this list to use trusted hardware on the server." ID="ID_1008509812" CREATED="1499933442162" MODIFIED="1499933478622"/>
+<node TEXT="TrustedDB actually runs two DBMS instances, one within the regular operating system and one on a secure co-processor." ID="ID_1859428466" CREATED="1499933478898" MODIFIED="1499934835674"/>
+<node TEXT="The trusted DBMS has a paging module that pulls in encrypted pages from the untrusted operating system when needed." ID="ID_576475333" CREATED="1499933548081" MODIFIED="1499934860915"/>
+<node TEXT="The trusted DBMS knows the decryption key for the data." ID="ID_1595491732" CREATED="1499933687025" MODIFIED="1499933699179"/>
+<node TEXT="" ID="ID_699716311" CREATED="1499933700169" MODIFIED="1499933700169"/>
+<node TEXT="A split query plan is generated, somewhat similar to Monomi." ID="ID_901389530" CREATED="1499933629329" MODIFIED="1499933639825"/>
+<node TEXT="The query must be planned on the secure co-processor." ID="ID_861845571" CREATED="1499933809146" MODIFIED="1499933853985"/>
+<node TEXT="As much computation as possible is performed on encrypted data by the untrusted DBMS." ID="ID_707333235" CREATED="1499933652352" MODIFIED="1499933678339"/>
+<node TEXT="The TCB includes the co-processor, and the trusted DBMS." ID="ID_236700381" CREATED="1499933702393" MODIFIED="1499933984545"/>
+</node>
+<node TEXT="\item[Cipherbase\cite{Arasu2013}]" FOLDED="true" ID="ID_647732342" CREATED="1499928965272" MODIFIED="1499929124969">
+<node TEXT="also uses trusted hardware. A Field Programmable Gate Array (FPGA) is used to evaluate individual parts of the query." ID="ID_607204959" CREATED="1499934054657" MODIFIED="1499934317232"/>
+<node TEXT="The FPGA is configured to run a stack machine and is not re-configured for every query." ID="ID_531408524" CREATED="1499934120945" MODIFIED="1499934142410"/>
+<node TEXT="" ID="ID_1502667587" CREATED="1499934205921" MODIFIED="1499934205921"/>
+<node TEXT="Compared to TrustedDB, the TCB on the server is smaller as the trusted hardware does not execute a full DBMS." ID="ID_901865989" CREATED="1499934149457" MODIFIED="1499934220426"/>
+<node TEXT="However, Cipherbase also needs a trusted client to plan and optimise the queries." ID="ID_1815923549" CREATED="1499934170553" MODIFIED="1499934319513"/>
+<node TEXT="In TrustedDB, this functionality was provided by the trusted DBMS." ID="ID_1359181334" CREATED="1499934185160" MODIFIED="1499934203546"/>
+</node>
+<node TEXT="\end{description}" ID="ID_422481189" CREATED="1499928935905" MODIFIED="1499928940336"/>
 </node>
 </node>
 <node TEXT="Partitioning Strategies for Hardening" LOCALIZED_STYLE_REF="default" ID="ID_1261256917" CREATED="1487268101522" MODIFIED="1499869581929" MOVED="1492616238079">
@@ -7652,8 +7741,9 @@
 <edge COLOR="#7c7c00"/>
 <attribute NAME="label" VALUE="chapter:sgx-lib" OBJECT="java.net.URI|chapter:sgx-lib"/>
 </node>
-<node TEXT="KissDB Case Study" LOCALIZED_STYLE_REF="default" FOLDED="true" POSITION="left" ID="ID_1828467557" CREATED="1487266728477" MODIFIED="1499849274431" MOVED="1499849267642">
+<node TEXT="KissDB Case Study" LOCALIZED_STYLE_REF="default" FOLDED="true" POSITION="left" ID="ID_1828467557" CREATED="1487266728477" MODIFIED="1499929289683" MOVED="1499849267642">
 <icon BUILTIN="button_cancel"/>
+<attribute NAME="label" VALUE="chapter:kissdb" OBJECT="java.net.URI|chapter:kissdb"/>
 <edge COLOR="#ff0000"/>
 <node TEXT="mindmap" STYLE_REF="drop" FOLDED="true" ID="ID_1225266071" CREATED="1495056387537" MODIFIED="1495056428681" MOVED="1495606044858">
 <font SIZE="10"/>
@@ -7727,6 +7817,9 @@
 <node TEXT="other tenants" ID="ID_1576382623" CREATED="1488874916121" MODIFIED="1488874919278"/>
 </node>
 </node>
+<node TEXT="point in hardened db design space" ID="ID_168788322" CREATED="1499928900545" MODIFIED="1499928907515">
+<node TEXT="With the use of SGX enclaves data remains encrypted while at rest, and is encrypted inside enclaves for processing." ID="ID_910400351" CREATED="1499928477152" MODIFIED="1499928515473" MOVED="1499928910153"/>
+</node>
 </node>
 </node>
 <node TEXT="Security Objectives" LOCALIZED_STYLE_REF="default" FOLDED="true" ID="ID_446058686" CREATED="1489652109451" MODIFIED="1495606029119" MOVED="1495056347122">
@@ -7755,8 +7848,9 @@
 <node TEXT="Content" STYLE_REF="paragraphs_drop_self" ID="ID_1327466363" CREATED="1495543885991" MODIFIED="1495543895304"/>
 </node>
 </node>
-<node TEXT="SQLite Case Study" LOCALIZED_STYLE_REF="default" FOLDED="true" POSITION="left" ID="ID_650094352" CREATED="1487266723741" MODIFIED="1499849278543" MOVED="1499849269320">
+<node TEXT="SQLite Case Study" LOCALIZED_STYLE_REF="default" FOLDED="true" POSITION="left" ID="ID_650094352" CREATED="1487266723741" MODIFIED="1499929295832" MOVED="1499849269320">
 <icon BUILTIN="button_cancel"/>
+<attribute NAME="label" VALUE="chapter:sqlite" OBJECT="java.net.URI|chapter:sqlite"/>
 <edge COLOR="#0000ff"/>
 <node TEXT="use chapter summaries" STYLE_REF="drop" ID="ID_1019464221" CREATED="1489606031650" MODIFIED="1489606057294" MOVED="1489606046735"/>
 <node TEXT="mindmap" STYLE_REF="drop" ID="ID_1016892487" CREATED="1495056722285" MODIFIED="1495056727902">

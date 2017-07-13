@@ -1,4 +1,4 @@
-personal_ws-1.1 en 140 
+personal_ws-1.1 en 154 
 runtime
 NoHype
 hypercalls
@@ -7,6 +7,7 @@ SGDT
 Costan
 Minibox
 SDK
+SEEED
 SQLite
 TPMs
 workspace
@@ -17,6 +18,7 @@ Arasu
 PSW
 JNI
 PoET
+Arx
 EPID
 LDS
 readonly
@@ -34,6 +36,7 @@ MapReduce
 FS
 recrypt
 RSA
+CryptDB
 CPUs
 picoprocess
 LGS
@@ -43,9 +46,12 @@ kB
 DMA
 SMM
 SoC
+Arx's
 LLC
+Monomi's
 libjpeg
 MIEE
+Monomi
 parallelised
 SPM
 UHD
@@ -91,7 +97,7 @@ onwards
 sandboxing
 trustlets
 VMCALL
-Uninvestigated
+uninvestigated
 EINIT
 Hadoop
 SLDT
@@ -101,6 +107,8 @@ cryptographic
 hypervisor
 VMs
 Primecoin
+CipherCloud
+decrypts
 InkTag
 ERESUME
 decrypted
@@ -108,16 +116,20 @@ VMX
 von
 TXT
 INSB
+FPGA
 OUTSB
 SYSENTER
 INSD
+Skyhigh
 OUTSD
 Cyberlink
+Yao
 TrustZone
 RDPMC
 homomorphic
+Cipherbase
 pwrite
-Decrypt
+decrypt
 uint
 AsyncShock
 INSW
@@ -131,10 +143,12 @@ REE
 EENTER
 LibOS
 vTPM
+homomorphism
 CloudVisor
 virtualise
 decrypting
 parallelise
+UDFs
 GETSEC
 pre
 ret
