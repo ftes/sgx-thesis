@@ -7042,8 +7042,7 @@
 <node TEXT="Trusted computing is one alternative, cryptography -- depending on the application -- another." ID="ID_1505185644" CREATED="1499869341265" MODIFIED="1499869442457"/>
 <node TEXT="" ID="ID_1945680667" CREATED="1499869661672" MODIFIED="1499869661672"/>
 <node TEXT="This chapter first presents related research on secure databases. This section describes new application architectures and the use of cryptographic principles." ID="ID_994786687" CREATED="1499869442608" MODIFIED="1499869509274"/>
-<node TEXT="Secondly, research on partitioning strategies is listed. New applications can be designed according to these principles. Legacy applications can be refactored according to them." ID="ID_760707360" CREATED="1499869510568" MODIFIED="1499869735577"/>
-<node TEXT="The chapter concludes with research most related to this thesis: application hardening using Intel SGX." ID="ID_1005330540" CREATED="1499869620744" MODIFIED="1499869769242"/>
+<node TEXT="Then research most related to this thesis is presented: application hardening using Intel SGX." ID="ID_1005330540" CREATED="1499869620744" MODIFIED="1499935008971"/>
 </node>
 <node TEXT="Hardened Databases" LOCALIZED_STYLE_REF="default" FOLDED="true" ID="ID_1295642147" CREATED="1488477479255" MODIFIED="1499934364968">
 <icon BUILTIN="button_ok"/>
@@ -7613,50 +7612,7 @@
 <node TEXT="\end{description}" ID="ID_422481189" CREATED="1499928935905" MODIFIED="1499928940336"/>
 </node>
 </node>
-<node TEXT="Partitioning Strategies for Hardening" LOCALIZED_STYLE_REF="default" ID="ID_1261256917" CREATED="1487268101522" MODIFIED="1499869581929" MOVED="1492616238079">
-<icon BUILTIN="button_cancel"/>
-<node TEXT="mindmap" STYLE_REF="drop" ID="ID_1548819257" CREATED="1495543887981" MODIFIED="1495543899209" MOVED="1495543900065">
-<node TEXT="secure entire VM/container" ID="ID_230919820" CREATED="1487267463672" MODIFIED="1487268288324" MOVED="1495605809516"/>
-<node TEXT="4 schemes&#xa;1. whole app&#xa;2. all secrets (software mose enforce isolation)&#xa;3. separate secret&#xa;4. hybrid: reduce number of enclaves" ID="ID_748181700" CREATED="1488545402876" MODIFIED="1488545402877" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/Securing%20Applications%20with%20Software%20Partitioning.pdf" MOVED="1495605805572">
-<pdf_annotation type="COMMENT" page="8" object_id="8940923739839718101" object_number="41" document_hash="A3B1CC8671AEAC66B477274258B280C4FF61D5CE5FFFF2874DC5872C475">
-    <pdf_title>{}</pdf_title>
-</pdf_annotation>
-<attribute NAME="key" VALUE="atamli2015securing"/>
-<attribute NAME="year" VALUE="2015"/>
-<attribute NAME="title" VALUE="Securing application with software partitioning: A case study using SGX"/>
-<attribute NAME="authors" VALUE="Atamli-Reineh, Ahmad and Martin, Andrew"/>
-</node>
-<node TEXT="secure entire application" FOLDED="true" ID="ID_1284399242" CREATED="1487267469801" MODIFIED="1487267474490" MOVED="1495605805582">
-<node TEXT="providing a &quot;secure&quot; libc" ID="ID_1547998145" CREATED="1487267501681" MODIFIED="1487267532427" MOVED="1487267617169"/>
-<node TEXT="cf. scone" ID="ID_1201759184" CREATED="1488547833150" MODIFIED="1488547841719"/>
-</node>
-<node TEXT="extract security critical parts of application" ID="ID_256624036" CREATED="1487267474768" MODIFIED="1487267486274" MOVED="1495605805591"/>
-<node TEXT="pro/contra of these approaches" FOLDED="true" ID="ID_1635807393" CREATED="1487267607059" MODIFIED="1487267612428" MOVED="1495605805601">
-<node TEXT="in general" FOLDED="true" ID="ID_1947982371" CREATED="1488565489407" MODIFIED="1488565491655">
-<node TEXT="tradeoff in number of enclaves: complexity (vuln.) vs. separate secrets" ID="ID_372445663" CREATED="1488545402895" MODIFIED="1488545402895" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/Securing%20Applications%20with%20Software%20Partitioning.pdf" MOVED="1488565500642">
-<pdf_annotation type="COMMENT" page="10" object_id="6018217346021865409" object_number="47" document_hash="A3B1CC8671AEAC66B477274258B280C4FF61D5CE5FFFF2874DC5872C475">
-    <pdf_title>{}</pdf_title>
-</pdf_annotation>
-<attribute NAME="year" VALUE="2015"/>
-<attribute NAME="title" VALUE="Securing application with software partitioning: A case study using SGX"/>
-<attribute NAME="authors" VALUE="Atamli-Reineh, Ahmad and Martin, Andrew"/>
-</node>
-</node>
-<node TEXT="for SGX in specific" FOLDED="true" ID="ID_1283699273" CREATED="1488565491871" MODIFIED="1488565496696">
-<node TEXT="memory access speed: L3 vs EPC vs. RAM&#xa;=&gt; keep as much memory as possible outside enclave" ID="ID_759712497" CREATED="1488544188143" MODIFIED="1488544188143" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/SecureKeeper.pdf" MOVED="1488565499428">
-<pdf_annotation type="COMMENT" page="1" object_id="6057177719962871582" object_number="54" document_hash="E66D7113365571E239A4C6E7749466D7EC9A6341E8F877D2CE8A48E9DC75">
-    <pdf_title>SecureKeeper: Confidential ZooKeeper using Intel SGX</pdf_title>
-</pdf_annotation>
-<attribute NAME="year" VALUE="2016"/>
-<attribute NAME="title" VALUE="SecureKeeper: Confidential ZooKeeper using Intel SGX"/>
-<attribute NAME="authors" VALUE="Brenner, Stefan and Wulf, Colin and Goltzsche, David and Weichbrodt, Nico and Lorenz, Matthias and Fetzer, Christof and Pietzuch, Peter and Kapitza, R{\&quot;u}diger"/>
-</node>
-</node>
-</node>
-</node>
-<node TEXT="Content" STYLE_REF="paragraphs_drop_self" ID="ID_1208569650" CREATED="1495543885991" MODIFIED="1495543895304"/>
-</node>
-<node TEXT="Hardening Applications with Intel SGX" LOCALIZED_STYLE_REF="default" ID="ID_930530989" CREATED="1488545417979" MODIFIED="1499447917070">
+<node TEXT="Hardening Applications with Intel SGX" LOCALIZED_STYLE_REF="default" ID="ID_930530989" CREATED="1488545417979" MODIFIED="1499935169651">
 <icon BUILTIN="button_cancel"/>
 <attribute NAME="label" VALUE="section:sgx-hardening" OBJECT="java.net.URI|section:sgx-hardening"/>
 <node TEXT="mindmap" STYLE_REF="drop" ID="ID_1005870991" CREATED="1495543887981" MODIFIED="1495543899209" MOVED="1495543900065">
@@ -7732,6 +7688,43 @@
 <node TEXT="Haven" ID="ID_902538612" CREATED="1499450123845" MODIFIED="1499862653384"/>
 <node TEXT="SecureKeeper" ID="ID_1918473973" CREATED="1499862654471" MODIFIED="1499862657288"/>
 <node TEXT="VC3" ID="ID_1761020311" CREATED="1499862657504" MODIFIED="1499862658420"/>
+<node TEXT="secure entire VM/container" ID="ID_230919820" CREATED="1487267463672" MODIFIED="1487268288324" MOVED="1499935015896"/>
+<node TEXT="4 schemes&#xa;1. whole app&#xa;2. all secrets (software mose enforce isolation)&#xa;3. separate secret&#xa;4. hybrid: reduce number of enclaves" ID="ID_748181700" CREATED="1488545402876" MODIFIED="1488545402877" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/Securing%20Applications%20with%20Software%20Partitioning.pdf" MOVED="1499935015900">
+<pdf_annotation type="COMMENT" page="8" object_id="8940923739839718101" object_number="41" document_hash="A3B1CC8671AEAC66B477274258B280C4FF61D5CE5FFFF2874DC5872C475">
+    <pdf_title>{}</pdf_title>
+</pdf_annotation>
+<attribute NAME="key" VALUE="atamli2015securing"/>
+<attribute NAME="year" VALUE="2015"/>
+<attribute NAME="title" VALUE="Securing application with software partitioning: A case study using SGX"/>
+<attribute NAME="authors" VALUE="Atamli-Reineh, Ahmad and Martin, Andrew"/>
+</node>
+<node TEXT="secure entire application" ID="ID_1284399242" CREATED="1487267469801" MODIFIED="1487267474490" MOVED="1499935015903">
+<node TEXT="providing a &quot;secure&quot; libc" ID="ID_1547998145" CREATED="1487267501681" MODIFIED="1487267532427" MOVED="1487267617169"/>
+<node TEXT="cf. scone" ID="ID_1201759184" CREATED="1488547833150" MODIFIED="1488547841719"/>
+</node>
+<node TEXT="extract security critical parts of application" ID="ID_256624036" CREATED="1487267474768" MODIFIED="1487267486274" MOVED="1499935015905"/>
+<node TEXT="pro/contra of these approaches" ID="ID_1635807393" CREATED="1487267607059" MODIFIED="1487267612428" MOVED="1499935015909">
+<node TEXT="in general" ID="ID_1947982371" CREATED="1488565489407" MODIFIED="1488565491655">
+<node TEXT="tradeoff in number of enclaves: complexity (vuln.) vs. separate secrets" ID="ID_372445663" CREATED="1488545402895" MODIFIED="1488545402895" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/Securing%20Applications%20with%20Software%20Partitioning.pdf" MOVED="1488565500642">
+<pdf_annotation type="COMMENT" page="10" object_id="6018217346021865409" object_number="47" document_hash="A3B1CC8671AEAC66B477274258B280C4FF61D5CE5FFFF2874DC5872C475">
+    <pdf_title>{}</pdf_title>
+</pdf_annotation>
+<attribute NAME="year" VALUE="2015"/>
+<attribute NAME="title" VALUE="Securing application with software partitioning: A case study using SGX"/>
+<attribute NAME="authors" VALUE="Atamli-Reineh, Ahmad and Martin, Andrew"/>
+</node>
+</node>
+<node TEXT="for SGX in specific" ID="ID_1283699273" CREATED="1488565491871" MODIFIED="1488565496696">
+<node TEXT="memory access speed: L3 vs EPC vs. RAM&#xa;=&gt; keep as much memory as possible outside enclave" ID="ID_759712497" CREATED="1488544188143" MODIFIED="1488544188143" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/SecureKeeper.pdf" MOVED="1488565499428">
+<pdf_annotation type="COMMENT" page="1" object_id="6057177719962871582" object_number="54" document_hash="E66D7113365571E239A4C6E7749466D7EC9A6341E8F877D2CE8A48E9DC75">
+    <pdf_title>SecureKeeper: Confidential ZooKeeper using Intel SGX</pdf_title>
+</pdf_annotation>
+<attribute NAME="year" VALUE="2016"/>
+<attribute NAME="title" VALUE="SecureKeeper: Confidential ZooKeeper using Intel SGX"/>
+<attribute NAME="authors" VALUE="Brenner, Stefan and Wulf, Colin and Goltzsche, David and Weichbrodt, Nico and Lorenz, Matthias and Fetzer, Christof and Pietzuch, Peter and Kapitza, R{\&quot;u}diger"/>
+</node>
+</node>
+</node>
 </node>
 <node TEXT="Content" STYLE_REF="paragraphs_drop_self" ID="ID_1430142372" CREATED="1495543885991" MODIFIED="1495543895304"/>
 </node>
