@@ -3,7 +3,7 @@
 <attribute_registry SHOW_ATTRIBUTES="hide"/>
 <node TEXT="Thesis 2017" FOLDED="false" ID="ID_308776938" CREATED="1488476421728" MODIFIED="1499948606097">
 <hook NAME="AutomaticEdgeColor" COUNTER="2"/>
-<hook NAME="MapStyle" zoom="1.064">
+<hook NAME="MapStyle" zoom="1.17">
     <properties show_icon_for_attributes="true" show_note_icons="true"/>
 
 <map_styles>
@@ -4002,7 +4002,7 @@
 </node>
 </node>
 </node>
-<node TEXT="Comparison" LOCALIZED_STYLE_REF="default" FOLDED="true" ID="ID_995120664" CREATED="1495055799005" MODIFIED="1499672849857">
+<node TEXT="Comparison" LOCALIZED_STYLE_REF="default" ID="ID_995120664" CREATED="1495055799005" MODIFIED="1499672849857">
 <icon BUILTIN="button_ok"/>
 <node TEXT="mindmap" STYLE_REF="drop" FOLDED="true" ID="ID_362739599" CREATED="1495543887981" MODIFIED="1495543899209" MOVED="1495543900065">
 <node TEXT="criteria" FOLDED="true" ID="ID_237312689" CREATED="1488475358073" MODIFIED="1488542691949" MOVED="1497276680403">
@@ -7748,28 +7748,32 @@
 </node>
 </node>
 </node>
-<node TEXT="Intel SGX Helper Library" POSITION="left" ID="ID_985966487" CREATED="1499849260039" MODIFIED="1499849372472">
-<icon BUILTIN="button_cancel"/>
+<node TEXT="Intel SGX Helper Library" POSITION="left" ID="ID_985966487" CREATED="1499849260039" MODIFIED="1499951860673">
 <edge COLOR="#7c7c00"/>
 <attribute NAME="label" VALUE="chapter:sgx-lib" OBJECT="java.net.URI|chapter:sgx-lib"/>
-<node TEXT="Introduction" STYLE_REF="paragraphs_drop_self" ID="ID_330418409" CREATED="1499949613579" MODIFIED="1499949729987">
+<node TEXT="Introduction" STYLE_REF="paragraphs_drop_self" ID="ID_330418409" CREATED="1499949613579" MODIFIED="1499951858714">
+<icon BUILTIN="button_cancel"/>
 <node TEXT="wrapper functions and helper scripts for the Windows SDK" ID="ID_1623222776" CREATED="1499949677890" MODIFIED="1499949693661" MOVED="1499949678408"/>
 <node TEXT="Helper lib\footnote{\url{https://github.com/ftes/sgx-lib}}" ID="ID_868490178" CREATED="1499949624993" MODIFIED="1499949632490"/>
 <node TEXT="Demo consumer\footnote{\url{https://github.com/ftes/sgx-lib-consumer}}" ID="ID_1523691323" CREATED="1499949632625" MODIFIED="1499949646804"/>
 <node TEXT="used in KissDB" ID="ID_459156134" CREATED="1499949646946" MODIFIED="1499949651547"/>
 <node TEXT="implemented first half of 2016, before SDK for Linux was available" ID="ID_424683204" CREATED="1499949651955" MODIFIED="1499949896987"/>
 </node>
-<node TEXT="Concept" ID="ID_244065427" CREATED="1499949714113" MODIFIED="1499949722570">
+<node TEXT="Concept" ID="ID_244065427" CREATED="1499949714113" MODIFIED="1499951858721">
+<icon BUILTIN="button_cancel"/>
 <node TEXT="mindmap" STYLE_REF="drop" ID="ID_449150039" CREATED="1499949964250" MODIFIED="1499949974134" MOVED="1499949967033">
 <node TEXT="two modules: untrusted and trusted" ID="ID_1280487602" CREATED="1499949975627" MODIFIED="1499949982986"/>
 <node TEXT="scripts for generating libc proxies (option b) of SCONE shim libc)" ID="ID_1057550675" CREATED="1499949983162" MODIFIED="1499950019451"/>
 </node>
 <node TEXT="Content" STYLE_REF="paragraphs_drop_self" ID="ID_49903427" CREATED="1499949942114" MODIFIED="1499949947326"/>
 </node>
-<node TEXT="Usage" ID="ID_354717207" CREATED="1499949722794" MODIFIED="1499949725307">
+<node TEXT="Usage" ID="ID_354717207" CREATED="1499949722794" MODIFIED="1499951858726">
+<icon BUILTIN="button_cancel"/>
 <node TEXT="Content" STYLE_REF="paragraphs_drop_self" ID="ID_633298057" CREATED="1499949949058" MODIFIED="1499949954703">
 <node TEXT="table: library interface (macros, functions, scripts)" ID="ID_370687101" CREATED="1499950176434" MODIFIED="1499950193594" MOVED="1499950194138"/>
 <node TEXT="Details on \url{https://github.com/ftes/sgx-lib}" ID="ID_1315454188" CREATED="1499949745434" MODIFIED="1499949751210" MOVED="1499949959211"/>
+<node TEXT="import untrusted/trusted module" ID="ID_776233953" CREATED="1499951047243" MODIFIED="1499951053658"/>
+<node TEXT="reference library edl" ID="ID_1717158325" CREATED="1499951053882" MODIFIED="1499951059994"/>
 <node TEXT="Configuration" ID="ID_510746497" CREATED="1499949755249" MODIFIED="1499949758843" MOVED="1499949959221"/>
 <node TEXT="\begin{description}" ID="ID_1077418022" CREATED="1499949816195" MODIFIED="1499949819474" MOVED="1499949959234"/>
 <node TEXT="\item[Insecure input/output operations:]" ID="ID_1293763359" CREATED="1499949759458" MODIFIED="1499949846773" MOVED="1499949959245">
@@ -7785,20 +7789,42 @@
 <node TEXT="(2) requires a symmetric encryption key, which can be set using \texttt{set\_{}secure\_{}io\_{}key()}. This key is used to en/decrypt all subsequent I/O operations, until it is overwritten by another call to \texttt{set\_{}secure\_{}io\_{}key()}." ID="ID_724561196" CREATED="1499950110807" MODIFIED="1499950171274"/>
 </node>
 <node TEXT="\end{description}" ID="ID_817985606" CREATED="1499949804810" MODIFIED="1499949825066" MOVED="1499949959252"/>
+<node TEXT="\begin{table}" STYLE_REF="latex" ID="ID_1739061813" CREATED="1499345864257" MODIFIED="1499435567168" MOVED="1499359331393">
+<node TEXT="\centering" STYLE_REF="latex" ID="ID_1384618384" CREATED="1499420357862" MODIFIED="1499420383480" MOVED="1499951149640"/>
+<node TEXT="\input{content/tables/sgx-lib}" STYLE_REF="latex" ID="ID_34618265" CREATED="1499264498353" MODIFIED="1499951173891" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/thesis/content/tables/tc-comparison.tex" MOVED="1499951149670"/>
+<node TEXT="\caption{" STYLE_REF="latex" ID="ID_1631375221" CREATED="1499345897352" MODIFIED="1499345909529" MOVED="1499951149678">
+<node TEXT="\textbf{Intel SGX helper library interface.}" ID="ID_512336551" CREATED="1499359019074" MODIFIED="1499951434484" MOVED="1499437274826"/>
+<node TEXT="}" STYLE_REF="latex" ID="ID_574554221" CREATED="1499345900665" MODIFIED="1499345909532" MOVED="1499435837748"/>
+</node>
+<node TEXT="\label{table:sgx-lib}" ID="ID_657393313" CREATED="1499437819564" MODIFIED="1499951161765" MOVED="1499951149683"/>
+<node TEXT="\end{table}" STYLE_REF="latex" ID="ID_463161887" CREATED="1499345867505" MODIFIED="1499345909535" MOVED="1499951149697"/>
 </node>
 </node>
 </node>
-<node TEXT="KissDB Case Study" LOCALIZED_STYLE_REF="default" FOLDED="true" POSITION="left" ID="ID_1828467557" CREATED="1487266728477" MODIFIED="1499929289683" MOVED="1499849267642">
+</node>
+<node TEXT="KissDB Case Study" LOCALIZED_STYLE_REF="default" POSITION="left" ID="ID_1828467557" CREATED="1487266728477" MODIFIED="1499929289683" MOVED="1499849267642">
 <icon BUILTIN="button_cancel"/>
 <attribute NAME="label" VALUE="chapter:kissdb" OBJECT="java.net.URI|chapter:kissdb"/>
 <edge COLOR="#ff0000"/>
-<node TEXT="mindmap" STYLE_REF="drop" FOLDED="true" ID="ID_1225266071" CREATED="1495056387537" MODIFIED="1495056428681" MOVED="1495606044858">
-<font SIZE="10"/>
-<node TEXT="how are SGX primitives used" ID="ID_1857650861" CREATED="1487266740758" MODIFIED="1487266745422" MOVED="1495056395063"/>
-<node TEXT="using SGX SDK" ID="ID_18624280" CREATED="1487266746302" MODIFIED="1487266756455" MOVED="1495056395069"/>
-<node TEXT="creating a SGX helper library" ID="ID_402439697" CREATED="1487266756598" MODIFIED="1487266771246" MOVED="1495056395075"/>
-<node TEXT="\url{https://github.com/ftes/kissdb-sgx}" ID="ID_498565207" CREATED="1488822868744" MODIFIED="1489772048025" LINK="https://github.com/ftes/kissdb-sgx" MOVED="1495056395080"/>
-<node TEXT="security objectives" LOCALIZED_STYLE_REF="default" FOLDED="true" ID="ID_115580989" CREATED="1488545084926" MODIFIED="1495606080352" MOVED="1495056406752">
+<node TEXT="Introduction" STYLE_REF="paragraphs_drop_self" ID="ID_1929202403" CREATED="1499849307743" MODIFIED="1499951840090">
+<icon BUILTIN="button_cancel"/>
+<node TEXT="KissDB\footnote{\url{https://github.com/adamierymenko/kissdb}}" ID="ID_1418888567" CREATED="1499951779979" MODIFIED="1499951790338"/>
+<node TEXT="Fork with SGX\footnote{\url{https://github.com/ftes/kissdb-sgx}}" ID="ID_888329016" CREATED="1499951985866" MODIFIED="1499951995946"/>
+<node TEXT="why databases" ID="ID_650366938" CREATED="1499849316263" MODIFIED="1499849318616" MOVED="1499951771496">
+<node TEXT="hosted database" ID="ID_5357256" CREATED="1488874863376" MODIFIED="1488874867748" MOVED="1499849322127"/>
+<node TEXT="semi-trusted provider" ID="ID_1114771820" CREATED="1488874873016" MODIFIED="1488874885798" MOVED="1499849322130"/>
+<node TEXT="perform processing on encrypted data" ID="ID_1161943438" CREATED="1488874868149" MODIFIED="1488874872782" MOVED="1499849322135"/>
+<node TEXT="receive encrypted results" ID="ID_1261663640" CREATED="1488874893127" MODIFIED="1488874900788" MOVED="1499849322139"/>
+<node TEXT="protect against" FOLDED="true" ID="ID_876285329" CREATED="1488874903586" MODIFIED="1488874911580" MOVED="1499849322144">
+<node TEXT="provider" ID="ID_781556091" CREATED="1488874912722" MODIFIED="1488874914759"/>
+<node TEXT="other tenants" ID="ID_1576382623" CREATED="1488874916121" MODIFIED="1488874919278"/>
+</node>
+</node>
+</node>
+<node TEXT="Security Objectives" LOCALIZED_STYLE_REF="default" FOLDED="true" ID="ID_446058686" CREATED="1489652109451" MODIFIED="1495606029119" MOVED="1495056347122">
+<icon BUILTIN="button_cancel"/>
+<node TEXT="mindmap" STYLE_REF="drop" ID="ID_1314275276" CREATED="1495543887981" MODIFIED="1495543899209" MOVED="1495543900065">
+<node TEXT="security objectives" LOCALIZED_STYLE_REF="default" ID="ID_115580989" CREATED="1488545084926" MODIFIED="1495606080352" MOVED="1499951825054">
 <node TEXT="Objectives and Adversary Model" ID="ID_1312675659" CREATED="1488545402858" MODIFIED="1488545402858" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/Securing%20Applications%20with%20Software%20Partitioning.pdf" MOVED="1488545539842">
 <pdf_annotation type="HIGHLIGHTED_TEXT" page="6" object_id="142472831318188421" object_number="36" document_hash="A3B1CC8671AEAC66B477274258B280C4FF61D5CE5FFFF2874DC5872C475">
     <pdf_title>{}</pdf_title>
@@ -7811,7 +7837,7 @@
 <node TEXT="confidentiality" ID="ID_1081960094" CREATED="1488545099126" MODIFIED="1488545102423"/>
 <node TEXT="even in the presence of malware (e.g. untrustworthy OS)" ID="ID_794399223" CREATED="1488545116079" MODIFIED="1488545127319"/>
 </node>
-<node TEXT="adversary model" LOCALIZED_STYLE_REF="default" FOLDED="true" ID="ID_985999619" CREATED="1488545051006" MODIFIED="1495606080357" MOVED="1495056406757">
+<node TEXT="adversary model" LOCALIZED_STYLE_REF="default" ID="ID_985999619" CREATED="1488545051006" MODIFIED="1495606080357" MOVED="1499951825065">
 <node TEXT="Objectives and Adversary Model" ID="ID_208346330" CREATED="1488545402858" MODIFIED="1488545402858" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/Securing%20Applications%20with%20Software%20Partitioning.pdf" MOVED="1488545546163">
 <pdf_annotation type="HIGHLIGHTED_TEXT" page="6" object_id="142472831318188421" object_number="36" document_hash="A3B1CC8671AEAC66B477274258B280C4FF61D5CE5FFFF2874DC5872C475">
     <pdf_title>{}</pdf_title>
@@ -7852,42 +7878,69 @@
 </node>
 </node>
 </node>
-<node TEXT="Introduction" FOLDED="true" ID="ID_1929202403" CREATED="1499849307743" MODIFIED="1499849311815">
-<node TEXT="mindmap" STYLE_REF="drop" FOLDED="true" ID="ID_908096557" CREATED="1499849312503" MODIFIED="1499849329352">
-<node TEXT="why databases" ID="ID_650366938" CREATED="1499849316263" MODIFIED="1499849318616">
-<node TEXT="hosted database" ID="ID_5357256" CREATED="1488874863376" MODIFIED="1488874867748" MOVED="1499849322127"/>
-<node TEXT="semi-trusted provider" ID="ID_1114771820" CREATED="1488874873016" MODIFIED="1488874885798" MOVED="1499849322130"/>
-<node TEXT="perform processing on encrypted data" ID="ID_1161943438" CREATED="1488874868149" MODIFIED="1488874872782" MOVED="1499849322135"/>
-<node TEXT="receive encrypted results" ID="ID_1261663640" CREATED="1488874893127" MODIFIED="1488874900788" MOVED="1499849322139"/>
-<node TEXT="protect against" FOLDED="true" ID="ID_876285329" CREATED="1488874903586" MODIFIED="1488874911580" MOVED="1499849322144">
-<node TEXT="provider" ID="ID_781556091" CREATED="1488874912722" MODIFIED="1488874914759"/>
-<node TEXT="other tenants" ID="ID_1576382623" CREATED="1488874916121" MODIFIED="1488874919278"/>
-</node>
-</node>
-<node TEXT="point in hardened db design space" ID="ID_168788322" CREATED="1499928900545" MODIFIED="1499928907515">
-<node TEXT="With the use of SGX enclaves data remains encrypted while at rest, and is encrypted inside enclaves for processing." ID="ID_910400351" CREATED="1499928477152" MODIFIED="1499928515473" MOVED="1499928910153"/>
-</node>
-<node TEXT="enclave size (related work classification)" ID="ID_382443605" CREATED="1499948150585" MODIFIED="1499948158636"/>
-</node>
-</node>
-<node TEXT="Security Objectives" LOCALIZED_STYLE_REF="default" FOLDED="true" ID="ID_446058686" CREATED="1489652109451" MODIFIED="1495606029119" MOVED="1495056347122">
-<icon BUILTIN="button_cancel"/>
-<node TEXT="mindmap" STYLE_REF="drop" ID="ID_1314275276" CREATED="1495543887981" MODIFIED="1495543899209" MOVED="1495543900065"/>
 <node TEXT="Content" STYLE_REF="paragraphs_drop_self" ID="ID_940339827" CREATED="1495543885991" MODIFIED="1495543895304"/>
 </node>
-<node TEXT="Design Space" LOCALIZED_STYLE_REF="default" FOLDED="true" ID="ID_579142082" CREATED="1495056350447" MODIFIED="1495606029124">
+<node TEXT="Design" LOCALIZED_STYLE_REF="default" FOLDED="true" ID="ID_579142082" CREATED="1495056350447" MODIFIED="1499951608186">
 <icon BUILTIN="button_cancel"/>
-<node TEXT="mindmap" STYLE_REF="drop" ID="ID_1634677217" CREATED="1495543887981" MODIFIED="1495543899209" MOVED="1495543900065"/>
-<node TEXT="Content" STYLE_REF="paragraphs_drop_self" ID="ID_862119655" CREATED="1495543885991" MODIFIED="1495543895304"/>
+<node TEXT="mindmap" STYLE_REF="drop" ID="ID_1634677217" CREATED="1495543887981" MODIFIED="1495543899209" MOVED="1495543900065">
+<node TEXT="A better approach would be to minimize the size of the TCB, and execute only security critical functionality inside the enclave. This reduces the risk of a bug compromising the security of the entire application." ID="ID_1351250119" CREATED="1499951554703" MODIFIED="1499951554703"/>
+<node TEXT="enclave size (related work classification)" ID="ID_382443605" CREATED="1499948150585" MODIFIED="1499948158636" MOVED="1499951808959"/>
+<node TEXT="overview" ID="ID_1933513481" CREATED="1499951692586" MODIFIED="1499951694243" MOVED="1499951895648">
+<node TEXT="The database executes entirely inside an SGX enclave. Data is not written into a .db file in the clear, but encrypted." ID="ID_1407764625" CREATED="1499951529028" MODIFIED="1499951529028" MOVED="1499951696327"/>
+<node TEXT="one enclave corresponds to exactly one KISSDB instance" ID="ID_637880627" CREATED="1499951529028" MODIFIED="1499951529028" MOVED="1499951696330"/>
+<node TEXT="KISSDB_open creates a new enclave and loads (if present) the encrypted header data from an exisiting .db file into secure memory" ID="ID_347700984" CREATED="1499951529031" MODIFIED="1499951529031" MOVED="1499951696333"/>
+<node TEXT="the encryption key is known only to the enclave (EGETKEY, sealed data)" ID="ID_353917725" CREATED="1499951529032" MODIFIED="1499951529032" MOVED="1499951696335"/>
+<node TEXT="KISSDB_put and _get encrypt / decrypt data in the .db file" ID="ID_306042149" CREATED="1499951529035" MODIFIED="1499951529035" MOVED="1499951696337"/>
+<node TEXT="KISSDB_close frees the memory and destroys the enclave" ID="ID_55341257" CREATED="1499951529036" MODIFIED="1499951529036" MOVED="1499951696339"/>
+<node TEXT="the in-memory arrays of hash tables of KISSDB instances remain in enclave memory, the untrusted application only has the enclave id" ID="ID_1045630618" CREATED="1499951529037" MODIFIED="1499951529037" MOVED="1499951696341"/>
+<node TEXT="KISSDB_Iterator instances live in untrusted memory" ID="ID_1119666598" CREATED="1499951529038" MODIFIED="1499951529038" MOVED="1499951696342"/>
+<node TEXT="non-sensitive data (header, hash tables) are stored in the .db file in the clear" ID="ID_1765352709" CREATED="1499951529040" MODIFIED="1499951529040" MOVED="1499951696351"/>
 </node>
-<node TEXT="Hardening KissDB" LOCALIZED_STYLE_REF="default" FOLDED="true" ID="ID_355880413" CREATED="1495056587955" MODIFIED="1495606029137">
+</node>
+<node TEXT="Content" STYLE_REF="paragraphs_drop_self" ID="ID_862119655" CREATED="1495543885991" MODIFIED="1495543895304">
+<node TEXT="diagram: architecture" ID="ID_405858604" CREATED="1499951673235" MODIFIED="1499951683460"/>
+<node TEXT="diagram: file structure" ID="ID_382324889" CREATED="1499951683633" MODIFIED="1499951686994"/>
+</node>
+</node>
+<node TEXT="Implementation" LOCALIZED_STYLE_REF="default" FOLDED="true" ID="ID_355880413" CREATED="1495056587955" MODIFIED="1499951620362">
 <icon BUILTIN="button_cancel"/>
-<node TEXT="mindmap" STYLE_REF="drop" ID="ID_54031507" CREATED="1495543887981" MODIFIED="1495543899209" MOVED="1495543900065"/>
+<node TEXT="mindmap" STYLE_REF="drop" ID="ID_54031507" CREATED="1495543887981" MODIFIED="1495543899209" MOVED="1495543900065">
+<node TEXT="obstacles" ID="ID_1426298542" CREATED="1499951585939" MODIFIED="1499951587579">
+<node TEXT="hashtables on disk are navigated via fseek operations, which assume knowledge of how large the structures written to disk are" ID="ID_34533061" CREATED="1499951588007" MODIFIED="1499951588007"/>
+<node TEXT="writing out encrypted versions of metadata such as hashtables breaks this assumption" ID="ID_948430210" CREATED="1499951588007" MODIFIED="1499951588007"/>
+<node TEXT="solution: metadata (header and hash tables) are written to .db in the clear" ID="ID_685274874" CREATED="1499951588009" MODIFIED="1499951588009"/>
+</node>
+<node TEXT="diff to code" ID="ID_791229863" CREATED="1499951622450" MODIFIED="1499951639779"/>
+<node TEXT="plain text vs encrypted vs sealed" ID="ID_1717192064" CREATED="1499951659609" MODIFIED="1499951730051">
+<node TEXT="set macro" ID="ID_214592467" CREATED="1499951668009" MODIFIED="1499951669610"/>
+<node TEXT="compare files" ID="ID_1192226249" CREATED="1499951714386" MODIFIED="1499951716235"/>
+</node>
+</node>
 <node TEXT="Content" STYLE_REF="paragraphs_drop_self" ID="ID_401279777" CREATED="1495543885991" MODIFIED="1495543895304"/>
+</node>
+<node TEXT="Open Issues" FOLDED="true" ID="ID_233809023" CREATED="1499951540618" MODIFIED="1499951849506">
+<icon BUILTIN="button_cancel"/>
+<node TEXT="mindmap" STYLE_REF="drop" ID="ID_333249387" CREATED="1499951910427" MODIFIED="1499951919447" MOVED="1499951912414">
+<node TEXT="djb2 is not a crypto hash function, thus the hash table leaks information about keys" ID="ID_873365676" CREATED="1499951548445" MODIFIED="1499951548445" MOVED="1499951923131"/>
+<node TEXT="use crypto hash function (no informaion about keys leaked, but still problematic if small or non-uniformly distributed key space)" ID="ID_162167169" CREATED="1499951548445" MODIFIED="1499951548445" MOVED="1499951923137"/>
+<node TEXT="compute hash of encrypted key" ID="ID_632779255" CREATED="1499951548446" MODIFIED="1499951548446" MOVED="1499951923146"/>
+<node TEXT="attest and establish secure channel / provision keys -&gt; currently the enclave hands out secret data to anybody" ID="ID_969801114" CREATED="1499951548447" MODIFIED="1499951548447" MOVED="1499951923150"/>
+<node TEXT="assure file integrity and freshness" ID="ID_643721366" CREATED="1499951548448" MODIFIED="1499951548448" MOVED="1499951923154"/>
+</node>
+<node TEXT="Content" STYLE_REF="paragraphs_drop_self" ID="ID_650844502" CREATED="1499951544402" MODIFIED="1499951548086"/>
 </node>
 <node TEXT="Conclusion" LOCALIZED_STYLE_REF="default" FOLDED="true" ID="ID_1103257591" CREATED="1495056597211" MODIFIED="1495606029143">
 <icon BUILTIN="button_cancel"/>
-<node TEXT="mindmap" STYLE_REF="drop" ID="ID_1083226017" CREATED="1495543887981" MODIFIED="1495543899209" MOVED="1495543900065"/>
+<node TEXT="mindmap" STYLE_REF="drop" ID="ID_1083226017" CREATED="1495543887981" MODIFIED="1495543899209" MOVED="1495543900065">
+<node TEXT="leakage" ID="ID_1458480098" CREATED="1499951571938" MODIFIED="1499951575050">
+<node TEXT="offset of the first inserted item is constant" ID="ID_1037445147" CREATED="1499951575358" MODIFIED="1499951575358"/>
+<node TEXT="if the key of the first inserted item is known (e.g. always the same test item), the encryption key could be derived (known plaintext attack)" ID="ID_1545124754" CREATED="1499951575358" MODIFIED="1499951575358"/>
+<node TEXT="hashes of plaintext keys (in the sense of DB primary keys) are stored in the hash table" ID="ID_1122608870" CREATED="1499951575358" MODIFIED="1499951575358"/>
+<node TEXT="the key of an encrypted data item may be determined through the hash table if a non-cryptographic hash function is used, or if there is a small or non-uniformly distributed key space" ID="ID_1296111260" CREATED="1499951575360" MODIFIED="1499951575360"/>
+<node TEXT="this again means the encryption key could be derived (known plaintext attack)" ID="ID_428308003" CREATED="1499951575361" MODIFIED="1499951575361"/>
+<node TEXT="see ToDos -&gt; use crypto-hash of encrypted key" ID="ID_1783508058" CREATED="1499951575362" MODIFIED="1499951575362"/>
+</node>
+</node>
 <node TEXT="Content" STYLE_REF="paragraphs_drop_self" ID="ID_1327466363" CREATED="1495543885991" MODIFIED="1495543895304"/>
 </node>
 </node>
@@ -8435,6 +8488,7 @@
 <edge COLOR="#00007c"/>
 <node TEXT="thanks to: tikzpeople" ID="ID_267530477" CREATED="1495020720099" MODIFIED="1495020724435"/>
 <node TEXT="thanks to: max" ID="ID_1591643310" CREATED="1499950597345" MODIFIED="1499950600114"/>
+<node TEXT="KissDB file content" ID="ID_1714717523" CREATED="1499951936619" MODIFIED="1499951940602"/>
 </node>
 <node TEXT="template" STYLE_REF="drop" FOLDED="true" POSITION="right" ID="ID_605286234" CREATED="1495543907903" MODIFIED="1495543914521">
 <edge COLOR="#00ffff"/>
