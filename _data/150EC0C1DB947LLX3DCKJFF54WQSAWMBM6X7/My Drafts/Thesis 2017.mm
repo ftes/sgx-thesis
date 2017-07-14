@@ -2,7 +2,7 @@
 <!--To view this file, download Docear - The Academic Literature Suite from http://www.docear.org -->
 <attribute_registry SHOW_ATTRIBUTES="hide"/>
 <node TEXT="Thesis 2017" FOLDED="false" ID="ID_308776938" CREATED="1488476421728" MODIFIED="1499948606097">
-<hook NAME="AutomaticEdgeColor" COUNTER="2"/>
+<hook NAME="AutomaticEdgeColor" COUNTER="4"/>
 <hook NAME="MapStyle" zoom="1.17">
     <properties show_icon_for_attributes="true" show_note_icons="true"/>
 
@@ -83,7 +83,13 @@
 </node>
 <node TEXT="listing setup" STYLE_REF="paragraphs_drop_self" FOLDED="true" POSITION="left" ID="ID_1389561471" CREATED="1499784996492" MODIFIED="1499785009787">
 <edge COLOR="#7c007c"/>
-<node TEXT="\lstdefinestyle{default}{&#xa;  breaklines=true,&#xa;  postbreak=\mbox{\textcolor{red}{$\hookrightarrow$}\space},&#xa;}&#xa;\lstdefinestyle{cpp}{&#xa;  language=C++,&#xa;  style=default&#xa;}&#xa;\lstdefinestyle{edl}{&#xa;  style=cpp,&#xa;  morekeywords={enclave, trusted, untrusted, from, import, include, in, out, size, readonly, string, uint8_t}&#xa;}" STYLE_REF="latex" ID="ID_487365018" CREATED="1499784999093" MODIFIED="1499787872973" MOVED="1499785588993"/>
+<node TEXT="\definecolor{bluekeywords}{rgb}{0.13,0.13,1}&#xa;\definecolor{greencomments}{rgb}{0,0.5,0}&#xa;\definecolor{redstrings}{rgb}{0.9,0,0}&#xa;&#xa;\lstdefinestyle{default}{&#xa;  breaklines=true,&#xa;  postbreak=\mbox{\textcolor{red}{$\hookrightarrow$}\space},&#xa;  numbers=left,&#xa;  xleftmargin=5ex,&#xa;  morekeywords={uint32_t, uint8_t, sgx_aes_ctr_128bit_key_t, size_t, sgx_sealed_data_t, sgx_lib_encrypted_data_t, int64_t, FILE, sgx_status_t, sgx_enclave_id_t, enclave, trusted, untrusted, from, import, include, in, out, size, readonly, string, user_check},&#xa;  basicstyle=\footnotesize\ttfamily,&#xa;  commentstyle=\color{greencomments},&#xa;  keywordstyle=\color{bluekeywords}\bfseries,&#xa;  stringstyle=\color{redstrings},&#xa;  keywordsprefix=\#,&#xa;  alsoletter=\#,&#xa;}&#xa;\lstdefinestyle{cpp}{&#xa;  language=C++,&#xa;  style=default&#xa;}&#xa;\lstdefinestyle{edl}{&#xa;  style=cpp,&#xa;}" STYLE_REF="latex" ID="ID_487365018" CREATED="1499784999093" MODIFIED="1500036058714" MOVED="1499785588993"/>
+</node>
+<node TEXT="commands" STYLE_REF="paragraphs_drop_self" FOLDED="true" POSITION="left" ID="ID_565840623" CREATED="1500037840957" MODIFIED="1500037853705">
+<edge COLOR="#ff00ff"/>
+<node TEXT="\newcommand{\rot}[1]{\makebox[1em][l]{\rotatebox{45}{#1}}}" STYLE_REF="latex" ID="ID_534154005" CREATED="1500037842906" MODIFIED="1500037851065"/>
+<node TEXT="\newcommand{\h}[1]{\textbf{\rot{#1}}}" STYLE_REF="latex" ID="ID_866365680" CREATED="1500037842906" MODIFIED="1500037851068"/>
+<node TEXT="\newcommand{\cmark}{\ding{51}}" STYLE_REF="latex" ID="ID_171052284" CREATED="1500037842907" MODIFIED="1500037851062"/>
 </node>
 <node TEXT="- logische Schritte&#xa;- einheitliches Abstraktionslevel in Gliederung&#xa;- einfache, pr&#xe4;zise Sprache (keine F&#xfc;llw&#xf6;rter, kurze S&#xe4;tze)&#xa;- 60-80 Textseiten (exkl. Extras)" STYLE_REF="drop" POSITION="left" ID="ID_1890082914" CREATED="1492081026206" MODIFIED="1495606095643" MOVED="1495604974144">
 <edge COLOR="#007c7c"/>
@@ -4002,7 +4008,7 @@
 </node>
 </node>
 </node>
-<node TEXT="Comparison" LOCALIZED_STYLE_REF="default" ID="ID_995120664" CREATED="1495055799005" MODIFIED="1499672849857">
+<node TEXT="Comparison" LOCALIZED_STYLE_REF="default" FOLDED="true" ID="ID_995120664" CREATED="1495055799005" MODIFIED="1499672849857">
 <icon BUILTIN="button_ok"/>
 <node TEXT="mindmap" STYLE_REF="drop" FOLDED="true" ID="ID_362739599" CREATED="1495543887981" MODIFIED="1495543899209" MOVED="1495543900065">
 <node TEXT="criteria" FOLDED="true" ID="ID_237312689" CREATED="1488475358073" MODIFIED="1488542691949" MOVED="1497276680403">
@@ -4129,7 +4135,7 @@
 <attribute NAME="key" VALUE="Kwon2016"/>
 </node>
 </node>
-<node TEXT="Content" STYLE_REF="paragraphs_drop_self" ID="ID_1454420078" CREATED="1495543885991" MODIFIED="1499362925620">
+<node TEXT="Content" STYLE_REF="paragraphs_drop_self" FOLDED="true" ID="ID_1454420078" CREATED="1495543885991" MODIFIED="1499362925620">
 <node TEXT="\autoref{table:tc-comparison} shows a comparison of all trusted computing solutions presented so far." ID="ID_31031823" CREATED="1499362995188" MODIFIED="1499701514833" MOVED="1499363004558"/>
 <node TEXT="The table groups solutions by the TEE level they expose. Solutions with TEE level \textit{a} allow the developer to isolate separate modules of his application." ID="ID_1205678557" CREATED="1499667740010" MODIFIED="1499670678371" MOVED="1499670615190"/>
 <node TEXT="The narrower the TEE level of isolation is, the smaller the isolated parts can be. This makes them easier to verify and less likely to contain security bugs." ID="ID_1993411071" CREATED="1499667907998" MODIFIED="1499667965902" MOVED="1499670615168"/>
@@ -5130,11 +5136,11 @@
 <node TEXT="SGX capable CPUs are available since the end of 2015.\footnote{\url{https://github.com/ayeks/SGX-hardware}}." ID="ID_1264019871" CREATED="1499693826665" MODIFIED="1499693869078"/>
 </node>
 </node>
-<node TEXT="Enclave Development" FOLDED="true" ID="ID_816398624" CREATED="1499693570309" MODIFIED="1499849786487" MOVED="1499777011960">
+<node TEXT="Enclave Development" ID="ID_816398624" CREATED="1499693570309" MODIFIED="1499849786487" MOVED="1499777011960">
 <icon BUILTIN="button_ok"/>
 <attribute NAME="label" VALUE="section:sgx-usage" OBJECT="java.net.URI|section:sgx-usage"/>
 <node TEXT="mindmap" STYLE_REF="drop" ID="ID_407748345" CREATED="1499777017556" MODIFIED="1499777026225"/>
-<node TEXT="content" STYLE_REF="paragraphs_drop_self" FOLDED="true" ID="ID_919204644" CREATED="1499777020221" MODIFIED="1499777030073">
+<node TEXT="content" STYLE_REF="paragraphs_drop_self" ID="ID_919204644" CREATED="1499777020221" MODIFIED="1499777030073">
 <node TEXT="Intel offers a Software Development Kit (SDK) for authoring enclaves and integrating them into an application." ID="ID_137499231" CREATED="1499840764560" MODIFIED="1499840976976" MOVED="1499840971471"/>
 <node TEXT="The SDK is available for both Windows\footnote{\url{https://software.intel.com/en-us/sgx-sdk}} and Linux\footnote{\url{https://github.com/01org/linux-sgx}, open source under the very liberal BSD license.}" ID="ID_1174967909" CREATED="1499840977110" MODIFIED="1499841007592"/>
 <node TEXT="The SDK provides the following features:" ID="ID_1005935849" CREATED="1499841056702" MODIFIED="1499851305026" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/SGX%20SDK%20Guide.pdf">
@@ -5175,7 +5181,7 @@
 <node TEXT="\textbf{enclave.edl} -- Enclave Definition Language (EDL) example file." ID="ID_1712028152" CREATED="1499839473993" MODIFIED="1499839846929" MOVED="1499839552480"/>
 <node TEXT="EDL is used by the Intel SGX SDK to specify an enclaves interface on the function level." ID="ID_689768123" CREATED="1499839826054" MODIFIED="1499839901664" MOVED="1499840160834"/>
 <node TEXT="The enclave&apos;s entry table is generated based on the EDL file." ID="ID_1488600472" CREATED="1499851396479" MODIFIED="1499851415097"/>
-<node TEXT="The example is taken from the demo consumer of the author&apos;s SGX helper library: \url{https://github.com/ftes/sgx-lib-consumer/blob/master/enclave/enclave.edl}" ID="ID_704042173" CREATED="1499840615648" MODIFIED="1499840684761"/>
+<node TEXT="The example is taken from the demo consumer of the author&apos;s SGX helper library: \url{https://github.com/ftes/sgx-lib-consumer/blob/thesis/enclave/enclave.edl}" ID="ID_704042173" CREATED="1499840615648" MODIFIED="1500034650348"/>
 <node TEXT="},style=edl]{../sgx-lib-consumer/enclave/enclave.edl}" STYLE_REF="latex" ID="ID_1937257396" CREATED="1499839481526" MODIFIED="1499840345307" MOVED="1499839552490"/>
 </node>
 <node TEXT="" ID="ID_907699512" CREATED="1499849110318" MODIFIED="1499849110318"/>
@@ -6984,7 +6990,7 @@
 <node TEXT="Related Work" LOCALIZED_STYLE_REF="default" FOLDED="true" POSITION="left" ID="ID_123293925" CREATED="1487267824221" MODIFIED="1499948603857" MOVED="1492616823153">
 <edge COLOR="#00ffff"/>
 <node TEXT="- gute Referenzen statt viel wiederholen&#xa;- &#xdc;berblick &#xfc;ber die in der Literatur vorhandenen Methoden bzw. L&#xf6;sungsans&#xe4;tze&#xa;- aktuelle Stand der Technik&#xa;- verwandte Arbeiten" STYLE_REF="drop" ID="ID_300266952" CREATED="1492080972697" MODIFIED="1495605859460" MOVED="1492080980228"/>
-<node TEXT="Introduction" STYLE_REF="paragraphs_drop_self" ID="ID_150393477" CREATED="1499869249672" MODIFIED="1499869658154" MOVED="1499869252488">
+<node TEXT="Introduction" STYLE_REF="paragraphs_drop_self" FOLDED="true" ID="ID_150393477" CREATED="1499869249672" MODIFIED="1499869658154" MOVED="1499869252488">
 <icon BUILTIN="button_ok"/>
 <node TEXT="The previous chapters already introduced a variety of related work." ID="ID_555387243" CREATED="1499949108674" MODIFIED="1499949274911" MOVED="1499949110796"/>
 <node TEXT="This chapter presents research more directly related to this thesis (e.g. with a similar problem definition)." ID="ID_883710146" CREATED="1499949122417" MODIFIED="1499949209564"/>
@@ -7661,7 +7667,7 @@
 </node>
 </node>
 </node>
-<node TEXT="Introduction" STYLE_REF="paragraphs_drop_self" FOLDED="true" ID="ID_1430142372" CREATED="1495543885991" MODIFIED="1499939727802">
+<node TEXT="Content" STYLE_REF="paragraphs_drop_self" ID="ID_1430142372" CREATED="1495543885991" MODIFIED="1500035598481">
 <node TEXT="This section presents related work on hardening applications using Intel SGX as a trusted computing solution." ID="ID_795492685" CREATED="1499935640505" MODIFIED="1499942420249"/>
 <node TEXT="First, application-specific approaches are listed. Next, general approaches are described." ID="ID_843125457" CREATED="1499941830537" MODIFIED="1499941909962"/>
 <node TEXT="The section concludes with a summary of the lessons learnt from this research." ID="ID_1682307076" CREATED="1499941857650" MODIFIED="1499941899345"/>
@@ -7697,7 +7703,7 @@
 <node TEXT="Haven isolates unmodified legacy applications in an enclave." ID="ID_1294210855" CREATED="1499942728794" MODIFIED="1499942758897"/>
 <node TEXT="A library operating system is also included in the enclave to minimise the exploitable interface between the enclave and the untrusted world." ID="ID_122260906" CREATED="1499942760561" MODIFIED="1499943559401"/>
 </node>
-<node TEXT="\item[SCONE\cite{Arnautov2016}]" FOLDED="true" ID="ID_1135472723" CREATED="1499942863713" MODIFIED="1499942880802">
+<node TEXT="\item[SCONE\cite{Arnautov2016}]" ID="ID_1135472723" CREATED="1499942863713" MODIFIED="1499942880802">
 <node TEXT="connects SGX and Docker\footnote{\url{https://www.docker.com}} containers." ID="ID_1276523119" CREATED="1499943001626" MODIFIED="1499943085825"/>
 <node TEXT="Alternative enclave designs are evaluated as shown in \autoref{figure:scone-interface}." ID="ID_1410436082" CREATED="1499943068521" MODIFIED="1499947759147"/>
 <node TEXT="Option a) is Haven&apos;s approach of including a library operating system in the TCB." ID="ID_1158697090" CREATED="1499945766730" MODIFIED="1499947823421" MOVED="1499947785313"/>
@@ -7705,7 +7711,7 @@
 <node TEXT="Option b) minimises the size of the TCB. The C library implementation lives outside of the enclave. This results in a large interface at the level of the C library interface." ID="ID_663705999" CREATED="1499947823923" MODIFIED="1499948030642"/>
 <node TEXT="Option c) is the middle ground. The C library is lives inside the enclave, resulting in an enclave interface at the level of system calls." ID="ID_130835678" CREATED="1499947920442" MODIFIED="1499947954589"/>
 <node TEXT="The authors choose option c), the middle ground, for their container implementation." ID="ID_1517662441" CREATED="1499947957658" MODIFIED="1499947976787" MOVED="1499948097771"/>
-<node TEXT="\input{content/tikz/scone-interface}" STYLE_REF="latex" FOLDED="true" ID="ID_1331053812" CREATED="1499947340521" MODIFIED="1499947766190" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/thesis/content/tikz/scone-interface.tex">
+<node TEXT="\input{content/tikz/scone-interface}" STYLE_REF="latex" FOLDED="true" ID="ID_1331053812" CREATED="1499947340521" MODIFIED="1500035607902" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/thesis/content/tikz/scone-interface.tex">
 <attribute NAME="image" VALUE=""/>
 <attribute NAME="label" VALUE="figure:scone-interface" OBJECT="java.net.URI|figure:scone-interface"/>
 <attribute NAME="key" VALUE="Arnautov2016"/>
@@ -7748,26 +7754,67 @@
 </node>
 </node>
 </node>
-<node TEXT="Intel SGX Helper Library" POSITION="left" ID="ID_985966487" CREATED="1499849260039" MODIFIED="1499951860673">
+<node TEXT="Intel SGX Helper Library" FOLDED="true" POSITION="left" ID="ID_985966487" CREATED="1499849260039" MODIFIED="1499951860673">
 <edge COLOR="#7c7c00"/>
 <attribute NAME="label" VALUE="chapter:sgx-lib" OBJECT="java.net.URI|chapter:sgx-lib"/>
-<node TEXT="Introduction" STYLE_REF="paragraphs_drop_self" ID="ID_330418409" CREATED="1499949613579" MODIFIED="1499951858714">
-<icon BUILTIN="button_cancel"/>
-<node TEXT="wrapper functions and helper scripts for the Windows SDK" ID="ID_1623222776" CREATED="1499949677890" MODIFIED="1499949693661" MOVED="1499949678408"/>
-<node TEXT="Helper lib\footnote{\url{https://github.com/ftes/sgx-lib}}" ID="ID_868490178" CREATED="1499949624993" MODIFIED="1499949632490"/>
-<node TEXT="Demo consumer\footnote{\url{https://github.com/ftes/sgx-lib-consumer}}" ID="ID_1523691323" CREATED="1499949632625" MODIFIED="1499949646804"/>
-<node TEXT="used in KissDB" ID="ID_459156134" CREATED="1499949646946" MODIFIED="1499949651547"/>
-<node TEXT="implemented first half of 2016, before SDK for Linux was available" ID="ID_424683204" CREATED="1499949651955" MODIFIED="1499949896987"/>
+<node TEXT="Introduction" STYLE_REF="paragraphs_drop_self" FOLDED="true" ID="ID_330418409" CREATED="1499949613579" MODIFIED="1500035728828">
+<icon BUILTIN="button_ok"/>
+<node TEXT="The case studies conducted for this thesis use the Intel SGX SDK for Windows.\footnote{At implementation time (first half of 2016), the Linux SDK was not yet available.}" ID="ID_1132198097" CREATED="1500035247294" MODIFIED="1500035318215" MOVED="1500035247751"/>
+<node TEXT="To make prototyping faster and easier, a helper library wrapping the SDK was developed alongside the case studies." ID="ID_111937508" CREATED="1500035319885" MODIFIED="1500035363660"/>
+<node TEXT="The library contains scripts and wrapper functions that make working with the SDK easier." ID="ID_1184988902" CREATED="1500035363893" MODIFIED="1500035384901"/>
+<node TEXT="The library also assists in constructing a shim C library (\autoref{figure:scone-interface})." ID="ID_1179607118" CREATED="1500035385172" MODIFIED="1500035628925"/>
+<node TEXT="The concepts of this library and some usage guidelines are introduced in this chapter." ID="ID_553638787" CREATED="1500035412733" MODIFIED="1500035461279"/>
+<node TEXT="" ID="ID_519586146" CREATED="1500035631621" MODIFIED="1500035631621"/>
+<node TEXT="For details, refer to the documentation contained in the repository.\footnote{\url{https://github.com/ftes/sgx-lib/tree/thesis}}" ID="ID_752590908" CREATED="1500035462060" MODIFIED="1500035486892"/>
+<node TEXT="A demo consumer project showcases usage of the library.\footnote{\url{https://github.com/ftes/sgx-lib-consumer/tree/thesis}}" ID="ID_1523691323" CREATED="1499949632625" MODIFIED="1500035666309" MOVED="1500035492830"/>
+<node TEXT="The Git tag \Q{thesis} in these repositories marks the commit from which the code listings in this thesis are taken." ID="ID_1811245411" CREATED="1500035513444" MODIFIED="1500035716479"/>
+<node TEXT="" ID="ID_1126285530" CREATED="1500036745668" MODIFIED="1500036745668"/>
+<node TEXT="No SGX hardware was available at the time of implementation. The library is only usable for simulation mode. It can not be used in production-ready enclaves." ID="ID_1484453818" CREATED="1500036746404" MODIFIED="1500040116160"/>
 </node>
-<node TEXT="Concept" ID="ID_244065427" CREATED="1499949714113" MODIFIED="1499951858721">
+<node TEXT="Concept" FOLDED="true" ID="ID_244065427" CREATED="1499949714113" MODIFIED="1499951858721">
 <icon BUILTIN="button_cancel"/>
 <node TEXT="mindmap" STYLE_REF="drop" ID="ID_449150039" CREATED="1499949964250" MODIFIED="1499949974134" MOVED="1499949967033">
 <node TEXT="two modules: untrusted and trusted" ID="ID_1280487602" CREATED="1499949975627" MODIFIED="1499949982986"/>
 <node TEXT="scripts for generating libc proxies (option b) of SCONE shim libc)" ID="ID_1057550675" CREATED="1499949983162" MODIFIED="1499950019451"/>
 </node>
-<node TEXT="Content" STYLE_REF="paragraphs_drop_self" ID="ID_49903427" CREATED="1499949942114" MODIFIED="1499949947326"/>
+<node TEXT="Content" STYLE_REF="paragraphs_drop_self" ID="ID_49903427" CREATED="1499949942114" MODIFIED="1499949947326">
+<node TEXT="\begin{description}" ID="ID_1696400236" CREATED="1500035101004" MODIFIED="1500035104789"/>
+<node TEXT="\item[Generate O-call proxies:]" ID="ID_1577901159" CREATED="1500034785500" MODIFIED="1500035115669" MOVED="1500035105518">
+<node TEXT="Function definitions in the .edl can also link directly against implementations provided by DLLs by adding \Q{[cdecl, dllimport]}." ID="ID_1497646761" CREATED="1500034797922" MODIFIED="1500035022731" MOVED="1500035118781" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/SGX%20SDK%20Guide.pdf">
+<attribute NAME="key" VALUE="sgx-windows"/>
+<attribute NAME="title" VALUE="Intel SGX Evaluation SDK User&apos;s Guide for Windows OS"/>
+<attribute NAME="authors" VALUE="Intel"/>
+<pdf_annotation type="PDF_FILE" object_id="0" document_hash="1824E5805C4B7F3BD8F2F8C65C3E36ED39DE0D2FD4F9448A4A2E6EA70CD3E8">
+    <pdf_title>Intel&#xae; Software Guard Extensions Evaluation SDK</pdf_title>
+</pdf_annotation>
 </node>
-<node TEXT="Usage" ID="ID_354717207" CREATED="1499949722794" MODIFIED="1499951858726">
+<node TEXT="However, the generated stub in the enclave has a different signature in case the function has a return value. The generated signature of the trusted \Q{fopen} stub would look like this:" ID="ID_446408595" CREATED="1500034797922" MODIFIED="1500034814109" MOVED="1500035118791"/>
+<node TEXT="\Q{fopen(int* retVal, const char* filename, const char* mode);}" ID="ID_748874807" CREATED="1500034797922" MODIFIED="1500034839109" MOVED="1500035118799"/>
+<node TEXT="So to provide trusted functions with the original signature, one has to overload the functions in the enclave. This is not possible in C, so C++ has to be used. Pulling in a dependency on C++ is not a good trade off for saving three lines per O-call in this file." ID="ID_104777994" CREATED="1500034797922" MODIFIED="1500034988805" MOVED="1500035118811"/>
+<node TEXT="Rather, the O-calls are named \Q{*_ocall}, so no overloading is necessary, and the wrapper functions in this file then link the stubs against the actual DLL implementations." ID="ID_1394611332" CREATED="1500034797922" MODIFIED="1500035001630" MOVED="1500035118820"/>
+<node TEXT="\lstinputlisting[label=listing:lib-edl,caption={" STYLE_REF="latex" ID="ID_1310113428" CREATED="1500030878828" MODIFIED="1500032457308" MOVED="1500035118825">
+<node TEXT="\textbf{sgx\_{}lib.edl}" ID="ID_1403293956" CREATED="1500031563957" MODIFIED="1500032470972" MOVED="1500031565154"/>
+<node TEXT="},firstnumber=46,linerange={46-47},style=cpp,tabsize=4,autodedent]{../sgx-lib/sgx_lib_t/sgx_lib.edl}" ID="ID_1536712624" CREATED="1500031423309" MODIFIED="1500034314313"/>
+</node>
+<node TEXT="\lstinputlisting[label=listing:t-stdio,caption={" STYLE_REF="latex" ID="ID_131723340" CREATED="1500030878828" MODIFIED="1500032294238" MOVED="1500035118830">
+<node TEXT="\textbf{sgx\_{}lib\_{}t\_{}stdio.h}" ID="ID_188697395" CREATED="1500031563957" MODIFIED="1500032286959" MOVED="1500031565154"/>
+<node TEXT="},firstnumber=41,linerange={41-42},style=cpp]{../sgx-lib/sgx_lib_t/include/sgx_lib_t_stdio.h}" ID="ID_1829796801" CREATED="1500031423309" MODIFIED="1500032978250"/>
+</node>
+<node TEXT="\lstinputlisting[label=listing:t-stdio-c2,caption={" STYLE_REF="latex" ID="ID_981814224" CREATED="1500030878828" MODIFIED="1500032651637" MOVED="1500035118835">
+<node TEXT="\textbf{sgx\_{}lib\_{}t\_{}stdio.c}" ID="ID_472958" CREATED="1500031563957" MODIFIED="1500032578710" MOVED="1500031565154"/>
+<node TEXT="},firstnumber=190,linerange={190-195},style=cpp]{../sgx-lib/sgx_lib_t/sgx_lib_t_stdio.c}" ID="ID_986440387" CREATED="1500031423309" MODIFIED="1500034153821"/>
+</node>
+<node TEXT="\lstinputlisting[label=listing:u-stdio-c,caption={" STYLE_REF="latex" ID="ID_1502285851" CREATED="1500030878828" MODIFIED="1500032757616" MOVED="1500035118840">
+<node TEXT="\textbf{sgx\_{}lib\_{}u\_{}stdio.c}" ID="ID_1550359463" CREATED="1500031563957" MODIFIED="1500032762975" MOVED="1500031565154"/>
+<node TEXT="},firstnumber=35,linerange={35-38},style=cpp]{../sgx-lib/sgx_lib_u/sgx_lib_u_ocalls_stdio.c}" ID="ID_1509333371" CREATED="1500031423309" MODIFIED="1500032835942"/>
+</node>
+</node>
+<node TEXT="\item[Translate error codes to messages:]" ID="ID_1725641591" CREATED="1500035120925" MODIFIED="1500035146165"/>
+<node TEXT="\item[Transparently encrypt or seal input/output:]" ID="ID_311895693" CREATED="1500035147564" MODIFIED="1500035176669"/>
+<node TEXT="\end{description}" ID="ID_354449538" CREATED="1500035125628" MODIFIED="1500035129845"/>
+</node>
+</node>
+<node TEXT="Usage" FOLDED="true" ID="ID_354717207" CREATED="1499949722794" MODIFIED="1500019896891">
 <icon BUILTIN="button_cancel"/>
 <node TEXT="Content" STYLE_REF="paragraphs_drop_self" ID="ID_633298057" CREATED="1499949949058" MODIFIED="1499949954703">
 <node TEXT="table: library interface (macros, functions, scripts)" ID="ID_370687101" CREATED="1499950176434" MODIFIED="1499950193594" MOVED="1499950194138"/>
@@ -7777,7 +7824,7 @@
 <node TEXT="Configuration" ID="ID_510746497" CREATED="1499949755249" MODIFIED="1499949758843" MOVED="1499949959221"/>
 <node TEXT="\begin{description}" ID="ID_1077418022" CREATED="1499949816195" MODIFIED="1499949819474" MOVED="1499949959234"/>
 <node TEXT="\item[Insecure input/output operations:]" ID="ID_1293763359" CREATED="1499949759458" MODIFIED="1499949846773" MOVED="1499949959245">
-<node TEXT=" set macro \texttt{SGX\_{}INSECURE\_{}IO\_{}OPERATIONS}" ID="ID_334271564" CREATED="1499949848739" MODIFIED="1499950079222" MOVED="1499949849934"/>
+<node TEXT=" set macro \Q{SGX_INSECURE_IO_OPERATIONS}" ID="ID_334271564" CREATED="1499949848739" MODIFIED="1500025121847" MOVED="1499949849934"/>
 <node TEXT="During development, insecure I/O operations can be used. These allow data to leave the enclave as plain text. When including legacy code, this allows legacy compatible behaviour, without security guarantees." ID="ID_335007542" CREATED="1499949841624" MODIFIED="1499949889770"/>
 <node TEXT="Without this macro, writes and reads to standard and file streams are sealed (or encrypted). Replay protection IS NOT added." ID="ID_97073736" CREATED="1499949841624" MODIFIED="1499949841624"/>
 </node>
@@ -7785,28 +7832,70 @@
 <node TEXT="Use either" ID="ID_456618846" CREATED="1499950110806" MODIFIED="1499950110806"/>
 <node TEXT="seal/unseal or" ID="ID_1781779015" CREATED="1499950110806" MODIFIED="1499950110806"/>
 <node TEXT="encrypt/decrypt" ID="ID_831118545" CREATED="1499950110807" MODIFIED="1499950110807"/>
-<node TEXT="as the underlying encryption primitive. (1) is the default, (2) is enabled by setting the \texttt{SGX\_{}SECURE\_{}IO\_{}OPERATIONS\_{}KEY} macro." ID="ID_20929376" CREATED="1499950110807" MODIFIED="1499950466248"/>
-<node TEXT="(2) requires a symmetric encryption key, which can be set using \texttt{set\_{}secure\_{}io\_{}key()}. This key is used to en/decrypt all subsequent I/O operations, until it is overwritten by another call to \texttt{set\_{}secure\_{}io\_{}key()}." ID="ID_724561196" CREATED="1499950110807" MODIFIED="1499950171274"/>
+<node TEXT="as the underlying encryption primitive. (1) is the default, (2) is enabled by setting the \Q{SGX_SECURE_IO_OPERATIONS_KEY} macro." ID="ID_20929376" CREATED="1499950110807" MODIFIED="1500025116252"/>
+<node TEXT="(2) requires a symmetric encryption key, which can be set using \Q{set_secure_io_key()}. This key is used to en/decrypt all subsequent I/O operations, until it is overwritten by another call to \Q{set_secure_io_key()}." ID="ID_724561196" CREATED="1499950110807" MODIFIED="1500025110541"/>
 </node>
 <node TEXT="\end{description}" ID="ID_817985606" CREATED="1499949804810" MODIFIED="1499949825066" MOVED="1499949959252"/>
-<node TEXT="\begin{table}" STYLE_REF="latex" ID="ID_1739061813" CREATED="1499345864257" MODIFIED="1499435567168" MOVED="1499359331393">
+<node TEXT="\begin{table}" STYLE_REF="latex" FOLDED="true" ID="ID_1739061813" CREATED="1499345864257" MODIFIED="1500039116750" MOVED="1499359331393">
 <node TEXT="\centering" STYLE_REF="latex" ID="ID_1384618384" CREATED="1499420357862" MODIFIED="1499420383480" MOVED="1499951149640"/>
-<node TEXT="\input{content/tables/sgx-lib}" STYLE_REF="latex" ID="ID_34618265" CREATED="1499264498353" MODIFIED="1499951173891" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/thesis/content/tables/tc-comparison.tex" MOVED="1499951149670"/>
-<node TEXT="\caption{" STYLE_REF="latex" ID="ID_1631375221" CREATED="1499345897352" MODIFIED="1499345909529" MOVED="1499951149678">
-<node TEXT="\textbf{Intel SGX helper library interface.}" ID="ID_512336551" CREATED="1499359019074" MODIFIED="1499951434484" MOVED="1499437274826"/>
+<node TEXT="\begin{threeparttable}" STYLE_REF="latex" ID="ID_79838713" CREATED="1499435698429" MODIFIED="1499437814685" MOVED="1500038415567"/>
+<node TEXT="\input{content/tables/sgx-lib}" STYLE_REF="latex" ID="ID_34618265" CREATED="1499264498353" MODIFIED="1500019915075" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/thesis/content/tables/sgx-lib.tex" MOVED="1499951149670"/>
+<node TEXT="\caption{" STYLE_REF="latex" FOLDED="true" ID="ID_1631375221" CREATED="1499345897352" MODIFIED="1499345909529" MOVED="1499951149678">
+<node TEXT="\textbf{Helper library overview.}" ID="ID_512336551" CREATED="1499359019074" MODIFIED="1500039680665" MOVED="1499437274826"/>
+<node TEXT="The important components (scripts, header files) are listed." ID="ID_1453990158" CREATED="1500039770470" MODIFIED="1500039784926"/>
+<node TEXT="The columns \textit{trusted} and \textit{untrusted} define where the code can be used (enclave or wrapper)." ID="ID_1729911226" CREATED="1500039785088" MODIFIED="1500039822448"/>
+<node TEXT="The library includes two scripts to easily extend it with new C library proxies and error messages." ID="ID_1217070545" CREATED="1500039681293" MODIFIED="1500039722822"/>
+<node TEXT="Also it contains wrapper functions and pre-generated C library proxies." ID="ID_303785643" CREATED="1500039723245" MODIFIED="1500039761016"/>
+<node TEXT="An example is given for the \texttt{add\_{}ocall.sh} script." ID="ID_548058171" CREATED="1500039845036" MODIFIED="1500039966452"/>
 <node TEXT="}" STYLE_REF="latex" ID="ID_574554221" CREATED="1499345900665" MODIFIED="1499345909532" MOVED="1499435837748"/>
 </node>
 <node TEXT="\label{table:sgx-lib}" ID="ID_657393313" CREATED="1499437819564" MODIFIED="1499951161765" MOVED="1499951149683"/>
-<node TEXT="\end{table}" STYLE_REF="latex" ID="ID_463161887" CREATED="1499345867505" MODIFIED="1499345909535" MOVED="1499951149697"/>
+<node TEXT="\begin{tablenotes}" FOLDED="true" ID="ID_1372013698" CREATED="1499435719197" MODIFIED="1499435724060" MOVED="1500038420236">
+<node TEXT="\item[a] \url{https://github.com/ftes/sgx-lib/blob/thesis/add_ocall.sh}" ID="ID_962465848" CREATED="1499437130748" MODIFIED="1500038462156"/>
+<node TEXT="\item[b] \url{https://github.com/ftes/sgx-lib/blob/thesis/sgx_lib_t/generate_error_codes.sh}" ID="ID_404031672" CREATED="1499437130748" MODIFIED="1500038502748" MOVED="1500038465353"/>
+<node TEXT="\item[c] \url{https://github.com/ftes/sgx-lib/blob/master/common/sgx_lib.c}" ID="ID_1959410779" CREATED="1499437130748" MODIFIED="1500038520216"/>
+<node TEXT="\item[d] \url{https://github.com/ftes/sgx-lib/blob/master/sgx_lib_t/include/sgx_lib_t_stdio.h}" ID="ID_1093492253" CREATED="1499437130748" MODIFIED="1500038534862"/>
+<node TEXT="\item[e] \url{https://github.com/ftes/sgx-lib/blob/master/sgx_lib_t/include/sgx_lib_t_util.h}" ID="ID_964206080" CREATED="1499437130748" MODIFIED="1500038547111"/>
+<node TEXT="\item[f] \url{https://github.com/ftes/sgx-lib/blob/master/sgx_lib_t/include/sgx_lib_t_debug.h}" ID="ID_222739698" CREATED="1499437130748" MODIFIED="1500038567837"/>
+<node TEXT="\item[g] \url{https://github.com/ftes/sgx-lib/blob/master/sgx_lib_t/include/sgx_lib_t_crypto.h}" ID="ID_540478273" CREATED="1499437130748" MODIFIED="1500038578609" MOVED="1500038479967"/>
+<node TEXT="\item[h] \url{https://github.com/ftes/sgx-lib/blob/master/sgx_lib_t/include/sgx_lib_t_util.h}" ID="ID_322028450" CREATED="1499437130748" MODIFIED="1500038583428" MOVED="1500038483460"/>
+<node TEXT="\end{tablenotes}" ID="ID_1182408768" CREATED="1499435724188" MODIFIED="1499435728813" MOVED="1500038473624"/>
+</node>
+<node TEXT="\end{threeparttable}" STYLE_REF="latex" ID="ID_755181616" CREATED="1499435707613" MODIFIED="1499437814680" MOVED="1500038420240"/>
+<node TEXT="\end{table}" STYLE_REF="latex" ID="ID_463161887" CREATED="1499345867505" MODIFIED="1500038970239" MOVED="1499951149697"/>
+</node>
+<node TEXT="\lstinputlisting[label=listing:t-crypto,caption={" STYLE_REF="latex" ID="ID_867477101" CREATED="1500030878828" MODIFIED="1500031454582">
+<node TEXT="\textbf{sgx\_{}lib\_{}t\_{}crypto.h}" ID="ID_1194028915" CREATED="1500031563957" MODIFIED="1500031923294" MOVED="1500031565154"/>
+<node TEXT="},firstnumber=18,linerange={18-20},style=cpp]{../sgx-lib/sgx_lib_t/include/sgx_lib_t_crypto.h}" ID="ID_104430003" CREATED="1500031423309" MODIFIED="1500031460554"/>
+<node TEXT="\lstinputlisting[firstnumber=27,linerange={27-29},style=cpp]{../sgx-lib/sgx_lib_t/include/sgx_lib_t_crypto.h}" STYLE_REF="latex" ID="ID_1409616554" CREATED="1500030878828" MODIFIED="1500031397358" MOVED="1500032224447"/>
+</node>
+<node TEXT="\lstinputlisting[label=listing:t-debug,caption={" STYLE_REF="latex" ID="ID_157392729" CREATED="1500030878828" MODIFIED="1500032247686" MOVED="1500032230230">
+<node TEXT="\textbf{sgx\_{}lib\_{}t\_{}debug.h}" ID="ID_149945808" CREATED="1500031563957" MODIFIED="1500032252313" MOVED="1500031565154"/>
+<node TEXT="},firstnumber=4,linerange={4-5},style=cpp]{../sgx-lib/sgx_lib_t/include/sgx_lib_t_debug.h}" ID="ID_1804746573" CREATED="1500031423309" MODIFIED="1500032267455"/>
+</node>
+<node TEXT="\lstinputlisting[label=listing:t-stdio2,caption={" STYLE_REF="latex" ID="ID_54269206" CREATED="1500030878828" MODIFIED="1500032973107" MOVED="1500032969019">
+<node TEXT="\textbf{sgx\_{}lib\_{}t\_{}stdio.h}" ID="ID_1002305727" CREATED="1500031563957" MODIFIED="1500032286959" MOVED="1500031565154"/>
+<node TEXT="},firstnumber=27,linerange={27-39},style=cpp]{../sgx-lib/sgx_lib_t/include/sgx_lib_t_stdio.h}" ID="ID_1188639684" CREATED="1500031423309" MODIFIED="1500032992848"/>
+</node>
+<node TEXT="\lstinputlisting[label=listing:t-stdio-c,caption={" STYLE_REF="latex" ID="ID_1400314107" CREATED="1500030878828" MODIFIED="1500032571278" MOVED="1500032579983">
+<node TEXT="\textbf{sgx\_{}lib\_{}t\_{}stdio.c}" ID="ID_1746341763" CREATED="1500031563957" MODIFIED="1500032578710" MOVED="1500031565154"/>
+<node TEXT="},firstnumber=68,linerange={68-102},style=cpp]{../sgx-lib/sgx_lib_t/sgx_lib_t_stdio.c}" ID="ID_172535227" CREATED="1500031423309" MODIFIED="1500032622086"/>
+</node>
+<node TEXT="\lstinputlisting[label=listing:t-util,caption={" STYLE_REF="latex" ID="ID_527957658" CREATED="1500030878828" MODIFIED="1500032344846" MOVED="1500032338010">
+<node TEXT="\textbf{sgx\_{}lib\_{}t\_{}util.h}" ID="ID_1400206433" CREATED="1500031563957" MODIFIED="1500032349560" MOVED="1500031565154"/>
+<node TEXT="},firstnumber=8,linerange={8-9},style=cpp]{../sgx-lib/sgx_lib_t/include/sgx_lib_t_util.h}" ID="ID_818152581" CREATED="1500031423309" MODIFIED="1500032363373"/>
+</node>
+<node TEXT="\lstinputlisting[label=listing:u-util,caption={" STYLE_REF="latex" ID="ID_565949091" CREATED="1500030878828" MODIFIED="1500032694356" MOVED="1500032687837">
+<node TEXT="\textbf{sgx\_{}lib\_{}u\_{}util.h}" ID="ID_1204492670" CREATED="1500031563957" MODIFIED="1500032702455" MOVED="1500031565154"/>
+<node TEXT="},firstnumber=6,linerange={6-9},style=cpp]{../sgx-lib/sgx_lib_u/include/sgx_lib_u_util.h}" ID="ID_82292065" CREATED="1500031423309" MODIFIED="1500032724377"/>
 </node>
 </node>
 </node>
 </node>
-<node TEXT="KissDB Case Study" LOCALIZED_STYLE_REF="default" POSITION="left" ID="ID_1828467557" CREATED="1487266728477" MODIFIED="1499929289683" MOVED="1499849267642">
-<icon BUILTIN="button_cancel"/>
+<node TEXT="KissDB Case Study" LOCALIZED_STYLE_REF="default" FOLDED="true" POSITION="left" ID="ID_1828467557" CREATED="1487266728477" MODIFIED="1500019870140" MOVED="1499849267642">
 <attribute NAME="label" VALUE="chapter:kissdb" OBJECT="java.net.URI|chapter:kissdb"/>
 <edge COLOR="#ff0000"/>
-<node TEXT="Introduction" STYLE_REF="paragraphs_drop_self" ID="ID_1929202403" CREATED="1499849307743" MODIFIED="1499951840090">
+<node TEXT="Introduction" STYLE_REF="paragraphs_drop_self" FOLDED="true" ID="ID_1929202403" CREATED="1499849307743" MODIFIED="1499951840090">
 <icon BUILTIN="button_cancel"/>
 <node TEXT="KissDB\footnote{\url{https://github.com/adamierymenko/kissdb}}" ID="ID_1418888567" CREATED="1499951779979" MODIFIED="1499951790338"/>
 <node TEXT="Fork with SGX\footnote{\url{https://github.com/ftes/kissdb-sgx}}" ID="ID_888329016" CREATED="1499951985866" MODIFIED="1499951995946"/>
@@ -7944,8 +8033,7 @@
 <node TEXT="Content" STYLE_REF="paragraphs_drop_self" ID="ID_1327466363" CREATED="1495543885991" MODIFIED="1495543895304"/>
 </node>
 </node>
-<node TEXT="SQLite Case Study" LOCALIZED_STYLE_REF="default" FOLDED="true" POSITION="left" ID="ID_650094352" CREATED="1487266723741" MODIFIED="1499929295832" MOVED="1499849269320">
-<icon BUILTIN="button_cancel"/>
+<node TEXT="SQLite Case Study" LOCALIZED_STYLE_REF="default" FOLDED="true" POSITION="left" ID="ID_650094352" CREATED="1487266723741" MODIFIED="1500019873754" MOVED="1499849269320">
 <attribute NAME="label" VALUE="chapter:sqlite" OBJECT="java.net.URI|chapter:sqlite"/>
 <edge COLOR="#0000ff"/>
 <node TEXT="use chapter summaries" STYLE_REF="drop" ID="ID_1019464221" CREATED="1489606031650" MODIFIED="1489606057294" MOVED="1489606046735"/>
@@ -8484,7 +8572,7 @@
 <node TEXT="future work" ID="ID_1074533750" CREATED="1499766172307" MODIFIED="1499766174284"/>
 </node>
 </node>
-<node TEXT="Appendix" STYLE_REF="drop" POSITION="left" ID="ID_1278383992" CREATED="1489748055346" MODIFIED="1492616946949">
+<node TEXT="Appendix" STYLE_REF="drop" FOLDED="true" POSITION="left" ID="ID_1278383992" CREATED="1489748055346" MODIFIED="1492616946949">
 <edge COLOR="#00007c"/>
 <node TEXT="thanks to: tikzpeople" ID="ID_267530477" CREATED="1495020720099" MODIFIED="1495020724435"/>
 <node TEXT="thanks to: max" ID="ID_1591643310" CREATED="1499950597345" MODIFIED="1499950600114"/>

@@ -17,6 +17,8 @@
 \usepackage{threeparttable}
 \usepackage{colortbl}
 \usepackage{makecell}
+\usepackage[Q=yes]{examplep} % robust verbatim commands, e.g. \Q
+\usepackage{lstautodedent}
 
 %\usepackage{footnote} % footnotes in envs
 %\makesavenoteenv{figure}
@@ -46,6 +48,11 @@
 
 % sidewaysfigure environment
 \usepackage{rotating}
+
+% smaller table footnotes
+\makeatletter 
+\g@addto@macro\TPT@defaults{\footnotesize} 
+\makeatother
 
 % ABOUT
 \newcommand{\hpitype}{Master's Thesis}

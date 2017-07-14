@@ -1,4 +1,4 @@
-personal_ws-1.1 en 157 
+personal_ws-1.1 en 172 
 runtime
 NoHype
 hypercalls
@@ -10,8 +10,10 @@ SDK
 SEEED
 SQLite
 TPMs
+autodedent
 workspace
 al
+util
 blu
 TCB
 Arasu
@@ -19,12 +21,15 @@ PSW
 JNI
 PoET
 Arx
+DLLs
 EPID
+firstnumber
 LDS
 readonly
 VMFUNC
 DS
-SGX
+sgx
+ifdef
 userspace
 IUM
 et
@@ -47,9 +52,12 @@ DMA
 SMM
 SoC
 Arx's
+io
 proxying
 LLC
 Monomi's
+cpp
+DLL
 libjpeg
 MIEE
 Monomi
@@ -66,6 +74,7 @@ validator
 TEEs
 DoS
 PowerDVD
+ttfamily
 RDTSC
 DRM
 ECREATE
@@ -79,11 +88,13 @@ EPC
 GlobalPlatform
 attestable
 SVM
+endif
 CPUID
 SGX's
 untrusted
 TrustVisor
 MMU
+linerange
 LSS
 VC
 Virt
@@ -124,13 +135,16 @@ SYSENTER
 INSD
 Skyhigh
 SecureKeeper
+ProcessOther
 OUTSD
 Cyberlink
 Yao
 TrustZone
+aes
 RDPMC
 homomorphic
 Cipherbase
+CCPutMacro
 pwrite
 decrypt
 uint
@@ -145,6 +159,7 @@ SYSCALL
 REE
 EENTER
 LibOS
+tabsize
 vTPM
 homomorphism
 CloudVisor

@@ -1,12 +1,56 @@
-\begin{tabular}{lll}
+\lstnewenvironment{lsttable}{
+    \lstset{
+        basicstyle=\footnotesize,
+        style=default,
+        frame=single,
+        belowskip=-\baselineskip,
+        xleftmargin=0ex,
+        numbers=none
+    }%
+  }
+{}
+
+\begin{tabular}{m{0.2\textwidth}llm{0.65\textwidth}}
 
 \toprule
-\textbf{Name}   & \textbf{Type}     & \textbf{Details}        \\ \midrule
-Bla             & Bla               & blu                     \\
-Bla             & Bla               & blu                     \\
-Bla             & Bla               & blu                     \\ \midrule
-Bla             & Bla               & blu                     \\
-Bla             & Bla               & blu                     \\
+\textbf{Name}                           & \h{Trusted}   & \h{Untrusted}     & \textbf{Details}   \\ \midrule
+\Q{add_ocall.sh}\tnote{a}               & \cmark        & \cmark            &
+Script that generate an O-call. Use e.g. for generating C library proxies. Writes EDL definition,
+trusted and untrusted wrapper code.
+A \textit{hook} can be defined in each file after which the auto-generated code should be inserted.
+
+Configurable via environment variables. These control where app, enclave, EDL file,
+header and source code files are located.
+{\begin{lsttable}[language=bash] % extra braces for listings bug (allow frame)
+    $ sgx-lib/add_ocall.sh "void rewind([user_check] FILE* file);"
+\end{lsttable}}                                                                                     \\ \midrule
+
+\Q{generate_error_codes.sh}\tnote{b}    & \cmark        & \cmark            &
+Script that generates a helper function\tnote{c} to translate error codes into
+human-readable descriptions.
+Parses the SDK's \Q{sgx_error.h} for error code descriptions.                                       \\ \midrule
+
+\Q{sgx_lib_t_stdio.h}\tnote{d}          & \cmark        &                   &
+Proxies to input/output functions of the C library outside of the enclave. Part of the shim C
+library in \autoref{figure:scone-interface}.
+Depending on the configuration, data is passed in plain text or transparently encrypted or sealed.  \\ \midrule
+
+\Q{sgx_lib_t_util.h}\tnote{e}           & \cmark        &                   &
+Trusted helper functions. String formatting and return type checks.
+On errors, meaningful descriptions are printed
+(if transparent encryption/sealing is not activated).                                               \\ \midrule
+
+\Q{sgx_lib_t_debug.h}\tnote{f}          & \cmark        &                   &
+Trusted helper functions for debugging. Log messages and \Q{printf}.                                \\ \midrule
+
+\Q{sgx_lib_t_crypto.h}\tnote{g}         & \cmark        &                   &
+Wrapper functions for SDK encryption and sealing.
+Can calculate the sealed data size for a given plain text size
+(nonce plus a multiple of the block cipher size).                                                   \\ \midrule
+
+\Q{sgx_lib_u_util.h}\tnote{h}           &               & \cmark            &
+Untrusted helper functions. Return type checks (see trusted util functions) and
+enclave setup/teardown.                                                                             \\
 
 \bottomrule
 \end{tabular}
