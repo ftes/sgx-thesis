@@ -1,4 +1,4 @@
-personal_ws-1.1 en 172 
+personal_ws-1.1 en 176 
 runtime
 NoHype
 hypercalls
@@ -58,6 +58,7 @@ LLC
 Monomi's
 cpp
 DLL
+const
 libjpeg
 MIEE
 Monomi
@@ -68,6 +69,7 @@ Cyberlink's
 Yao's
 TLR
 cryptographically
+retVal
 HAPs
 Sawtooth
 validator
@@ -146,6 +148,7 @@ homomorphic
 Cipherbase
 CCPutMacro
 pwrite
+SDK's
 decrypt
 uint
 AsyncShock
@@ -156,6 +159,7 @@ RDTSCP
 EGETKEY
 VMEXIT
 SYSCALL
+fopen
 REE
 EENTER
 LibOS

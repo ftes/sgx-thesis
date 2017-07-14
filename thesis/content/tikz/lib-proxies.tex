@@ -1,0 +1,20 @@
+\begin{tikzpicture}[
+	block/.style={draw, align=center, text width=5cm, minimum height=0.7cm, inner sep=0},
+	arrow/.style={-latex'}
+]
+
+\node at (0,1.5) {Enclave};
+\node[block] (v1) at (0,0.5) {Custom code};
+\node[block] (v2) at (0,-0.75) {SDK-generated proxy};
+\begin{scope}[on background layer]
+	\draw [fill=green] (-2.75,2) rectangle (2.75,-1.5);
+\end{scope}
+
+\node[block] (v3) at (0,-2.25) {SDK-generated proxy};
+\node[block] (v4) at (0,-3.5) {Library-generated proxy};
+\node[block] (v5) at (0,-4.75) {C Library};
+\draw [arrow] (v1) edge (v2);
+\draw [arrow] (v2) edge (v3);
+\draw [arrow] (v3) edge (v4);
+\draw [arrow] (v4) edge (v5);
+\end{tikzpicture}

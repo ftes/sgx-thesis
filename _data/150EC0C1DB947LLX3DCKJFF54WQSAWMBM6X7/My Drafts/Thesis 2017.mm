@@ -5136,7 +5136,7 @@
 <node TEXT="SGX capable CPUs are available since the end of 2015.\footnote{\url{https://github.com/ayeks/SGX-hardware}}." ID="ID_1264019871" CREATED="1499693826665" MODIFIED="1499693869078"/>
 </node>
 </node>
-<node TEXT="Enclave Development" ID="ID_816398624" CREATED="1499693570309" MODIFIED="1499849786487" MOVED="1499777011960">
+<node TEXT="Enclave Development" FOLDED="true" ID="ID_816398624" CREATED="1499693570309" MODIFIED="1499849786487" MOVED="1499777011960">
 <icon BUILTIN="button_ok"/>
 <attribute NAME="label" VALUE="section:sgx-usage" OBJECT="java.net.URI|section:sgx-usage"/>
 <node TEXT="mindmap" STYLE_REF="drop" ID="ID_407748345" CREATED="1499777017556" MODIFIED="1499777026225"/>
@@ -5176,7 +5176,7 @@
 <node TEXT="The annotations show the direction of data flow (\textit{in, out, user\_{}check})." ID="ID_1178777303" CREATED="1499847963574" MODIFIED="1499848719647" MOVED="1499848713006"/>
 <node TEXT="If \textit{in} (and/or \textit{out}) are specified, the proxy code will copy the parameter by value before calling the function (and/or afterwards). A pass-by-reference can be achieved with \textit{user\_{}check}." ID="ID_77293385" CREATED="1499848118799" MODIFIED="1499849900345"/>
 <node TEXT="Pass-by-value is recommended for security reasons. The enclave cannot rely on untrusted memory to be stable. However, copying and checking parameters adds overhead. This is discussed in \autoref{section:sgx-perf}." ID="ID_1962499209" CREATED="1499849924975" MODIFIED="1499850023393" MOVED="1499850040929"/>
-<node TEXT="% Listing" STYLE_REF="latex" ID="ID_1687639604" CREATED="1499839536528" MODIFIED="1499839579388" MOVED="1499849187966">
+<node TEXT="% Listing" STYLE_REF="latex" FOLDED="true" ID="ID_1687639604" CREATED="1499839536528" MODIFIED="1499839579388" MOVED="1499849187966">
 <node TEXT="\lstinputlisting[label=listing:edl,caption={" STYLE_REF="latex" ID="ID_326599406" CREATED="1499784565468" MODIFIED="1499840341049" MOVED="1499839552465"/>
 <node TEXT="\textbf{enclave.edl} -- Enclave Definition Language (EDL) example file." ID="ID_1712028152" CREATED="1499839473993" MODIFIED="1499839846929" MOVED="1499839552480"/>
 <node TEXT="EDL is used by the Intel SGX SDK to specify an enclaves interface on the function level." ID="ID_689768123" CREATED="1499839826054" MODIFIED="1499839901664" MOVED="1499840160834"/>
@@ -6892,7 +6892,7 @@
 </node>
 </node>
 </node>
-<node TEXT="Content" STYLE_REF="paragraphs_drop_self" FOLDED="true" ID="ID_144019763" CREATED="1495543885991" MODIFIED="1495543895304">
+<node TEXT="Content" STYLE_REF="paragraphs_drop_self" ID="ID_144019763" CREATED="1495543885991" MODIFIED="1495543895304">
 <node TEXT="Leaving the (well-founded) criticism behind, SGX has the potential to be the foundation for innovative applications." ID="ID_1994267622" CREATED="1499861281216" MODIFIED="1499861582536" MOVED="1499861575201"/>
 <node TEXT="This section highlights some interesting SGX-based applications from research." ID="ID_492049202" CREATED="1499861350208" MODIFIED="1499861597169"/>
 <node TEXT="It does not describe such applications that themselves can be considered frameworks or infrastructure layers for securing other applications such as SCONE or Haven. These are discussed in \autoref{section:sgx-hardening}." ID="ID_110180016" CREATED="1499861447056" MODIFIED="1499861503994"/>
@@ -7667,7 +7667,7 @@
 </node>
 </node>
 </node>
-<node TEXT="Content" STYLE_REF="paragraphs_drop_self" ID="ID_1430142372" CREATED="1495543885991" MODIFIED="1500035598481">
+<node TEXT="Content" STYLE_REF="paragraphs_drop_self" FOLDED="true" ID="ID_1430142372" CREATED="1495543885991" MODIFIED="1500035598481">
 <node TEXT="This section presents related work on hardening applications using Intel SGX as a trusted computing solution." ID="ID_795492685" CREATED="1499935640505" MODIFIED="1499942420249"/>
 <node TEXT="First, application-specific approaches are listed. Next, general approaches are described." ID="ID_843125457" CREATED="1499941830537" MODIFIED="1499941909962"/>
 <node TEXT="The section concludes with a summary of the lessons learnt from this research." ID="ID_1682307076" CREATED="1499941857650" MODIFIED="1499941899345"/>
@@ -7754,10 +7754,10 @@
 </node>
 </node>
 </node>
-<node TEXT="Intel SGX Helper Library" FOLDED="true" POSITION="left" ID="ID_985966487" CREATED="1499849260039" MODIFIED="1499951860673">
+<node TEXT="Intel SGX Helper Library" POSITION="left" ID="ID_985966487" CREATED="1499849260039" MODIFIED="1499951860673">
 <edge COLOR="#7c7c00"/>
 <attribute NAME="label" VALUE="chapter:sgx-lib" OBJECT="java.net.URI|chapter:sgx-lib"/>
-<node TEXT="Introduction" STYLE_REF="paragraphs_drop_self" FOLDED="true" ID="ID_330418409" CREATED="1499949613579" MODIFIED="1500035728828">
+<node TEXT="Introduction" STYLE_REF="paragraphs_drop_self" ID="ID_330418409" CREATED="1499949613579" MODIFIED="1500035728828">
 <icon BUILTIN="button_ok"/>
 <node TEXT="The case studies conducted for this thesis use the Intel SGX SDK for Windows.\footnote{At implementation time (first half of 2016), the Linux SDK was not yet available.}" ID="ID_1132198097" CREATED="1500035247294" MODIFIED="1500035318215" MOVED="1500035247751"/>
 <node TEXT="To make prototyping faster and easier, a helper library wrapping the SDK was developed alongside the case studies." ID="ID_111937508" CREATED="1500035319885" MODIFIED="1500035363660"/>
@@ -7771,16 +7771,66 @@
 <node TEXT="" ID="ID_1126285530" CREATED="1500036745668" MODIFIED="1500036745668"/>
 <node TEXT="No SGX hardware was available at the time of implementation. The library is only usable for simulation mode. It can not be used in production-ready enclaves." ID="ID_1484453818" CREATED="1500036746404" MODIFIED="1500040116160"/>
 </node>
-<node TEXT="Concept" FOLDED="true" ID="ID_244065427" CREATED="1499949714113" MODIFIED="1499951858721">
+<node TEXT="Concept" ID="ID_244065427" CREATED="1499949714113" MODIFIED="1499951858721">
 <icon BUILTIN="button_cancel"/>
 <node TEXT="mindmap" STYLE_REF="drop" ID="ID_449150039" CREATED="1499949964250" MODIFIED="1499949974134" MOVED="1499949967033">
 <node TEXT="two modules: untrusted and trusted" ID="ID_1280487602" CREATED="1499949975627" MODIFIED="1499949982986"/>
 <node TEXT="scripts for generating libc proxies (option b) of SCONE shim libc)" ID="ID_1057550675" CREATED="1499949983162" MODIFIED="1499950019451"/>
 </node>
 <node TEXT="Content" STYLE_REF="paragraphs_drop_self" ID="ID_49903427" CREATED="1499949942114" MODIFIED="1499949947326">
+<node TEXT="The library consists of a trusted and untrusted module." ID="ID_1011030349" CREATED="1500040619229" MODIFIED="1500040653719" MOVED="1500040619936"/>
+<node TEXT="The consumer can include the header files and link against these library modules." ID="ID_1462993309" CREATED="1500040653957" MODIFIED="1500040738117"/>
+<node TEXT="Also, the consumer must include the library&apos;s EDL file." ID="ID_1600152309" CREATED="1500040738204" MODIFIED="1500040751038"/>
+<node TEXT="" ID="ID_1936892991" CREATED="1500040752485" MODIFIED="1500040752485"/>
+<node TEXT="The library tries to help with three aspects of enclave development:" ID="ID_1627717648" CREATED="1500040753349" MODIFIED="1500040790597"/>
 <node TEXT="\begin{description}" ID="ID_1696400236" CREATED="1500035101004" MODIFIED="1500035104789"/>
-<node TEXT="\item[Generate O-call proxies:]" ID="ID_1577901159" CREATED="1500034785500" MODIFIED="1500035115669" MOVED="1500035105518">
-<node TEXT="Function definitions in the .edl can also link directly against implementations provided by DLLs by adding \Q{[cdecl, dllimport]}." ID="ID_1497646761" CREATED="1500034797922" MODIFIED="1500035022731" MOVED="1500035118781" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/SGX%20SDK%20Guide.pdf">
+<node TEXT="\item[Generate O-call proxies:]" FOLDED="true" ID="ID_1577901159" CREATED="1500034785500" MODIFIED="1500035115669" MOVED="1500035105518">
+<node TEXT="This is necessary if the C library lives outside of the enclave. Then a shim is needed inside the enclave to proxy calls to the outside. and use a shim inside the enclave (see \autoref{figure:scone-interface})." ID="ID_1843451651" CREATED="1500040800781" MODIFIED="1500040888949"/>
+<node TEXT="Defining these proxies involves touching several files and repeatedly inserting a similar method signature." ID="ID_1189822781" CREATED="1500040875197" MODIFIED="1500040938263"/>
+<node TEXT="The \Q{add_ocall.sh} script can speed up this process." ID="ID_1596596706" CREATED="1500040938365" MODIFIED="1500040952885"/>
+<node TEXT="See \autoref{table:sgx-lib} for details on how to use this script." ID="ID_1961827742" CREATED="1500040953029" MODIFIED="1500040994037"/>
+<node TEXT="" ID="ID_441723524" CREATED="1500040994188" MODIFIED="1500040994188"/>
+<node TEXT="As an example, consider adding a proxy for the \Q{_ftelli64}\footnote{\url{https://msdn.microsoft.com/de-de/library/0ys3hc0b.aspx}} Windows C library function." ID="ID_2348280" CREATED="1500040995341" MODIFIED="1500041060407"/>
+<node TEXT="The helper script has to be called as shown in \autoref{listing:add-ocall}." ID="ID_1088589749" CREATED="1500041062821" MODIFIED="1500041181084"/>
+<node TEXT="\lstinputlisting[label=listing:add-ocall,style=default,language=bash,caption={" STYLE_REF="latex" FOLDED="true" ID="ID_767063546" CREATED="1500041087412" MODIFIED="1500042689270" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/thesis/content/listings/add-ocall.txt">
+<node TEXT="\textbf{Example invocation of O-call generation script.} The script generates EDL code, untrusted and untrusted header code, and trusted and untrusted proxy implementations." ID="ID_306321559" CREATED="1500041511709" MODIFIED="1500042428803" MOVED="1500041513287"/>
+<node TEXT="The environment variables do not have to be set. Their default values correspond to the directory and file layout of the library." ID="ID_116451330" CREATED="1500042732085" MODIFIED="1500042768278"/>
+<node TEXT="}]{content/listings/add-ocall.txt}" STYLE_REF="latex" ID="ID_441008452" CREATED="1500041100005" MODIFIED="1500042680526" MOVED="1500041186062"/>
+</node>
+<node TEXT="" ID="ID_366206164" CREATED="1500041401029" MODIFIED="1500041401029"/>
+<node TEXT="The following listings show the code generated by the script. \autoref{figure:lib-proxies} shows how the generated code interacts with the SDK and C library." ID="ID_774243892" CREATED="1500041183061" MODIFIED="1500043903702" MOVED="1500043865106"/>
+<node TEXT="\input{content/tikz/lib-proxies}" STYLE_REF="latex" FOLDED="true" ID="ID_811027800" CREATED="1500043496508" MODIFIED="1500043637389" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/thesis/content/tikz/lib-proxies.tex" MOVED="1500043860067">
+<attribute NAME="image" VALUE=""/>
+<attribute NAME="label" VALUE="figure:lib-proxies" OBJECT="java.net.URI|figure:lib-proxies"/>
+<node TEXT="\textbf{Interaction of proxies generated by Intel&apos;s SDK and the helper library.}" ID="ID_1914549896" CREATED="1500043525421" MODIFIED="1500043559949"/>
+<node TEXT="The SDK proxies deal with parameter handling. Depending on the EDL definition, parameters are checked and copied back and forth." ID="ID_331655439" CREATED="1500043560429" MODIFIED="1500043601261"/>
+<node TEXT="The library proxy only delegates to the C library." ID="ID_1047121255" CREATED="1500043601933" MODIFIED="1500043630678"/>
+</node>
+<node TEXT="\lstinputlisting[label=listing:lib-edl,caption={" STYLE_REF="latex" FOLDED="true" ID="ID_1310113428" CREATED="1500030878828" MODIFIED="1500032457308" MOVED="1500041398285">
+<node TEXT="\textbf{sgx\_{}lib.edl}" ID="ID_1403293956" CREATED="1500031563957" MODIFIED="1500032470972" MOVED="1500031565154"/>
+<node TEXT="The EDL interface definition is extended with the O-call." ID="ID_271766819" CREATED="1500042263053" MODIFIED="1500042277662"/>
+<node TEXT="This does not affect the enclave entry table, as this only controls the allowed E-calls." ID="ID_1356327165" CREATED="1500042277902" MODIFIED="1500042310045"/>
+<node TEXT="},firstnumber=46,linerange={46-47},style=cpp,autodedent]{../sgx-lib/sgx_lib_t/sgx_lib.edl}" ID="ID_1536712624" CREATED="1500031423309" MODIFIED="1500041553669"/>
+</node>
+<node TEXT="\lstinputlisting[label=listing:t-stdio,caption={" STYLE_REF="latex" FOLDED="true" ID="ID_131723340" CREATED="1500030878828" MODIFIED="1500032294238" MOVED="1500041398288">
+<node TEXT="\textbf{sgx\_{}lib\_{}t\_{}stdio.h}" ID="ID_188697395" CREATED="1500031563957" MODIFIED="1500032286959" MOVED="1500031565154"/>
+<node TEXT="The trusted header file is modified to include the proxy function&apos;s signature." ID="ID_1928208466" CREATED="1500042312100" MODIFIED="1500042355405"/>
+<node TEXT="},firstnumber=41,linerange={41-42},style=cpp]{../sgx-lib/sgx_lib_t/include/sgx_lib_t_stdio.h}" ID="ID_1829796801" CREATED="1500031423309" MODIFIED="1500032978250"/>
+</node>
+<node TEXT="\lstinputlisting[label=listing:t-stdio-c2,caption={" STYLE_REF="latex" FOLDED="true" ID="ID_981814224" CREATED="1500030878828" MODIFIED="1500032651637" MOVED="1500041398291">
+<node TEXT="\textbf{sgx\_{}lib\_{}t\_{}stdio.c}" ID="ID_472958" CREATED="1500031563957" MODIFIED="1500032578710" MOVED="1500031565154"/>
+<node TEXT="The trusted proxy implementation. It performs the O-call, and checks the return value." ID="ID_1583369182" CREATED="1500042357133" MODIFIED="1500042457055"/>
+<node TEXT="If an error is encountered, a meaningful error description is printed (this may be transparently encrypted or sealed)." ID="ID_1625059582" CREATED="1500042457405" MODIFIED="1500042482303" MOVED="1500042487793"/>
+<node TEXT="},firstnumber=190,linerange={190-195},style=cpp]{../sgx-lib/sgx_lib_t/sgx_lib_t_stdio.c}" ID="ID_986440387" CREATED="1500031423309" MODIFIED="1500034153821"/>
+</node>
+<node TEXT="\lstinputlisting[label=listing:u-stdio-c,caption={" STYLE_REF="latex" FOLDED="true" ID="ID_1502285851" CREATED="1500030878828" MODIFIED="1500032757616" MOVED="1500041398301">
+<node TEXT="\textbf{sgx\_{}lib\_{}u\_{}stdio.c}" ID="ID_1550359463" CREATED="1500031563957" MODIFIED="1500032762975" MOVED="1500031565154"/>
+<node TEXT="The untrusted proxy implementation. This simply delegates to the C library implementation." ID="ID_423213693" CREATED="1500042490117" MODIFIED="1500042513861"/>
+<node TEXT="},firstnumber=35,linerange={35-38},style=cpp]{../sgx-lib/sgx_lib_u/sgx_lib_u_ocalls_stdio.c}" ID="ID_1509333371" CREATED="1500031423309" MODIFIED="1500032835942"/>
+</node>
+<node TEXT="" ID="ID_75773404" CREATED="1500041424508" MODIFIED="1500041424508"/>
+<node TEXT="The untrusted wrapper seems superfluous. Rather, the SDK could directly be linked to the C library implementation." ID="ID_547328155" CREATED="1500042520541" MODIFIED="1500042564327"/>
+<node TEXT="The SDK supports this feature by adding \Q{[cdecl, dllimport]} to the EDL file." ID="ID_1497646761" CREATED="1500034797922" MODIFIED="1500042620367" MOVED="1500041423242" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/SGX%20SDK%20Guide.pdf">
 <attribute NAME="key" VALUE="sgx-windows"/>
 <attribute NAME="title" VALUE="Intel SGX Evaluation SDK User&apos;s Guide for Windows OS"/>
 <attribute NAME="authors" VALUE="Intel"/>
@@ -7788,28 +7838,20 @@
     <pdf_title>Intel&#xae; Software Guard Extensions Evaluation SDK</pdf_title>
 </pdf_annotation>
 </node>
-<node TEXT="However, the generated stub in the enclave has a different signature in case the function has a return value. The generated signature of the trusted \Q{fopen} stub would look like this:" ID="ID_446408595" CREATED="1500034797922" MODIFIED="1500034814109" MOVED="1500035118791"/>
-<node TEXT="\Q{fopen(int* retVal, const char* filename, const char* mode);}" ID="ID_748874807" CREATED="1500034797922" MODIFIED="1500034839109" MOVED="1500035118799"/>
-<node TEXT="So to provide trusted functions with the original signature, one has to overload the functions in the enclave. This is not possible in C, so C++ has to be used. Pulling in a dependency on C++ is not a good trade off for saving three lines per O-call in this file." ID="ID_104777994" CREATED="1500034797922" MODIFIED="1500034988805" MOVED="1500035118811"/>
-<node TEXT="Rather, the O-calls are named \Q{*_ocall}, so no overloading is necessary, and the wrapper functions in this file then link the stubs against the actual DLL implementations." ID="ID_1394611332" CREATED="1500034797922" MODIFIED="1500035001630" MOVED="1500035118820"/>
-<node TEXT="\lstinputlisting[label=listing:lib-edl,caption={" STYLE_REF="latex" ID="ID_1310113428" CREATED="1500030878828" MODIFIED="1500032457308" MOVED="1500035118825">
-<node TEXT="\textbf{sgx\_{}lib.edl}" ID="ID_1403293956" CREATED="1500031563957" MODIFIED="1500032470972" MOVED="1500031565154"/>
-<node TEXT="},firstnumber=46,linerange={46-47},style=cpp,tabsize=4,autodedent]{../sgx-lib/sgx_lib_t/sgx_lib.edl}" ID="ID_1536712624" CREATED="1500031423309" MODIFIED="1500034314313"/>
+<node TEXT="However, the generated stub in the enclave has a different signature in case the function has a return value. The generated signature of the trusted \Q{fopen} stub would look like this:" ID="ID_446408595" CREATED="1500034797922" MODIFIED="1500034814109" MOVED="1500041423251"/>
+<node TEXT="\begin{lstlisting}[style=cpp, numbers=none]&#xa;fopen(int* retVal, const char* filename, const char* mode);&#xa;\end{lstlisting}" STYLE_REF="latex" ID="ID_1547399443" CREATED="1500042649045" MODIFIED="1500043695120"/>
+<node TEXT="To provide trusted functions with the original signature, one has to overload the functions in the enclave. This is not possible in C. The library is written in C to facilitate usage in both C and C++ projects." ID="ID_104777994" CREATED="1500034797922" MODIFIED="1500042821902" MOVED="1500041423267"/>
+<node TEXT="As a workaround the O-calls are appended with a \Q{_ocall} suffix. No overloading is thus necessary. Instead, a untrusted proxy implementation is generated which delegates to the C library implementation." ID="ID_1394611332" CREATED="1500034797922" MODIFIED="1500042921951" MOVED="1500041423286"/>
 </node>
-<node TEXT="\lstinputlisting[label=listing:t-stdio,caption={" STYLE_REF="latex" ID="ID_131723340" CREATED="1500030878828" MODIFIED="1500032294238" MOVED="1500035118830">
-<node TEXT="\textbf{sgx\_{}lib\_{}t\_{}stdio.h}" ID="ID_188697395" CREATED="1500031563957" MODIFIED="1500032286959" MOVED="1500031565154"/>
-<node TEXT="},firstnumber=41,linerange={41-42},style=cpp]{../sgx-lib/sgx_lib_t/include/sgx_lib_t_stdio.h}" ID="ID_1829796801" CREATED="1500031423309" MODIFIED="1500032978250"/>
+<node TEXT="\item[Translate error codes to messages:]" ID="ID_1725641591" CREATED="1500035120925" MODIFIED="1500035146165">
+<node TEXT="A variety of error codes is defined for SGX\footnote{\url{https://software.intel.com/en-us/node/709252}}." ID="ID_1308659811" CREATED="1500043980188" MODIFIED="1500044009756"/>
+<node TEXT="Many SDK functions and the generated proxies can return these error codes." ID="ID_383627344" CREATED="1500044011278" MODIFIED="1500044028639"/>
+<node TEXT="Manually looking up their meaning is time-consuming." ID="ID_1960603292" CREATED="1500044029533" MODIFIED="1500044050429"/>
+<node TEXT="" ID="ID_1142808017" CREATED="1500044050604" MODIFIED="1500044050604"/>
+<node TEXT="The library contains a trusted\footnote{\url{https://github.com/ftes/sgx-lib/blob/thesis/sgx_lib_t/sgx_lib_t_util.c\#L10}} and untrusted\footnote{\url{https://github.com/ftes/sgx-lib/blob/thesis/sgx_lib_u/sgx_lib_u_util.c\#L8}} utility function to check the return value." ID="ID_104103671" CREATED="1500044051740" MODIFIED="1500044379365"/>
+<node TEXT="The descriptions have been scraped from the Intel SDK&apos;s \Q{sgx_error.h}\footnote{The version included in the Windows SDK is probably identical to the Linux version: \url{https://github.com/01org/linux-sgx/blob/sgx_1.9/common/inc/sgx_error.h}} file." ID="ID_1860489535" CREATED="1500044138958" MODIFIED="1500044278870"/>
+<node TEXT="The scraping script is included as part of the library.\footnote{\url{https://github.com/ftes/sgx-lib/blob/thesis/sgx_lib_t/generate_error_codes.sh}}" ID="ID_163886822" CREATED="1500044283654" MODIFIED="1500044317365"/>
 </node>
-<node TEXT="\lstinputlisting[label=listing:t-stdio-c2,caption={" STYLE_REF="latex" ID="ID_981814224" CREATED="1500030878828" MODIFIED="1500032651637" MOVED="1500035118835">
-<node TEXT="\textbf{sgx\_{}lib\_{}t\_{}stdio.c}" ID="ID_472958" CREATED="1500031563957" MODIFIED="1500032578710" MOVED="1500031565154"/>
-<node TEXT="},firstnumber=190,linerange={190-195},style=cpp]{../sgx-lib/sgx_lib_t/sgx_lib_t_stdio.c}" ID="ID_986440387" CREATED="1500031423309" MODIFIED="1500034153821"/>
-</node>
-<node TEXT="\lstinputlisting[label=listing:u-stdio-c,caption={" STYLE_REF="latex" ID="ID_1502285851" CREATED="1500030878828" MODIFIED="1500032757616" MOVED="1500035118840">
-<node TEXT="\textbf{sgx\_{}lib\_{}u\_{}stdio.c}" ID="ID_1550359463" CREATED="1500031563957" MODIFIED="1500032762975" MOVED="1500031565154"/>
-<node TEXT="},firstnumber=35,linerange={35-38},style=cpp]{../sgx-lib/sgx_lib_u/sgx_lib_u_ocalls_stdio.c}" ID="ID_1509333371" CREATED="1500031423309" MODIFIED="1500032835942"/>
-</node>
-</node>
-<node TEXT="\item[Translate error codes to messages:]" ID="ID_1725641591" CREATED="1500035120925" MODIFIED="1500035146165"/>
 <node TEXT="\item[Transparently encrypt or seal input/output:]" ID="ID_311895693" CREATED="1500035147564" MODIFIED="1500035176669"/>
 <node TEXT="\end{description}" ID="ID_354449538" CREATED="1500035125628" MODIFIED="1500035129845"/>
 </node>
