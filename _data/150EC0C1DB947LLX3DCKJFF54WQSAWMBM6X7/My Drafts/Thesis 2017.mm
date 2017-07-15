@@ -7754,10 +7754,14 @@
 </node>
 </node>
 </node>
-<node TEXT="Intel SGX Helper Library" POSITION="left" ID="ID_985966487" CREATED="1499849260039" MODIFIED="1499951860673">
+<node TEXT="Intel SGX Helper Library" FOLDED="true" POSITION="left" ID="ID_985966487" CREATED="1499849260039" MODIFIED="1499951860673">
 <edge COLOR="#7c7c00"/>
 <attribute NAME="label" VALUE="chapter:sgx-lib" OBJECT="java.net.URI|chapter:sgx-lib"/>
-<node TEXT="Introduction" STYLE_REF="paragraphs_drop_self" FOLDED="true" ID="ID_330418409" CREATED="1499949613579" MODIFIED="1500035728828">
+<node TEXT="mindmap" STYLE_REF="drop" FOLDED="true" ID="ID_449150039" CREATED="1499949964250" MODIFIED="1499949974134" MOVED="1500110088684">
+<node TEXT="two modules: untrusted and trusted" ID="ID_1280487602" CREATED="1499949975627" MODIFIED="1499949982986"/>
+<node TEXT="scripts for generating libc proxies (option b) of SCONE shim libc)" ID="ID_1057550675" CREATED="1499949983162" MODIFIED="1499950019451"/>
+</node>
+<node TEXT="Content" STYLE_REF="paragraphs_drop_self" FOLDED="true" ID="ID_330418409" CREATED="1499949613579" MODIFIED="1500110068590">
 <icon BUILTIN="button_ok"/>
 <node TEXT="The case studies conducted for this thesis use the Intel SGX SDK for Windows.\footnote{At implementation time (first half of 2016), the Linux SDK was not yet available.}" ID="ID_1132198097" CREATED="1500035247294" MODIFIED="1500035318215" MOVED="1500035247751"/>
 <node TEXT="To make prototyping faster and easier, a helper library wrapping the SDK was developed alongside the case studies." ID="ID_111937508" CREATED="1500035319885" MODIFIED="1500035363660"/>
@@ -7770,21 +7774,14 @@
 <node TEXT="The Git tag \Q{thesis} in these repositories marks the commit from which the code listings in this thesis are taken." ID="ID_1811245411" CREATED="1500035513444" MODIFIED="1500035716479"/>
 <node TEXT="" ID="ID_1126285530" CREATED="1500036745668" MODIFIED="1500036745668"/>
 <node TEXT="No SGX hardware was available at the time of implementation. The library is only usable for simulation mode. It can not be used in production-ready enclaves." ID="ID_1484453818" CREATED="1500036746404" MODIFIED="1500040116160"/>
-</node>
-<node TEXT="Concept" FOLDED="true" ID="ID_244065427" CREATED="1499949714113" MODIFIED="1500105526659">
-<icon BUILTIN="button_ok"/>
-<node TEXT="mindmap" STYLE_REF="drop" FOLDED="true" ID="ID_449150039" CREATED="1499949964250" MODIFIED="1499949974134" MOVED="1499949967033">
-<node TEXT="two modules: untrusted and trusted" ID="ID_1280487602" CREATED="1499949975627" MODIFIED="1499949982986"/>
-<node TEXT="scripts for generating libc proxies (option b) of SCONE shim libc)" ID="ID_1057550675" CREATED="1499949983162" MODIFIED="1499950019451"/>
-</node>
-<node TEXT="Content" STYLE_REF="paragraphs_drop_self" FOLDED="true" ID="ID_49903427" CREATED="1499949942114" MODIFIED="1499949947326">
-<node TEXT="The library is split into a trusted and untrusted module." ID="ID_1011030349" CREATED="1500040619229" MODIFIED="1500099758297" MOVED="1500040619936"/>
-<node TEXT="The consumer can include the header files and link against these library modules." ID="ID_1462993309" CREATED="1500040653957" MODIFIED="1500040738117"/>
-<node TEXT="Also, the consumer must include the library&apos;s EDL file in his." ID="ID_1600152309" CREATED="1500040738204" MODIFIED="1500099770506"/>
-<node TEXT="" ID="ID_1936892991" CREATED="1500040752485" MODIFIED="1500040752485"/>
-<node TEXT="The library tries to help with four aspects of enclave development:" ID="ID_1627717648" CREATED="1500040753349" MODIFIED="1500101409106"/>
-<node TEXT="\begin{description}" ID="ID_1696400236" CREATED="1500035101004" MODIFIED="1500035104789"/>
-<node TEXT="\item[Generate O-call proxies:]" FOLDED="true" ID="ID_1577901159" CREATED="1500034785500" MODIFIED="1500035115669" MOVED="1500035105518">
+<node TEXT="" ID="ID_1306390548" CREATED="1500110025168" MODIFIED="1500110025168"/>
+<node TEXT="The library is split into a trusted and untrusted module." ID="ID_1011030349" CREATED="1500040619229" MODIFIED="1500099758297" MOVED="1500110023380"/>
+<node TEXT="The consumer can include the header files and link against these library modules." ID="ID_1462993309" CREATED="1500040653957" MODIFIED="1500040738117" MOVED="1500110023391"/>
+<node TEXT="Also, the consumer must include the library&apos;s EDL file in his." ID="ID_1600152309" CREATED="1500040738204" MODIFIED="1500099770506" MOVED="1500110023399"/>
+<node TEXT="" ID="ID_1936892991" CREATED="1500040752485" MODIFIED="1500040752485" MOVED="1500110023406"/>
+<node TEXT="The library tries to help with four aspects of enclave development:" ID="ID_1627717648" CREATED="1500040753349" MODIFIED="1500101409106" MOVED="1500110023413"/>
+<node TEXT="\begin{description}" FOLDED="true" ID="ID_1696400236" CREATED="1500035101004" MODIFIED="1500035104789" MOVED="1500110023417">
+<node TEXT="\item[Generate O-call proxies:]" FOLDED="true" ID="ID_1577901159" CREATED="1500034785500" MODIFIED="1500035115669" MOVED="1500110054453">
 <node TEXT="This is necessary if the C library lives outside of the enclave. Then a shim is needed inside the enclave to proxy calls to the outside (see \autoref{figure:scone-interface})." ID="ID_1843451651" CREATED="1500040800781" MODIFIED="1500099801196"/>
 <node TEXT="Defining these proxies involves touching several files and repeatedly inserting a similar method signature." ID="ID_1189822781" CREATED="1500040875197" MODIFIED="1500040938263"/>
 <node TEXT="The \Q{add_ocall.sh} script speeds up this process." ID="ID_1596596706" CREATED="1500040938365" MODIFIED="1500099819907"/>
@@ -7845,7 +7842,7 @@
 <node TEXT="To provide trusted functions with the original signature, one has to overload the functions in the enclave. This is not possible in C. The library is written in C to facilitate usage in both C and C++ projects." ID="ID_104777994" CREATED="1500034797922" MODIFIED="1500042821902" MOVED="1500041423267"/>
 <node TEXT="As a workaround the O-calls are appended with a \Q{_ocall} suffix. No overloading is thus necessary. Instead, a untrusted proxy implementation is generated which delegates to the C library implementation." ID="ID_1394611332" CREATED="1500034797922" MODIFIED="1500042921951" MOVED="1500041423286"/>
 </node>
-<node TEXT="\item[Translate error codes to messages:]" FOLDED="true" ID="ID_1725641591" CREATED="1500035120925" MODIFIED="1500035146165">
+<node TEXT="\item[Translate error codes to messages:]" FOLDED="true" ID="ID_1725641591" CREATED="1500035120925" MODIFIED="1500035146165" MOVED="1500110054458">
 <node TEXT="A variety of error codes is defined for SGX\footnote{\url{https://software.intel.com/en-us/node/709252}}." ID="ID_1308659811" CREATED="1500043980188" MODIFIED="1500044009756"/>
 <node TEXT="Many SDK functions and the generated proxies can return these error codes." ID="ID_383627344" CREATED="1500044011278" MODIFIED="1500044028639"/>
 <node TEXT="Manually looking up their meaning is time-consuming." ID="ID_1960603292" CREATED="1500044029533" MODIFIED="1500044050429"/>
@@ -7854,7 +7851,7 @@
 <node TEXT="The descriptions are scraped from the Intel SDK&apos;s \Q{sgx_error.h}\footnote{The version included in the Windows SDK is probably identical to the Linux version: \url{https://github.com/01org/linux-sgx/blob/sgx_1.9/common/inc/sgx_error.h}} file." ID="ID_1860489535" CREATED="1500044138958" MODIFIED="1500100854241"/>
 <node TEXT="The scraping script is included as part of the library. It has to be re-executed in case the error codes or messages change. For usage details, see \autoref{table:sgx-lib}." ID="ID_163886822" CREATED="1500044283654" MODIFIED="1500100914810"/>
 </node>
-<node TEXT="\item[Developer-friendly data sealing:]" FOLDED="true" ID="ID_1982795261" CREATED="1500101360792" MODIFIED="1500101380369">
+<node TEXT="\item[Developer-friendly encryption:]" FOLDED="true" ID="ID_1982795261" CREATED="1500101360792" MODIFIED="1500109464912" MOVED="1500110054462">
 <node TEXT="The SDK includes a cryptography library." ID="ID_66289720" CREATED="1500101414505" MODIFIED="1500103379112"/>
 <node TEXT="It can also seal data to an enclave&apos;s identity (see \autoref{section:tc})." ID="ID_1914463209" CREATED="1500101433657" MODIFIED="1500103444151"/>
 <node TEXT="However, some of the SDK&apos;s cryptography functions are cumbersome to use." ID="ID_1318478695" CREATED="1500101472784" MODIFIED="1500103417986"/>
@@ -7888,13 +7885,12 @@
 <node TEXT="The IV is added to the encrypted output." ID="ID_874781129" CREATED="1500102995660" MODIFIED="1500103021674"/>
 <node TEXT="The \Q{decrypt} function does the opposite: It reads the nonce from the beginning of the input data and uses it to decrypt the data." ID="ID_517725294" CREATED="1500101972511" MODIFIED="1500103052300"/>
 </node>
-<node TEXT="\item[Transparently encrypt or seal input/output:]" FOLDED="true" ID="ID_311895693" CREATED="1500035147564" MODIFIED="1500035176669">
-<node TEXT="During development, insecure I/O operations can be used. These allow data to leave the enclave as plain text. When including legacy code, this allows legacy compatible behaviour, without security guarantees." ID="ID_804172700" CREATED="1499949841624" MODIFIED="1499949889770"/>
-<node TEXT="as the underlying encryption primitive. (1) is the default, (2) is enabled by setting the \Q{SGX_SECURE_IO_OPERATIONS_KEY} macro." ID="ID_1297711228" CREATED="1499950110807" MODIFIED="1500025116252"/>
-<node TEXT="(2) requires a symmetric encryption key, which can be set using \Q{set_secure_io_key()}. This key is used to en/decrypt all subsequent I/O operations, until it is overwritten by another call to \Q{set_secure_io_key()}." ID="ID_1633052736" CREATED="1499950110807" MODIFIED="1500025110541"/>
+<node TEXT="\item[Transparently encrypt input/output:]" FOLDED="true" ID="ID_311895693" CREATED="1500035147564" MODIFIED="1500109474443" MOVED="1500110054466">
 <node TEXT="The concept of transparent de- and encryption of input/output data is used in related work." ID="ID_778969112" CREATED="1500104619333" MODIFIED="1500104665447"/>
 <node TEXT="This protects data operated on by legacy code without any code modifications." ID="ID_611240197" CREATED="1500104801242" MODIFIED="1500104870941"/>
 <node TEXT="The library supports this concept by intercepting calls to the C library for file input/output." ID="ID_941785830" CREATED="1500104665559" MODIFIED="1500104889398"/>
+<node TEXT="Replay protection is \textit{not} added. The enclave will not notice whether the most recent or an older value is provided." ID="ID_966291793" CREATED="1500109919477" MODIFIED="1500109978405"/>
+<node TEXT="" ID="ID_294891349" CREATED="1500109917495" MODIFIED="1500109917495"/>
 <node TEXT="The developer can choose the desired security level at compile time using macros:" ID="ID_285147481" CREATED="1500104743537" MODIFIED="1500104764106"/>
 <node TEXT="\begin{itemize}" ID="ID_568616326" CREATED="1500104776553" MODIFIED="1500104784560">
 <node TEXT="\item No security. Useful during development, file input/output happens in plain text." ID="ID_108413610" CREATED="1500104788129" MODIFIED="1500105169026" MOVED="1500105171419"/>
@@ -7909,32 +7905,9 @@
 <node TEXT="},firstnumber=27,linerange={27-39},style=cpp]{../sgx-lib/sgx_lib_t/include/sgx_lib_t_stdio.h}" ID="ID_1188639684" CREATED="1500031423309" MODIFIED="1500032992848"/>
 </node>
 </node>
-<node TEXT="\end{description}" ID="ID_354449538" CREATED="1500035125628" MODIFIED="1500035129845"/>
+<node TEXT="\end{description}" ID="ID_354449538" CREATED="1500035125628" MODIFIED="1500035129845" MOVED="1500110054473"/>
 </node>
-</node>
-<node TEXT="Usage" FOLDED="true" ID="ID_354717207" CREATED="1499949722794" MODIFIED="1500019896891">
-<icon BUILTIN="button_cancel"/>
-<node TEXT="Content" STYLE_REF="paragraphs_drop_self" ID="ID_633298057" CREATED="1499949949058" MODIFIED="1499949954703">
-<node TEXT="table: library interface (macros, functions, scripts)" ID="ID_370687101" CREATED="1499950176434" MODIFIED="1499950193594" MOVED="1499950194138"/>
-<node TEXT="Details on \url{https://github.com/ftes/sgx-lib}" ID="ID_1315454188" CREATED="1499949745434" MODIFIED="1499949751210" MOVED="1499949959211"/>
-<node TEXT="import untrusted/trusted module" ID="ID_776233953" CREATED="1499951047243" MODIFIED="1499951053658"/>
-<node TEXT="reference library edl" ID="ID_1717158325" CREATED="1499951053882" MODIFIED="1499951059994"/>
-<node TEXT="Configuration" ID="ID_510746497" CREATED="1499949755249" MODIFIED="1499949758843" MOVED="1499949959221"/>
-<node TEXT="\begin{description}" ID="ID_1077418022" CREATED="1499949816195" MODIFIED="1499949819474" MOVED="1499949959234"/>
-<node TEXT="\item[Insecure input/output operations:]" FOLDED="true" ID="ID_1293763359" CREATED="1499949759458" MODIFIED="1499949846773" MOVED="1499949959245">
-<node TEXT=" set macro \Q{SGX_INSECURE_IO_OPERATIONS}" ID="ID_334271564" CREATED="1499949848739" MODIFIED="1500025121847" MOVED="1499949849934"/>
-<node TEXT="During development, insecure I/O operations can be used. These allow data to leave the enclave as plain text. When including legacy code, this allows legacy compatible behaviour, without security guarantees." ID="ID_335007542" CREATED="1499949841624" MODIFIED="1499949889770"/>
-<node TEXT="Without this macro, writes and reads to standard and file streams are sealed (or encrypted). Replay protection IS NOT added." ID="ID_97073736" CREATED="1499949841624" MODIFIED="1499949841624"/>
-</node>
-<node TEXT="\item[Secure input/output operations:]" FOLDED="true" ID="ID_1000977304" CREATED="1499950097505" MODIFIED="1499950110194">
-<node TEXT="Use either" ID="ID_456618846" CREATED="1499950110806" MODIFIED="1499950110806"/>
-<node TEXT="seal/unseal or" ID="ID_1781779015" CREATED="1499950110806" MODIFIED="1499950110806"/>
-<node TEXT="encrypt/decrypt" ID="ID_831118545" CREATED="1499950110807" MODIFIED="1499950110807"/>
-<node TEXT="as the underlying encryption primitive. (1) is the default, (2) is enabled by setting the \Q{SGX_SECURE_IO_OPERATIONS_KEY} macro." ID="ID_20929376" CREATED="1499950110807" MODIFIED="1500025116252"/>
-<node TEXT="(2) requires a symmetric encryption key, which can be set using \Q{set_secure_io_key()}. This key is used to en/decrypt all subsequent I/O operations, until it is overwritten by another call to \Q{set_secure_io_key()}." ID="ID_724561196" CREATED="1499950110807" MODIFIED="1500025110541"/>
-</node>
-<node TEXT="\end{description}" ID="ID_817985606" CREATED="1499949804810" MODIFIED="1499949825066" MOVED="1499949959252"/>
-<node TEXT="\begin{table}" STYLE_REF="latex" ID="ID_1739061813" CREATED="1499345864257" MODIFIED="1500039116750" MOVED="1499359331393">
+<node TEXT="\begin{table}" STYLE_REF="latex" FOLDED="true" ID="ID_1739061813" CREATED="1499345864257" MODIFIED="1500039116750" MOVED="1500110047750">
 <node TEXT="\centering" STYLE_REF="latex" ID="ID_1384618384" CREATED="1499420357862" MODIFIED="1499420383480" MOVED="1499951149640"/>
 <node TEXT="\begin{threeparttable}" STYLE_REF="latex" ID="ID_79838713" CREATED="1499435698429" MODIFIED="1499437814685" MOVED="1500038415567"/>
 <node TEXT="\input{content/tables/sgx-lib}" STYLE_REF="latex" ID="ID_34618265" CREATED="1499264498353" MODIFIED="1500019915075" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/thesis/content/tables/sgx-lib.tex" MOVED="1499951149670"/>
@@ -7962,104 +7935,29 @@
 <node TEXT="\end{threeparttable}" STYLE_REF="latex" ID="ID_755181616" CREATED="1499435707613" MODIFIED="1499437814680" MOVED="1500038420240"/>
 <node TEXT="\end{table}" STYLE_REF="latex" ID="ID_463161887" CREATED="1499345867505" MODIFIED="1500038970239" MOVED="1499951149697"/>
 </node>
-<node TEXT="\lstinputlisting[label=listing:t-debug,caption={" STYLE_REF="latex" ID="ID_157392729" CREATED="1500030878828" MODIFIED="1500032247686" MOVED="1500032230230">
-<node TEXT="\textbf{sgx\_{}lib\_{}t\_{}debug.h}" ID="ID_149945808" CREATED="1500031563957" MODIFIED="1500032252313" MOVED="1500031565154"/>
-<node TEXT="},firstnumber=4,linerange={4-5},style=cpp]{../sgx-lib/sgx_lib_t/include/sgx_lib_t_debug.h}" ID="ID_1804746573" CREATED="1500031423309" MODIFIED="1500032267455"/>
-</node>
-<node TEXT="\lstinputlisting[label=listing:t-util,caption={" STYLE_REF="latex" FOLDED="true" ID="ID_527957658" CREATED="1500030878828" MODIFIED="1500032344846" MOVED="1500032338010">
-<node TEXT="\textbf{sgx\_{}lib\_{}t\_{}util.h}" ID="ID_1400206433" CREATED="1500031563957" MODIFIED="1500032349560" MOVED="1500031565154"/>
-<node TEXT="},firstnumber=8,linerange={8-9},style=cpp]{../sgx-lib/sgx_lib_t/include/sgx_lib_t_util.h}" ID="ID_818152581" CREATED="1500031423309" MODIFIED="1500032363373"/>
-</node>
-<node TEXT="\lstinputlisting[label=listing:u-util,caption={" STYLE_REF="latex" FOLDED="true" ID="ID_565949091" CREATED="1500030878828" MODIFIED="1500032694356" MOVED="1500032687837">
-<node TEXT="\textbf{sgx\_{}lib\_{}u\_{}util.h}" ID="ID_1204492670" CREATED="1500031563957" MODIFIED="1500032702455" MOVED="1500031565154"/>
-<node TEXT="},firstnumber=6,linerange={6-9},style=cpp]{../sgx-lib/sgx_lib_u/include/sgx_lib_u_util.h}" ID="ID_82292065" CREATED="1500031423309" MODIFIED="1500032724377"/>
-</node>
-</node>
 </node>
 </node>
 <node TEXT="KissDB Case Study" LOCALIZED_STYLE_REF="default" POSITION="left" ID="ID_1828467557" CREATED="1487266728477" MODIFIED="1500019870140" MOVED="1499849267642">
 <attribute NAME="label" VALUE="chapter:kissdb" OBJECT="java.net.URI|chapter:kissdb"/>
 <edge COLOR="#ff0000"/>
-<node TEXT="Introduction" STYLE_REF="paragraphs_drop_self" FOLDED="true" ID="ID_1929202403" CREATED="1499849307743" MODIFIED="1499951840090">
+<node TEXT="Introduction" STYLE_REF="paragraphs_drop_self" ID="ID_1929202403" CREATED="1499849307743" MODIFIED="1500110694650">
+<icon BUILTIN="button_ok"/>
+<node TEXT="Two case studies were conducted to validate the gathered knowledge." ID="ID_1310178450" CREATED="1500110195769" MODIFIED="1500110243589"/>
+<node TEXT="The goal of both case studies is to harden an existing DBMS." ID="ID_314202562" CREATED="1500110228576" MODIFIED="1500110279594"/>
+<node TEXT="Database software is chosen because it is a good example application for trusted computing." ID="ID_23142153" CREATED="1500110285497" MODIFIED="1500110310385"/>
+<node TEXT="The data may be sensitive and require protection from the infrastructure provider and other tenants." ID="ID_113918458" CREATED="1500110310522" MODIFIED="1500110708221"/>
+<node TEXT="" ID="ID_192402860" CREATED="1500110425918" MODIFIED="1500110425918"/>
+<node TEXT="The first case study examines KissDB, the ``simplest key/value store you&apos;ll ever see, anywhere. It&apos;s written in plain vanilla C using only the standard string and FILE [input/output] functions.&apos;&apos;\footnote{\url{https://github.com/adamierymenko/kissdb}}." ID="ID_1142678733" CREATED="1500110436337" MODIFIED="1500110522615"/>
+<node TEXT="Intel SGX is used to protect the data KissDB operates on.\footnote{\url{https://github.com/ftes/kissdb-sgx}}." ID="ID_928802586" CREATED="1500110544317" MODIFIED="1500110626251"/>
+<node TEXT="The case study does not deal with attestation and secure communication channels. File integrity and freshness (replay attacks) are also out of scope." ID="ID_1642397570" CREATED="1500110794537" MODIFIED="1500110911031"/>
+<node TEXT="The focus is on which part of KissDB can be extracted, and transparently securing it with the helper libraries encryption/sealing features." ID="ID_80110359" CREATED="1500110805544" MODIFIED="1500110845115"/>
+</node>
+<node TEXT="Design" LOCALIZED_STYLE_REF="default" ID="ID_579142082" CREATED="1495056350447" MODIFIED="1499951608186">
 <icon BUILTIN="button_cancel"/>
-<node TEXT="KissDB\footnote{\url{https://github.com/adamierymenko/kissdb}}" ID="ID_1418888567" CREATED="1499951779979" MODIFIED="1499951790338"/>
-<node TEXT="Fork with SGX\footnote{\url{https://github.com/ftes/kissdb-sgx}}" ID="ID_888329016" CREATED="1499951985866" MODIFIED="1499951995946"/>
-<node TEXT="why databases" FOLDED="true" ID="ID_650366938" CREATED="1499849316263" MODIFIED="1499849318616" MOVED="1499951771496">
-<node TEXT="hosted database" ID="ID_5357256" CREATED="1488874863376" MODIFIED="1488874867748" MOVED="1499849322127"/>
-<node TEXT="semi-trusted provider" ID="ID_1114771820" CREATED="1488874873016" MODIFIED="1488874885798" MOVED="1499849322130"/>
-<node TEXT="perform processing on encrypted data" ID="ID_1161943438" CREATED="1488874868149" MODIFIED="1488874872782" MOVED="1499849322135"/>
-<node TEXT="receive encrypted results" ID="ID_1261663640" CREATED="1488874893127" MODIFIED="1488874900788" MOVED="1499849322139"/>
-<node TEXT="protect against" FOLDED="true" ID="ID_876285329" CREATED="1488874903586" MODIFIED="1488874911580" MOVED="1499849322144">
-<node TEXT="provider" ID="ID_781556091" CREATED="1488874912722" MODIFIED="1488874914759"/>
-<node TEXT="other tenants" ID="ID_1576382623" CREATED="1488874916121" MODIFIED="1488874919278"/>
-</node>
-</node>
-</node>
-<node TEXT="Security Objectives" LOCALIZED_STYLE_REF="default" FOLDED="true" ID="ID_446058686" CREATED="1489652109451" MODIFIED="1495606029119" MOVED="1495056347122">
-<icon BUILTIN="button_cancel"/>
-<node TEXT="mindmap" STYLE_REF="drop" FOLDED="true" ID="ID_1314275276" CREATED="1495543887981" MODIFIED="1495543899209" MOVED="1495543900065">
-<node TEXT="security objectives" LOCALIZED_STYLE_REF="default" FOLDED="true" ID="ID_115580989" CREATED="1488545084926" MODIFIED="1495606080352" MOVED="1499951825054">
-<node TEXT="Objectives and Adversary Model" ID="ID_1312675659" CREATED="1488545402858" MODIFIED="1488545402858" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/Securing%20Applications%20with%20Software%20Partitioning.pdf" MOVED="1488545539842">
-<pdf_annotation type="HIGHLIGHTED_TEXT" page="6" object_id="142472831318188421" object_number="36" document_hash="A3B1CC8671AEAC66B477274258B280C4FF61D5CE5FFFF2874DC5872C475">
-    <pdf_title>{}</pdf_title>
-</pdf_annotation>
-<attribute NAME="year" VALUE="2015"/>
-<attribute NAME="title" VALUE="Securing application with software partitioning: A case study using SGX"/>
-<attribute NAME="authors" VALUE="Atamli-Reineh, Ahmad and Martin, Andrew"/>
-<attribute NAME="key" VALUE="atamli2015securing"/>
-</node>
-<node TEXT="confidentiality" ID="ID_1081960094" CREATED="1488545099126" MODIFIED="1488545102423"/>
-<node TEXT="even in the presence of malware (e.g. untrustworthy OS)" ID="ID_794399223" CREATED="1488545116079" MODIFIED="1488545127319"/>
-</node>
-<node TEXT="adversary model" LOCALIZED_STYLE_REF="default" FOLDED="true" ID="ID_985999619" CREATED="1488545051006" MODIFIED="1495606080357" MOVED="1499951825065">
-<node TEXT="Objectives and Adversary Model" ID="ID_208346330" CREATED="1488545402858" MODIFIED="1488545402858" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/Securing%20Applications%20with%20Software%20Partitioning.pdf" MOVED="1488545546163">
-<pdf_annotation type="HIGHLIGHTED_TEXT" page="6" object_id="142472831318188421" object_number="36" document_hash="A3B1CC8671AEAC66B477274258B280C4FF61D5CE5FFFF2874DC5872C475">
-    <pdf_title>{}</pdf_title>
-</pdf_annotation>
-<attribute NAME="year" VALUE="2015"/>
-<attribute NAME="title" VALUE="Securing application with software partitioning: A case study using SGX"/>
-<attribute NAME="authors" VALUE="Atamli-Reineh, Ahmad and Martin, Andrew"/>
-<attribute NAME="key" VALUE="atamli2015securing"/>
-</node>
-<node TEXT="insert malware" ID="ID_585696596" CREATED="1488545141311" MODIFIED="1488545143816"/>
-<node TEXT="read memory" ID="ID_1194593053" CREATED="1488545144223" MODIFIED="1488545147320"/>
-<node TEXT="manipulate OS" ID="ID_761094515" CREATED="1488545147791" MODIFIED="1488545151176"/>
-<node TEXT="out of scope" FOLDED="true" ID="ID_1496677269" CREATED="1488545156791" MODIFIED="1488545158704">
-<node TEXT="side channel attacks" ID="ID_1215650507" CREATED="1488545159175" MODIFIED="1488545161664"/>
-<node TEXT="denial of service" ID="ID_783633111" CREATED="1488545162087" MODIFIED="1488545164408"/>
-</node>
-<node TEXT="stronger than in Arx" FOLDED="true" ID="ID_195016856" CREATED="1488888992244" MODIFIED="1488889094327">
-<node TEXT="attacker is passive" FOLDED="true" ID="ID_1317984317" CREATED="1488889041243" MODIFIED="1488889041243" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/Arx%20Encrypted%20DB%20AES%20with%20Data%20Structures.pdf">
-<pdf_annotation type="HIGHLIGHTED_TEXT" page="2" object_id="7729308267929464412" object_number="108" document_hash="E52B36C24624762CD7DFB4D68443F795E958F109C3510646411D93EC2836CF7">
-    <pdf_title>Arx: A Strongly Encrypted Database System</pdf_title>
-</pdf_annotation>
-<attribute NAME="key" VALUE="Poddar2016"/>
-<attribute NAME="journal" VALUE="IACR Cryptology ePrint Archive"/>
-<attribute NAME="year" VALUE="2016"/>
-<attribute NAME="title" VALUE="Arx: A Strongly Encrypted Database System."/>
-<attribute NAME="authors" VALUE="Poddar, Rishabh and Boelter, Tobias and Popa, Raluca Ada"/>
-<node TEXT="snapshot and persistent attackers" ID="ID_237658045" CREATED="1488889041283" MODIFIED="1488889041283" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/Arx%20Encrypted%20DB%20AES%20with%20Data%20Structures.pdf" MOVED="1488889084104">
-<pdf_annotation type="HIGHLIGHTED_TEXT" page="4" object_id="3671978352330105713" object_number="303" document_hash="E52B36C24624762CD7DFB4D68443F795E958F109C3510646411D93EC2836CF7">
-    <pdf_title>Arx: A Strongly Encrypted Database System</pdf_title>
-</pdf_annotation>
-<attribute NAME="key" VALUE="Poddar2016"/>
-<attribute NAME="journal" VALUE="IACR Cryptology ePrint Archive"/>
-<attribute NAME="year" VALUE="2016"/>
-<attribute NAME="title" VALUE="Arx: A Strongly Encrypted Database System."/>
-<attribute NAME="authors" VALUE="Poddar, Rishabh and Boelter, Tobias and Popa, Raluca Ada"/>
-</node>
-</node>
-</node>
-</node>
-</node>
-<node TEXT="Content" STYLE_REF="paragraphs_drop_self" ID="ID_940339827" CREATED="1495543885991" MODIFIED="1495543895304"/>
-</node>
-<node TEXT="Design" LOCALIZED_STYLE_REF="default" FOLDED="true" ID="ID_579142082" CREATED="1495056350447" MODIFIED="1499951608186">
-<icon BUILTIN="button_cancel"/>
-<node TEXT="mindmap" STYLE_REF="drop" FOLDED="true" ID="ID_1634677217" CREATED="1495543887981" MODIFIED="1495543899209" MOVED="1495543900065">
+<node TEXT="mindmap" STYLE_REF="drop" ID="ID_1634677217" CREATED="1495543887981" MODIFIED="1495543899209" MOVED="1495543900065">
 <node TEXT="A better approach would be to minimize the size of the TCB, and execute only security critical functionality inside the enclave. This reduces the risk of a bug compromising the security of the entire application." ID="ID_1351250119" CREATED="1499951554703" MODIFIED="1499951554703"/>
 <node TEXT="enclave size (related work classification)" ID="ID_382443605" CREATED="1499948150585" MODIFIED="1499948158636" MOVED="1499951808959"/>
-<node TEXT="overview" FOLDED="true" ID="ID_1933513481" CREATED="1499951692586" MODIFIED="1499951694243" MOVED="1499951895648">
+<node TEXT="overview" ID="ID_1933513481" CREATED="1499951692586" MODIFIED="1499951694243" MOVED="1499951895648">
 <node TEXT="The database executes entirely inside an SGX enclave. Data is not written into a .db file in the clear, but encrypted." ID="ID_1407764625" CREATED="1499951529028" MODIFIED="1499951529028" MOVED="1499951696327"/>
 <node TEXT="one enclave corresponds to exactly one KISSDB instance" ID="ID_637880627" CREATED="1499951529028" MODIFIED="1499951529028" MOVED="1499951696330"/>
 <node TEXT="KISSDB_open creates a new enclave and loads (if present) the encrypted header data from an exisiting .db file into secure memory" ID="ID_347700984" CREATED="1499951529031" MODIFIED="1499951529031" MOVED="1499951696333"/>
@@ -8071,9 +7969,16 @@
 <node TEXT="non-sensitive data (header, hash tables) are stored in the .db file in the clear" ID="ID_1765352709" CREATED="1499951529040" MODIFIED="1499951529040" MOVED="1499951696351"/>
 </node>
 </node>
-<node TEXT="Content" STYLE_REF="paragraphs_drop_self" FOLDED="true" ID="ID_862119655" CREATED="1495543885991" MODIFIED="1495543895304">
+<node TEXT="Content" STYLE_REF="paragraphs_drop_self" ID="ID_862119655" CREATED="1495543885991" MODIFIED="1495543895304">
 <node TEXT="diagram: architecture" ID="ID_405858604" CREATED="1499951673235" MODIFIED="1499951683460"/>
 <node TEXT="diagram: file structure" ID="ID_382324889" CREATED="1499951683633" MODIFIED="1499951686994"/>
+<node TEXT="\input{content/tikz/kissdb}" STYLE_REF="latex" ID="ID_260850471" CREATED="1500043496508" MODIFIED="1500114089022" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/thesis/content/tikz/lib-proxies.tex" MOVED="1500043860067">
+<attribute NAME="image" VALUE=""/>
+<attribute NAME="label" VALUE="figure:kissdb" OBJECT="java.net.URI|figure:kissdb"/>
+<node TEXT="\textbf{Interaction of proxies generated by Intel&apos;s SDK and the helper library.}" ID="ID_260875598" CREATED="1500043525421" MODIFIED="1500043559949"/>
+<node TEXT="The SDK proxies deal with parameter handling. Depending on the EDL definition, parameters are checked and copied back and forth." ID="ID_1318165973" CREATED="1500043560429" MODIFIED="1500043601261"/>
+<node TEXT="The enclave library proxy checks the return value and prints human readable error messages. The untrusted library proxy delegates to the C library." ID="ID_78007807" CREATED="1500043601933" MODIFIED="1500100317293"/>
+</node>
 </node>
 </node>
 <node TEXT="Implementation" LOCALIZED_STYLE_REF="default" FOLDED="true" ID="ID_355880413" CREATED="1495056587955" MODIFIED="1499951620362">
