@@ -1,13 +1,16 @@
-personal_ws-1.1 en 176 
+personal_ws-1.1 en 193 
 runtime
 NoHype
+API
 hypercalls
 KissDB
 SGDT
 Costan
 Minibox
+subsumption
 SDK
 SEEED
+adapter
 SQLite
 TPMs
 autodedent
@@ -18,9 +21,11 @@ blu
 TCB
 Arasu
 PSW
+de
 JNI
 PoET
 Arx
+preprocessor
 DLLs
 EPID
 firstnumber
@@ -39,6 +44,7 @@ LFS
 edl
 MapReduce
 FS
+buses
 recrypt
 RSA
 CryptDB
@@ -51,6 +57,7 @@ kB
 DMA
 SMM
 SoC
+Multi
 Arx's
 io
 proxying
@@ -59,6 +66,7 @@ Monomi's
 cpp
 DLL
 const
+virtualisation
 libjpeg
 MIEE
 Monomi
@@ -66,6 +74,7 @@ parallelised
 SPM
 UHD
 Cyberlink's
+SQL
 Yao's
 TLR
 cryptographically
@@ -73,9 +82,11 @@ retVal
 HAPs
 Sawtooth
 validator
+NIST
 TEEs
 DoS
 PowerDVD
+filename
 ttfamily
 RDTSC
 DRM
@@ -88,6 +99,7 @@ STR
 TPM
 EPC
 GlobalPlatform
+Bitcoin
 attestable
 SVM
 endif
@@ -150,6 +162,7 @@ CCPutMacro
 pwrite
 SDK's
 decrypt
+nonces
 uint
 AsyncShock
 INSW
@@ -157,15 +170,19 @@ OUTSW
 sizefunc
 RDTSCP
 EGETKEY
+CryptDB's
 VMEXIT
 SYSCALL
 fopen
 REE
+AMD
 EENTER
 LibOS
 tabsize
 vTPM
 homomorphism
+refactored
+malware
 CloudVisor
 virtualise
 decrypting
