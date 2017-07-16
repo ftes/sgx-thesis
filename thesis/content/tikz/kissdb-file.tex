@@ -1,0 +1,73 @@
+\begin{tikzpicture}[
+	code/.style={font=\ttfamily, align=left, right},
+	node distance=5pt,
+	brace/.style={color=gray},
+]
+
+\node[code] (header) at (-1.5,2) {
+	KDB2 \\
+	256 \\
+	8 \\
+	64
+};
+
+\node[align=left,color=gray, right] at (0,2) {
+	version \\
+	page size (entries) \\
+	key size (bytes) \\
+	value size(bytes)
+};
+
+\matrix [
+	right,matrix of nodes,row sep=0,
+	nodes={anchor=center,rectangle,draw,minimum width=6em, minimum height=12pt, inner sep=0},
+] (hash1) at (-1.5,-1) {
+	\textbf{hash}	& \textbf{offset} \\
+	\texttt{0} & {} \\
+	\ldots & {} \\
+	\texttt{117} & {} \\
+	\ldots & {} \\
+	\texttt{255} & {} \\
+    \textcolor{gray}{next page} & {} \\
+};
+
+\matrix [
+	below=of hash1,
+	matrix of nodes,row sep=0,
+	nodes={anchor=center,rectangle,draw,minimum width=6em, minimum height=12pt, inner sep=0, fill=greenbg},
+] (entries1) {
+	\textbf{key}	& \textbf{value} \\
+	\texttt{0} \footnotesize\textcolor{gray}{hash: 117} & {0} \\
+	\texttt{42} & {128} \\
+	\ldots & {} \\
+};
+
+\matrix [
+	below=of entries1,
+	matrix of nodes,row sep=0,
+	nodes={anchor=center,rectangle,draw,minimum width=6em, minimum height=12pt, inner sep=0},
+] (hash2) {
+	\textbf{hash}	& \textbf{offset} \\
+	\ldots & {} \\
+};
+
+\matrix [
+	below=of hash2,
+	matrix of nodes,row sep=0,
+	nodes={anchor=center,rectangle,draw,minimum width=6em, minimum height=12pt, inner sep=0, fill=greenbg},
+] (entries2) {
+	\textbf{key}	& \textbf{value} \\
+	\texttt{13} \footnotesize\textcolor{gray}{hash: 0} & {42} \\
+	\ldots & {} \\
+};
+
+\draw[-latex'] (hash1-4-2.center) -| ++(2,0) |- (entries1-2-2.east);
+\draw[-latex'] (hash1-7-2.center) -| ++(2.5,0) |- (hash2-1-2.east);
+\draw[-latex'] (hash1-2-2.center) -| ++(3,0) |- (entries2-2-2.east);
+	
+\draw[brace] ([xshift=-0.5cm]header.north west) --   node[left] {header} ([xshift=-0.5cm]header.south west);
+\draw[brace] ([xshift=-0.5cm]hash1.north west) --    node[left] {hash table page 1} ([xshift=-0.5cm]hash1.south west);
+\draw[brace] ([xshift=-0.5cm]entries1.north west) -- node[left] {data block 1} ([xshift=-0.5cm]entries1.south west);
+\draw[brace] ([xshift=-0.5cm]hash2.north west) --    node[left] {hash table page 2} ([xshift=-0.5cm]hash2.south west);
+\draw[brace] ([xshift=-0.5cm]entries2.north west) -- node[left] {data block 2} ([xshift=-0.5cm]entries2.south west);
+\end{tikzpicture}

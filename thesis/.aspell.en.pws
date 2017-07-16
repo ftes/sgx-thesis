@@ -22,8 +22,8 @@ homomorphic
 subsumption
 parallelise
 pwrite
-SMM
 SoC
+SMM
 AsyncShock
 DMA
 cpp
@@ -47,8 +47,8 @@ KissDB
 TPMs
 DRM
 malware
-STR
 TPM
+STR
 OUTSW
 CPUID
 runtimes
@@ -182,8 +182,8 @@ VMEXIT
 filename
 AMD
 NoHype
-pre
 ret
+pre
 GETSEC
 sizefunc
 API

@@ -1,4 +1,4 @@
-<map version="docear 1.1" dcr_id="1488476421761_38dk6g1wx834fy6mbu0yod5x7" project="150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7" project_last_home="file:/home/fredrik/sgx2017/">
+<map version="docear 1.1" project="150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7" project_last_home="file:/home/fredrik/sgx2017/" dcr_id="1488476421761_38dk6g1wx834fy6mbu0yod5x7">
 <!--To view this file, download Docear - The Academic Literature Suite from http://www.docear.org -->
 <attribute_registry SHOW_ATTRIBUTES="hide"/>
 <node TEXT="Thesis 2017" FOLDED="false" ID="ID_308776938" CREATED="1488476421728" MODIFIED="1499948606097">
@@ -81,9 +81,10 @@
 <node TEXT="% color definitions&#xa;\colorlet{greenbg}{green!50!white}&#xa;\colorlet{redbg}{red!50!white}&#xa;\colorlet{orangebg}{orange!50!white}" STYLE_REF="latex" ID="ID_1343390167" CREATED="1494921993423" MODIFIED="1496309825174"/>
 <node TEXT="% styles&#xa;%\tikzstyle{block} = [rectangle, draw, align=center, rounded corners]&#xa;%\tikzstyle{line} = [draw, -latex&apos;]&#xa;%\tikzstyle{legend} = [nodes={anchor=base}, column sep=5pt, row %sep=5pt, yshift=-2cm, anchor=north]&#xa;%\tikzstyle{legend heading} = [gray]&#xa;%\tikzstyle{heading} = [minimum height=0.2cm]&#xa;%\tikzstyle{edge label} = [midway, above, minimum width=0]&#xa;%\tikzstyle{myperson} = [minimum size=40pt, person]&#xa;%\tikzstyle{computer} = [draw, dotted]&#xa;&#xa;% lengths&#xa;\newlength{\haloOffset}&#xa;\newlength{\personOffset}&#xa;\setlength{\haloOffset}{13pt}&#xa;\setlength{\personOffset}{3pt}" STYLE_REF="latex" ID="ID_1373229313" CREATED="1494922065894" MODIFIED="1499763780817"/>
 </node>
-<node TEXT="listing setup" STYLE_REF="paragraphs_drop_self" FOLDED="true" POSITION="left" ID="ID_1389561471" CREATED="1499784996492" MODIFIED="1499785009787">
+<node TEXT="listing setup" STYLE_REF="paragraphs_drop_self" FOLDED="true" POSITION="left" ID="ID_1389561471" CREATED="1499784996492" MODIFIED="1500185276717">
 <edge COLOR="#7c007c"/>
-<node TEXT="\definecolor{bluekeywords}{rgb}{0.13,0.13,1}&#xa;\definecolor{greencomments}{rgb}{0,0.5,0}&#xa;\definecolor{redstrings}{rgb}{0.9,0,0}&#xa;&#xa;\lstdefinestyle{default}{&#xa;  breaklines=true,&#xa;  postbreak=\mbox{\textcolor{red}{$\hookrightarrow$}\space},&#xa;  numbers=left,&#xa;  xleftmargin=5ex,&#xa;  morekeywords={uint32_t, uint8_t, sgx_aes_ctr_128bit_key_t, size_t, sgx_sealed_data_t, sgx_lib_encrypted_data_t, int64_t, FILE, sgx_status_t, sgx_enclave_id_t, enclave, trusted, untrusted, from, import, include, in, out, size, readonly, string, user_check},&#xa;  basicstyle=\footnotesize\ttfamily,&#xa;  commentstyle=\color{greencomments},&#xa;  keywordstyle=\color{bluekeywords}\bfseries,&#xa;  stringstyle=\color{redstrings},&#xa;  keywordsprefix=\#,&#xa;  alsoletter=\#,&#xa;}&#xa;\lstdefinestyle{cpp}{&#xa;  language=C++,&#xa;  style=default&#xa;}&#xa;\lstdefinestyle{edl}{&#xa;  style=cpp,&#xa;}" STYLE_REF="latex" ID="ID_487365018" CREATED="1499784999093" MODIFIED="1500036058714" MOVED="1499785588993"/>
+<node TEXT="\definecolor{bluekeywords}{rgb}{0.13,0.13,1}&#xa;\definecolor{greencomments}{rgb}{0,0.5,0}&#xa;\definecolor{redstrings}{rgb}{0.9,0,0}&#xa;&#xa;\lstdefinestyle{default}{&#xa;  breaklines=true,&#xa;  postbreak=\mbox{\textcolor{red}{$\hookrightarrow$}\space},&#xa;  numbers=left,&#xa;  xleftmargin=5ex,&#xa;  morekeywords={uint32_t, uint8_t, sgx_aes_ctr_128bit_key_t, size_t, sgx_sealed_data_t, sgx_lib_encrypted_data_t, int64_t, FILE, sgx_status_t, sgx_enclave_id_t, enclave, trusted, untrusted, from, import, include, in, out, size, readonly, string, user_check, diff, wget},&#xa;  basicstyle=\footnotesize\ttfamily,&#xa;  commentstyle=\color{greencomments},&#xa;  keywordstyle=\color{bluekeywords}\bfseries,&#xa;  stringstyle=\color{redstrings},&#xa;  keywordsprefix=\#,&#xa;  alsoletter=\#,&#xa;}&#xa;\lstdefinestyle{cpp}{&#xa;  language=C++,&#xa;  style=default&#xa;}&#xa;\lstdefinestyle{edl}{&#xa;  style=cpp,&#xa;}" STYLE_REF="latex" ID="ID_487365018" CREATED="1499784999093" MODIFIED="1500185318857" MOVED="1499785588993"/>
+<node TEXT="\lstdefinelanguage{diff}{&#xa;  morecomment=[f][\color{blue}]{@@},     % group identifier&#xa;  morecomment=[f][\color{red}]-,         % deleted lines&#xa;  morecomment=[f][\color{green}]+,       % added lines&#xa;  morecomment=[f][\color{magenta}]{---}, % Diff header lines (must appear after +,-)&#xa;  morecomment=[f][\color{magenta}]{+++},&#xa;}" STYLE_REF="latex" ID="ID_1710260870" CREATED="1500184350069" MODIFIED="1500184431587"/>
 </node>
 <node TEXT="commands" STYLE_REF="paragraphs_drop_self" FOLDED="true" POSITION="left" ID="ID_565840623" CREATED="1500037840957" MODIFIED="1500037853705">
 <edge COLOR="#ff00ff"/>
@@ -7804,25 +7805,25 @@
 <node TEXT="The enclave library proxy checks the return value and prints human readable error messages. The untrusted library proxy delegates to the C library." ID="ID_1047121255" CREATED="1500043601933" MODIFIED="1500100317293"/>
 </node>
 <node TEXT="\lstinputlisting[label=listing:lib-edl,caption={" STYLE_REF="latex" FOLDED="true" ID="ID_1310113428" CREATED="1500030878828" MODIFIED="1500032457308" MOVED="1500041398285">
-<node TEXT="\textbf{sgx\_{}lib.edl}\protect\footnote{\url{https://github.com/ftes/sgx-lib/blob/thesis/sgx_lib_t/sgx_lib.edl}}" ID="ID_1403293956" CREATED="1500031563957" MODIFIED="1500103703548" MOVED="1500031565154"/>
+<node TEXT="\textbf{sgx\_{}lib.edl (extract).}\protect\footnote{\url{https://github.com/ftes/sgx-lib/blob/thesis/sgx_lib_t/sgx_lib.edl}}" ID="ID_1403293956" CREATED="1500031563957" MODIFIED="1500186441533" MOVED="1500031565154"/>
 <node TEXT="The EDL interface definition is extended with the O-call." ID="ID_271766819" CREATED="1500042263053" MODIFIED="1500042277662"/>
 <node TEXT="This does not affect the enclave entry table, as this only controls the allowed E-calls." ID="ID_1356327165" CREATED="1500042277902" MODIFIED="1500042310045"/>
 <node TEXT="},firstnumber=46,linerange={46-47},style=cpp,autodedent]{../sgx-lib/sgx_lib_t/sgx_lib.edl}" ID="ID_1536712624" CREATED="1500031423309" MODIFIED="1500041553669"/>
 </node>
 <node TEXT="\lstinputlisting[label=listing:t-stdio,caption={" STYLE_REF="latex" FOLDED="true" ID="ID_131723340" CREATED="1500030878828" MODIFIED="1500032294238" MOVED="1500041398288">
-<node TEXT="\textbf{sgx\_{}lib\_{}t\_{}stdio.h}\protect\footnote{\url{https://github.com/ftes/sgx-lib/blob/thesis/sgx_lib_t/include/sgx_lib_t_stdio.h}}" ID="ID_188697395" CREATED="1500031563957" MODIFIED="1500104360678" MOVED="1500031565154"/>
+<node TEXT="\textbf{sgx\_{}lib\_{}t\_{}stdio.h (extract).}\protect\footnote{\url{https://github.com/ftes/sgx-lib/blob/thesis/sgx_lib_t/include/sgx_lib_t_stdio.h}}" ID="ID_188697395" CREATED="1500031563957" MODIFIED="1500186432629" MOVED="1500031565154"/>
 <node TEXT="The trusted header file is modified to include the proxy function&apos;s signature." ID="ID_1928208466" CREATED="1500042312100" MODIFIED="1500042355405"/>
 <node TEXT="},firstnumber=41,linerange={41-42},style=cpp]{../sgx-lib/sgx_lib_t/include/sgx_lib_t_stdio.h}" ID="ID_1829796801" CREATED="1500031423309" MODIFIED="1500032978250"/>
 </node>
 <node TEXT="\lstinputlisting[label=listing:t-stdio-c2,caption={" STYLE_REF="latex" FOLDED="true" ID="ID_981814224" CREATED="1500030878828" MODIFIED="1500032651637" MOVED="1500041398291">
-<node TEXT="\textbf{sgx\_{}lib\_{}t\_{}stdio.c}\protect\footnote{\url{https://github.com/ftes/sgx-lib/blob/thesis/sgx_lib_t/sgx_lib_t_stdio.c}}" ID="ID_472958" CREATED="1500031563957" MODIFIED="1500104378785" MOVED="1500031565154"/>
+<node TEXT="\textbf{sgx\_{}lib\_{}t\_{}stdio.c (extract).}\protect\footnote{\url{https://github.com/ftes/sgx-lib/blob/thesis/sgx_lib_t/sgx_lib_t_stdio.c}}" ID="ID_472958" CREATED="1500031563957" MODIFIED="1500186425558" MOVED="1500031565154"/>
 <node TEXT="The trusted proxy implementation." ID="ID_1583369182" CREATED="1500042357133" MODIFIED="1500100717527"/>
 <node TEXT="The proxy also acts as an adapter. It converts the O-calls signature (with the return value passed as a pointer) to the original signature." ID="ID_1261394446" CREATED="1500100587645" MODIFIED="1500100726361"/>
 <node TEXT="The proxy checks for errors. If an error is encountered, a meaningful error description is printed using an O-call." ID="ID_1625059582" CREATED="1500042457405" MODIFIED="1500101236638" MOVED="1500042487793"/>
 <node TEXT="},firstnumber=190,linerange={190-195},style=cpp]{../sgx-lib/sgx_lib_t/sgx_lib_t_stdio.c}" ID="ID_986440387" CREATED="1500031423309" MODIFIED="1500034153821"/>
 </node>
 <node TEXT="\lstinputlisting[label=listing:u-stdio-c,caption={" STYLE_REF="latex" FOLDED="true" ID="ID_1502285851" CREATED="1500030878828" MODIFIED="1500032757616" MOVED="1500041398301">
-<node TEXT="\textbf{sgx\_{}lib\_{}u\_{}stdio.c}\protect\footnote{\url{https://github.com/ftes/sgx-lib/blob/thesis/sgx_lib_u/sgx_lib_u_ocalls_stdio.c}}" ID="ID_1550359463" CREATED="1500031563957" MODIFIED="1500104397488" MOVED="1500031565154"/>
+<node TEXT="\textbf{sgx\_{}lib\_{}u\_{}stdio.c (extract).}\protect\footnote{\url{https://github.com/ftes/sgx-lib/blob/thesis/sgx_lib_u/sgx_lib_u_ocalls_stdio.c}}" ID="ID_1550359463" CREATED="1500031563957" MODIFIED="1500186417719" MOVED="1500031565154"/>
 <node TEXT="The untrusted proxy implementation. This simply delegates to the C library implementation." ID="ID_423213693" CREATED="1500042490117" MODIFIED="1500042513861"/>
 <node TEXT="},firstnumber=35,linerange={35-38},style=cpp]{../sgx-lib/sgx_lib_u/sgx_lib_u_ocalls_stdio.c}" ID="ID_1509333371" CREATED="1500031423309" MODIFIED="1500032835942"/>
 </node>
@@ -7863,7 +7864,7 @@
 <node TEXT="" ID="ID_179577610" CREATED="1500101644330" MODIFIED="1500101644330"/>
 <node TEXT="\autoref{listing:t-crypto} shows the corresponding functions exposed by the library." ID="ID_607112210" CREATED="1500101605249" MODIFIED="1500101711303"/>
 <node TEXT="\lstinputlisting[label=listing:t-crypto,caption={" STYLE_REF="latex" FOLDED="true" ID="ID_867477101" CREATED="1500030878828" MODIFIED="1500031454582" MOVED="1500101599309">
-<node TEXT="\textbf{sgx\_{}lib\_{}t\_{}crypto.h}" ID="ID_1194028915" CREATED="1500031563957" MODIFIED="1500031923294" MOVED="1500031565154"/>
+<node TEXT="\textbf{sgx\_{}lib\_{}t\_{}crypto.h (extract).}" ID="ID_1194028915" CREATED="1500031563957" MODIFIED="1500186390236" MOVED="1500031565154"/>
 <node TEXT="},firstnumber=18,linerange={18-20},style=cpp]{../sgx-lib/sgx_lib_t/include/sgx_lib_t_crypto.h}" ID="ID_104430003" CREATED="1500031423309" MODIFIED="1500031460554"/>
 <node TEXT="\lstinputlisting[firstnumber=27,linerange={27-29},style=cpp]{../sgx-lib/sgx_lib_t/include/sgx_lib_t_crypto.h}" STYLE_REF="latex" ID="ID_1409616554" CREATED="1500030878828" MODIFIED="1500031397358" MOVED="1500032224447"/>
 </node>
@@ -7892,7 +7893,7 @@
 <node TEXT="Replay protection is \textit{not} added. The enclave will not notice whether the most recent or an older value is provided." ID="ID_966291793" CREATED="1500109919477" MODIFIED="1500109978405"/>
 <node TEXT="" ID="ID_294891349" CREATED="1500109917495" MODIFIED="1500109917495"/>
 <node TEXT="The developer can choose the desired security level at compile time using macros:" ID="ID_285147481" CREATED="1500104743537" MODIFIED="1500104764106"/>
-<node TEXT="\begin{itemize}" ID="ID_568616326" CREATED="1500104776553" MODIFIED="1500104784560">
+<node TEXT="\begin{itemize}" FOLDED="true" ID="ID_568616326" CREATED="1500104776553" MODIFIED="1500104784560">
 <node TEXT="\item No security. Useful during development, file input/output happens in plain text." ID="ID_108413610" CREATED="1500104788129" MODIFIED="1500105169026" MOVED="1500105171419"/>
 <node TEXT="\item Encryption with custom key. Useful for debugging. A symmetric encryption key is required, which can be set using \Q{set_secure_io_key()}\footnote{\url{https://github.com/ftes/sgx-lib/blob/thesis/sgx_lib_t/sgx_lib_t_stdio.c\#L37}}." ID="ID_435062126" CREATED="1500104932814" MODIFIED="1500105026887" MOVED="1500105171421"/>
 <node TEXT="\item Data sealing. This is the default option and seals all input/output to the enclaves identity." ID="ID_1378302633" CREATED="1500105044425" MODIFIED="1500105181981" MOVED="1500105171422"/>
@@ -7900,7 +7901,7 @@
 </node>
 <node TEXT="\autoref{listing:t-stdio2} shows the preprocessor macros that switch the behaviour." ID="ID_1912924398" CREATED="1500105107880" MODIFIED="1500105147758"/>
 <node TEXT="\lstinputlisting[label=listing:t-stdio2,caption={" STYLE_REF="latex" FOLDED="true" ID="ID_54269206" CREATED="1500030878828" MODIFIED="1500032973107" MOVED="1500105150202">
-<node TEXT="\textbf{sgx\_{}lib\_{}t\_{}stdio.h}\protect\footnote{\url{https://github.com/ftes/sgx-lib/blob/thesis/sgx_lib_t/include/sgx_lib_t_stdio.h}}" ID="ID_1002305727" CREATED="1500031563957" MODIFIED="1500104512860" MOVED="1500031565154"/>
+<node TEXT="\textbf{sgx\_{}lib\_{}t\_{}stdio.h (extract).}\protect\footnote{\url{https://github.com/ftes/sgx-lib/blob/thesis/sgx_lib_t/include/sgx_lib_t_stdio.h}}" ID="ID_1002305727" CREATED="1500031563957" MODIFIED="1500186365507" MOVED="1500031565154"/>
 <node TEXT="The macros \texttt{SGX\_{}INSECURE\_{}IO\_{}OPERATIONS} and \texttt{SGX\_{}SECURE\_{}IO\_{}OPERATIONS\_{}KEY} control how input/output is protected. By default, it is sealed." ID="ID_245696649" CREATED="1500105274483" MODIFIED="1500105382732"/>
 <node TEXT="},firstnumber=27,linerange={27-39},style=cpp]{../sgx-lib/sgx_lib_t/include/sgx_lib_t_stdio.h}" ID="ID_1188639684" CREATED="1500031423309" MODIFIED="1500032992848"/>
 </node>
@@ -7970,18 +7971,25 @@
 </node>
 </node>
 <node TEXT="Content" STYLE_REF="paragraphs_drop_self" ID="ID_862119655" CREATED="1495543885991" MODIFIED="1495543895304">
-<node TEXT="diagram: architecture" ID="ID_405858604" CREATED="1499951673235" MODIFIED="1499951683460"/>
 <node TEXT="diagram: file structure" ID="ID_382324889" CREATED="1499951683633" MODIFIED="1499951686994"/>
 <node TEXT="\input{content/tikz/kissdb}" STYLE_REF="latex" ID="ID_260850471" CREATED="1500043496508" MODIFIED="1500114089022" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/thesis/content/tikz/lib-proxies.tex" MOVED="1500043860067">
 <attribute NAME="image" VALUE=""/>
 <attribute NAME="label" VALUE="figure:kissdb" OBJECT="java.net.URI|figure:kissdb"/>
-<node TEXT="\textbf{Interaction of proxies generated by Intel&apos;s SDK and the helper library.}" ID="ID_260875598" CREATED="1500043525421" MODIFIED="1500043559949"/>
-<node TEXT="The SDK proxies deal with parameter handling. Depending on the EDL definition, parameters are checked and copied back and forth." ID="ID_1318165973" CREATED="1500043560429" MODIFIED="1500043601261"/>
-<node TEXT="The enclave library proxy checks the return value and prints human readable error messages. The untrusted library proxy delegates to the C library." ID="ID_78007807" CREATED="1500043601933" MODIFIED="1500100317293"/>
+<node TEXT="Test" ID="ID_1849364658" CREATED="1500183192802" MODIFIED="1500183193918"/>
+</node>
+<node TEXT="\input{content/tikz/kissdb-file}" STYLE_REF="latex" ID="ID_498106613" CREATED="1500043496508" MODIFIED="1500191345817" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/thesis/content/tikz/lib-proxies.tex" MOVED="1500043860067">
+<attribute NAME="image" VALUE=""/>
+<attribute NAME="label" VALUE="figure:kissdb-file" OBJECT="java.net.URI|figure:kissdb-file"/>
+<node TEXT="\textbf{KissDB file layout.}" ID="ID_1080934208" CREATED="1500183192802" MODIFIED="1500191355502"/>
+<node TEXT="Data blocks are encrypted (shaded in green)." ID="ID_1723777195" CREATED="1500191355637" MODIFIED="1500191367902"/>
+<node TEXT="Meta data (header and has tables) is not encrypted." ID="ID_1899010827" CREATED="1500191371855" MODIFIED="1500191382458"/>
+<node TEXT="New data (key/value pair) is appended to the end of the file." ID="ID_624727598" CREATED="1500191477048" MODIFIED="1500191503708" MOVED="1500191566687"/>
+<node TEXT="A new hash table entry is inserted in the first page where the bucket is not yet occupied." ID="ID_835587131" CREATED="1500191567280" MODIFIED="1500191595860"/>
+<node TEXT="A new hash table page is appended when all existing pages have an entry for the bucket in question." ID="ID_1038767895" CREATED="1500191389629" MODIFIED="1500191550897"/>
 </node>
 </node>
 </node>
-<node TEXT="Implementation" LOCALIZED_STYLE_REF="default" FOLDED="true" ID="ID_355880413" CREATED="1495056587955" MODIFIED="1499951620362">
+<node TEXT="Implementation" LOCALIZED_STYLE_REF="default" ID="ID_355880413" CREATED="1495056587955" MODIFIED="1499951620362">
 <icon BUILTIN="button_cancel"/>
 <node TEXT="mindmap" STYLE_REF="drop" FOLDED="true" ID="ID_54031507" CREATED="1495543887981" MODIFIED="1495543899209" MOVED="1495543900065">
 <node TEXT="obstacles" FOLDED="true" ID="ID_1426298542" CREATED="1499951585939" MODIFIED="1499951587579">
@@ -7995,9 +8003,28 @@
 <node TEXT="compare files" ID="ID_1192226249" CREATED="1499951714386" MODIFIED="1499951716235"/>
 </node>
 </node>
-<node TEXT="Content" STYLE_REF="paragraphs_drop_self" ID="ID_401279777" CREATED="1495543885991" MODIFIED="1495543895304"/>
+<node TEXT="Content" STYLE_REF="paragraphs_drop_self" ID="ID_401279777" CREATED="1495543885991" MODIFIED="1495543895304">
+<node TEXT="\lstinputlisting[label=listing:kissdb-edl,caption={" STYLE_REF="latex" FOLDED="true" ID="ID_1487757889" CREATED="1500030878828" MODIFIED="1500182976267" MOVED="1500105150202">
+<node TEXT="\textbf{kissdb.edl (extract).}\protect\footnote{\url{https://github.com/ftes/kissdb-sgx/blob/thesis/kissdb_t/kissdb.edl\#L8}}" ID="ID_1653688599" CREATED="1500031563957" MODIFIED="1500186979806" MOVED="1500031565154"/>
+<node TEXT="Trusted section (E-calls)." ID="ID_1570546277" CREATED="1500186843801" MODIFIED="1500186852614"/>
+<node TEXT="},firstnumber=8,linerange={8-8},style=cpp,autodedent]{../kissdb-sgx/kissdb_t/kissdb.edl}" ID="ID_1470761759" CREATED="1500031423309" MODIFIED="1500186975110"/>
 </node>
-<node TEXT="Open Issues" FOLDED="true" ID="ID_233809023" CREATED="1499951540618" MODIFIED="1499951849506">
+<node TEXT="\lstinputlisting[label=listing:kissdb-wrapper,caption={" STYLE_REF="latex" FOLDED="true" ID="ID_1097309626" CREATED="1500030878828" MODIFIED="1500185897078" MOVED="1500105150202">
+<node TEXT="\textbf{kissdb\_{}u\_{}wrapper.c (extract).}\protect\footnote{\url{https://github.com/ftes/kissdb-sgx/blob/thesis/kissdb_u/kissdb_u_wrapper.c\#L31}}" ID="ID_1695001825" CREATED="1500031563957" MODIFIED="1500186327177" MOVED="1500031565154"/>
+<node TEXT="Untrusted wrapper for get call." ID="ID_1496935341" CREATED="1500186868442" MODIFIED="1500186880520"/>
+<node TEXT="},firstnumber=31,linerange={31-35},style=cpp]{../kissdb-sgx/kissdb_u/kissdb_u_wrapper.c}" ID="ID_196687301" CREATED="1500031423309" MODIFIED="1500183138333"/>
+</node>
+<node TEXT="\lstinputlisting[label=listing:kissdb-diff-cmd,caption={" STYLE_REF="latex" FOLDED="true" ID="ID_1641002818" CREATED="1500030878828" MODIFIED="1500184228426" MOVED="1500105150202">
+<node TEXT="\textbf{KissDB diff command.}" ID="ID_172446674" CREATED="1500031563957" MODIFIED="1500184244224" MOVED="1500031565154"/>
+<node TEXT="},language=bash,style=default]{content/listings/kissdb-diff.txt}" ID="ID_1769253987" CREATED="1500031423309" MODIFIED="1500185495895"/>
+</node>
+<node TEXT="\lstinputlisting[label=listing:kissdb-diff,caption={" STYLE_REF="latex" FOLDED="true" ID="ID_181400735" CREATED="1500030878828" MODIFIED="1500185892432" MOVED="1500105150202">
+<node TEXT="\textbf{KissDB diff (extract).}" ID="ID_595595404" CREATED="1500031563957" MODIFIED="1500186252330" MOVED="1500031565154"/>
+<node TEXT="},linerange={1-18},style=cpp]{content/listings/kissdb-diff-output.txt}" ID="ID_1619361052" CREATED="1500031423309" MODIFIED="1500186084290"/>
+</node>
+</node>
+</node>
+<node TEXT="Open Issues" ID="ID_233809023" CREATED="1499951540618" MODIFIED="1499951849506">
 <icon BUILTIN="button_cancel"/>
 <node TEXT="mindmap" STYLE_REF="drop" FOLDED="true" ID="ID_333249387" CREATED="1499951910427" MODIFIED="1499951919447" MOVED="1499951912414">
 <node TEXT="djb2 is not a crypto hash function, thus the hash table leaks information about keys" ID="ID_873365676" CREATED="1499951548445" MODIFIED="1499951548445" MOVED="1499951923131"/>
