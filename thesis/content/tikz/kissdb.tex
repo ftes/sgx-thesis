@@ -1,6 +1,6 @@
 \begin{tikzpicture}[
 	tt/.style={font=\ttfamily},
-	function/.style={circle, draw, inner sep=2pt}
+	function/.style={circle, draw, inner sep=2pt, fill=white}
 ]
 	\node at (-5.5,4.5) {kissdb\_{}t};
 	
@@ -17,9 +17,10 @@
 		\footnotesize meta data: plain text \\
 		\footnotesize payload: encrypted
 	};
-	\draw[-latex'] (v1.two east-|v1.mid) -- (v2);
+	\draw[-latex'] ($(v1.two east) + (-3.5,0)$-|v1.mid) -- (v2);
 	
 	
+	\draw [-latex'] (-11.5,6.2) rectangle (-3,0.5);
 	\node[function, label={[tt, fill=white]right:open()}] (v3) at  (-11.5,4.5) {};
 	\node[function, label={[tt, fill=white]right:close()}] (v5) at (-11.5,3.5) {};
 	\node[function, label={[tt, fill=white]right:put()}] (v7) at  (-11.5,2.5) {};
@@ -38,6 +39,5 @@
 		\draw [-latex'] (v9) edge (v10);
 	\end{scope}
 	
-	\draw [-latex'] (-11.5,6.2) rectangle (-3,0.5);
-	\node [circle] at (-7,5.75) {kissdb\_{}u};
+	\node at (-7,5.75) {kissdb\_{}u};
 \end{tikzpicture}
