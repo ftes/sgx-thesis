@@ -1,0 +1,14 @@
+# Run Valgrind to record SQLite's calls
+$ valgrind --tool=callgrind ./sqlite3
+
+# Execute SQLite instructions (create new database, insert and select).
+sqlite3$ .open test.db
+sqlite3$ CREATE TABLE tbl ( value TINYINT );
+sqlite3$ INSERT INTO tbl VALUES ( 42 );
+sqlite3$ SELECT * FROM tbl;
+
+# Exit Using Ctrl+d
+Ctrl+d
+
+# Execute KCachegrind to analyze output
+$ kcachegrind callgrind.out.<id>

@@ -1,0 +1,39 @@
+\begin{tikzpicture}[
+	block/.style={draw,text width=3cm, minimum height=0.6cm, align=center},
+	label/.style={font=\footnotesize},
+	heading/.style={font=\bfseries},
+	node distance=15pt,
+]
+	\node [block] (v3) at (0,0) {SQLite interface};
+	\node [block] (v4) at (0,-1) {Tokenizer};
+	\node [block] (v5) at (0,-2) {Parser};
+	\node [block] (code gen) at (0,-3) {Code generator};
+	
+	\node [block] (vm) at (5,0) {Virtual machine};
+	\node [block] (v6) at (5,-1) {Tree};
+	\node [block] (v7) at (5,-2) {Pager};
+	\node [block] (v8) at (5,-3) {OS interface};
+
+	\node [label] (v9) at (5,-4) {POSIX libraries};
+	\node [label] (v0) at (0,1) {SQL/API calls};
+	
+	\coordinate [below=of code gen] (v1);
+	\coordinate [above=of vm] (v2);
+	
+	\draw[-latex'] (code gen.south) -- (v1) -| ($(code gen)!0.5!(vm)$) node[label,pos=0.25, below] {internal byte code program} |- (v2) -- (vm.north);
+	\draw [-latex'] (v3) edge (v4);
+	\draw [-latex'] (v4) edge (v5);
+	\draw [-latex'] (v5) edge (code gen);
+	\draw [-latex'] (vm) edge (v6);
+	\draw [-latex'] (v6) edge (v7);
+	\draw [-latex'] (v7) edge (v8);
+	\draw [-latex'] (v8) edge (v9);
+	\draw [-latex'] (v0) edge (v3);
+	
+	\node [heading] at (0,-5) {a) front end};
+	\node [heading] at (5,-5) {b) back end};
+	
+	\begin{scope}[on background layer]
+		\node [fill=greenbg, fit=(vm) (v6), draw, inner sep=5pt] {};
+	\end{scope}
+\end{tikzpicture}

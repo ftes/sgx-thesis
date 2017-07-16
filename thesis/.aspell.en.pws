@@ -1,7 +1,8 @@
-personal_ws-1.1 en 199 
+personal_ws-1.1 en 206 
 TrustedDB
 Arx
 CryptDB's
+Valgrind's
 ZooKeeper
 picoprocess
 sgx
@@ -21,6 +22,7 @@ decrypting
 OpenSSL
 homomorphic
 subsumption
+UDF
 parallelise
 pwrite
 SMM
@@ -29,9 +31,10 @@ AsyncShock
 DMA
 cpp
 vTPM
-DLL
 KISSDB's
+DLL
 ERESUME
+callees
 SPM
 UHD
 SQL
@@ -103,10 +106,12 @@ ifdef
 retVal
 readonly
 SLDT
+KiB
 RDTSC
 Arasu
 onwards
 JNI
+KCachegrind
 LDS
 basicstyle
 al
@@ -177,6 +182,7 @@ libjpeg
 Bitcoin
 Yao's
 virtualise
+VDBE
 NIST
 decrypted
 REE
@@ -188,8 +194,9 @@ pre
 ret
 GETSEC
 sizefunc
-API
 DataBase
+API
+Valgrind
 SDK
 Skyhigh
 libc
