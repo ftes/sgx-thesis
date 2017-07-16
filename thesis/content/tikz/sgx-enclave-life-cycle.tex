@@ -5,8 +5,8 @@
 ]
 \node[state] (v1) at (0,0) {non-\\existent};
 \node[state] (v2) at (5,0) {unitialized};
-\node[state] (v3) at (5,-3) {initialized\\(not in use)};
-\node[state] (v4) at (0,-3) {initialized\\(in use)};
+\node[state, fill=greenbg] (v3) at (5,-3) {initialized\\(not in use)};
+\node[state, fill=greenbg] (v4) at (0,-3) {initialized\\(in use)};
 
 \draw[arrow]  (v1) edge node[above, label] {ECREATE} (v2);
 \draw[arrow]  (v2) edge node[right, label, align=left] {EINIT} (v3);

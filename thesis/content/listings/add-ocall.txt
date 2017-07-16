@@ -1,1 +1,1 @@
-$ sgx-lib/add_ocall.sh "int64_t _ftelli64([user_check] FILE* file);"
+sgx-lib/add_ocall.sh "int64_t _ftelli64([user_check] FILE* file);"

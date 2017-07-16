@@ -1,8 +1,8 @@
-<map version="docear 1.1" project="150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7" project_last_home="file:/home/fredrik/sgx2017/" dcr_id="1488476421761_38dk6g1wx834fy6mbu0yod5x7">
+<map version="docear 1.1" dcr_id="1488476421761_38dk6g1wx834fy6mbu0yod5x7" project="150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7" project_last_home="file:/home/fredrik/sgx2017/">
 <!--To view this file, download Docear - The Academic Literature Suite from http://www.docear.org -->
 <attribute_registry SHOW_ATTRIBUTES="hide"/>
 <node TEXT="Thesis 2017" FOLDED="false" ID="ID_308776938" CREATED="1488476421728" MODIFIED="1499948606097">
-<hook NAME="AutomaticEdgeColor" COUNTER="4"/>
+<hook NAME="AutomaticEdgeColor" COUNTER="5"/>
 <hook NAME="MapStyle" zoom="1.17">
     <properties show_icon_for_attributes="true" show_note_icons="true"/>
 
@@ -83,8 +83,9 @@
 </node>
 <node TEXT="listing setup" STYLE_REF="paragraphs_drop_self" FOLDED="true" POSITION="left" ID="ID_1389561471" CREATED="1499784996492" MODIFIED="1500185276717">
 <edge COLOR="#7c007c"/>
-<node TEXT="\definecolor{bluekeywords}{rgb}{0.13,0.13,1}&#xa;\definecolor{greencomments}{rgb}{0,0.5,0}&#xa;\definecolor{redstrings}{rgb}{0.9,0,0}&#xa;&#xa;\lstdefinestyle{default}{&#xa;  breaklines=true,&#xa;  postbreak=\mbox{\textcolor{red}{$\hookrightarrow$}\space},&#xa;  numbers=left,&#xa;  xleftmargin=5ex,&#xa;  morekeywords={uint32_t, uint8_t, sgx_aes_ctr_128bit_key_t, size_t, sgx_sealed_data_t, sgx_lib_encrypted_data_t, int64_t, FILE, sgx_status_t, sgx_enclave_id_t, enclave, trusted, untrusted, from, import, include, in, out, size, readonly, string, user_check, diff, wget},&#xa;  basicstyle=\footnotesize\ttfamily,&#xa;  commentstyle=\color{greencomments},&#xa;  keywordstyle=\color{bluekeywords}\bfseries,&#xa;  stringstyle=\color{redstrings},&#xa;  keywordsprefix=\#,&#xa;  alsoletter=\#,&#xa;}&#xa;\lstdefinestyle{cpp}{&#xa;  language=C++,&#xa;  style=default&#xa;}&#xa;\lstdefinestyle{edl}{&#xa;  style=cpp,&#xa;}" STYLE_REF="latex" ID="ID_487365018" CREATED="1499784999093" MODIFIED="1500185318857" MOVED="1499785588993"/>
-<node TEXT="\lstdefinelanguage{diff}{&#xa;  morecomment=[f][\color{blue}]{@@},     % group identifier&#xa;  morecomment=[f][\color{red}]-,         % deleted lines&#xa;  morecomment=[f][\color{green}]+,       % added lines&#xa;  morecomment=[f][\color{magenta}]{---}, % Diff header lines (must appear after +,-)&#xa;  morecomment=[f][\color{magenta}]{+++},&#xa;}" STYLE_REF="latex" ID="ID_1710260870" CREATED="1500184350069" MODIFIED="1500184431587"/>
+<node TEXT="\definecolor{bluekeywords}{rgb}{0.13,0.13,1}&#xa;\definecolor{greencomments}{rgb}{0,0.5,0}&#xa;\definecolor{redstrings}{rgb}{0.9,0,0}&#xa;&#xa;\lstdefinestyle{default-base}{&#xa;  breaklines=true,&#xa;  postbreak=\mbox{\textcolor{red}{$\hookrightarrow$}\space},&#xa;  numbers=left,&#xa;  xleftmargin=5ex,&#xa;  basicstyle=\footnotesize\ttfamily,&#xa;  commentstyle=\color{greencomments},&#xa;  keywordstyle=\color{bluekeywords}\bfseries,&#xa;  stringstyle=\color{redstrings},&#xa;}&#xa;\lstdefinestyle{default}{&#xa;  style=default-base,&#xa;  morekeywords={uint32_t, uint8_t, sgx_aes_ctr_128bit_key_t, size_t, sgx_sealed_data_t, sgx_lib_encrypted_data_t, int64_t, FILE, sgx_status_t, sgx_enclave_id_t, enclave, trusted, untrusted, from, import, include, in, out, size, readonly, string, user_check, diff, wget},&#xa;  keywordsprefix=\#,&#xa;  alsoletter=\#,&#xa;}&#xa;\lstdefinestyle{cpp}{&#xa;  language=C++,&#xa;  style=default&#xa;}&#xa;\lstdefinestyle{edl}{&#xa;  style=cpp,&#xa;}" STYLE_REF="latex" ID="ID_487365018" CREATED="1499784999093" MODIFIED="1500233306925" MOVED="1499785588993"/>
+<node TEXT="\lstdefinelanguage{diff}{&#xa;  morecomment=[f][\color{bluekeywords}]{@@},     % group identifier&#xa;  morecomment=[f][\color{redstrings}]-,         % deleted lines&#xa;  morecomment=[f][\color{greencomments}]+,       % added lines&#xa;  morecomment=[f][\color{magenta}]{---}, % Diff header lines (must appear after +,-)&#xa;  morecomment=[f][\color{magenta}]{+++},&#xa;}" STYLE_REF="latex" ID="ID_1710260870" CREATED="1500184350069" MODIFIED="1500232658007"/>
+<node TEXT="\lstdefinelanguage{hex}{&#xa;    morecomment=[l]{//},&#xa;}" STYLE_REF="latex" ID="ID_837207877" CREATED="1500228804869" MODIFIED="1500228943255"/>
 </node>
 <node TEXT="commands" STYLE_REF="paragraphs_drop_self" FOLDED="true" POSITION="left" ID="ID_565840623" CREATED="1500037840957" MODIFIED="1500037853705">
 <edge COLOR="#ff00ff"/>
@@ -1960,7 +1961,7 @@
 <attribute NAME="authors" VALUE="Victor Costan and Srinivas Devadas"/>
 <attribute NAME="label" VALUE="figure:tpm-measurement" OBJECT="java.net.URI|figure:tpm-measurement"/>
 <node TEXT="\textbf{Static system state measurement using a Trusted Platform Module (TPM).}" ID="ID_734095868" CREATED="1499248256857" MODIFIED="1499437458530" MOVED="1499248260144"/>
-<node TEXT="The TPM stores the measurement in a register (register values are shaded orange)." ID="ID_333225320" CREATED="1499437458737" MODIFIED="1499437461013"/>
+<node TEXT="The TPM stores the measurement in a register (register values are shaded green)." ID="ID_333225320" CREATED="1499437458737" MODIFIED="1500217167985"/>
 <node TEXT="At reboot, the measurement register is reset to zero. Then &quot;the software at every boot stage hashes the next boot stage&quot;.\cite{sgx-explained}" ID="ID_1944654012" CREATED="1499259722001" MODIFIED="1499259727442"/>
 <node TEXT="This hash is sent to the TPM, which updates the measurement register by hashing both the old register value and new measurement." ID="ID_1908069125" CREATED="1499259727594" MODIFIED="1499259729036"/>
 <node TEXT="Reprinted from" ID="ID_1280723034" CREATED="1499248207305" MODIFIED="1499248211290"/>
@@ -2848,8 +2849,8 @@
 <attribute NAME="authors" VALUE="Strackx, Raoul and Piessens, Frank"/>
 </node>
 <node TEXT="running legacy kernel is pulled in the Legacy VM, and memory access control of both VMs is configured" ID="ID_602052565" CREATED="1453833934047" MODIFIED="1488817458436" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/Fides%20-%20Hardening%20Software%20Applications.pdf" MOVED="1453834182783">
-<arrowlink SHAPE="CUBIC_CURVE" COLOR="#000000" WIDTH="2" TRANSPARENCY="80" FONT_SIZE="9" FONT_FAMILY="SansSerif" DESTINATION="ID_1501358627" STARTINCLINATION="899;0;" ENDINCLINATION="899;0;" STARTARROW="NONE" ENDARROW="DEFAULT"/>
 <arrowlink SHAPE="CUBIC_CURVE" COLOR="#000000" WIDTH="2" TRANSPARENCY="80" FONT_SIZE="9" FONT_FAMILY="SansSerif" DESTINATION="ID_899944673" STARTINCLINATION="725;0;" ENDINCLINATION="725;0;" STARTARROW="NONE" ENDARROW="DEFAULT"/>
+<arrowlink SHAPE="CUBIC_CURVE" COLOR="#000000" WIDTH="2" TRANSPARENCY="80" FONT_SIZE="9" FONT_FAMILY="SansSerif" DESTINATION="ID_1501358627" STARTINCLINATION="899;0;" ENDINCLINATION="899;0;" STARTARROW="NONE" ENDARROW="DEFAULT"/>
 <pdf_annotation type="HIGHLIGHTED_TEXT" page="6" object_id="1578831404968116972" object_number="62" document_hash="1D96495A67A9F428B4B8E145796620A1D98C23A92F5D1721A94FEBBEA084">
     <pdf_title>Fides: Selectively Hardening Software Application Components against Kernel-level or Process-level Malware</pdf_title>
 </pdf_annotation>
@@ -3326,18 +3327,15 @@
     <pdf_title>SCONE: Secure Linux Containers with Intel SGX</pdf_title>
 </pdf_annotation>
 </node>
-<node TEXT="\input{content/tikz/haven}" STYLE_REF="latex" FOLDED="true" ID="ID_1468585962" CREATED="1499449409934" MODIFIED="1499450328384" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/Microsoft%20Haven.pdf">
+<node TEXT="\input{content/tikz/haven}" STYLE_REF="latex" FOLDED="true" ID="ID_1468585962" CREATED="1499449409934" MODIFIED="1500217315556" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/thesis/content/tikz/haven.tex">
 <attribute NAME="label" VALUE="figure:haven" OBJECT="java.net.URI|figure:haven"/>
 <attribute NAME="image" VALUE=""/>
 <attribute NAME="key" VALUE="Baumann2014"/>
 <attribute NAME="year" VALUE="2014"/>
 <attribute NAME="title" VALUE="Shielding applications from an untrusted cloud with haven"/>
 <attribute NAME="authors" VALUE="Baumann, Andrew and Peinado, Marcus and Hunt, Galen"/>
-<pdf_annotation type="PDF_FILE" object_id="0" document_hash="F73BC6AC9A9DC3F7B51411327AC88B18AD75C688219B86BAC4CD6A446F99EDD">
-    <pdf_title>Shielding Applications from an Untrusted Cloud with Haven</pdf_title>
-</pdf_annotation>
 <node TEXT="\textbf{Architecture of Microsoft Haven.}" ID="ID_186584288" CREATED="1499449418157" MODIFIED="1499449889294"/>
-<node TEXT="The enclave isolates the entire unmodified application as well as a library operating system." ID="ID_1502290495" CREATED="1499449889701" MODIFIED="1499449906077"/>
+<node TEXT="The enclave (shaded green) isolates the entire unmodified application as well as a library operating system." ID="ID_1502290495" CREATED="1499449889701" MODIFIED="1500217439349"/>
 <node TEXT="Together with the shield module this protects the application from attacks by a malicious operating system." ID="ID_524857908" CREATED="1499449906333" MODIFIED="1499449924327"/>
 <node TEXT="The enclave interacts with the host kernel through a the narrow picoprocess API, as the library operating system abstracts from higher-level system calls." ID="ID_1865559949" CREATED="1499449924492" MODIFIED="1499449968133"/>
 <node TEXT="The untrusted wrapper only passes on calls from and to the enclave." ID="ID_1698784106" CREATED="1499449973221" MODIFIED="1499450010774"/>
@@ -5049,7 +5047,7 @@
 </pdf_annotation>
 </node>
 <node TEXT="\autoref{figure:sgx-enclave-life-cycle} shows the enclave life cycle." ID="ID_1080928863" CREATED="1499775644877" MODIFIED="1499775680524"/>
-<node TEXT="\input{content/tikz/sgx-enclave-life-cycle}" STYLE_REF="latex" FOLDED="true" ID="ID_538890645" CREATED="1499774665227" MODIFIED="1499776150136" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/SGX%20Explained.pdf">
+<node TEXT="\input{content/tikz/sgx-enclave-life-cycle}" STYLE_REF="latex" FOLDED="true" ID="ID_538890645" CREATED="1499774665227" MODIFIED="1500217235918" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/thesis/content/tikz/sgx-enclave-life-cycle.tex">
 <attribute NAME="image" VALUE=""/>
 <attribute NAME="label" VALUE="figure:sgx-enclave-life-cycle" OBJECT="java.net.URI|figure:sgx-enclave-life-cycle"/>
 <attribute NAME="key" VALUE="sgx-explained"/>
@@ -5057,11 +5055,9 @@
 <attribute NAME="year" VALUE="2016"/>
 <attribute NAME="title" VALUE="Intel SGX Explained."/>
 <attribute NAME="authors" VALUE="Costan, Victor and Devadas, Srinivas"/>
-<pdf_annotation type="PDF_FILE" object_id="0" document_hash="6247F24926CEBCBDD607A743A7A36C17F76C70D179FFDDC5BE417C9354C5B">
-    <pdf_title>Intel SGX Explained</pdf_title>
-</pdf_annotation>
 <node TEXT="\textbf{Intel SGX enclave life cycle.}" ID="ID_1610889698" CREATED="1499774691621" MODIFIED="1499774705189"/>
-<node TEXT="The state transitions occur when CPU instructions are executed. E.g. \textit{ECREATE} creates a new, uninitialised enclave." ID="ID_805562591" CREATED="1499774788996" MODIFIED="1499776162134"/>
+<node TEXT="The enclave&apos;s memory is protected in states shaded green." ID="ID_1686831062" CREATED="1500217260741" MODIFIED="1500217278214"/>
+<node TEXT="State transitions occur when CPU instructions are executed. E.g. \textit{ECREATE} creates a new, uninitialised enclave." ID="ID_805562591" CREATED="1499774788996" MODIFIED="1500217282506"/>
 <node TEXT="The operating system is expected to load the enclave by adding pages and extending the measurement of the enclave (similar to TPM measurement in \autoref{figure:tpm-measurement})." ID="ID_244657479" CREATED="1499774840571" MODIFIED="1499774930686"/>
 <node TEXT="Once \textit{EINIT} is called, the enclave is locked down. Its measurement is final and does not change when the enclave executes and changes internal data. The OS can no longer access the enclave&apos;s memory pages." ID="ID_1399476685" CREATED="1499774954828" MODIFIED="1499776172309"/>
 <node TEXT="The enclave can now only be entered via \textit{EENTER} (and after interrupts through \textit{ERESUME}) at locations defined in the entry table." ID="ID_98268923" CREATED="1499775003148" MODIFIED="1499775040421"/>
@@ -6988,7 +6984,7 @@
 </node>
 </node>
 </node>
-<node TEXT="Related Work" LOCALIZED_STYLE_REF="default" POSITION="left" ID="ID_123293925" CREATED="1487267824221" MODIFIED="1499948603857" MOVED="1492616823153">
+<node TEXT="Related Work" LOCALIZED_STYLE_REF="default" FOLDED="true" POSITION="left" ID="ID_123293925" CREATED="1487267824221" MODIFIED="1499948603857" MOVED="1492616823153">
 <edge COLOR="#00ffff"/>
 <node TEXT="- gute Referenzen statt viel wiederholen&#xa;- &#xdc;berblick &#xfc;ber die in der Literatur vorhandenen Methoden bzw. L&#xf6;sungsans&#xe4;tze&#xa;- aktuelle Stand der Technik&#xa;- verwandte Arbeiten" STYLE_REF="drop" ID="ID_300266952" CREATED="1492080972697" MODIFIED="1495605859460" MOVED="1492080980228"/>
 <node TEXT="Introduction" STYLE_REF="paragraphs_drop_self" FOLDED="true" ID="ID_150393477" CREATED="1499869249672" MODIFIED="1499869658154" MOVED="1499869252488">
@@ -7571,7 +7567,7 @@
 <node TEXT="\end{description}" ID="ID_422481189" CREATED="1499928935905" MODIFIED="1499928940336"/>
 </node>
 </node>
-<node TEXT="Hardening Applications with Intel SGX" LOCALIZED_STYLE_REF="default" ID="ID_930530989" CREATED="1488545417979" MODIFIED="1499948597701">
+<node TEXT="Hardening Applications with Intel SGX" LOCALIZED_STYLE_REF="default" FOLDED="true" ID="ID_930530989" CREATED="1488545417979" MODIFIED="1499948597701">
 <icon BUILTIN="button_ok"/>
 <attribute NAME="label" VALUE="section:sgx-hardening" OBJECT="java.net.URI|section:sgx-hardening"/>
 <node TEXT="mindmap" STYLE_REF="drop" FOLDED="true" ID="ID_1005870991" CREATED="1495543887981" MODIFIED="1495543899209" MOVED="1495543900065">
@@ -7668,7 +7664,7 @@
 </node>
 </node>
 </node>
-<node TEXT="Content" STYLE_REF="paragraphs_drop_self" ID="ID_1430142372" CREATED="1495543885991" MODIFIED="1500035598481">
+<node TEXT="Content" STYLE_REF="paragraphs_drop_self" FOLDED="true" ID="ID_1430142372" CREATED="1495543885991" MODIFIED="1500035598481">
 <node TEXT="This section presents related work on hardening applications using Intel SGX as a trusted computing solution." ID="ID_795492685" CREATED="1499935640505" MODIFIED="1499942420249"/>
 <node TEXT="First, application-specific approaches are listed. Next, general approaches are described." ID="ID_843125457" CREATED="1499941830537" MODIFIED="1499941909962"/>
 <node TEXT="The section concludes with a summary of the lessons learnt from this research." ID="ID_1682307076" CREATED="1499941857650" MODIFIED="1499941899345"/>
@@ -7735,7 +7731,7 @@
 <node TEXT="" ID="ID_1936971496" CREATED="1499943612137" MODIFIED="1499943612137"/>
 <node TEXT="SCONE also evaluates how the process of authoring, provisioning and executing Docker images can be secured using attestation." ID="ID_302956960" CREATED="1499943613417" MODIFIED="1499943644081"/>
 </node>
-<node TEXT="\item[Software Partitioning case study\cite{atamli2015securing}]" ID="ID_1866621600" CREATED="1499943860674" MODIFIED="1499943861883">
+<node TEXT="\item[Software Partitioning case study\cite{atamli2015securing}]" FOLDED="true" ID="ID_1866621600" CREATED="1499943860674" MODIFIED="1499943861883">
 <node TEXT="evaluates different approaches to partitioning OpenSSL into enclaves." ID="ID_889806073" CREATED="1499944620154" MODIFIED="1499944656986"/>
 <node TEXT="Different partitioning schemes are identified, the most important of which are:" ID="ID_1492497964" CREATED="1499944657377" MODIFIED="1499944765987"/>
 <node TEXT="\begin{enumerate}" ID="ID_1557877705" CREATED="1499944675658" MODIFIED="1499944680459"/>
@@ -7770,7 +7766,8 @@
 <node TEXT="The library also assists in constructing a shim C library (\autoref{figure:scone-interface})." ID="ID_1179607118" CREATED="1500035385172" MODIFIED="1500035628925"/>
 <node TEXT="The concepts of this library and some usage guidelines are introduced in this chapter." ID="ID_553638787" CREATED="1500035412733" MODIFIED="1500035461279"/>
 <node TEXT="" ID="ID_519586146" CREATED="1500035631621" MODIFIED="1500035631621"/>
-<node TEXT="For details, refer to the documentation contained in the repository.\footnote{\url{https://github.com/ftes/sgx-lib/tree/thesis}}" ID="ID_752590908" CREATED="1500035462060" MODIFIED="1500035486892"/>
+<node TEXT="The full code is not printed in this chapter or the appendix. Please refer to the Git repository.\footnote{\url{https://github.com/ftes/sgx-lib/tree/thesis}}" ID="ID_1903948230" CREATED="1500235230163" MODIFIED="1500235324514" MOVED="1500235326300"/>
+<node TEXT="The repository also contains more in-depth details on configuration and usage." ID="ID_191350613" CREATED="1500235332667" MODIFIED="1500235359181"/>
 <node TEXT="A demo consumer project showcases usage of the library.\footnote{\url{https://github.com/ftes/sgx-lib-consumer/tree/thesis}}" ID="ID_1523691323" CREATED="1499949632625" MODIFIED="1500035666309" MOVED="1500035492830"/>
 <node TEXT="The Git tag \Q{thesis} in these repositories marks the commit from which the code listings in this thesis are taken." ID="ID_1811245411" CREATED="1500035513444" MODIFIED="1500035716479"/>
 <node TEXT="" ID="ID_1126285530" CREATED="1500036745668" MODIFIED="1500036745668"/>
@@ -7837,8 +7834,8 @@
     <pdf_title>Intel&#xae; Software Guard Extensions Evaluation SDK</pdf_title>
 </pdf_annotation>
 </node>
-<node TEXT="However, the generated stub in the enclave has a different signature in case the function has a return value. The generated signature of the trusted \Q{fopen} O-call looks like this:" ID="ID_446408595" CREATED="1500034797922" MODIFIED="1500100761457" MOVED="1500041423251"/>
-<node TEXT="\begin{lstlisting}[style=cpp, numbers=none]&#xa;void fopen(FILE* retVal, const char* filename, const char* mode);&#xa;\end{lstlisting}" STYLE_REF="latex" ID="ID_1547399443" CREATED="1500042649045" MODIFIED="1500100556303"/>
+<node TEXT="However, the generated stub in the enclave has a different signature in case the function has a return value. The generated signature of the trusted \Q{fopen} O-call is shown in \autoref{listing:ocall-fopen}." ID="ID_446408595" CREATED="1500034797922" MODIFIED="1500211536287" MOVED="1500041423251"/>
+<node TEXT="\begin{lstlisting}[style=cpp, numbers=none, label=listing:ocall-fopen, caption={\textbf{Generated O-call signature for standard C library function.} The SDK passes the return value via a pointer parameter.}]&#xa;void fopen(FILE* retVal, const char* filename, const char* mode);&#xa;\end{lstlisting}" STYLE_REF="latex" ID="ID_1547399443" CREATED="1500042649045" MODIFIED="1500211552591"/>
 <node TEXT="To use unmodified legacy code in an enclave, the library functions must have the exact same signature." ID="ID_1472270465" CREATED="1500100763381" MODIFIED="1500100790796"/>
 <node TEXT="To provide trusted functions with the original signature, one has to overload the functions in the enclave. This is not possible in C. The library is written in C to facilitate usage in both C and C++ projects." ID="ID_104777994" CREATED="1500034797922" MODIFIED="1500042821902" MOVED="1500041423267"/>
 <node TEXT="As a workaround the O-calls are appended with a \Q{_ocall} suffix. No overloading is thus necessary. Instead, a untrusted proxy implementation is generated which delegates to the C library implementation." ID="ID_1394611332" CREATED="1500034797922" MODIFIED="1500042921951" MOVED="1500041423286"/>
@@ -7922,7 +7919,7 @@
 <node TEXT="}" STYLE_REF="latex" ID="ID_574554221" CREATED="1499345900665" MODIFIED="1499345909532" MOVED="1499435837748"/>
 </node>
 <node TEXT="\label{table:sgx-lib}" ID="ID_657393313" CREATED="1499437819564" MODIFIED="1499951161765" MOVED="1499951149683"/>
-<node TEXT="\begin{tablenotes}" ID="ID_1372013698" CREATED="1499435719197" MODIFIED="1499435724060" MOVED="1500038420236">
+<node TEXT="\begin{tablenotes}" FOLDED="true" ID="ID_1372013698" CREATED="1499435719197" MODIFIED="1499435724060" MOVED="1500038420236">
 <node TEXT="\item[a] \url{https://github.com/ftes/sgx-lib/blob/thesis/add_ocall.sh}" ID="ID_962465848" CREATED="1499437130748" MODIFIED="1500038462156"/>
 <node TEXT="\item[b] \url{https://github.com/ftes/sgx-lib/blob/thesis/sgx_lib_t/generate_error_codes.sh}" ID="ID_404031672" CREATED="1499437130748" MODIFIED="1500038502748" MOVED="1500038465353"/>
 <node TEXT="\item[c] \url{https://github.com/ftes/sgx-lib/blob/thesis/common/sgx_lib.c}" ID="ID_1959410779" CREATED="1499437130748" MODIFIED="1500104222324"/>
@@ -7938,28 +7935,47 @@
 </node>
 </node>
 </node>
-<node TEXT="KissDB Case Study" LOCALIZED_STYLE_REF="default" POSITION="left" ID="ID_1828467557" CREATED="1487266728477" MODIFIED="1500019870140" MOVED="1499849267642">
+<node TEXT="KISSDB Case Study" LOCALIZED_STYLE_REF="default" FOLDED="true" POSITION="left" ID="ID_1828467557" CREATED="1487266728477" MODIFIED="1500213764857" MOVED="1499849267642">
 <attribute NAME="label" VALUE="chapter:kissdb" OBJECT="java.net.URI|chapter:kissdb"/>
 <edge COLOR="#ff0000"/>
-<node TEXT="Introduction" STYLE_REF="paragraphs_drop_self" ID="ID_1929202403" CREATED="1499849307743" MODIFIED="1500110694650">
+<node TEXT="Introduction" STYLE_REF="paragraphs_drop_self" FOLDED="true" ID="ID_1929202403" CREATED="1499849307743" MODIFIED="1500110694650">
 <icon BUILTIN="button_ok"/>
 <node TEXT="Two case studies were conducted to validate the gathered knowledge." ID="ID_1310178450" CREATED="1500110195769" MODIFIED="1500110243589"/>
 <node TEXT="The goal of both case studies is to harden an existing DBMS." ID="ID_314202562" CREATED="1500110228576" MODIFIED="1500110279594"/>
 <node TEXT="Database software is chosen because it is a good example application for trusted computing." ID="ID_23142153" CREATED="1500110285497" MODIFIED="1500110310385"/>
 <node TEXT="The data may be sensitive and require protection from the infrastructure provider and other tenants." ID="ID_113918458" CREATED="1500110310522" MODIFIED="1500110708221"/>
 <node TEXT="" ID="ID_192402860" CREATED="1500110425918" MODIFIED="1500110425918"/>
-<node TEXT="The first case study examines KissDB, the ``simplest key/value store you&apos;ll ever see, anywhere. It&apos;s written in plain vanilla C using only the standard string and FILE [input/output] functions.&apos;&apos;\footnote{\url{https://github.com/adamierymenko/kissdb}}." ID="ID_1142678733" CREATED="1500110436337" MODIFIED="1500110522615"/>
-<node TEXT="Intel SGX is used to protect the data KissDB operates on.\footnote{\url{https://github.com/ftes/kissdb-sgx}}." ID="ID_928802586" CREATED="1500110544317" MODIFIED="1500110626251"/>
-<node TEXT="The case study does not deal with attestation and secure communication channels. File integrity and freshness (replay attacks) are also out of scope." ID="ID_1642397570" CREATED="1500110794537" MODIFIED="1500110911031"/>
-<node TEXT="The focus is on which part of KissDB can be extracted, and transparently securing it with the helper libraries encryption/sealing features." ID="ID_80110359" CREATED="1500110805544" MODIFIED="1500110845115"/>
+<node TEXT="The first case study examines KISSDB\footnote{Keep it Simple Stupid DataBase}, the ``simplest key/value store you&apos;ll ever see, anywhere. It&apos;s written in plain vanilla C using only the standard string and FILE [input/output] functions.&apos;&apos;\footnote{Original code: \url{https://github.com/adamierymenko/kissdb}}." ID="ID_1142678733" CREATED="1500110436337" MODIFIED="1500213904179"/>
+<node TEXT="KISSDB stores key/value pairs of fixed size. It does not provide any processing, but only a put/get interface plus iterators. In this regard it is similar to ZooKeeper. \autoref{figure:kissdb-file} shows the simplicity of KISSDB&apos;s database file layout." ID="ID_1445380866" CREATED="1500213609205" MODIFIED="1500219420477"/>
+<node TEXT="\input{content/tikz/kissdb-file}" STYLE_REF="latex" FOLDED="true" ID="ID_498106613" CREATED="1500043496508" MODIFIED="1500191649605" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/thesis/content/tikz/kissdb-file.tex" MOVED="1500218241033">
+<attribute NAME="image" VALUE=""/>
+<attribute NAME="label" VALUE="figure:kissdb-file" OBJECT="java.net.URI|figure:kissdb-file"/>
+<node TEXT="\textbf{KISSDB file layout.}" ID="ID_1080934208" CREATED="1500183192802" MODIFIED="1500213764901"/>
+<node TEXT="Implicit data structures (tables) are visualised." ID="ID_1884080289" CREATED="1500195775143" MODIFIED="1500195971995"/>
+<node TEXT="Text in grey is added as an explanation, but not present in the file." ID="ID_899549956" CREATED="1500195872645" MODIFIED="1500195948992"/>
+<node TEXT="The destination of file offsets in the \textit{offset} column are visualised as arrows." ID="ID_889407334" CREATED="1500197347794" MODIFIED="1500197389741"/>
+<node TEXT="New data (key/value pair) is appended to the end of the file." ID="ID_624727598" CREATED="1500191477048" MODIFIED="1500191503708" MOVED="1500196014416"/>
+<node TEXT="A new hash table entry is inserted in the first page where the bucket is not yet occupied." ID="ID_835587131" CREATED="1500191567280" MODIFIED="1500191595860" MOVED="1500196014445"/>
+<node TEXT="A new hash table page is appended when all existing pages have an entry for the bucket in question." ID="ID_1038767895" CREATED="1500191389629" MODIFIED="1500191550897" MOVED="1500196014461"/>
+<node TEXT="In the hardened version, data blocks are encrypted (shaded in green)." ID="ID_282820875" CREATED="1500196018503" MODIFIED="1500196040945"/>
+<node TEXT="Meta data (header and hash tables) is not encrypted." ID="ID_1899010827" CREATED="1500191371855" MODIFIED="1500195572876"/>
 </node>
-<node TEXT="Design" LOCALIZED_STYLE_REF="default" ID="ID_579142082" CREATED="1495056350447" MODIFIED="1499951608186">
-<icon BUILTIN="button_cancel"/>
-<node TEXT="mindmap" STYLE_REF="drop" ID="ID_1634677217" CREATED="1495543887981" MODIFIED="1495543899209" MOVED="1495543900065">
-<node TEXT="A better approach would be to minimize the size of the TCB, and execute only security critical functionality inside the enclave. This reduces the risk of a bug compromising the security of the entire application." ID="ID_1351250119" CREATED="1499951554703" MODIFIED="1499951554703"/>
-<node TEXT="enclave size (related work classification)" ID="ID_382443605" CREATED="1499948150585" MODIFIED="1499948158636" MOVED="1499951808959"/>
+<node TEXT="" ID="ID_1975219674" CREATED="1500213815171" MODIFIED="1500213815171"/>
+<node TEXT="In this case study, Intel SGX is used to protect the data KISSDB operates on." ID="ID_928802586" CREATED="1500110544317" MODIFIED="1500235304835"/>
+<node TEXT="The code is not printed in this chapter or the appendix. Please refer to the Git repository.\footnote{Fork with SGX hardening:\url{https://github.com/ftes/kissdb-sgx}}." ID="ID_1138361928" CREATED="1500235290165" MODIFIED="1500235307425"/>
+<node TEXT="The following aspects are \textit{out of scope} for this case study." ID="ID_12313881" CREATED="1500214328789" MODIFIED="1500214346605"/>
+<node TEXT="\begin{itemize}" FOLDED="true" ID="ID_1885741611" CREATED="1500214351170" MODIFIED="1500214364052">
+<node TEXT="\item Attestation and secure communication channels." ID="ID_1642397570" CREATED="1500110794537" MODIFIED="1500214382488" MOVED="1500214369737"/>
+<node TEXT="\item  File integrity and freshness (replay attacks)." ID="ID_1066501065" CREATED="1500214382698" MODIFIED="1500214401223"/>
+<node TEXT="\item Securely provisioning an encryption key." ID="ID_390697218" CREATED="1500214385962" MODIFIED="1500214447649"/>
+<node TEXT="\end{itemize}" ID="ID_1334182780" CREATED="1500214357163" MODIFIED="1500214360700" MOVED="1500214369756"/>
+</node>
+<node TEXT="The focus is on which part of KISSDB can be extracted, and transparently securing it with the helper libraries encryption/sealing features." ID="ID_80110359" CREATED="1500110805544" MODIFIED="1500213764891"/>
+</node>
+<node TEXT="Design" LOCALIZED_STYLE_REF="default" FOLDED="true" ID="ID_579142082" CREATED="1495056350447" MODIFIED="1500218609452">
+<icon BUILTIN="button_ok"/>
+<node TEXT="mindmap" STYLE_REF="drop" FOLDED="true" ID="ID_1634677217" CREATED="1495543887981" MODIFIED="1495543899209" MOVED="1495543900065">
 <node TEXT="overview" FOLDED="true" ID="ID_1933513481" CREATED="1499951692586" MODIFIED="1499951694243" MOVED="1499951895648">
-<node TEXT="One enclave corresponds exactly to one KissDB instance." ID="ID_892822490" CREATED="1500196725184" MODIFIED="1500196735487" MOVED="1500197133529"/>
 <node TEXT="one enclave corresponds to exactly one KISSDB instance" ID="ID_637880627" CREATED="1499951529028" MODIFIED="1499951529028" MOVED="1500197133540"/>
 <node TEXT="KISSDB_open creates a new enclave and loads (if present) the encrypted header data from an exisiting .db file into secure memory" ID="ID_347700984" CREATED="1499951529031" MODIFIED="1499951529031" MOVED="1500197133547"/>
 <node TEXT="the encryption key is known only to the enclave (EGETKEY, sealed data)" ID="ID_353917725" CREATED="1499951529032" MODIFIED="1499951529032" MOVED="1500197133552"/>
@@ -7970,47 +7986,65 @@
 <node TEXT="non-sensitive data (header, hash tables) are stored in the .db file in the clear" ID="ID_1765352709" CREATED="1499951529040" MODIFIED="1499951529040" MOVED="1500197133584"/>
 </node>
 </node>
-<node TEXT="Content" STYLE_REF="paragraphs_drop_self" ID="ID_862119655" CREATED="1495543885991" MODIFIED="1495543895304">
-<node TEXT="\input{content/tikz/kissdb}" STYLE_REF="latex" FOLDED="true" ID="ID_260850471" CREATED="1500043496508" MODIFIED="1500196382486" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/thesis/content/tikz/kissdb.tex" MOVED="1500043860067">
+<node TEXT="Content" STYLE_REF="paragraphs_drop_self" FOLDED="true" ID="ID_862119655" CREATED="1495543885991" MODIFIED="1495543895304">
+<node TEXT="This section discusses the design decisions for hardening KISSDB. The resulting architecture is shown \autoref{figure:kissdb}." ID="ID_1073733437" CREATED="1500218071227" MODIFIED="1500218091657"/>
+<node TEXT="\begin{description}" FOLDED="true" ID="ID_1141938675" CREATED="1500196793778" MODIFIED="1500196950560">
+<node TEXT="\item[Shim C library]" FOLDED="true" ID="ID_1861623533" CREATED="1500196807394" MODIFIED="1500214298918" MOVED="1500196961039">
+<node TEXT="(see \autoref{figure:scone-interface}). This option is the easiest to implement, but results in the largest enclave interface." ID="ID_1093940302" CREATED="1500214299410" MODIFIED="1500214300432"/>
+<node TEXT="This approach also incurs the performance overhead of the SDK-generated proxies." ID="ID_1630572405" CREATED="1500214002667" MODIFIED="1500214045717" MOVED="1500214301738"/>
+<node TEXT="The ease of implementation outweighed the other two negative aspects." ID="ID_199725432" CREATED="1500214046211" MODIFIED="1500214093843" MOVED="1500214301745"/>
+</node>
+<node TEXT="\item[Separate enclaves by data set.]" FOLDED="true" ID="ID_935111514" CREATED="1500196901460" MODIFIED="1500214287628" MOVED="1500196961042">
+<node TEXT="One enclave is set up per \Q{open()} invocation. As KISSDB does not provide locking, only one enclave should be set up per database file." ID="ID_145677730" CREATED="1500214288098" MODIFIED="1500214289513"/>
+</node>
+<node TEXT="\item[Entire legacy code in enclave.]" FOLDED="true" ID="ID_1029928087" CREATED="1500214154474" MODIFIED="1500214292527">
+<node TEXT="KISSDB is not sub-divided into trusted and untrusted functionality. A single enclave is used for all trusted functionality. KISSDB is so small, it is difficult to identify a part that should be pulled out. KISSDB does not support any data processing, which otherwise would have been a likely candidate." ID="ID_1638365159" CREATED="1500214292930" MODIFIED="1500216879421"/>
+</node>
+<node TEXT="\item[Meta data as plain text.]" FOLDED="true" ID="ID_267118033" CREATED="1500218026948" MODIFIED="1500218039772" MOVED="1500218040280">
+<node TEXT="While at rest, data is encrypted. This means the payload is written to the database file in encrypted form (see \autoref{figure:kissdb-file}." ID="ID_917138080" CREATED="1500196630377" MODIFIED="1500218277257" MOVED="1500218064122"/>
+<node TEXT="The meta data (header, hash tables) are written as plain text." ID="ID_116310300" CREATED="1500196654833" MODIFIED="1500196685988" MOVED="1500218064129"/>
+<node TEXT="This keeps the required changes to the legacy code base to a minimum as discussed in \autoref{section:kissdb-impl}." ID="ID_1173318118" CREATED="1500196686104" MODIFIED="1500218295504" MOVED="1500218064136"/>
+<node TEXT="This has the following security implications:" ID="ID_73618570" CREATED="1500218310584" MODIFIED="1500218527861"/>
+<node TEXT="\begin{itemize}" FOLDED="true" ID="ID_1428140403" CREATED="1500218319864" MODIFIED="1500218324553">
+<node TEXT="\item The meta data is not protected. This includes the number of entries as well as the key and value size." ID="ID_1855200367" CREATED="1500218327950" MODIFIED="1500218360922"/>
+<node TEXT="\item The key hashes are not encrypted. If the hash scheme is not cryptographically secure, an attacker may learn information about the hash values." ID="ID_469155561" CREATED="1500218361654" MODIFIED="1500218534130"/>
+<node TEXT="\item Also, if the key space is small or non-uniformly distributed, an attacker may learn information about the keys by pre-computing all (or all likely) key hashes." ID="ID_1857228709" CREATED="1500218534455" MODIFIED="1500218535713"/>
+<node TEXT="\end{itemize}" ID="ID_1663661427" CREATED="1500218324998" MODIFIED="1500218327603" MOVED="1500218561195"/>
+</node>
+<node TEXT="The file content of original and hardened KISSDB files is compared in \autoref{appendix:kissdb-files}." ID="ID_1329958020" CREATED="1500230620567" MODIFIED="1500230652477"/>
+</node>
+<node TEXT="\item[Iterator outside of enclave.]" FOLDED="true" ID="ID_1365327675" CREATED="1500214201219" MODIFIED="1500214209459">
+<node TEXT="A KISSDB iterator is a cursor which allows iterating through all values." ID="ID_1380301625" CREATED="1500214493892" MODIFIED="1500217670548"/>
+<node TEXT="The cursor&apos;s position is identified by the hash table page number and item offset within that page." ID="ID_574983925" CREATED="1500217673197" MODIFIED="1500217693317"/>
+<node TEXT="Several iterators can exist in parallel for a single database." ID="ID_1536238444" CREATED="1500217694189" MODIFIED="1500217719615"/>
+<node TEXT="The iterator is something that inherently belongs to the consumer using the iterator." ID="ID_1427844365" CREATED="1500217719731" MODIFIED="1500217733103"/>
+<node TEXT="The iterator data (page number and page offset) is held outside of the enclave." ID="ID_765057086" CREATED="1500217733220" MODIFIED="1500217769723"/>
+<node TEXT="This way the enclave remains stateless. As the meta data is stored in plain, this is not an additional security risk." ID="ID_706601824" CREATED="1500217770093" MODIFIED="1500218023642"/>
+</node>
+<node TEXT="\item[Encrypt with custom key instead of sealing.]" FOLDED="true" ID="ID_1242822874" CREATED="1500214475884" MODIFIED="1500217959491">
+<node TEXT="Data sealing encrypts the data with a key derived from the enclave&apos;s identity." ID="ID_683061299" CREATED="1500217874688" MODIFIED="1500217891636"/>
+<node TEXT="This identity is based only on the initial state (the loaded code)." ID="ID_1748128877" CREATED="1500217891945" MODIFIED="1500217915189"/>
+<node TEXT="That means it is the same even if the enclave is initialised several times for different database files." ID="ID_1159251968" CREATED="1500217915304" MODIFIED="1500218050214"/>
+<node TEXT="Sealing the data would allow a consumer to read all other database files." ID="ID_536148124" CREATED="1500217934497" MODIFIED="1500217979139"/>
+<node TEXT="Instead, the user has to specify the encryption key when creating the KISSDB instance (\texttt{open()} in \autoref{figure:kissdb})." ID="ID_792459156" CREATED="1500217979417" MODIFIED="1500218011235"/>
+</node>
+<node TEXT="\end{description}" ID="ID_102894942" CREATED="1500196802066" MODIFIED="1500196957353" MOVED="1500196961058"/>
+</node>
+<node TEXT="\input{content/tikz/kissdb}" STYLE_REF="latex" FOLDED="true" ID="ID_260850471" CREATED="1500043496508" MODIFIED="1500196382486" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/thesis/content/tikz/kissdb.tex" MOVED="1500214133142">
 <attribute NAME="image" VALUE=""/>
 <attribute NAME="label" VALUE="figure:kissdb" OBJECT="java.net.URI|figure:kissdb"/>
-<node TEXT="\textbf{Hardened KissDB architecture}." ID="ID_1849364658" CREATED="1500183192802" MODIFIED="1500196110378"/>
+<node TEXT="\textbf{Hardened KISSDB architecture}." ID="ID_1849364658" CREATED="1500183192802" MODIFIED="1500213764898"/>
 <node TEXT="The legacy code is moved to an enclave (\texttt{kissdb\_{}t})." ID="ID_1888630135" CREATED="1500196110608" MODIFIED="1500196150547"/>
 <node TEXT="The untrusted wrapper (\texttt{kissdb\_{}u}) sets up the enclave and proxies \texttt{put/get} calls to the enclave." ID="ID_586280030" CREATED="1500196150713" MODIFIED="1500196324295"/>
 <node TEXT="The shim C library transparently encrypts (or seals) the payload written to the file." ID="ID_655947813" CREATED="1500196196932" MODIFIED="1500196221844"/>
 <node TEXT="The meta data is written as plain text." ID="ID_1892225489" CREATED="1500196221963" MODIFIED="1500196269171"/>
 <node TEXT="The hash tables are held in enclave memory for fast navigation." ID="ID_203134686" CREATED="1500196269347" MODIFIED="1500196300126"/>
 </node>
-<node TEXT="\input{content/tikz/kissdb-file}" STYLE_REF="latex" ID="ID_498106613" CREATED="1500043496508" MODIFIED="1500191649605" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/thesis/content/tikz/kissdb-file.tex" MOVED="1500043860067">
-<attribute NAME="image" VALUE=""/>
-<attribute NAME="label" VALUE="figure:kissdb-file" OBJECT="java.net.URI|figure:kissdb-file"/>
-<node TEXT="\textbf{KissDB file layout.}" ID="ID_1080934208" CREATED="1500183192802" MODIFIED="1500191355502"/>
-<node TEXT="Implicit data structures (tables) are visualised." ID="ID_1884080289" CREATED="1500195775143" MODIFIED="1500195971995"/>
-<node TEXT="Text in grey is added as an explanation, but not present in the file." ID="ID_899549956" CREATED="1500195872645" MODIFIED="1500195948992"/>
-<node TEXT="The destination of file offsets in the \textit{offset} column are visualised as arrows." ID="ID_889407334" CREATED="1500197347794" MODIFIED="1500197389741"/>
-<node TEXT="New data (key/value pair) is appended to the end of the file." ID="ID_624727598" CREATED="1500191477048" MODIFIED="1500191503708" MOVED="1500196014416"/>
-<node TEXT="A new hash table entry is inserted in the first page where the bucket is not yet occupied." ID="ID_835587131" CREATED="1500191567280" MODIFIED="1500191595860" MOVED="1500196014445"/>
-<node TEXT="A new hash table page is appended when all existing pages have an entry for the bucket in question." ID="ID_1038767895" CREATED="1500191389629" MODIFIED="1500191550897" MOVED="1500196014461"/>
-<node TEXT="In the hardened version, data blocks are encrypted (shaded in green)." ID="ID_282820875" CREATED="1500196018503" MODIFIED="1500196040945"/>
-<node TEXT="Meta data (header and hash tables) is not encrypted." ID="ID_1899010827" CREATED="1500191371855" MODIFIED="1500195572876"/>
-</node>
-<node TEXT="" ID="ID_1001220173" CREATED="1500196586968" MODIFIED="1500196586968"/>
-<node TEXT="\autoref{figure:kissdb} shows the architecture of the hardened KissDB." ID="ID_1658200450" CREATED="1500196746185" MODIFIED="1500196766821"/>
-<node TEXT="The following design decisions were made:" ID="ID_3924705" CREATED="1500196767082" MODIFIED="1500196793500"/>
-<node TEXT="\begin{description}" ID="ID_1141938675" CREATED="1500196793778" MODIFIED="1500196950560">
-<node TEXT="\item[Shim C library] (see \autoref{figure:scone-interface}). This option is the easiest to implement, but results in the largest enclave interface." ID="ID_1861623533" CREATED="1500196807394" MODIFIED="1500196947112" MOVED="1500196961039"/>
-<node TEXT="\item[Separate enclaves by data set.] One enclave is set up per \Q{open()} invocation. KissDB does not provide locking. This means that only one enclave should be set up per database file." ID="ID_935111514" CREATED="1500196901460" MODIFIED="1500197081627" MOVED="1500196961042"/>
-<node TEXT="\end{description}" ID="ID_102894942" CREATED="1500196802066" MODIFIED="1500196957353" MOVED="1500196961058"/>
-</node>
-<node TEXT="The DBMS executes entirely inside an SGX enclave. This protects data during processing." ID="ID_1407764625" CREATED="1499951529028" MODIFIED="1500196627692" MOVED="1500196599261"/>
-<node TEXT="While at rest, data is encrypted. This means the payload is written to the database file in encrypted form." ID="ID_917138080" CREATED="1500196630377" MODIFIED="1500196654666"/>
-<node TEXT="The meta data (header, hash tables) are written as plain text." ID="ID_116310300" CREATED="1500196654833" MODIFIED="1500196685988"/>
-<node TEXT="This keeps the required changes to the legacy code base to a minimum." ID="ID_1173318118" CREATED="1500196686104" MODIFIED="1500196702459"/>
-<node TEXT="" ID="ID_1519585397" CREATED="1500196724163" MODIFIED="1500196724163"/>
 </node>
 </node>
-<node TEXT="Implementation" LOCALIZED_STYLE_REF="default" ID="ID_355880413" CREATED="1495056587955" MODIFIED="1499951620362">
-<icon BUILTIN="button_cancel"/>
+<node TEXT="Implementation" LOCALIZED_STYLE_REF="default" FOLDED="true" ID="ID_355880413" CREATED="1495056587955" MODIFIED="1500234112970">
+<icon BUILTIN="button_ok"/>
+<attribute NAME="label" VALUE="section:kissdb-impl" OBJECT="java.net.URI|section:kissdb-impl"/>
 <node TEXT="mindmap" STYLE_REF="drop" FOLDED="true" ID="ID_54031507" CREATED="1495543887981" MODIFIED="1495543899209" MOVED="1495543900065">
 <node TEXT="obstacles" FOLDED="true" ID="ID_1426298542" CREATED="1499951585939" MODIFIED="1499951587579">
 <node TEXT="hashtables on disk are navigated via fseek operations, which assume knowledge of how large the structures written to disk are" ID="ID_34533061" CREATED="1499951588007" MODIFIED="1499951588007"/>
@@ -8022,32 +8056,84 @@
 <node TEXT="set macro" ID="ID_214592467" CREATED="1499951668009" MODIFIED="1499951669610"/>
 <node TEXT="compare files" ID="ID_1192226249" CREATED="1499951714386" MODIFIED="1499951716235"/>
 </node>
-<node TEXT="As the shim library is configured to transparently encrypt" ID="ID_977087758" CREATED="1500196702601" MODIFIED="1500196715318" MOVED="1500196718949"/>
+<node TEXT="file sizes" ID="ID_1954686650" CREATED="1500219537771" MODIFIED="1500219540167"/>
 </node>
-<node TEXT="Content" STYLE_REF="paragraphs_drop_self" ID="ID_401279777" CREATED="1495543885991" MODIFIED="1495543895304">
-<node TEXT="\lstinputlisting[label=listing:kissdb-edl,caption={" STYLE_REF="latex" FOLDED="true" ID="ID_1487757889" CREATED="1500030878828" MODIFIED="1500182976267" MOVED="1500105150202">
-<node TEXT="\textbf{kissdb.edl (extract).}\protect\footnote{\url{https://github.com/ftes/kissdb-sgx/blob/thesis/kissdb_t/kissdb.edl\#L8}}" ID="ID_1653688599" CREATED="1500031563957" MODIFIED="1500186979806" MOVED="1500031565154"/>
-<node TEXT="Trusted section (E-calls)." ID="ID_1570546277" CREATED="1500186843801" MODIFIED="1500186852614"/>
-<node TEXT="},firstnumber=8,linerange={8-8},style=cpp,autodedent]{../kissdb-sgx/kissdb_t/kissdb.edl}" ID="ID_1470761759" CREATED="1500031423309" MODIFIED="1500186975110"/>
+<node TEXT="Content" STYLE_REF="paragraphs_drop_self" FOLDED="true" ID="ID_401279777" CREATED="1495543885991" MODIFIED="1495543895304">
+<node TEXT="This section highlights some implementation details." ID="ID_352385867" CREATED="1500221196271" MODIFIED="1500221207974" MOVED="1500221358739"/>
+<node TEXT="\begin{description}" ID="ID_792931611" CREATED="1500221208343" MODIFIED="1500221211416" MOVED="1500221358746"/>
+<node TEXT="\item[Proxies in untrusted wrapper:]" FOLDED="true" ID="ID_771371210" CREATED="1500223144162" MODIFIED="1500223175250" MOVED="1500223176363">
+<node TEXT="The untrusted wrapper acts as a proxy to the enclave." ID="ID_1400408777" CREATED="1500223190532" MODIFIED="1500223444891"/>
+<node TEXT="The \Q{open} and \Q{close} functions must also set up and destroy the enclave. For this, they use the library&apos;s helper functions." ID="ID_703852759" CREATED="1500223445032" MODIFIED="1500223526423"/>
+<node TEXT="\autoref{listing:kissdb-edl} shows parts of the enclave&apos;s interface definition." ID="ID_868607759" CREATED="1500223390713" MODIFIED="1500223842914"/>
+<node TEXT="\lstinputlisting[label=listing:kissdb-edl,caption={" STYLE_REF="latex" FOLDED="true" ID="ID_1487757889" CREATED="1500030878828" MODIFIED="1500182976267" MOVED="1500223388681">
+<node TEXT="\textbf{kissdb.edl (extract).}\protect\footnote{\url{https://github.com/ftes/kissdb-sgx/blob/thesis/kissdb_t/kissdb.edl\#L7}}" ID="ID_1653688599" CREATED="1500031563957" MODIFIED="1500223796579" MOVED="1500031565154"/>
+<node TEXT="Two E-calls from the trusted section of the EDL file." ID="ID_1570546277" CREATED="1500186843801" MODIFIED="1500223824383"/>
+<node TEXT="The \texttt{get} E-call shows how the \texttt{size} annotation is used to define the length of the parameters \texttt{key} and \texttt{value} through further parameters." ID="ID_1952321866" CREATED="1500224046638" MODIFIED="1500224472129"/>
+<node TEXT="The annotation \texttt{in} is used for the key, and \texttt{out} for the value." ID="ID_936303656" CREATED="1500224172317" MODIFIED="1500224196273"/>
+<node TEXT="This tells the SDK to copy the key into the enclave before execution, and the value out of the enclave after execution." ID="ID_1160324015" CREATED="1500224196390" MODIFIED="1500224232723"/>
+<node TEXT="},firstnumber=7,linerange={7-8},style=cpp,autodedent]{../kissdb-sgx/kissdb_t/kissdb.edl}" ID="ID_1470761759" CREATED="1500031423309" MODIFIED="1500223793164"/>
 </node>
-<node TEXT="\lstinputlisting[label=listing:kissdb-wrapper,caption={" STYLE_REF="latex" FOLDED="true" ID="ID_1097309626" CREATED="1500030878828" MODIFIED="1500185897078" MOVED="1500105150202">
-<node TEXT="\textbf{kissdb\_{}u\_{}wrapper.c (extract).}\protect\footnote{\url{https://github.com/ftes/kissdb-sgx/blob/thesis/kissdb_u/kissdb_u_wrapper.c\#L31}}" ID="ID_1695001825" CREATED="1500031563957" MODIFIED="1500186327177" MOVED="1500031565154"/>
-<node TEXT="Untrusted wrapper for get call." ID="ID_1496935341" CREATED="1500186868442" MODIFIED="1500186880520"/>
-<node TEXT="},firstnumber=31,linerange={31-35},style=cpp]{../kissdb-sgx/kissdb_u/kissdb_u_wrapper.c}" ID="ID_196687301" CREATED="1500031423309" MODIFIED="1500183138333"/>
+<node TEXT="\autoref{listing:kissdb-wrapper} shows the corresponding implementation of the untrusted wrapper which delegates to the SDK-generated proxies." ID="ID_1114707309" CREATED="1500223843712" MODIFIED="1500223876333"/>
+<node TEXT="\lstinputlisting[label=listing:kissdb-wrapper,caption={" STYLE_REF="latex" FOLDED="true" ID="ID_1097309626" CREATED="1500030878828" MODIFIED="1500185897078" MOVED="1500223388702">
+<node TEXT="\textbf{kissdb\_{}u\_{}wrapper.c (extract).}\protect\footnote{\url{https://github.com/ftes/kissdb-sgx/blob/thesis/kissdb_u/kissdb_u_wrapper.c\#L23}}" ID="ID_1695001825" CREATED="1500031563957" MODIFIED="1500223668676" MOVED="1500031565154"/>
+<node TEXT="Most functions in the wrapper simply delegate to the enclave through the SDK-generated E-call proxies." ID="ID_1739481189" CREATED="1500223670040" MODIFIED="1500223895643"/>
+<node TEXT="The \texttt{get} function adds the \texttt{\_{}size} parameters, taken from the database structure." ID="ID_1856406997" CREATED="1500224247276" MODIFIED="1500224428497"/>
+<node TEXT="This informs the SDK which amount of memory to copy to/from the enclave for the \texttt{key} and \texttt{value} parameters." ID="ID_1256223432" CREATED="1500224323456" MODIFIED="1500224351837"/>
+<node TEXT="The \texttt{close} function most also tear down the enclave which is simplified through the helper library." ID="ID_1363294972" CREATED="1500223698246" MODIFIED="1500223762863"/>
+<node TEXT="},firstnumber=23,linerange={23-35},style=cpp]{../kissdb-sgx/kissdb_u/kissdb_u_wrapper.c}" ID="ID_196687301" CREATED="1500031423309" MODIFIED="1500223662597"/>
 </node>
-<node TEXT="\lstinputlisting[label=listing:kissdb-diff-cmd,caption={" STYLE_REF="latex" FOLDED="true" ID="ID_1641002818" CREATED="1500030878828" MODIFIED="1500184228426" MOVED="1500105150202">
-<node TEXT="\textbf{KissDB diff command.}" ID="ID_172446674" CREATED="1500031563957" MODIFIED="1500184244224" MOVED="1500031565154"/>
+</node>
+<node TEXT="\item[Plain text meta data:]" FOLDED="true" ID="ID_485199274" CREATED="1500221220151" MODIFIED="1500221239213" MOVED="1500221358756">
+<node TEXT="For the case study, the library was configured to transparently encrypt all file input/output (see \autoref{chapter:sgx-lib})." ID="ID_361841208" CREATED="1500220840263" MODIFIED="1500220900116" MOVED="1500221234625"/>
+<node TEXT="The meta data should be output as plain text, so a distinction has to be made between meta data and payload." ID="ID_1596508350" CREATED="1500220901111" MODIFIED="1500220976969" MOVED="1500221234633"/>
+<node TEXT="This option requires the least changes to KISSDB&apos;s code." ID="ID_133676239" CREATED="1500220977107" MODIFIED="1500221180743" MOVED="1500221234639"/>
+<node TEXT="" ID="ID_339181629" CREATED="1500221164151" MODIFIED="1500221164151" MOVED="1500221234644"/>
+<node TEXT="The key and value size (which are also written to the file header) are adapted to include the cryptographic nonce and rounded to the next cipher block size." ID="ID_1650391428" CREATED="1500221045667" MODIFIED="1500221107704" MOVED="1500221234650"/>
+<node TEXT="By keeping the header and hash tables in plain text, KISSDB&apos;s file navigation logic does not have to be altered. The offset calculation is preserved." ID="ID_566758149" CREATED="1500221117006" MODIFIED="1500221160104" MOVED="1500221234655"/>
+<node TEXT="" ID="ID_1721350357" CREATED="1500221258496" MODIFIED="1500221258496"/>
+<node TEXT="\autoref{listing:kissdb-diff-cmd} shows a \textit{diff} command for the code changes to KISSDB." ID="ID_502276070" CREATED="1500221259515" MODIFIED="1500224515685"/>
+<node TEXT="\lstinputlisting[label=listing:kissdb-diff-cmd,caption={" STYLE_REF="latex" FOLDED="true" ID="ID_1641002818" CREATED="1500030878828" MODIFIED="1500221574748" MOVED="1500221257537" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/thesis/content/listings/kissdb-diff.txt">
+<node TEXT="\textbf{Diff command to view changes to KISSDB&apos;s code.}" ID="ID_172446674" CREATED="1500031563957" MODIFIED="1500221849860" MOVED="1500031565154"/>
+<node TEXT="The hardened version was forked from the original at commit \texttt{37194e}." ID="ID_408603447" CREATED="1500221863490" MODIFIED="1500221929341"/>
 <node TEXT="},language=bash,style=default]{content/listings/kissdb-diff.txt}" ID="ID_1769253987" CREATED="1500031423309" MODIFIED="1500185495895"/>
 </node>
-<node TEXT="\lstinputlisting[label=listing:kissdb-diff,caption={" STYLE_REF="latex" FOLDED="true" ID="ID_181400735" CREATED="1500030878828" MODIFIED="1500185892432" MOVED="1500105150202">
-<node TEXT="\textbf{KissDB diff (extract).}" ID="ID_595595404" CREATED="1500031563957" MODIFIED="1500186252330" MOVED="1500031565154"/>
-<node TEXT="},linerange={1-18},style=cpp]{content/listings/kissdb-diff-output.txt}" ID="ID_1619361052" CREATED="1500031423309" MODIFIED="1500186084290"/>
+<node TEXT="\autoref{listing:kissdb-diff} shows the most relevant parts of the diff." ID="ID_1938960450" CREATED="1500221310634" MODIFIED="1500221333996"/>
+<node TEXT="\lstinputlisting[label=listing:kissdb-diff,caption={" STYLE_REF="latex" FOLDED="true" ID="ID_181400735" CREATED="1500030878828" MODIFIED="1500221577414" MOVED="1500221257521" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/thesis/content/listings/kissdb-diff-output.txt">
+<node TEXT="\textbf{kissdb.c diff (extract).}" ID="ID_595595404" CREATED="1500031563957" MODIFIED="1500225542566" MOVED="1500031565154"/>
+<node TEXT="The meta data is written and read as plain text using the \texttt{\_{}insecure} library functions." ID="ID_1141308175" CREATED="1500221392973" MODIFIED="1500232720284"/>
+<node TEXT="The other file input/output operations (for payload) are transparently encrypted by the library." ID="ID_1970354863" CREATED="1500221787990" MODIFIED="1500221802145"/>
+<node TEXT="Also, the \texttt{encryption\_{}key} is provided to the enclave during setup with the \texttt{open()} call." ID="ID_624213734" CREATED="1500222531652" MODIFIED="1500222975848"/>
+<node TEXT="},linerange={12-31},firstnumber=12,style=default-base,language=diff]{content/listings/kissdb-diff-output.txt}" ID="ID_1619361052" CREATED="1500031423309" MODIFIED="1500232698245"/>
 </node>
-<node TEXT="Set key in open(), insecure" ID="ID_1917754406" CREATED="1500197086810" MODIFIED="1500197092648"/>
+<node TEXT="The file content of original and hardened KISSDB files is compared in \autoref{appendix:kissdb-files}." ID="ID_941356556" CREATED="1500230697722" MODIFIED="1500230699477"/>
+</node>
+<node TEXT="\item[Different trusted/untrusted data structures:]" FOLDED="true" ID="ID_967763571" CREATED="1500224546878" MODIFIED="1500225502817">
+<node TEXT="The database structure is used both inside and outside of the enclave." ID="ID_1905540829" CREATED="1500233407351" MODIFIED="1500233470969" MOVED="1500233408813"/>
+<node TEXT="Different fields are required inside and outside of the enclave." ID="ID_97536520" CREATED="1500233471111" MODIFIED="1500233642453"/>
+<node TEXT="The hash tables are held only in enclave memory to facilitate encrypting them in future." ID="ID_523563176" CREATED="1500233485605" MODIFIED="1500233511352"/>
+<node TEXT="The untrusted wrapper on the other hand must hold the enclave ID. This is needed to access E-calls and destroy the enclave." ID="ID_991688530" CREATED="1500233511632" MODIFIED="1500233554971"/>
+<node TEXT="\autoref{listing:kissdb-diff-h} shows how the alternate structures are defined using macros." ID="ID_51898782" CREATED="1500233558493" MODIFIED="1500233584933"/>
+<node TEXT="\lstinputlisting[label=listing:kissdb-diff-h,caption={" STYLE_REF="latex" FOLDED="true" ID="ID_1733303383" CREATED="1500030878828" MODIFIED="1500225563634" MOVED="1500221257521" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/thesis/content/listings/kissdb-diff-output.txt">
+<node TEXT="\textbf{kissdb.h diff (extract).}" ID="ID_1337406707" CREATED="1500031563957" MODIFIED="1500225554667" MOVED="1500031565154"/>
+<node TEXT="},linerange={26-43},firstnumber=26,style=default-base,language=diff]{content/listings/kissdb-diff-h-output.txt}" ID="ID_120974288" CREATED="1500031423309" MODIFIED="1500232785836"/>
 </node>
 </node>
-<node TEXT="Open Issues" ID="ID_233809023" CREATED="1499951540618" MODIFIED="1499951849506">
-<icon BUILTIN="button_cancel"/>
+<node TEXT="\item[Include encryption key in interface:]" FOLDED="true" ID="ID_313975582" CREATED="1500233591627" MODIFIED="1500233682911">
+<node TEXT="The KISSDB interface is extended to pass the database encryption key in the \texttt{open} call." ID="ID_916482321" CREATED="1500233930425" MODIFIED="1500233962472" MOVED="1500233963034"/>
+<node TEXT="This is the only modification to the external KISSDB interface and is shown in \autoref{listing:kissdb-diff-h2}." ID="ID_1663963152" CREATED="1500233754910" MODIFIED="1500233909576" MOVED="1500233975693"/>
+<node TEXT="\lstinputlisting[label=listing:kissdb-diff-h2,caption={" STYLE_REF="latex" FOLDED="true" ID="ID_959621813" CREATED="1500030878828" MODIFIED="1500225620482" MOVED="1500233977251" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/thesis/content/listings/kissdb-diff-output.txt">
+<node TEXT="\textbf{kissdb.h diff (extract).}" ID="ID_75134949" CREATED="1500031563957" MODIFIED="1500225554667" MOVED="1500031565154"/>
+<node TEXT="},linerange={51-60},firstnumber=51,style=default-base,language=diff]{content/listings/kissdb-diff-h-output.txt}" ID="ID_607705448" CREATED="1500031423309" MODIFIED="1500232844953"/>
+</node>
+<node TEXT="" ID="ID_813262991" CREATED="1500233776540" MODIFIED="1500233776540" MOVED="1500233978982"/>
+<node TEXT="Passing the encryption key in the plain via the untrusted wrapper breaks security." ID="ID_384534507" CREATED="1500233777228" MODIFIED="1500233809535"/>
+<node TEXT="This functionality was explicitly excluded from the scope of this case study for simplicity." ID="ID_100727079" CREATED="1500233987816" MODIFIED="1500234055675" MOVED="1500234029695"/>
+</node>
+<node TEXT="\end{description}" ID="ID_1648449345" CREATED="1500221213481" MODIFIED="1500221218203" MOVED="1500221358762"/>
+</node>
+</node>
+<node TEXT="Open Issues" FOLDED="true" ID="ID_233809023" CREATED="1499951540618" MODIFIED="1500234533692">
+<icon BUILTIN="button_ok"/>
 <node TEXT="mindmap" STYLE_REF="drop" FOLDED="true" ID="ID_333249387" CREATED="1499951910427" MODIFIED="1499951919447" MOVED="1499951912414">
 <node TEXT="djb2 is not a crypto hash function, thus the hash table leaks information about keys" ID="ID_873365676" CREATED="1499951548445" MODIFIED="1499951548445" MOVED="1499951923131"/>
 <node TEXT="use crypto hash function (no informaion about keys leaked, but still problematic if small or non-uniformly distributed key space)" ID="ID_162167169" CREATED="1499951548445" MODIFIED="1499951548445" MOVED="1499951923137"/>
@@ -8055,10 +8141,38 @@
 <node TEXT="attest and establish secure channel / provision keys -&gt; currently the enclave hands out secret data to anybody" ID="ID_969801114" CREATED="1499951548447" MODIFIED="1499951548447" MOVED="1499951923150"/>
 <node TEXT="assure file integrity and freshness" ID="ID_643721366" CREATED="1499951548448" MODIFIED="1499951548448" MOVED="1499951923154"/>
 </node>
-<node TEXT="Content" STYLE_REF="paragraphs_drop_self" ID="ID_650844502" CREATED="1499951544402" MODIFIED="1499951548086"/>
+<node TEXT="Content" STYLE_REF="paragraphs_drop_self" FOLDED="true" ID="ID_650844502" CREATED="1499951544402" MODIFIED="1499951548086">
+<node TEXT="Several important aspects were excluded from the scope of this case study." ID="ID_1377485604" CREATED="1500234118361" MODIFIED="1500234309707"/>
+<node TEXT="These are open issues which break the security of the solution as it stands." ID="ID_1763867428" CREATED="1500234135786" MODIFIED="1500234156187"/>
+<node TEXT="" ID="ID_207474819" CREATED="1500234157629" MODIFIED="1500234157629"/>
+<node TEXT="A list of these and other issues follows:" ID="ID_1114623328" CREATED="1500234158955" MODIFIED="1500234322548"/>
+<node TEXT="\begin{description}" ID="ID_1915026761" CREATED="1500234180611" MODIFIED="1500234195419"/>
+<node TEXT="\item[Attestation and key provisioning:]" FOLDED="true" ID="ID_1851814792" CREATED="1500234323868" MODIFIED="1500234332349">
+<node TEXT="In a production setting, the consumer should attest the enclaves identity and at the same time perform a key exchange with the enclave (see \autoref{section:sgx-usage}." ID="ID_1799640899" CREATED="1500233809748" MODIFIED="1500234507743"/>
+<node TEXT="With the exchanged key, the database encryption key could securely be provisioned." ID="ID_1258952538" CREATED="1500233833107" MODIFIED="1500233855615"/>
 </node>
-<node TEXT="Conclusion" LOCALIZED_STYLE_REF="default" FOLDED="true" ID="ID_1103257591" CREATED="1495056597211" MODIFIED="1495606029143">
-<icon BUILTIN="button_cancel"/>
+<node TEXT="\item[Ensure file integrity and freshness:]" FOLDED="true" ID="ID_1148171152" CREATED="1500234355799" MODIFIED="1500234372889">
+<node TEXT="Use cryptographic mechanisms to ensure file integrity." ID="ID_267021578" CREATED="1500234373476" MODIFIED="1500234386424"/>
+<node TEXT="Include monotonic counters provided by the Intel SDK to ensure freshness of the file." ID="ID_218946794" CREATED="1500234386822" MODIFIED="1500234400927"/>
+<node TEXT="If doing so, the possibility of migrating a database file between machines must be considered." ID="ID_103808527" CREATED="1500234407392" MODIFIED="1500234433095"/>
+</node>
+<node TEXT="\item[Cryptographic hash function:]" FOLDED="true" ID="ID_1853155964" CREATED="1500234189579" MODIFIED="1500234210129">
+<node TEXT="KISSDB uses the \textit{djb2} hash function\footnote{\url{http://www.cse.yorku.ca/~oz/hash.html}} to compute key hashes." ID="ID_201700884" CREATED="1500234210690" MODIFIED="1500234292636"/>
+<node TEXT="This is not a cryptographic hash function." ID="ID_187489868" CREATED="1500234228130" MODIFIED="1500234236921"/>
+<node TEXT="The hash tables (which are not encrypted) thus may leak information about the keys, even if the key space is large and uniformly distributed." ID="ID_728912015" CREATED="1500234237059" MODIFIED="1500234259285"/>
+<node TEXT="It should be replaced with a cryptographic hash function." ID="ID_286402682" CREATED="1500234259419" MODIFIED="1500234270694"/>
+</node>
+<node TEXT="\item[Deterministic file layout:]" FOLDED="true" ID="ID_171013750" CREATED="1500234551765" MODIFIED="1500234559572">
+<node TEXT="The file layout is deterministic." ID="ID_132950350" CREATED="1500234560279" MODIFIED="1500234570291"/>
+<node TEXT="If values are added in the same order, the file layout is always the same." ID="ID_755556391" CREATED="1500234570407" MODIFIED="1500234581114"/>
+<node TEXT="If the consumer&apos;s behaviour is known, this opens the door for known plain text attacks." ID="ID_630022390" CREATED="1500234581246" MODIFIED="1500234664179"/>
+<node TEXT="This could occur if a consumer writes a fixed value upon first opening the database (e.g. version information)." ID="ID_1134366734" CREATED="1500234615496" MODIFIED="1500234679192"/>
+</node>
+<node TEXT="\end{description}" ID="ID_362813079" CREATED="1500234185458" MODIFIED="1500234198572"/>
+</node>
+</node>
+<node TEXT="Conclusion" LOCALIZED_STYLE_REF="default" FOLDED="true" ID="ID_1103257591" CREATED="1495056597211" MODIFIED="1500234863830">
+<icon BUILTIN="button_ok"/>
 <node TEXT="mindmap" STYLE_REF="drop" FOLDED="true" ID="ID_1083226017" CREATED="1495543887981" MODIFIED="1495543899209" MOVED="1495543900065">
 <node TEXT="leakage" FOLDED="true" ID="ID_1458480098" CREATED="1499951571938" MODIFIED="1499951575050">
 <node TEXT="offset of the first inserted item is constant" ID="ID_1037445147" CREATED="1499951575358" MODIFIED="1499951575358"/>
@@ -8069,7 +8183,12 @@
 <node TEXT="see ToDos -&gt; use crypto-hash of encrypted key" ID="ID_1783508058" CREATED="1499951575362" MODIFIED="1499951575362"/>
 </node>
 </node>
-<node TEXT="Content" STYLE_REF="paragraphs_drop_self" ID="ID_1327466363" CREATED="1495543885991" MODIFIED="1495543895304"/>
+<node TEXT="Content" STYLE_REF="paragraphs_drop_self" FOLDED="true" ID="ID_1327466363" CREATED="1495543885991" MODIFIED="1495543895304">
+<node TEXT="The scope of the KISSDB study was limited in many regards." ID="ID_820238916" CREATED="1500234544282" MODIFIED="1500234736475"/>
+<node TEXT="The case study was however successful in two aspects." ID="ID_1898934983" CREATED="1500234736714" MODIFIED="1500234888732"/>
+<node TEXT="Firstly, it helped validate the usefulness of the helper library." ID="ID_1726616737" CREATED="1500234788875" MODIFIED="1500234802812"/>
+<node TEXT="Secondly, the design alternatives for hardening applications gathered from related work (\autoref{section:sgx-hardening}) could be applied." ID="ID_1657278492" CREATED="1500234802955" MODIFIED="1500234858492"/>
+</node>
 </node>
 </node>
 <node TEXT="SQLite Case Study" LOCALIZED_STYLE_REF="default" FOLDED="true" POSITION="left" ID="ID_650094352" CREATED="1487266723741" MODIFIED="1500019873754" MOVED="1499849269320">
@@ -8537,72 +8656,6 @@
 <node TEXT="Content" STYLE_REF="paragraphs_drop_self" ID="ID_436734461" CREATED="1495543885991" MODIFIED="1495543895304"/>
 </node>
 </node>
-<node TEXT="Evaluation" STYLE_REF="drop" FOLDED="true" POSITION="left" ID="ID_1795238683" CREATED="1488545273313" MODIFIED="1499849349213" MOVED="1488822767733">
-<icon BUILTIN="button_cancel"/>
-<edge COLOR="#ff0000"/>
-<node TEXT="mindmap" STYLE_REF="drop" FOLDED="true" ID="ID_753567492" CREATED="1495056824288" MODIFIED="1495056829776" MOVED="1495056827521">
-<node TEXT="evaluate how TCB criteria are met" STYLE_REF="NoHeading" ID="ID_788978422" CREATED="1489604441900" MODIFIED="1489604465616" MOVED="1495056831495">
-<arrowlink SHAPE="CUBIC_CURVE" COLOR="#000000" WIDTH="2" TRANSPARENCY="80" FONT_SIZE="9" FONT_FAMILY="SansSerif" DESTINATION="ID_472446859" STARTINCLINATION="462;0;" ENDINCLINATION="462;0;" STARTARROW="NONE" ENDARROW="DEFAULT"/>
-</node>
-<node TEXT="place in design space" STYLE_REF="LastHeading" FOLDED="true" ID="ID_333688014" CREATED="1488565828747" MODIFIED="1489493211318" MOVED="1495056837245">
-<node TEXT="in regard to TEE solutions" ID="ID_60417189" CREATED="1488565846116" MODIFIED="1488565866645"/>
-<node TEXT="in regard to other secure databases" ID="ID_1828927577" CREATED="1488565834620" MODIFIED="1488888942480" MOVED="1488565853417">
-<arrowlink SHAPE="CUBIC_CURVE" COLOR="#000000" WIDTH="2" TRANSPARENCY="80" FONT_SIZE="9" FONT_FAMILY="SansSerif" DESTINATION="ID_1377676252" STARTINCLINATION="1058;0;" ENDINCLINATION="1058;0;" STARTARROW="NONE" ENDARROW="DEFAULT"/>
-</node>
-</node>
-<node TEXT="performance" STYLE_REF="LastHeading" FOLDED="true" ID="ID_881539167" CREATED="1488874626360" MODIFIED="1489493211328" MOVED="1495056837251">
-<node TEXT="size increase due to encryption" FOLDED="true" ID="ID_1044176353" CREATED="1488874648347" MODIFIED="1488874660135" MOVED="1488874661349">
-<node TEXT="static analysis" ID="ID_504742443" CREATED="1488874805049" MODIFIED="1488874807642"/>
-</node>
-<node TEXT="benchmarks" FOLDED="true" ID="ID_1395193192" CREATED="1487318819726" MODIFIED="1488874673861" MOVED="1488874642195">
-<node TEXT="methodology" FOLDED="true" ID="ID_230418222" CREATED="1488874676978" MODIFIED="1488874679872">
-<node TEXT="baseline: vanilla" ID="ID_789109490" CREATED="1488874684996" MODIFIED="1488874692005"/>
-<node TEXT="TLS wrapped" ID="ID_153260475" CREATED="1488874693750" MODIFIED="1488874697584"/>
-<node TEXT="SGX&apos;ified" ID="ID_1160576447" CREATED="1488874698351" MODIFIED="1488874703508"/>
-</node>
-<node TEXT="vary memory: beyond L3 / EPC size" ID="ID_1969097369" CREATED="1488889223503" MODIFIED="1488889241972"/>
-</node>
-<node TEXT="memory usage" ID="ID_670582157" CREATED="1488874793690" MODIFIED="1488874796223"/>
-</node>
-<node TEXT="minimal code changes" STYLE_REF="LastHeading" ID="ID_384838225" CREATED="1488874981982" MODIFIED="1489604500307" MOVED="1495056837255"/>
-<node TEXT="enclave memory size" STYLE_REF="LastHeading" ID="ID_579110329" CREATED="1488874948775" MODIFIED="1489604500313" MOVED="1495056837260"/>
-<node TEXT="supported operations" STYLE_REF="LastHeading" ID="ID_959397383" CREATED="1488874956657" MODIFIED="1489604500317" MOVED="1495056837266"/>
-<node TEXT="isolation guarantees" STYLE_REF="LastHeading" ID="ID_529374751" CREATED="1488874959729" MODIFIED="1489604500322" MOVED="1495056837270"/>
-<node TEXT="security" FOLDED="true" ID="ID_105420050" CREATED="1488874741325" MODIFIED="1488874744039" MOVED="1495056837276">
-<node TEXT="confidentiality and integrity guarantees" STYLE_REF="LastHeading" ID="ID_707463747" CREATED="1488874714053" MODIFIED="1489493218013" MOVED="1488874748271"/>
-<node TEXT="mitigated attacks" STYLE_REF="LastHeading" ID="ID_1216719382" CREATED="1488545262569" MODIFIED="1489493218015" MOVED="1488874748283"/>
-<node TEXT="unmitigated attacks" STYLE_REF="LastHeading" ID="ID_558777948" CREATED="1488874750115" MODIFIED="1489493218017" MOVED="1488874771949"/>
-<node TEXT="leaked data" STYLE_REF="LastHeading" FOLDED="true" ID="ID_1941459060" CREATED="1489604567350" MODIFIED="1489604583103">
-<node TEXT="metadata" FOLDED="true" ID="ID_1569083205" CREATED="1489604570614" MODIFIED="1489604572462">
-<node TEXT="data types" ID="ID_1609395858" CREATED="1489604572982" MODIFIED="1489604575327"/>
-<node TEXT="result sizes" ID="ID_1171201885" CREATED="1489604575446" MODIFIED="1489604577238"/>
-</node>
-</node>
-</node>
-<node TEXT="deduced best practices" STYLE_REF="LastHeading" FOLDED="true" ID="ID_63170762" CREATED="1487268186498" MODIFIED="1489493211335" MOVED="1495056837282">
-<node TEXT="lessons learnt" ID="ID_243837191" CREATED="1487268201339" MODIFIED="1487268203139"/>
-<node TEXT="deduce best practices" ID="ID_97278263" CREATED="1487268203443" MODIFIED="1487268206707"/>
-<node TEXT="provide helper library" ID="ID_1820705724" CREATED="1487268206826" MODIFIED="1487268211139"/>
-</node>
-</node>
-<node TEXT="Performance" LOCALIZED_STYLE_REF="default" FOLDED="true" ID="ID_1837416685" CREATED="1495056760502" MODIFIED="1495606135407">
-<icon BUILTIN="button_cancel"/>
-<node TEXT="mindmap" STYLE_REF="drop" ID="ID_129479435" CREATED="1495543887981" MODIFIED="1495543899209" MOVED="1495543900065"/>
-<node TEXT="Content" STYLE_REF="paragraphs_drop_self" ID="ID_1492301034" CREATED="1495543885991" MODIFIED="1495543895304"/>
-</node>
-<node TEXT="Security Guarantees" LOCALIZED_STYLE_REF="default" FOLDED="true" ID="ID_401277583" CREATED="1495056839759" MODIFIED="1495606135410">
-<icon BUILTIN="button_cancel"/>
-<node TEXT="mindmap" STYLE_REF="drop" ID="ID_1621928975" CREATED="1495543887981" MODIFIED="1495543899209" MOVED="1495543900065"/>
-<node TEXT="Content" STYLE_REF="paragraphs_drop_self" ID="ID_679015382" CREATED="1495543885991" MODIFIED="1495543895304"/>
-</node>
-<node TEXT="Design Space" LOCALIZED_STYLE_REF="default" FOLDED="true" ID="ID_416433960" CREATED="1495056767222" MODIFIED="1495606135404">
-<icon BUILTIN="button_cancel"/>
-<node TEXT="mindmap" STYLE_REF="drop" ID="ID_433821787" CREATED="1495543887981" MODIFIED="1495543899209" MOVED="1495543900065"/>
-<node TEXT="Content" STYLE_REF="paragraphs_drop_self" FOLDED="true" ID="ID_1720359293" CREATED="1495543885991" MODIFIED="1495543895304">
-<node TEXT="criteria to help decide" ID="ID_1289066951" CREATED="1495056795455" MODIFIED="1495056812217" MOVED="1495606132282"/>
-</node>
-</node>
-</node>
 <node TEXT="Conclusion" LOCALIZED_STYLE_REF="default" FOLDED="true" POSITION="left" ID="ID_1572507625" CREATED="1487318838781" MODIFIED="1496135435985" MOVED="1488547706086">
 <icon BUILTIN="button_cancel"/>
 <edge COLOR="#007c00"/>
@@ -8611,11 +8664,31 @@
 <node TEXT="future work" ID="ID_1074533750" CREATED="1499766172307" MODIFIED="1499766174284"/>
 </node>
 </node>
-<node TEXT="Appendix" STYLE_REF="drop" FOLDED="true" POSITION="left" ID="ID_1278383992" CREATED="1489748055346" MODIFIED="1492616946949">
+<node TEXT="\appendix" STYLE_REF="paragraphs_drop_self" FOLDED="true" POSITION="left" ID="ID_254220910" CREATED="1500226021116" MODIFIED="1500226106958">
+<edge COLOR="#00ffff"/>
+<node TEXT="\appendix" ID="ID_1376207046" CREATED="1500226107995" MODIFIED="1500226111117"/>
+</node>
+<node TEXT="KISSDB Database Files" LOCALIZED_STYLE_REF="default" FOLDED="true" POSITION="left" ID="ID_1278383992" CREATED="1489748055346" MODIFIED="1500230602049">
 <edge COLOR="#00007c"/>
-<node TEXT="thanks to: tikzpeople" ID="ID_267530477" CREATED="1495020720099" MODIFIED="1495020724435"/>
-<node TEXT="thanks to: max" ID="ID_1591643310" CREATED="1499950597345" MODIFIED="1499950600114"/>
-<node TEXT="KissDB file content" ID="ID_1714717523" CREATED="1499951936619" MODIFIED="1499951940602"/>
+<attribute NAME="label" VALUE="appendix:kissdb-files" OBJECT="java.net.URI|appendix:kissdb-files"/>
+<node TEXT="mindmap" STYLE_REF="drop" FOLDED="true" ID="ID_446211117" CREATED="1500225911848" MODIFIED="1500225925886">
+<node TEXT="thanks to: tikzpeople" ID="ID_267530477" CREATED="1495020720099" MODIFIED="1495020724435" MOVED="1500225928277"/>
+<node TEXT="thanks to: max" ID="ID_1591643310" CREATED="1499950597345" MODIFIED="1499950600114" MOVED="1500225928287"/>
+</node>
+<node TEXT="Content" STYLE_REF="paragraphs_drop_self" FOLDED="true" ID="ID_1875450413" CREATED="1500225913833" MODIFIED="1500225934625" MOVED="1500230361574">
+<node TEXT="\lstinputlisting[caption={" STYLE_REF="latex" FOLDED="true" ID="ID_104844872" CREATED="1500030878828" MODIFIED="1500226854932" MOVED="1500228166182" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/thesis/content/listings/kissdb-diff-output.txt">
+<node TEXT="\textbf{Plain KISSDB database file.}" ID="ID_487229369" CREATED="1500031563957" MODIFIED="1500226876363" MOVED="1500031565154"/>
+<node TEXT="The file is shown in hex editor view, with the binary content on the left, and the ASCII characters on the right." ID="ID_1553352177" CREATED="1500226801399" MODIFIED="1500226846750"/>
+<node TEXT="Both meta data and payload are in plain text." ID="ID_1172966383" CREATED="1500226786397" MODIFIED="1500226888970"/>
+<node TEXT="},style=default,language=hex]{content/listings/kissdb-plaintext-ascii.txt}" ID="ID_1976669807" CREATED="1500031423309" MODIFIED="1500228931920"/>
+</node>
+<node TEXT="\lstinputlisting[caption={" STYLE_REF="latex" FOLDED="true" ID="ID_560009311" CREATED="1500030878828" MODIFIED="1500226854932" MOVED="1500228166190" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/thesis/content/listings/kissdb-diff-output.txt">
+<node TEXT="\textbf{Hardened KISSDB database file.}" ID="ID_934409193" CREATED="1500031563957" MODIFIED="1500226786184" MOVED="1500031565154"/>
+<node TEXT="The file is shown in hex editor view, with the binary content on the left, and the ASCII characters on the right." ID="ID_337106353" CREATED="1500226801399" MODIFIED="1500226846750"/>
+<node TEXT="The payload is encrypted, while the meta data is in plain text." ID="ID_85251533" CREATED="1500226786397" MODIFIED="1500226798582"/>
+<node TEXT="},style=default,language=hex]{content/listings/kissdb-encrypted-ascii.txt}" ID="ID_126877500" CREATED="1500031423309" MODIFIED="1500230387404"/>
+</node>
+</node>
 </node>
 <node TEXT="template" STYLE_REF="drop" FOLDED="true" POSITION="right" ID="ID_605286234" CREATED="1495543907903" MODIFIED="1495543914521">
 <edge COLOR="#00ffff"/>

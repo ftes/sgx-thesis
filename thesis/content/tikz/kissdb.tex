@@ -2,7 +2,7 @@
 	tt/.style={font=\ttfamily},
 	function/.style={circle, draw, inner sep=2pt, fill=white}
 ]
-	\node at (-5.5,4.5) {kissdb\_{}t};
+	\node at (-5.5,4.25) {kissdb\_{}t};
 	
 	\node[tt,align=left, rectangle split, rectangle split parts=4, text width=5cm, inner sep=0] (v1)
 		at (-5,2.5) {
@@ -20,24 +20,27 @@
 	\draw[-latex'] ($(v1.two east) + (-3.5,0)$-|v1.mid) -- (v2);
 	
 	
-	\draw [-latex'] (-11.5,6.2) rectangle (-3,0.5);
-	\node[function, label={[tt, fill=white]right:open()}] (v3) at  (-11.5,4.5) {};
-	\node[function, label={[tt, fill=white]right:close()}] (v5) at (-11.5,3.5) {};
-	\node[function, label={[tt, fill=white]right:put()}] (v7) at  (-11.5,2.5) {};
-	\node[function, label={[tt, fill=white]right:get()}] (v9) at  (-11.5,1.5) {};
+	\draw [-latex'] (-12.5,6.2) rectangle (-3,0.5);
+	\node[function, label={[tt, fill=white]right:open()}] (v3) at  (-12.5,4.75) {};
+	\node[function, label={[tt, fill=white]right:close()}] (v5) at (-12.5,4) {};
+	\node[function, label={[tt, fill=white]right:put()}] (v7) at  (-12.5,3.25) {};
+	\node[function, label={[tt, fill=white]right:get()}] (v9) at  (-12.5,2.5) {};
+	\node[function, label={[tt, fill=white]right:Iterator\_{}init()}] (v9a) at  (-12.5,1.75) {};
+	\node[function, label={[tt, fill=white]right:Iterator\_{}next()}] (v9b) at  (-12.5,1) {};
 	
-	\node [inner sep=0] (v4) at (-8,4.5) {};
-	\node [inner sep=0] (v6) at (-8,3.5) {};
-	\node [function] (v8) at (-8,2.5) {};
-	\node [function] (v10) at (-8,1.5) {};
+	\node [inner sep=0] (v4) at (-8,4.75) {};
+	\node [inner sep=0] (v6) at (-8,4) {};
+	\node [function] (v8) at (-8,3.25) {};
+	\node [function] (v10) at (-8,2.5) {};
 	
 	\begin{scope}[on background layer]
 		\draw [fill=greenbg]  (-8,5) rectangle (-3.25,1);
-		\draw [-latex']  (v3) edge node[pos=0.7, above] {create} (v4);
-		\draw [-latex'] (v5) edge node[pos=0.7, above] {destroy} (v6);
-		\draw [-latex'] (v7) edge (v8);
-		\draw [-latex'] (v9) edge (v10);
+		\draw [-latex']  (v3) -- node[pos=0.7, above] {create} (v4);
+		\draw [-latex'] (v5) -- node[pos=0.7, above] {destroy} (v6);
+		\draw [-latex'] (v7) -- (v8);
+		\draw [-latex'] (v9) -- (v10);
+		\draw [-latex'] ($(v9b) + (3.5,0)$) -- (v10);
 	\end{scope}
 	
-	\node at (-7,5.75) {kissdb\_{}u};
+	\node at (-7.5,5.75) {kissdb\_{}u};
 \end{tikzpicture}

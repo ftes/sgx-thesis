@@ -1,4 +1,4 @@
-personal_ws-1.1 en 196 
+personal_ws-1.1 en 199 
 TrustedDB
 Arx
 CryptDB's
@@ -9,6 +9,7 @@ CloudVisor
 ttfamily
 buses
 VMFUNC
+djb
 EENTER
 userspace
 BSI
@@ -22,13 +23,14 @@ homomorphic
 subsumption
 parallelise
 pwrite
-SoC
 SMM
+SoC
 AsyncShock
 DMA
 cpp
 vTPM
 DLL
+KISSDB's
 ERESUME
 SPM
 UHD
@@ -47,8 +49,8 @@ KissDB
 TPMs
 DRM
 malware
-TPM
 STR
+TPM
 OUTSW
 CPUID
 runtimes
@@ -182,11 +184,12 @@ VMEXIT
 filename
 AMD
 NoHype
-ret
 pre
+ret
 GETSEC
 sizefunc
 API
+DataBase
 SDK
 Skyhigh
 libc
