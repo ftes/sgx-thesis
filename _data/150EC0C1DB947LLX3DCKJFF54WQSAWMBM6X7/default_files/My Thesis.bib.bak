@@ -447,6 +447,18 @@
   volume = {800}
 }
 
+@TECHREPORT{nist-cipher,
+  author = {Chen, Lily and Franklin, Joshua and Regenscheid, Andrew},
+  title = {Guidelines on Hardware-Rooted Security in Mobile Devices (Draft)},
+  year = {2012},
+  subtitle = {Methods and Techniques},
+  number = {800-38A},
+  doi = {10.6028/NIST.SP.800-38A},
+  url = {http://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-38a.pdf},
+  owner = {fredrik},
+  timestamp = {2017.07.15}
+}
+
 @ARTICLE{Chen2008,
   author = {Chen, Xiaoxin and Garfinkel, Tal and Lewis, E. Christopher and Subrahmanyam,
 	Pratap and Waldspurger, Carl A. and Boneh, Dan and Dwoskin, Jeffrey
@@ -1177,18 +1189,6 @@
   pages = {427-438},
   doi = {10.5220/0005428704270438},
   file = {:../../../literature_repository/Searchable Encryption in MongoDB.pdf:PDF}
-}
-
-@TECHREPORT{nist-cipher,
-  author = {NIST},
-  title = {Recommendation for Block Cipher Modes of Operation},
-  year = {2001},
-  subtitle = {Methods and Techniques},
-  number = {800-38A},
-  doi = {10.6028/NIST.SP.800-38A},
-  url = {http://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-38a.pdf},
-  owner = {fredrik},
-  timestamp = {2017.07.15}
 }
 
 @OTHER{OpenStack,

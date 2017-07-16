@@ -1,0 +1,181 @@
+22,23d21
+< #include "sgx_lib_t_stdio.h"
+< 
+47,48c45
+< 	unsigned long value_size,
+< 	uint8_t *encryption_key)
+---
+> 	unsigned long value_size)
+80d76
+< 		/* header data is not sensitive -> unencrypted */
+84c80
+< 			if (fwrite_insecure(tmp2,4,1,db->f) != 1) { fclose(db->f); return KISSDB_ERROR_IO; }
+---
+> 			if (fwrite(tmp2,4,1,db->f) != 1) { fclose(db->f); return KISSDB_ERROR_IO; }
+86c82
+< 			if (fwrite_insecure(&tmp,sizeof(uint64_t),1,db->f) != 1) { fclose(db->f); return KISSDB_ERROR_IO; }
+---
+> 			if (fwrite(&tmp,sizeof(uint64_t),1,db->f) != 1) { fclose(db->f); return KISSDB_ERROR_IO; }
+88c84
+< 			if (fwrite_insecure(&tmp,sizeof(uint64_t),1,db->f) != 1) { fclose(db->f); return KISSDB_ERROR_IO; }
+---
+> 			if (fwrite(&tmp,sizeof(uint64_t),1,db->f) != 1) { fclose(db->f); return KISSDB_ERROR_IO; }
+90c86
+< 			if (fwrite_insecure(&tmp,sizeof(uint64_t),1,db->f) != 1) { fclose(db->f); return KISSDB_ERROR_IO; }
+---
+> 			if (fwrite(&tmp,sizeof(uint64_t),1,db->f) != 1) { fclose(db->f); return KISSDB_ERROR_IO; }
+98c94
+< 		if (fread_insecure(tmp2,4,1,db->f) != 1) { fclose(db->f); return KISSDB_ERROR_IO; }
+---
+> 		if (fread(tmp2,4,1,db->f) != 1) { fclose(db->f); return KISSDB_ERROR_IO; }
+103c99
+< 		if (fread_insecure(&tmp,sizeof(uint64_t),1,db->f) != 1) { fclose(db->f); return KISSDB_ERROR_IO; }
+---
+> 		if (fread(&tmp,sizeof(uint64_t),1,db->f) != 1) { fclose(db->f); return KISSDB_ERROR_IO; }
+109c105
+< 		if (fread_insecure(&tmp,sizeof(uint64_t),1,db->f) != 1) { fclose(db->f); return KISSDB_ERROR_IO; }
+---
+> 		if (fread(&tmp,sizeof(uint64_t),1,db->f) != 1) { fclose(db->f); return KISSDB_ERROR_IO; }
+115c111
+< 		if (fread_insecure(&tmp,sizeof(uint64_t),1,db->f) != 1) { fclose(db->f); return KISSDB_ERROR_IO; }
+---
+> 		if (fread(&tmp,sizeof(uint64_t),1,db->f) != 1) { fclose(db->f); return KISSDB_ERROR_IO; }
+135,136c131
+< 	/* hash tables are stored unencrypted */
+< 	while (fread_insecure(httmp,db->hash_table_size_bytes,1,db->f) == 1) {
+---
+> 	while (fread(httmp,db->hash_table_size_bytes,1,db->f) == 1) {
+263,264c258
+< 			/* hash tables are stored unencrypted */
+< 			if (fwrite_insecure(&endoffset,sizeof(uint64_t),1,db->f) != 1)
+---
+> 			if (fwrite(&endoffset,sizeof(uint64_t),1,db->f) != 1)
+292,293c286
+< 	/* hash tables are stored unencrypted */
+< 	if (fwrite_insecure(cur_hash_table,db->hash_table_size_bytes,1,db->f) != 1)
+---
+> 	if (fwrite(cur_hash_table,db->hash_table_size_bytes,1,db->f) != 1)
+304,305c297
+< 		/* hash tables are stored unencrypted */
+< 		if (fwrite_insecure(&endoffset,sizeof(uint64_t),1,db->f) != 1)
+---
+> 		if (fwrite(&endoffset,sizeof(uint64_t),1,db->f) != 1)
+316a309,315
+> void KISSDB_Iterator_init(KISSDB *db,KISSDB_Iterator *dbi)
+> {
+> 	dbi->db = db;
+> 	dbi->h_no = 0;
+> 	dbi->h_idx = 0;
+> }
+> 
+343a343,452
+> 
+> #ifdef KISSDB_TEST
+> 
+> #include <inttypes.h>
+> 
+> int main(int argc,char **argv)
+> {
+> 	uint64_t i,j;
+> 	uint64_t v[8];
+> 	KISSDB db;
+> 	KISSDB_Iterator dbi;
+> 	char got_all_values[10000];
+> 	int q;
+> 
+> 	printf("Opening new empty database test.db...\n");
+> 
+> 	if (KISSDB_open(&db,"test.db",KISSDB_OPEN_MODE_RWREPLACE,1024,8,sizeof(v))) {
+> 		printf("KISSDB_open failed\n");
+> 		return 1;
+> 	}
+> 
+> 	printf("Adding and then re-getting 10000 64-byte values...\n");
+> 
+> 	for(i=0;i<10000;++i) {
+> 		for(j=0;j<8;++j)
+> 			v[j] = i;
+> 		if (KISSDB_put(&db,&i,v)) {
+> 			printf("KISSDB_put failed (%"PRIu64")\n",i);
+> 			return 1;
+> 		}
+> 		memset(v,0,sizeof(v));
+> 		if ((q = KISSDB_get(&db,&i,v))) {
+> 			printf("KISSDB_get (1) failed (%"PRIu64") (%d)\n",i,q);
+> 			return 1;
+> 		}
+> 		for(j=0;j<8;++j) {
+> 			if (v[j] != i) {
+> 				printf("KISSDB_get (1) failed, bad data (%"PRIu64")\n",i);
+> 				return 1;
+> 			}
+> 		}
+> 	}
+> 
+> 	printf("Getting 10000 64-byte values...\n");
+> 
+> 	for(i=0;i<10000;++i) {
+> 		if ((q = KISSDB_get(&db,&i,v))) {
+> 			printf("KISSDB_get (2) failed (%"PRIu64") (%d)\n",i,q);
+> 			return 1;
+> 		}
+> 		for(j=0;j<8;++j) {
+> 			if (v[j] != i) {
+> 				printf("KISSDB_get (2) failed, bad data (%"PRIu64")\n",i);
+> 				return 1;
+> 			}
+> 		}
+> 	}
+> 
+> 	printf("Closing and re-opening database in read-only mode...\n");
+> 
+> 	KISSDB_close(&db);
+> 
+> 	if (KISSDB_open(&db,"test.db",KISSDB_OPEN_MODE_RDONLY,1024,8,sizeof(v))) {
+> 		printf("KISSDB_open failed\n");
+> 		return 1;
+> 	}
+> 
+> 	printf("Getting 10000 64-byte values...\n");
+> 
+> 	for(i=0;i<10000;++i) {
+> 		if ((q = KISSDB_get(&db,&i,v))) {
+> 			printf("KISSDB_get (3) failed (%"PRIu64") (%d)\n",i,q);
+> 			return 1;
+> 		}
+> 		for(j=0;j<8;++j) {
+> 			if (v[j] != i) {
+> 				printf("KISSDB_get (3) failed, bad data (%"PRIu64")\n",i);
+> 				return 1;
+> 			}
+> 		}
+> 	}
+> 
+> 	printf("Iterator test...\n");
+> 
+> 	KISSDB_Iterator_init(&db,&dbi);
+> 	i = 0xdeadbeef;
+> 	memset(got_all_values,0,sizeof(got_all_values));
+> 	while (KISSDB_Iterator_next(&dbi,&i,&v) > 0) {
+> 		if (i < 10000)
+> 			got_all_values[i] = 1;
+> 		else {
+> 			printf("KISSDB_Iterator_next failed, bad data (%"PRIu64")\n",i);
+> 			return 1;
+> 		}
+> 	}
+> 	for(i=0;i<10000;++i) {
+> 		if (!got_all_values[i]) {
+> 			printf("KISSDB_Iterator failed, missing value index %"PRIu64"\n",i);
+> 			return 1;
+> 		}
+> 	}
+> 
+> 	KISSDB_close(&db);
+> 
+> 	printf("All tests OK!\n");
+> 
+> 	return 0;
+> }
+> 
+> #endif

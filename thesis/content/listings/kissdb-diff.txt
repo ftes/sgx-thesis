@@ -1,0 +1,3 @@
+cd kissdb_t
+wget --no-check-certificate -O kissdb.c.orig https://raw.githubusercontent.com/adamierymenko/kissdb/37194e7019abfdcec95fe21d6cb2eb8debe78faf/kissdb.c
+diff kissdb.c kissdb.c.orig
