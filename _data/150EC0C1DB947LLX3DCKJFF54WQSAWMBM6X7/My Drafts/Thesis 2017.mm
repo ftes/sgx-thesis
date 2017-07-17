@@ -1,4 +1,4 @@
-<map version="docear 1.1" dcr_id="1488476421761_38dk6g1wx834fy6mbu0yod5x7" project="150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7" project_last_home="file:/home/fredrik/sgx2017/">
+<map version="docear 1.1" project="150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7" project_last_home="file:/home/fredrik/sgx2017/" dcr_id="1488476421761_38dk6g1wx834fy6mbu0yod5x7">
 <!--To view this file, download Docear - The Academic Literature Suite from http://www.docear.org -->
 <attribute_registry SHOW_ATTRIBUTES="hide"/>
 <node TEXT="Thesis 2017" FOLDED="false" ID="ID_308776938" CREATED="1488476421728" MODIFIED="1499948606097">
@@ -101,7 +101,7 @@
 <edge COLOR="#00ff00"/>
 <node TEXT="- Darstellung des Themas der Arbeit (Hinf&#xfc;hrung, wieso ist das Thema relevant)&#xa;- Auflistung der Fragestellungen&#xa;- einzelne Aspekte des Problems herausgearbeitet&#xa;- knapper &#xdc;berblick: Schritte der Problembehandlung&#xa;- Abgrenzung des Themas (was wird ausgeklammert)&#xa;- Aufbau der Arbeit (Begr&#xfc;ndung der Gliederung)" STYLE_REF="drop" ID="ID_584239331" CREATED="1492080918941" MODIFIED="1492616648866" MOVED="1492080932228"/>
 <node TEXT="mindmap" STYLE_REF="drop" FOLDED="true" ID="ID_710378338" CREATED="1495013474678" MODIFIED="1495013479759" MOVED="1495013476557">
-<node TEXT="motivation" ID="ID_779613752" CREATED="1487267802277" MODIFIED="1487267803814" MOVED="1495013482863">
+<node TEXT="motivation" FOLDED="true" ID="ID_779613752" CREATED="1487267802277" MODIFIED="1487267803814" MOVED="1495013482863">
 <node TEXT="trusting remotely executed code" ID="ID_319948042" CREATED="1487265855737" MODIFIED="1487265920660" MOVED="1487268248709"/>
 <node TEXT="cryptography to the rescue?" FOLDED="true" ID="ID_647527971" CREATED="1487265888778" MODIFIED="1488469502949" MOVED="1487268248719">
 <node TEXT="multi party computation" ID="ID_15455493" CREATED="1487265935002" MODIFIED="1487265946155"/>
@@ -140,7 +140,7 @@
 <node TEXT="comparison of trusted computing solutions" ID="ID_1710565397" CREATED="1499779394508" MODIFIED="1499779400285"/>
 <node TEXT="guide to SGX" ID="ID_1482128103" CREATED="1499779400380" MODIFIED="1499779402437"/>
 </node>
-<node TEXT="Content" STYLE_REF="paragraphs_drop_self" ID="ID_697114612" CREATED="1495013498189" MODIFIED="1495013508003">
+<node TEXT="Content" STYLE_REF="paragraphs_drop_self" FOLDED="true" ID="ID_697114612" CREATED="1495013498189" MODIFIED="1495013508003">
 <node TEXT="Cloud computing has proven itself as a viable and popular business model." ID="ID_698884812" CREATED="1500258526177" MODIFIED="1500259816697" MOVED="1500258527046"/>
 <node TEXT="This makes data security an increasingly hot topic." ID="ID_1630969494" CREATED="1500258574984" MODIFIED="1500258639387"/>
 <node TEXT="Encryption as a way of securely transporting data is an age-old and proven concept." ID="ID_1712713994" CREATED="1500258639520" MODIFIED="1500260696854"/>
@@ -174,13 +174,14 @@
 <node TEXT="" ID="ID_488476050" CREATED="1500260937690" MODIFIED="1500260937690"/>
 <node TEXT="Intel SGX is chosen as the prime technology for a more detailed evaluation in two case studies." ID="ID_33539746" CREATED="1500259096959" MODIFIED="1500260323048"/>
 <node TEXT="These case studies show how database software -- representative for the class of hosted applications -- can be hardened using Intel SGX." ID="ID_148600996" CREATED="1500260326858" MODIFIED="1500260395587"/>
+<node TEXT="The SDK provided by Intel is presented along with a small helper library that was developed as part of this thesis." ID="ID_1352179523" CREATED="1500262210502" MODIFIED="1500262291907"/>
 <node TEXT="" ID="ID_1252730579" CREATED="1500259216012" MODIFIED="1500259216012"/>
 <node TEXT="While SGX is an exciting technology that is in many regards better than previous solutions, it is far from perfect." ID="ID_1005742561" CREATED="1500259216891" MODIFIED="1500259270614"/>
 <node TEXT="Criticism and security shortcomings are also presented." ID="ID_1799898232" CREATED="1500259271252" MODIFIED="1500259313339"/>
 <node TEXT="The sources of this thesis, including all text, images and source code, are available at \url{https://github.com/ftes/sgx-thesis}." ID="ID_1636604444" CREATED="1499788139356" MODIFIED="1500259772853"/>
 </node>
 </node>
-<node TEXT="Background" LOCALIZED_STYLE_REF="default" FOLDED="true" POSITION="left" ID="ID_941070001" CREATED="1488476882926" MODIFIED="1499264027738" MOVED="1488547633482">
+<node TEXT="Background" LOCALIZED_STYLE_REF="default" POSITION="left" ID="ID_941070001" CREATED="1488476882926" MODIFIED="1499264027738" MOVED="1488547633482">
 <edge COLOR="#ff00ff"/>
 <node TEXT="- zentrale Begriffe definieren und einordnen&#xa;- nicht Lexikon-Definition, lieber problemorientierte Definition&#xa;- Diskussion unterschiedlicher Definitionsans&#xe4;tze kann hilfreich sein" STYLE_REF="drop" ID="ID_231337527" CREATED="1492080945485" MODIFIED="1492616799822" MOVED="1492616692193"/>
 <node TEXT="- gute Referenzen statt viel wiederholen" STYLE_REF="drop" ID="ID_975081732" CREATED="1492616800232" MODIFIED="1492616818386"/>
@@ -267,7 +268,7 @@
 <node TEXT="Implementations of trusted computing are described and compared in \autoref{chapter:tc-solutions}." ID="ID_684830290" CREATED="1499677377801" MODIFIED="1499677548489"/>
 <node TEXT="Intel SGX -- a particular commercial solution for trusted computing -- is described in more detail in \autoref{chapter:sgx}." LOCALIZED_STYLE_REF="default" ID="ID_733461445" CREATED="1492069185039" MODIFIED="1499677504565" MOVED="1499677487386"/>
 </node>
-<node TEXT="Cryptography" LOCALIZED_STYLE_REF="default" FOLDED="true" ID="ID_265480959" CREATED="1487267831110" MODIFIED="1497274485566" MOVED="1495605123175">
+<node TEXT="Cryptography" LOCALIZED_STYLE_REF="default" ID="ID_265480959" CREATED="1487267831110" MODIFIED="1497274485566" MOVED="1495605123175">
 <attribute NAME="label" VALUE="crypto"/>
 <node TEXT="mindmap" STYLE_REF="drop" FOLDED="true" ID="ID_423356336" CREATED="1495031932426" MODIFIED="1495031936910">
 <node TEXT="approaches" FOLDED="true" ID="ID_1649054570" CREATED="1488475772133" MODIFIED="1488475774478" MOVED="1495032007273">
@@ -834,27 +835,7 @@
 <node TEXT="However, the function output is in plain text which is not desirable for secure remote computation in general." ID="ID_647862117" CREATED="1495031116524" MODIFIED="1499764183668" MOVED="1499942285315"/>
 </node>
 <node TEXT="\item[Verifiable computing]" FOLDED="true" ID="ID_1000386877" CREATED="1495541721026" MODIFIED="1495541722884">
-<node TEXT="This is a first step in the direction of secure remote computing. It ensures the integrity but not the confidentiality of the computation (similar to a cryptographic signature)." ID="ID_14679414" CREATED="1495031325019" MODIFIED="1495543730252" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/../../../fredrik/dev/sgx2017/literature_repository/Non-Interactive%20Verifiable%20Computation.pdf" MOVED="1499942283335">
-<attribute NAME="key" VALUE="Gennaro2010"/>
-<attribute NAME="year" VALUE="2010"/>
-<attribute NAME="title" VALUE="Non-interactive verifiable computing: Outsourcing computation to untrusted workers"/>
-<attribute NAME="authors" VALUE="Gennaro, Rosario and Gentry, Craig and Parno, Bryan"/>
-</node>
-<node TEXT="" ID="ID_750258261" CREATED="1495031634478" MODIFIED="1495031985900" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/../../../../literature_repository/Verena%20integrity%20for%20web%20apps.pdf" MOVED="1499942283346">
-<attribute NAME="key" VALUE="Karapanos"/>
-<attribute NAME="title" VALUE="Verena: End-to-end integrity protection for web applications"/>
-<attribute NAME="authors" VALUE="Karapanos, Nikolaos and Filios, Alexandros and Popa, Raluca Ada and Capkun, Srdjan"/>
-<attribute NAME="year" VALUE="2016"/>
-</node>
-<node TEXT="" ID="ID_1551175568" CREATED="1495031685680" MODIFIED="1495543759204" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/Hybrid%20Architecture%20for%20Interactive%20Verifiable%20Computation.pdf" MOVED="1499942283357">
-<attribute NAME="key" VALUE="Vu2013"/>
-<attribute NAME="year" VALUE="2013"/>
-<attribute NAME="title" VALUE="A hybrid architecture for interactive verifiable computation"/>
-<attribute NAME="authors" VALUE="Vu, Victor and Setty, Srujay and Blumberg, Andrew J and Walfish, Michael"/>
-<pdf_annotation type="PDF_FILE" object_id="0" document_hash="CD75E769ABBFEA402B539DFC8975429BC17D85C54A8528F5EB1BBC83669C">
-    <pdf_title>A hybrid architecture for interactive verifiable computation</pdf_title>
-</pdf_annotation>
-</node>
+<node TEXT="This is a first step in the direction of secure remote computing. It ensures the integrity but not the confidentiality of the computation (similar to a cryptographic signature).\cite{Gennaro2010,Karapanos,Vu2013}" ID="ID_1343830016" CREATED="1500268077010" MODIFIED="1500268078282"/>
 </node>
 <node TEXT="\item[Homomorphic Encryption]" FOLDED="true" ID="ID_1769833687" CREATED="1495031967093" MODIFIED="1495542999044" MOVED="1495031983176">
 <node TEXT="Such encryption schemes define calculation operations on encrypted data. The operands and result of these calculations remain encrypted so they could be performed by an untrusted third party." ID="ID_1952238538" CREATED="1495543096548" MODIFIED="1495543842886" MOVED="1499942270142"/>
@@ -889,25 +870,7 @@
 <node TEXT="The shading indicates computational efficiency (red: impractical, orange: expensive, green: practical). Arrows indicate subsumption of functionality. Fully homomorphic schemes for example provide both $+$ and $\times$ operations (and by extension -- e.g. an encrypted CPU -- also comparison operations)." ID="ID_1527882742" CREATED="1499444848261" MODIFIED="1499764328879"/>
 <node TEXT="Reprinted from" ID="ID_467588759" CREATED="1499444852134" MODIFIED="1499444852134" MOVED="1499444854908"/>
 </node>
-<node TEXT="State of the art fully homomorphic schemes still suffer from an intractably high overhead. Partially homomorphic schemes on the other hand have already been applied to databases." ID="ID_1599544022" CREATED="1496317349564" MODIFIED="1496317641943" MOVED="1499942276721"/>
-<node TEXT="" ID="ID_185886964" CREATED="1496317693286" MODIFIED="1496317709632" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/Microsoft%20Haven.pdf" MOVED="1499942276725">
-<attribute NAME="key" VALUE="Baumann2014"/>
-<attribute NAME="year" VALUE="2014"/>
-<attribute NAME="title" VALUE="Shielding applications from an untrusted cloud with haven"/>
-<attribute NAME="authors" VALUE="Baumann, Andrew and Peinado, Marcus and Hunt, Galen"/>
-<pdf_annotation type="PDF_FILE" object_id="0" document_hash="F73BC6AC9A9DC3F7B51411327AC88B18AD75C688219B86BAC4CD6A446F99EDD">
-    <pdf_title>Shielding Applications from an Untrusted Cloud with Haven</pdf_title>
-</pdf_annotation>
-</node>
-<node TEXT="" ID="ID_666530113" CREATED="1496317710164" MODIFIED="1496317717332" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/Encrypted%20Database%20good%20FHE%20PHE%20overview.pdf" MOVED="1499942276728">
-<attribute NAME="key" VALUE="querying-encrypted-data-tutorial"/>
-<attribute NAME="year" VALUE="2013"/>
-<attribute NAME="title" VALUE="Querying Encrypted Data (Tutorial)"/>
-<attribute NAME="authors" VALUE="Arasu, Arvind and Eguro, Ken and Kaushik, Raghav and Ramamurthy, Ravi"/>
-<pdf_annotation type="PDF_FILE" object_id="0" document_hash="A99F7310249BD6991DEEAB6A4547EBE8F8E506FF909E1664DFEC1E19ED34A">
-    <pdf_title>Querying Encrypted Data</pdf_title>
-</pdf_annotation>
-</node>
+<node TEXT="State of the art fully homomorphic schemes still suffer from an intractably high overhead. Partially homomorphic schemes on the other hand have already been applied to databases.\cite{Baumann2014,querying-encrypted-data-tutorial}" ID="ID_1599544022" CREATED="1496317349564" MODIFIED="1500268125418" MOVED="1499942276721"/>
 <node TEXT="" ID="ID_210271783" CREATED="1495611378626" MODIFIED="1496317724213" MOVED="1499942276731"/>
 <node TEXT="Encryption schemes in themselves also do not help verify what computation took place. Combining encryption with verifiable computation approaches or software attestation may provide a solution." ID="ID_717622838" CREATED="1496317724836" MODIFIED="1499447867191" MOVED="1499942276735"/>
 </node>
@@ -4207,7 +4170,7 @@
 </node>
 </node>
 </node>
-<node TEXT="Intel SGX" FOLDED="true" POSITION="left" ID="ID_1888222908" CREATED="1499677051779" MODIFIED="1499677189499">
+<node TEXT="Intel SGX" POSITION="left" ID="ID_1888222908" CREATED="1499677051779" MODIFIED="1499677189499">
 <edge COLOR="#007c00"/>
 <attribute NAME="label" VALUE="chapter:sgx" OBJECT="java.net.URI|chapter:sgx"/>
 <node TEXT="mindmap" STYLE_REF="drop" FOLDED="true" ID="ID_568950088" CREATED="1495056010089" MODIFIED="1495056022163" MOVED="1499677177765">
@@ -4563,8 +4526,23 @@
 </node>
 <node TEXT="This chapter briefly describes the basic concepts of SGX and then summarises further findings from research." ID="ID_147500482" CREATED="1499682107197" MODIFIED="1499765627696" MOVED="1499757218756"/>
 <node TEXT="This includes performance studies, known criticism and security issues, as well as noteworthy applications built on top of SGX." ID="ID_1316984123" CREATED="1499682192807" MODIFIED="1499683593519"/>
+<node TEXT="\input{content/tikz/sgx-privilege}" STYLE_REF="latex" FOLDED="true" ID="ID_1516228733" CREATED="1499685625212" MODIFIED="1499776577965" MOVED="1500264306776" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/thesis/content/tikz/sgx-privilege.tex">
+<attribute NAME="image" VALUE=""/>
+<attribute NAME="label" VALUE="figure:sgx-privilege" OBJECT="java.net.URI|figure:sgx-privilege"/>
+<attribute NAME="key" VALUE="sgx-explained"/>
+<attribute NAME="journal" VALUE="IACR Cryptology ePrint Archive"/>
+<attribute NAME="year" VALUE="2016"/>
+<attribute NAME="title" VALUE="Intel SGX Explained."/>
+<attribute NAME="authors" VALUE="Costan, Victor and Devadas, Srinivas"/>
+<node TEXT="\textbf{Intel SGX enclave within the privilege level hierarchy.}" ID="ID_1009832582" CREATED="1499685692309" MODIFIED="1499776572862"/>
+<node TEXT="An Intel CPU typically has two privilege schemes." ID="ID_135134113" CREATED="1499692846109" MODIFIED="1499756715032"/>
+<node TEXT="Privilege rings are the oldest concept, of which nowadays only ring zero and three are used to separate the operating system and applications. These are often called kernel and user mode." ID="ID_1292196585" CREATED="1499692906411" MODIFIED="1499693144953"/>
+<node TEXT="Virtualisation support adds another privilege scheme. The hypervisor runs in VMX root mode. It is protected from the guest VMs running in VMX non-root mode. The BIOS runs at the highest privilege level in system management mode (SMM)." ID="ID_394725974" CREATED="1499692963779" MODIFIED="1499764800484"/>
+<node TEXT="SGX enclave mode adds an inverse isolation layer. The two existing privilege schemes protect more privileged components (bottom) from less privileged ones (top). SGX enclaves are in the least privileged layer, but are protected from all more privileged components." ID="ID_1068699047" CREATED="1499756678635" MODIFIED="1499756806492"/>
+<node TEXT="Reprinted from" ID="ID_807064713" CREATED="1499693104886" MODIFIED="1499693111048"/>
 </node>
-<node TEXT="Overview" LOCALIZED_STYLE_REF="default" FOLDED="true" ID="ID_1052911477" CREATED="1495056059522" MODIFIED="1499776800629" MOVED="1499677177784">
+</node>
+<node TEXT="Overview" LOCALIZED_STYLE_REF="default" ID="ID_1052911477" CREATED="1495056059522" MODIFIED="1499776800629" MOVED="1499677177784">
 <icon BUILTIN="button_ok"/>
 <node TEXT="mindmap" STYLE_REF="drop" FOLDED="true" ID="ID_563834243" CREATED="1495543887981" MODIFIED="1495543899209" MOVED="1495543900065">
 <node TEXT="done" FOLDED="true" ID="ID_1968553160" CREATED="1499841439551" MODIFIED="1499841440551" MOVED="1499841440977">
@@ -5010,21 +4988,6 @@
 </pdf_annotation>
 </node>
 <node TEXT="SGX changes the memory access semantics by introducing a protection scheme inverse to the existing privilege levels.\cite[ch. 6.2]{sgx-explained}. \autoref{figure:sgx-privilege} shows how enclaves relate to existing privilege levels." ID="ID_607406159" CREATED="1499684211117" MODIFIED="1499760934179"/>
-<node TEXT="\input{content/tikz/sgx-privilege}" STYLE_REF="latex" FOLDED="true" ID="ID_1516228733" CREATED="1499685625212" MODIFIED="1499776577965" MOVED="1499776746078" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/thesis/content/tikz/sgx-privilege.tex">
-<attribute NAME="image" VALUE=""/>
-<attribute NAME="label" VALUE="figure:sgx-privilege" OBJECT="java.net.URI|figure:sgx-privilege"/>
-<attribute NAME="key" VALUE="sgx-explained"/>
-<attribute NAME="journal" VALUE="IACR Cryptology ePrint Archive"/>
-<attribute NAME="year" VALUE="2016"/>
-<attribute NAME="title" VALUE="Intel SGX Explained."/>
-<attribute NAME="authors" VALUE="Costan, Victor and Devadas, Srinivas"/>
-<node TEXT="\textbf{Intel SGX enclave within the privilege level hierarchy.}" ID="ID_1009832582" CREATED="1499685692309" MODIFIED="1499776572862"/>
-<node TEXT="An Intel CPU typically has two privilege schemes." ID="ID_135134113" CREATED="1499692846109" MODIFIED="1499756715032"/>
-<node TEXT="Privilege rings are the oldest concept, of which nowadays only ring zero and three are used to separate the operating system and applications. These are often called kernel and user mode." ID="ID_1292196585" CREATED="1499692906411" MODIFIED="1499693144953"/>
-<node TEXT="Virtualisation support adds another privilege scheme. The hypervisor runs in VMX root mode. It is protected from the guest VMs running in VMX non-root mode. The BIOS runs at the highest privilege level in system management mode (SMM)." ID="ID_394725974" CREATED="1499692963779" MODIFIED="1499764800484"/>
-<node TEXT="SGX enclave mode adds an inverse isolation layer. The two existing privilege schemes protect more privileged components (bottom) from less privileged ones (top). SGX enclaves are in the least privileged layer, but are protected from all more privileged components." ID="ID_1068699047" CREATED="1499756678635" MODIFIED="1499756806492"/>
-<node TEXT="Reprinted from" ID="ID_807064713" CREATED="1499693104886" MODIFIED="1499693111048"/>
-</node>
 <node TEXT="" ID="ID_1810554231" CREATED="1499693559989" MODIFIED="1499693559989"/>
 <node TEXT="\autoref{figure:sgx-address-space} shows an abstract view of an application&apos;s address space layout." ID="ID_1645584733" CREATED="1499700314415" MODIFIED="1499700334233"/>
 <node TEXT="The enclave&apos;s memory is protected by the CPU from direct access by any component but the enclave." ID="ID_1772616683" CREATED="1499700577783" MODIFIED="1499700636192"/>
@@ -5089,7 +5052,7 @@
 <node TEXT="This reliance on the untrusted operating system keeps the SGX implementation small. It does however open up certain attack avenues. A denial of service (DoS) attack is straight-forward, as the operating system can refuse to schedule any enclave threads. In the context of remote computation, the infrastructure owner could choose to cut the power at any time, so this is not really a disadvantage." ID="ID_1767974666" CREATED="1499701075208" MODIFIED="1499775715477"/>
 <node TEXT="More serious security issues are described in \autoref{section:sgx-criticism}." ID="ID_1234909125" CREATED="1499701231287" MODIFIED="1499701271017"/>
 <node TEXT="" ID="ID_494455318" CREATED="1499700511535" MODIFIED="1499700511535" MOVED="1499775817427"/>
-<node TEXT="Each SGX CPU has an embedded cryptographic private key." ID="ID_85719808" CREATED="1499757966212" MODIFIED="1499757985683" MOVED="1499775817416"/>
+<node TEXT="Each SGX-capable CPU has an embedded cryptographic private key." ID="ID_85719808" CREATED="1499757966212" MODIFIED="1500264419400" MOVED="1499775817416"/>
 <node TEXT="Using a special group signature scheme, the CPU uses this key to attest the state of an enclave." ID="ID_779581035" CREATED="1499757986506" MODIFIED="1499758041474" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/intel%20epid.pdf" MOVED="1499775817405">
 <attribute NAME="key" VALUE="c"/>
 <attribute NAME="year" VALUE="2016"/>
@@ -5154,37 +5117,23 @@
 <node TEXT="SGX capable CPUs are available since the end of 2015.\footnote{\url{https://github.com/ayeks/SGX-hardware}}." ID="ID_1264019871" CREATED="1499693826665" MODIFIED="1499693869078"/>
 </node>
 </node>
-<node TEXT="Enclave Development" FOLDED="true" ID="ID_816398624" CREATED="1499693570309" MODIFIED="1499849786487" MOVED="1499777011960">
+<node TEXT="Enclave Development" ID="ID_816398624" CREATED="1499693570309" MODIFIED="1499849786487" MOVED="1499777011960">
 <icon BUILTIN="button_ok"/>
 <attribute NAME="label" VALUE="section:sgx-usage" OBJECT="java.net.URI|section:sgx-usage"/>
 <node TEXT="mindmap" STYLE_REF="drop" ID="ID_407748345" CREATED="1499777017556" MODIFIED="1499777026225"/>
-<node TEXT="content" STYLE_REF="paragraphs_drop_self" FOLDED="true" ID="ID_919204644" CREATED="1499777020221" MODIFIED="1499777030073">
+<node TEXT="content" STYLE_REF="paragraphs_drop_self" ID="ID_919204644" CREATED="1499777020221" MODIFIED="1499777030073">
 <node TEXT="Intel offers a Software Development Kit (SDK) for authoring enclaves and integrating them into an application." ID="ID_137499231" CREATED="1499840764560" MODIFIED="1499840976976" MOVED="1499840971471"/>
 <node TEXT="The SDK is available for both Windows\footnote{\url{https://software.intel.com/en-us/sgx-sdk}} and Linux\footnote{\url{https://github.com/01org/linux-sgx}, open source under the very liberal BSD license.}" ID="ID_1174967909" CREATED="1499840977110" MODIFIED="1499841007592"/>
-<node TEXT="The SDK provides the following features:" ID="ID_1005935849" CREATED="1499841056702" MODIFIED="1499851305026" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/SGX%20SDK%20Guide.pdf">
-<attribute NAME="key" VALUE="sgx-windows"/>
-<attribute NAME="title" VALUE="Intel SGX Evaluation SDK User&apos;s Guide for Windows OS"/>
-<attribute NAME="authors" VALUE="Intel"/>
-<pdf_annotation type="PDF_FILE" object_id="0" document_hash="1824E5805C4B7F3BD8F2F8C65C3E36ED39DE0D2FD4F9448A4A2E6EA70CD3E8">
-    <pdf_title>Intel&#xae; Software Guard Extensions Evaluation SDK</pdf_title>
-</pdf_annotation>
+<node TEXT="The SDK provides the following features:\cite{sgx-windows,sgx-dev}" ID="ID_1326046724" CREATED="1500268175237" MODIFIED="1500268176633"/>
+<node TEXT="\begin{description}" FOLDED="true" ID="ID_1382376973" CREATED="1499841073631" MODIFIED="1499841329336">
+<node TEXT="\item[C and C++:] These are the only programming languages supported by the SDK." ID="ID_983565268" CREATED="1499841278968" MODIFIED="1499841308560" MOVED="1500264456976"/>
+<node TEXT="\item[Interface definition:] An enclave&apos;s interface is defined in the Enclave Definition Language (EDL). This is described in more detail later on." ID="ID_378071151" CREATED="1499841157134" MODIFIED="1499851235759" MOVED="1500264457000"/>
+<node TEXT="\item[Debugging:] This is actually a SGX hardware feature. An enclave in debug mode is not protected by the CPU." ID="ID_362995137" CREATED="1499843018776" MODIFIED="1499843067168" MOVED="1500264457023"/>
+<node TEXT="\item[Simulation mode:] In the absence of SGX hardware, the hardware is simulated for development purposes." ID="ID_72514973" CREATED="1499841082246" MODIFIED="1499841141767" MOVED="1500264457045"/>
+<node TEXT="\item[Trusted library:] Helper functions for enclave development. This includes a subset of the standard C library (e.g. without file input/output), random number generation, cryptographic primitives, key exchange and data sealing." ID="ID_1393938905" CREATED="1499843198550" MODIFIED="1500264464230" MOVED="1500264457065"/>
+<node TEXT="\item[Complete authoring chain:] Enclaves can be compiled and signed so that they could be loaded in production use. See \autoref{section:sgx-criticism} for the restrictions that apply." ID="ID_237639086" CREATED="1499841142038" MODIFIED="1499843002559" MOVED="1500264457084"/>
+<node TEXT="\end{description}" ID="ID_934385781" CREATED="1499841078919" MODIFIED="1499841335191" MOVED="1500264457103"/>
 </node>
-<node TEXT="" ID="ID_1648726889" CREATED="1499851312264" MODIFIED="1499851318583" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/SGX%20Developer%20Guide%20Linux.pdf">
-<attribute NAME="key" VALUE="sgx-dev"/>
-<attribute NAME="title" VALUE="Intel SGX Developer Guide"/>
-<attribute NAME="authors" VALUE="Intel"/>
-<pdf_annotation type="PDF_FILE" object_id="0" document_hash="95BCE493563A8534B9FB48B98ACCFA96185B4B27710EDA131D698F52B3794">
-    <pdf_title>Intel&#xae; Software Guard Extensions</pdf_title>
-</pdf_annotation>
-</node>
-<node TEXT="\begin{description}" ID="ID_1382376973" CREATED="1499841073631" MODIFIED="1499841329336"/>
-<node TEXT="\item[C and C++:] These are the only programming languages supported by the SDK." ID="ID_983565268" CREATED="1499841278968" MODIFIED="1499841308560" MOVED="1499841309047"/>
-<node TEXT="\item[Interface definition:] An enclave&apos;s interface is defined in the Enclave Definition Language (EDL). This is described in more detail later on." ID="ID_378071151" CREATED="1499841157134" MODIFIED="1499851235759" MOVED="1499841231604"/>
-<node TEXT="\item[Debugging:] This is actually a SGX hardware feature. An enclave in debug mode is not protected by the CPU." ID="ID_362995137" CREATED="1499843018776" MODIFIED="1499843067168"/>
-<node TEXT="\item[Simulation mode:] In the absence of SGX hardware, the hardware is simulated for development purposes." ID="ID_72514973" CREATED="1499841082246" MODIFIED="1499841141767"/>
-<node TEXT="\item[Trusted library:] Helper functions for enclave development. This includes a subset of the standard libc (e.g. without file input/output), random number generation, cryptographic primitives, key exchange and data sealing." ID="ID_1393938905" CREATED="1499843198550" MODIFIED="1499851265384"/>
-<node TEXT="\item[Complete authoring chain:] Enclaves can be compiled and signed so that they could be loaded in production use. See \autoref{section:sgx-criticism} for the restrictions that apply." ID="ID_237639086" CREATED="1499841142038" MODIFIED="1499843002559"/>
-<node TEXT="\end{description}" ID="ID_934385781" CREATED="1499841078919" MODIFIED="1499841335191"/>
 <node TEXT="An example EDL interface definition is shown in \autoref{listing:edl}." ID="ID_614448952" CREATED="1499847738896" MODIFIED="1499847762089"/>
 <node TEXT="It is divided into a trusted (E-call) and untrusted (O-call) section." ID="ID_1379790192" CREATED="1499839870782" MODIFIED="1499839923488" MOVED="1499849150332"/>
 <node TEXT="Based on this interface, the SDK generates proxy functions. For all \textit{trusted} functions (E-calls) proxies are generated for the untrusted wrapper. For all \textit{untrusted} functions (O-calls), proxies are generated for the enclave." ID="ID_1582039127" CREATED="1499847826767" MODIFIED="1499847930490"/>
@@ -5194,11 +5143,12 @@
 <node TEXT="The annotations show the direction of data flow (\textit{in, out, user\_{}check})." ID="ID_1178777303" CREATED="1499847963574" MODIFIED="1499848719647" MOVED="1499848713006"/>
 <node TEXT="If \textit{in} (and/or \textit{out}) are specified, the proxy code will copy the parameter by value before calling the function (and/or afterwards). A pass-by-reference can be achieved with \textit{user\_{}check}." ID="ID_77293385" CREATED="1499848118799" MODIFIED="1499849900345"/>
 <node TEXT="Pass-by-value is recommended for security reasons. The enclave cannot rely on untrusted memory to be stable. However, copying and checking parameters adds overhead. This is discussed in \autoref{section:sgx-perf}." ID="ID_1962499209" CREATED="1499849924975" MODIFIED="1499850023393" MOVED="1499850040929"/>
-<node TEXT="% Listing" STYLE_REF="latex" FOLDED="true" ID="ID_1687639604" CREATED="1499839536528" MODIFIED="1499839579388" MOVED="1499849187966">
+<node TEXT="% Listing" STYLE_REF="latex" ID="ID_1687639604" CREATED="1499839536528" MODIFIED="1499839579388" MOVED="1499849187966">
 <node TEXT="\lstinputlisting[label=listing:edl,caption={" STYLE_REF="latex" ID="ID_326599406" CREATED="1499784565468" MODIFIED="1499840341049" MOVED="1499839552465"/>
 <node TEXT="\textbf{enclave.edl} -- Enclave Definition Language (EDL) example file." ID="ID_1712028152" CREATED="1499839473993" MODIFIED="1499839846929" MOVED="1499839552480"/>
 <node TEXT="EDL is used by the Intel SGX SDK to specify an enclaves interface on the function level." ID="ID_689768123" CREATED="1499839826054" MODIFIED="1499839901664" MOVED="1499840160834"/>
-<node TEXT="The enclave&apos;s entry table is generated based on the EDL file." ID="ID_1488600472" CREATED="1499851396479" MODIFIED="1499851415097"/>
+<node TEXT="The enclave&apos;s entry table is generated based on the trusted section of the EDL file." ID="ID_1488600472" CREATED="1499851396479" MODIFIED="1500264490947"/>
+<node TEXT="This EDL file defines only E-calls, but no outgoing (untrusted) O-calls." ID="ID_1871393222" CREATED="1500264494495" MODIFIED="1500264514053"/>
 <node TEXT="The example is taken from the demo consumer of the author&apos;s SGX helper library: \url{https://github.com/ftes/sgx-lib-consumer/blob/thesis/enclave/enclave.edl}" ID="ID_704042173" CREATED="1499840615648" MODIFIED="1500034650348"/>
 <node TEXT="},style=edl]{../sgx-lib-consumer/enclave/enclave.edl}" STYLE_REF="latex" ID="ID_1937257396" CREATED="1499839481526" MODIFIED="1499840345307" MOVED="1499839552490"/>
 </node>
@@ -5223,7 +5173,7 @@
 <node TEXT="These enclaves rely on the Manageability Engine (ME), which is a part of Intel CPUs, to provide these features.\footnote{\url{https://software.intel.com/en-us/forums/intel-software-guard-extensions-intel-sgx/topic/607330&#xa;}}" ID="ID_1422515691" CREATED="1499849541455" MODIFIED="1499851537618"/>
 </node>
 </node>
-<node TEXT="Performance" LOCALIZED_STYLE_REF="default" FOLDED="true" ID="ID_388809349" CREATED="1495056067547" MODIFIED="1499783517181" MOVED="1499694113531">
+<node TEXT="Performance" LOCALIZED_STYLE_REF="default" ID="ID_388809349" CREATED="1495056067547" MODIFIED="1499783517181" MOVED="1499694113531">
 <icon BUILTIN="button_ok"/>
 <attribute NAME="label" VALUE="section:sgx-perf" OBJECT="java.net.URI|section:sgx-perf"/>
 <node TEXT="mindmap" STYLE_REF="drop" FOLDED="true" ID="ID_1081313395" CREATED="1495543887981" MODIFIED="1495543899209" MOVED="1495543900065">
@@ -5256,7 +5206,7 @@
 </node>
 </node>
 </node>
-<node TEXT="Content" STYLE_REF="paragraphs_drop_self" FOLDED="true" ID="ID_1404181635" CREATED="1495543885991" MODIFIED="1495543895304">
+<node TEXT="Content" STYLE_REF="paragraphs_drop_self" ID="ID_1404181635" CREATED="1495543885991" MODIFIED="1495543895304">
 <node TEXT="In principle, the CPU&apos;s full processing speed is available in SGX enclaves. This is an advantage over solutions with external secure elements." ID="ID_1639328080" CREATED="1499779635228" MODIFIED="1499780618814"/>
 <node TEXT="However, several factors have a observable performance impact on enclave performance." ID="ID_935750308" CREATED="1499779666124" MODIFIED="1499780627660"/>
 <node TEXT="Isolation is achieved by protecting an enclave&apos;s memory." ID="ID_88365959" CREATED="1499779682100" MODIFIED="1499779693863"/>
@@ -5315,10 +5265,10 @@
     <pdf_title>Intel&#xae; Software Guard Extensions Programming Reference</pdf_title>
 </pdf_annotation>
 </node>
-<node TEXT="\cite{Arnautov2016} evaluates how this can impact performance." ID="ID_905850038" CREATED="1499782962709" MODIFIED="1499783024557"/>
+<node TEXT="The SDK&apos;s performance is evaluated in \cite{Arnautov2016}." ID="ID_905850038" CREATED="1499782962709" MODIFIED="1500268251311"/>
 <node TEXT="They compare different solutions for executing system calls from within an enclave." ID="ID_1493078645" CREATED="1499783025140" MODIFIED="1499783113246"/>
-<node TEXT="The first option is to use the untrusted wrapper as a synchronous proxy (E-call for every system call). The CPU must switch execution context, execute the system call, and pass the result back to the enclave. This adds a 10x overhead for \textit{pwrite} calls." ID="ID_642315590" CREATED="1499783114021" MODIFIED="1499783236573"/>
-<node TEXT="Better performance is achieved with a asynchronous executor thread pool outside of the enclave. This solution results in performance comparable to native execution." ID="ID_1629826277" CREATED="1499783237452" MODIFIED="1499783401025" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/Scone.pdf">
+<node TEXT="The first option is to use the untrusted wrapper as a synchronous proxy (E-call for every system call). The CPU must switch execution context, execute the system call, and pass the result back to the enclave. This adds a 10x overhead for file input/output." ID="ID_642315590" CREATED="1499783114021" MODIFIED="1500264616538"/>
+<node TEXT="Better performance is achieved with an asynchronous executor thread pool outside of the enclave. This solution results in performance comparable to native execution." ID="ID_1629826277" CREATED="1499783237452" MODIFIED="1500264565015" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/Scone.pdf">
 <attribute NAME="key" VALUE="Arnautov2016"/>
 <attribute NAME="year" VALUE="2016"/>
 <attribute NAME="title" VALUE="SCONE: Secure linux containers with Intel SGX"/>
@@ -5333,8 +5283,8 @@
 <node TEXT="Known Criticism" LOCALIZED_STYLE_REF="default" FOLDED="true" ID="ID_806492894" CREATED="1495056086762" MODIFIED="1499860154106" MOVED="1499694114337">
 <icon BUILTIN="button_ok"/>
 <attribute NAME="label" VALUE="section:sgx-criticism" OBJECT="java.net.URI|section:sgx-criticism"/>
-<node TEXT="mindmap" STYLE_REF="drop" FOLDED="true" ID="ID_358637021" CREATED="1495543887981" MODIFIED="1495543899209" MOVED="1495543900065">
-<node TEXT="done" FOLDED="true" ID="ID_1766362665" CREATED="1499857415752" MODIFIED="1499857416632">
+<node TEXT="mindmap" STYLE_REF="drop" ID="ID_358637021" CREATED="1495543887981" MODIFIED="1495543899209" MOVED="1495543900065">
+<node TEXT="done" ID="ID_1766362665" CREATED="1499857415752" MODIFIED="1499857416632">
 <node TEXT="Intel&apos;s role in controlling software" ID="ID_1136540818" CREATED="1487266491506" MODIFIED="1488547009554" MOVED="1499857422302">
 <attribute NAME="LastHeading" VALUE=""/>
 </node>
@@ -6674,7 +6624,7 @@
 <node TEXT="Enclaves are protected from the operating system and hardware owner. This can also be a disadvantage from a security standpoint. Malware protected in an enclave is an often stated example." ID="ID_1912630411" CREATED="1499852664023" MODIFIED="1499858771874" MOVED="1499858721621"/>
 <node TEXT="Two factors are in place that should prevent this." ID="ID_1621688747" CREATED="1499858772759" MODIFIED="1499858786097"/>
 <node TEXT="Firstly, enclaves cannot perform any input/output, so part of the malware would have to live in an (observable) unprotected wrapper.\cite{sgx-explained}[ch. 6.8]" ID="ID_161645023" CREATED="1499852928527" MODIFIED="1499852930226" MOVED="1499858721625"/>
-<node TEXT="Secondly, Intel has to white label enclave software so that it will be loaded by an Intel CPU. This is again a cause of criticism." ID="ID_351871068" CREATED="1499852871815" MODIFIED="1499852958274" MOVED="1499858721629"/>
+<node TEXT="Secondly, Intel can decide which enclave software will be loaded by an Intel CPU (white labelling). This is again a cause of criticism." ID="ID_351871068" CREATED="1499852871815" MODIFIED="1500264718716" MOVED="1499858721629"/>
 <node TEXT="" ID="ID_1260349053" CREATED="1499859025360" MODIFIED="1499859025360"/>
 <node TEXT="Intel only white labels the identity of an enclave -- its initial measurement. Because enclave code may be self-modifying it is possible to dynamically load encrypted malicious code into an enclave. This is a viable attack vector if an exploit is found for a white labelled enclave, into which malware could then be loaded." ID="ID_1914733350" CREATED="1499858557049" MODIFIED="1499859096666" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/Malware%20Guard%20Extension.pdf" MOVED="1499858721634">
 <attribute NAME="key" VALUE="schwarz2017malware"/>
@@ -6696,7 +6646,7 @@
 </pdf_annotation>
 </node>
 </node>
-<node TEXT="\item[Side-channel attacks:]" FOLDED="true" ID="ID_140344652" CREATED="1499857374895" MODIFIED="1499859314704" MOVED="1499859293600">
+<node TEXT="\item[Side-channel attacks:]" ID="ID_140344652" CREATED="1499857374895" MODIFIED="1499859314704" MOVED="1499859293600">
 <node TEXT="The following attacks have been successfully identified. The first two have been successfully carried out." ID="ID_1298323933" CREATED="1499857621848" MODIFIED="1499860239785"/>
 <node TEXT="\begin{itemize}" ID="ID_1098508864" CREATED="1499857746384" MODIFIED="1499857749984"/>
 <node TEXT="\item Memory access pattern analysis of well-known libraries in an enclave. This is done with the help of the operating system, which simulates page faults to detect memory access. As a result, images processed by a library within an enclave were re-constructed. Oblivious RAM techniques and address space layout randomisation are proposed as counter-measures." ID="ID_784348582" CREATED="1499857754368" MODIFIED="1499860302529" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/Controlled%20Channel%20Attacks.pdf">
@@ -6730,7 +6680,7 @@
 </node>
 <node TEXT="\end{itemize}" ID="ID_960745123" CREATED="1499857750111" MODIFIED="1499857758809"/>
 </node>
-<node TEXT="\textbf{Result of a side-channel attack on SGX.} By analysing the memory access pattern of an enclave running \textit{libjpeg} certain features of the input image could be reconstructed. Reprinted from" FOLDED="true" ID="ID_172988213" CREATED="1499860517824" MODIFIED="1499860988074" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/Controlled%20Channel%20Attacks.pdf">
+<node TEXT="\textbf{Result of a side-channel attack on SGX.} By analysing the memory access pattern of an enclave running the image processing library \textit{libjpeg}, certain features of the input image could be reconstructed. Reprinted from" FOLDED="true" ID="ID_172988213" CREATED="1499860517824" MODIFIED="1500264823603" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/Controlled%20Channel%20Attacks.pdf">
 <attribute NAME="image_row" VALUE=""/>
 <attribute NAME="key" VALUE="Xu2015"/>
 <attribute NAME="year" VALUE="2015"/>
@@ -6750,7 +6700,7 @@
 <hook URI="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/thesis/content/images/sgx%20page%20fault%202.png" SIZE="1.0" NAME="ExternalObject"/>
 </node>
 </node>
-<node TEXT="\item[Vulnerability of architectural enclaves:]" FOLDED="true" ID="ID_782196997" CREATED="1499859260512" MODIFIED="1499859271505">
+<node TEXT="\item[Vulnerability of architectural enclaves:]" ID="ID_782196997" CREATED="1499859260512" MODIFIED="1499859271505">
 <node TEXT="SGX mainly consists of hardware: CPU microcode and memory encryption engine." ID="ID_1187633218" CREATED="1499856651631" MODIFIED="1499856694537" MOVED="1499859279263"/>
 <node TEXT="To make it feature-complete and usable, Intel adds some architectural enclaves (launch enclave, quoting enclave) and platform software (PSW)." ID="ID_306094396" CREATED="1499856694719" MODIFIED="1499857018179" MOVED="1499859279275"/>
 <node TEXT="This keeps the hardware TCB small at the cost of a larger software TCB." ID="ID_119641221" CREATED="1499856734264" MODIFIED="1499859344056" MOVED="1499859279284"/>
@@ -6768,7 +6718,7 @@
 <node TEXT="Intel is thus under constant pressure to keep it&apos;s architectural enclaves secured against any new attacks." ID="ID_1159889792" CREATED="1499859602992" MODIFIED="1499859636858"/>
 <node TEXT="An exploit for an architectural enclave would also allow malware to be loaded into a protected enclave as described earlier." ID="ID_1914496271" CREATED="1499859673704" MODIFIED="1499859701912"/>
 </node>
-<node TEXT="\item[Intel controls enclave launch:]" FOLDED="true" ID="ID_27203074" CREATED="1499853074719" MODIFIED="1499857361824">
+<node TEXT="\item[Intel controls enclave launch:]" ID="ID_27203074" CREATED="1499853074719" MODIFIED="1499857361824">
 <node TEXT="Enclave launching, like attestation, is also implemented in software in an architectural enclave." ID="ID_149498049" CREATED="1499859710272" MODIFIED="1499859751896" MOVED="1499859710828"/>
 <node TEXT="This lets Intel control which enclaves may be launched." ID="ID_1496527821" CREATED="1499856932984" MODIFIED="1499859756209" MOVED="1499857397912"/>
 <node TEXT="An enclave can be loaded either if it is authored by Intel (e.g. the launch enclave) or if the launch enclave grants the launch." ID="ID_1663962426" CREATED="1499853183871" MODIFIED="1499856990224" MOVED="1499857397920"/>
@@ -7495,10 +7445,10 @@
 <node TEXT="Such approaches from research are now presented.\footnote{Commercial solutions are not presented. Examples are ``Microsoft&#x2019;s Always Encrypted Service, currently deployed as part of SQL Server 2016, Skyhigh Networks, CipherCloud, Google&#x2019;s Encrypted Big Query, SAP&#x2019;s SEEED, Lincoln Labs.&apos;&apos;\cite{Poddar2016}}" ID="ID_1577896396" CREATED="1499928823018" MODIFIED="1499933156132"/>
 <node TEXT="Hardened databases can be classified by their use of a secure location and the level of encryption homomorphism they employ. \autoref{table:secure-db} shows the location of existing research prototypes in the design space spanned by these two dimensions." ID="ID_224045651" CREATED="1499928103256" MODIFIED="1499933249866" MOVED="1499928103803"/>
 <node TEXT="" ID="ID_1961271504" CREATED="1499928466408" MODIFIED="1499928466408"/>
-<node TEXT="\begin{table}" STYLE_REF="latex" ID="ID_932156625" CREATED="1499345864257" MODIFIED="1499435567168" MOVED="1499359331393"/>
-<node TEXT="\centering" STYLE_REF="latex" ID="ID_716591169" CREATED="1499420357862" MODIFIED="1499874699473" MOVED="1499435873582"/>
-<node TEXT="\input{content/tables/secure-db}" STYLE_REF="latex" ID="ID_111135350" CREATED="1499264498353" MODIFIED="1499870804793" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/thesis/content/tables/secure-db.tex" MOVED="1499359331398"/>
-<node TEXT="\caption{" STYLE_REF="latex" FOLDED="true" ID="ID_674109090" CREATED="1499345897352" MODIFIED="1499345909529" MOVED="1499359331404">
+<node TEXT="\begin{table}" STYLE_REF="latex" FOLDED="true" ID="ID_932156625" CREATED="1499345864257" MODIFIED="1499435567168" MOVED="1499359331393">
+<node TEXT="\centering" STYLE_REF="latex" ID="ID_716591169" CREATED="1499420357862" MODIFIED="1499874699473" MOVED="1500264867840"/>
+<node TEXT="\input{content/tables/secure-db}" STYLE_REF="latex" ID="ID_111135350" CREATED="1499264498353" MODIFIED="1499870804793" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/thesis/content/tables/secure-db.tex" MOVED="1500264867842"/>
+<node TEXT="\caption{" STYLE_REF="latex" FOLDED="true" ID="ID_674109090" CREATED="1499345897352" MODIFIED="1499345909529" MOVED="1500264867844">
 <node TEXT="\textbf{Design space of hardened databases.}" ID="ID_1890259832" CREATED="1499359019074" MODIFIED="1499928923849" MOVED="1499437274826"/>
 <node TEXT="Two dimensions are used for classification: secure location and homomorphic encryption. E.g. \textit{TrustedDB} uses a co-processor and partially homomorphic encryption." ID="ID_975475106" CREATED="1499874748697" MODIFIED="1499874840393"/>
 <node TEXT="Not all areas of the design space have been investigated." ID="ID_1304337948" CREATED="1499927762777" MODIFIED="1499927775019"/>
@@ -7509,8 +7459,9 @@
 <node TEXT="Based on \cite{querying-encrypted-data-tutorial}" ID="ID_1452673010" CREATED="1499874948265" MODIFIED="1499874978913"/>
 <node TEXT="}" STYLE_REF="latex" ID="ID_1475366080" CREATED="1499345900665" MODIFIED="1499345909532" MOVED="1499435837748"/>
 </node>
-<node TEXT="\label{table:secure-db}" STYLE_REF="latex" ID="ID_505580662" CREATED="1499437819564" MODIFIED="1499870492729" MOVED="1499437825213"/>
-<node TEXT="\end{table}" STYLE_REF="latex" ID="ID_956771736" CREATED="1499345867505" MODIFIED="1499345909535" MOVED="1499359331432"/>
+<node TEXT="\label{table:secure-db}" STYLE_REF="latex" ID="ID_505580662" CREATED="1499437819564" MODIFIED="1499870492729" MOVED="1500264867846"/>
+<node TEXT="\end{table}" STYLE_REF="latex" ID="ID_956771736" CREATED="1499345867505" MODIFIED="1499345909535" MOVED="1500264867870"/>
+</node>
 <node TEXT="" ID="ID_1533522338" CREATED="1499929021417" MODIFIED="1499929021417"/>
 <node TEXT="The point in the design space that this thesis investigates is also indicated." ID="ID_791945182" CREATED="1499928422193" MODIFIED="1499928466138" MOVED="1499929015836"/>
 <node TEXT="The case studies in \autoref{chapter:kissdb} and \autoref{chapter:sqlite} further discuss this." ID="ID_248688756" CREATED="1499928515648" MODIFIED="1499928884811" MOVED="1499929015816"/>
@@ -7525,7 +7476,7 @@
 <node TEXT="Arx uses an unmodified DBMS as foundation." ID="ID_1501645944" CREATED="1499929605561" MODIFIED="1499929616857"/>
 <node TEXT="On both the trusted location (the client) and the untrusted DBMS server a proxy is added." ID="ID_181179976" CREATED="1499929617152" MODIFIED="1499929640649"/>
 <node TEXT="The client proxy rewrites queries and can decrypt results. Only it knows the decryption key." ID="ID_1628922594" CREATED="1499929643097" MODIFIED="1499929684617"/>
-<node TEXT="The client proxy is also has to re-generate indices after usage." ID="ID_1034338418" CREATED="1499929706498" MODIFIED="1499929731769"/>
+<node TEXT="The client proxy also has to re-generate indices after usage." ID="ID_1034338418" CREATED="1499929706498" MODIFIED="1500264879797"/>
 <node TEXT="" ID="ID_1222387381" CREATED="1499930167096" MODIFIED="1499930167096"/>
 <node TEXT="Arx can -- in a limited fashion -- also securely evaluate confidential functions on the server." ID="ID_758950797" CREATED="1499930076641" MODIFIED="1499930119009"/>
 <node TEXT="These functions must be expressed as garbled circuits, an implementation of two-party computation proposed by Yao." ID="ID_369324288" CREATED="1499929893097" MODIFIED="1499930152946" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/How%20to%20generate%20and%20exchange%20Secrets.pdf">
@@ -7537,7 +7488,7 @@
     <pdf_title>==</pdf_title>
 </pdf_annotation>
 </node>
-<node TEXT="Garbled circuits are used by Arx used for range checks on the untrusted server." ID="ID_606573027" CREATED="1499930060248" MODIFIED="1499930163825"/>
+<node TEXT="Garbled circuits are used by Arx for range checks on the untrusted server." ID="ID_606573027" CREATED="1499930060248" MODIFIED="1500264911966"/>
 <node TEXT="Arx&apos;s TCB consists of the client proxy, and potentially the entire software and hardware stack of the client if the proxy is not isolated." ID="ID_1089626477" CREATED="1499931843841" MODIFIED="1499933915258"/>
 </node>
 <node TEXT="\item[CryptDB\cite{Popa2011}]" FOLDED="true" ID="ID_78821" CREATED="1499928952664" MODIFIED="1499929106271">
@@ -7581,7 +7532,7 @@
 <node TEXT="also uses trusted hardware. A Field Programmable Gate Array (FPGA) is used to evaluate individual parts of the query." ID="ID_607204959" CREATED="1499934054657" MODIFIED="1499934317232"/>
 <node TEXT="The FPGA is configured to run a stack machine and is not re-configured for every query." ID="ID_531408524" CREATED="1499934120945" MODIFIED="1499934142410"/>
 <node TEXT="" ID="ID_1502667587" CREATED="1499934205921" MODIFIED="1499934205921"/>
-<node TEXT="Compared to TrustedDB, the TCB on the server is smaller as the trusted hardware does not execute a full DBMS." ID="ID_901865989" CREATED="1499934149457" MODIFIED="1499934220426"/>
+<node TEXT="Compared to TrustedDB, the software TCB on the server is smaller. The trusted hardware does not execute a full DBMS but only executes individual processing steps." ID="ID_901865989" CREATED="1499934149457" MODIFIED="1500264960146"/>
 <node TEXT="However, Cipherbase also needs a trusted client to plan and optimise the queries." ID="ID_1815923549" CREATED="1499934170553" MODIFIED="1499934319513"/>
 <node TEXT="In TrustedDB, this functionality was provided by the trusted DBMS." ID="ID_1359181334" CREATED="1499934185160" MODIFIED="1499934203546"/>
 </node>
@@ -7693,8 +7644,8 @@
 <node TEXT="Application-specific research focuses on hardening a specific application with SGX." ID="ID_850970450" CREATED="1499941939361" MODIFIED="1499941958338"/>
 <node TEXT="The application in question may remain unmodified or be refactored." ID="ID_1741592427" CREATED="1499941964817" MODIFIED="1499941978825"/>
 <node TEXT="The approaches used in these papers can be abstracted and re-used to a certain degree:" ID="ID_847972034" CREATED="1499941978961" MODIFIED="1499942984914"/>
-<node TEXT="\begin{description}" ID="ID_1664874304" CREATED="1499936470473" MODIFIED="1499939001711" MOVED="1499939847464"/>
-<node TEXT="\item[Verifiable Confidential Cloud Computing (VC3)\cite{Schuster2015}]" FOLDED="true" ID="ID_1304842913" CREATED="1499939008769" MODIFIED="1499942080610" MOVED="1499939847468">
+<node TEXT="\begin{description}" ID="ID_1664874304" CREATED="1499936470473" MODIFIED="1499939001711" MOVED="1499939847464">
+<node TEXT="\item[Verifiable Confidential Cloud Computing (VC3)\cite{Schuster2015}]" FOLDED="true" ID="ID_1304842913" CREATED="1499939008769" MODIFIED="1499942080610" MOVED="1500265002781">
 <node TEXT="was already described in \autoref{section:sgx-apps}." ID="ID_1185628438" CREATED="1499939030049" MODIFIED="1499942608034"/>
 <node TEXT="Secure map-reduce jobs are executed in enclaves on an unmodified Hadoop." ID="ID_1823018069" CREATED="1499942111994" MODIFIED="1499942113074"/>
 <node TEXT="This solution is special because Hadoop takes programs (jobs) as input. It is sufficient to protect these jobs." ID="ID_854444196" CREATED="1499939261177" MODIFIED="1499939304865"/>
@@ -7704,7 +7655,7 @@
 <node TEXT="Though a highly interesting approach, this technique is not applicable in general." ID="ID_90782568" CREATED="1499939359561" MODIFIED="1499939422346"/>
 <node TEXT="For the use-case of DBMS, UDFs could potentially be executed in enclaves like jobs in Hadoop." ID="ID_441442629" CREATED="1499939381416" MODIFIED="1499939439394"/>
 </node>
-<node TEXT="\item[SecureKeeper\cite{Brenner2016}]" FOLDED="true" ID="ID_848289283" CREATED="1499939197754" MODIFIED="1499945476603" MOVED="1499939847472">
+<node TEXT="\item[SecureKeeper\cite{Brenner2016}]" FOLDED="true" ID="ID_848289283" CREATED="1499939197754" MODIFIED="1499945476603" MOVED="1500265002788">
 <node TEXT="was also presented in \autoref{section:sgx-apps}." ID="ID_536070" CREATED="1499939206785" MODIFIED="1499939217817"/>
 <node TEXT="The approach followed in the paper is more generally applicable." ID="ID_1832244015" CREATED="1499942121385" MODIFIED="1499942122001"/>
 <node TEXT="ZooKeeper data is protected within in enclaves. To this end, parts of the ZooKeeper functionality are refactored." ID="ID_1230630126" CREATED="1499939217977" MODIFIED="1499939583298"/>
@@ -7712,16 +7663,17 @@
 <node TEXT="The authors analyse memory access speeds in SGX and give recommendations on memory management in enclaves." ID="ID_623865893" CREATED="1499939583441" MODIFIED="1499939953218"/>
 <node TEXT="These are identical to SCONE, which shares many of its authors with SecureKeeper." ID="ID_401918155" CREATED="1499945429250" MODIFIED="1499947459770"/>
 </node>
-<node TEXT="\end{description}" ID="ID_867871996" CREATED="1499936476065" MODIFIED="1499939005113" MOVED="1499939847476"/>
-<node TEXT="" ID="ID_976315430" CREATED="1499939895777" MODIFIED="1499939895777"/>
-<node TEXT="General approaches deal with reusable approaches for isolating applications with SGX:" ID="ID_1464987409" CREATED="1499939916736" MODIFIED="1499942990050"/>
-<node TEXT="\begin{description}" ID="ID_1646955230" CREATED="1499936470473" MODIFIED="1499942200065" MOVED="1499939913510"/>
-<node TEXT="\item[Haven\cite{Baumann2014}]" FOLDED="true" ID="ID_43502325" CREATED="1499942620177" MODIFIED="1499942655371">
+<node TEXT="\end{description}" ID="ID_867871996" CREATED="1499936476065" MODIFIED="1499939005113" MOVED="1500265002793"/>
+</node>
+<node TEXT="" ID="ID_976315430" CREATED="1499939895777" MODIFIED="1499939895777" MOVED="1500265018912"/>
+<node TEXT="General approaches deal with reusable approaches for isolating applications with SGX:" ID="ID_1464987409" CREATED="1499939916736" MODIFIED="1499942990050" MOVED="1500265018933"/>
+<node TEXT="\begin{description}" ID="ID_1646955230" CREATED="1499936470473" MODIFIED="1499942200065" MOVED="1500265011048">
+<node TEXT="\item[Haven\cite{Baumann2014}]" FOLDED="true" ID="ID_43502325" CREATED="1499942620177" MODIFIED="1499942655371" MOVED="1500265013380">
 <node TEXT="was already described in \autoref{section:tc-apps} as a trusted computing solution for application-level isolation." ID="ID_1905749425" CREATED="1499942669625" MODIFIED="1499942701050"/>
 <node TEXT="Haven isolates unmodified legacy applications in an enclave." ID="ID_1294210855" CREATED="1499942728794" MODIFIED="1499942758897"/>
 <node TEXT="A library operating system is also included in the enclave to minimise the exploitable interface between the enclave and the untrusted world." ID="ID_122260906" CREATED="1499942760561" MODIFIED="1499943559401"/>
 </node>
-<node TEXT="\item[SCONE\cite{Arnautov2016}]" FOLDED="true" ID="ID_1135472723" CREATED="1499942863713" MODIFIED="1499942880802">
+<node TEXT="\item[SCONE\cite{Arnautov2016}]" FOLDED="true" ID="ID_1135472723" CREATED="1499942863713" MODIFIED="1499942880802" MOVED="1500265013383">
 <node TEXT="connects SGX and Docker\footnote{\url{https://www.docker.com}} containers." ID="ID_1276523119" CREATED="1499943001626" MODIFIED="1499943085825"/>
 <node TEXT="Alternative enclave designs are evaluated as shown in \autoref{figure:scone-interface}." ID="ID_1410436082" CREATED="1499943068521" MODIFIED="1499947759147"/>
 <node TEXT="Option a) is Haven&apos;s approach of including a library operating system in the TCB." ID="ID_1158697090" CREATED="1499945766730" MODIFIED="1499947823421" MOVED="1499947785313"/>
@@ -7752,7 +7704,7 @@
 <node TEXT="" ID="ID_1936971496" CREATED="1499943612137" MODIFIED="1499943612137"/>
 <node TEXT="SCONE also evaluates how the process of authoring, provisioning and executing Docker images can be secured using attestation." ID="ID_302956960" CREATED="1499943613417" MODIFIED="1499943644081"/>
 </node>
-<node TEXT="\item[Software Partitioning case study\cite{atamli2015securing}]" FOLDED="true" ID="ID_1866621600" CREATED="1499943860674" MODIFIED="1499943861883">
+<node TEXT="\item[Software Partitioning case study\cite{atamli2015securing}]" FOLDED="true" ID="ID_1866621600" CREATED="1499943860674" MODIFIED="1499943861883" MOVED="1500265013386">
 <node TEXT="evaluates different approaches to partitioning OpenSSL into enclaves." ID="ID_889806073" CREATED="1499944620154" MODIFIED="1499944656986"/>
 <node TEXT="Different partitioning schemes are identified, the most important of which are:" ID="ID_1492497964" CREATED="1499944657377" MODIFIED="1499944765987"/>
 <node TEXT="\begin{enumerate}" ID="ID_1557877705" CREATED="1499944675658" MODIFIED="1499944680459"/>
@@ -7766,9 +7718,11 @@
 <node TEXT="The effect of separating enclaves by data set is questionable." ID="ID_348412267" CREATED="1499945069033" MODIFIED="1499945139290"/>
 <node TEXT="If an exploit is found for an enclave, it can likely be applied to the enclaves of all tenants." ID="ID_640876370" CREATED="1499945108233" MODIFIED="1499945130058"/>
 </node>
-<node TEXT="\end{description}" ID="ID_1705591114" CREATED="1499936476065" MODIFIED="1499942205266" MOVED="1499939913476"/>
+<node TEXT="\end{description}" ID="ID_1705591114" CREATED="1499936476065" MODIFIED="1499942205266" MOVED="1500265013410"/>
+</node>
 <node TEXT="" ID="ID_1511103398" CREATED="1499939891353" MODIFIED="1499939930968"/>
-<node TEXT="The design alternatives that this related work identifies are referred to in the following chapters." ID="ID_1722696953" CREATED="1499948492203" MODIFIED="1499948526940"/>
+<node TEXT="SCONE and the partitioning case study presented valuable design alternatives for enclaves." ID="ID_1172520746" CREATED="1500265031175" MODIFIED="1500265553014"/>
+<node TEXT="These alternatives are evaluated in the case studies later on in this thesis." ID="ID_1114134055" CREATED="1500265073801" MODIFIED="1500265109688"/>
 </node>
 </node>
 </node>
@@ -7859,7 +7813,7 @@
 <node TEXT="\begin{lstlisting}[style=cpp, numbers=none, label=listing:ocall-fopen, caption={\textbf{Generated O-call signature for standard C library function.} The SDK passes the return value via a pointer parameter.}]&#xa;void fopen(FILE* retVal, const char* filename, const char* mode);&#xa;\end{lstlisting}" STYLE_REF="latex" ID="ID_1547399443" CREATED="1500042649045" MODIFIED="1500211552591"/>
 <node TEXT="To use unmodified legacy code in an enclave, the library functions must have the exact same signature." ID="ID_1472270465" CREATED="1500100763381" MODIFIED="1500100790796"/>
 <node TEXT="To provide trusted functions with the original signature, one has to overload the functions in the enclave. This is not possible in C. The library is written in C to facilitate usage in both C and C++ projects." ID="ID_104777994" CREATED="1500034797922" MODIFIED="1500042821902" MOVED="1500041423267"/>
-<node TEXT="As a workaround the O-calls are appended with a \Q{_ocall} suffix. No overloading is thus necessary. Instead, a untrusted proxy implementation is generated which delegates to the C library implementation." ID="ID_1394611332" CREATED="1500034797922" MODIFIED="1500042921951" MOVED="1500041423286"/>
+<node TEXT="As a workaround the O-calls are appended with a \Q{_ocall} suffix. No overloading is thus necessary. Instead, an untrusted proxy implementation is generated which delegates to the C library implementation." ID="ID_1394611332" CREATED="1500034797922" MODIFIED="1500265224272" MOVED="1500041423286"/>
 </node>
 <node TEXT="\item[Translate error codes to messages:]" FOLDED="true" ID="ID_1725641591" CREATED="1500035120925" MODIFIED="1500035146165" MOVED="1500110054458">
 <node TEXT="A variety of error codes is defined for SGX\footnote{\url{https://software.intel.com/en-us/node/709252}}." ID="ID_1308659811" CREATED="1500043980188" MODIFIED="1500044009756"/>
@@ -7983,7 +7937,7 @@
 </node>
 <node TEXT="" ID="ID_1975219674" CREATED="1500213815171" MODIFIED="1500213815171"/>
 <node TEXT="In this case study, Intel SGX is used to protect the data KISSDB operates on." ID="ID_928802586" CREATED="1500110544317" MODIFIED="1500235304835"/>
-<node TEXT="The code is not printed in this chapter or the appendix. Please refer to the Git repository.\footnote{Fork with SGX hardening:\url{https://github.com/ftes/kissdb-sgx}}." ID="ID_1138361928" CREATED="1500235290165" MODIFIED="1500235307425"/>
+<node TEXT="The code is not printed in this chapter or the appendix. Please refer to the Git repository.\footnote{Fork with SGX hardening:\url{https://github.com/ftes/kissdb-sgx}}" ID="ID_1138361928" CREATED="1500235290165" MODIFIED="1500265338990"/>
 <node TEXT="The following aspects are \textit{out of scope} for this case study." ID="ID_12313881" CREATED="1500214328789" MODIFIED="1500214346605"/>
 <node TEXT="\begin{itemize}" FOLDED="true" ID="ID_1885741611" CREATED="1500214351170" MODIFIED="1500214364052">
 <node TEXT="\item Attestation and secure communication channels." ID="ID_1642397570" CREATED="1500110794537" MODIFIED="1500214382488" MOVED="1500214369737"/>
@@ -8008,7 +7962,7 @@
 </node>
 </node>
 <node TEXT="Content" STYLE_REF="paragraphs_drop_self" FOLDED="true" ID="ID_862119655" CREATED="1495543885991" MODIFIED="1495543895304">
-<node TEXT="This section discusses the design decisions for hardening KISSDB. The resulting architecture is shown \autoref{figure:kissdb}." ID="ID_1073733437" CREATED="1500218071227" MODIFIED="1500218091657"/>
+<node TEXT="This section discusses the design decisions for hardening KISSDB. The resulting architecture is shown in \autoref{figure:kissdb}." ID="ID_1073733437" CREATED="1500218071227" MODIFIED="1500265358979"/>
 <node TEXT="\begin{description}" FOLDED="true" ID="ID_1141938675" CREATED="1500196793778" MODIFIED="1500196950560">
 <node TEXT="\item[Shim C library]" FOLDED="true" ID="ID_1861623533" CREATED="1500196807394" MODIFIED="1500214298918" MOVED="1500196961039">
 <node TEXT="(see \autoref{figure:scone-interface}). This option is the easiest to implement, but results in the largest enclave interface." ID="ID_1093940302" CREATED="1500214299410" MODIFIED="1500214300432"/>
@@ -8021,8 +7975,8 @@
 <node TEXT="\item[Entire legacy code in enclave.]" FOLDED="true" ID="ID_1029928087" CREATED="1500214154474" MODIFIED="1500214292527">
 <node TEXT="KISSDB is not sub-divided into trusted and untrusted functionality. A single enclave is used for all trusted functionality. KISSDB is so small, it is difficult to identify a part that should be pulled out. KISSDB does not support any data processing, which otherwise would have been a likely candidate." ID="ID_1638365159" CREATED="1500214292930" MODIFIED="1500216879421"/>
 </node>
-<node TEXT="\item[Meta data as plain text.]" FOLDED="true" ID="ID_267118033" CREATED="1500218026948" MODIFIED="1500218039772" MOVED="1500218040280">
-<node TEXT="While at rest, data is encrypted. This means the payload is written to the database file in encrypted form (see \autoref{figure:kissdb-file}." ID="ID_917138080" CREATED="1500196630377" MODIFIED="1500218277257" MOVED="1500218064122"/>
+<node TEXT="\item[Plain text meta data.]" FOLDED="true" ID="ID_267118033" CREATED="1500218026948" MODIFIED="1500265459448" MOVED="1500218040280">
+<node TEXT="While at rest, data is encrypted. This means the payload is written to the database file in encrypted form (see \autoref{figure:kissdb-file})." ID="ID_917138080" CREATED="1500196630377" MODIFIED="1500265471424" MOVED="1500218064122"/>
 <node TEXT="The meta data (header, hash tables) are written as plain text." ID="ID_116310300" CREATED="1500196654833" MODIFIED="1500196685988" MOVED="1500218064129"/>
 <node TEXT="This keeps the required changes to the legacy code base to a minimum as discussed in \autoref{section:kissdb-impl}." ID="ID_1173318118" CREATED="1500196686104" MODIFIED="1500218295504" MOVED="1500218064136"/>
 <node TEXT="This has the following security implications:" ID="ID_73618570" CREATED="1500218310584" MODIFIED="1500218527861"/>
@@ -8079,7 +8033,7 @@
 </node>
 <node TEXT="file sizes" ID="ID_1954686650" CREATED="1500219537771" MODIFIED="1500219540167"/>
 </node>
-<node TEXT="Content" STYLE_REF="paragraphs_drop_self" FOLDED="true" ID="ID_401279777" CREATED="1495543885991" MODIFIED="1495543895304">
+<node TEXT="Content" STYLE_REF="paragraphs_drop_self" ID="ID_401279777" CREATED="1495543885991" MODIFIED="1495543895304">
 <node TEXT="This section highlights some implementation details." ID="ID_352385867" CREATED="1500221196271" MODIFIED="1500221207974" MOVED="1500221358739"/>
 <node TEXT="\begin{description}" ID="ID_792931611" CREATED="1500221208343" MODIFIED="1500221211416" MOVED="1500221358746"/>
 <node TEXT="\item[Proxies in untrusted wrapper:]" FOLDED="true" ID="ID_771371210" CREATED="1500223144162" MODIFIED="1500223175250" MOVED="1500223176363">
@@ -8169,7 +8123,7 @@
 <node TEXT="A list of these and other issues follows:" ID="ID_1114623328" CREATED="1500234158955" MODIFIED="1500234322548"/>
 <node TEXT="\begin{description}" ID="ID_1915026761" CREATED="1500234180611" MODIFIED="1500234195419"/>
 <node TEXT="\item[Attestation and key provisioning:]" FOLDED="true" ID="ID_1851814792" CREATED="1500234323868" MODIFIED="1500234332349">
-<node TEXT="In a production setting, the consumer should attest the enclaves identity and at the same time perform a key exchange with the enclave (see \autoref{section:sgx-usage}." ID="ID_1799640899" CREATED="1500233809748" MODIFIED="1500234507743"/>
+<node TEXT="In a production setting, the consumer should attest the enclaves identity and at the same time perform a key exchange with the enclave (see \autoref{section:sgx-usage})." ID="ID_1799640899" CREATED="1500233809748" MODIFIED="1500265515002"/>
 <node TEXT="With the exchanged key, the database encryption key could securely be provisioned." ID="ID_1258952538" CREATED="1500233833107" MODIFIED="1500233855615"/>
 </node>
 <node TEXT="\item[Ensure file integrity and freshness:]" FOLDED="true" ID="ID_1148171152" CREATED="1500234355799" MODIFIED="1500234372889">
@@ -8217,8 +8171,8 @@
 <edge COLOR="#0000ff"/>
 <node TEXT="use chapter summaries" STYLE_REF="drop" ID="ID_1019464221" CREATED="1489606031650" MODIFIED="1489606057294" MOVED="1489606046735"/>
 <node TEXT="mindmap" STYLE_REF="drop" FOLDED="true" ID="ID_1016892487" CREATED="1495056722285" MODIFIED="1495056727902">
-<node TEXT="done" ID="ID_1928188182" CREATED="1500239236523" MODIFIED="1500239238183">
-<node TEXT="architecture" LOCALIZED_STYLE_REF="default" ID="ID_579244616" CREATED="1487266776070" MODIFIED="1495606090871" MOVED="1500239239114">
+<node TEXT="done" FOLDED="true" ID="ID_1928188182" CREATED="1500239236523" MODIFIED="1500239238183">
+<node TEXT="architecture" LOCALIZED_STYLE_REF="default" FOLDED="true" ID="ID_579244616" CREATED="1487266776070" MODIFIED="1495606090871" MOVED="1500239239114">
 <node TEXT="sqlite.png" ID="ID_291756350" CREATED="1489583049669" MODIFIED="1489606391963" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/SQLite%20Database%20System%20Design%20and%20Implementation.pdf" MOVED="1489583090710">
 <hook URI="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/_data/150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/default_files/sqlite.png" SIZE="0.6688963" NAME="ExternalObject"/>
 <attribute NAME="image" VALUE="sqlite"/>
@@ -8420,17 +8374,6 @@
 <node TEXT="These two modules are a prime candidate for enclave protection." ID="ID_422975755" CREATED="1500245597235" MODIFIED="1500245615575"/>
 <node TEXT="Reprinted from" ID="ID_218459745" CREATED="1500239287436" MODIFIED="1500239289764"/>
 </node>
-<node TEXT="\begin{sidewaysfigure}\begin{leftfullpage}\includegraphics[width=\textwidth]{content/images/sqlite callgraph insert 1percent top.pdf}&#xa;\caption{" STYLE_REF="latex" FOLDED="true" ID="ID_1144543529" CREATED="1500245972745" MODIFIED="1500246720041" MOVED="1500246725655">
-<node TEXT="\textbf{SQLite call graph for insert statement (top half).}" ID="ID_450711429" CREATED="1500246015778" MODIFIED="1500246017350"/>
-<node TEXT="\label{figure:sqlite-graph}}\end{leftfullpage}\end{sidewaysfigure}" STYLE_REF="latex" ID="ID_1572435971" CREATED="1500246022643" MODIFIED="1500248941737"/>
-</node>
-<node TEXT="\begin{sidewaysfigure}\begin{fullpage}\ContinuedFloat\includegraphics[width=\textwidth]{content/images/sqlite callgraph insert 1percent bottom.pdf}&#xa;\caption{" STYLE_REF="latex" FOLDED="true" ID="ID_1135253455" CREATED="1500245981127" MODIFIED="1500246720055" MOVED="1500246725663">
-<node TEXT="\textbf{SQLite call graph for insert statement (bottom half).}" ID="ID_1189342130" CREATED="1500246066632" MODIFIED="1500246072750"/>
-<node TEXT="Only function calls (nodes) with a Valgrind cost greater than 1 percent are shown." ID="ID_1717360834" CREATED="1500246073317" MODIFIED="1500246076958"/>
-<node TEXT="Nodes are shaded according to the SQLite module they belong to (see the legend)." ID="ID_991757666" CREATED="1500246077096" MODIFIED="1500246079894"/>
-<node TEXT="The modules are distinguished by the header or code file the function is defined in. The file is given in brackets." ID="ID_189828888" CREATED="1500246080008" MODIFIED="1500246091466"/>
-<node TEXT="}\end{fullpage}&#xa;\end{sidewaysfigure}" STYLE_REF="latex" ID="ID_131626546" CREATED="1500246091699" MODIFIED="1500248998365"/>
-</node>
 <node TEXT="" ID="ID_1254787094" CREATED="1500245631525" MODIFIED="1500245631525"/>
 <node TEXT="The Virtual Database Engine (VDBE) -- as the virtual machine is also called -- is at the core of SQLite." ID="ID_714086818" CREATED="1500245646607" MODIFIED="1500245683997"/>
 <node TEXT="The front end compiles a program for the VDBE, and the rest of the back end is the data source." ID="ID_700484480" CREATED="1500245684114" MODIFIED="1500245703949"/>
@@ -8481,16 +8424,27 @@
 <node TEXT="Not all files could be attributed to exactly one module. Nodes shaded grey can not clearly be attributed to a module." ID="ID_91919687" CREATED="1500247777626" MODIFIED="1500248047280"/>
 <node TEXT="The complete call graph is far too large to visualise." ID="ID_1793749005" CREATED="1500247811009" MODIFIED="1500247837628"/>
 <node TEXT="\autoref{figure:sqlite-graph} contains only nodes that incur at least one percent of the total cost as defined by Valgrind.\footnote{\url{http://valgrind.org/docs/manual/cl-manual.html\#cl-manual.functionality}}" ID="ID_200258758" CREATED="1500247837918" MODIFIED="1500248065747"/>
+<node TEXT="\begin{sidewaysfigure}\begin{leftfullpage}\includegraphics[width=\textwidth]{content/images/sqlite callgraph insert 1percent top.pdf}&#xa;\caption{" STYLE_REF="latex" FOLDED="true" ID="ID_1144543529" CREATED="1500245972745" MODIFIED="1500246720041" MOVED="1500262717463">
+<node TEXT="\textbf{SQLite call graph for insert statement (top half).}" ID="ID_450711429" CREATED="1500246015778" MODIFIED="1500246017350"/>
+<node TEXT="\label{figure:sqlite-graph}}\end{leftfullpage}\end{sidewaysfigure}" STYLE_REF="latex" ID="ID_1572435971" CREATED="1500246022643" MODIFIED="1500248941737"/>
+</node>
+<node TEXT="\begin{sidewaysfigure}\begin{fullpage}\ContinuedFloat\includegraphics[width=\textwidth]{content/images/sqlite callgraph insert 1percent bottom.pdf}&#xa;\caption{" STYLE_REF="latex" FOLDED="true" ID="ID_1135253455" CREATED="1500245981127" MODIFIED="1500246720055" MOVED="1500262717443">
+<node TEXT="\textbf{SQLite call graph for insert statement (bottom half).}" ID="ID_1189342130" CREATED="1500246066632" MODIFIED="1500246072750"/>
+<node TEXT="Only function calls (nodes) with a Valgrind cost greater than 1 percent are shown." ID="ID_1717360834" CREATED="1500246073317" MODIFIED="1500246076958"/>
+<node TEXT="Nodes are shaded according to the SQLite module they belong to (see the legend)." ID="ID_991757666" CREATED="1500246077096" MODIFIED="1500246079894"/>
+<node TEXT="The modules are distinguished by the header or code file the function is defined in. The file is given in brackets." ID="ID_189828888" CREATED="1500246080008" MODIFIED="1500246091466"/>
+<node TEXT="}\end{fullpage}&#xa;\end{sidewaysfigure}" STYLE_REF="latex" ID="ID_131626546" CREATED="1500246091699" MODIFIED="1500248998365"/>
+</node>
 <node TEXT="A further visualisation of the same call graph in \autoref{appendix:sqlite} is filtered not by cost, but by depth." ID="ID_489671835" CREATED="1500247919830" MODIFIED="1500247984643"/>
 <node TEXT="This is even larger, but can convey an overview of the module interaction through the coloured shading." ID="ID_1179349774" CREATED="1500247945394" MODIFIED="1500248015078"/>
 </node>
 </node>
 <node TEXT="Concepts" FOLDED="true" ID="ID_207205158" CREATED="1500239527303" MODIFIED="1500254951081">
 <icon BUILTIN="button_ok"/>
-<node TEXT="mindmap" STYLE_REF="drop" ID="ID_297573632" CREATED="1500239542218" MODIFIED="1500239561307">
+<node TEXT="mindmap" STYLE_REF="drop" FOLDED="true" ID="ID_297573632" CREATED="1500239542218" MODIFIED="1500239561307">
 <node TEXT="UDF vs VDBE" ID="ID_651466935" CREATED="1500236146002" MODIFIED="1500236150169" MOVED="1500236585904"/>
 </node>
-<node TEXT="Content" STYLE_REF="paragraphs_drop_self" ID="ID_1225134522" CREATED="1500239544576" MODIFIED="1500239555300">
+<node TEXT="Content" STYLE_REF="paragraphs_drop_self" FOLDED="true" ID="ID_1225134522" CREATED="1500239544576" MODIFIED="1500239555300">
 <node TEXT="Based on the related work and SQLite run time analysis, two different hardening concepts are proposed." ID="ID_806012991" CREATED="1500249107527" MODIFIED="1500249289266"/>
 <node TEXT="They are not implemented due to time constraints." ID="ID_946377050" CREATED="1500249129957" MODIFIED="1500249141820"/>
 <node TEXT="\begin{enumerate}" ID="ID_1303002590" CREATED="1500249153392" MODIFIED="1500249171640"/>
@@ -8523,6 +8477,12 @@
 <node TEXT="The front end is not involved in data processing, but only responsible for byte code generation." ID="ID_59920578" CREATED="1500249864778" MODIFIED="1500249882884" MOVED="1500250134997"/>
 <node TEXT="" ID="ID_1982778300" CREATED="1500249903647" MODIFIED="1500249903647" MOVED="1500250135003"/>
 <node TEXT="If the byte code is generated by an untrusted front end, it must be ensured that the byte code is not harmful. Also, the output of the VDBE should not leak any information. It should be encrypted to a secure channel established during attestation." ID="ID_902916871" CREATED="1500249904488" MODIFIED="1500250007372" MOVED="1500250135011"/>
+<node TEXT="" ID="ID_1369598545" CREATED="1500262605488" MODIFIED="1500262605488"/>
+<node TEXT="In reality, the modules are not so well separated as the high-level architecture diagram would have readers believe." ID="ID_109832281" CREATED="1500262549842" MODIFIED="1500262583003"/>
+<node TEXT="This can be seen in the call graph (\autoref{figure:sqlite-graph})." ID="ID_1572157209" CREATED="1500262583141" MODIFIED="1500262602648"/>
+<node TEXT="Especially calls back and forth between front end and back end are problematic for extracting an enclave." ID="ID_75232381" CREATED="1500262602910" MODIFIED="1500262642054"/>
+<node TEXT="While enclaves support O-calls and E-calls, the data that must be passed back and forth is the root of the problem." ID="ID_319109209" CREATED="1500262642219" MODIFIED="1500262664451"/>
+<node TEXT="If the untrusted front end must operate on the data it must be passed as plain text, which may break security." ID="ID_1285211358" CREATED="1500262664563" MODIFIED="1500262687475"/>
 </node>
 <node TEXT="\item \textbf{User-defined functions (UDFs) in enclaves}." FOLDED="true" ID="ID_1233009872" CREATED="1500249205396" MODIFIED="1500249254550">
 <node TEXT="This solution leaves the KISSDB code base untouched." ID="ID_1587466546" CREATED="1500250145790" MODIFIED="1500250179182"/>
@@ -8553,8 +8513,8 @@
 <node TEXT="There is one enclave per UDF." ID="ID_1920750707" CREATED="1500254545358" MODIFIED="1500254552987"/>
 <node TEXT="" ID="ID_981178378" CREATED="1500254489148" MODIFIED="1500254489148"/>
 <node TEXT="Compared to VDBE and tree extraction, the advantages of the UDF approach are as follows:" ID="ID_276876978" CREATED="1500253602454" MODIFIED="1500254731702"/>
-<node TEXT="\begin{itemize}" ID="ID_1533966412" CREATED="1500253619424" MODIFIED="1500253624492">
-<node TEXT="\item This approach is far easier to implement." ID="ID_1874885591" CREATED="1500253441629" MODIFIED="1500253658475" MOVED="1500253667811">
+<node TEXT="\begin{itemize}" FOLDED="true" ID="ID_1533966412" CREATED="1500253619424" MODIFIED="1500253624492">
+<node TEXT="\item This approach is far easier to implement." FOLDED="true" ID="ID_1874885591" CREATED="1500253441629" MODIFIED="1500253658475" MOVED="1500253667811">
 <node TEXT="SQLite must not be modified. This facilitates compatibility with future versions." ID="ID_1628619896" CREATED="1500254607293" MODIFIED="1500254767629"/>
 </node>
 <node TEXT="\item The security guaranteed by this approach is easier to reason about, as the data flow is very clear." ID="ID_395790458" CREATED="1500253453982" MODIFIED="1500253665341" MOVED="1500253667817"/>
@@ -8586,11 +8546,11 @@
 <node TEXT="\end{enumerate}" ID="ID_852127889" CREATED="1500249157670" MODIFIED="1500249175264"/>
 </node>
 </node>
-<node TEXT="Usage in the Intel SGX SDK" FOLDED="true" ID="ID_1312265565" CREATED="1500255091333" MODIFIED="1500256131535">
+<node TEXT="SQLite in the Intel SGX SDK" FOLDED="true" ID="ID_1312265565" CREATED="1500255091333" MODIFIED="1500261993754">
 <icon BUILTIN="button_ok"/>
 <node TEXT="mindmap" STYLE_REF="drop" FOLDED="true" ID="ID_1280465211" CREATED="1500239547090" MODIFIED="1500239561312" MOVED="1500255177613">
-<node TEXT="in SGX SDK" ID="ID_1020064220" CREATED="1499843925191" MODIFIED="1499843928464" MOVED="1500255176966">
-<node TEXT="monotonic counters in integrity protected external SQLite DB" ID="ID_1612766592" CREATED="1499843930359" MODIFIED="1499843940976">
+<node TEXT="in SGX SDK" FOLDED="true" ID="ID_1020064220" CREATED="1499843925191" MODIFIED="1499843928464" MOVED="1500255176966">
+<node TEXT="monotonic counters in integrity protected external SQLite DB" FOLDED="true" ID="ID_1612766592" CREATED="1499843930359" MODIFIED="1499843940976">
 <node TEXT="https://github.com/01org/linux-sgx/blob/1115c195cd60d5ab2b80c12d07e21663e5aa8030/psw/ae/pse/pse_op/monotonic_counter_database_sqlite_rpdb.cpp" ID="ID_1881613481" CREATED="1499843928844" MODIFIED="1499843928844" LINK="https://github.com/01org/linux-sgx/blob/1115c195cd60d5ab2b80c12d07e21663e5aa8030/psw/ae/pse/pse_op/monotonic_counter_database_sqlite_rpdb.cpp" MOVED="1499843942160"/>
 <node TEXT="// Read the current RPDATA from CSME to check whether the cached vm db is not of date." ID="ID_425623720" CREATED="1499844369663" MODIFIED="1499844370911"/>
 <node TEXT="https://github.com/01org/linux-sgx/search?q=sqlite" ID="ID_207757479" CREATED="1499843973655" MODIFIED="1499843974529"/>
@@ -8631,7 +8591,7 @@
 </node>
 <node TEXT="Conclusion" FOLDED="true" ID="ID_1290012775" CREATED="1500239529465" MODIFIED="1500255247757" HGAP="17" MOVED="1500255237982">
 <icon BUILTIN="button_ok"/>
-<node TEXT="Content" STYLE_REF="paragraphs_drop_self" ID="ID_1678006628" CREATED="1500239548816" MODIFIED="1500239555296">
+<node TEXT="Content" STYLE_REF="paragraphs_drop_self" FOLDED="true" ID="ID_1678006628" CREATED="1500239548816" MODIFIED="1500239555296">
 <node TEXT="In this case study, two concepts to hardening SQLite were proposed." ID="ID_1806868998" CREATED="1500254857795" MODIFIED="1500254957835"/>
 <node TEXT="These were based on a brief run-time analysis of SQLite&apos;s module interaction." ID="ID_1309249988" CREATED="1500254887049" MODIFIED="1500255735695"/>
 <node TEXT="Also, related work provided an inspiration for the UDF approach." ID="ID_402409416" CREATED="1500254906675" MODIFIED="1500254921754"/>
@@ -8640,11 +8600,11 @@
 </node>
 </node>
 </node>
-<node TEXT="Conclusion" LOCALIZED_STYLE_REF="default" POSITION="left" ID="ID_1572507625" CREATED="1487318838781" MODIFIED="1500258504965" MOVED="1488547706086">
+<node TEXT="Conclusion" LOCALIZED_STYLE_REF="default" FOLDED="true" POSITION="left" ID="ID_1572507625" CREATED="1487318838781" MODIFIED="1500258504965" MOVED="1488547706086">
 <icon BUILTIN="button_ok"/>
 <edge COLOR="#007c00"/>
 <node TEXT="Die Antwort auf die in der Problemstellung aufgeworfenen Fragen soll&#xa;kurz und pr&#xe4;gnant zusammengefasst werden. Ebenso sollte ein Ausblick auf offen&#xa;gebliebene Fragen sowie auf interessante Fragestellungen, die sich aus der Arbeit erge-&#xa;ben, gegeben werden. Eine kritische Betrachtung der eigenen Arbeit ist an dieser Stelle&#xa;ebenfalls sinnvoll." STYLE_REF="drop" ID="ID_1974882074" CREATED="1492081057470" MODIFIED="1492081062735" MOVED="1492081063826"/>
-<node TEXT="Content" STYLE_REF="paragraphs_drop_self" ID="ID_1735320971" CREATED="1500256440945" MODIFIED="1500256447932">
+<node TEXT="Content" STYLE_REF="paragraphs_drop_self" FOLDED="true" ID="ID_1735320971" CREATED="1500256440945" MODIFIED="1500256447932">
 <node TEXT="The main goal of this thesis was to evaluate different practical methods of hardening applications." ID="ID_1923547125" CREATED="1500256460212" MODIFIED="1500256538157"/>
 <node TEXT="In a first step, trusted computing was identified as the correct approach for the type of hardening in mind." ID="ID_580447740" CREATED="1500256538268" MODIFIED="1500258388325"/>
 <node TEXT="Alternative approaches based on cryptography alone are either too limited (garbled circuits) or not yet practical (fully homomorphic encryption, encrypted CPU)." ID="ID_1382376198" CREATED="1500256644734" MODIFIED="1500256700702"/>
@@ -8673,6 +8633,7 @@
 <node TEXT="The main focus of this thesis was on literature work and comparison of trusted computing solutions." ID="ID_688160044" CREATED="1500257468808" MODIFIED="1500257656095"/>
 <node TEXT="In future work, this thesis could be used as the starting point to evaluate further solutions." ID="ID_361482302" CREATED="1500261344064" MODIFIED="1500261361324"/>
 <node TEXT="At the time of writing, the most interesting alternatives are Windows Isolated User Mode and TrustZone." ID="ID_845454052" CREATED="1500261361457" MODIFIED="1500261382532"/>
+<node TEXT="" ID="ID_774441716" CREATED="1500261841371" MODIFIED="1500261841371"/>
 <node TEXT="Intel has made a serious investment in developing SGX." ID="ID_54424196" CREATED="1500257854197" MODIFIED="1500261474479" MOVED="1500261451328"/>
 <node TEXT="Intel has also shown the world that there is untapped potential in the area of trusted computing." ID="ID_1726703479" CREATED="1500261474618" MODIFIED="1500261490835"/>
 <node TEXT="The success of SGX is still far from decided -- too much is still unclear." ID="ID_759430231" CREATED="1500261498851" MODIFIED="1500261536109"/>
@@ -8711,8 +8672,8 @@
 <node TEXT="SQLite Call Graphs" FOLDED="true" POSITION="left" ID="ID_686469438" CREATED="1500244719534" MODIFIED="1500246155963">
 <edge COLOR="#ffff00"/>
 <attribute NAME="label" VALUE="appendix:sqlite" OBJECT="java.net.URI|appendix:sqlite"/>
-<node TEXT="Content" STYLE_REF="paragraphs_drop_self" FOLDED="true" ID="ID_1676888447" CREATED="1500244934914" MODIFIED="1500244942477">
-<node TEXT="\textbf{SQLite call graph for insert statement.} The depth is limited to a maximum of 15 callees (descendants). The call graph is too large for detailed analysis. Rather, the shading should convey an intuition of how the modules are interleaved. See \autoref{figure:sqlite-graph1} for the colour legend. Nodes are coloured according to the SQLite module they belong to (see the legend). The modules are distinguished by the header or code file the function is defined in. The file is given in brackets." ID="ID_196264389" CREATED="1491808913784" MODIFIED="1500248466236" MOVED="1500244944123">
+<node TEXT="Content" STYLE_REF="paragraphs_drop_self" ID="ID_1676888447" CREATED="1500244934914" MODIFIED="1500244942477">
+<node TEXT="\textbf{SQLite call graph for insert statement.} The depth is limited to a maximum of 15 callees (descendants). The call graph is too large for detailed analysis. Rather, the shading should convey an intuition of how the modules are interleaved. See \autoref{figure:sqlite-graph} for the colour legend. Nodes are coloured according to the SQLite module they belong to (see the legend). The modules are distinguished by the header or code file the function is defined in. The file is given in brackets." ID="ID_196264389" CREATED="1491808913784" MODIFIED="1500262835202" MOVED="1500244944123">
 <attribute_layout NAME_WIDTH="74" VALUE_WIDTH="74"/>
 <attribute NAME="image" VALUE="sqlite callgraph insert 15callees cropped.pdf"/>
 <attribute NAME="image_sideways" VALUE=""/>
