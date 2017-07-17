@@ -1,0 +1,45 @@
+\begin{tikzpicture}[
+	node distance=5pt,
+	function/.style={circle, draw, inner sep=2pt, fill=white},
+	tt/.style={font=\ttfamily},
+]
+	\node (udf) at (8,-1.5) {
+		UDF enclave
+	};
+	\node[align=left, below=of udf] (steps) {
+		1. decrypt \\
+		2. sum \\
+		3. encrypt
+	};
+	
+	\begin{scope}[on background layer, shift={(6.5,-4)}]
+		\draw[fill=greenbg] (0.25,0.25) rectangle (2.75,3);
+	\end{scope}
+	
+	\node[function,label={[tt]right:secure\_{}sum}] (ss) at (6.5,-0.25) {};
+	
+	\draw[-latex'] (8,-0.5) -| (8,-1);
+	\draw  (6.5,0.75) rectangle (9.5,-4);
+	
+	\node (sqlite) at (1.5,-1.5) {SQLite};
+	
+	\matrix [
+		below=of sqlite,
+        matrix of nodes,row sep=0,
+        nodes={anchor=center,rectangle,draw,minimum width=6em, minimum height=12pt, inner sep=0},
+	] (hash1) {
+	        \textbf{xEnc} & \textbf{yEnc} \\
+	        \texttt{4a72c} & {94f2e} \\
+	        \ldots & {} \\
+	};
+	\node[tt] (sql) at (1.5,0.5) {SELECT secure\_{}sum(xEnc,yEnc) FROM tbl};
+	\draw  (-1,-1) rectangle (4,-3.75);
+	
+	\draw[-latex'] (sql) -- (1.5,-1);
+	\draw[-latex'] (4,-1.5) -- ++(1.5,0) |- (ss);
+	\draw[-latex'] (6.75,-3.25) -- (4,-3.25);
+	\node (result) at (1.5,-5) {a29c4};
+	\draw[-latex'] (1.5,-3.75) -- (result);
+	
+	\node at (8,0.25) {UDF};
+\end{tikzpicture}

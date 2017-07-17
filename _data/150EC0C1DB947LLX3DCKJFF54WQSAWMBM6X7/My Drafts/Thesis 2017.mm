@@ -2,7 +2,7 @@
 <!--To view this file, download Docear - The Academic Literature Suite from http://www.docear.org -->
 <attribute_registry SHOW_ATTRIBUTES="hide"/>
 <node TEXT="Thesis 2017" FOLDED="false" ID="ID_308776938" CREATED="1488476421728" MODIFIED="1499948606097">
-<hook NAME="AutomaticEdgeColor" COUNTER="6"/>
+<hook NAME="AutomaticEdgeColor" COUNTER="7"/>
 <hook NAME="MapStyle" zoom="1.17">
     <properties show_icon_for_attributes="true" show_note_icons="true"/>
 
@@ -2849,8 +2849,8 @@
 <attribute NAME="authors" VALUE="Strackx, Raoul and Piessens, Frank"/>
 </node>
 <node TEXT="running legacy kernel is pulled in the Legacy VM, and memory access control of both VMs is configured" ID="ID_602052565" CREATED="1453833934047" MODIFIED="1488817458436" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/Fides%20-%20Hardening%20Software%20Applications.pdf" MOVED="1453834182783">
-<arrowlink SHAPE="CUBIC_CURVE" COLOR="#000000" WIDTH="2" TRANSPARENCY="80" FONT_SIZE="9" FONT_FAMILY="SansSerif" DESTINATION="ID_899944673" STARTINCLINATION="725;0;" ENDINCLINATION="725;0;" STARTARROW="NONE" ENDARROW="DEFAULT"/>
 <arrowlink SHAPE="CUBIC_CURVE" COLOR="#000000" WIDTH="2" TRANSPARENCY="80" FONT_SIZE="9" FONT_FAMILY="SansSerif" DESTINATION="ID_1501358627" STARTINCLINATION="899;0;" ENDINCLINATION="899;0;" STARTARROW="NONE" ENDARROW="DEFAULT"/>
+<arrowlink SHAPE="CUBIC_CURVE" COLOR="#000000" WIDTH="2" TRANSPARENCY="80" FONT_SIZE="9" FONT_FAMILY="SansSerif" DESTINATION="ID_899944673" STARTINCLINATION="725;0;" ENDINCLINATION="725;0;" STARTARROW="NONE" ENDARROW="DEFAULT"/>
 <pdf_annotation type="HIGHLIGHTED_TEXT" page="6" object_id="1578831404968116972" object_number="62" document_hash="1D96495A67A9F428B4B8E145796620A1D98C23A92F5D1721A94FEBBEA084">
     <pdf_title>Fides: Selectively Hardening Software Application Components against Kernel-level or Process-level Malware</pdf_title>
 </pdf_annotation>
@@ -7986,7 +7986,7 @@
 <node TEXT="non-sensitive data (header, hash tables) are stored in the .db file in the clear" ID="ID_1765352709" CREATED="1499951529040" MODIFIED="1499951529040" MOVED="1500197133584"/>
 </node>
 </node>
-<node TEXT="Content" STYLE_REF="paragraphs_drop_self" ID="ID_862119655" CREATED="1495543885991" MODIFIED="1495543895304">
+<node TEXT="Content" STYLE_REF="paragraphs_drop_self" FOLDED="true" ID="ID_862119655" CREATED="1495543885991" MODIFIED="1495543895304">
 <node TEXT="This section discusses the design decisions for hardening KISSDB. The resulting architecture is shown \autoref{figure:kissdb}." ID="ID_1073733437" CREATED="1500218071227" MODIFIED="1500218091657"/>
 <node TEXT="\begin{description}" FOLDED="true" ID="ID_1141938675" CREATED="1500196793778" MODIFIED="1500196950560">
 <node TEXT="\item[Shim C library]" FOLDED="true" ID="ID_1861623533" CREATED="1500196807394" MODIFIED="1500214298918" MOVED="1500196961039">
@@ -8042,7 +8042,7 @@
 </node>
 </node>
 </node>
-<node TEXT="Implementation" LOCALIZED_STYLE_REF="default" ID="ID_355880413" CREATED="1495056587955" MODIFIED="1500234112970">
+<node TEXT="Implementation" LOCALIZED_STYLE_REF="default" FOLDED="true" ID="ID_355880413" CREATED="1495056587955" MODIFIED="1500234112970">
 <icon BUILTIN="button_ok"/>
 <attribute NAME="label" VALUE="section:kissdb-impl" OBJECT="java.net.URI|section:kissdb-impl"/>
 <node TEXT="mindmap" STYLE_REF="drop" FOLDED="true" ID="ID_54031507" CREATED="1495543887981" MODIFIED="1495543899209" MOVED="1495543900065">
@@ -8058,7 +8058,7 @@
 </node>
 <node TEXT="file sizes" ID="ID_1954686650" CREATED="1500219537771" MODIFIED="1500219540167"/>
 </node>
-<node TEXT="Content" STYLE_REF="paragraphs_drop_self" ID="ID_401279777" CREATED="1495543885991" MODIFIED="1495543895304">
+<node TEXT="Content" STYLE_REF="paragraphs_drop_self" FOLDED="true" ID="ID_401279777" CREATED="1495543885991" MODIFIED="1495543895304">
 <node TEXT="This section highlights some implementation details." ID="ID_352385867" CREATED="1500221196271" MODIFIED="1500221207974" MOVED="1500221358739"/>
 <node TEXT="\begin{description}" ID="ID_792931611" CREATED="1500221208343" MODIFIED="1500221211416" MOVED="1500221358746"/>
 <node TEXT="\item[Proxies in untrusted wrapper:]" FOLDED="true" ID="ID_771371210" CREATED="1500223144162" MODIFIED="1500223175250" MOVED="1500223176363">
@@ -8083,7 +8083,7 @@
 <node TEXT="},firstnumber=23,linerange={23-35},style=cpp]{../kissdb-sgx/kissdb_u/kissdb_u_wrapper.c}" ID="ID_196687301" CREATED="1500031423309" MODIFIED="1500223662597"/>
 </node>
 </node>
-<node TEXT="\item[Plain text meta data:]" ID="ID_485199274" CREATED="1500221220151" MODIFIED="1500221239213" MOVED="1500221358756">
+<node TEXT="\item[Plain text meta data:]" FOLDED="true" ID="ID_485199274" CREATED="1500221220151" MODIFIED="1500221239213" MOVED="1500221358756">
 <node TEXT="For the case study, the library was configured to transparently encrypt all file input/output (see \autoref{chapter:sgx-lib})." ID="ID_361841208" CREATED="1500220840263" MODIFIED="1500220900116" MOVED="1500221234625"/>
 <node TEXT="The meta data should be output as plain text, so a distinction has to be made between meta data and payload." ID="ID_1596508350" CREATED="1500220901111" MODIFIED="1500220976969" MOVED="1500221234633"/>
 <node TEXT="This option requires the least changes to KISSDB&apos;s code." ID="ID_133676239" CREATED="1500220977107" MODIFIED="1500221180743" MOVED="1500221234639"/>
@@ -8191,13 +8191,13 @@
 </node>
 </node>
 </node>
-<node TEXT="SQLite Case Study" LOCALIZED_STYLE_REF="default" FOLDED="true" POSITION="left" ID="ID_650094352" CREATED="1487266723741" MODIFIED="1500019873754" MOVED="1499849269320">
+<node TEXT="SQLite Case Study" LOCALIZED_STYLE_REF="default" POSITION="left" ID="ID_650094352" CREATED="1487266723741" MODIFIED="1500019873754" MOVED="1499849269320">
 <attribute NAME="label" VALUE="chapter:sqlite" OBJECT="java.net.URI|chapter:sqlite"/>
 <edge COLOR="#0000ff"/>
 <node TEXT="use chapter summaries" STYLE_REF="drop" ID="ID_1019464221" CREATED="1489606031650" MODIFIED="1489606057294" MOVED="1489606046735"/>
 <node TEXT="mindmap" STYLE_REF="drop" FOLDED="true" ID="ID_1016892487" CREATED="1495056722285" MODIFIED="1495056727902">
 <node TEXT="done" ID="ID_1928188182" CREATED="1500239236523" MODIFIED="1500239238183">
-<node TEXT="architecture" LOCALIZED_STYLE_REF="default" FOLDED="true" ID="ID_579244616" CREATED="1487266776070" MODIFIED="1495606090871" MOVED="1500239239114">
+<node TEXT="architecture" LOCALIZED_STYLE_REF="default" ID="ID_579244616" CREATED="1487266776070" MODIFIED="1495606090871" MOVED="1500239239114">
 <node TEXT="sqlite.png" ID="ID_291756350" CREATED="1489583049669" MODIFIED="1489606391963" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/SQLite%20Database%20System%20Design%20and%20Implementation.pdf" MOVED="1489583090710">
 <hook URI="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/_data/150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/default_files/sqlite.png" SIZE="0.6688963" NAME="ExternalObject"/>
 <attribute NAME="image" VALUE="sqlite"/>
@@ -8251,7 +8251,7 @@
 </node>
 </node>
 </node>
-<node TEXT="source code" LOCALIZED_STYLE_REF="default" ID="ID_65175383" CREATED="1489656127865" MODIFIED="1495606090880" MOVED="1500239245176">
+<node TEXT="source code" LOCALIZED_STYLE_REF="default" FOLDED="true" ID="ID_65175383" CREATED="1489656127865" MODIFIED="1495606090880" MOVED="1500239245176">
 <node TEXT="files" ID="ID_963530827" CREATED="1489652380247" MODIFIED="1489652391344" MOVED="1489656149854"/>
 <node TEXT="to which module do they belong" ID="ID_180017648" CREATED="1489652391558" MODIFIED="1489652396415" MOVED="1489656149854"/>
 <node TEXT="how many LoC" ID="ID_954681526" CREATED="1489652397711" MODIFIED="1489652403393" MOVED="1489656149861"/>
@@ -8382,7 +8382,7 @@
 <node TEXT="\item[Modularised:]" FOLDED="true" ID="ID_1961074220" CREATED="1500236236456" MODIFIED="1500239418769" MOVED="1500236585895">
 <node TEXT="As described in \cite{Haldar2015}[ch. 2.6], SQLite has a very modular architecture." ID="ID_400628669" CREATED="1500236422630" MODIFIED="1500239458013"/>
 <node TEXT="\autoref{figure:sqlite} shows the modules and a potential enclave border." ID="ID_585278429" CREATED="1500245362401" MODIFIED="1500245645181"/>
-<node TEXT="\input{content/tikz/sqlite}" STYLE_REF="latex" ID="ID_1131489379" CREATED="1500043496508" MODIFIED="1500246685511" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/thesis/content/tikz/sqlite.tex" MOVED="1500239261817">
+<node TEXT="\input{content/tikz/sqlite}" STYLE_REF="latex" FOLDED="true" ID="ID_1131489379" CREATED="1500043496508" MODIFIED="1500246685511" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/thesis/content/tikz/sqlite.tex" MOVED="1500239261817">
 <attribute NAME="image" VALUE=""/>
 <attribute NAME="label" VALUE="figure:sqlite" OBJECT="java.net.URI|figure:sqlite"/>
 <attribute NAME="key" VALUE="Haldar2015"/>
@@ -8401,14 +8401,14 @@
 </node>
 <node TEXT="\begin{sidewaysfigure}\begin{leftfullpage}\includegraphics[width=\textwidth]{content/images/sqlite callgraph insert 1percent top.pdf}&#xa;\caption{" STYLE_REF="latex" FOLDED="true" ID="ID_1144543529" CREATED="1500245972745" MODIFIED="1500246720041" MOVED="1500246725655">
 <node TEXT="\textbf{SQLite call graph for insert statement (top half).}" ID="ID_450711429" CREATED="1500246015778" MODIFIED="1500246017350"/>
-<node TEXT="\label{figure:sqlite-graph1}}\end{leftfullpage}\end{sidewaysfigure}" STYLE_REF="latex" ID="ID_1572435971" CREATED="1500246022643" MODIFIED="1500246224517"/>
+<node TEXT="\label{figure:sqlite-graph}}\end{leftfullpage}\end{sidewaysfigure}" STYLE_REF="latex" ID="ID_1572435971" CREATED="1500246022643" MODIFIED="1500248941737"/>
 </node>
-<node TEXT="\begin{sidewaysfigure}\begin{fullpage}\ContinuedFloat\includegraphics[width=\textwidth]{content/images/sqlite callgraph insert 1percent bottom.pdf}&#xa;\caption{" STYLE_REF="latex" ID="ID_1135253455" CREATED="1500245981127" MODIFIED="1500246720055" MOVED="1500246725663">
+<node TEXT="\begin{sidewaysfigure}\begin{fullpage}\ContinuedFloat\includegraphics[width=\textwidth]{content/images/sqlite callgraph insert 1percent bottom.pdf}&#xa;\caption{" STYLE_REF="latex" FOLDED="true" ID="ID_1135253455" CREATED="1500245981127" MODIFIED="1500246720055" MOVED="1500246725663">
 <node TEXT="\textbf{SQLite call graph for insert statement (bottom half).}" ID="ID_1189342130" CREATED="1500246066632" MODIFIED="1500246072750"/>
 <node TEXT="Only function calls (nodes) with a Valgrind cost greater than 1 percent are shown." ID="ID_1717360834" CREATED="1500246073317" MODIFIED="1500246076958"/>
 <node TEXT="Nodes are shaded according to the SQLite module they belong to (see the legend)." ID="ID_991757666" CREATED="1500246077096" MODIFIED="1500246079894"/>
 <node TEXT="The modules are distinguished by the header or code file the function is defined in. The file is given in brackets." ID="ID_189828888" CREATED="1500246080008" MODIFIED="1500246091466"/>
-<node TEXT="\label{figure:sqlite-graph-2}}\end{fullpage}&#xa;\end{sidewaysfigure}" STYLE_REF="latex" ID="ID_131626546" CREATED="1500246091699" MODIFIED="1500246224539"/>
+<node TEXT="}\end{fullpage}&#xa;\end{sidewaysfigure}" STYLE_REF="latex" ID="ID_131626546" CREATED="1500246091699" MODIFIED="1500248998365"/>
 </node>
 <node TEXT="" ID="ID_1254787094" CREATED="1500245631525" MODIFIED="1500245631525"/>
 <node TEXT="The Virtual Database Engine (VDBE) -- as the virtual machine is also called -- is at the core of SQLite." ID="ID_714086818" CREATED="1500245646607" MODIFIED="1500245683997"/>
@@ -8416,31 +8416,31 @@
 </node>
 <node TEXT="\end{description}" ID="ID_362500943" CREATED="1500235915171" MODIFIED="1500235919256" MOVED="1500236585900"/>
 </node>
-<node TEXT="Analysis" ID="ID_1912692200" CREATED="1500239520967" MODIFIED="1500245917267">
-<icon BUILTIN="button_cancel"/>
-<node TEXT="mindmap" STYLE_REF="drop" ID="ID_168674469" CREATED="1500239538824" MODIFIED="1500239561299" MOVED="1500239540498">
-<node TEXT="call graph" ID="ID_1217961054" CREATED="1490878821168" MODIFIED="1490878822664" MOVED="1500236160566">
-<node TEXT="kcachegrind/valgrind" ID="ID_1925012606" CREATED="1490878824377" MODIFIED="1490878829797"/>
-<node TEXT="steps" ID="ID_1009829542" CREATED="1490879321879" MODIFIED="1490879324387">
-<node TEXT="start sqlite3 with callgrind" ID="ID_21577315" CREATED="1490879329191" MODIFIED="1490879334920">
+<node TEXT="Analysis" FOLDED="true" ID="ID_1912692200" CREATED="1500239520967" MODIFIED="1500249099744">
+<icon BUILTIN="button_ok"/>
+<node TEXT="mindmap" STYLE_REF="drop" FOLDED="true" ID="ID_168674469" CREATED="1500239538824" MODIFIED="1500239561299" MOVED="1500239540498">
+<node TEXT="done" FOLDED="true" ID="ID_913406491" CREATED="1500248950178" MODIFIED="1500248951220">
+<node TEXT="steps" FOLDED="true" ID="ID_1009829542" CREATED="1490879321879" MODIFIED="1490879324387" MOVED="1500248954031">
+<node TEXT="start sqlite3 with callgrind" FOLDED="true" ID="ID_21577315" CREATED="1490879329191" MODIFIED="1490879334920">
 <node TEXT="valgrind --tool=callgrind ./sqlite3; kcachegrind callgrind.out.&lt;id&gt;" LOCALIZED_STYLE_REF="default" ID="ID_517534291" CREATED="1490878830337" MODIFIED="1490893005328" MOVED="1490879336938"/>
 </node>
-<node TEXT="open database file" ID="ID_9856917" CREATED="1490879338439" MODIFIED="1490879344059">
+<node TEXT="open database file" FOLDED="true" ID="ID_9856917" CREATED="1490879338439" MODIFIED="1490879344059">
 <node TEXT=".open test.db" LOCALIZED_STYLE_REF="default" ID="ID_341910169" CREATED="1490879353567" MODIFIED="1490893009392"/>
 </node>
-<node TEXT="execute sql command" ID="ID_763775532" CREATED="1490879344407" MODIFIED="1490879348560">
+<node TEXT="execute sql command" FOLDED="true" ID="ID_763775532" CREATED="1490879344407" MODIFIED="1490879348560">
 <node TEXT="CREATE TABLE tbl ( value TINYINT );" LOCALIZED_STYLE_REF="default" ID="ID_1082460972" CREATED="1490879369095" MODIFIED="1490893009395"/>
 <node TEXT="INSERT INTO tbl VALUES ( 42 );" LOCALIZED_STYLE_REF="default" ID="ID_1461283514" CREATED="1490879377375" MODIFIED="1490893009399"/>
 <node TEXT="SELECT * FROM tbl;" LOCALIZED_STYLE_REF="default" ID="ID_1333751727" CREATED="1490879382983" MODIFIED="1490893009402"/>
 </node>
-<node TEXT="quit sqlite" ID="ID_1116825100" CREATED="1490879348686" MODIFIED="1490879352181">
+<node TEXT="quit sqlite" FOLDED="true" ID="ID_1116825100" CREATED="1490879348686" MODIFIED="1490879352181">
 <node TEXT="Ctrl+d" LOCALIZED_STYLE_REF="default" ID="ID_740584932" CREATED="1490879359552" MODIFIED="1490893063862"/>
 </node>
 </node>
+<node TEXT="kcachegrind/valgrind" ID="ID_1925012606" CREATED="1490878824377" MODIFIED="1490878829797" MOVED="1500248955557"/>
+<node TEXT="call graph" ID="ID_1217961054" CREATED="1490878821168" MODIFIED="1490878822664" MOVED="1500248957302"/>
 </node>
-<node TEXT="UDF vs VDBE" ID="ID_651466935" CREATED="1500236146002" MODIFIED="1500236150169" MOVED="1500236585904"/>
 </node>
-<node TEXT="Content" STYLE_REF="paragraphs_drop_self" ID="ID_866079161" CREATED="1500239534811" MODIFIED="1500239555303">
+<node TEXT="Content" STYLE_REF="paragraphs_drop_self" FOLDED="true" ID="ID_866079161" CREATED="1500239534811" MODIFIED="1500239555303">
 <node TEXT="In order to find potential partitioning strategies for hardening SQLite, the run time behaviour was analysed." ID="ID_1625555362" CREATED="1500246847910" MODIFIED="1500247346095"/>
 <node TEXT="Valgrind\footnote{\url{http://valgrind.org/}} was used to record calls on function level." ID="ID_1885616035" CREATED="1500246893916" MODIFIED="1500246961705"/>
 <node TEXT="KCachegrind\footnote{\url{http://kcachegrind.sourceforge.net/html/Home.html}} was used to analyse, filter and export Valgrind&apos;s output." ID="ID_1345077215" CREATED="1500246962102" MODIFIED="1500247355337"/>
@@ -8464,10 +8464,111 @@
 <node TEXT="This is even larger, but can convey an overview of the module interaction through the coloured shading." ID="ID_1179349774" CREATED="1500247945394" MODIFIED="1500248015078"/>
 </node>
 </node>
-<node TEXT="Concept" FOLDED="true" ID="ID_207205158" CREATED="1500239527303" MODIFIED="1500245917270">
-<icon BUILTIN="button_cancel"/>
+<node TEXT="Concepts" FOLDED="true" ID="ID_207205158" CREATED="1500239527303" MODIFIED="1500254951081">
+<icon BUILTIN="button_ok"/>
 <node TEXT="mindmap" STYLE_REF="drop" ID="ID_297573632" CREATED="1500239542218" MODIFIED="1500239561307">
-<node TEXT="in SGX SDK" FOLDED="true" ID="ID_1020064220" CREATED="1499843925191" MODIFIED="1499843928464" MOVED="1500239243131">
+<node TEXT="UDF vs VDBE" ID="ID_651466935" CREATED="1500236146002" MODIFIED="1500236150169" MOVED="1500236585904"/>
+</node>
+<node TEXT="Content" STYLE_REF="paragraphs_drop_self" ID="ID_1225134522" CREATED="1500239544576" MODIFIED="1500239555300">
+<node TEXT="Based on the related work and SQLite run time analysis, two different hardening concepts are proposed." ID="ID_806012991" CREATED="1500249107527" MODIFIED="1500249289266"/>
+<node TEXT="They are not implemented due to time constraints." ID="ID_946377050" CREATED="1500249129957" MODIFIED="1500249141820"/>
+<node TEXT="\begin{enumerate}" ID="ID_1303002590" CREATED="1500249153392" MODIFIED="1500249171640"/>
+<node TEXT="\item \textbf{Extract the VDBE and tree module into an enclave}." FOLDED="true" ID="ID_1825072810" CREATED="1500249178719" MODIFIED="1500250128861">
+<node TEXT="This approach modifies the SQLite code and extracts the security critical part." ID="ID_738821968" CREATED="1500249291113" MODIFIED="1500249306332" MOVED="1500250134889"/>
+<node TEXT="This separates the enclave by functionality (\autoref{section:sgx-hardening})." ID="ID_202493526" CREATED="1500250026548" MODIFIED="1500250069862" MOVED="1500250134900"/>
+<node TEXT="\autoref{figure:sqlite} shows the proposed boundaries of the enclave: it should include the VDBE and tree module." ID="ID_439588279" CREATED="1500249319804" MODIFIED="1500249359642" MOVED="1500250134906"/>
+<node TEXT="" ID="ID_1487133749" CREATED="1500249713893" MODIFIED="1500249713893" MOVED="1500250134912"/>
+<node TEXT="The premise is that it is sufficient and secure to protect the VDBE and the tree module." ID="ID_1686599994" CREATED="1500249715621" MODIFIED="1500249731143" MOVED="1500250134918"/>
+<node TEXT="The enclave would provide an interface byte code level. The caller would pass a byte code program in an E-call." ID="ID_5813842" CREATED="1500249731334" MODIFIED="1500249769232" MOVED="1500250134923"/>
+<node TEXT="An in-depth analysis of the data flow is necessary to judge the security implications of this separation." ID="ID_1466004524" CREATED="1500249306424" MODIFIED="1500249374102" MOVED="1500250134929"/>
+<node TEXT="" ID="ID_1770165112" CREATED="1500249714485" MODIFIED="1500249714485" MOVED="1500250134934"/>
+<node TEXT="The VDBE executes the compiled byte code program." ID="ID_1148708431" CREATED="1500249376983" MODIFIED="1500249389411" MOVED="1500250134940"/>
+<node TEXT="It fetches entries from the tree module, which in turn access the disk via the pager." ID="ID_770004437" CREATED="1500249389545" MODIFIED="1500249411205" MOVED="1500250134945"/>
+<node TEXT="The tree module is a good lower boundary (in terms of the position in the architecture diagram), because it accesses the disk at the level of pages." ID="ID_1349045404" CREATED="1500249411322" MODIFIED="1500249466993" MOVED="1500250134950"/>
+<node TEXT="The tree module could be adapted to write and read encrypted values, but pass the plain text on to the VDBE." ID="ID_284478389" CREATED="1500249467122" MODIFIED="1500249505480" MOVED="1500250134958"/>
+<node TEXT="" ID="ID_706364704" CREATED="1500249838436" MODIFIED="1500249838436" MOVED="1500250134963"/>
+<node TEXT="The VDBE then performs the actual processing, based on the byte code program." ID="ID_821794728" CREATED="1500249505618" MODIFIED="1500249519851" MOVED="1500250134967"/>
+<node TEXT="It yields individual results row by row to the caller." ID="ID_668651794" CREATED="1500249519980" MODIFIED="1500249539635" MOVED="1500250134972"/>
+<node TEXT="The output has to be encrypted row by row if the interface should remain the same." ID="ID_364110747" CREATED="1500249539931" MODIFIED="1500249584573" MOVED="1500250134976"/>
+<node TEXT="This leaks the number of result rows for every call." ID="ID_999515110" CREATED="1500249556477" MODIFIED="1500249568434" MOVED="1500250134981"/>
+<node TEXT="The VDBE is a good upper boundary, because this keeps the entire front end out of the TCB." ID="ID_311205996" CREATED="1500249587291" MODIFIED="1500249861578" MOVED="1500250134986"/>
+<node TEXT="This is significant, as the code generator alone contains 40 percent of the entire SQLite code." ID="ID_1881798180" CREATED="1500249673423" MODIFIED="1500249698855" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/../../../literature_repository/SQLite%20Database%20System%20Design%20and%20Implementation.pdf" MOVED="1500250134991">
+<attribute NAME="key" VALUE="Haldar2015"/>
+<attribute NAME="journal" VALUE="Sibsankar Haldar"/>
+<attribute NAME="year" VALUE="2015"/>
+<attribute NAME="title" VALUE="SQLite Database System Design and Implementation"/>
+<attribute NAME="authors" VALUE="Haldar, Sibsankar"/>
+</node>
+<node TEXT="The front end is not involved in data processing, but only responsible for byte code generation." ID="ID_59920578" CREATED="1500249864778" MODIFIED="1500249882884" MOVED="1500250134997"/>
+<node TEXT="" ID="ID_1982778300" CREATED="1500249903647" MODIFIED="1500249903647" MOVED="1500250135003"/>
+<node TEXT="If the byte code is generated by an untrusted front end, it must be ensured that the byte code is not harmful. Also, the output of the VDBE should not leak any information. It should be encrypted to a secure channel established during attestation." ID="ID_902916871" CREATED="1500249904488" MODIFIED="1500250007372" MOVED="1500250135011"/>
+</node>
+<node TEXT="\item \textbf{User-defined functions (UDFs) in enclaves}." FOLDED="true" ID="ID_1233009872" CREATED="1500249205396" MODIFIED="1500249254550">
+<node TEXT="This solution leaves the KISSDB code base untouched." ID="ID_1587466546" CREATED="1500250145790" MODIFIED="1500250179182"/>
+<node TEXT="Instead, sensitive data is processed in enclaves via UDFs.\footnote{Registered via \Q{create_function}: \url{http://www.sqlite.org/c3ref/create_function.html}}" ID="ID_321698949" CREATED="1500253364612" MODIFIED="1500253853578"/>
+<node TEXT="\autoref{figure:sqlite-udf} shows the architecture of this solution." ID="ID_1839630476" CREATED="1500253379830" MODIFIED="1500253439030"/>
+<node TEXT="\input{content/tikz/sqlite-udf}" STYLE_REF="latex" FOLDED="true" ID="ID_1287020368" CREATED="1500253391260" MODIFIED="1500253420912" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/thesis/content/tikz/sqlite-udf.tex">
+<attribute NAME="image" VALUE=""/>
+<attribute NAME="label" VALUE="figure:sqlite-udf" OBJECT="java.net.URI|figure:sqlite-udf"/>
+<node TEXT="\textbf{SQLite hardening with user-defined functions (UDFs)}." ID="ID_1588471613" CREATED="1500183192802" MODIFIED="1500252797973" MOVED="1500253399049"/>
+<node TEXT="A function is registered with a SQLite connection using \texttt{sqlite3\_{}create\_{}function}." ID="ID_1863091039" CREATED="1500253157992" MODIFIED="1500253935674" MOVED="1500253399059"/>
+<node TEXT="The registered function is an untrusted proxy that delegates the call to the enclave." ID="ID_35187670" CREATED="1500253277275" MODIFIED="1500253302983" MOVED="1500253399062"/>
+<node TEXT="The enclave has been provisioned with the encryption key for the data." ID="ID_1543100" CREATED="1500253303124" MODIFIED="1500253319431" MOVED="1500253399066"/>
+<node TEXT="It decrypts the operands and encrypts the result before passing it back." ID="ID_1099637874" CREATED="1500253347597" MODIFIED="1500253360785" MOVED="1500253399069"/>
+<node TEXT="SQLite itself handles only binary encrypted data." ID="ID_326009507" CREATED="1500253319549" MODIFIED="1500253340919" MOVED="1500253399075"/>
+</node>
+<node TEXT="" ID="ID_1531368415" CREATED="1500253440847" MODIFIED="1500253440847"/>
+<node TEXT="The approach is very similar to VC3." ID="ID_1880634869" CREATED="1500254203029" MODIFIED="1500254217017" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/Microsoft%20VC3%20Trustworthy%20Data%20Analytics%20in%20the%20Cloud%20using%20SGX.pdf">
+<attribute NAME="key" VALUE="Schuster2015"/>
+<attribute NAME="year" VALUE="2015"/>
+<attribute NAME="title" VALUE="VC3: Trustworthy data analytics in the cloud using SGX"/>
+<attribute NAME="authors" VALUE="Schuster, Felix and Costa, Manuel and Fournet, C{\&apos;e}dric and Gkantsidis, Christos and Peinado, Marcus and Mainar-Ruiz, Gloria and Russinovich, Mark"/>
+<pdf_annotation type="PDF_FILE" object_id="0" document_hash="777E5AB174B4C1E73D0378D17578084C1D45629308414E9EC83EC77EEFCBE1">
+    <pdf_title>: Trustworthy Data Analytics in the Cloud using SGX</pdf_title>
+</pdf_annotation>
+</node>
+<node TEXT="It uses separate processing components (UDFs here, jobs in VC3) which can be plugged into the main processing engine." ID="ID_972553018" CREATED="1500254218432" MODIFIED="1500254247618"/>
+<node TEXT="The approach separates enclaves by functionality." ID="ID_653270748" CREATED="1500254497548" MODIFIED="1500254528040"/>
+<node TEXT="There is one enclave per UDF." ID="ID_1920750707" CREATED="1500254545358" MODIFIED="1500254552987"/>
+<node TEXT="" ID="ID_981178378" CREATED="1500254489148" MODIFIED="1500254489148"/>
+<node TEXT="Compared to VDBE and tree extraction, the advantages of the UDF approach are as follows:" ID="ID_276876978" CREATED="1500253602454" MODIFIED="1500254731702"/>
+<node TEXT="\begin{itemize}" ID="ID_1533966412" CREATED="1500253619424" MODIFIED="1500253624492">
+<node TEXT="\item This approach is far easier to implement." ID="ID_1874885591" CREATED="1500253441629" MODIFIED="1500253658475" MOVED="1500253667811">
+<node TEXT="SQLite must not be modified. This facilitates compatibility with future versions." ID="ID_1628619896" CREATED="1500254607293" MODIFIED="1500254767629"/>
+</node>
+<node TEXT="\item The security guaranteed by this approach is easier to reason about, as the data flow is very clear." ID="ID_395790458" CREATED="1500253453982" MODIFIED="1500253665341" MOVED="1500253667817"/>
+<node TEXT="\end{itemize}" ID="ID_1825313667" CREATED="1500253625626" MODIFIED="1500253628942" MOVED="1500253667821"/>
+</node>
+<node TEXT="There are also drawbacks:" ID="ID_1006647983" CREATED="1500253460397" MODIFIED="1500253642031"/>
+<node TEXT="\begin{itemize}" FOLDED="true" ID="ID_1382823746" CREATED="1500253642496" MODIFIED="1500253649316">
+<node TEXT="\item Functions have to be re-implemented." FOLDED="true" ID="ID_34604663" CREATED="1500253674595" MODIFIED="1500253691736">
+<node TEXT="SQLite has optimised processing implementations. They work well with the tree and pager module. None of these existing operations can be used on encrypted data (for non-homomorphic encryption)." ID="ID_680487982" CREATED="1500253516679" MODIFIED="1500253776161" MOVED="1500253716321"/>
+</node>
+<node TEXT="\item UDFs can only operate at row level." FOLDED="true" ID="ID_910577627" CREATED="1500253692392" MODIFIED="1500253792743">
+<node TEXT="Relational operations such as joins will not work if non-deterministic encryption schemes are used." ID="ID_1857752388" CREATED="1500253536982" MODIFIED="1500253868645" MOVED="1500253803027"/>
+<node TEXT="Aggregations can be defined as UDFs (with an interface similar to reducers in functional programming)." ID="ID_1002933773" CREATED="1500253806285" MODIFIED="1500253822787"/>
+<node TEXT="A combination with the techniques used by other hardened databases in \autoref{section:secure-db} is possible (e.g. onion encryption)." ID="ID_1235602590" CREATED="1500253550759" MODIFIED="1500253593771" MOVED="1500253870643"/>
+</node>
+<node TEXT="\item Performing many E-calls is inefficient." FOLDED="true" ID="ID_475441213" CREATED="1500254261891" MODIFIED="1500254280516">
+<node TEXT="Even if the Intel SDK is not used, E-calls still have a performance overhead." ID="ID_141593308" CREATED="1500254281015" MODIFIED="1500254313060"/>
+<node TEXT="When processing a query that touches many rows, the enclave will be called many times." ID="ID_907818609" CREATED="1500254313201" MODIFIED="1500254334509"/>
+<node TEXT="The resulting context switches into the enclave degrade performance." ID="ID_257744792" CREATED="1500254334642" MODIFIED="1500254354237"/>
+</node>
+<node TEXT="\item Information leakage at the field level." FOLDED="true" ID="ID_1976381915" CREATED="1500254354970" MODIFIED="1500254403099">
+<node TEXT="The enclave returns encrypted values." ID="ID_736597701" CREATED="1500254363116" MODIFIED="1500254370995"/>
+<node TEXT="However, it is increasingly likely that some information is leaked." ID="ID_1737568991" CREATED="1500254371308" MODIFIED="1500254389559"/>
+<node TEXT="If the value space of a field is small or non-uniformly distributed, information may be learned even from an encrypted value (take a binary field with deterministic encryption as an extreme example)." ID="ID_1608594282" CREATED="1500254389666" MODIFIED="1500254470789"/>
+</node>
+<node TEXT="\end{itemize}" ID="ID_1283973465" CREATED="1500253990844" MODIFIED="1500253993186"/>
+</node>
+</node>
+<node TEXT="\end{enumerate}" ID="ID_852127889" CREATED="1500249157670" MODIFIED="1500249175264"/>
+</node>
+</node>
+<node TEXT="Usage in the Intel SGX SDK" ID="ID_1312265565" CREATED="1500255091333" MODIFIED="1500256131535">
+<icon BUILTIN="button_ok"/>
+<node TEXT="mindmap" STYLE_REF="drop" FOLDED="true" ID="ID_1280465211" CREATED="1500239547090" MODIFIED="1500239561312" MOVED="1500255177613">
+<node TEXT="in SGX SDK" ID="ID_1020064220" CREATED="1499843925191" MODIFIED="1499843928464" MOVED="1500255176966">
 <node TEXT="monotonic counters in integrity protected external SQLite DB" ID="ID_1612766592" CREATED="1499843930359" MODIFIED="1499843940976">
 <node TEXT="https://github.com/01org/linux-sgx/blob/1115c195cd60d5ab2b80c12d07e21663e5aa8030/psw/ae/pse/pse_op/monotonic_counter_database_sqlite_rpdb.cpp" ID="ID_1881613481" CREATED="1499843928844" MODIFIED="1499843928844" LINK="https://github.com/01org/linux-sgx/blob/1115c195cd60d5ab2b80c12d07e21663e5aa8030/psw/ae/pse/pse_op/monotonic_counter_database_sqlite_rpdb.cpp" MOVED="1499843942160"/>
 <node TEXT="// Read the current RPDATA from CSME to check whether the cached vm db is not of date." ID="ID_425623720" CREATED="1499844369663" MODIFIED="1499844370911"/>
@@ -8478,19 +8579,51 @@
 </node>
 </node>
 </node>
-<node TEXT="Content" STYLE_REF="paragraphs_drop_self" ID="ID_1225134522" CREATED="1500239544576" MODIFIED="1500239555300"/>
+<node TEXT="Content" STYLE_REF="paragraphs_drop_self" ID="ID_1032391793" CREATED="1500255164893" MODIFIED="1500255171162">
+<node TEXT="The Intel SGX SDK for Linux, which is open source, also includes SQLite." ID="ID_1618983123" CREATED="1500254978219" MODIFIED="1500256185649" MOVED="1500255176182"/>
+<node TEXT="The way in which it is used by enclaves is different to the presented concepts and the related work." ID="ID_1923539167" CREATED="1500255301569" MODIFIED="1500256203705"/>
+<node TEXT="For the specific use case of the SDK, it is a simple and interesting alternative." ID="ID_735079837" CREATED="1500255320200" MODIFIED="1500256271868"/>
+<node TEXT="" ID="ID_109209552" CREATED="1500255257714" MODIFIED="1500255257714"/>
+<node TEXT="Multiple references to SQLite can be found in the SDK&apos;s code.\footnote{\url{https://github.com/01org/linux-sgx/search?q=sqlite}}." ID="ID_489883" CREATED="1500255388171" MODIFIED="1500255411754"/>
+<node TEXT="Browsing the code, it seems that SQLite is used to provide monotonic counters.\footnote{\url{https://github.com/01org/linux-sgx/blob/1115c195cd60d5ab2b80c12d07e21663e5aa8030/psw/ae/pse/pse_op/monotonic_counter_database_sqlite_rpdb.cpp}}" ID="ID_1228268062" CREATED="1500255468994" MODIFIED="1500256296677"/>
+<node TEXT="The comments in the repository often mention the CSME, which stands for Converged Security and Manageability Engine." ID="ID_1698867395" CREATED="1500255682341" MODIFIED="1500255686814"/>
+<node TEXT="Monotonic counters are provided in hardware by the manageability engine." ID="ID_106141223" CREATED="1500255539837" MODIFIED="1500255757714" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/../../fteschke/sgx2017/literature_repository/SGX%20SDK%20Guide.pdf">
+<attribute NAME="key" VALUE="sgx-windows"/>
+<attribute NAME="title" VALUE="Intel SGX Evaluation SDK User&apos;s Guide for Windows OS"/>
+<attribute NAME="authors" VALUE="Intel"/>
 </node>
-<node TEXT="Conclusion" FOLDED="true" ID="ID_1290012775" CREATED="1500239529465" MODIFIED="1500245917254">
-<icon BUILTIN="button_cancel"/>
-<node TEXT="mindmap" STYLE_REF="drop" ID="ID_1280465211" CREATED="1500239547090" MODIFIED="1500239561312"/>
-<node TEXT="Content" STYLE_REF="paragraphs_drop_self" ID="ID_1678006628" CREATED="1500239548816" MODIFIED="1500239555296"/>
+<node TEXT="They are a limited resource." ID="ID_543334142" CREATED="1500255585653" MODIFIED="1500255595671"/>
+<node TEXT="SQLite is apparently used to multiplex the hardware monotonic counters into several virtual counters." ID="ID_1316531596" CREATED="1500255595813" MODIFIED="1500255768973"/>
+<node TEXT="This is a feature provided by Intel&apos;s platform software (PSW)." ID="ID_669142565" CREATED="1500255826576" MODIFIED="1500255851314"/>
+<node TEXT="" ID="ID_1687279009" CREATED="1500255797842" MODIFIED="1500255799760"/>
+<node TEXT="The SQLite database is stored outside of the enclaves." ID="ID_1391282" CREATED="1500255800063" MODIFIED="1500255865037"/>
+<node TEXT="For the counters, it is sufficient to integrity protect the database." ID="ID_1900027969" CREATED="1500255865368" MODIFIED="1500256143630"/>
+<node TEXT="The code indicates that the data is stored in tree form." ID="ID_1206531439" CREATED="1500255924275" MODIFIED="1500255960204"/>
+<node TEXT="If stored as a Merkle tree, it is sufficient to securely store the hash of the root node in the enclave." ID="ID_1108434998" CREATED="1500255960345" MODIFIED="1500256002604"/>
+<node TEXT="The integrity of the entire tree can be verified from this root hash." ID="ID_635563738" CREATED="1500256002754" MODIFIED="1500256016759"/>
+<node TEXT="" ID="ID_840132450" CREATED="1500256021789" MODIFIED="1500256021789"/>
+<node TEXT="This approach leaves the payload visible as plain text." ID="ID_719574993" CREATED="1500256022474" MODIFIED="1500256051402"/>
+<node TEXT="For the use case, integrity and replay protection are sufficient." ID="ID_1700780161" CREATED="1500256051540" MODIFIED="1500256065030"/>
+<node TEXT="This allows for a far simpler solution than the concepts proposed in this case study." ID="ID_207917217" CREATED="1500256065267" MODIFIED="1500256092677"/>
+<node TEXT="The SDK approach however falls short of providing protected processing of data, which is the goal of this thesis." ID="ID_1870157400" CREATED="1500256092820" MODIFIED="1500256125536"/>
 </node>
 </node>
-<node TEXT="Conclusion" LOCALIZED_STYLE_REF="default" FOLDED="true" POSITION="left" ID="ID_1572507625" CREATED="1487318838781" MODIFIED="1496135435985" MOVED="1488547706086">
+<node TEXT="Conclusion" FOLDED="true" ID="ID_1290012775" CREATED="1500239529465" MODIFIED="1500255247757" HGAP="17" MOVED="1500255237982">
+<icon BUILTIN="button_ok"/>
+<node TEXT="Content" STYLE_REF="paragraphs_drop_self" ID="ID_1678006628" CREATED="1500239548816" MODIFIED="1500239555296">
+<node TEXT="In this case study, two concepts to hardening SQLite were proposed." ID="ID_1806868998" CREATED="1500254857795" MODIFIED="1500254957835"/>
+<node TEXT="These were based on a brief run-time analysis of SQLite&apos;s module interaction." ID="ID_1309249988" CREATED="1500254887049" MODIFIED="1500255735695"/>
+<node TEXT="Also, related work provided an inspiration for the UDF approach." ID="ID_402409416" CREATED="1500254906675" MODIFIED="1500254921754"/>
+<node TEXT="Due to time constraints, neither of the approaches could be evaluated in-depth or implemented." ID="ID_16617358" CREATED="1500254924022" MODIFIED="1500254972616"/>
+<node TEXT="The unrelated approach of the SGX SDK was also presented as an example of storing integrity-protected data outside enclaves." ID="ID_1132675940" CREATED="1500255107263" MODIFIED="1500255161839"/>
+</node>
+</node>
+</node>
+<node TEXT="Conclusion" LOCALIZED_STYLE_REF="default" POSITION="left" ID="ID_1572507625" CREATED="1487318838781" MODIFIED="1496135435985" MOVED="1488547706086">
 <icon BUILTIN="button_cancel"/>
 <edge COLOR="#007c00"/>
 <node TEXT="Die Antwort auf die in der Problemstellung aufgeworfenen Fragen soll&#xa;kurz und pr&#xe4;gnant zusammengefasst werden. Ebenso sollte ein Ausblick auf offen&#xa;gebliebene Fragen sowie auf interessante Fragestellungen, die sich aus der Arbeit erge-&#xa;ben, gegeben werden. Eine kritische Betrachtung der eigenen Arbeit ist an dieser Stelle&#xa;ebenfalls sinnvoll." STYLE_REF="drop" ID="ID_1974882074" CREATED="1492081057470" MODIFIED="1492081062735" MOVED="1492081063826"/>
-<node TEXT="mindmap" STYLE_REF="drop" FOLDED="true" ID="ID_1652491510" CREATED="1495543887981" MODIFIED="1495543899209" MOVED="1495606147380">
+<node TEXT="mindmap" STYLE_REF="drop" ID="ID_1652491510" CREATED="1495543887981" MODIFIED="1495543899209" MOVED="1495606147380">
 <node TEXT="future work" ID="ID_1074533750" CREATED="1499766172307" MODIFIED="1499766174284"/>
 </node>
 </node>
@@ -8520,10 +8653,10 @@
 </node>
 </node>
 </node>
-<node TEXT="SQLite Call Graphs" POSITION="left" ID="ID_686469438" CREATED="1500244719534" MODIFIED="1500246155963">
+<node TEXT="SQLite Call Graphs" FOLDED="true" POSITION="left" ID="ID_686469438" CREATED="1500244719534" MODIFIED="1500246155963">
 <edge COLOR="#ffff00"/>
 <attribute NAME="label" VALUE="appendix:sqlite" OBJECT="java.net.URI|appendix:sqlite"/>
-<node TEXT="Content" STYLE_REF="paragraphs_drop_self" ID="ID_1676888447" CREATED="1500244934914" MODIFIED="1500244942477">
+<node TEXT="Content" STYLE_REF="paragraphs_drop_self" FOLDED="true" ID="ID_1676888447" CREATED="1500244934914" MODIFIED="1500244942477">
 <node TEXT="\textbf{SQLite call graph for insert statement.} The depth is limited to a maximum of 15 callees (descendants). The call graph is too large for detailed analysis. Rather, the shading should convey an intuition of how the modules are interleaved. See \autoref{figure:sqlite-graph1} for the colour legend. Nodes are coloured according to the SQLite module they belong to (see the legend). The modules are distinguished by the header or code file the function is defined in. The file is given in brackets." ID="ID_196264389" CREATED="1491808913784" MODIFIED="1500248466236" MOVED="1500244944123">
 <attribute_layout NAME_WIDTH="74" VALUE_WIDTH="74"/>
 <attribute NAME="image" VALUE="sqlite callgraph insert 15callees cropped.pdf"/>

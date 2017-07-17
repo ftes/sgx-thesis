@@ -1,4 +1,4 @@
-personal_ws-1.1 en 206 
+personal_ws-1.1 en 209 
 TrustedDB
 Arx
 CryptDB's
@@ -27,6 +27,7 @@ parallelise
 pwrite
 SMM
 SoC
+Merkle
 AsyncShock
 DMA
 cpp
@@ -78,6 +79,7 @@ decrypt
 von
 VMX
 TXT
+SQLite's
 Hadoop
 Yao
 nonces
@@ -183,6 +185,7 @@ Bitcoin
 Yao's
 virtualise
 VDBE
+CSME
 NIST
 decrypted
 REE
@@ -190,8 +193,8 @@ VMEXIT
 filename
 AMD
 NoHype
-pre
 ret
+pre
 GETSEC
 sizefunc
 DataBase
