@@ -1,4 +1,4 @@
-<map version="docear 1.1" project="150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7" project_last_home="file:/home/fredrik/sgx2017/" dcr_id="1488476421761_38dk6g1wx834fy6mbu0yod5x7">
+<map version="docear 1.1" dcr_id="1488476421761_38dk6g1wx834fy6mbu0yod5x7" project="150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7" project_last_home="file:/home/fredrik/sgx2017/">
 <!--To view this file, download Docear - The Academic Literature Suite from http://www.docear.org -->
 <attribute_registry SHOW_ATTRIBUTES="hide"/>
 <node TEXT="Thesis 2017" FOLDED="false" ID="ID_308776938" CREATED="1488476421728" MODIFIED="1499948606097">
@@ -348,7 +348,7 @@
 </pdf_annotation>
 <attribute NAME="key" VALUE="Brenner2012"/>
 <attribute NAME="year" VALUE="2012"/>
-<attribute NAME="title" VALUE="How practical is homomorphically encrypted program execution? an implementation and performance evaluation"/>
+<attribute NAME="title" VALUE="How practical is homomorphically encrypted program execution? An implementation and performance evaluation"/>
 <attribute NAME="authors" VALUE="Brenner, Michael and Perl, Henning and Smith, Matthew"/>
 </node>
 <node TEXT="code + data remain encrypted during execution" ID="ID_1116536067" CREATED="1456836269911" MODIFIED="1457388303057" MOVED="1456836279454"/>
@@ -703,7 +703,7 @@
 </pdf_annotation>
 <attribute NAME="key" VALUE="Brenner2012"/>
 <attribute NAME="year" VALUE="2012"/>
-<attribute NAME="title" VALUE="How practical is homomorphically encrypted program execution? an implementation and performance evaluation"/>
+<attribute NAME="title" VALUE="How practical is homomorphically encrypted program execution? An implementation and performance evaluation"/>
 <attribute NAME="authors" VALUE="Brenner, Michael and Perl, Henning and Smith, Matthew"/>
 </node>
 <node TEXT="code + data remain encrypted during execution&#xa;fully oblivous: instruction flow + memory access" ID="ID_214983587" CREATED="1495541924218" MODIFIED="1495541925895" MOVED="1495543568403"/>
@@ -740,7 +740,7 @@
 </pdf_annotation>
 <attribute NAME="key" VALUE="Brenner2012"/>
 <attribute NAME="year" VALUE="2012"/>
-<attribute NAME="title" VALUE="How practical is homomorphically encrypted program execution? an implementation and performance evaluation"/>
+<attribute NAME="title" VALUE="How practical is homomorphically encrypted program execution? An implementation and performance evaluation"/>
 <attribute NAME="authors" VALUE="Brenner, Michael and Perl, Henning and Smith, Matthew"/>
 <node TEXT="requirements for and limitations of a hardware implementation" ID="ID_1008812513" CREATED="1497253649663" MODIFIED="1497253649663" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/Secret%20Program%20Execution%20Performance%20Evaluation.pdf">
 <pdf_annotation type="HIGHLIGHTED_TEXT" page="7" object_id="1733167557858335296" object_number="68" document_hash="A62CE564B99F9D189E87C9DE773CC113C56D8C7EA138134D997CED625AD1EE">
@@ -748,7 +748,7 @@
 </pdf_annotation>
 <attribute NAME="key" VALUE="Brenner2012"/>
 <attribute NAME="year" VALUE="2012"/>
-<attribute NAME="title" VALUE="How practical is homomorphically encrypted program execution? an implementation and performance evaluation"/>
+<attribute NAME="title" VALUE="How practical is homomorphically encrypted program execution? An implementation and performance evaluation"/>
 <attribute NAME="authors" VALUE="Brenner, Michael and Perl, Henning and Smith, Matthew"/>
 </node>
 <node TEXT="super-wide buses" ID="ID_597993314" CREATED="1497253649710" MODIFIED="1497253649710" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/Secret%20Program%20Execution%20Performance%20Evaluation.pdf">
@@ -757,7 +757,7 @@
 </pdf_annotation>
 <attribute NAME="key" VALUE="Brenner2012"/>
 <attribute NAME="year" VALUE="2012"/>
-<attribute NAME="title" VALUE="How practical is homomorphically encrypted program execution? an implementation and performance evaluation"/>
+<attribute NAME="title" VALUE="How practical is homomorphically encrypted program execution? An implementation and performance evaluation"/>
 <attribute NAME="authors" VALUE="Brenner, Michael and Perl, Henning and Smith, Matthew"/>
 </node>
 </node>
@@ -906,7 +906,7 @@
 <node TEXT="This obliviousness is an important security factor and a performance pitfall at the same time. Memory access patterns and program flow are kept secret. This however also means that access times grow with the memory size. The authors state that ``compact programs and data are the key to tolerable runtimes&apos;&apos;." ID="ID_1325928179" CREATED="1497254388356" MODIFIED="1497254686779" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/Secret%20Program%20Execution%20Performance%20Evaluation.pdf" MOVED="1499942353113">
 <attribute NAME="key" VALUE="Brenner2012"/>
 <attribute NAME="year" VALUE="2012"/>
-<attribute NAME="title" VALUE="How practical is homomorphically encrypted program execution? an implementation and performance evaluation"/>
+<attribute NAME="title" VALUE="How practical is homomorphically encrypted program execution? An implementation and performance evaluation"/>
 <attribute NAME="authors" VALUE="Brenner, Michael and Perl, Henning and Smith, Matthew"/>
 <pdf_annotation type="PDF_FILE" object_id="0" document_hash="A62CE564B99F9D189E87C9DE773CC113C56D8C7EA138134D997CED625AD1EE">
     <pdf_title>How Practical is Homomorphically Encrypted Program Execution? An Implementation and Performance Evaluation</pdf_title>
@@ -919,7 +919,7 @@
 <node TEXT="Both values are obtained for $256$ memory rows -- at $13 bit$ per row this gives roughly $0.4 kB$ of memory.\footnote{A memory word contains $8 bit$ of data and a $5 bit$ command.\cite{Brenner2011}. This design decision reduces the number of costly memory access cycles.}" LOCALIZED_STYLE_REF="default" ID="ID_1799557031" CREATED="1497271400094" MODIFIED="1497274049494" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/Secret%20Program%20Execution%20Performance%20Evaluation.pdf" MOVED="1499942353132">
 <attribute NAME="key" VALUE="Brenner2012"/>
 <attribute NAME="year" VALUE="2012"/>
-<attribute NAME="title" VALUE="How practical is homomorphically encrypted program execution? an implementation and performance evaluation"/>
+<attribute NAME="title" VALUE="How practical is homomorphically encrypted program execution? An implementation and performance evaluation"/>
 <attribute NAME="authors" VALUE="Brenner, Michael and Perl, Henning and Smith, Matthew"/>
 <pdf_annotation type="PDF_FILE" object_id="0" document_hash="A62CE564B99F9D189E87C9DE773CC113C56D8C7EA138134D997CED625AD1EE">
     <pdf_title>How Practical is Homomorphically Encrypted Program Execution? An Implementation and Performance Evaluation</pdf_title>
@@ -946,7 +946,7 @@
 <node TEXT="Roots of Trust are functions that must operate as expected, irrespective of any other process in a platform, because without them there is no way to believe anything reported by a platform" STYLE_REF="drop" ID="ID_347650529" CREATED="1457524791608" MODIFIED="1497277495093" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/Trusted%20Computing.pdf" MOVED="1497277645678">
 <pdf_annotation type="HIGHLIGHTED_TEXT" page="29" object_id="2454722348262283326" object_number="481"/>
 <attribute NAME="key" VALUE="Mitchell2005"/>
-<attribute NAME="authors" VALUE="Mitchell, Chris and Mitchell, Chris and Mitchell, Chris"/>
+<attribute NAME="authors" VALUE="Anand S. Gajparia and Chris J. Mitchell"/>
 <attribute NAME="title" VALUE="Trusted computing"/>
 <attribute NAME="year" VALUE="2005"/>
 </node>
@@ -955,14 +955,14 @@
 <attribute NAME="key" VALUE="Mitchell2005"/>
 <attribute NAME="year" VALUE="2005"/>
 <attribute NAME="title" VALUE="Trusted computing"/>
-<attribute NAME="authors" VALUE="Mitchell, Chris and Mitchell, Chris and Mitchell, Chris"/>
+<attribute NAME="authors" VALUE="Anand S. Gajparia and Chris J. Mitchell"/>
 </node>
 <node TEXT="For example, the CPU in a trusted computing setup could be the root of trust that is expected to function correctly." ID="ID_871944257" CREATED="1497332402613" MODIFIED="1497332484504" MOVED="1497334608193"/>
 <node TEXT="\item[Trusted computing]" LOCALIZED_STYLE_REF="default" FOLDED="true" ID="ID_1657615964" CREATED="1497277295222" MODIFIED="1497277535486" MOVED="1497334608210">
 <node TEXT="Trusted computing as we mean it in this book is an idea which has arisen from the need to address these problems. Trusted computing refers to the addition of hardware functionality to a computer system to enable entities with which the computer interacts to have some level of trust in what the system is doing" STYLE_REF="drop" ID="ID_1764240486" CREATED="1457524791642" MODIFIED="1497277495114" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/Trusted%20Computing.pdf" MOVED="1497277647518">
 <pdf_annotation type="HIGHLIGHTED_TEXT" page="18" object_id="1697765573187237022" object_number="468"/>
 <attribute NAME="key" VALUE="Mitchell2005"/>
-<attribute NAME="authors" VALUE="Mitchell, Chris and Mitchell, Chris and Mitchell, Chris"/>
+<attribute NAME="authors" VALUE="Anand S. Gajparia and Chris J. Mitchell"/>
 <attribute NAME="title" VALUE="Trusted computing"/>
 <attribute NAME="year" VALUE="2005"/>
 </node>
@@ -980,7 +980,7 @@
 <attribute NAME="key" VALUE="Mitchell2005"/>
 <attribute NAME="year" VALUE="2005"/>
 <attribute NAME="title" VALUE="Trusted computing"/>
-<attribute NAME="authors" VALUE="Mitchell, Chris and Mitchell, Chris and Mitchell, Chris"/>
+<attribute NAME="authors" VALUE="Anand S. Gajparia and Chris J. Mitchell"/>
 </node>
 <node TEXT="\autoref{figure:trusted-computing} shows the involved components and trust relationships." ID="ID_535952528" CREATED="1497332495299" MODIFIED="1497339667816" MOVED="1497334608226"/>
 <node TEXT="\item[Trusted Execution Environment (TEE)]" ID="ID_261824335" CREATED="1499160776977" MODIFIED="1499160786203" MOVED="1499161092638"/>
@@ -1058,7 +1058,7 @@
 <attribute NAME="key" VALUE="Mitchell2005"/>
 <attribute NAME="year" VALUE="2005"/>
 <attribute NAME="title" VALUE="Trusted computing"/>
-<attribute NAME="authors" VALUE="Mitchell, Chris and Mitchell, Chris and Mitchell, Chris"/>
+<attribute NAME="authors" VALUE="Anand S. Gajparia and Chris J. Mitchell"/>
 </node>
 <node TEXT="" ID="ID_1247105074" CREATED="1499625144830" MODIFIED="1499625144830"/>
 <node TEXT="Technically, this is usually achieved through key derivation. The root of trust in a system may have a secret key. From this key, with the measurement result of software attestation, a state-specific data sealing key is derived. The data is then encrypted with this key." ID="ID_1904605343" CREATED="1499625149231" MODIFIED="1499625150349"/>
@@ -1129,7 +1129,7 @@
 <node TEXT="trustzone two worlds.png" ID="ID_1539160233" CREATED="1497343302063" MODIFIED="1497343350160" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/Trustzone%20-%20Building%20a%20secure%20system%20whitepaper.pdf" MOVED="1497343438185">
 <hook URI="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/_data/150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/default_files/trustzone%20two%20worlds.png" SIZE="0.52910054" NAME="ExternalObject"/>
 <attribute NAME="key" VALUE="b"/>
-<attribute NAME="title" VALUE="ARM Security Technology --- Building a Secure System usingTrustZone Technology"/>
+<attribute NAME="title" VALUE="ARM Security Technology --- Building a Secure System using TrustZone Technology"/>
 <attribute NAME="authors" VALUE="ARM"/>
 <pdf_annotation type="PDF_FILE" object_id="0" document_hash="60202111BFD5D60C5C650911CC28031DC1AEC645D8C53F16BAEE81784ABB351">
     <pdf_title>ARM Security Technology</pdf_title>
@@ -1145,7 +1145,7 @@
 <pdf_annotation type="HIGHLIGHTED_TEXT" page="34" object_id="6817940557166311569" object_number="1337" document_hash="60202111BFD5D60C5C650911CC28031DC1AEC645D8C53F16BAEE81784ABB351">
     <pdf_title>ARM Security Technology</pdf_title>
 </pdf_annotation>
-<attribute NAME="title" VALUE="ARM Security Technology --- Building a Secure System usingTrustZone Technology"/>
+<attribute NAME="title" VALUE="ARM Security Technology --- Building a Secure System using TrustZone Technology"/>
 <attribute NAME="authors" VALUE="ARM"/>
 <attribute NAME="key" VALUE="b"/>
 </node>
@@ -1155,7 +1155,7 @@
 <pdf_annotation type="HIGHLIGHTED_TEXT" page="34" object_id="710100959581959668" object_number="1338" document_hash="60202111BFD5D60C5C650911CC28031DC1AEC645D8C53F16BAEE81784ABB351">
     <pdf_title>ARM Security Technology</pdf_title>
 </pdf_annotation>
-<attribute NAME="title" VALUE="ARM Security Technology --- Building a Secure System usingTrustZone Technology"/>
+<attribute NAME="title" VALUE="ARM Security Technology --- Building a Secure System using TrustZone Technology"/>
 <attribute NAME="authors" VALUE="ARM"/>
 <attribute NAME="key" VALUE="b"/>
 </node>
@@ -1165,7 +1165,7 @@
 <pdf_annotation type="HIGHLIGHTED_TEXT" page="36" object_id="2873660488493806865" object_number="1348" document_hash="60202111BFD5D60C5C650911CC28031DC1AEC645D8C53F16BAEE81784ABB351">
     <pdf_title>ARM Security Technology</pdf_title>
 </pdf_annotation>
-<attribute NAME="title" VALUE="ARM Security Technology --- Building a Secure System usingTrustZone Technology"/>
+<attribute NAME="title" VALUE="ARM Security Technology --- Building a Secure System using TrustZone Technology"/>
 <attribute NAME="authors" VALUE="ARM"/>
 <attribute NAME="key" VALUE="b"/>
 </node>
@@ -1174,7 +1174,7 @@
 <pdf_annotation type="HIGHLIGHTED_TEXT" page="40" object_id="8065947295310448550" object_number="1366" document_hash="60202111BFD5D60C5C650911CC28031DC1AEC645D8C53F16BAEE81784ABB351">
     <pdf_title>ARM Security Technology</pdf_title>
 </pdf_annotation>
-<attribute NAME="title" VALUE="ARM Security Technology --- Building a Secure System usingTrustZone Technology"/>
+<attribute NAME="title" VALUE="ARM Security Technology --- Building a Secure System using TrustZone Technology"/>
 <attribute NAME="authors" VALUE="ARM"/>
 <attribute NAME="key" VALUE="b"/>
 </node>
@@ -1182,7 +1182,7 @@
 <pdf_annotation type="HIGHLIGHTED_TEXT" page="40" object_id="1554405729364386326" object_number="1368" document_hash="60202111BFD5D60C5C650911CC28031DC1AEC645D8C53F16BAEE81784ABB351">
     <pdf_title>ARM Security Technology</pdf_title>
 </pdf_annotation>
-<attribute NAME="title" VALUE="ARM Security Technology --- Building a Secure System usingTrustZone Technology"/>
+<attribute NAME="title" VALUE="ARM Security Technology --- Building a Secure System using TrustZone Technology"/>
 <attribute NAME="authors" VALUE="ARM"/>
 <attribute NAME="key" VALUE="b"/>
 </node>
@@ -1190,7 +1190,7 @@
 <pdf_annotation type="HIGHLIGHTED_TEXT" page="40" object_id="3102558696446481762" object_number="1367" document_hash="60202111BFD5D60C5C650911CC28031DC1AEC645D8C53F16BAEE81784ABB351">
     <pdf_title>ARM Security Technology</pdf_title>
 </pdf_annotation>
-<attribute NAME="title" VALUE="ARM Security Technology --- Building a Secure System usingTrustZone Technology"/>
+<attribute NAME="title" VALUE="ARM Security Technology --- Building a Secure System using TrustZone Technology"/>
 <attribute NAME="authors" VALUE="ARM"/>
 <attribute NAME="key" VALUE="b"/>
 </node>
@@ -1232,7 +1232,7 @@
 <attribute NAME="key" VALUE="tee_mobile_devices"/>
 <attribute NAME="year" VALUE="2013"/>
 <attribute NAME="title" VALUE="Trusted Execution Environments on Mobile Devices"/>
-<attribute NAME="authors" VALUE="Ekberg, J.-E. and Kostiainen, K and Asokan, N and Ekberg, Jan-Erik and Kostiainen, Kari and Asokan, N."/>
+<attribute NAME="authors" VALUE="Jan-Erik and Kostiainen, Kari and Asokan, N."/>
 <attribute NAME="image" VALUE="trustzone hardware access control"/>
 <pdf_annotation type="PDF_FILE" object_id="0" document_hash="A4D41BF1E10C27A41DA5BF8D93A5DD8FD37CEEE112FFDC44BAD84F6EF97EB5">
     <pdf_title>Trusted Execution Environments on Mobile Devices</pdf_title>
@@ -1971,7 +1971,7 @@
 <node TEXT="It can be classified as a processor secure environment (\autoref{figure:tee}) that provides isolation at the application level (\autoref{figure:tee-granularity})." ID="ID_1608998276" CREATED="1499235934768" MODIFIED="1499263901340"/>
 <node TEXT="A TrustZone-capable system can be described as having a split personality. It runs in either the normal world or the secure world, indicated by an extra bit on the system bus." ID="ID_1335311105" CREATED="1498656993643" MODIFIED="1499349795872" MOVED="1498740595843" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/Trustzone%20-%20Building%20a%20secure%20system%20whitepaper.pdf">
 <attribute NAME="key" VALUE="trustzone"/>
-<attribute NAME="title" VALUE="ARM Security Technology --- Building a Secure System usingTrustZone Technology"/>
+<attribute NAME="title" VALUE="ARM Security Technology --- Building a Secure System using TrustZone Technology"/>
 <attribute NAME="authors" VALUE="ARM"/>
 <pdf_annotation type="PDF_FILE" object_id="0" document_hash="60202111BFD5D60C5C650911CC28031DC1AEC645D8C53F16BAEE81784ABB351">
     <pdf_title>ARM Security Technology</pdf_title>
@@ -4004,7 +4004,7 @@
 <attribute NAME="key" VALUE="tee_mobile_devices"/>
 <attribute NAME="year" VALUE="2013"/>
 <attribute NAME="title" VALUE="Trusted Execution Environments on Mobile Devices"/>
-<attribute NAME="authors" VALUE="Ekberg, J.-E. and Kostiainen, K and Asokan, N and Ekberg, Jan-Erik and Kostiainen, Kari and Asokan, N."/>
+<attribute NAME="authors" VALUE="Jan-Erik and Kostiainen, Kari and Asokan, N."/>
 <attribute NAME="image" VALUE="tee hardware comparison"/>
 <pdf_annotation type="PDF_FILE" object_id="0" document_hash="A4D41BF1E10C27A41DA5BF8D93A5DD8FD37CEEE112FFDC44BAD84F6EF97EB5">
     <pdf_title>Trusted Execution Environments on Mobile Devices</pdf_title>
@@ -4013,7 +4013,7 @@
 <pdf_annotation type="HIGHLIGHTED_TEXT" page="19" object_id="5662829942040914802" object_number="6286" document_hash="A4D41BF1E10C27A41DA5BF8D93A5DD8FD37CEEE112FFDC44BAD84F6EF97EB5">
     <pdf_title>Trusted Execution Environments on Mobile Devices</pdf_title>
 </pdf_annotation>
-<attribute NAME="authors" VALUE="Ekberg, J.-E. and Kostiainen, K and Asokan, N and Ekberg, Jan-Erik and Kostiainen, Kari and Asokan, N."/>
+<attribute NAME="authors" VALUE="Jan-Erik and Kostiainen, Kari and Asokan, N."/>
 <attribute NAME="title" VALUE="Trusted Execution Environments on Mobile Devices"/>
 <attribute NAME="year" VALUE="2013"/>
 <attribute NAME="key" VALUE="tee_mobile_devices"/>
@@ -4052,7 +4052,7 @@
 <pdf_annotation type="COMMENT" page="18" object_id="1873590153595309266" object_number="6280" document_hash="A4D41BF1E10C27A41DA5BF8D93A5DD8FD37CEEE112FFDC44BAD84F6EF97EB5">
     <pdf_title>Trusted Execution Environments on Mobile Devices</pdf_title>
 </pdf_annotation>
-<attribute NAME="authors" VALUE="Ekberg, J.-E. and Kostiainen, K and Asokan, N and Ekberg, Jan-Erik and Kostiainen, Kari and Asokan, N."/>
+<attribute NAME="authors" VALUE="Jan-Erik and Kostiainen, Kari and Asokan, N."/>
 <attribute NAME="title" VALUE="Trusted Execution Environments on Mobile Devices"/>
 <attribute NAME="year" VALUE="2013"/>
 </node>
@@ -4064,7 +4064,7 @@
 <attribute NAME="key" VALUE="tee_mobile_devices"/>
 <attribute NAME="year" VALUE="2013"/>
 <attribute NAME="title" VALUE="Trusted Execution Environments on Mobile Devices"/>
-<attribute NAME="authors" VALUE="Ekberg, J.-E. and Kostiainen, K and Asokan, N and Ekberg, Jan-Erik and Kostiainen, Kari and Asokan, N."/>
+<attribute NAME="authors" VALUE="Jan-Erik and Kostiainen, Kari and Asokan, N."/>
 <attribute NAME="image" VALUE="tee history"/>
 <pdf_annotation type="PDF_FILE" object_id="0" document_hash="A4D41BF1E10C27A41DA5BF8D93A5DD8FD37CEEE112FFDC44BAD84F6EF97EB5">
     <pdf_title>Trusted Execution Environments on Mobile Devices</pdf_title>
@@ -4378,7 +4378,7 @@
 <attribute NAME="key" VALUE="tee_mobile_devices"/>
 <attribute NAME="year" VALUE="2013"/>
 <attribute NAME="title" VALUE="Trusted Execution Environments on Mobile Devices"/>
-<attribute NAME="authors" VALUE="Ekberg, J.-E. and Kostiainen, K and Asokan, N and Ekberg, Jan-Erik and Kostiainen, Kari and Asokan, N."/>
+<attribute NAME="authors" VALUE="Jan-Erik and Kostiainen, Kari and Asokan, N."/>
 <attribute NAME="image" VALUE="sgx page access"/>
 <pdf_annotation type="PDF_FILE" object_id="0" document_hash="A4D41BF1E10C27A41DA5BF8D93A5DD8FD37CEEE112FFDC44BAD84F6EF97EB5">
     <pdf_title>Trusted Execution Environments on Mobile Devices</pdf_title>
@@ -4846,6 +4846,7 @@
 </pdf_annotation>
 <attribute NAME="title" VALUE="Intel SGX Evaluation SDK User&apos;s Guide for Windows OS"/>
 <attribute NAME="authors" VALUE="Intel"/>
+<attribute NAME="year" VALUE="2015"/>
 </node>
 </node>
 <node TEXT="special keys" FOLDED="true" ID="ID_419026463" CREATED="1455095351988" MODIFIED="1455095359045" MOVED="1499841531070">
@@ -5165,6 +5166,7 @@
 <attribute NAME="key" VALUE="sgx-windows"/>
 <attribute NAME="title" VALUE="Intel SGX Evaluation SDK User&apos;s Guide for Windows OS"/>
 <attribute NAME="authors" VALUE="Intel"/>
+<attribute NAME="year" VALUE="2015"/>
 <pdf_annotation type="PDF_FILE" object_id="0" document_hash="1824E5805C4B7F3BD8F2F8C65C3E36ED39DE0D2FD4F9448A4A2E6EA70CD3E8">
     <pdf_title>Intel&#xae; Software Guard Extensions Evaluation SDK</pdf_title>
 </pdf_annotation>
@@ -7805,6 +7807,7 @@
 <attribute NAME="key" VALUE="sgx-windows"/>
 <attribute NAME="title" VALUE="Intel SGX Evaluation SDK User&apos;s Guide for Windows OS"/>
 <attribute NAME="authors" VALUE="Intel"/>
+<attribute NAME="year" VALUE="2015"/>
 <pdf_annotation type="PDF_FILE" object_id="0" document_hash="1824E5805C4B7F3BD8F2F8C65C3E36ED39DE0D2FD4F9448A4A2E6EA70CD3E8">
     <pdf_title>Intel&#xae; Software Guard Extensions Evaluation SDK</pdf_title>
 </pdf_annotation>
@@ -8166,7 +8169,7 @@
 </node>
 </node>
 </node>
-<node TEXT="SQLite Case Study" LOCALIZED_STYLE_REF="default" POSITION="left" ID="ID_650094352" CREATED="1487266723741" MODIFIED="1500019873754" MOVED="1499849269320">
+<node TEXT="SQLite Case Study" LOCALIZED_STYLE_REF="default" FOLDED="true" POSITION="left" ID="ID_650094352" CREATED="1487266723741" MODIFIED="1500019873754" MOVED="1499849269320">
 <attribute NAME="label" VALUE="chapter:sqlite" OBJECT="java.net.URI|chapter:sqlite"/>
 <edge COLOR="#0000ff"/>
 <node TEXT="use chapter summaries" STYLE_REF="drop" ID="ID_1019464221" CREATED="1489606031650" MODIFIED="1489606057294" MOVED="1489606046735"/>
@@ -8572,6 +8575,7 @@
 <attribute NAME="key" VALUE="sgx-windows"/>
 <attribute NAME="title" VALUE="Intel SGX Evaluation SDK User&apos;s Guide for Windows OS"/>
 <attribute NAME="authors" VALUE="Intel"/>
+<attribute NAME="year" VALUE="2015"/>
 </node>
 <node TEXT="They are a limited resource." ID="ID_543334142" CREATED="1500255585653" MODIFIED="1500255595671"/>
 <node TEXT="SQLite is apparently used to multiplex the hardware monotonic counters into several virtual counters." ID="ID_1316531596" CREATED="1500255595813" MODIFIED="1500255768973"/>

@@ -119,7 +119,7 @@
 
 @TECHREPORT{trustzone,
   author = {ARM},
-  title = {ARM Security Technology --- Building a Secure System usingTrustZone
+  title = {ARM Security Technology --- Building a Secure System using TrustZone
 	Technology},
   note = {PRD29-GENC-009492C},
   url = {http://infocenter.arm.com/help/topic/com.arm.doc.prd29-genc-009492c/PRD29-GENC-009492C_trustzone_security_whitepaper.pdf},
@@ -519,7 +519,6 @@
   author = {Costan, Victor and Devadas, Srinivas},
   title = {Intel SGX Explained.},
   year = {2016},
-  volume = {2016},
   pages = {86},
   file = {:../../../literature_repository/SGX Explained.pdf:PDF},
   journal = {IACR Cryptology ePrint Archive}
@@ -581,11 +580,10 @@
 }
 
 @INPROCEEDINGS{tee_mobile_devices,
-  author = {Ekberg, J.-E. and Kostiainen, K and Asokan, N and Ekberg, Jan-Erik
-	and Kostiainen, Kari and Asokan, N.},
+  author = {Ekberg, Jan-Erik and Kostiainen, Kari and Asokan, N.},
   title = {Trusted Execution Environments on Mobile Devices},
-  booktitle = {Proceedings of the 2013 ACM SIGSAC conference on Computer \&\#38;
-	communications security},
+  booktitle = {Proceedings of the 2013 ACM SIGSAC conference on Computer \& communications
+	security},
   year = {2013},
   series = {CCS '13},
   publisher = {ACM},
@@ -623,6 +621,14 @@
   file = {:../../../literature_repository/IsoX isolated execution.pdf:PDF},
   journal = {IEEE Transactions on Dependable and Secure Computing},
   publisher = {IEEE}
+}
+
+@INPROCEEDINGS{Mitchell2005,
+  author = {Anand S. Gajparia and Chris J. Mitchell},
+  title = {Trusted computing},
+  year = {2005},
+  organization = {Springer},
+  file = {:/../../../literature_repository/Trusted Computing.pdf:PDF}
 }
 
 @INPROCEEDINGS{Garfinkel2003,
@@ -677,7 +683,6 @@
   booktitle = {STOC},
   year = {2009},
   volume = {9},
-  number = {2009},
   pages = {169--178},
   file = {:/home/WALL.LOCAL/fteschke/sgx2017/literature_repository/Gentry Homomorphic Encryption.pdf:PDF}
 }
@@ -718,7 +723,6 @@
   author = {Gueron, Shay},
   title = {A Memory Encryption Engine Suitable for General Purpose Processors.},
   year = {2016},
-  volume = {2016},
   pages = {204},
   file = {:../../../literature_repository/Intel Memory Encryption Engine.pdf:PDF},
   journal = {IACR Cryptology ePrint Archive}
@@ -731,7 +735,6 @@
 	Function Evaluation},
   booktitle = {Financial Cryptography and Data Security},
   year = {2016},
-  url = {https://www.researchgate.net/publication/290854074_Using_Intel_Software_Guard_Extensions_for_Efficient_Two-Party_Secure_Function_Evaluation},
   file = {:../../../literature_repository/SGX for efficient Two Party Computation.pdf:PDF}
 }
 
@@ -814,16 +817,9 @@
   author = {Intel},
   title = {Intel SGX Developer Guide},
   url = {https://01.org/intel-software-guard-extensions/documentation/intel-sgx-developer-guide},
+  urldate = {2017-07-17},
   abstract = {Intel(R) Software Guard Extensions (Intel(R) SGX)},
   file = {:/home/fteschke/sgx2017/literature_repository/SGX Developer Guide Linux.pdf:PDF}
-}
-
-@MANUAL{sgx-windows,
-  author = {Intel},
-  title = {Intel SGX Evaluation SDK User's Guide for Windows OS},
-  version = {1.1},
-  url = {https://software.intel.com/sites/default/files/managed/b1/ae/Intel-SGX-SDK-Developer-Guide-for-Windows-OS.pdf},
-  file = {:/home/fteschke/sgx2017/literature_repository/SGX SDK Guide.pdf:PDF}
 }
 
 @OTHER{sawtooth,
@@ -847,6 +843,18 @@
   timestamp = {2016.02.02}
 }
 
+@MANUAL{sgx-windows,
+  author = {Intel},
+  title = {Intel SGX Evaluation SDK User's Guide for Windows OS},
+  year = {2015},
+  date = {September 2015},
+  subtitle = {Developer Reference},
+  version = {1.1},
+  url = {https://software.intel.com/sites/default/files/managed/33/70/intel-sgx-developer-guide.pdf},
+  urldate = {2017-08-17},
+  file = {:/home/fteschke/sgx2017/literature_repository/SGX SDK Guide.pdf:PDF}
+}
+
 @MANUAL{b,
   author = {Intel},
   title = {Intel Software Guards Extensions Programming Reference},
@@ -854,6 +862,7 @@
   date = {October 2014},
   version = {329298-002US},
   url = {https://software.intel.com/sites/default/files/managed/48/88/329298-002.pdf},
+  urldate = {2017-07-17},
   file = {:/home/fteschke/sgx2017/literature_repository/SGX programming reference.pdf:PDF}
 }
 
@@ -934,6 +943,7 @@
   institution = {Intel},
   year = {2016},
   url = {https://software.intel.com/sites/default/files/managed/ac/40/2016%20WW10%20sgx%20provisioning%20and%20attesatation%20final.pdf},
+  urldate = {2017-07-17},
   file = {:../../../literature_repository/intel epid.pdf:PDF}
 }
 
@@ -1144,14 +1154,6 @@
   volume = {800}
 }
 
-@INPROCEEDINGS{Mitchell2005,
-  author = {Mitchell, Chris and Mitchell, Chris and Mitchell, Chris},
-  title = {Trusted computing},
-  year = {2005},
-  organization = {Springer},
-  file = {:/../../../literature_repository/Trusted Computing.pdf:PDF}
-}
-
 @INPROCEEDINGS{Moshchuk:2013:CIR:2508859.2516722,
   author = {Moshchuk, Alexander and Wang, Helen J. and Liu, Yunxin},
   title = {Content-based Isolation: Rethinking Isolation Policy Design on Client
@@ -1275,7 +1277,6 @@
   author = {Poddar, Rishabh and Boelter, Tobias and Popa, Raluca Ada},
   title = {Arx: A Strongly Encrypted Database System.},
   year = {2016},
-  volume = {2016},
   pages = {591},
   file = {:../../../literature_repositorliterature_repository/Arx Encrypted DB AES with Data Structures.pdf:PDF},
   journal = {IACR Cryptology ePrint Archive}
@@ -1364,6 +1365,7 @@
   year = {2016},
   date = {December 2016},
   url = {https://www.samsungknox.com/de/knox-technology/white-papers},
+  urldate = {2017-07-17},
   file = {:/home/fteschke/sgx2017/literature_repository/Samsung Knox Whitepaper.pdf:PDF}
 }
 
@@ -1580,7 +1582,8 @@
   year = {2014},
   note = {Level 00 Revision 01.16},
   month = {October},
-  url = {http://www.trustedcomputinggroup.org/resources/tpm_library_specification},
+  url = {https://trustedcomputinggroup.org/tpm-main-specification/},
+  urldate = {2017-07-17},
   file = {:../../../literature_repository/TPM 2.0 Architecture.pdf:PDF}
 }
 
@@ -1601,7 +1604,8 @@
   year = {2011},
   note = {Revision 116},
   month = {March},
-  url = {http://www.trustedcomputinggroup.org/files/static_page_files/72C26AB5-1A4B-B294-D002BC0B8C062FF6/TPM%20Main-Part%201%20Design%20Principles_v1.2_rev116_01032011.pdf},
+  url = {https://trustedcomputinggroup.org/tpm-main-specification/},
+  urldate = {2017-07-17},
   file = {:../../../literature_repository/TPM 1.2 Design Principles.pdf:PDF}
 }
 
