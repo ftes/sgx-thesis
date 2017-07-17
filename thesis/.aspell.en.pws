@@ -1,4 +1,4 @@
-personal_ws-1.1 en 209 
+personal_ws-1.1 en 210 
 TrustedDB
 Arx
 CryptDB's
@@ -25,8 +25,8 @@ subsumption
 UDF
 parallelise
 pwrite
-SoC
 SMM
+SoC
 Merkle
 AsyncShock
 DMA
@@ -60,6 +60,7 @@ CPUID
 runtimes
 EPC
 SVM
+ARM's
 autodedent
 Sawtooth
 PowerDVD

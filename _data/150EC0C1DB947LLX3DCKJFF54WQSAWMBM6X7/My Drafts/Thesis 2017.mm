@@ -96,12 +96,12 @@
 <node TEXT="- logische Schritte&#xa;- einheitliches Abstraktionslevel in Gliederung&#xa;- einfache, pr&#xe4;zise Sprache (keine F&#xfc;llw&#xf6;rter, kurze S&#xe4;tze)&#xa;- 60-80 Textseiten (exkl. Extras)" STYLE_REF="drop" POSITION="left" ID="ID_1890082914" CREATED="1492081026206" MODIFIED="1495606095643" MOVED="1495604974144">
 <edge COLOR="#007c7c"/>
 </node>
-<node TEXT="Introduction" LOCALIZED_STYLE_REF="default" FOLDED="true" POSITION="left" ID="ID_1883383221" CREATED="1487267793613" MODIFIED="1496135435936" MOVED="1488547630569">
-<icon BUILTIN="button_cancel"/>
+<node TEXT="Introduction" LOCALIZED_STYLE_REF="default" FOLDED="true" POSITION="left" ID="ID_1883383221" CREATED="1487267793613" MODIFIED="1500261073741" MOVED="1488547630569">
+<icon BUILTIN="button_ok"/>
 <edge COLOR="#00ff00"/>
 <node TEXT="- Darstellung des Themas der Arbeit (Hinf&#xfc;hrung, wieso ist das Thema relevant)&#xa;- Auflistung der Fragestellungen&#xa;- einzelne Aspekte des Problems herausgearbeitet&#xa;- knapper &#xdc;berblick: Schritte der Problembehandlung&#xa;- Abgrenzung des Themas (was wird ausgeklammert)&#xa;- Aufbau der Arbeit (Begr&#xfc;ndung der Gliederung)" STYLE_REF="drop" ID="ID_584239331" CREATED="1492080918941" MODIFIED="1492616648866" MOVED="1492080932228"/>
 <node TEXT="mindmap" STYLE_REF="drop" FOLDED="true" ID="ID_710378338" CREATED="1495013474678" MODIFIED="1495013479759" MOVED="1495013476557">
-<node TEXT="motivation" FOLDED="true" ID="ID_779613752" CREATED="1487267802277" MODIFIED="1487267803814" MOVED="1495013482863">
+<node TEXT="motivation" ID="ID_779613752" CREATED="1487267802277" MODIFIED="1487267803814" MOVED="1495013482863">
 <node TEXT="trusting remotely executed code" ID="ID_319948042" CREATED="1487265855737" MODIFIED="1487265920660" MOVED="1487268248709"/>
 <node TEXT="cryptography to the rescue?" FOLDED="true" ID="ID_647527971" CREATED="1487265888778" MODIFIED="1488469502949" MOVED="1487268248719">
 <node TEXT="multi party computation" ID="ID_15455493" CREATED="1487265935002" MODIFIED="1487265946155"/>
@@ -140,12 +140,19 @@
 <node TEXT="comparison of trusted computing solutions" ID="ID_1710565397" CREATED="1499779394508" MODIFIED="1499779400285"/>
 <node TEXT="guide to SGX" ID="ID_1482128103" CREATED="1499779400380" MODIFIED="1499779402437"/>
 </node>
-<node TEXT="Content" STYLE_REF="paragraphs_drop_self" FOLDED="true" ID="ID_697114612" CREATED="1495013498189" MODIFIED="1495013508003">
-<node TEXT="protect from privilege escalation" ID="ID_173367700" CREATED="1499261009649" MODIFIED="1499261042866"/>
-<node TEXT="select a trusted computing solution (ready to use, small TCB, attestation)" ID="ID_1396932272" CREATED="1499672702140" MODIFIED="1499672815440"/>
-<node TEXT="assumption: can modify application" ID="ID_1426216513" CREATED="1499672741853" MODIFIED="1499672748104"/>
-<node TEXT="" ID="ID_251013075" CREATED="1499759902276" MODIFIED="1499760140125"/>
-<node TEXT="\textbf{Trusted computing cartoon.} Left computer: ``Do you also sometimes feel remotely controlled by this trusted computing module?&apos;&apos;. Right computer: ``I don&apos;t know, let me ask my manufacturer.&apos;&apos; Reprinted from" ID="ID_863606381" CREATED="1499759728592" MODIFIED="1499760572438" MOVED="1499759788273" LINK="https://heise.de/-3603810">
+<node TEXT="Content" STYLE_REF="paragraphs_drop_self" ID="ID_697114612" CREATED="1495013498189" MODIFIED="1495013508003">
+<node TEXT="Cloud computing has proven itself as a viable and popular business model." ID="ID_698884812" CREATED="1500258526177" MODIFIED="1500259816697" MOVED="1500258527046"/>
+<node TEXT="This makes data security an increasingly hot topic." ID="ID_1630969494" CREATED="1500258574984" MODIFIED="1500258639387"/>
+<node TEXT="Encryption as a way of securely transporting data is an age-old and proven concept." ID="ID_1712713994" CREATED="1500258639520" MODIFIED="1500260696854"/>
+<node TEXT="By comparison, techniques for secure data \textit{processing} are still in their infancy." ID="ID_718488027" CREATED="1500260600822" MODIFIED="1500260735831"/>
+<node TEXT="" ID="ID_1107169331" CREATED="1500258721602" MODIFIED="1500258721602"/>
+<node TEXT="For some decades there have been niche solutions in this field called trusted computing. They did not gain the traction and publicity they may have deserved. Among such solutions are Trusted Platform Modules and ARM&apos;s TrustZone security extensions." ID="ID_853445864" CREATED="1500258723050" MODIFIED="1500258890682"/>
+<node TEXT="Now Intel has joined the game and is shipping its Security Guard Extensions (SGX) with most of its new CPUs." ID="ID_563845396" CREATED="1500258779427" MODIFIED="1500259853662"/>
+<node TEXT="The wide-spread availability of trusted computing hardware is foreseeable. There is a growing demand for trustworthy applications in digital rights management and cloud computing. This means the game might soon begin to change, shifting trusted computing back into focus." ID="ID_1881143424" CREATED="1500258903285" MODIFIED="1500259956880"/>
+<node TEXT="" ID="ID_449638828" CREATED="1500259960831" MODIFIED="1500259960831"/>
+<node TEXT="From a technological standpoint, trusted computing is an fascinating. It combines the fields of cryptography, operating systems and hardware design." ID="ID_1778003077" CREATED="1500259559445" MODIFIED="1500260817086"/>
+<node TEXT="However, from an ethical standpoint, trusted computing is a double-edged sword as \autoref{figure:tc-cartoon} pointedly makes clear." ID="ID_1885832293" CREATED="1500260065958" MODIFIED="1500260828966"/>
+<node TEXT="\textbf{Trusted computing cartoon.} Left computer: ``Do you also sometimes feel remotely controlled by this trusted computing module?&apos;&apos;. Right computer: ``I don&apos;t know, let me ask my manufacturer.&apos;&apos; Reprinted from" ID="ID_863606381" CREATED="1499759728592" MODIFIED="1499760572438" MOVED="1500259556221" LINK="https://heise.de/-3603810">
 <hook URI="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/_data/150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/default_files/trusted%20computing%20cartoon.png" SIZE="1.0" NAME="ExternalObject"/>
 <attribute NAME="image" VALUE="trusted computing cartoon"/>
 <attribute NAME="label" VALUE="figure:tc-cartoon" OBJECT="java.net.URI|figure:tc-cartoon"/>
@@ -156,10 +163,24 @@
 <attribute NAME="title" VALUE="Enklavenhaltung"/>
 <attribute NAME="authors" VALUE="Klaus Schmeh"/>
 </node>
-<node TEXT="The sources of this thesis are available at \url{https://github.com/ftes/sgx-thesis}." ID="ID_1636604444" CREATED="1499788139356" MODIFIED="1499789557370"/>
+<node TEXT="" ID="ID_909693699" CREATED="1500258958357" MODIFIED="1500258958357"/>
+<node TEXT="Intel SGX, and with it the field of trusted computing in general, still has to pick up traction. Yet the technology is ready for being used and evaluated today." ID="ID_1141283910" CREATED="1500258959588" MODIFIED="1500260880040"/>
+<node TEXT="A variety of research is happening around SGX, and innovative use cases are popping up." ID="ID_970909799" CREATED="1500258979302" MODIFIED="1500260202207"/>
+<node TEXT="" ID="ID_1850246525" CREATED="1500259033671" MODIFIED="1500260206406"/>
+<node TEXT="This thesis looks at trusted computing from a \textit{software engineer&apos;s perspective}." ID="ID_889066539" CREATED="1500260207948" MODIFIED="1500260911164"/>
+<node TEXT="It is not a written by a cryptography expert, and existing research is relied on for judging and comparing trusted computing solutions." ID="ID_569116914" CREATED="1500260416470" MODIFIED="1500260480333"/>
+<node TEXT="The goal of this thesis is to show how a developer can harden his applications today, using the technology that is available." ID="ID_128655856" CREATED="1500260265416" MODIFIED="1500260298957" MOVED="1500260498416"/>
+<node TEXT="Usage patterns are derived from related work." ID="ID_273513492" CREATED="1500260229344" MODIFIED="1500260536329"/>
+<node TEXT="" ID="ID_488476050" CREATED="1500260937690" MODIFIED="1500260937690"/>
+<node TEXT="Intel SGX is chosen as the prime technology for a more detailed evaluation in two case studies." ID="ID_33539746" CREATED="1500259096959" MODIFIED="1500260323048"/>
+<node TEXT="These case studies show how database software -- representative for the class of hosted applications -- can be hardened using Intel SGX." ID="ID_148600996" CREATED="1500260326858" MODIFIED="1500260395587"/>
+<node TEXT="" ID="ID_1252730579" CREATED="1500259216012" MODIFIED="1500259216012"/>
+<node TEXT="While SGX is an exciting technology that is in many regards better than previous solutions, it is far from perfect." ID="ID_1005742561" CREATED="1500259216891" MODIFIED="1500259270614"/>
+<node TEXT="Criticism and security shortcomings are also presented." ID="ID_1799898232" CREATED="1500259271252" MODIFIED="1500259313339"/>
+<node TEXT="The sources of this thesis, including all text, images and source code, are available at \url{https://github.com/ftes/sgx-thesis}." ID="ID_1636604444" CREATED="1499788139356" MODIFIED="1500259772853"/>
 </node>
 </node>
-<node TEXT="Background" LOCALIZED_STYLE_REF="default" POSITION="left" ID="ID_941070001" CREATED="1488476882926" MODIFIED="1499264027738" MOVED="1488547633482">
+<node TEXT="Background" LOCALIZED_STYLE_REF="default" FOLDED="true" POSITION="left" ID="ID_941070001" CREATED="1488476882926" MODIFIED="1499264027738" MOVED="1488547633482">
 <edge COLOR="#ff00ff"/>
 <node TEXT="- zentrale Begriffe definieren und einordnen&#xa;- nicht Lexikon-Definition, lieber problemorientierte Definition&#xa;- Diskussion unterschiedlicher Definitionsans&#xe4;tze kann hilfreich sein" STYLE_REF="drop" ID="ID_231337527" CREATED="1492080945485" MODIFIED="1492616799822" MOVED="1492616692193"/>
 <node TEXT="- gute Referenzen statt viel wiederholen" STYLE_REF="drop" ID="ID_975081732" CREATED="1492616800232" MODIFIED="1492616818386"/>
@@ -8619,8 +8640,8 @@
 </node>
 </node>
 </node>
-<node TEXT="Conclusion" LOCALIZED_STYLE_REF="default" POSITION="left" ID="ID_1572507625" CREATED="1487318838781" MODIFIED="1496135435985" MOVED="1488547706086">
-<icon BUILTIN="button_cancel"/>
+<node TEXT="Conclusion" LOCALIZED_STYLE_REF="default" POSITION="left" ID="ID_1572507625" CREATED="1487318838781" MODIFIED="1500258504965" MOVED="1488547706086">
+<icon BUILTIN="button_ok"/>
 <edge COLOR="#007c00"/>
 <node TEXT="Die Antwort auf die in der Problemstellung aufgeworfenen Fragen soll&#xa;kurz und pr&#xe4;gnant zusammengefasst werden. Ebenso sollte ein Ausblick auf offen&#xa;gebliebene Fragen sowie auf interessante Fragestellungen, die sich aus der Arbeit erge-&#xa;ben, gegeben werden. Eine kritische Betrachtung der eigenen Arbeit ist an dieser Stelle&#xa;ebenfalls sinnvoll." STYLE_REF="drop" ID="ID_1974882074" CREATED="1492081057470" MODIFIED="1492081062735" MOVED="1492081063826"/>
 <node TEXT="Content" STYLE_REF="paragraphs_drop_self" ID="ID_1735320971" CREATED="1500256440945" MODIFIED="1500256447932">
@@ -8629,42 +8650,36 @@
 <node TEXT="Alternative approaches based on cryptography alone are either too limited (garbled circuits) or not yet practical (fully homomorphic encryption, encrypted CPU)." ID="ID_1382376198" CREATED="1500256644734" MODIFIED="1500256700702"/>
 <node TEXT="" ID="ID_1835968551" CREATED="1500256709063" MODIFIED="1500256709063"/>
 <node TEXT="Trusted computing gives certain security guarantees when executing software on remote hardware." ID="ID_956004600" CREATED="1500256584707" MODIFIED="1500256634346"/>
-<node TEXT="A large part of this thesis was spent comparing trusted computing solutions. Both research and commercial solutions were presented to gain a good overview of the field." ID="ID_65200152" CREATED="1500256711686" MODIFIED="1500256770408"/>
+<node TEXT="A large part of this thesis was spent comparing trusted computing solutions. Both research and commercial solutions were presented in order to gain a good overview of the field." ID="ID_65200152" CREATED="1500256711686" MODIFIED="1500261094048"/>
 <node TEXT="" ID="ID_1648067321" CREATED="1500256771001" MODIFIED="1500256771001"/>
-<node TEXT="For the purpose of hardening applications, a ready-to-use solution had to be chosen. This narrowed the list of options, eliminating most of the research candidates." ID="ID_1927443040" CREATED="1500256773104" MODIFIED="1500256807029"/>
-<node TEXT="Intel SGX was identified as a good candidate for prototyping, even though hardware was not available." ID="ID_1004668899" CREATED="1500256807166" MODIFIED="1500256828305"/>
-<node TEXT="SGX is the first commercially available trusted computing solution that enables isolating parts of an application while making full use of the CPU&apos;s processing power." ID="ID_1814151987" CREATED="1500257182804" MODIFIED="1500257235826"/>
+<node TEXT="Intel SGX was identified as a good candidate for prototyping, even though SGX-enabled CPUs were not available at the time." ID="ID_1004668899" CREATED="1500256807166" MODIFIED="1500261146376"/>
+<node TEXT="SGX is the first commercially available trusted computing solution that allows isolation at the sub-application level while at the same time making full use of the CPU&apos;s processing power." ID="ID_1814151987" CREATED="1500257182804" MODIFIED="1500261180650"/>
 <node TEXT="It also provides an attestation protocol through which a remote party can verify that it is communicating with a certain piece of software, protected by a trusted CPU." ID="ID_1541350891" CREATED="1500257240583" MODIFIED="1500258187783"/>
 <node TEXT="" ID="ID_1166846768" CREATED="1500256873223" MODIFIED="1500256873223"/>
 <node TEXT="Further research was presented that shares common goals with this thesis:" ID="ID_1206681112" CREATED="1500256873937" MODIFIED="1500257320415"/>
 <node TEXT="Techniques for hardening databases on the one hand and hardening of SGX applications on the other hand." ID="ID_1783203914" CREATED="1500256904368" MODIFIED="1500256927794"/>
 <node TEXT="From this related work, architectural alternatives were derived and assessed." ID="ID_1554181612" CREATED="1500257553140" MODIFIED="1500257590352"/>
 <node TEXT="This thesis then continued to evaluate the intersection of these two lines of research in two case studies." ID="ID_266756828" CREATED="1500256927951" MODIFIED="1500257602536"/>
-<node TEXT="Both case studies dealt with hardening database software using Intel SGX&apos;s TEE model. In this model, individual software modules are isolated at the enclave level." ID="ID_1192639592" CREATED="1500256958576" MODIFIED="1500257176827"/>
+<node TEXT="Both case studies dealt with hardening database software using Intel SGX&apos;s TEE model. In this model, individual software modules are isolated in enclaves." ID="ID_1192639592" CREATED="1500256958576" MODIFIED="1500261216794"/>
 <node TEXT="" ID="ID_1910054935" CREATED="1500257335558" MODIFIED="1500257335558"/>
 <node TEXT="The first case study of KISSDB included the design and implementation of a prototype." ID="ID_123034513" CREATED="1500256975352" MODIFIED="1500257018501"/>
 <node TEXT="Though limited in scope, it showcased the architectural alternatives for SGX-hardened applications identified in the related work." ID="ID_190142349" CREATED="1500256997769" MODIFIED="1500257063978"/>
-<node TEXT="The first case study also showed how the SGX helper library, that was developed as a part of this thesis, can be used to simplify work with the SGX Windows SDK." ID="ID_162794555" CREATED="1500257064202" MODIFIED="1500257121054"/>
+<node TEXT="The first case study also showed how the SGX helper library -- that was developed as a part of this thesis -- can be used to simplify work with the SGX Windows SDK." ID="ID_162794555" CREATED="1500257064202" MODIFIED="1500261244207"/>
 <node TEXT="" ID="ID_1034161959" CREATED="1500256828654" MODIFIED="1500256828654"/>
 <node TEXT="The second case study evaluated concepts for hardening SQLite, a significantly more complex DBMS." ID="ID_1588018067" CREATED="1500257340382" MODIFIED="1500258198514"/>
-<node TEXT="These concepts could not be evaluated thoroughly enough to allow implementing them." ID="ID_682115507" CREATED="1500257380008" MODIFIED="1500257429969"/>
-<node TEXT="They do however show two entirely different approaches to secure data processing with a hardened SQLite implementation." ID="ID_1693049896" CREATED="1500257430087" MODIFIED="1500257465331"/>
-<node TEXT="Both case studies were far from being as detailed and exhaustive as they could have been." ID="ID_1061777875" CREATED="1500258404719" MODIFIED="1500258451277"/>
+<node TEXT="These concepts could not be evaluated thoroughly enough to allow implementation." ID="ID_682115507" CREATED="1500257380008" MODIFIED="1500261271898"/>
+<node TEXT="Nonetheless, two diverse approaches for hardening SQLite were discussed." ID="ID_1221910090" CREATED="1500261285483" MODIFIED="1500261320677"/>
 <node TEXT="" ID="ID_1679851326" CREATED="1500257465732" MODIFIED="1500257465732"/>
 <node TEXT="The main focus of this thesis was on literature work and comparison of trusted computing solutions." ID="ID_688160044" CREATED="1500257468808" MODIFIED="1500257656095"/>
-<node TEXT="This comparison can be used to evaluate further promising solutions such as TrustZone through similar case studies." ID="ID_979974840" CREATED="1500257656467" MODIFIED="1500257696054"/>
-<node TEXT="Intel SGX is still relatively new. Though it is included in most current desktop processors, the list of applications is still short." ID="ID_744963057" CREATED="1500257696201" MODIFIED="1500257740899"/>
-<node TEXT="SGX is slowly being incorporated into end-user and cloud applications." ID="ID_1660736859" CREATED="1500257742644" MODIFIED="1500257757420"/>
-<node TEXT="Time will show whether the security issues and Intel&apos;s licensing position prove fatal to SGX." ID="ID_1005011077" CREATED="1500257757556" MODIFIED="1500257796804"/>
-<node TEXT="" ID="ID_1439644527" CREATED="1500257638082" MODIFIED="1500257800084"/>
-<node TEXT="It seems apparent that the demand for a solution like SGX exists." ID="ID_542596709" CREATED="1500257813181" MODIFIED="1500257911689"/>
-<node TEXT="In the absence of hardware support, Microsoft has provided a software-only variant: Isolated User Mode." ID="ID_762089724" CREATED="1500258022049" MODIFIED="1500258073490"/>
-<node TEXT="After the serious investment Intel has made in development one can expect that Intel will try everything to push SGX into public focus." ID="ID_54424196" CREATED="1500257854197" MODIFIED="1500257909407"/>
-<node TEXT="If SGX proves successful, competing implementations from other CPU vendors will likely become available." ID="ID_1739679787" CREATED="1500257914710" MODIFIED="1500257941505"/>
-<node TEXT="TrustZone is somewhat comparable and is used for example by Samsung phones." ID="ID_1799207315" CREATED="1500257942832" MODIFIED="1500257965088"/>
-<node TEXT="But the development model that SGX provides allows trusted computing to be integrated in far more applications than ARM can target with TrustZone." ID="ID_994268800" CREATED="1500257965999" MODIFIED="1500258014834"/>
-<node TEXT="Once comparable hardware solutions arise, comparing these will be of interest." ID="ID_459762530" CREATED="1500258092204" MODIFIED="1500258115020"/>
-<node TEXT="The security aspects and the business model will likely by the most important factors." ID="ID_806891106" CREATED="1500258115137" MODIFIED="1500258154852"/>
+<node TEXT="In future work, this thesis could be used as the starting point to evaluate further solutions." ID="ID_361482302" CREATED="1500261344064" MODIFIED="1500261361324"/>
+<node TEXT="At the time of writing, the most interesting alternatives are Windows Isolated User Mode and TrustZone." ID="ID_845454052" CREATED="1500261361457" MODIFIED="1500261382532"/>
+<node TEXT="Intel has made a serious investment in developing SGX." ID="ID_54424196" CREATED="1500257854197" MODIFIED="1500261474479" MOVED="1500261451328"/>
+<node TEXT="Intel has also shown the world that there is untapped potential in the area of trusted computing." ID="ID_1726703479" CREATED="1500261474618" MODIFIED="1500261490835"/>
+<node TEXT="The success of SGX is still far from decided -- too much is still unclear." ID="ID_759430231" CREATED="1500261498851" MODIFIED="1500261536109"/>
+<node TEXT="Further commercial solutions comparable to SGX can be expected to be developed by Intel&apos;s competition." ID="ID_1853880623" CREATED="1500261400083" MODIFIED="1500261562085"/>
+<node TEXT="Once that time comes, research comparing these solutions will be of interest." ID="ID_1918961193" CREATED="1500261565436" MODIFIED="1500261583470"/>
+<node TEXT="Apart from the security aspects and development model, the factor that decides over the winning solution might well be the business model." ID="ID_806891106" CREATED="1500258115137" MODIFIED="1500261634736"/>
+<node TEXT="Intel has set itself up in a good position in case SGX succeeds. But judging from the criticism being voiced and the limited amount of applications it may have pushed it&apos;s luck too far." ID="ID_971205965" CREATED="1500261634878" MODIFIED="1500261719026"/>
 </node>
 </node>
 <node TEXT="\appendix" STYLE_REF="paragraphs_drop_self" FOLDED="true" POSITION="left" ID="ID_254220910" CREATED="1500226021116" MODIFIED="1500226106958">
