@@ -159,7 +159,7 @@
 <node TEXT="The sources of this thesis are available at \url{https://github.com/ftes/sgx-thesis}." ID="ID_1636604444" CREATED="1499788139356" MODIFIED="1499789557370"/>
 </node>
 </node>
-<node TEXT="Background" LOCALIZED_STYLE_REF="default" FOLDED="true" POSITION="left" ID="ID_941070001" CREATED="1488476882926" MODIFIED="1499264027738" MOVED="1488547633482">
+<node TEXT="Background" LOCALIZED_STYLE_REF="default" POSITION="left" ID="ID_941070001" CREATED="1488476882926" MODIFIED="1499264027738" MOVED="1488547633482">
 <edge COLOR="#ff00ff"/>
 <node TEXT="- zentrale Begriffe definieren und einordnen&#xa;- nicht Lexikon-Definition, lieber problemorientierte Definition&#xa;- Diskussion unterschiedlicher Definitionsans&#xe4;tze kann hilfreich sein" STYLE_REF="drop" ID="ID_231337527" CREATED="1492080945485" MODIFIED="1492616799822" MOVED="1492616692193"/>
 <node TEXT="- gute Referenzen statt viel wiederholen" STYLE_REF="drop" ID="ID_975081732" CREATED="1492616800232" MODIFIED="1492616818386"/>
@@ -8191,7 +8191,7 @@
 </node>
 </node>
 </node>
-<node TEXT="SQLite Case Study" LOCALIZED_STYLE_REF="default" POSITION="left" ID="ID_650094352" CREATED="1487266723741" MODIFIED="1500019873754" MOVED="1499849269320">
+<node TEXT="SQLite Case Study" LOCALIZED_STYLE_REF="default" FOLDED="true" POSITION="left" ID="ID_650094352" CREATED="1487266723741" MODIFIED="1500019873754" MOVED="1499849269320">
 <attribute NAME="label" VALUE="chapter:sqlite" OBJECT="java.net.URI|chapter:sqlite"/>
 <edge COLOR="#0000ff"/>
 <node TEXT="use chapter summaries" STYLE_REF="drop" ID="ID_1019464221" CREATED="1489606031650" MODIFIED="1489606057294" MOVED="1489606046735"/>
@@ -8565,7 +8565,7 @@
 <node TEXT="\end{enumerate}" ID="ID_852127889" CREATED="1500249157670" MODIFIED="1500249175264"/>
 </node>
 </node>
-<node TEXT="Usage in the Intel SGX SDK" ID="ID_1312265565" CREATED="1500255091333" MODIFIED="1500256131535">
+<node TEXT="Usage in the Intel SGX SDK" FOLDED="true" ID="ID_1312265565" CREATED="1500255091333" MODIFIED="1500256131535">
 <icon BUILTIN="button_ok"/>
 <node TEXT="mindmap" STYLE_REF="drop" FOLDED="true" ID="ID_1280465211" CREATED="1500239547090" MODIFIED="1500239561312" MOVED="1500255177613">
 <node TEXT="in SGX SDK" ID="ID_1020064220" CREATED="1499843925191" MODIFIED="1499843928464" MOVED="1500255176966">
@@ -8579,7 +8579,7 @@
 </node>
 </node>
 </node>
-<node TEXT="Content" STYLE_REF="paragraphs_drop_self" ID="ID_1032391793" CREATED="1500255164893" MODIFIED="1500255171162">
+<node TEXT="Content" STYLE_REF="paragraphs_drop_self" FOLDED="true" ID="ID_1032391793" CREATED="1500255164893" MODIFIED="1500255171162">
 <node TEXT="The Intel SGX SDK for Linux, which is open source, also includes SQLite." ID="ID_1618983123" CREATED="1500254978219" MODIFIED="1500256185649" MOVED="1500255176182"/>
 <node TEXT="The way in which it is used by enclaves is different to the presented concepts and the related work." ID="ID_1923539167" CREATED="1500255301569" MODIFIED="1500256203705"/>
 <node TEXT="For the specific use case of the SDK, it is a simple and interesting alternative." ID="ID_735079837" CREATED="1500255320200" MODIFIED="1500256271868"/>
@@ -8623,8 +8623,48 @@
 <icon BUILTIN="button_cancel"/>
 <edge COLOR="#007c00"/>
 <node TEXT="Die Antwort auf die in der Problemstellung aufgeworfenen Fragen soll&#xa;kurz und pr&#xe4;gnant zusammengefasst werden. Ebenso sollte ein Ausblick auf offen&#xa;gebliebene Fragen sowie auf interessante Fragestellungen, die sich aus der Arbeit erge-&#xa;ben, gegeben werden. Eine kritische Betrachtung der eigenen Arbeit ist an dieser Stelle&#xa;ebenfalls sinnvoll." STYLE_REF="drop" ID="ID_1974882074" CREATED="1492081057470" MODIFIED="1492081062735" MOVED="1492081063826"/>
-<node TEXT="mindmap" STYLE_REF="drop" ID="ID_1652491510" CREATED="1495543887981" MODIFIED="1495543899209" MOVED="1495606147380">
-<node TEXT="future work" ID="ID_1074533750" CREATED="1499766172307" MODIFIED="1499766174284"/>
+<node TEXT="Content" STYLE_REF="paragraphs_drop_self" ID="ID_1735320971" CREATED="1500256440945" MODIFIED="1500256447932">
+<node TEXT="The main goal of this thesis was to evaluate different practical methods of hardening applications." ID="ID_1923547125" CREATED="1500256460212" MODIFIED="1500256538157"/>
+<node TEXT="In a first step, trusted computing was identified as the correct approach for the type of hardening in mind." ID="ID_580447740" CREATED="1500256538268" MODIFIED="1500258388325"/>
+<node TEXT="Alternative approaches based on cryptography alone are either too limited (garbled circuits) or not yet practical (fully homomorphic encryption, encrypted CPU)." ID="ID_1382376198" CREATED="1500256644734" MODIFIED="1500256700702"/>
+<node TEXT="" ID="ID_1835968551" CREATED="1500256709063" MODIFIED="1500256709063"/>
+<node TEXT="Trusted computing gives certain security guarantees when executing software on remote hardware." ID="ID_956004600" CREATED="1500256584707" MODIFIED="1500256634346"/>
+<node TEXT="A large part of this thesis was spent comparing trusted computing solutions. Both research and commercial solutions were presented to gain a good overview of the field." ID="ID_65200152" CREATED="1500256711686" MODIFIED="1500256770408"/>
+<node TEXT="" ID="ID_1648067321" CREATED="1500256771001" MODIFIED="1500256771001"/>
+<node TEXT="For the purpose of hardening applications, a ready-to-use solution had to be chosen. This narrowed the list of options, eliminating most of the research candidates." ID="ID_1927443040" CREATED="1500256773104" MODIFIED="1500256807029"/>
+<node TEXT="Intel SGX was identified as a good candidate for prototyping, even though hardware was not available." ID="ID_1004668899" CREATED="1500256807166" MODIFIED="1500256828305"/>
+<node TEXT="SGX is the first commercially available trusted computing solution that enables isolating parts of an application while making full use of the CPU&apos;s processing power." ID="ID_1814151987" CREATED="1500257182804" MODIFIED="1500257235826"/>
+<node TEXT="It also provides an attestation protocol through which a remote party can verify that it is communicating with a certain piece of software, protected by a trusted CPU." ID="ID_1541350891" CREATED="1500257240583" MODIFIED="1500258187783"/>
+<node TEXT="" ID="ID_1166846768" CREATED="1500256873223" MODIFIED="1500256873223"/>
+<node TEXT="Further research was presented that shares common goals with this thesis:" ID="ID_1206681112" CREATED="1500256873937" MODIFIED="1500257320415"/>
+<node TEXT="Techniques for hardening databases on the one hand and hardening of SGX applications on the other hand." ID="ID_1783203914" CREATED="1500256904368" MODIFIED="1500256927794"/>
+<node TEXT="From this related work, architectural alternatives were derived and assessed." ID="ID_1554181612" CREATED="1500257553140" MODIFIED="1500257590352"/>
+<node TEXT="This thesis then continued to evaluate the intersection of these two lines of research in two case studies." ID="ID_266756828" CREATED="1500256927951" MODIFIED="1500257602536"/>
+<node TEXT="Both case studies dealt with hardening database software using Intel SGX&apos;s TEE model. In this model, individual software modules are isolated at the enclave level." ID="ID_1192639592" CREATED="1500256958576" MODIFIED="1500257176827"/>
+<node TEXT="" ID="ID_1910054935" CREATED="1500257335558" MODIFIED="1500257335558"/>
+<node TEXT="The first case study of KISSDB included the design and implementation of a prototype." ID="ID_123034513" CREATED="1500256975352" MODIFIED="1500257018501"/>
+<node TEXT="Though limited in scope, it showcased the architectural alternatives for SGX-hardened applications identified in the related work." ID="ID_190142349" CREATED="1500256997769" MODIFIED="1500257063978"/>
+<node TEXT="The first case study also showed how the SGX helper library, that was developed as a part of this thesis, can be used to simplify work with the SGX Windows SDK." ID="ID_162794555" CREATED="1500257064202" MODIFIED="1500257121054"/>
+<node TEXT="" ID="ID_1034161959" CREATED="1500256828654" MODIFIED="1500256828654"/>
+<node TEXT="The second case study evaluated concepts for hardening SQLite, a significantly more complex DBMS." ID="ID_1588018067" CREATED="1500257340382" MODIFIED="1500258198514"/>
+<node TEXT="These concepts could not be evaluated thoroughly enough to allow implementing them." ID="ID_682115507" CREATED="1500257380008" MODIFIED="1500257429969"/>
+<node TEXT="They do however show two entirely different approaches to secure data processing with a hardened SQLite implementation." ID="ID_1693049896" CREATED="1500257430087" MODIFIED="1500257465331"/>
+<node TEXT="Both case studies were far from being as detailed and exhaustive as they could have been." ID="ID_1061777875" CREATED="1500258404719" MODIFIED="1500258451277"/>
+<node TEXT="" ID="ID_1679851326" CREATED="1500257465732" MODIFIED="1500257465732"/>
+<node TEXT="The main focus of this thesis was on literature work and comparison of trusted computing solutions." ID="ID_688160044" CREATED="1500257468808" MODIFIED="1500257656095"/>
+<node TEXT="This comparison can be used to evaluate further promising solutions such as TrustZone through similar case studies." ID="ID_979974840" CREATED="1500257656467" MODIFIED="1500257696054"/>
+<node TEXT="Intel SGX is still relatively new. Though it is included in most current desktop processors, the list of applications is still short." ID="ID_744963057" CREATED="1500257696201" MODIFIED="1500257740899"/>
+<node TEXT="SGX is slowly being incorporated into end-user and cloud applications." ID="ID_1660736859" CREATED="1500257742644" MODIFIED="1500257757420"/>
+<node TEXT="Time will show whether the security issues and Intel&apos;s licensing position prove fatal to SGX." ID="ID_1005011077" CREATED="1500257757556" MODIFIED="1500257796804"/>
+<node TEXT="" ID="ID_1439644527" CREATED="1500257638082" MODIFIED="1500257800084"/>
+<node TEXT="It seems apparent that the demand for a solution like SGX exists." ID="ID_542596709" CREATED="1500257813181" MODIFIED="1500257911689"/>
+<node TEXT="In the absence of hardware support, Microsoft has provided a software-only variant: Isolated User Mode." ID="ID_762089724" CREATED="1500258022049" MODIFIED="1500258073490"/>
+<node TEXT="After the serious investment Intel has made in development one can expect that Intel will try everything to push SGX into public focus." ID="ID_54424196" CREATED="1500257854197" MODIFIED="1500257909407"/>
+<node TEXT="If SGX proves successful, competing implementations from other CPU vendors will likely become available." ID="ID_1739679787" CREATED="1500257914710" MODIFIED="1500257941505"/>
+<node TEXT="TrustZone is somewhat comparable and is used for example by Samsung phones." ID="ID_1799207315" CREATED="1500257942832" MODIFIED="1500257965088"/>
+<node TEXT="But the development model that SGX provides allows trusted computing to be integrated in far more applications than ARM can target with TrustZone." ID="ID_994268800" CREATED="1500257965999" MODIFIED="1500258014834"/>
+<node TEXT="Once comparable hardware solutions arise, comparing these will be of interest." ID="ID_459762530" CREATED="1500258092204" MODIFIED="1500258115020"/>
+<node TEXT="The security aspects and the business model will likely by the most important factors." ID="ID_806891106" CREATED="1500258115137" MODIFIED="1500258154852"/>
 </node>
 </node>
 <node TEXT="\appendix" STYLE_REF="paragraphs_drop_self" FOLDED="true" POSITION="left" ID="ID_254220910" CREATED="1500226021116" MODIFIED="1500226106958">
