@@ -140,7 +140,7 @@
 <node TEXT="comparison of trusted computing solutions" ID="ID_1710565397" CREATED="1499779394508" MODIFIED="1499779400285"/>
 <node TEXT="guide to SGX" ID="ID_1482128103" CREATED="1499779400380" MODIFIED="1499779402437"/>
 </node>
-<node TEXT="Content" STYLE_REF="paragraphs_drop_self" FOLDED="true" ID="ID_697114612" CREATED="1495013498189" MODIFIED="1495013508003">
+<node TEXT="Content" STYLE_REF="paragraphs_drop_self" ID="ID_697114612" CREATED="1495013498189" MODIFIED="1495013508003">
 <node TEXT="Cloud computing has proven itself as a viable and popular business model." ID="ID_698884812" CREATED="1500258526177" MODIFIED="1500259816697" MOVED="1500258527046"/>
 <node TEXT="This makes data security an increasingly hot topic." ID="ID_1630969494" CREATED="1500258574984" MODIFIED="1500258639387"/>
 <node TEXT="Encryption as a way of securely transporting data is an age-old and proven concept." ID="ID_1712713994" CREATED="1500258639520" MODIFIED="1500260696854"/>
@@ -150,7 +150,7 @@
 <node TEXT="Now Intel has joined the game and is shipping its Security Guard Extensions (SGX) with most of its new CPUs." ID="ID_563845396" CREATED="1500258779427" MODIFIED="1500259853662"/>
 <node TEXT="The wide-spread availability of trusted computing hardware is foreseeable. There is a growing demand for trustworthy applications in digital rights management and cloud computing. This means the game might soon begin to change, shifting trusted computing back into focus." ID="ID_1881143424" CREATED="1500258903285" MODIFIED="1500259956880"/>
 <node TEXT="" ID="ID_449638828" CREATED="1500259960831" MODIFIED="1500259960831"/>
-<node TEXT="From a technological standpoint, trusted computing is an fascinating. It combines the fields of cryptography, operating systems and hardware design." ID="ID_1778003077" CREATED="1500259559445" MODIFIED="1500260817086"/>
+<node TEXT="From a technological standpoint, trusted computing is fascinating. It combines the fields of cryptography, operating systems and hardware design." ID="ID_1778003077" CREATED="1500259559445" MODIFIED="1500268651929"/>
 <node TEXT="However, from an ethical standpoint, trusted computing is a double-edged sword as \autoref{figure:tc-cartoon} pointedly makes clear." ID="ID_1885832293" CREATED="1500260065958" MODIFIED="1500260828966"/>
 <node TEXT="\textbf{Trusted computing cartoon.} Left computer: ``Do you also sometimes feel remotely controlled by this trusted computing module?&apos;&apos;. Right computer: ``I don&apos;t know, let me ask my manufacturer.&apos;&apos; Reprinted from" ID="ID_863606381" CREATED="1499759728592" MODIFIED="1499760572438" MOVED="1500259556221" LINK="https://heise.de/-3603810">
 <hook URI="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/_data/150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/default_files/trusted%20computing%20cartoon.png" SIZE="1.0" NAME="ExternalObject"/>
@@ -181,7 +181,7 @@
 <node TEXT="The sources of this thesis, including all text, images and source code, are available at \url{https://github.com/ftes/sgx-thesis}." ID="ID_1636604444" CREATED="1499788139356" MODIFIED="1500259772853"/>
 </node>
 </node>
-<node TEXT="Background" LOCALIZED_STYLE_REF="default" POSITION="left" ID="ID_941070001" CREATED="1488476882926" MODIFIED="1499264027738" MOVED="1488547633482">
+<node TEXT="Background" LOCALIZED_STYLE_REF="default" FOLDED="true" POSITION="left" ID="ID_941070001" CREATED="1488476882926" MODIFIED="1499264027738" MOVED="1488547633482">
 <edge COLOR="#ff00ff"/>
 <node TEXT="- zentrale Begriffe definieren und einordnen&#xa;- nicht Lexikon-Definition, lieber problemorientierte Definition&#xa;- Diskussion unterschiedlicher Definitionsans&#xe4;tze kann hilfreich sein" STYLE_REF="drop" ID="ID_231337527" CREATED="1492080945485" MODIFIED="1492616799822" MOVED="1492616692193"/>
 <node TEXT="- gute Referenzen statt viel wiederholen" STYLE_REF="drop" ID="ID_975081732" CREATED="1492616800232" MODIFIED="1492616818386"/>
@@ -4170,7 +4170,7 @@
 </node>
 </node>
 </node>
-<node TEXT="Intel SGX" POSITION="left" ID="ID_1888222908" CREATED="1499677051779" MODIFIED="1499677189499">
+<node TEXT="Intel SGX" FOLDED="true" POSITION="left" ID="ID_1888222908" CREATED="1499677051779" MODIFIED="1499677189499">
 <edge COLOR="#007c00"/>
 <attribute NAME="label" VALUE="chapter:sgx" OBJECT="java.net.URI|chapter:sgx"/>
 <node TEXT="mindmap" STYLE_REF="drop" FOLDED="true" ID="ID_568950088" CREATED="1495056010089" MODIFIED="1495056022163" MOVED="1499677177765">
@@ -5117,7 +5117,7 @@
 <node TEXT="SGX capable CPUs are available since the end of 2015.\footnote{\url{https://github.com/ayeks/SGX-hardware}}." ID="ID_1264019871" CREATED="1499693826665" MODIFIED="1499693869078"/>
 </node>
 </node>
-<node TEXT="Enclave Development" ID="ID_816398624" CREATED="1499693570309" MODIFIED="1499849786487" MOVED="1499777011960">
+<node TEXT="Enclave Development" FOLDED="true" ID="ID_816398624" CREATED="1499693570309" MODIFIED="1499849786487" MOVED="1499777011960">
 <icon BUILTIN="button_ok"/>
 <attribute NAME="label" VALUE="section:sgx-usage" OBJECT="java.net.URI|section:sgx-usage"/>
 <node TEXT="mindmap" STYLE_REF="drop" ID="ID_407748345" CREATED="1499777017556" MODIFIED="1499777026225"/>
@@ -5173,7 +5173,7 @@
 <node TEXT="These enclaves rely on the Manageability Engine (ME), which is a part of Intel CPUs, to provide these features.\footnote{\url{https://software.intel.com/en-us/forums/intel-software-guard-extensions-intel-sgx/topic/607330&#xa;}}" ID="ID_1422515691" CREATED="1499849541455" MODIFIED="1499851537618"/>
 </node>
 </node>
-<node TEXT="Performance" LOCALIZED_STYLE_REF="default" ID="ID_388809349" CREATED="1495056067547" MODIFIED="1499783517181" MOVED="1499694113531">
+<node TEXT="Performance" LOCALIZED_STYLE_REF="default" FOLDED="true" ID="ID_388809349" CREATED="1495056067547" MODIFIED="1499783517181" MOVED="1499694113531">
 <icon BUILTIN="button_ok"/>
 <attribute NAME="label" VALUE="section:sgx-perf" OBJECT="java.net.URI|section:sgx-perf"/>
 <node TEXT="mindmap" STYLE_REF="drop" FOLDED="true" ID="ID_1081313395" CREATED="1495543887981" MODIFIED="1495543899209" MOVED="1495543900065">
@@ -5206,7 +5206,7 @@
 </node>
 </node>
 </node>
-<node TEXT="Content" STYLE_REF="paragraphs_drop_self" ID="ID_1404181635" CREATED="1495543885991" MODIFIED="1495543895304">
+<node TEXT="Content" STYLE_REF="paragraphs_drop_self" FOLDED="true" ID="ID_1404181635" CREATED="1495543885991" MODIFIED="1495543895304">
 <node TEXT="In principle, the CPU&apos;s full processing speed is available in SGX enclaves. This is an advantage over solutions with external secure elements." ID="ID_1639328080" CREATED="1499779635228" MODIFIED="1499780618814"/>
 <node TEXT="However, several factors have a observable performance impact on enclave performance." ID="ID_935750308" CREATED="1499779666124" MODIFIED="1499780627660"/>
 <node TEXT="Isolation is achieved by protecting an enclave&apos;s memory." ID="ID_88365959" CREATED="1499779682100" MODIFIED="1499779693863"/>
@@ -6623,7 +6623,7 @@
 <node TEXT="\item[Malware in enclaves:]" FOLDED="true" ID="ID_1718158893" CREATED="1499858691807" MODIFIED="1499858698640">
 <node TEXT="Enclaves are protected from the operating system and hardware owner. This can also be a disadvantage from a security standpoint. Malware protected in an enclave is an often stated example." ID="ID_1912630411" CREATED="1499852664023" MODIFIED="1499858771874" MOVED="1499858721621"/>
 <node TEXT="Two factors are in place that should prevent this." ID="ID_1621688747" CREATED="1499858772759" MODIFIED="1499858786097"/>
-<node TEXT="Firstly, enclaves cannot perform any input/output, so part of the malware would have to live in an (observable) unprotected wrapper.\cite{sgx-explained}[ch. 6.8]" ID="ID_161645023" CREATED="1499852928527" MODIFIED="1499852930226" MOVED="1499858721625"/>
+<node TEXT="Firstly, enclaves cannot perform any input/output, so part of the malware would have to live in an (observable) unprotected wrapper.\cite[ch. 6.8]{sgx-explained}" ID="ID_161645023" CREATED="1499852928527" MODIFIED="1500268776987" MOVED="1499858721625"/>
 <node TEXT="Secondly, Intel can decide which enclave software will be loaded by an Intel CPU (white labelling). This is again a cause of criticism." ID="ID_351871068" CREATED="1499852871815" MODIFIED="1500264718716" MOVED="1499858721629"/>
 <node TEXT="" ID="ID_1260349053" CREATED="1499859025360" MODIFIED="1499859025360"/>
 <node TEXT="Intel only white labels the identity of an enclave -- its initial measurement. Because enclave code may be self-modifying it is possible to dynamically load encrypted malicious code into an enclave. This is a viable attack vector if an exploit is found for a white labelled enclave, into which malware could then be loaded." ID="ID_1914733350" CREATED="1499858557049" MODIFIED="1499859096666" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/literature_repository/Malware%20Guard%20Extension.pdf" MOVED="1499858721634">
@@ -8166,7 +8166,7 @@
 </node>
 </node>
 </node>
-<node TEXT="SQLite Case Study" LOCALIZED_STYLE_REF="default" FOLDED="true" POSITION="left" ID="ID_650094352" CREATED="1487266723741" MODIFIED="1500019873754" MOVED="1499849269320">
+<node TEXT="SQLite Case Study" LOCALIZED_STYLE_REF="default" POSITION="left" ID="ID_650094352" CREATED="1487266723741" MODIFIED="1500019873754" MOVED="1499849269320">
 <attribute NAME="label" VALUE="chapter:sqlite" OBJECT="java.net.URI|chapter:sqlite"/>
 <edge COLOR="#0000ff"/>
 <node TEXT="use chapter summaries" STYLE_REF="drop" ID="ID_1019464221" CREATED="1489606031650" MODIFIED="1489606057294" MOVED="1489606046735"/>
@@ -8338,9 +8338,9 @@
 </node>
 </node>
 </node>
-<node TEXT="Introduction" STYLE_REF="paragraphs_drop_self" FOLDED="true" ID="ID_1083381194" CREATED="1500236575781" MODIFIED="1500245920414">
+<node TEXT="Introduction" STYLE_REF="paragraphs_drop_self" ID="ID_1083381194" CREATED="1500236575781" MODIFIED="1500245920414">
 <icon BUILTIN="button_ok"/>
-<node TEXT="The second case study examines hardening SQLite\footnote{\url{https://www.sqlite.org/}}, ``SQLite is a self-contained, high-reliability, embedded, full-featured, public-domain, SQL database engine. SQLite is the most used database engine in the world.&apos;&apos;" ID="ID_524579169" CREATED="1500235639895" MODIFIED="1500235696538" MOVED="1500236585827"/>
+<node TEXT="The second case study examines hardening SQLite, ``SQLite is a self-contained, high-reliability, embedded, full-featured, public-domain, SQL database engine. SQLite is the most used database engine in the world.&apos;&apos;\footnote{\url{https://www.sqlite.org/}}" ID="ID_524579169" CREATED="1500235639895" MODIFIED="1500268692402" MOVED="1500236585827"/>
 <node TEXT="The results of this case study are limited to concept work without any implementation." ID="ID_1099628668" CREATED="1500235855675" MODIFIED="1500235877710" MOVED="1500236585837"/>
 <node TEXT="" ID="ID_1512527530" CREATED="1500235882157" MODIFIED="1500235882157" MOVED="1500236585845"/>
 <node TEXT="The architecture and design decisions of SQLite are described in \cite{Haldar2015}." ID="ID_562215635" CREATED="1500236251560" MODIFIED="1500236393567" MOVED="1500236585852"/>
@@ -8348,14 +8348,14 @@
 <node TEXT="" ID="ID_806538459" CREATED="1500236410963" MODIFIED="1500236410963" MOVED="1500236585870"/>
 <node TEXT="SQLite was chosen for the following reasons:" ID="ID_313554394" CREATED="1500235899317" MODIFIED="1500235907824" MOVED="1500236585877"/>
 <node TEXT="\begin{description}" ID="ID_280210927" CREATED="1500235908027" MODIFIED="1500235914947" MOVED="1500236585882"/>
-<node TEXT="\item[Comparably small:]" FOLDED="true" ID="ID_216465543" CREATED="1500235920103" MODIFIED="1500236429661" MOVED="1500236585889">
+<node TEXT="\item[Comparably small:]" ID="ID_216465543" CREATED="1500235920103" MODIFIED="1500236429661" MOVED="1500236585889">
 <node TEXT="Compared to KISSDB, SQLite is a production-level DBMS." ID="ID_260649904" CREATED="1500235701147" MODIFIED="1500239408966" MOVED="1500235939785"/>
 <node TEXT="In the world of production-level DBMS however, SQLite is a comparably small piece of software." ID="ID_60475352" CREATED="1500235951462" MODIFIED="1500235978133"/>
 <node TEXT="It is not a stand alone server application but rather an embedded DBMS." ID="ID_1987907892" CREATED="1500235742425" MODIFIED="1500235981609" MOVED="1500235939794"/>
 <node TEXT="``With all features enabled, the library size can be less than 500KiB&apos;&apos;." ID="ID_1067948369" CREATED="1500235991644" MODIFIED="1500235995203"/>
 </node>
-<node TEXT="\item[Modularised:]" FOLDED="true" ID="ID_1961074220" CREATED="1500236236456" MODIFIED="1500239418769" MOVED="1500236585895">
-<node TEXT="As described in \cite{Haldar2015}[ch. 2.6], SQLite has a very modular architecture." ID="ID_400628669" CREATED="1500236422630" MODIFIED="1500239458013"/>
+<node TEXT="\item[Modularised:]" ID="ID_1961074220" CREATED="1500236236456" MODIFIED="1500239418769" MOVED="1500236585895">
+<node TEXT="As described in \cite[ch. 2.6]{Haldar2015}, SQLite has a very modular architecture." ID="ID_400628669" CREATED="1500236422630" MODIFIED="1500268800563"/>
 <node TEXT="\autoref{figure:sqlite} shows the modules and a potential enclave border." ID="ID_585278429" CREATED="1500245362401" MODIFIED="1500245645181"/>
 <node TEXT="\input{content/tikz/sqlite}" STYLE_REF="latex" FOLDED="true" ID="ID_1131489379" CREATED="1500043496508" MODIFIED="1500246685511" LINK="project://150EC0C1DB947LLX3DCKJFF54WQSAWMBM6X7/thesis/content/tikz/sqlite.tex" MOVED="1500239261817">
 <attribute NAME="image" VALUE=""/>
